@@ -1,0 +1,7 @@
+Running: xsim.dir/keyexp_tb_func_synth/xsimk.exe -simmode gui -wdb keyexp_tb_func_synth.wdb -simrunnum 0 -socket 58890
+Design successfully loaded
+Design Loading Memory Usage: 30576 KB (Peak: 30576 KB)
+Design Loading CPU Usage: 124 ms
+Simulation completed
+Simulation Memory Usage: 34116 KB (Peak: 34116 KB)
+Simulation CPU Usage: 202 ms

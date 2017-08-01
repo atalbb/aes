@@ -1,0 +1,47 @@
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 9b75051365fa40cb9cf36fa0093506e2 --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot keyexp_tb_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.keyexp_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "keyexp_tb_time_synth.sdf", for root module "keyexp_tb/T".
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "keyexp_tb_time_synth.sdf", for root module "keyexp_tb/T".
+Time Resolution for simulation is 1ps
+Compiling module simprims_ver.GND
+Compiling module simprims_ver.RB18_INTERNAL_VLOG(DOA_REG=0,DOB...
+Compiling module simprims_ver.RAMB18E1(INIT_00=256'b0100100010...
+Compiling module xil_defaultlib.blk_mem_gen_0_blk_mem_gen_prim_w...
+Compiling module xil_defaultlib.blk_mem_gen_0_blk_mem_gen_prim_w...
+Compiling module xil_defaultlib.blk_mem_gen_0_blk_mem_gen_generi...
+Compiling module xil_defaultlib.blk_mem_gen_0_blk_mem_gen_top
+Compiling module xil_defaultlib.blk_mem_gen_0_blk_mem_gen_v8_3_6...
+Compiling module xil_defaultlib.blk_mem_gen_0_blk_mem_gen_v8_3_6
+Compiling module xil_defaultlib.blk_mem_gen_0
+Compiling module simprims_ver.LUT6
+Compiling module simprims_ver.x_lut2_mux4
+Compiling module simprims_ver.LUT2
+Compiling module simprims_ver.LUT4
+Compiling module simprims_ver.x_lut1_mux2
+Compiling module simprims_ver.LUT1
+Compiling module simprims_ver.x_lut3_mux8
+Compiling module simprims_ver.LUT3
+Compiling module simprims_ver.LUT5
+Compiling module simprims_ver.FDCE_default
+Compiling module xil_defaultlib.counter
+Compiling module simprims_ver.FDRE_default
+Compiling module xil_defaultlib.KeyIn
+Compiling module simprims_ver.FDPE_default
+Compiling module simprims_ver.latchsre_ldce
+Compiling module simprims_ver.LDCE(INIT=1'b1)
+Compiling module simprims_ver.LDCE
+Compiling module simprims_ver.MUXF7
+Compiling module xil_defaultlib.key_expansion
+Compiling module simprims_ver.BUFG
+Compiling module simprims_ver.IBUF
+Compiling module simprims_ver.OBUF
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.keyexp_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot keyexp_tb_time_synth

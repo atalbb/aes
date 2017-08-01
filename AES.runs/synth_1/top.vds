@@ -1,0 +1,703 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Mon Jul 31 17:37:20 2017
+# Process ID: 13332
+# Current directory: C:/College/Thesis/VivadoProjects/AES/AES.runs/synth_1
+# Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: C:/College/Thesis/VivadoProjects/AES/AES.runs/synth_1/top.vds
+# Journal file: C:/College/Thesis/VivadoProjects/AES/AES.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace
+Command: synth_design -top top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 10780 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 382.863 ; gain = 75.613
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/top.v:25]
+INFO: [Synth 8-638] synthesizing module 'counter' [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/counter.v:23]
+INFO: [Synth 8-256] done synthesizing module 'counter' (1#1) [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/counter.v:23]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [C:/College/Thesis/VivadoProjects/AES/AES.runs/synth_1/.Xil/Vivado-13332-LAPTOP-L1N8U9P6/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_0' (2#1) [C:/College/Thesis/VivadoProjects/AES/AES.runs/synth_1/.Xil/Vivado-13332-LAPTOP-L1N8U9P6/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'KeyIn' [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/KeyIn.v:23]
+	Parameter delay bound to: 3'b000 
+	Parameter END_ADDR bound to: 10 - type: integer 
+WARNING: [Synth 8-5788] Register RAM_reg[7] in module KeyIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/KeyIn.v:41]
+WARNING: [Synth 8-5788] Register RAM_reg[6] in module KeyIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/KeyIn.v:41]
+WARNING: [Synth 8-5788] Register RAM_reg[5] in module KeyIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/KeyIn.v:41]
+WARNING: [Synth 8-5788] Register RAM_reg[4] in module KeyIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/KeyIn.v:41]
+WARNING: [Synth 8-5788] Register RAM_reg[3] in module KeyIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/KeyIn.v:41]
+WARNING: [Synth 8-5788] Register RAM_reg[2] in module KeyIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/KeyIn.v:41]
+WARNING: [Synth 8-5788] Register RAM_reg[1] in module KeyIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/KeyIn.v:41]
+WARNING: [Synth 8-5788] Register RAM_reg[0] in module KeyIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/KeyIn.v:41]
+INFO: [Synth 8-256] done synthesizing module 'KeyIn' (3#1) [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/KeyIn.v:23]
+INFO: [Synth 8-638] synthesizing module 'key_expansion' [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:23]
+	Parameter KEYEXP_RESET bound to: 0 - type: integer 
+WARNING: [Synth 8-567] referenced signal 'keyIn' should be on the sensitivity list [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:308]
+WARNING: [Synth 8-567] referenced signal 'sbox' should be on the sensitivity list [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:308]
+WARNING: [Synth 8-567] referenced signal 'rcon' should be on the sensitivity list [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:308]
+WARNING: [Synth 8-6014] Unused sequential element w_index_reg was removed.  [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:312]
+WARNING: [Synth 8-6014] Unused sequential element w_reg[58] was removed.  [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:322]
+WARNING: [Synth 8-6014] Unused sequential element w_reg[57] was removed.  [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:322]
+WARNING: [Synth 8-6014] Unused sequential element w_reg[56] was removed.  [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:322]
+WARNING: [Synth 8-6014] Unused sequential element w_reg[54] was removed.  [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:322]
+WARNING: [Synth 8-6014] Unused sequential element w_reg[53] was removed.  [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:322]
+WARNING: [Synth 8-6014] Unused sequential element w_reg[52] was removed.  [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:322]
+WARNING: [Synth 8-6014] Unused sequential element temp_reg was removed.  [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:334]
+INFO: [Synth 8-256] done synthesizing module 'key_expansion' (4#1) [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:23]
+INFO: [Synth 8-256] done synthesizing module 'top' (5#1) [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/top.v:25]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 449.996 ; gain = 142.746
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 449.996 ; gain = 142.746
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/College/Thesis/VivadoProjects/AES/AES.runs/synth_1/.Xil/Vivado-13332-LAPTOP-L1N8U9P6/dcp3/blk_mem_gen_0_in_context.xdc] for cell 'B0'
+Finished Parsing XDC File [C:/College/Thesis/VivadoProjects/AES/AES.runs/synth_1/.Xil/Vivado-13332-LAPTOP-L1N8U9P6/dcp3/blk_mem_gen_0_in_context.xdc] for cell 'B0'
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 750.199 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 750.199 ; gain = 442.949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 750.199 ; gain = 442.949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for B0. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 750.199 ; gain = 442.949
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element out_reg was removed.  [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/counter.v:30]
+INFO: [Synth 8-5545] ROM "RAM_reg[7]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[6]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[5]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[4]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "KeyO" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'curr_state_reg' in module 'key_expansion'
+WARNING: [Synth 8-6014] Unused sequential element curr_state_reg was removed.  [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:302]
+WARNING: [Synth 8-6014] Unused sequential element next_state_reg was removed.  [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:313]
+INFO: [Synth 8-5546] ROM "w" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "w" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "w" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "w" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "w" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "w" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "w" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "w" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "w" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "w" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "w" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "w" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "w" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "keyExpDone" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "keyOut" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "next_state" is below threshold of ROM address width. It will be mapped to LUTs
+WARNING: [Synth 8-327] inferring latch for variable 'keyExpDone_reg' [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:311]
+WARNING: [Synth 8-6014] Unused sequential element curr_state_reg was removed.  [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:302]
+WARNING: [Synth 8-327] inferring latch for variable 'next_state_reg' [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:313]
+WARNING: [Synth 8-6014] Unused sequential element curr_state_reg was removed.  [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:302]
+WARNING: [Synth 8-327] inferring latch for variable 'next_state_reg' [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:313]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+            KEYEXP_RESET |               000000000000000001 |                           000000
+                  iSTATE |               000000000000000010 |                           000001
+                 iSTATE0 |               000000000000000100 |                           000010
+                 iSTATE1 |               000000000000001000 |                           000011
+                 iSTATE2 |               000000000000010000 |                           000100
+                 iSTATE3 |               000000000000100000 |                           000101
+                 iSTATE4 |               000000000001000000 |                           000110
+                 iSTATE5 |               000000000010000000 |                           000111
+                 iSTATE6 |               000000000100000000 |                           001000
+                 iSTATE7 |               000000001000000000 |                           001001
+                 iSTATE8 |               000000010000000000 |                           001010
+                 iSTATE9 |               000000100000000000 |                           001011
+                iSTATE10 |               000001000000000000 |                           001100
+                iSTATE11 |               000010000000000000 |                           001101
+                iSTATE12 |               000100000000000000 |                           001110
+                iSTATE13 |               001000000000000000 |                           001111
+                iSTATE14 |               010000000000000000 |                           010000
+                iSTATE15 |               100000000000000000 |                           010001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'curr_state_reg' using encoding 'one-hot' in module 'key_expansion'
+WARNING: [Synth 8-6014] Unused sequential element next_state_reg was removed.  [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:313]
+WARNING: [Synth 8-6014] Unused sequential element curr_state_reg was removed.  [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:302]
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_next_state_reg' [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:313]
+WARNING: [Synth 8-327] inferring latch for variable 'keyOut_reg' [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:440]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[59]' [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:322]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[48]' [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:322]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[49]' [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:322]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[50]' [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:322]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[51]' [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:322]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[55]' [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:322]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[55]_rep' [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:322]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[40]' [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:322]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[47]' [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:322]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[47]_rep' [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:322]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[41]' [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:322]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[42]' [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:322]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[43]' [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:322]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[44]' [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:322]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[45]' [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:322]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[46]' [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:322]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[51]_rep' [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:322]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[32]' [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:322]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[39]' [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:322]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[39]_rep' [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:322]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[38]' [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:322]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[37]' [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:322]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[36]' [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:322]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[43]_rep' [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:322]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[33]' [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:322]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[34]' [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:322]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[35]' [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:322]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[24]' [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:322]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[31]' [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:322]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[31]_rep' [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:322]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[30]' [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:322]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[29]' [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:322]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[28]' [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:322]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[35]_rep' [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:322]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[25]' [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:322]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[26]' [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:322]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[27]' [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:322]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[16]' [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:322]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[23]' [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:322]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[23]_rep' [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:322]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[22]' [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:322]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[21]' [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:322]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[20]' [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:322]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[27]_rep' [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:322]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[17]' [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:322]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[18]' [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:322]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[19]' [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:322]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[8]' [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:322]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[15]' [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:322]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[15]_rep' [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:322]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[14]' [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:322]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[13]' [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:322]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[12]' [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:322]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[19]_rep' [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:322]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[9]' [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:322]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[10]' [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:322]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[11]' [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:322]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[0]' [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:322]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[7]' [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:322]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[7]_rep' [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:322]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[6]' [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:322]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[5]' [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:322]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[4]' [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:322]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[11]_rep' [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:322]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[1]' [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:322]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[2]' [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:322]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[3]' [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:322]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 750.199 ; gain = 442.949
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---XORs : 
+	   6 Input     32 Bit         XORs := 1     
+	   3 Input     32 Bit         XORs := 6     
+	   2 Input     32 Bit         XORs := 38    
+	   5 Input     32 Bit         XORs := 1     
++---Registers : 
+	              256 Bit    Registers := 1     
+	               32 Bit    Registers := 8     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	  18 Input     18 Bit        Muxes := 1     
+	  18 Input      6 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 13    
+	  18 Input      1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module counter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+Module KeyIn 
+Detailed RTL Component Info : 
++---Registers : 
+	              256 Bit    Registers := 1     
+	               32 Bit    Registers := 8     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 9     
+Module key_expansion 
+Detailed RTL Component Info : 
++---XORs : 
+	   6 Input     32 Bit         XORs := 1     
+	   3 Input     32 Bit         XORs := 6     
+	   2 Input     32 Bit         XORs := 38    
+	   5 Input     32 Bit         XORs := 1     
++---Muxes : 
+	  18 Input     18 Bit        Muxes := 1     
+	  18 Input      6 Bit        Muxes := 1     
+	  18 Input      1 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "K1/KeyO" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "K1/RAM_reg[7]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "K1/RAM_reg[6]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "K1/RAM_reg[5]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "K1/RAM_reg[4]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "K1/RAM_reg[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "K1/RAM_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "K1/RAM_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "K1/RAM_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element C0/out_reg was removed.  [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/counter.v:30]
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[7]_rep[29]' (LD) to 'KX1/w_reg[7][29]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[7]_rep[28]' (LD) to 'KX1/w_reg[7][28]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[7]_rep[27]' (LD) to 'KX1/w_reg[7][27]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[7]_rep[26]' (LD) to 'KX1/w_reg[7][26]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[7]_rep[25]' (LD) to 'KX1/w_reg[7][25]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[7]_rep[24]' (LD) to 'KX1/w_reg[7][24]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[7][5]' (LD) to 'KX1/w_reg[7]_rep[5]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[7][4]' (LD) to 'KX1/w_reg[7]_rep[4]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[7][3]' (LD) to 'KX1/w_reg[7]_rep[3]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[7][2]' (LD) to 'KX1/w_reg[7]_rep[2]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[7][1]' (LD) to 'KX1/w_reg[7]_rep[1]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[7][0]' (LD) to 'KX1/w_reg[7]_rep[0]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[11]_rep[5]' (LD) to 'KX1/w_reg[11][5]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[11]_rep[4]' (LD) to 'KX1/w_reg[11][4]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[11]_rep[3]' (LD) to 'KX1/w_reg[11][3]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[11]_rep[2]' (LD) to 'KX1/w_reg[11][2]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[11]_rep[1]' (LD) to 'KX1/w_reg[11][1]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[11]_rep[0]' (LD) to 'KX1/w_reg[11][0]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[7]_rep[13]' (LD) to 'KX1/w_reg[7][13]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[7]_rep[12]' (LD) to 'KX1/w_reg[7][12]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[7]_rep[11]' (LD) to 'KX1/w_reg[7][11]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[7]_rep[10]' (LD) to 'KX1/w_reg[7][10]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[7]_rep[9]' (LD) to 'KX1/w_reg[7][9]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[7]_rep[8]' (LD) to 'KX1/w_reg[7][8]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[7]_rep[21]' (LD) to 'KX1/w_reg[7][21]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[7]_rep[20]' (LD) to 'KX1/w_reg[7][20]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[7]_rep[19]' (LD) to 'KX1/w_reg[7][19]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[7]_rep[18]' (LD) to 'KX1/w_reg[7][18]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[7]_rep[17]' (LD) to 'KX1/w_reg[7][17]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[7]_rep[16]' (LD) to 'KX1/w_reg[7][16]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[15]_rep[29]' (LD) to 'KX1/w_reg[15][29]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[15]_rep[28]' (LD) to 'KX1/w_reg[15][28]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[15]_rep[27]' (LD) to 'KX1/w_reg[15][27]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[15]_rep[26]' (LD) to 'KX1/w_reg[15][26]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[15]_rep[25]' (LD) to 'KX1/w_reg[15][25]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[15]_rep[24]' (LD) to 'KX1/w_reg[15][24]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[7]_rep[30]' (LD) to 'KX1/w_reg[7][30]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[7]_rep[31]' (LD) to 'KX1/w_reg[7][31]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[15][5]' (LD) to 'KX1/w_reg[15]_rep[5]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[15][4]' (LD) to 'KX1/w_reg[15]_rep[4]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[15][3]' (LD) to 'KX1/w_reg[15]_rep[3]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[15][2]' (LD) to 'KX1/w_reg[15]_rep[2]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[15][1]' (LD) to 'KX1/w_reg[15]_rep[1]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[15][0]' (LD) to 'KX1/w_reg[15]_rep[0]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[19]_rep[5]' (LD) to 'KX1/w_reg[19][5]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[19]_rep[4]' (LD) to 'KX1/w_reg[19][4]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[19]_rep[3]' (LD) to 'KX1/w_reg[19][3]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[19]_rep[2]' (LD) to 'KX1/w_reg[19][2]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[19]_rep[1]' (LD) to 'KX1/w_reg[19][1]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[19]_rep[0]' (LD) to 'KX1/w_reg[19][0]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[7][6]' (LD) to 'KX1/w_reg[7]_rep[6]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[11]_rep[6]' (LD) to 'KX1/w_reg[11][6]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[11]_rep[7]' (LD) to 'KX1/w_reg[11][7]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[7][7]' (LD) to 'KX1/w_reg[7]_rep[7]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[15]_rep[13]' (LD) to 'KX1/w_reg[15][13]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[15]_rep[12]' (LD) to 'KX1/w_reg[15][12]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[15]_rep[11]' (LD) to 'KX1/w_reg[15][11]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[15]_rep[10]' (LD) to 'KX1/w_reg[15][10]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[15]_rep[9]' (LD) to 'KX1/w_reg[15][9]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[15]_rep[8]' (LD) to 'KX1/w_reg[15][8]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[7]_rep[14]' (LD) to 'KX1/w_reg[7][14]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[7]_rep[15]' (LD) to 'KX1/w_reg[7][15]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[15]_rep[21]' (LD) to 'KX1/w_reg[15][21]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[15]_rep[20]' (LD) to 'KX1/w_reg[15][20]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[15]_rep[19]' (LD) to 'KX1/w_reg[15][19]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[15]_rep[18]' (LD) to 'KX1/w_reg[15][18]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[15]_rep[17]' (LD) to 'KX1/w_reg[15][17]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[15]_rep[16]' (LD) to 'KX1/w_reg[15][16]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[7]_rep[22]' (LD) to 'KX1/w_reg[7][22]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[7]_rep[23]' (LD) to 'KX1/w_reg[7][23]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[23]_rep[29]' (LD) to 'KX1/w_reg[23][29]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[23]_rep[28]' (LD) to 'KX1/w_reg[23][28]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[23]_rep[27]' (LD) to 'KX1/w_reg[23][27]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[23]_rep[26]' (LD) to 'KX1/w_reg[23][26]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[23]_rep[25]' (LD) to 'KX1/w_reg[23][25]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[23]_rep[24]' (LD) to 'KX1/w_reg[23][24]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[15]_rep[30]' (LD) to 'KX1/w_reg[15][30]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[15]_rep[31]' (LD) to 'KX1/w_reg[15][31]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[11]_rep[8]' (LD) to 'KX1/w_reg[11][8]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[11]_rep[9]' (LD) to 'KX1/w_reg[11][9]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[11]_rep[10]' (LD) to 'KX1/w_reg[11][10]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[11]_rep[11]' (LD) to 'KX1/w_reg[11][11]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[11]_rep[12]' (LD) to 'KX1/w_reg[11][12]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[11]_rep[13]' (LD) to 'KX1/w_reg[11][13]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[11]_rep[14]' (LD) to 'KX1/w_reg[11][14]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[11]_rep[15]' (LD) to 'KX1/w_reg[11][15]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[23][5]' (LD) to 'KX1/w_reg[23]_rep[5]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[23][4]' (LD) to 'KX1/w_reg[23]_rep[4]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[23][3]' (LD) to 'KX1/w_reg[23]_rep[3]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[23][2]' (LD) to 'KX1/w_reg[23]_rep[2]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[23][1]' (LD) to 'KX1/w_reg[23]_rep[1]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[23][0]' (LD) to 'KX1/w_reg[23]_rep[0]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[27]_rep[5]' (LD) to 'KX1/w_reg[27][5]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[27]_rep[4]' (LD) to 'KX1/w_reg[27][4]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[27]_rep[3]' (LD) to 'KX1/w_reg[27][3]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[27]_rep[2]' (LD) to 'KX1/w_reg[27][2]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[27]_rep[1]' (LD) to 'KX1/w_reg[27][1]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[27]_rep[0]' (LD) to 'KX1/w_reg[27][0]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[15][6]' (LD) to 'KX1/w_reg[15]_rep[6]'
+INFO: [Synth 8-3886] merging instance 'KX1/w_reg[19]_rep[6]' (LD) to 'KX1/w_reg[19][6]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 750.199 ; gain = 442.949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++--------------+------------+---------------+----------------+
+|Module Name   | RTL Object | Depth x Width | Implemented As | 
++--------------+------------+---------------+----------------+
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
+|key_expansion | sbox       | 256x8         | LUT            | 
++--------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 750.199 ; gain = 442.949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 750.199 ; gain = 442.949
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 751.340 ; gain = 444.090
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-5396] Clock pin G has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:322]
+WARNING: [Synth 8-5396] Clock pin G has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:23]
+WARNING: [Synth 8-5396] Clock pin G has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:322]
+WARNING: [Synth 8-5396] Clock pin G has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:23]
+WARNING: [Synth 8-5396] Clock pin G has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:322]
+WARNING: [Synth 8-5396] Clock pin G has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:23]
+WARNING: [Synth 8-5396] Clock pin G has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:322]
+WARNING: [Synth 8-5396] Clock pin G has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:23]
+WARNING: [Synth 8-5396] Clock pin G has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:322]
+WARNING: [Synth 8-5396] Clock pin G has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:23]
+WARNING: [Synth 8-5396] Clock pin G has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:322]
+WARNING: [Synth 8-5396] Clock pin G has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:23]
+WARNING: [Synth 8-5396] Clock pin G has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/College/Thesis/VivadoProjects/AES/AES.srcs/sources_1/new/key_expansion.v:322]
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 751.340 ; gain = 444.090
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 751.340 ; gain = 444.090
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 751.340 ; gain = 444.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 751.340 ; gain = 444.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 751.340 ; gain = 444.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 751.340 ; gain = 444.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |blk_mem_gen_0 |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------------+------+
+|      |Cell          |Count |
++------+--------------+------+
+|1     |blk_mem_gen_0 |     1|
+|2     |BUFG          |     3|
+|3     |LUT1          |     2|
+|4     |LUT2          |     6|
+|5     |LUT3          |     3|
+|6     |LUT4          |     2|
+|7     |LUT5          |   770|
+|8     |LUT6          |  2799|
+|9     |MUXF7         |   704|
+|10    |FDCE          |   282|
+|11    |FDPE          |     1|
+|12    |FDRE          |   256|
+|13    |LD            |  1779|
+|14    |IBUF          |     3|
+|15    |OBUF          |    33|
++------+--------------+------+
+
+Report Instance Areas: 
++------+---------+--------------+------+
+|      |Instance |Module        |Cells |
++------+---------+--------------+------+
+|1     |top      |              |  6675|
+|2     |  C0     |counter       |    29|
+|3     |  K1     |KeyIn         |   516|
+|4     |  KX1    |key_expansion |  6059|
++------+---------+--------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 751.340 ; gain = 444.090
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 93 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:32 ; elapsed = 00:00:39 . Memory (MB): peak = 751.340 ; gain = 143.887
+Synthesis Optimization Complete : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 751.340 ; gain = 444.090
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1782 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'top' is not ideal for floorplanning, since the cellview 'key_expansion' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1779 instances were transformed.
+  LD => LDCE: 1779 instances
+
+157 Infos, 113 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:46 ; elapsed = 00:00:49 . Memory (MB): peak = 751.340 ; gain = 449.762
+INFO: [Common 17-1381] The checkpoint 'C:/College/Thesis/VivadoProjects/AES/AES.runs/synth_1/top.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.050 . Memory (MB): peak = 751.340 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Jul 31 17:38:18 2017...
