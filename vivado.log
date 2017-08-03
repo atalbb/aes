@@ -1,0 +1,585 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Thu Aug  3 09:59:47 2017
+# Process ID: 1664
+# Current directory: C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3432 C:\College\Thesis\VivadoProjects\AES_encrypt\AES_encrypt\AES_encrypt.xpr
+# Log file: C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/vivado.log
+# Journal file: C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.srcs/sources_1/new/test.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/Key.coe'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:08 . Memory (MB): peak = 831.445 ; gain = 97.852
+update_compile_order -fileset sources_1
+update_files -from_files C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/Test.coe -to_files C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/Key.coe -filesets [get_filesets *]
+INFO: [filemgmt 20-762] Replacing file 'C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/Key.coe' with file 'C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/Test.coe'.
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property -dict [list CONFIG.Coe_File {C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/Test.coe}] [get_ips blk_mem_gen_0]
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/Test.coe' provided. It will be converted relative to IP Instance files '../../../../Test.coe'
+generate_target all [get_files  C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'blk_mem_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'blk_mem_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'blk_mem_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'blk_mem_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'blk_mem_gen_0'...
+catch { config_ip_cache -export [get_ips -all blk_mem_gen_0] }
+export_ip_user_files -of_objects [get_files C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci] -no_script -sync -force -quiet
+reset_run blk_mem_gen_0_synth_1
+launch_runs -jobs 2 blk_mem_gen_0_synth_1
+[Thu Aug  3 10:01:56 2017] Launched blk_mem_gen_0_synth_1...
+Run output will be captured here: C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.runs/blk_mem_gen_0_synth_1/runme.log
+export_simulation -of_objects [get_files C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci] -directory C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.ip_user_files/sim_scripts -ip_user_files_dir C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.ip_user_files -ipstatic_source_dir C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.cache/compile_simlib/modelsim} {questa=C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.cache/compile_simlib/questa} {riviera=C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.cache/compile_simlib/riviera} {activehdl=C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+update_files -from_files C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.srcs/sources_1/new/keycounter.v -to_files C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.srcs/sources_1/new/counter.v -filesets [get_filesets *]
+INFO: [filemgmt 20-762] Replacing file 'C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.srcs/sources_1/new/counter.v' with file 'C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.srcs/sources_1/new/keycounter.v'.
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Thu Aug  3 11:36:35 2017] Launched synth_1...
+Run output will be captured here: C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.runs/synth_1/runme.log
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Thu Aug  3 11:37:34 2017] Launched synth_1...
+Run output will be captured here: C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.runs/synth_1/runme.log
+launch_simulation
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.2/data/xsim/ip/xsim_ip.ini' copied to run dir:'C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.sim/sim_1/behav'
+INFO: [SIM-utils-54] Inspecting design source files for 'aes_enc_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.sim/sim_1/behav/blk_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.sim/sim_1/behav/Test.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.sim/sim_1/behav'
+"xvlog -m64 --relax -prj aes_enc_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.srcs/sources_1/new/keycounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module keycounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+WARNING: [VRFC 10-1315] redeclaration of ansi port keyInBRAMOUT is not allowed [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.srcs/sources_1/new/top.v:38]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.srcs/sim_1/new/aes_enc_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aes_enc_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 036f8e38103f480f9a48b6941301fc84 --debug typical --relax --mt 2 -L blk_mem_gen_v8_3_6 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot aes_enc_tb_behav xil_defaultlib.aes_enc_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port wea [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.srcs/sources_1/new/top.v:44]
+WARNING: [VRFC 10-1783] select index 62 into current_contents is out of bounds [/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_3/simulation/blk_mem_gen_v8_3.v:2420]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.keycounter
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_output_stage(...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_output_stage(...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_softecc_outpu...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_mem_module(C_...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6(C_FAMILY="art...
+Compiling module xil_defaultlib.blk_mem_gen_0
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.aes_enc_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot aes_enc_tb_behav
+
+****** Webtalk v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.sim/sim_1/behav/xsim.dir/aes_enc_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.sim/sim_1/behav/xsim.dir/aes_enc_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Thu Aug  3 11:38:27 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2017.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Thu Aug  3 11:38:27 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1065.047 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "aes_enc_tb_behav -key {Behavioral:sim_1:Functional:aes_enc_tb} -tclbatch {aes_enc_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+source aes_enc_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module aes_enc_tb.T.B0.inst.native_mem_module.blk_mem_gen_v8_3_6_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'aes_enc_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 1084.121 ; gain = 19.074
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Thu Aug  3 11:40:09 2017] Launched synth_1...
+Run output will be captured here: C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.runs/synth_1/runme.log
+launch_simulation
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.2/data/xsim/ip/xsim_ip.ini' copied to run dir:'C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.sim/sim_1/behav'
+INFO: [SIM-utils-54] Inspecting design source files for 'aes_enc_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.sim/sim_1/behav/blk_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.sim/sim_1/behav/Test.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.sim/sim_1/behav'
+"xvlog -m64 --relax -prj aes_enc_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.srcs/sources_1/new/keycounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module keycounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+WARNING: [VRFC 10-1315] redeclaration of ansi port keyInBRAMOUT is not allowed [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.srcs/sources_1/new/top.v:38]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.srcs/sim_1/new/aes_enc_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aes_enc_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 036f8e38103f480f9a48b6941301fc84 --debug typical --relax --mt 2 -L blk_mem_gen_v8_3_6 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot aes_enc_tb_behav xil_defaultlib.aes_enc_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port wea [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.srcs/sources_1/new/top.v:44]
+WARNING: [VRFC 10-1783] select index 62 into current_contents is out of bounds [/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_3/simulation/blk_mem_gen_v8_3.v:2420]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.keycounter
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_output_stage(...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_output_stage(...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_softecc_outpu...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_mem_module(C_...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6(C_FAMILY="art...
+Compiling module xil_defaultlib.blk_mem_gen_0
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.aes_enc_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot aes_enc_tb_behav
+
+****** Webtalk v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.sim/sim_1/behav/xsim.dir/aes_enc_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.sim/sim_1/behav/xsim.dir/aes_enc_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Thu Aug  3 11:41:03 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2017.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Thu Aug  3 11:41:03 2017...
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "aes_enc_tb_behav -key {Behavioral:sim_1:Functional:aes_enc_tb} -tclbatch {aes_enc_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+source aes_enc_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module aes_enc_tb.T.B0.inst.native_mem_module.blk_mem_gen_v8_3_6_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'aes_enc_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1097.922 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Thu Aug  3 11:57:34 2017] Launched synth_1...
+Run output will be captured here: C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.runs/synth_1/runme.log
+launch_simulation
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.2/data/xsim/ip/xsim_ip.ini' copied to run dir:'C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.sim/sim_1/behav'
+INFO: [SIM-utils-54] Inspecting design source files for 'aes_enc_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.sim/sim_1/behav/blk_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.sim/sim_1/behav/Test.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.sim/sim_1/behav'
+"xvlog -m64 --relax -prj aes_enc_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.srcs/sources_1/new/keycounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module keycounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+WARNING: [VRFC 10-1315] redeclaration of ansi port keyInBRAMOUT is not allowed [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.srcs/sources_1/new/top.v:38]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.srcs/sim_1/new/aes_enc_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aes_enc_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 036f8e38103f480f9a48b6941301fc84 --debug typical --relax --mt 2 -L blk_mem_gen_v8_3_6 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot aes_enc_tb_behav xil_defaultlib.aes_enc_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port wea [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.srcs/sources_1/new/top.v:44]
+WARNING: [VRFC 10-1783] select index 62 into current_contents is out of bounds [/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_3/simulation/blk_mem_gen_v8_3.v:2420]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.keycounter
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_output_stage(...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_output_stage(...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_softecc_outpu...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_mem_module(C_...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6(C_FAMILY="art...
+Compiling module xil_defaultlib.blk_mem_gen_0
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.aes_enc_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot aes_enc_tb_behav
+
+****** Webtalk v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.sim/sim_1/behav/xsim.dir/aes_enc_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.sim/sim_1/behav/xsim.dir/aes_enc_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Thu Aug  3 11:58:28 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2017.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Thu Aug  3 11:58:28 2017...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "aes_enc_tb_behav -key {Behavioral:sim_1:Functional:aes_enc_tb} -tclbatch {aes_enc_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+source aes_enc_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module aes_enc_tb.T.B0.inst.native_mem_module.blk_mem_gen_v8_3_6_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'aes_enc_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1097.922 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Thu Aug  3 12:01:24 2017] Launched synth_1...
+Run output will be captured here: C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.runs/synth_1/runme.log
+launch_simulation
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.2/data/xsim/ip/xsim_ip.ini' copied to run dir:'C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.sim/sim_1/behav'
+INFO: [SIM-utils-54] Inspecting design source files for 'aes_enc_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.sim/sim_1/behav/blk_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.sim/sim_1/behav/Test.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.sim/sim_1/behav'
+"xvlog -m64 --relax -prj aes_enc_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.srcs/sources_1/new/keycounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module keycounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+WARNING: [VRFC 10-1315] redeclaration of ansi port keyInBRAMOUT is not allowed [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.srcs/sources_1/new/top.v:38]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.srcs/sim_1/new/aes_enc_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aes_enc_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 036f8e38103f480f9a48b6941301fc84 --debug typical --relax --mt 2 -L blk_mem_gen_v8_3_6 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot aes_enc_tb_behav xil_defaultlib.aes_enc_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port wea [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.srcs/sources_1/new/top.v:44]
+WARNING: [VRFC 10-1783] select index 62 into current_contents is out of bounds [/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_3/simulation/blk_mem_gen_v8_3.v:2420]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.keycounter
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_output_stage(...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_output_stage(...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_softecc_outpu...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_mem_module(C_...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6(C_FAMILY="art...
+Compiling module xil_defaultlib.blk_mem_gen_0
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.aes_enc_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot aes_enc_tb_behav
+
+****** Webtalk v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.sim/sim_1/behav/xsim.dir/aes_enc_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.sim/sim_1/behav/xsim.dir/aes_enc_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Thu Aug  3 12:04:54 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2017.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Thu Aug  3 12:04:54 2017...
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "aes_enc_tb_behav -key {Behavioral:sim_1:Functional:aes_enc_tb} -tclbatch {aes_enc_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+source aes_enc_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module aes_enc_tb.T.B0.inst.native_mem_module.blk_mem_gen_v8_3_6_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'aes_enc_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1114.422 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Thu Aug  3 12:07:11 2017] Launched synth_1...
+Run output will be captured here: C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.runs/synth_1/runme.log
+launch_simulation
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.2/data/xsim/ip/xsim_ip.ini' copied to run dir:'C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.sim/sim_1/behav'
+INFO: [SIM-utils-54] Inspecting design source files for 'aes_enc_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.sim/sim_1/behav/blk_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.sim/sim_1/behav/Test.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.sim/sim_1/behav'
+"xvlog -m64 --relax -prj aes_enc_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.srcs/sources_1/new/keycounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module keycounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+WARNING: [VRFC 10-1315] redeclaration of ansi port keyInBRAMOUT is not allowed [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.srcs/sources_1/new/top.v:38]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.srcs/sim_1/new/aes_enc_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aes_enc_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 036f8e38103f480f9a48b6941301fc84 --debug typical --relax --mt 2 -L blk_mem_gen_v8_3_6 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot aes_enc_tb_behav xil_defaultlib.aes_enc_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port wea [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.srcs/sources_1/new/top.v:44]
+WARNING: [VRFC 10-1783] select index 62 into current_contents is out of bounds [/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_3/simulation/blk_mem_gen_v8_3.v:2420]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.keycounter
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_output_stage(...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_output_stage(...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_softecc_outpu...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_mem_module(C_...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6(C_FAMILY="art...
+Compiling module xil_defaultlib.blk_mem_gen_0
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.aes_enc_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot aes_enc_tb_behav
+
+****** Webtalk v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.sim/sim_1/behav/xsim.dir/aes_enc_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.sim/sim_1/behav/xsim.dir/aes_enc_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Thu Aug  3 12:11:09 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2017.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Thu Aug  3 12:11:09 2017...
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "aes_enc_tb_behav -key {Behavioral:sim_1:Functional:aes_enc_tb} -tclbatch {aes_enc_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+source aes_enc_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module aes_enc_tb.T.B0.inst.native_mem_module.blk_mem_gen_v8_3_6_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'aes_enc_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1114.422 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Thu Aug  3 12:12:31 2017] Launched synth_1...
+Run output will be captured here: C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.runs/synth_1/runme.log
+launch_simulation
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.2/data/xsim/ip/xsim_ip.ini' copied to run dir:'C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.sim/sim_1/behav'
+INFO: [SIM-utils-54] Inspecting design source files for 'aes_enc_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.sim/sim_1/behav/blk_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.sim/sim_1/behav/Test.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.sim/sim_1/behav'
+"xvlog -m64 --relax -prj aes_enc_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.srcs/sources_1/new/keycounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module keycounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+WARNING: [VRFC 10-1315] redeclaration of ansi port keyInBRAMOUT is not allowed [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.srcs/sources_1/new/top.v:38]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.srcs/sim_1/new/aes_enc_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aes_enc_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 036f8e38103f480f9a48b6941301fc84 --debug typical --relax --mt 2 -L blk_mem_gen_v8_3_6 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot aes_enc_tb_behav xil_defaultlib.aes_enc_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port wea [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.srcs/sources_1/new/top.v:44]
+WARNING: [VRFC 10-1783] select index 62 into current_contents is out of bounds [/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_3/simulation/blk_mem_gen_v8_3.v:2420]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.keycounter
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_output_stage(...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_output_stage(...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_softecc_outpu...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_mem_module(C_...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6(C_FAMILY="art...
+Compiling module xil_defaultlib.blk_mem_gen_0
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.aes_enc_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot aes_enc_tb_behav
+
+****** Webtalk v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.sim/sim_1/behav/xsim.dir/aes_enc_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.sim/sim_1/behav/xsim.dir/aes_enc_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Thu Aug  3 12:15:03 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2017.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Thu Aug  3 12:15:03 2017...
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "aes_enc_tb_behav -key {Behavioral:sim_1:Functional:aes_enc_tb} -tclbatch {aes_enc_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+source aes_enc_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module aes_enc_tb.T.B0.inst.native_mem_module.blk_mem_gen_v8_3_6_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'aes_enc_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1114.422 ; gain = 0.000
