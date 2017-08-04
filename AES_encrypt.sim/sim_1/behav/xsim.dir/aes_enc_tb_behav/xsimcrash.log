@@ -1,6 +1,5 @@
-Unable to capture context for thread 8672 in process 5692, can not generate back trace
-Unable to capture context for thread 5788 in process 5692, can not generate back trace
-Unable to capture context for thread 1820 in process 5692, can not generate back trace
+Unable to capture context for thread 11312 in process 3996, can not generate back trace
+Unable to capture context for thread 6064 in process 3996, can not generate back trace
 Exception at PC 0x00007FF8786EBB93
 Printing stacktrace...
 

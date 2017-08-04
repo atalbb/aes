@@ -3,7 +3,7 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Fri Aug  4 16:45:24 2017">
+<application name="pa" timeStamp="Fri Aug  4 17:10:39 2017">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="f01a95b9412c4c19b31c11616c9609f2" type="ProjectID"/>
 <property name="ProjectIteration" value="1" type="ProjectIteration"/>
@@ -23,27 +23,27 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="EditUndo" value="2" type="JavaHandler"/>
 <property name="NewProject" value="2" type="JavaHandler"/>
 <property name="RecustomizeCore" value="3" type="JavaHandler"/>
-<property name="RunSynthesis" value="92" type="JavaHandler"/>
+<property name="RunSynthesis" value="94" type="JavaHandler"/>
 <property name="SaveFileProxyHandler" value="2" type="JavaHandler"/>
 <property name="ShowView" value="2" type="JavaHandler"/>
 <property name="SimulationClose" value="2" type="JavaHandler"/>
-<property name="SimulationRun" value="136" type="JavaHandler"/>
+<property name="SimulationRun" value="148" type="JavaHandler"/>
 <property name="UpdateSourceFiles" value="3" type="JavaHandler"/>
 </item>
 <item name="Gui Resources Info">
 <property name="AbstractSearchablePanel_SHOW_SEARCH" value="1" type="GuiResourceData"/>
 <property name="AddSrcWizard_SPECIFY_SIMULATION_SPECIFIC_HDL_FILES" value="1" type="GuiResourceData"/>
-<property name="BaseDialog_CANCEL" value="82" type="GuiResourceData"/>
-<property name="BaseDialog_OK" value="100" type="GuiResourceData"/>
+<property name="BaseDialog_CANCEL" value="86" type="GuiResourceData"/>
+<property name="BaseDialog_OK" value="106" type="GuiResourceData"/>
 <property name="BaseDialog_YES" value="1" type="GuiResourceData"/>
 <property name="CmdMsgDialog_OK" value="3" type="GuiResourceData"/>
 <property name="CoreTreeTablePanel_CORE_TREE_TABLE" value="3" type="GuiResourceData"/>
 <property name="CreateSrcFileDialog_FILE_NAME" value="3" type="GuiResourceData"/>
 <property name="DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS" value="3" type="GuiResourceData"/>
-<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="103" type="GuiResourceData"/>
-<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="364" type="GuiResourceData"/>
+<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="107" type="GuiResourceData"/>
+<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="387" type="GuiResourceData"/>
 <property name="GettingStartedView_CREATE_NEW_PROJECT" value="2" type="GuiResourceData"/>
-<property name="GraphicalView_ZOOM_FIT" value="179" type="GuiResourceData"/>
+<property name="GraphicalView_ZOOM_FIT" value="198" type="GuiResourceData"/>
 <property name="HACGCCoeFileDialog_CLOSE" value="3" type="GuiResourceData"/>
 <property name="HACGCCoeFileDialog_SAVE" value="9" type="GuiResourceData"/>
 <property name="HACGCCoeFileDialog_VALIDATE" value="2" type="GuiResourceData"/>
@@ -53,33 +53,34 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PACommandNames_ADD_SOURCES" value="4" type="GuiResourceData"/>
 <property name="PACommandNames_AUTO_UPDATE_HIER" value="11" type="GuiResourceData"/>
 <property name="PACommandNames_IMPORT_SRC" value="1" type="GuiResourceData"/>
-<property name="PACommandNames_SIMULATION_RUN_BEHAVIORAL" value="48" type="GuiResourceData"/>
-<property name="PACommandNames_SIMULATION_RUN_POST_SYNTHESIS_FUNCTIONAL" value="16" type="GuiResourceData"/>
-<property name="PACommandNames_SIMULATION_RUN_POST_SYNTHESIS_TIMING" value="72" type="GuiResourceData"/>
+<property name="PACommandNames_SIMULATION_RUN_BEHAVIORAL" value="51" type="GuiResourceData"/>
+<property name="PACommandNames_SIMULATION_RUN_POST_SYNTHESIS_FUNCTIONAL" value="18" type="GuiResourceData"/>
+<property name="PACommandNames_SIMULATION_RUN_POST_SYNTHESIS_TIMING" value="79" type="GuiResourceData"/>
 <property name="PACommandNames_SRC_REPLACE_FILE" value="3" type="GuiResourceData"/>
 <property name="PAViews_CODE" value="7" type="GuiResourceData"/>
 <property name="PAViews_DEVICE" value="1" type="GuiResourceData"/>
 <property name="PartChooser_BOARDS" value="2" type="GuiResourceData"/>
 <property name="PartChooser_BOARD_VENDOR_CHOOSER" value="1" type="GuiResourceData"/>
-<property name="ProgressDialog_CANCEL" value="1" type="GuiResourceData"/>
+<property name="ProgressDialog_CANCEL" value="2" type="GuiResourceData"/>
 <property name="ProjectNameChooser_CHOOSE_PROJECT_LOCATION" value="3" type="GuiResourceData"/>
 <property name="ProjectNameChooser_PROJECT_NAME" value="2" type="GuiResourceData"/>
 <property name="ProjectTab_CLOSE_DESIGN" value="1" type="GuiResourceData"/>
-<property name="ProjectTab_RELOAD" value="51" type="GuiResourceData"/>
+<property name="ProjectTab_RELOAD" value="53" type="GuiResourceData"/>
 <property name="RDICommands_COPY" value="1" type="GuiResourceData"/>
-<property name="RDIViews_WAVEFORM_VIEWER" value="149" type="GuiResourceData"/>
+<property name="RDIViews_WAVEFORM_VIEWER" value="187" type="GuiResourceData"/>
 <property name="SaveProjectUtils_SAVE" value="4" type="GuiResourceData"/>
 <property name="SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY" value="3" type="GuiResourceData"/>
 <property name="SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE" value="15" type="GuiResourceData"/>
-<property name="SimulationScopesPanel_SIMULATION_SCOPES_TREE_TABLE" value="42" type="GuiResourceData"/>
+<property name="SimulationScopesPanel_SIMULATION_SCOPES_TREE_TABLE" value="44" type="GuiResourceData"/>
 <property name="SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT" value="2" type="GuiResourceData"/>
 <property name="SrcChooserPanel_CREATE_FILE" value="3" type="GuiResourceData"/>
 <property name="SrcMenu_IP_HIERARCHY" value="9" type="GuiResourceData"/>
 <property name="SrcMenu_REFRESH_HIERARCHY" value="3" type="GuiResourceData"/>
 <property name="SyntheticaGettingStartedView_RECENT_PROJECTS" value="1" type="GuiResourceData"/>
 <property name="SyntheticaStateMonitor_CANCEL" value="2" type="GuiResourceData"/>
-<property name="TaskBanner_CLOSE" value="84" type="GuiResourceData"/>
+<property name="TaskBanner_CLOSE" value="93" type="GuiResourceData"/>
 <property name="WaveformNameTree_WAVEFORM_NAME_TREE" value="8" type="GuiResourceData"/>
+<property name="WaveformView_GOTO_CURSOR" value="1" type="GuiResourceData"/>
 </item>
 <item name="Other">
 <property name="GuiMode" value="10" type="GuiMode"/>

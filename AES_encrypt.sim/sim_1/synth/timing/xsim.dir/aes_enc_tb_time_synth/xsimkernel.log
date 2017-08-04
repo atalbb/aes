@@ -1,7 +1,7 @@
-Running: xsim.dir/aes_enc_tb_time_synth/xsimk.exe -simmode gui -wdb aes_enc_tb_time_synth.wdb -simrunnum 0 -socket 65412
+Running: xsim.dir/aes_enc_tb_time_synth/xsimk.exe -simmode gui -wdb aes_enc_tb_time_synth.wdb -simrunnum 0 -socket 65490
 Design successfully loaded
-Design Loading Memory Usage: 6544 KB (Peak: 6544 KB)
-Design Loading CPU Usage: 30 ms
+Design Loading Memory Usage: 6916 KB (Peak: 6916 KB)
+Design Loading CPU Usage: 15 ms
 Simulation completed
-Simulation Memory Usage: 7488 KB (Peak: 7488 KB)
-Simulation CPU Usage: 46 ms
+Simulation Memory Usage: 8248 KB (Peak: 8248 KB)
+Simulation CPU Usage: 30 ms
