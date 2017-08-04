@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.sim/sim_1/synth/func/aes_enc_tb_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PlaintextAddrCounter
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.srcs/sim_1/new/aes_enc_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aes_enc_tb

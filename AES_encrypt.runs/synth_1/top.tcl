@@ -7,10 +7,8 @@ create_project -in_memory -part xc7a100tcsg324-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
 set_property webtalk.parent_dir C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.cache/wt [current_project]
 set_property parent.project_path C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.xpr [current_project]
-set_property XPM_LIBRARIES XPM_MEMORY [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part digilentinc.com:nexys4:part0:1.1 [current_project]
@@ -18,13 +16,9 @@ set_property ip_output_repo c:/College/Thesis/VivadoProjects/AES_encrypt/AES_enc
 set_property ip_cache_permissions {read write} [current_project]
 add_files C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/Test.coe
 read_verilog -library xil_defaultlib {
-  C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.srcs/sources_1/new/keycounter.v
+  C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.srcs/sources_1/new/PlaintextAddrCounter.v
   C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.srcs/sources_1/new/top.v
 }
-read_ip -quiet C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
-set_property used_in_implementation false [get_files -all c:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_ooc.xdc]
-set_property is_locked true [get_files C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci]
-
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
 # design are intentionally left as such for best results. Dcp files will be

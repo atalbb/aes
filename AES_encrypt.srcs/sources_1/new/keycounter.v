@@ -26,29 +26,21 @@ module keycounter(input wire clk,
                  output reg valid,
                  output reg [7:0]out
     );
-reg start_flag;
-parameter N =  59; // Number of Words minus 1
-always @(posedge clk or negedge rst or posedge en)begin
+//reg start_flag;
+reg [7:0]N; // Number of Words minus 1
+reg [7:0]addr;
+always @(posedge clk or negedge rst)begin
    if (!rst) begin
      out <= 0;
      valid <= 0;
+     addr <= 0;
    end else if (en) begin
-     start_flag <= 1;
+     out <= addr;
      valid <= 1;
+     if(addr < N)
+        addr <= addr + 1;
    end else if(!en)begin
-      start_flag <= 0; 
+      valid <= 0;
    end
-end
-always @(posedge clk)begin
-   if(start_flag)begin
-        if(out < N)begin
-            out <= out + 1;
-            valid <= 1;
-        end else begin
-            start_flag <=0;
-            valid <= 0;
-        end 
-            
-   end 
 end
 endmodule
