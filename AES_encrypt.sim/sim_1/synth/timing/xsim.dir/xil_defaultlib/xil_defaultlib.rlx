@@ -2,5 +2,5 @@
 2017.2
 Jun 15 2017
 18:52:51
-C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.sim/sim_1/synth/timing/aes_enc_tb_time_synth.v,1501881110,verilog,,,,PlaintextAddrCounter;blk_mem_gen_0;blk_mem_gen_0_blk_mem_gen_generic_cstr;blk_mem_gen_0_blk_mem_gen_prim_width;blk_mem_gen_0_blk_mem_gen_prim_wrapper_init;blk_mem_gen_0_blk_mem_gen_top;blk_mem_gen_0_blk_mem_gen_v8_3_6;blk_mem_gen_0_blk_mem_gen_v8_3_6_synth;glbl;top,,,,,,,,
-C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.srcs/sim_1/new/aes_enc_tb.v,1501880835,verilog,,,,aes_enc_tb,,,,,,,,
+C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.sim/sim_1/synth/timing/aes_enc_tb_time_synth.v,1502138911,verilog,,,,PlaintextAddrCounter;blk_mem_gen_0;blk_mem_gen_0__blk_mem_gen_generic_cstr;blk_mem_gen_0__blk_mem_gen_prim_width;blk_mem_gen_0__blk_mem_gen_prim_wrapper_init;blk_mem_gen_0__blk_mem_gen_top;blk_mem_gen_0__blk_mem_gen_v8_3_6;blk_mem_gen_0__blk_mem_gen_v8_3_6_synth;encryption;glbl;top,,,,,,,,
+C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sim_1/new/aes_enc_tb.v,1502138893,verilog,,,,aes_enc_tb,,,,,,,,

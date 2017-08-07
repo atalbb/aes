@@ -32,14 +32,14 @@ parameter HALF_CLK = 5;
     reg clk,rst,enb;
     wire [31:0]finalOut;
     wire finalDone;
-    top T(clk,rst,enb,finalOut);
+    top T(clk,rst,enb,finalDone,finalOut);
     initial begin
         clk = 0;
         rst = 1;
         enb = 0;
         #100 rst = 0;
         #100 rst = 1;
-        #100 enb = 0;
+        //#100 enb = 0;
         #100 enb = 1;
         #100 enb = 0;
         #100 enb = 1;

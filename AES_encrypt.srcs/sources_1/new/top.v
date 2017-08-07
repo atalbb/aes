@@ -25,13 +25,15 @@
 module top(input wire clk,
            input wire rst,
            input wire enPlainTextIn,
-           output wire [31:0]plainTextBRAMOUT
+           output wire cipherTextDone,
+           output wire [31:0]cipherTextOut
            );
+wire [31:0]plainTextBRAMOUT;
 wire plainTextAddrValid;
 wire [256:0]plainTextAddr;       
 PlaintextAddrCounter PT1(clk,rst,enPlainTextIn,plainTextAddrValid,plainTextAddr);
 blk_mem_gen_0 B0(clk,plainTextAddrValid,0,plainTextAddr,32'h0,plainTextBRAMOUT);//BRAM for HashIn
-
+encryption E0(clk,rst,enPlainTextIn,plainTextBRAMOUT,cipherTextDone,cipherTextOut);
 endmodule
 
 

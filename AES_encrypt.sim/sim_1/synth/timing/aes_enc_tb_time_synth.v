@@ -1,10 +1,10 @@
 // Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
-// Date        : Fri Aug  4 17:11:50 2017
+// Date        : Mon Aug  7 16:48:31 2017
 // Host        : LAPTOP-L1N8U9P6 running 64-bit major release  (build 9200)
 // Command     : write_verilog -mode timesim -nolib -sdf_anno true -force -file
-//               C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.sim/sim_1/synth/timing/aes_enc_tb_time_synth.v
+//               C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.sim/sim_1/synth/timing/aes_enc_tb_time_synth.v
 // Design      : top
 // Purpose     : This verilog netlist is a timing simulation representation of the design and should not be modified or
 //               synthesized. Please ensure that this netlist is used with the corresponding SDF file.
@@ -15,53 +15,55 @@
 
 module PlaintextAddrCounter
    (addr,
+    valid_reg_0,
     ena,
     enPlainTextIn_IBUF,
-    clka,
+    CLK,
     rst_IBUF);
   output [7:0]addr;
+  output valid_reg_0;
   output ena;
   input enPlainTextIn_IBUF;
-  input clka;
+  input CLK;
   input rst_IBUF;
 
+  wire CLK;
   wire [7:0]addr;
-  wire \addr[0]_i_1_n_0 ;
-  wire \addr[7]_i_1_n_0 ;
-  wire \addr[7]_i_3_n_0 ;
-  wire clka;
+  wire \addr[0]_i_1_n_1 ;
+  wire \addr[7]_i_1_n_1 ;
+  wire \addr[7]_i_3_n_1 ;
   wire enPlainTextIn_IBUF;
   wire ena;
-  wire flag1_carry_i_1_n_0;
-  wire flag1_carry_i_2_n_0;
-  wire flag1_carry_i_3_n_0;
-  wire flag1_carry_i_4_n_0;
-  wire flag1_carry_i_5_n_0;
-  wire flag1_carry_i_6_n_0;
-  wire flag1_carry_i_7_n_0;
-  wire flag1_carry_i_8_n_0;
-  wire flag1_carry_n_0;
+  wire flag1_carry_i_1_n_1;
+  wire flag1_carry_i_2_n_1;
+  wire flag1_carry_i_3_n_1;
+  wire flag1_carry_i_4_n_1;
+  wire flag1_carry_i_5_n_1;
+  wire flag1_carry_i_6_n_1;
+  wire flag1_carry_i_7_n_1;
+  wire flag1_carry_i_8_n_1;
   wire flag1_carry_n_1;
   wire flag1_carry_n_2;
   wire flag1_carry_n_3;
-  wire \flag[0]_i_1_n_0 ;
-  wire \flag[1]_i_1_n_0 ;
-  wire \flag[1]_i_2_n_0 ;
-  wire \flag_reg_n_0_[0] ;
-  wire \flag_reg_n_0_[1] ;
+  wire flag1_carry_n_4;
+  wire \flag[0]_i_1_n_1 ;
+  wire \flag[1]_i_1_n_1 ;
+  wire \flag_reg_n_1_[0] ;
+  wire \flag_reg_n_1_[1] ;
   wire [7:1]p_0_in;
   wire [7:2]p_0_in__0;
   wire rst_IBUF;
-  wire \temp[7]_i_1_n_0 ;
+  wire \temp[7]_i_1_n_1 ;
   wire [7:2]temp_reg__0;
-  wire valid_i_1_n_0;
+  wire valid_i_1_n_1;
+  wire valid_reg_0;
   wire [3:0]NLW_flag1_carry_O_UNCONNECTED;
 
   LUT1 #(
     .INIT(2'h1)) 
     \addr[0]_i_1 
        (.I0(addr[0]),
-        .O(\addr[0]_i_1_n_0 ));
+        .O(\addr[0]_i_1_n_1 ));
   (* SOFT_HLUTNM = "soft_lutpair3" *) 
   LUT2 #(
     .INIT(4'h6)) 
@@ -110,22 +112,22 @@ module PlaintextAddrCounter
   LUT2 #(
     .INIT(4'h6)) 
     \addr[6]_i_1 
-       (.I0(\addr[7]_i_3_n_0 ),
+       (.I0(\addr[7]_i_3_n_1 ),
         .I1(addr[6]),
         .O(p_0_in[6]));
   LUT4 #(
     .INIT(16'h0830)) 
     \addr[7]_i_1 
-       (.I0(flag1_carry_n_0),
+       (.I0(flag1_carry_n_1),
         .I1(enPlainTextIn_IBUF),
-        .I2(\flag_reg_n_0_[1] ),
-        .I3(\flag_reg_n_0_[0] ),
-        .O(\addr[7]_i_1_n_0 ));
+        .I2(\flag_reg_n_1_[1] ),
+        .I3(\flag_reg_n_1_[0] ),
+        .O(\addr[7]_i_1_n_1 ));
   (* SOFT_HLUTNM = "soft_lutpair4" *) 
   LUT3 #(
     .INIT(8'h78)) 
     \addr[7]_i_2 
-       (.I0(\addr[7]_i_3_n_0 ),
+       (.I0(\addr[7]_i_3_n_1 ),
         .I1(addr[6]),
         .I2(addr[7]),
         .O(p_0_in[7]));
@@ -138,78 +140,78 @@ module PlaintextAddrCounter
         .I3(addr[0]),
         .I4(addr[2]),
         .I5(addr[4]),
-        .O(\addr[7]_i_3_n_0 ));
+        .O(\addr[7]_i_3_n_1 ));
   FDCE #(
     .INIT(1'b0)) 
     \addr_reg[0] 
-       (.C(clka),
-        .CE(\addr[7]_i_1_n_0 ),
-        .CLR(\flag[1]_i_2_n_0 ),
-        .D(\addr[0]_i_1_n_0 ),
+       (.C(CLK),
+        .CE(\addr[7]_i_1_n_1 ),
+        .CLR(valid_reg_0),
+        .D(\addr[0]_i_1_n_1 ),
         .Q(addr[0]));
   FDCE #(
     .INIT(1'b0)) 
     \addr_reg[1] 
-       (.C(clka),
-        .CE(\addr[7]_i_1_n_0 ),
-        .CLR(\flag[1]_i_2_n_0 ),
+       (.C(CLK),
+        .CE(\addr[7]_i_1_n_1 ),
+        .CLR(valid_reg_0),
         .D(p_0_in[1]),
         .Q(addr[1]));
   FDCE #(
     .INIT(1'b0)) 
     \addr_reg[2] 
-       (.C(clka),
-        .CE(\addr[7]_i_1_n_0 ),
-        .CLR(\flag[1]_i_2_n_0 ),
+       (.C(CLK),
+        .CE(\addr[7]_i_1_n_1 ),
+        .CLR(valid_reg_0),
         .D(p_0_in[2]),
         .Q(addr[2]));
   FDCE #(
     .INIT(1'b0)) 
     \addr_reg[3] 
-       (.C(clka),
-        .CE(\addr[7]_i_1_n_0 ),
-        .CLR(\flag[1]_i_2_n_0 ),
+       (.C(CLK),
+        .CE(\addr[7]_i_1_n_1 ),
+        .CLR(valid_reg_0),
         .D(p_0_in[3]),
         .Q(addr[3]));
   FDCE #(
     .INIT(1'b0)) 
     \addr_reg[4] 
-       (.C(clka),
-        .CE(\addr[7]_i_1_n_0 ),
-        .CLR(\flag[1]_i_2_n_0 ),
+       (.C(CLK),
+        .CE(\addr[7]_i_1_n_1 ),
+        .CLR(valid_reg_0),
         .D(p_0_in[4]),
         .Q(addr[4]));
   FDCE #(
     .INIT(1'b0)) 
     \addr_reg[5] 
-       (.C(clka),
-        .CE(\addr[7]_i_1_n_0 ),
-        .CLR(\flag[1]_i_2_n_0 ),
+       (.C(CLK),
+        .CE(\addr[7]_i_1_n_1 ),
+        .CLR(valid_reg_0),
         .D(p_0_in[5]),
         .Q(addr[5]));
   FDCE #(
     .INIT(1'b0)) 
     \addr_reg[6] 
-       (.C(clka),
-        .CE(\addr[7]_i_1_n_0 ),
-        .CLR(\flag[1]_i_2_n_0 ),
+       (.C(CLK),
+        .CE(\addr[7]_i_1_n_1 ),
+        .CLR(valid_reg_0),
         .D(p_0_in[6]),
         .Q(addr[6]));
   FDCE #(
     .INIT(1'b0)) 
     \addr_reg[7] 
-       (.C(clka),
-        .CE(\addr[7]_i_1_n_0 ),
-        .CLR(\flag[1]_i_2_n_0 ),
+       (.C(CLK),
+        .CE(\addr[7]_i_1_n_1 ),
+        .CLR(valid_reg_0),
         .D(p_0_in[7]),
         .Q(addr[7]));
   CARRY4 flag1_carry
        (.CI(1'b0),
-        .CO({flag1_carry_n_0,flag1_carry_n_1,flag1_carry_n_2,flag1_carry_n_3}),
+        .CO({flag1_carry_n_1,flag1_carry_n_2,flag1_carry_n_3,flag1_carry_n_4}),
         .CYINIT(1'b0),
-        .DI({flag1_carry_i_1_n_0,flag1_carry_i_2_n_0,flag1_carry_i_3_n_0,flag1_carry_i_4_n_0}),
+        .DI({flag1_carry_i_1_n_1,flag1_carry_i_2_n_1,flag1_carry_i_3_n_1,flag1_carry_i_4_n_1}),
         .O(NLW_flag1_carry_O_UNCONNECTED[3:0]),
-        .S({flag1_carry_i_5_n_0,flag1_carry_i_6_n_0,flag1_carry_i_7_n_0,flag1_carry_i_8_n_0}));
+        .S({flag1_carry_i_5_n_1,flag1_carry_i_6_n_1,flag1_carry_i_7_n_1,flag1_carry_i_8_n_1}));
   LUT4 #(
     .INIT(16'h2F02)) 
     flag1_carry_i_1
@@ -217,7 +219,7 @@ module PlaintextAddrCounter
         .I1(addr[6]),
         .I2(addr[7]),
         .I3(temp_reg__0[7]),
-        .O(flag1_carry_i_1_n_0));
+        .O(flag1_carry_i_1_n_1));
   LUT4 #(
     .INIT(16'h2F02)) 
     flag1_carry_i_2
@@ -225,7 +227,7 @@ module PlaintextAddrCounter
         .I1(addr[4]),
         .I2(addr[5]),
         .I3(temp_reg__0[5]),
-        .O(flag1_carry_i_2_n_0));
+        .O(flag1_carry_i_2_n_1));
   LUT4 #(
     .INIT(16'h2F02)) 
     flag1_carry_i_3
@@ -233,13 +235,13 @@ module PlaintextAddrCounter
         .I1(addr[2]),
         .I2(addr[3]),
         .I3(temp_reg__0[3]),
-        .O(flag1_carry_i_3_n_0));
+        .O(flag1_carry_i_3_n_1));
   LUT2 #(
     .INIT(4'h7)) 
     flag1_carry_i_4
        (.I0(addr[0]),
         .I1(addr[1]),
-        .O(flag1_carry_i_4_n_0));
+        .O(flag1_carry_i_4_n_1));
   LUT4 #(
     .INIT(16'h9009)) 
     flag1_carry_i_5
@@ -247,7 +249,7 @@ module PlaintextAddrCounter
         .I1(addr[6]),
         .I2(temp_reg__0[7]),
         .I3(addr[7]),
-        .O(flag1_carry_i_5_n_0));
+        .O(flag1_carry_i_5_n_1));
   LUT4 #(
     .INIT(16'h9009)) 
     flag1_carry_i_6
@@ -255,7 +257,7 @@ module PlaintextAddrCounter
         .I1(addr[4]),
         .I2(temp_reg__0[5]),
         .I3(addr[5]),
-        .O(flag1_carry_i_6_n_0));
+        .O(flag1_carry_i_6_n_1));
   LUT4 #(
     .INIT(16'h9009)) 
     flag1_carry_i_7
@@ -263,51 +265,51 @@ module PlaintextAddrCounter
         .I1(addr[2]),
         .I2(temp_reg__0[3]),
         .I3(addr[3]),
-        .O(flag1_carry_i_7_n_0));
+        .O(flag1_carry_i_7_n_1));
   LUT2 #(
     .INIT(4'h8)) 
     flag1_carry_i_8
        (.I0(addr[0]),
         .I1(addr[1]),
-        .O(flag1_carry_i_8_n_0));
+        .O(flag1_carry_i_8_n_1));
   LUT4 #(
     .INIT(16'hFB0C)) 
     \flag[0]_i_1 
-       (.I0(flag1_carry_n_0),
+       (.I0(flag1_carry_n_1),
         .I1(enPlainTextIn_IBUF),
-        .I2(\flag_reg_n_0_[1] ),
-        .I3(\flag_reg_n_0_[0] ),
-        .O(\flag[0]_i_1_n_0 ));
+        .I2(\flag_reg_n_1_[1] ),
+        .I3(\flag_reg_n_1_[0] ),
+        .O(\flag[0]_i_1_n_1 ));
   (* SOFT_HLUTNM = "soft_lutpair1" *) 
   LUT4 #(
     .INIT(16'hF4C0)) 
     \flag[1]_i_1 
-       (.I0(flag1_carry_n_0),
+       (.I0(flag1_carry_n_1),
         .I1(enPlainTextIn_IBUF),
-        .I2(\flag_reg_n_0_[1] ),
-        .I3(\flag_reg_n_0_[0] ),
-        .O(\flag[1]_i_1_n_0 ));
+        .I2(\flag_reg_n_1_[1] ),
+        .I3(\flag_reg_n_1_[0] ),
+        .O(\flag[1]_i_1_n_1 ));
   LUT1 #(
     .INIT(2'h1)) 
     \flag[1]_i_2 
        (.I0(rst_IBUF),
-        .O(\flag[1]_i_2_n_0 ));
+        .O(valid_reg_0));
   FDCE #(
     .INIT(1'b0)) 
     \flag_reg[0] 
-       (.C(clka),
+       (.C(CLK),
         .CE(1'b1),
-        .CLR(\flag[1]_i_2_n_0 ),
-        .D(\flag[0]_i_1_n_0 ),
-        .Q(\flag_reg_n_0_[0] ));
+        .CLR(valid_reg_0),
+        .D(\flag[0]_i_1_n_1 ),
+        .Q(\flag_reg_n_1_[0] ));
   FDCE #(
     .INIT(1'b0)) 
     \flag_reg[1] 
-       (.C(clka),
+       (.C(CLK),
         .CE(1'b1),
-        .CLR(\flag[1]_i_2_n_0 ),
-        .D(\flag[1]_i_1_n_0 ),
-        .Q(\flag_reg_n_0_[1] ));
+        .CLR(valid_reg_0),
+        .D(\flag[1]_i_1_n_1 ),
+        .Q(\flag_reg_n_1_[1] ));
   LUT1 #(
     .INIT(2'h1)) 
     \temp[2]_i_1 
@@ -350,10 +352,10 @@ module PlaintextAddrCounter
   LUT3 #(
     .INIT(8'h04)) 
     \temp[7]_i_1 
-       (.I0(\flag_reg_n_0_[0] ),
-        .I1(\flag_reg_n_0_[1] ),
+       (.I0(\flag_reg_n_1_[0] ),
+        .I1(\flag_reg_n_1_[1] ),
         .I2(enPlainTextIn_IBUF),
-        .O(\temp[7]_i_1_n_0 ));
+        .O(\temp[7]_i_1_n_1 ));
   LUT6 #(
     .INIT(64'h7FFFFFFF80000000)) 
     \temp[7]_i_2 
@@ -367,68 +369,68 @@ module PlaintextAddrCounter
   FDCE #(
     .INIT(1'b0)) 
     \temp_reg[2] 
-       (.C(clka),
-        .CE(\temp[7]_i_1_n_0 ),
-        .CLR(\flag[1]_i_2_n_0 ),
+       (.C(CLK),
+        .CE(\temp[7]_i_1_n_1 ),
+        .CLR(valid_reg_0),
         .D(p_0_in__0[2]),
         .Q(temp_reg__0[2]));
   FDCE #(
     .INIT(1'b0)) 
     \temp_reg[3] 
-       (.C(clka),
-        .CE(\temp[7]_i_1_n_0 ),
-        .CLR(\flag[1]_i_2_n_0 ),
+       (.C(CLK),
+        .CE(\temp[7]_i_1_n_1 ),
+        .CLR(valid_reg_0),
         .D(p_0_in__0[3]),
         .Q(temp_reg__0[3]));
   FDCE #(
     .INIT(1'b0)) 
     \temp_reg[4] 
-       (.C(clka),
-        .CE(\temp[7]_i_1_n_0 ),
-        .CLR(\flag[1]_i_2_n_0 ),
+       (.C(CLK),
+        .CE(\temp[7]_i_1_n_1 ),
+        .CLR(valid_reg_0),
         .D(p_0_in__0[4]),
         .Q(temp_reg__0[4]));
   FDCE #(
     .INIT(1'b0)) 
     \temp_reg[5] 
-       (.C(clka),
-        .CE(\temp[7]_i_1_n_0 ),
-        .CLR(\flag[1]_i_2_n_0 ),
+       (.C(CLK),
+        .CE(\temp[7]_i_1_n_1 ),
+        .CLR(valid_reg_0),
         .D(p_0_in__0[5]),
         .Q(temp_reg__0[5]));
   FDCE #(
     .INIT(1'b0)) 
     \temp_reg[6] 
-       (.C(clka),
-        .CE(\temp[7]_i_1_n_0 ),
-        .CLR(\flag[1]_i_2_n_0 ),
+       (.C(CLK),
+        .CE(\temp[7]_i_1_n_1 ),
+        .CLR(valid_reg_0),
         .D(p_0_in__0[6]),
         .Q(temp_reg__0[6]));
   FDCE #(
     .INIT(1'b0)) 
     \temp_reg[7] 
-       (.C(clka),
-        .CE(\temp[7]_i_1_n_0 ),
-        .CLR(\flag[1]_i_2_n_0 ),
+       (.C(CLK),
+        .CE(\temp[7]_i_1_n_1 ),
+        .CLR(valid_reg_0),
         .D(p_0_in__0[7]),
         .Q(temp_reg__0[7]));
   (* SOFT_HLUTNM = "soft_lutpair1" *) 
   LUT5 #(
     .INIT(32'hFBCF000C)) 
     valid_i_1
-       (.I0(flag1_carry_n_0),
+       (.I0(flag1_carry_n_1),
         .I1(enPlainTextIn_IBUF),
-        .I2(\flag_reg_n_0_[1] ),
-        .I3(\flag_reg_n_0_[0] ),
+        .I2(\flag_reg_n_1_[1] ),
+        .I3(\flag_reg_n_1_[0] ),
         .I4(ena),
-        .O(valid_i_1_n_0));
+        .O(valid_i_1_n_1));
   FDCE #(
     .INIT(1'b0)) 
     valid_reg
-       (.C(clka),
+       (.C(CLK),
         .CE(1'b1),
-        .CLR(\flag[1]_i_2_n_0 ),
-        .D(valid_i_1_n_0),
+        .CLR(valid_reg_0),
+        .D(valid_i_1_n_1),
         .Q(ena));
 endmodule
 
@@ -548,7 +550,7 @@ module blk_mem_gen_0
   (* C_WRITE_WIDTH_B = "32" *) 
   (* C_XDEVICEFAMILY = "artix7" *) 
   (* downgradeipidentifiedwarnings = "yes" *) 
-  blk_mem_gen_0_blk_mem_gen_v8_3_6 U0
+  blk_mem_gen_0__blk_mem_gen_v8_3_6 U0
        (.addra(addra),
         .addrb({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
         .clka(clka),
@@ -614,28 +616,792 @@ module blk_mem_gen_0
         .web(1'b0));
 endmodule
 
+module encryption
+   (ciphertextDone,
+    \cipherTextOut[31] ,
+    n_0_27_BUFG_inst_n_1,
+    ciphertext,
+    enPlainTextIn_IBUF,
+    E,
+    CLK,
+    rst,
+    plaintext,
+    \FSM_sequential_curr_state_reg[2]_0 );
+  output ciphertextDone;
+  output \cipherTextOut[31] ;
+  output n_0_27_BUFG_inst_n_1;
+  output [31:0]ciphertext;
+  input enPlainTextIn_IBUF;
+  input [0:0]E;
+  input CLK;
+  input rst;
+  input [31:0]plaintext;
+  input [0:0]\FSM_sequential_curr_state_reg[2]_0 ;
+
+  wire \/i_/i__n_1 ;
+  wire CLK;
+  wire [0:0]E;
+  wire [0:0]\FSM_sequential_curr_state_reg[2]_0 ;
+  wire \FSM_sequential_next_state_reg[0]_i_1_n_1 ;
+  wire \FSM_sequential_next_state_reg[1]_i_1_n_1 ;
+  wire \FSM_sequential_next_state_reg[2]_i_1_n_1 ;
+  wire \cipherTextOut[31] ;
+  wire [31:0]ciphertext;
+  wire ciphertextDone;
+  (* RTL_KEEP = "yes" *) wire [2:0]curr_state;
+  wire enPlainTextIn_IBUF;
+  wire n_0_27_BUFG_inst_n_1;
+  wire [2:0]next_state;
+  wire [31:0]plaintext;
+  wire rst;
+  wire \w_reg_n_1_[3][0] ;
+  wire \w_reg_n_1_[3][10] ;
+  wire \w_reg_n_1_[3][11] ;
+  wire \w_reg_n_1_[3][12] ;
+  wire \w_reg_n_1_[3][13] ;
+  wire \w_reg_n_1_[3][14] ;
+  wire \w_reg_n_1_[3][15] ;
+  wire \w_reg_n_1_[3][16] ;
+  wire \w_reg_n_1_[3][17] ;
+  wire \w_reg_n_1_[3][18] ;
+  wire \w_reg_n_1_[3][19] ;
+  wire \w_reg_n_1_[3][1] ;
+  wire \w_reg_n_1_[3][20] ;
+  wire \w_reg_n_1_[3][21] ;
+  wire \w_reg_n_1_[3][22] ;
+  wire \w_reg_n_1_[3][23] ;
+  wire \w_reg_n_1_[3][24] ;
+  wire \w_reg_n_1_[3][25] ;
+  wire \w_reg_n_1_[3][26] ;
+  wire \w_reg_n_1_[3][27] ;
+  wire \w_reg_n_1_[3][28] ;
+  wire \w_reg_n_1_[3][29] ;
+  wire \w_reg_n_1_[3][2] ;
+  wire \w_reg_n_1_[3][30] ;
+  wire \w_reg_n_1_[3][31] ;
+  wire \w_reg_n_1_[3][3] ;
+  wire \w_reg_n_1_[3][4] ;
+  wire \w_reg_n_1_[3][5] ;
+  wire \w_reg_n_1_[3][6] ;
+  wire \w_reg_n_1_[3][7] ;
+  wire \w_reg_n_1_[3][8] ;
+  wire \w_reg_n_1_[3][9] ;
+
+  LUT4 #(
+    .INIT(16'h2000)) 
+    \/i_ 
+       (.I0(curr_state[2]),
+        .I1(curr_state[0]),
+        .I2(enPlainTextIn_IBUF),
+        .I3(curr_state[1]),
+        .O(\cipherTextOut[31] ));
+  LUT4 #(
+    .INIT(16'h70F1)) 
+    \/i_/i_ 
+       (.I0(curr_state[2]),
+        .I1(curr_state[1]),
+        .I2(enPlainTextIn_IBUF),
+        .I3(curr_state[0]),
+        .O(\/i_/i__n_1 ));
+  (* KEEP = "yes" *) 
+  FDCE #(
+    .INIT(1'b0)) 
+    \FSM_sequential_curr_state_reg[0] 
+       (.C(CLK),
+        .CE(1'b1),
+        .CLR(rst),
+        .D(next_state[0]),
+        .Q(curr_state[0]));
+  (* KEEP = "yes" *) 
+  FDCE #(
+    .INIT(1'b0)) 
+    \FSM_sequential_curr_state_reg[1] 
+       (.C(CLK),
+        .CE(1'b1),
+        .CLR(rst),
+        .D(next_state[1]),
+        .Q(curr_state[1]));
+  (* KEEP = "yes" *) 
+  FDCE #(
+    .INIT(1'b0)) 
+    \FSM_sequential_curr_state_reg[2] 
+       (.C(CLK),
+        .CE(1'b1),
+        .CLR(rst),
+        .D(next_state[2]),
+        .Q(curr_state[2]));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \FSM_sequential_next_state_reg[0] 
+       (.CLR(1'b0),
+        .D(\FSM_sequential_next_state_reg[0]_i_1_n_1 ),
+        .G(\/i_/i__n_1 ),
+        .GE(1'b1),
+        .Q(next_state[0]));
+  LUT1 #(
+    .INIT(2'h1)) 
+    \FSM_sequential_next_state_reg[0]_i_1 
+       (.I0(curr_state[0]),
+        .O(\FSM_sequential_next_state_reg[0]_i_1_n_1 ));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \FSM_sequential_next_state_reg[1] 
+       (.CLR(1'b0),
+        .D(\FSM_sequential_next_state_reg[1]_i_1_n_1 ),
+        .G(\/i_/i__n_1 ),
+        .GE(1'b1),
+        .Q(next_state[1]));
+  LUT2 #(
+    .INIT(4'h6)) 
+    \FSM_sequential_next_state_reg[1]_i_1 
+       (.I0(curr_state[0]),
+        .I1(curr_state[1]),
+        .O(\FSM_sequential_next_state_reg[1]_i_1_n_1 ));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \FSM_sequential_next_state_reg[2] 
+       (.CLR(1'b0),
+        .D(\FSM_sequential_next_state_reg[2]_i_1_n_1 ),
+        .G(\/i_/i__n_1 ),
+        .GE(1'b1),
+        .Q(next_state[2]));
+  LUT3 #(
+    .INIT(8'hEA)) 
+    \FSM_sequential_next_state_reg[2]_i_1 
+       (.I0(curr_state[2]),
+        .I1(curr_state[0]),
+        .I2(curr_state[1]),
+        .O(\FSM_sequential_next_state_reg[2]_i_1_n_1 ));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    ciphertextDone_reg
+       (.CLR(1'b0),
+        .D(enPlainTextIn_IBUF),
+        .G(E),
+        .GE(1'b1),
+        .Q(ciphertextDone));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \ciphertext_reg[0] 
+       (.CLR(1'b0),
+        .D(\w_reg_n_1_[3][0] ),
+        .G(E),
+        .GE(1'b1),
+        .Q(ciphertext[0]));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \ciphertext_reg[10] 
+       (.CLR(1'b0),
+        .D(\w_reg_n_1_[3][10] ),
+        .G(E),
+        .GE(1'b1),
+        .Q(ciphertext[10]));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \ciphertext_reg[11] 
+       (.CLR(1'b0),
+        .D(\w_reg_n_1_[3][11] ),
+        .G(E),
+        .GE(1'b1),
+        .Q(ciphertext[11]));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \ciphertext_reg[12] 
+       (.CLR(1'b0),
+        .D(\w_reg_n_1_[3][12] ),
+        .G(E),
+        .GE(1'b1),
+        .Q(ciphertext[12]));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \ciphertext_reg[13] 
+       (.CLR(1'b0),
+        .D(\w_reg_n_1_[3][13] ),
+        .G(E),
+        .GE(1'b1),
+        .Q(ciphertext[13]));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \ciphertext_reg[14] 
+       (.CLR(1'b0),
+        .D(\w_reg_n_1_[3][14] ),
+        .G(E),
+        .GE(1'b1),
+        .Q(ciphertext[14]));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \ciphertext_reg[15] 
+       (.CLR(1'b0),
+        .D(\w_reg_n_1_[3][15] ),
+        .G(E),
+        .GE(1'b1),
+        .Q(ciphertext[15]));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \ciphertext_reg[16] 
+       (.CLR(1'b0),
+        .D(\w_reg_n_1_[3][16] ),
+        .G(E),
+        .GE(1'b1),
+        .Q(ciphertext[16]));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \ciphertext_reg[17] 
+       (.CLR(1'b0),
+        .D(\w_reg_n_1_[3][17] ),
+        .G(E),
+        .GE(1'b1),
+        .Q(ciphertext[17]));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \ciphertext_reg[18] 
+       (.CLR(1'b0),
+        .D(\w_reg_n_1_[3][18] ),
+        .G(E),
+        .GE(1'b1),
+        .Q(ciphertext[18]));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \ciphertext_reg[19] 
+       (.CLR(1'b0),
+        .D(\w_reg_n_1_[3][19] ),
+        .G(E),
+        .GE(1'b1),
+        .Q(ciphertext[19]));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \ciphertext_reg[1] 
+       (.CLR(1'b0),
+        .D(\w_reg_n_1_[3][1] ),
+        .G(E),
+        .GE(1'b1),
+        .Q(ciphertext[1]));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \ciphertext_reg[20] 
+       (.CLR(1'b0),
+        .D(\w_reg_n_1_[3][20] ),
+        .G(E),
+        .GE(1'b1),
+        .Q(ciphertext[20]));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \ciphertext_reg[21] 
+       (.CLR(1'b0),
+        .D(\w_reg_n_1_[3][21] ),
+        .G(E),
+        .GE(1'b1),
+        .Q(ciphertext[21]));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \ciphertext_reg[22] 
+       (.CLR(1'b0),
+        .D(\w_reg_n_1_[3][22] ),
+        .G(E),
+        .GE(1'b1),
+        .Q(ciphertext[22]));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \ciphertext_reg[23] 
+       (.CLR(1'b0),
+        .D(\w_reg_n_1_[3][23] ),
+        .G(E),
+        .GE(1'b1),
+        .Q(ciphertext[23]));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \ciphertext_reg[24] 
+       (.CLR(1'b0),
+        .D(\w_reg_n_1_[3][24] ),
+        .G(E),
+        .GE(1'b1),
+        .Q(ciphertext[24]));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \ciphertext_reg[25] 
+       (.CLR(1'b0),
+        .D(\w_reg_n_1_[3][25] ),
+        .G(E),
+        .GE(1'b1),
+        .Q(ciphertext[25]));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \ciphertext_reg[26] 
+       (.CLR(1'b0),
+        .D(\w_reg_n_1_[3][26] ),
+        .G(E),
+        .GE(1'b1),
+        .Q(ciphertext[26]));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \ciphertext_reg[27] 
+       (.CLR(1'b0),
+        .D(\w_reg_n_1_[3][27] ),
+        .G(E),
+        .GE(1'b1),
+        .Q(ciphertext[27]));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \ciphertext_reg[28] 
+       (.CLR(1'b0),
+        .D(\w_reg_n_1_[3][28] ),
+        .G(E),
+        .GE(1'b1),
+        .Q(ciphertext[28]));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \ciphertext_reg[29] 
+       (.CLR(1'b0),
+        .D(\w_reg_n_1_[3][29] ),
+        .G(E),
+        .GE(1'b1),
+        .Q(ciphertext[29]));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \ciphertext_reg[2] 
+       (.CLR(1'b0),
+        .D(\w_reg_n_1_[3][2] ),
+        .G(E),
+        .GE(1'b1),
+        .Q(ciphertext[2]));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \ciphertext_reg[30] 
+       (.CLR(1'b0),
+        .D(\w_reg_n_1_[3][30] ),
+        .G(E),
+        .GE(1'b1),
+        .Q(ciphertext[30]));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \ciphertext_reg[31] 
+       (.CLR(1'b0),
+        .D(\w_reg_n_1_[3][31] ),
+        .G(E),
+        .GE(1'b1),
+        .Q(ciphertext[31]));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \ciphertext_reg[3] 
+       (.CLR(1'b0),
+        .D(\w_reg_n_1_[3][3] ),
+        .G(E),
+        .GE(1'b1),
+        .Q(ciphertext[3]));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \ciphertext_reg[4] 
+       (.CLR(1'b0),
+        .D(\w_reg_n_1_[3][4] ),
+        .G(E),
+        .GE(1'b1),
+        .Q(ciphertext[4]));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \ciphertext_reg[5] 
+       (.CLR(1'b0),
+        .D(\w_reg_n_1_[3][5] ),
+        .G(E),
+        .GE(1'b1),
+        .Q(ciphertext[5]));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \ciphertext_reg[6] 
+       (.CLR(1'b0),
+        .D(\w_reg_n_1_[3][6] ),
+        .G(E),
+        .GE(1'b1),
+        .Q(ciphertext[6]));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \ciphertext_reg[7] 
+       (.CLR(1'b0),
+        .D(\w_reg_n_1_[3][7] ),
+        .G(E),
+        .GE(1'b1),
+        .Q(ciphertext[7]));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \ciphertext_reg[8] 
+       (.CLR(1'b0),
+        .D(\w_reg_n_1_[3][8] ),
+        .G(E),
+        .GE(1'b1),
+        .Q(ciphertext[8]));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \ciphertext_reg[9] 
+       (.CLR(1'b0),
+        .D(\w_reg_n_1_[3][9] ),
+        .G(E),
+        .GE(1'b1),
+        .Q(ciphertext[9]));
+  LUT4 #(
+    .INIT(16'h8000)) 
+    n_0_27_BUFG_inst_i_1
+       (.I0(enPlainTextIn_IBUF),
+        .I1(curr_state[2]),
+        .I2(curr_state[0]),
+        .I3(curr_state[1]),
+        .O(n_0_27_BUFG_inst_n_1));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \w_reg[3][0] 
+       (.CLR(1'b0),
+        .D(plaintext[0]),
+        .G(\FSM_sequential_curr_state_reg[2]_0 ),
+        .GE(1'b1),
+        .Q(\w_reg_n_1_[3][0] ));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \w_reg[3][10] 
+       (.CLR(1'b0),
+        .D(plaintext[10]),
+        .G(\FSM_sequential_curr_state_reg[2]_0 ),
+        .GE(1'b1),
+        .Q(\w_reg_n_1_[3][10] ));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \w_reg[3][11] 
+       (.CLR(1'b0),
+        .D(plaintext[11]),
+        .G(\FSM_sequential_curr_state_reg[2]_0 ),
+        .GE(1'b1),
+        .Q(\w_reg_n_1_[3][11] ));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \w_reg[3][12] 
+       (.CLR(1'b0),
+        .D(plaintext[12]),
+        .G(\FSM_sequential_curr_state_reg[2]_0 ),
+        .GE(1'b1),
+        .Q(\w_reg_n_1_[3][12] ));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \w_reg[3][13] 
+       (.CLR(1'b0),
+        .D(plaintext[13]),
+        .G(\FSM_sequential_curr_state_reg[2]_0 ),
+        .GE(1'b1),
+        .Q(\w_reg_n_1_[3][13] ));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \w_reg[3][14] 
+       (.CLR(1'b0),
+        .D(plaintext[14]),
+        .G(\FSM_sequential_curr_state_reg[2]_0 ),
+        .GE(1'b1),
+        .Q(\w_reg_n_1_[3][14] ));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \w_reg[3][15] 
+       (.CLR(1'b0),
+        .D(plaintext[15]),
+        .G(\FSM_sequential_curr_state_reg[2]_0 ),
+        .GE(1'b1),
+        .Q(\w_reg_n_1_[3][15] ));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \w_reg[3][16] 
+       (.CLR(1'b0),
+        .D(plaintext[16]),
+        .G(\FSM_sequential_curr_state_reg[2]_0 ),
+        .GE(1'b1),
+        .Q(\w_reg_n_1_[3][16] ));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \w_reg[3][17] 
+       (.CLR(1'b0),
+        .D(plaintext[17]),
+        .G(\FSM_sequential_curr_state_reg[2]_0 ),
+        .GE(1'b1),
+        .Q(\w_reg_n_1_[3][17] ));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \w_reg[3][18] 
+       (.CLR(1'b0),
+        .D(plaintext[18]),
+        .G(\FSM_sequential_curr_state_reg[2]_0 ),
+        .GE(1'b1),
+        .Q(\w_reg_n_1_[3][18] ));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \w_reg[3][19] 
+       (.CLR(1'b0),
+        .D(plaintext[19]),
+        .G(\FSM_sequential_curr_state_reg[2]_0 ),
+        .GE(1'b1),
+        .Q(\w_reg_n_1_[3][19] ));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \w_reg[3][1] 
+       (.CLR(1'b0),
+        .D(plaintext[1]),
+        .G(\FSM_sequential_curr_state_reg[2]_0 ),
+        .GE(1'b1),
+        .Q(\w_reg_n_1_[3][1] ));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \w_reg[3][20] 
+       (.CLR(1'b0),
+        .D(plaintext[20]),
+        .G(\FSM_sequential_curr_state_reg[2]_0 ),
+        .GE(1'b1),
+        .Q(\w_reg_n_1_[3][20] ));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \w_reg[3][21] 
+       (.CLR(1'b0),
+        .D(plaintext[21]),
+        .G(\FSM_sequential_curr_state_reg[2]_0 ),
+        .GE(1'b1),
+        .Q(\w_reg_n_1_[3][21] ));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \w_reg[3][22] 
+       (.CLR(1'b0),
+        .D(plaintext[22]),
+        .G(\FSM_sequential_curr_state_reg[2]_0 ),
+        .GE(1'b1),
+        .Q(\w_reg_n_1_[3][22] ));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \w_reg[3][23] 
+       (.CLR(1'b0),
+        .D(plaintext[23]),
+        .G(\FSM_sequential_curr_state_reg[2]_0 ),
+        .GE(1'b1),
+        .Q(\w_reg_n_1_[3][23] ));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \w_reg[3][24] 
+       (.CLR(1'b0),
+        .D(plaintext[24]),
+        .G(\FSM_sequential_curr_state_reg[2]_0 ),
+        .GE(1'b1),
+        .Q(\w_reg_n_1_[3][24] ));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \w_reg[3][25] 
+       (.CLR(1'b0),
+        .D(plaintext[25]),
+        .G(\FSM_sequential_curr_state_reg[2]_0 ),
+        .GE(1'b1),
+        .Q(\w_reg_n_1_[3][25] ));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \w_reg[3][26] 
+       (.CLR(1'b0),
+        .D(plaintext[26]),
+        .G(\FSM_sequential_curr_state_reg[2]_0 ),
+        .GE(1'b1),
+        .Q(\w_reg_n_1_[3][26] ));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \w_reg[3][27] 
+       (.CLR(1'b0),
+        .D(plaintext[27]),
+        .G(\FSM_sequential_curr_state_reg[2]_0 ),
+        .GE(1'b1),
+        .Q(\w_reg_n_1_[3][27] ));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \w_reg[3][28] 
+       (.CLR(1'b0),
+        .D(plaintext[28]),
+        .G(\FSM_sequential_curr_state_reg[2]_0 ),
+        .GE(1'b1),
+        .Q(\w_reg_n_1_[3][28] ));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \w_reg[3][29] 
+       (.CLR(1'b0),
+        .D(plaintext[29]),
+        .G(\FSM_sequential_curr_state_reg[2]_0 ),
+        .GE(1'b1),
+        .Q(\w_reg_n_1_[3][29] ));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \w_reg[3][2] 
+       (.CLR(1'b0),
+        .D(plaintext[2]),
+        .G(\FSM_sequential_curr_state_reg[2]_0 ),
+        .GE(1'b1),
+        .Q(\w_reg_n_1_[3][2] ));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \w_reg[3][30] 
+       (.CLR(1'b0),
+        .D(plaintext[30]),
+        .G(\FSM_sequential_curr_state_reg[2]_0 ),
+        .GE(1'b1),
+        .Q(\w_reg_n_1_[3][30] ));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \w_reg[3][31] 
+       (.CLR(1'b0),
+        .D(plaintext[31]),
+        .G(\FSM_sequential_curr_state_reg[2]_0 ),
+        .GE(1'b1),
+        .Q(\w_reg_n_1_[3][31] ));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \w_reg[3][3] 
+       (.CLR(1'b0),
+        .D(plaintext[3]),
+        .G(\FSM_sequential_curr_state_reg[2]_0 ),
+        .GE(1'b1),
+        .Q(\w_reg_n_1_[3][3] ));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \w_reg[3][4] 
+       (.CLR(1'b0),
+        .D(plaintext[4]),
+        .G(\FSM_sequential_curr_state_reg[2]_0 ),
+        .GE(1'b1),
+        .Q(\w_reg_n_1_[3][4] ));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \w_reg[3][5] 
+       (.CLR(1'b0),
+        .D(plaintext[5]),
+        .G(\FSM_sequential_curr_state_reg[2]_0 ),
+        .GE(1'b1),
+        .Q(\w_reg_n_1_[3][5] ));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \w_reg[3][6] 
+       (.CLR(1'b0),
+        .D(plaintext[6]),
+        .G(\FSM_sequential_curr_state_reg[2]_0 ),
+        .GE(1'b1),
+        .Q(\w_reg_n_1_[3][6] ));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \w_reg[3][7] 
+       (.CLR(1'b0),
+        .D(plaintext[7]),
+        .G(\FSM_sequential_curr_state_reg[2]_0 ),
+        .GE(1'b1),
+        .Q(\w_reg_n_1_[3][7] ));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \w_reg[3][8] 
+       (.CLR(1'b0),
+        .D(plaintext[8]),
+        .G(\FSM_sequential_curr_state_reg[2]_0 ),
+        .GE(1'b1),
+        .Q(\w_reg_n_1_[3][8] ));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \w_reg[3][9] 
+       (.CLR(1'b0),
+        .D(plaintext[9]),
+        .G(\FSM_sequential_curr_state_reg[2]_0 ),
+        .GE(1'b1),
+        .Q(\w_reg_n_1_[3][9] ));
+endmodule
+
 (* NotValidForBitStream *)
 module top
    (clk,
     rst,
     enPlainTextIn,
-    plainTextBRAMOUT);
+    cipherTextDone,
+    cipherTextOut);
   input clk;
   input rst;
   input enPlainTextIn;
-  output [31:0]plainTextBRAMOUT;
+  output cipherTextDone;
+  output [31:0]cipherTextOut;
 
+  wire E0_n_2;
+  wire PT1_n_9;
+  wire cipherTextDone;
+  wire cipherTextDone_OBUF;
+  wire [31:0]cipherTextOut;
+  wire [31:0]cipherTextOut_OBUF;
   wire clk;
   wire clk_IBUF;
   wire clk_IBUF_BUFG;
   wire enPlainTextIn;
   wire enPlainTextIn_IBUF;
+  wire n_0_27_BUFG;
+  wire n_0_27_BUFG_inst_n_1;
   wire [7:0]plainTextAddr;
   wire plainTextAddrValid;
   wire [31:0]plainTextBRAMOUT;
-  wire [31:0]plainTextBRAMOUT_OBUF;
   wire rst;
   wire rst_IBUF;
+  wire w;
 
 initial begin
  $sdf_annotate("aes_enc_tb_time_synth.sdf",,,,"tool_control");
@@ -645,15 +1411,126 @@ end
        (.addra(plainTextAddr),
         .clka(clk_IBUF_BUFG),
         .dina({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
-        .douta(plainTextBRAMOUT_OBUF),
+        .douta(plainTextBRAMOUT),
         .ena(plainTextAddrValid),
         .wea(1'b0));
+  encryption E0
+       (.CLK(clk_IBUF_BUFG),
+        .E(n_0_27_BUFG),
+        .\FSM_sequential_curr_state_reg[2]_0 (w),
+        .\cipherTextOut[31] (E0_n_2),
+        .ciphertext(cipherTextOut_OBUF),
+        .ciphertextDone(cipherTextDone_OBUF),
+        .enPlainTextIn_IBUF(enPlainTextIn_IBUF),
+        .n_0_27_BUFG_inst_n_1(n_0_27_BUFG_inst_n_1),
+        .plaintext(plainTextBRAMOUT),
+        .rst(PT1_n_9));
   PlaintextAddrCounter PT1
-       (.addr(plainTextAddr),
-        .clka(clk_IBUF_BUFG),
+       (.CLK(clk_IBUF_BUFG),
+        .addr(plainTextAddr),
         .enPlainTextIn_IBUF(enPlainTextIn_IBUF),
         .ena(plainTextAddrValid),
-        .rst_IBUF(rst_IBUF));
+        .rst_IBUF(rst_IBUF),
+        .valid_reg_0(PT1_n_9));
+  OBUF cipherTextDone_OBUF_inst
+       (.I(cipherTextDone_OBUF),
+        .O(cipherTextDone));
+  OBUF \cipherTextOut_OBUF[0]_inst 
+       (.I(cipherTextOut_OBUF[0]),
+        .O(cipherTextOut[0]));
+  OBUF \cipherTextOut_OBUF[10]_inst 
+       (.I(cipherTextOut_OBUF[10]),
+        .O(cipherTextOut[10]));
+  OBUF \cipherTextOut_OBUF[11]_inst 
+       (.I(cipherTextOut_OBUF[11]),
+        .O(cipherTextOut[11]));
+  OBUF \cipherTextOut_OBUF[12]_inst 
+       (.I(cipherTextOut_OBUF[12]),
+        .O(cipherTextOut[12]));
+  OBUF \cipherTextOut_OBUF[13]_inst 
+       (.I(cipherTextOut_OBUF[13]),
+        .O(cipherTextOut[13]));
+  OBUF \cipherTextOut_OBUF[14]_inst 
+       (.I(cipherTextOut_OBUF[14]),
+        .O(cipherTextOut[14]));
+  OBUF \cipherTextOut_OBUF[15]_inst 
+       (.I(cipherTextOut_OBUF[15]),
+        .O(cipherTextOut[15]));
+  OBUF \cipherTextOut_OBUF[16]_inst 
+       (.I(cipherTextOut_OBUF[16]),
+        .O(cipherTextOut[16]));
+  OBUF \cipherTextOut_OBUF[17]_inst 
+       (.I(cipherTextOut_OBUF[17]),
+        .O(cipherTextOut[17]));
+  OBUF \cipherTextOut_OBUF[18]_inst 
+       (.I(cipherTextOut_OBUF[18]),
+        .O(cipherTextOut[18]));
+  OBUF \cipherTextOut_OBUF[19]_inst 
+       (.I(cipherTextOut_OBUF[19]),
+        .O(cipherTextOut[19]));
+  OBUF \cipherTextOut_OBUF[1]_inst 
+       (.I(cipherTextOut_OBUF[1]),
+        .O(cipherTextOut[1]));
+  OBUF \cipherTextOut_OBUF[20]_inst 
+       (.I(cipherTextOut_OBUF[20]),
+        .O(cipherTextOut[20]));
+  OBUF \cipherTextOut_OBUF[21]_inst 
+       (.I(cipherTextOut_OBUF[21]),
+        .O(cipherTextOut[21]));
+  OBUF \cipherTextOut_OBUF[22]_inst 
+       (.I(cipherTextOut_OBUF[22]),
+        .O(cipherTextOut[22]));
+  OBUF \cipherTextOut_OBUF[23]_inst 
+       (.I(cipherTextOut_OBUF[23]),
+        .O(cipherTextOut[23]));
+  OBUF \cipherTextOut_OBUF[24]_inst 
+       (.I(cipherTextOut_OBUF[24]),
+        .O(cipherTextOut[24]));
+  OBUF \cipherTextOut_OBUF[25]_inst 
+       (.I(cipherTextOut_OBUF[25]),
+        .O(cipherTextOut[25]));
+  OBUF \cipherTextOut_OBUF[26]_inst 
+       (.I(cipherTextOut_OBUF[26]),
+        .O(cipherTextOut[26]));
+  OBUF \cipherTextOut_OBUF[27]_inst 
+       (.I(cipherTextOut_OBUF[27]),
+        .O(cipherTextOut[27]));
+  OBUF \cipherTextOut_OBUF[28]_inst 
+       (.I(cipherTextOut_OBUF[28]),
+        .O(cipherTextOut[28]));
+  OBUF \cipherTextOut_OBUF[29]_inst 
+       (.I(cipherTextOut_OBUF[29]),
+        .O(cipherTextOut[29]));
+  OBUF \cipherTextOut_OBUF[2]_inst 
+       (.I(cipherTextOut_OBUF[2]),
+        .O(cipherTextOut[2]));
+  OBUF \cipherTextOut_OBUF[30]_inst 
+       (.I(cipherTextOut_OBUF[30]),
+        .O(cipherTextOut[30]));
+  OBUF \cipherTextOut_OBUF[31]_inst 
+       (.I(cipherTextOut_OBUF[31]),
+        .O(cipherTextOut[31]));
+  OBUF \cipherTextOut_OBUF[3]_inst 
+       (.I(cipherTextOut_OBUF[3]),
+        .O(cipherTextOut[3]));
+  OBUF \cipherTextOut_OBUF[4]_inst 
+       (.I(cipherTextOut_OBUF[4]),
+        .O(cipherTextOut[4]));
+  OBUF \cipherTextOut_OBUF[5]_inst 
+       (.I(cipherTextOut_OBUF[5]),
+        .O(cipherTextOut[5]));
+  OBUF \cipherTextOut_OBUF[6]_inst 
+       (.I(cipherTextOut_OBUF[6]),
+        .O(cipherTextOut[6]));
+  OBUF \cipherTextOut_OBUF[7]_inst 
+       (.I(cipherTextOut_OBUF[7]),
+        .O(cipherTextOut[7]));
+  OBUF \cipherTextOut_OBUF[8]_inst 
+       (.I(cipherTextOut_OBUF[8]),
+        .O(cipherTextOut[8]));
+  OBUF \cipherTextOut_OBUF[9]_inst 
+       (.I(cipherTextOut_OBUF[9]),
+        .O(cipherTextOut[9]));
   BUFG clk_IBUF_BUFG_inst
        (.I(clk_IBUF),
         .O(clk_IBUF_BUFG));
@@ -663,109 +1540,19 @@ end
   IBUF enPlainTextIn_IBUF_inst
        (.I(enPlainTextIn),
         .O(enPlainTextIn_IBUF));
-  OBUF \plainTextBRAMOUT_OBUF[0]_inst 
-       (.I(plainTextBRAMOUT_OBUF[0]),
-        .O(plainTextBRAMOUT[0]));
-  OBUF \plainTextBRAMOUT_OBUF[10]_inst 
-       (.I(plainTextBRAMOUT_OBUF[10]),
-        .O(plainTextBRAMOUT[10]));
-  OBUF \plainTextBRAMOUT_OBUF[11]_inst 
-       (.I(plainTextBRAMOUT_OBUF[11]),
-        .O(plainTextBRAMOUT[11]));
-  OBUF \plainTextBRAMOUT_OBUF[12]_inst 
-       (.I(plainTextBRAMOUT_OBUF[12]),
-        .O(plainTextBRAMOUT[12]));
-  OBUF \plainTextBRAMOUT_OBUF[13]_inst 
-       (.I(plainTextBRAMOUT_OBUF[13]),
-        .O(plainTextBRAMOUT[13]));
-  OBUF \plainTextBRAMOUT_OBUF[14]_inst 
-       (.I(plainTextBRAMOUT_OBUF[14]),
-        .O(plainTextBRAMOUT[14]));
-  OBUF \plainTextBRAMOUT_OBUF[15]_inst 
-       (.I(plainTextBRAMOUT_OBUF[15]),
-        .O(plainTextBRAMOUT[15]));
-  OBUF \plainTextBRAMOUT_OBUF[16]_inst 
-       (.I(plainTextBRAMOUT_OBUF[16]),
-        .O(plainTextBRAMOUT[16]));
-  OBUF \plainTextBRAMOUT_OBUF[17]_inst 
-       (.I(plainTextBRAMOUT_OBUF[17]),
-        .O(plainTextBRAMOUT[17]));
-  OBUF \plainTextBRAMOUT_OBUF[18]_inst 
-       (.I(plainTextBRAMOUT_OBUF[18]),
-        .O(plainTextBRAMOUT[18]));
-  OBUF \plainTextBRAMOUT_OBUF[19]_inst 
-       (.I(plainTextBRAMOUT_OBUF[19]),
-        .O(plainTextBRAMOUT[19]));
-  OBUF \plainTextBRAMOUT_OBUF[1]_inst 
-       (.I(plainTextBRAMOUT_OBUF[1]),
-        .O(plainTextBRAMOUT[1]));
-  OBUF \plainTextBRAMOUT_OBUF[20]_inst 
-       (.I(plainTextBRAMOUT_OBUF[20]),
-        .O(plainTextBRAMOUT[20]));
-  OBUF \plainTextBRAMOUT_OBUF[21]_inst 
-       (.I(plainTextBRAMOUT_OBUF[21]),
-        .O(plainTextBRAMOUT[21]));
-  OBUF \plainTextBRAMOUT_OBUF[22]_inst 
-       (.I(plainTextBRAMOUT_OBUF[22]),
-        .O(plainTextBRAMOUT[22]));
-  OBUF \plainTextBRAMOUT_OBUF[23]_inst 
-       (.I(plainTextBRAMOUT_OBUF[23]),
-        .O(plainTextBRAMOUT[23]));
-  OBUF \plainTextBRAMOUT_OBUF[24]_inst 
-       (.I(plainTextBRAMOUT_OBUF[24]),
-        .O(plainTextBRAMOUT[24]));
-  OBUF \plainTextBRAMOUT_OBUF[25]_inst 
-       (.I(plainTextBRAMOUT_OBUF[25]),
-        .O(plainTextBRAMOUT[25]));
-  OBUF \plainTextBRAMOUT_OBUF[26]_inst 
-       (.I(plainTextBRAMOUT_OBUF[26]),
-        .O(plainTextBRAMOUT[26]));
-  OBUF \plainTextBRAMOUT_OBUF[27]_inst 
-       (.I(plainTextBRAMOUT_OBUF[27]),
-        .O(plainTextBRAMOUT[27]));
-  OBUF \plainTextBRAMOUT_OBUF[28]_inst 
-       (.I(plainTextBRAMOUT_OBUF[28]),
-        .O(plainTextBRAMOUT[28]));
-  OBUF \plainTextBRAMOUT_OBUF[29]_inst 
-       (.I(plainTextBRAMOUT_OBUF[29]),
-        .O(plainTextBRAMOUT[29]));
-  OBUF \plainTextBRAMOUT_OBUF[2]_inst 
-       (.I(plainTextBRAMOUT_OBUF[2]),
-        .O(plainTextBRAMOUT[2]));
-  OBUF \plainTextBRAMOUT_OBUF[30]_inst 
-       (.I(plainTextBRAMOUT_OBUF[30]),
-        .O(plainTextBRAMOUT[30]));
-  OBUF \plainTextBRAMOUT_OBUF[31]_inst 
-       (.I(plainTextBRAMOUT_OBUF[31]),
-        .O(plainTextBRAMOUT[31]));
-  OBUF \plainTextBRAMOUT_OBUF[3]_inst 
-       (.I(plainTextBRAMOUT_OBUF[3]),
-        .O(plainTextBRAMOUT[3]));
-  OBUF \plainTextBRAMOUT_OBUF[4]_inst 
-       (.I(plainTextBRAMOUT_OBUF[4]),
-        .O(plainTextBRAMOUT[4]));
-  OBUF \plainTextBRAMOUT_OBUF[5]_inst 
-       (.I(plainTextBRAMOUT_OBUF[5]),
-        .O(plainTextBRAMOUT[5]));
-  OBUF \plainTextBRAMOUT_OBUF[6]_inst 
-       (.I(plainTextBRAMOUT_OBUF[6]),
-        .O(plainTextBRAMOUT[6]));
-  OBUF \plainTextBRAMOUT_OBUF[7]_inst 
-       (.I(plainTextBRAMOUT_OBUF[7]),
-        .O(plainTextBRAMOUT[7]));
-  OBUF \plainTextBRAMOUT_OBUF[8]_inst 
-       (.I(plainTextBRAMOUT_OBUF[8]),
-        .O(plainTextBRAMOUT[8]));
-  OBUF \plainTextBRAMOUT_OBUF[9]_inst 
-       (.I(plainTextBRAMOUT_OBUF[9]),
-        .O(plainTextBRAMOUT[9]));
+  BUFG n_0_27_BUFG_inst
+       (.I(n_0_27_BUFG_inst_n_1),
+        .O(n_0_27_BUFG));
   IBUF rst_IBUF_inst
        (.I(rst),
         .O(rst_IBUF));
+  BUFG \w_reg[3][31]_i_1 
+       (.I(E0_n_2),
+        .O(w));
 endmodule
 
 (* ORIG_REF_NAME = "blk_mem_gen_generic_cstr" *) 
-module blk_mem_gen_0_blk_mem_gen_generic_cstr
+module blk_mem_gen_0__blk_mem_gen_generic_cstr
    (douta,
     clka,
     ena,
@@ -786,7 +1573,7 @@ module blk_mem_gen_0_blk_mem_gen_generic_cstr
   wire ena;
   wire [0:0]wea;
 
-  blk_mem_gen_0_blk_mem_gen_prim_width \ramloop[0].ram.r 
+  blk_mem_gen_0__blk_mem_gen_prim_width \ramloop[0].ram.r 
        (.addra(addra),
         .clka(clka),
         .dina(dina),
@@ -796,7 +1583,7 @@ module blk_mem_gen_0_blk_mem_gen_generic_cstr
 endmodule
 
 (* ORIG_REF_NAME = "blk_mem_gen_prim_width" *) 
-module blk_mem_gen_0_blk_mem_gen_prim_width
+module blk_mem_gen_0__blk_mem_gen_prim_width
    (douta,
     clka,
     ena,
@@ -817,7 +1604,7 @@ module blk_mem_gen_0_blk_mem_gen_prim_width
   wire ena;
   wire [0:0]wea;
 
-  blk_mem_gen_0_blk_mem_gen_prim_wrapper_init \prim_init.ram 
+  blk_mem_gen_0__blk_mem_gen_prim_wrapper_init \prim_init.ram 
        (.addra(addra),
         .clka(clka),
         .dina(dina),
@@ -827,7 +1614,7 @@ module blk_mem_gen_0_blk_mem_gen_prim_width
 endmodule
 
 (* ORIG_REF_NAME = "blk_mem_gen_prim_wrapper_init" *) 
-module blk_mem_gen_0_blk_mem_gen_prim_wrapper_init
+module blk_mem_gen_0__blk_mem_gen_prim_wrapper_init
    (douta,
     clka,
     ena,
@@ -979,7 +1766,7 @@ module blk_mem_gen_0_blk_mem_gen_prim_wrapper_init
 endmodule
 
 (* ORIG_REF_NAME = "blk_mem_gen_top" *) 
-module blk_mem_gen_0_blk_mem_gen_top
+module blk_mem_gen_0__blk_mem_gen_top
    (douta,
     clka,
     ena,
@@ -1000,7 +1787,7 @@ module blk_mem_gen_0_blk_mem_gen_top
   wire ena;
   wire [0:0]wea;
 
-  blk_mem_gen_0_blk_mem_gen_generic_cstr \valid.cstr 
+  blk_mem_gen_0__blk_mem_gen_generic_cstr \valid.cstr 
        (.addra(addra),
         .clka(clka),
         .dina(dina),
@@ -1034,7 +1821,7 @@ endmodule
 (* C_WRITE_DEPTH_A = "256" *) (* C_WRITE_DEPTH_B = "256" *) (* C_WRITE_MODE_A = "WRITE_FIRST" *) 
 (* C_WRITE_MODE_B = "WRITE_FIRST" *) (* C_WRITE_WIDTH_A = "32" *) (* C_WRITE_WIDTH_B = "32" *) 
 (* C_XDEVICEFAMILY = "artix7" *) (* ORIG_REF_NAME = "blk_mem_gen_v8_3_6" *) (* downgradeipidentifiedwarnings = "yes" *) 
-module blk_mem_gen_0_blk_mem_gen_v8_3_6
+module blk_mem_gen_0__blk_mem_gen_v8_3_6
    (clka,
     rsta,
     ena,
@@ -1276,7 +2063,7 @@ module blk_mem_gen_0_blk_mem_gen_v8_3_6
   assign sbiterr = \<const0> ;
   GND GND
        (.G(\<const0> ));
-  blk_mem_gen_0_blk_mem_gen_v8_3_6_synth inst_blk_mem_gen
+  blk_mem_gen_0__blk_mem_gen_v8_3_6_synth inst_blk_mem_gen
        (.addra(addra),
         .clka(clka),
         .dina(dina),
@@ -1286,7 +2073,7 @@ module blk_mem_gen_0_blk_mem_gen_v8_3_6
 endmodule
 
 (* ORIG_REF_NAME = "blk_mem_gen_v8_3_6_synth" *) 
-module blk_mem_gen_0_blk_mem_gen_v8_3_6_synth
+module blk_mem_gen_0__blk_mem_gen_v8_3_6_synth
    (douta,
     clka,
     ena,
@@ -1307,7 +2094,7 @@ module blk_mem_gen_0_blk_mem_gen_v8_3_6_synth
   wire ena;
   wire [0:0]wea;
 
-  blk_mem_gen_0_blk_mem_gen_top \gnbram.gnativebmg.native_blk_mem_gen 
+  blk_mem_gen_0__blk_mem_gen_top \gnbram.gnativebmg.native_blk_mem_gen 
        (.addra(addra),
         .clka(clka),
         .dina(dina),

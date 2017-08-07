@@ -1,13 +1,14 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.sim/sim_1/synth/timing/aes_enc_tb_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.sim/sim_1/synth/timing/aes_enc_tb_time_synth.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module PlaintextAddrCounter
 INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-311] analyzing module encryption
 INFO: [VRFC 10-311] analyzing module top
-INFO: [VRFC 10-311] analyzing module blk_mem_gen_0_blk_mem_gen_generic_cstr
-INFO: [VRFC 10-311] analyzing module blk_mem_gen_0_blk_mem_gen_prim_width
-INFO: [VRFC 10-311] analyzing module blk_mem_gen_0_blk_mem_gen_prim_wrapper_init
-INFO: [VRFC 10-311] analyzing module blk_mem_gen_0_blk_mem_gen_top
-INFO: [VRFC 10-311] analyzing module blk_mem_gen_0_blk_mem_gen_v8_3_6
-INFO: [VRFC 10-311] analyzing module blk_mem_gen_0_blk_mem_gen_v8_3_6_synth
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0__blk_mem_gen_generic_cstr
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0__blk_mem_gen_prim_width
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0__blk_mem_gen_prim_wrapper_init
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0__blk_mem_gen_top
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0__blk_mem_gen_v8_3_6
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0__blk_mem_gen_v8_3_6_synth
 INFO: [VRFC 10-311] analyzing module glbl
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt/AES_encrypt.srcs/sim_1/new/aes_enc_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sim_1/new/aes_enc_tb.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module aes_enc_tb
