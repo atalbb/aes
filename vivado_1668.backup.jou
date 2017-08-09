@@ -1,0 +1,125 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Mon Aug  7 15:56:06 2017
+# Process ID: 1668
+# Current directory: C:/College/Thesis/VivadoProjects/AES_encrypt
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6552 C:\College\Thesis\VivadoProjects\AES_encrypt\AES_encrypt.xpr
+# Log file: C:/College/Thesis/VivadoProjects/AES_encrypt/vivado.log
+# Journal file: C:/College/Thesis/VivadoProjects/AES_encrypt\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.xpr
+update_compile_order -fileset sources_1
+reset_run blk_mem_gen_0_synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+generate_target Simulation [get_files C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci]
+export_ip_user_files -of_objects [get_files C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci] -no_script -force -quiet
+launch_simulation
+source aes_enc_tb.tcl
+launch_simulation -mode post-synthesis -type timing
+source aes_enc_tb.tcl
+current_sim simulation_1
+close_sim
+close_sim
+close [ open C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/encryption.v w ]
+add_files C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/encryption.v
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+refresh_design
+launch_simulation -mode post-synthesis -type timing
+source aes_enc_tb.tcl
+close_sim
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+refresh_design
+launch_simulation
+launch_simulation
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+refresh_design
+launch_simulation
+source aes_enc_tb.tcl
+launch_simulation -mode post-synthesis -type timing
+source aes_enc_tb.tcl
+close_sim
+close_sim
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+refresh_design
+launch_simulation -mode post-synthesis -type timing
+source aes_enc_tb.tcl
+close_sim
+launch_simulation -mode post-synthesis -type timing
+source aes_enc_tb.tcl
+close_sim
+set_property -dict [list CONFIG.Coe_File {c:/College/Thesis/VivadoProjects/AES_encrypt/Test.coe}] [get_ips blk_mem_gen_0]
+generate_target all [get_files  C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci]
+catch { config_ip_cache -export [get_ips -all blk_mem_gen_0] }
+export_ip_user_files -of_objects [get_files C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci] -no_script -sync -force -quiet
+reset_run blk_mem_gen_0_synth_1
+launch_runs -jobs 2 blk_mem_gen_0_synth_1
+export_simulation -of_objects [get_files C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci] -directory C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.ip_user_files/sim_scripts -ip_user_files_dir C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.ip_user_files -ipstatic_source_dir C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.cache/compile_simlib/modelsim} {questa=C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.cache/compile_simlib/questa} {riviera=C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.cache/compile_simlib/riviera} {activehdl=C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+refresh_design
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+refresh_design
+generate_target Simulation [get_files C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci]
+export_ip_user_files -of_objects [get_files C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci] -no_script -force -quiet
+launch_simulation -mode post-synthesis -type timing
+source aes_enc_tb.tcl
+close_sim
+close [ open C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/ciphertextAddrCounter.v w ]
+add_files C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/ciphertextAddrCounter.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.3 -module_name blk_mem_gen_1 -dir c:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/ip
+set_property -dict [list CONFIG.Write_Width_A {32} CONFIG.Write_Depth_A {256} CONFIG.Register_PortA_Output_of_Memory_Primitives {false} CONFIG.Load_Init_File {true} CONFIG.Coe_File {C:/College/Thesis/VivadoProjects/AES_encrypt/Test1.coe} CONFIG.Read_Width_A {32} CONFIG.Write_Width_B {32} CONFIG.Read_Width_B {32}] [get_ips blk_mem_gen_1]
+generate_target {instantiation_template} [get_files c:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.xci]
+update_compile_order -fileset sources_1
+generate_target all [get_files  c:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.xci]
+catch { config_ip_cache -export [get_ips -all blk_mem_gen_1] }
+export_ip_user_files -of_objects [get_files c:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.xci]
+launch_runs -jobs 2 blk_mem_gen_1_synth_1
+export_simulation -of_objects [get_files c:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.xci] -directory C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.ip_user_files/sim_scripts -ip_user_files_dir C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.ip_user_files -ipstatic_source_dir C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.cache/compile_simlib/modelsim} {questa=C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.cache/compile_simlib/questa} {riviera=C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.cache/compile_simlib/riviera} {activehdl=C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+refresh_design
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+refresh_design
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+refresh_design
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+refresh_design
+launch_simulation
+source aes_enc_tb.tcl
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+close_sim
+launch_simulation
+source aes_enc_tb.tcl
+close_sim
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_simulation
+source aes_enc_tb.tcl
+close_sim

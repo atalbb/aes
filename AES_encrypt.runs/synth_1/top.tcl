@@ -17,14 +17,19 @@ set_property board_part digilentinc.com:nexys4:part0:1.1 [current_project]
 set_property ip_output_repo c:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 add_files C:/College/Thesis/VivadoProjects/AES_encrypt/Test.coe
+add_files C:/College/Thesis/VivadoProjects/AES_encrypt/Test1.coe
 read_verilog -library xil_defaultlib {
   C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/PlaintextAddrCounter.v
-  C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/encryption.v
+  C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/ciphertextAddrCounter.v
   C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/top.v
 }
 read_ip -quiet C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
 set_property used_in_implementation false [get_files -all c:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_ooc.xdc]
 set_property is_locked true [get_files C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci]
+
+read_ip -quiet C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.xci
+set_property used_in_implementation false [get_files -all c:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1_ooc.xdc]
+set_property is_locked true [get_files C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.xci]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the

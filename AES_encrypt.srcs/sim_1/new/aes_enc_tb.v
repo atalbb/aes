@@ -29,24 +29,28 @@ parameter HALF_CLK = 5;
     parameter _16_FULL_CLK = 16 * FULL_CLK;
     parameter _17_FULL_CLK = 17 * FULL_CLK;
     //parameter
-    reg clk,rst,enb;
-    wire [31:0]finalOut;
-    wire finalDone;
-    top T(clk,rst,enb,finalDone,finalOut);
+    reg clk,rst,enb,enk;
+    wire [31:0]key,data;
+    //wire finalDone;
+    top T(clk,rst,enk,enb,key,data);
     initial begin
         clk = 0;
         rst = 1;
         enb = 0;
-        #100 rst = 0;
-        #100 rst = 1;
-        //#100 enb = 0;
-        #100 enb = 1;
-        #100 enb = 0;
-        #100 enb = 1;
-        #100 enb = 0;
-        #100 enb = 1;
-        #100 enb = 0;
-        #500  $finish; // 1 clk for done signal to go down
+        enk = 0;
+        #50 rst = 0;
+        #50 rst = 1;
+        #50 enb = 1;
+        #50 enb = 0;
+        #50 enb = 1;
+        #50 enb = 0;
+//        #100 enb = 1;
+//        #100 enb = 0;
+//        #100 enb = 1;
+//        #100 enb = 0;
+              enk = 1;
+         #650 enk = 0;
+        #10  $finish; // 1 clk for done signal to go down;
     end
     
     always
