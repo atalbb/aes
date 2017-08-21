@@ -2,8 +2,8 @@
 # Webtalk v2017.2 (64-bit)
 # SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
 # IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
-# Start of session at: Mon Aug 21 13:45:22 2017
-# Process ID: 6836
+# Start of session at: Mon Aug 21 18:20:02 2017
+# Process ID: 8632
 # Current directory: C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.sim/sim_1/behav
 # Command line: wbtcv.exe -mode batch -source C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.sim/sim_1/behav/xsim.dir/aes_enc_tb_behav/webtalk/xsim_webtalk.tcl -notrace
 # Log file: C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.sim/sim_1/behav/webtalk.log

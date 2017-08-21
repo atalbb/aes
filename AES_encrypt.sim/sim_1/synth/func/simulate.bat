@@ -1,6 +1,6 @@
 @echo off
 set xv_path=C:\\Xilinx\\Vivado\\2017.2\\bin
-call %xv_path%/xsim aes_enc_tb_func_synth -key {Post-Synthesis:sim_1:Functional:aes_enc_tb} -tclbatch aes_enc_tb.tcl -log simulate.log
+call %xv_path%/xsim aes_enc_tb_func_synth -key {Post-Synthesis:sim_1:Functional:aes_enc_tb} -tclbatch aes_enc_tb.tcl -view C:/College/Thesis/VivadoProjects/AES_encrypt/aes_enc_tb_behav1.wcfg -log simulate.log
 if "%errorlevel%"=="0" goto SUCCESS
 if "%errorlevel%"=="1" goto END
 :END

@@ -1,0 +1,2057 @@
+/*
+
+Vivado v2017.2 (64-bit)
+SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+
+Process ID: 8776
+License: Customer
+
+Current time: 	8/21/17 5:26:17 PM EDT
+Time zone: 	Eastern Standard Time (America/New_York)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1280x1024
+Screen resolution (DPI): 96
+Available screens: 2
+Available disk space: 57 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Xilinx/Vivado/2017.2/tps/win64/jre
+JVM executable location: 	C:/Xilinx/Vivado/2017.2/tps/win64/jre/bin/java.exe
+Java library paths: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o;C:/WINDOWS/Sun/Java/bin;C:/WINDOWS/system32;C:/WINDOWS;C:/Xilinx/Vivado/2017.2/bin;C:/Xilinx/Vivado/2017.2/lib/win64.o;C:/Xilinx/Vivado/2017.2/tps/win64/jre/bin/server;C:/Xilinx/Vivado/2017.2/tps/win64/jre/bin;C:/Xilinx/SDK/2017.2/bin;C:/Xilinx/Vivado/2017.2/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2017.2/ids_lite/ISE/lib/nt64;C:/Xilinx/Vivado_HLS/2017.2/bin;C:/ProgramData/Oracle/Java/javapath;C:/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/ia32/mpirt;C:/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/ia32/compiler;C:/Program Files (x86)/Intel/iCLS Client/;C:/Program Files/Intel/iCLS Client/;C:/Windows/system32;C:/Windows;C:/Windows/System32/Wbem;C:/Windows/System32/WindowsPowerShell/v1.0/;C:/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL;C:/Program Files/Intel/Intel(R) Management Engine Components/DAL;C:/Program Files (x86)/Intel/Intel(R) Management Engine Components/IPT;C:/Program Files/Intel/Intel(R) Management Engine Components/IPT;C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common;C:/Program Files (x86)/Skype/Phone/;C:/Program Files/Java/jdk1.8.0_121/bin;C:/Program Files/Git/cmd;C:/Users/Atalville/AppData/Local/Microsoft/WindowsApps;;C:/Xilinx/Vivado/2017.2/tps/mingw/6.2.0/win64.o/nt/bin;C:/Xilinx/Vivado/2017.2/tps/mingw/6.2.0/win64.o/nt/libexec/gcc/x86_64-w64-mingw32/6.2.0;.
+
+User name: 	Atalville
+User home directory: C:/Users/Atalville
+User working directory: C:/College/Thesis/VivadoProjects/AES_encrypt
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2017.2
+RDI_DATADIR: C:/Xilinx/Vivado/2017.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2017.2/bin
+
+User preferences location: C:/Users/Atalville/AppData/Roaming/Xilinx/Vivado
+Vivado preferences directory: C:/Users/Atalville/AppData/Roaming/Xilinx/Vivado/2017.2/vivado.xml
+Vivado layouts directory: C:/Users/Atalville/AppData/Roaming/Xilinx/Vivado/2017.2/layouts
+PlanAhead jar location: 	C:/Xilinx/Vivado/2017.2/lib/classes/planAhead.jar
+Vivado Look & Feel: 	[Synthetica - the extended Synth Look and Feel. - ui.g.i.H]
+Engine tmp dir: 	C:/College/Thesis/VivadoProjects/AES_encrypt/.Xil/Vivado-8776-LAPTOP-L1N8U9P6
+
+GUI allocated memory:	165 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 542 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 52 MB (+52084kb) [00:00:08]
+// [Engine Memory]: 468 MB (+339618kb) [00:00:08]
+// bs:g (cg:JFrame):  Open Project : addNotify
+// Opening Vivado Project: C:\College\Thesis\VivadoProjects\AES_encrypt\AES_encrypt.xpr. Version: Vivado v2017.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// [Engine Memory]: 547 MB (+58129kb) [00:00:12]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 63 MB (+8944kb) [00:00:16]
+// [Engine Memory]: 610 MB (+37208kb) [00:00:16]
+// [GUI Memory]: 68 MB (+2093kb) [00:00:17]
+// Tcl Message: open_project C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 646 MB. GUI used memory: 43 MB. Current time: 8/21/17 5:26:25 PM EDT
+// Tcl Message: open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:10 . Memory (MB): peak = 833.324 ; gain = 117.570 
+// Project name: AES_encrypt; location: C:/College/Thesis/VivadoProjects/AES_encrypt; part: xc7a100tcsg324-1
+// [Engine Memory]: 646 MB (+5957kb) [00:00:20]
+dismissDialog("Open Project"); // bs:g (cg:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// a:a (cg:JFrame): Critical Messages: addNotify
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 21 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, a:a)
+dismissDialog("Critical Messages"); // a:a (cg:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u:M (JViewport:JComponent, cg:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ac:JMenuItem (ai:JPopupMenu, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e:bs (cg:JFrame):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: LOAD_FEATURE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Tcl Message: launch_simulation 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.sim/sim_1/behav' 
+// Tcl Message: Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6(C_FAMILY="art... Compiling module xil_defaultlib.blk_mem_gen_1 Compiling module xil_defaultlib.encryption Compiling module xil_defaultlib.top Compiling module xil_defaultlib.aes_enc_tb Compiling module xil_defaultlib.glbl 
+// Tcl Message: Built simulation snapshot aes_enc_tb_behav  ****** Webtalk v2017.2 (64-bit)   **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017   **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017     ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.  source C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.sim/sim_1/behav/xsim.dir/aes_enc_tb_behav/webtalk/xsim_webtalk.tcl -notrace 
+// TclEventType: LAUNCH_SIM
+// TclEventType: LOAD_FEATURE
+// Tcl Message: INFO: [Common 17-186] 'C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.sim/sim_1/behav/xsim.dir/aes_enc_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Mon Aug 21 17:27:00 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2017.2/doc/webtalk_introduction.html. INFO: [Common 17-206] Exiting Webtalk at Mon Aug 21 17:27:00 2017... 
+// Tcl Message: run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 840.164 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.sim/sim_1/behav' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "aes_enc_tb_behav -key {Behavioral:sim_1:Functional:aes_enc_tb} -tclbatch {aes_enc_tb.tcl} -view {C:/College/Thesis/VivadoProjects/AES_encrypt/aes_enc_tb_behav1.wcfg} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2017.2 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: open_wave_config C:/College/Thesis/VivadoProjects/AES_encrypt/aes_enc_tb_behav1.wcfg 
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_STOPPED
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: source aes_enc_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'aes_enc_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 841.355 ; gain = 1.191 
+// 'd' command handler elapsed time: 10 seconds
+// Elapsed time: 10 seconds
+dismissDialog("Run Simulation"); // e:bs (cg:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 664 MB. GUI used memory: 44 MB. Current time: 8/21/17 5:27:05 PM EDT
+expandTreeTable(PAResourceQtoS.SimulationScopesPanel_SIMULATION_SCOPES_TREE_TABLE, "T ; top ; Verilog Module", 1); // d:af (JViewport:JComponent, cg:JFrame)
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+selectTreeTable(PAResourceQtoS.SimulationScopesPanel_SIMULATION_SCOPES_TREE_TABLE, "E0 ; encryption ; Verilog Module", 6, "E0", 0, false); // d:af (JViewport:JComponent, cg:JFrame)
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// Elapsed time: 12 seconds
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "l[63:0][7:0] ; XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,31,dc ; Array", 19, "l[63:0][7:0]", 0, true); // n:af (JViewport:JComponent, cg:JFrame) - Node
+// [GUI Memory]: 72 MB (+520kb) [00:01:16]
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// [GUI Memory]: 76 MB (+361kb) [00:01:16]
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// [Engine Memory]: 680 MB (+1277kb) [00:01:19]
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// [GUI Memory]: 80 MB (+212kb) [00:01:19]
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "clk ; 1 ; Logic", 0, "clk", 0, false); // n:af (JViewport:JComponent, cg:JFrame)
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "d[15:0][7:0] ; XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX ; Array", 11, "d[15:0][7:0]", 0, true); // n:af (JViewport:JComponent, cg:JFrame) - Node
+// [GUI Memory]: 85 MB (+383kb) [00:01:30]
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// Elapsed time: 17 seconds
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "next_state[9:0] ; 04c ; Array", 9, "next_state[9:0]", 0, true); // n:af (JViewport:JComponent, cg:JFrame) - Node
+// Elapsed time: 13 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k:JideButton (JPanel:JComponent, cg:JFrame)
+closeTask("Simulation", "Behavioral Simulation - Functional - sim_1 - aes_enc_tb", "DesignTask.SIMULATION");
+// x:aN (cg:JFrame): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, x:aN)
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+dismissDialog("Confirm Close"); // x:aN (cg:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 2); // B:i (D:JPanel, cg:JFrame)
+// PAPropertyPanels.initPanels (encryption.v) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), E0 : encryption (encryption.v)]", 7, false); // B:i (D:JPanel, cg:JFrame)
+// [GUI Memory]: 92 MB (+2896kb) [00:02:12]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), E0 : encryption (encryption.v)]", 7, false, false, false, false, false, true); // B:i (D:JPanel, cg:JFrame) - Double Click
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u:M (JViewport:JComponent, cg:JFrame)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation]", 2); // u:M (JViewport:JComponent, cg:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_POST_SYNTHESIS_TIMING, "Run Post-Synthesis Timing Simulation"); // ac:JMenuItem (ai:JPopupMenu, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_POST_SYNTHESIS_TIMING
+// TclEventType: FILE_SET_CHANGE
+// e:bs (cg:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation -mode post-synthesis -type timing 
+// Tcl Message: INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs INFO: [SIM-utils-51] Simulation object is 'sim_1' 
+// Tcl Message: Design is defaulting to impl run constrset: constrs_1 Design is defaulting to synth run part: xc7a100tcsg324-1 
+// [Engine Memory]: 739 MB (+25822kb) [00:02:21]
+// HMemoryUtils.trashcanNow. Engine heap size: 811 MB. GUI used memory: 46 MB. Current time: 8/21/17 5:28:29 PM EDT
+// [Engine Memory]: 852 MB (+80501kb) [00:02:25]
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 914 MB. GUI used memory: 46 MB. Current time: 8/21/17 5:28:32 PM EDT
+// [Engine Memory]: 914 MB (+20566kb) [00:02:26]
+// Xgd.load filename: C:/Xilinx/Vivado/2017.2/data/parts/xilinx/artix7/devint/artix7/xc7a100t/xc7a100t.xgd; ZipEntry: xc7a100t_detail.xgd elapsed time: 0.6s
+// [Engine Memory]: 995 MB (+35935kb) [00:02:27]
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Device: addNotify
+// DeviceView Instantiated
+// TclEventType: CURR_DESIGN_SET
+// Device view-level: 0.0
+// Tcl Message: open_run: Time (s): cpu = 00:00:18 ; elapsed = 00:00:12 . Memory (MB): peak = 1183.688 ; gain = 317.496 
+// Tcl Message: INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'... INFO: [SIM-utils-25] write_verilog -mode timesim -nolib -sdf_anno true -force -file "C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.sim/sim_1/synth/timing/aes_enc_tb_time_synth.v" 
+// [Engine Memory]: 1,053 MB (+9125kb) [00:02:36]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,130 MB. GUI used memory: 73 MB. Current time: 8/21/17 5:28:50 PM EDT
+// [Engine Memory]: 1,147 MB (+43658kb) [00:02:46]
+// Tcl Message: write_verilog: Time (s): cpu = 00:00:33 ; elapsed = 00:00:16 . Memory (MB): peak = 1286.988 ; gain = 103.301 
+// Tcl Message: INFO: [SIM-utils-27] Writing SDF file... INFO: [SIM-utils-28] write_sdf -mode timesim -process_corner slow -force -file "C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.sim/sim_1/synth/timing/aes_enc_tb_time_synth.sdf" 
+// RouteApi::initDelayMediator elapsed time: 20.9s
+// [Engine Memory]: 1,495 MB (+304716kb) [00:02:50]
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.sim/sim_1/synth/timing' 
+// Tcl Message: Vivado Simulator 2017.2 Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved. Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 036f8e38103f480f9a48b6941301fc84 --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot aes_enc_tb_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.aes_enc_tb xil_defaultlib.glbl -log elaborate.log  Using 2 slave threads. Starting static elaboration 
+// Tcl Message: Completed static elaboration 
+// Tcl Message: Starting simulation data flow analysis Completed simulation data flow analysis INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "aes_enc_tb_time_synth.sdf", for root module "aes_enc_tb/T". INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "aes_enc_tb_time_synth.sdf", for root module "aes_enc_tb/T". 
+// Tcl Message: Built simulation snapshot aes_enc_tb_time_synth  ****** Webtalk v2017.2 (64-bit)   **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017   **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017     ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.  source C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.sim/sim_1/synth/timing/xsim.dir/aes_enc_tb_time_synth/webtalk/xsim_webtalk.tcl -notrace 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [Common 17-186] 'C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.sim/sim_1/synth/timing/xsim.dir/aes_enc_tb_time_synth/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Mon Aug 21 17:29:18 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2017.2/doc/webtalk_introduction.html. INFO: [Common 17-206] Exiting Webtalk at Mon Aug 21 17:29:18 2017... 
+// Tcl Message: run_program: Time (s): cpu = 00:00:02 ; elapsed = 00:00:19 . Memory (MB): peak = 1647.574 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '19' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.sim/sim_1/synth/timing' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "aes_enc_tb_time_synth -key {Post-Synthesis:sim_1:Timing:aes_enc_tb} -tclbatch {aes_enc_tb.tcl} -view {C:/College/Thesis/VivadoProjects/AES_encrypt/aes_enc_tb_behav1.wcfg} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2017.2 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// [GUI Memory]: 97 MB (+188kb) [00:03:14]
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_STOPPED
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: open_wave_config C:/College/Thesis/VivadoProjects/AES_encrypt/aes_enc_tb_behav1.wcfg 
+// Tcl Message: source aes_enc_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// Tcl Message: $finish called at time : 960 ns : File "C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sim_1/new/aes_enc_tb.v" Line 55 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'aes_enc_tb_time_synth' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:01:04 ; elapsed = 00:00:57 . Memory (MB): peak = 1706.086 ; gain = 839.895 
+// 'd' command handler elapsed time: 57 seconds
+// Elapsed time: 57 seconds
+dismissDialog("Run Simulation"); // e:bs (cg:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,538 MB. GUI used memory: 77 MB. Current time: 8/21/17 5:29:25 PM EDT
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k:JideButton (JPanel:JComponent, cg:JFrame)
+closeTask("Simulation", "Post-Synthesis Simulation - Timing - sim_1 - aes_enc_tb", "DesignTask.SIMULATION");
+// x:aN (cg:JFrame): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, x:aN)
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+dismissDialog("Confirm Close"); // x:aN (cg:JFrame)
+// [GUI Memory]: 108 MB (+6535kb) [00:03:37]
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "encryption.v", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// [GUI Memory]: 113 MB (+239kb) [00:03:43]
+// Elapsed time: 14 seconds
+selectCodeEditor("encryption.v", 248, 298); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 19 seconds
+selectCodeEditor("encryption.v", 243, 298); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 16 seconds
+typeControlKey((HResource) null, "encryption.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "encryption.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// [GUI Memory]: 122 MB (+3301kb) [00:04:38]
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 18 seconds
+typeControlKey((HResource) null, "encryption.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "encryption.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "encryption.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey(null, null, 'z');
+typeControlKey((HResource) null, "encryption.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// [GUI Memory]: 130 MB (+1826kb) [00:06:36]
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 108 seconds
+selectCodeEditor("encryption.v", 177, 154); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("encryption.v", 86, 260); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 14 seconds
+typeControlKey((HResource) null, "encryption.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 89 seconds
+selectCodeEditor("encryption.v", 191, 289); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u:M (JViewport:JComponent, cg:JFrame)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis]", 4); // u:M (JViewport:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bs:g (cg:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bs:g (cg:JFrame):  Starting Design Runs : addNotify
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// Tcl Message: [Mon Aug 21 17:34:58 2017] Launched synth_1... Run output will be captured here: C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bs:g (cg:JFrame)
+// [GUI Memory]: 138 MB (+1462kb) [00:09:39]
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// ah:x (cg:JFrame): Synthesis Completed: addNotify
+// Elapsed time: 57 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ah:x)
+dismissDialog("Synthesis Completed"); // ah:x (cg:JFrame)
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // h:k (JPanel:JComponent, cg:JFrame)
+// bs:g (cg:JFrame):  Reloading : addNotify
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,547 MB. GUI used memory: 73 MB. Current time: 8/21/17 5:35:59 PM EDT
+// Engine heap size: 1,547 MB. GUI used memory: 74 MB. Current time: 8/21/17 5:35:59 PM EDT
+// Tcl Message: refresh_design 
+// Tcl Message: INFO: [Project 1-454] Reading design checkpoint 'c:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.dcp' for cell 'B0' INFO: [Project 1-454] Reading design checkpoint 'c:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.dcp' for cell 'B1' 
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,547 MB. GUI used memory: 50 MB. Current time: 8/21/17 5:36:00 PM EDT
+// [Engine Memory]: 1,581 MB (+11298kb) [00:09:54]
+// Xgd.load filename: C:/Xilinx/Vivado/2017.2/data/parts/xilinx/artix7/devint/artix7/xc7a100t/xc7a100t.xgd; ZipEntry: xc7a100t_detail.xgd elapsed time: 0.6s
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Device: addNotify
+// DeviceView Instantiated
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds 
+// Tcl Message: INFO: [Project 1-479] Netlist was created with Vivado 2017.2 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 1725.766 ; gain = 19.238 
+dismissDialog("Reloading"); // bs:g (cg:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u:M (JViewport:JComponent, cg:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_POST_SYNTHESIS_TIMING, "Run Post-Synthesis Timing Simulation"); // ac:JMenuItem (ai:JPopupMenu, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_POST_SYNTHESIS_TIMING
+// TclEventType: FILE_SET_CHANGE
+// e:bs (cg:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation -mode post-synthesis -type timing 
+// Tcl Message: INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'... INFO: [SIM-utils-25] write_verilog -mode timesim -nolib -sdf_anno true -force -file "C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.sim/sim_1/synth/timing/aes_enc_tb_time_synth.v" INFO: [SIM-utils-27] Writing SDF file... INFO: [SIM-utils-28] write_sdf -mode timesim -process_corner slow -force -file "C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.sim/sim_1/synth/timing/aes_enc_tb_time_synth.sdf" 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.sim/sim_1/synth/timing' 
+// Tcl Message: Vivado Simulator 2017.2 Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved. Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 036f8e38103f480f9a48b6941301fc84 --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot aes_enc_tb_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.aes_enc_tb xil_defaultlib.glbl -log elaborate.log  Using 2 slave threads. Starting static elaboration 
+// Tcl Message: Completed static elaboration 
+// Tcl Message: Starting simulation data flow analysis 
+// Tcl Message: Compiling module simprims_ver.x_lut1_mux2 Compiling module simprims_ver.LUT1 Compiling module simprims_ver.FDPE_default Compiling module simprims_ver.FDCE_default Compiling module simprims_ver.latchsre_ldce Compiling module simprims_ver.LDCE(INIT=1'b1) Compiling module simprims_ver.LDCE Compiling module simprims_ver.LUT6 Compiling module simprims_ver.LUT5 Compiling module simprims_ver.x_lut3_mux8 Compiling module simprims_ver.LUT3 Compiling module simprims_ver.MUXF8 Compiling module simprims_ver.MUXF7 Compiling module simprims_ver.x_lut2_mux4 Compiling module simprims_ver.LUT2 Compiling module xil_defaultlib.encryption 
+// Tcl Message: Compiling module simprims_ver.LUT4 Compiling module xil_defaultlib.expandedKeyAddrCounter Compiling module simprims_ver.BUFG Compiling module simprims_ver.CARRY4 Compiling module xil_defaultlib.PlaintextAddrCounter Compiling module simprims_ver.OBUF Compiling module simprims_ver.IBUF Compiling module xil_defaultlib.top Compiling module xil_defaultlib.aes_enc_tb Compiling module xil_defaultlib.glbl 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:21 . Memory (MB): peak = 1725.766 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '21' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.sim/sim_1/synth/timing' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "aes_enc_tb_time_synth -key {Post-Synthesis:sim_1:Timing:aes_enc_tb} -tclbatch {aes_enc_tb.tcl} -view {C:/College/Thesis/VivadoProjects/AES_encrypt/aes_enc_tb_behav1.wcfg} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2017.2 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_STOPPED
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: Time resolution is 1 ps 
+// Tcl Message: open_wave_config C:/College/Thesis/VivadoProjects/AES_encrypt/aes_enc_tb_behav1.wcfg 
+// Tcl Message: source aes_enc_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// Tcl Message: $finish called at time : 960 ns : File "C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sim_1/new/aes_enc_tb.v" Line 55 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'aes_enc_tb_time_synth' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:26 . Memory (MB): peak = 1725.766 ; gain = 0.000 
+// 'd' command handler elapsed time: 26 seconds
+// Elapsed time: 26 seconds
+dismissDialog("Run Simulation"); // e:bs (cg:JFrame)
+// Elapsed time: 36 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u:M (JViewport:JComponent, cg:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ac:JMenuItem (ai:JPopupMenu, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// e:bs (cg:JFrame):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Tcl Message: launch_simulation 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1725.766 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.sim/sim_1/behav' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "aes_enc_tb_behav -key {Behavioral:sim_1:Functional:aes_enc_tb} -tclbatch {aes_enc_tb.tcl} -view {C:/College/Thesis/VivadoProjects/AES_encrypt/aes_enc_tb_behav1.wcfg} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2017.2 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_STOPPED
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: Time resolution is 1 ps 
+// Tcl Message: open_wave_config C:/College/Thesis/VivadoProjects/AES_encrypt/aes_enc_tb_behav1.wcfg 
+// Tcl Message: source aes_enc_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'aes_enc_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 1733.996 ; gain = 8.230 
+// 'd' command handler elapsed time: 9 seconds
+dismissDialog("Run Simulation"); // e:bs (cg:JFrame)
+expandTreeTable(PAResourceQtoS.SimulationScopesPanel_SIMULATION_SCOPES_TREE_TABLE, "T ; top ; Verilog Module", 1); // d:af (JViewport:JComponent, cg:JFrame)
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+selectTreeTable(PAResourceQtoS.SimulationScopesPanel_SIMULATION_SCOPES_TREE_TABLE, "E0 ; encryption ; Verilog Module", 6, "E0", 0, false); // d:af (JViewport:JComponent, cg:JFrame)
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "l[63:0][7:0] ; XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,45,49,31,dc ; Array", 19, "l[63:0][7:0]", 0, true); // n:af (JViewport:JComponent, cg:JFrame) - Node
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "encryption.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// Elapsed time: 240 seconds
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "encryption.v", 1, false, true); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame) - Double Click
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // M:a (Workspace:JPanel, cg:JFrame)
+// Elapsed time: 64 seconds
+selectCodeEditor("encryption.v", 211, 394); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 124 seconds
+unMinimizeFrame(PAResourceOtoP.PAViews_OBJECTS, "Objects"); // ax:DockableFrame
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// Elapsed time: 408 seconds
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "clk ; 1 ; Logic", 0, "clk", 0, false); // n:af (JViewport:JComponent, cg:JFrame)
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "clk ; 1 ; Logic", 0, "clk", 0, false); // n:af (JViewport:JComponent, cg:JFrame)
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "d[15:0][7:0] ; XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,0c,5f ; Array", 11, "d[15:0][7:0]", 0, true); // n:af (JViewport:JComponent, cg:JFrame) - Node
+// Elapsed time: 30 seconds
+selectCodeEditor("encryption.v", 190, 162); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 21 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k:JideButton (JPanel:JComponent, cg:JFrame)
+closeTask("Simulation", "Behavioral Simulation - Functional - sim_1 - aes_enc_tb", "DesignTask.SIMULATION");
+// x:aN (cg:JFrame): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, x:aN)
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+// [GUI Memory]: 145 MB (+143kb) [00:26:34]
+dismissDialog("Confirm Close"); // x:aN (cg:JFrame)
+selectCodeEditor("encryption.v", 82, 332); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("encryption.v", 236, 403); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("encryption.v", 236, 403, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+typeControlKey((HResource) null, "encryption.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("encryption.v", 298, 397); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "encryption.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u:M (JViewport:JComponent, cg:JFrame)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation]", 2); // u:M (JViewport:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bs:g (cg:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bs:g (cg:JFrame):  Starting Design Runs : addNotify
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// Tcl Message: [Mon Aug 21 17:53:06 2017] Launched synth_1... Run output will be captured here: C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bs:g (cg:JFrame)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// ah:x (cg:JFrame): Synthesis Completed: addNotify
+// Elapsed time: 119 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ah:x)
+dismissDialog("Synthesis Completed"); // ah:x (cg:JFrame)
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // h:k (JPanel:JComponent, cg:JFrame)
+// bs:g (cg:JFrame):  Reloading : addNotify
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,590 MB. GUI used memory: 71 MB. Current time: 8/21/17 5:55:08 PM EDT
+// Engine heap size: 1,590 MB. GUI used memory: 71 MB. Current time: 8/21/17 5:55:08 PM EDT
+// Tcl Message: refresh_design 
+// Tcl Message: INFO: [Project 1-454] Reading design checkpoint 'c:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.dcp' for cell 'B0' INFO: [Project 1-454] Reading design checkpoint 'c:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.dcp' for cell 'B1' 
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,590 MB. GUI used memory: 55 MB. Current time: 8/21/17 5:55:10 PM EDT
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Device: addNotify
+// DeviceView Instantiated
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds 
+// Tcl Message: INFO: [Project 1-479] Netlist was created with Vivado 2017.2 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 1737.871 ; gain = 0.000 
+dismissDialog("Reloading"); // bs:g (cg:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u:M (JViewport:JComponent, cg:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_POST_SYNTHESIS_TIMING, "Run Post-Synthesis Timing Simulation"); // ac:JMenuItem (ai:JPopupMenu, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_POST_SYNTHESIS_TIMING
+// TclEventType: FILE_SET_CHANGE
+// e:bs (cg:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation -mode post-synthesis -type timing 
+// Tcl Message: INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'... INFO: [SIM-utils-25] write_verilog -mode timesim -nolib -sdf_anno true -force -file "C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.sim/sim_1/synth/timing/aes_enc_tb_time_synth.v" INFO: [SIM-utils-27] Writing SDF file... INFO: [SIM-utils-28] write_sdf -mode timesim -process_corner slow -force -file "C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.sim/sim_1/synth/timing/aes_enc_tb_time_synth.sdf" 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.sim/sim_1/synth/timing' 
+// Tcl Message: Vivado Simulator 2017.2 Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved. Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 036f8e38103f480f9a48b6941301fc84 --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot aes_enc_tb_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.aes_enc_tb xil_defaultlib.glbl -log elaborate.log  Using 2 slave threads. Starting static elaboration 
+// Tcl Message: Completed static elaboration 
+// Tcl Message: Starting simulation data flow analysis 
+// Tcl Message: Compiling module simprims_ver.x_lut1_mux2 Compiling module simprims_ver.LUT1 Compiling module simprims_ver.FDPE_default Compiling module simprims_ver.FDCE_default Compiling module simprims_ver.latchsre_ldce Compiling module simprims_ver.LDCE(INIT=1'b1) Compiling module simprims_ver.LDCE Compiling module simprims_ver.LUT6 Compiling module simprims_ver.MUXF8 Compiling module simprims_ver.MUXF7 Compiling module simprims_ver.x_lut2_mux4 Compiling module simprims_ver.LUT2 
+// Tcl Message: Compiling module xil_defaultlib.encryption Compiling module simprims_ver.x_lut3_mux8 Compiling module simprims_ver.LUT3 Compiling module simprims_ver.LUT4 Compiling module simprims_ver.LUT5 Compiling module xil_defaultlib.expandedKeyAddrCounter Compiling module simprims_ver.BUFG Compiling module simprims_ver.CARRY4 Compiling module xil_defaultlib.PlaintextAddrCounter Compiling module simprims_ver.OBUF Compiling module simprims_ver.IBUF Compiling module xil_defaultlib.top Compiling module xil_defaultlib.aes_enc_tb Compiling module xil_defaultlib.glbl 
+// Tcl Message: Built simulation snapshot aes_enc_tb_time_synth 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:21 . Memory (MB): peak = 1737.871 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '20' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.sim/sim_1/synth/timing' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "aes_enc_tb_time_synth -key {Post-Synthesis:sim_1:Timing:aes_enc_tb} -tclbatch {aes_enc_tb.tcl} -view {C:/College/Thesis/VivadoProjects/AES_encrypt/aes_enc_tb_behav1.wcfg} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2017.2 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_STOPPED
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: Time resolution is 1 ps 
+// Tcl Message: open_wave_config C:/College/Thesis/VivadoProjects/AES_encrypt/aes_enc_tb_behav1.wcfg 
+// Tcl Message: source aes_enc_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// Tcl Message: $finish called at time : 960 ns : File "C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sim_1/new/aes_enc_tb.v" Line 55 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'aes_enc_tb_time_synth' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:25 . Memory (MB): peak = 1737.871 ; gain = 0.000 
+// 'd' command handler elapsed time: 25 seconds
+// Elapsed time: 26 seconds
+dismissDialog("Run Simulation"); // e:bs (cg:JFrame)
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k:JideButton (JPanel:JComponent, cg:JFrame)
+closeTask("Simulation", "Post-Synthesis Simulation - Timing - sim_1 - aes_enc_tb", "DesignTask.SIMULATION");
+// x:aN (cg:JFrame): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, x:aN)
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+dismissDialog("Confirm Close"); // x:aN (cg:JFrame)
+selectCodeEditor("encryption.v", 390, 151); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "encryption.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 38 seconds
+selectCodeEditor("encryption.v", 211, 309); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("encryption.v", 260, 268); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 23 seconds
+selectCodeEditor("encryption.v", 97, 303); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("encryption.v", 142, 304); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 14 seconds
+selectCodeEditor("encryption.v", 189, 228); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("encryption.v", 189, 228, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("encryption.v", 143, 241); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("encryption.v", 124, 222); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "encryption.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "encryption.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 31 seconds
+typeControlKey((HResource) null, "encryption.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "encryption.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "encryption.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "encryption.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 31 seconds
+typeControlKey((HResource) null, "encryption.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "encryption.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 39 seconds
+selectCodeEditor("encryption.v", 478, 388); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 10 seconds
+typeControlKey((HResource) null, "encryption.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "encryption.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "encryption.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 62 seconds
+typeControlKey((HResource) null, "encryption.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "encryption.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 70 seconds
+selectCodeEditor("encryption.v", 118, 251); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("encryption.v", 481, 241); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 26 seconds
+typeControlKey((HResource) null, "encryption.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "encryption.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 39 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u:M (JViewport:JComponent, cg:JFrame)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug]", 6); // u:M (JViewport:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bs:g (cg:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bs:g (cg:JFrame):  Starting Design Runs : addNotify
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// Tcl Message: [Mon Aug 21 18:03:18 2017] Launched synth_1... Run output will be captured here: C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bs:g (cg:JFrame)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// ah:x (cg:JFrame): Synthesis Completed: addNotify
+// Elapsed time: 80 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ah:x)
+dismissDialog("Synthesis Completed"); // ah:x (cg:JFrame)
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // h:k (JPanel:JComponent, cg:JFrame)
+// bs:g (cg:JFrame):  Reloading : addNotify
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,593 MB. GUI used memory: 78 MB. Current time: 8/21/17 6:04:42 PM EDT
+// Engine heap size: 1,593 MB. GUI used memory: 78 MB. Current time: 8/21/17 6:04:42 PM EDT
+// Tcl Message: refresh_design 
+// Tcl Message: INFO: [Project 1-454] Reading design checkpoint 'c:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.dcp' for cell 'B0' INFO: [Project 1-454] Reading design checkpoint 'c:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.dcp' for cell 'B1' 
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,593 MB. GUI used memory: 57 MB. Current time: 8/21/17 6:04:44 PM EDT
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Device: addNotify
+// DeviceView Instantiated
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds 
+// Tcl Message: INFO: [Project 1-479] Netlist was created with Vivado 2017.2 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 1737.871 ; gain = 0.000 
+dismissDialog("Reloading"); // bs:g (cg:JFrame)
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u:M (JViewport:JComponent, cg:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_POST_SYNTHESIS_TIMING, "Run Post-Synthesis Timing Simulation"); // ac:JMenuItem (ai:JPopupMenu, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_POST_SYNTHESIS_TIMING
+// TclEventType: FILE_SET_CHANGE
+// e:bs (cg:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation -mode post-synthesis -type timing 
+// Tcl Message: INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'... INFO: [SIM-utils-25] write_verilog -mode timesim -nolib -sdf_anno true -force -file "C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.sim/sim_1/synth/timing/aes_enc_tb_time_synth.v" INFO: [SIM-utils-27] Writing SDF file... INFO: [SIM-utils-28] write_sdf -mode timesim -process_corner slow -force -file "C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.sim/sim_1/synth/timing/aes_enc_tb_time_synth.sdf" 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.sim/sim_1/synth/timing' 
+// Tcl Message: Vivado Simulator 2017.2 Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved. Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 036f8e38103f480f9a48b6941301fc84 --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot aes_enc_tb_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.aes_enc_tb xil_defaultlib.glbl -log elaborate.log  Using 2 slave threads. Starting static elaboration 
+// Tcl Message: Completed static elaboration 
+// Tcl Message: Starting simulation data flow analysis 
+// Tcl Message: Compiling module simprims_ver.RAMB18E1(INIT_00=256'b0111000001... Compiling module xil_defaultlib.blk_mem_gen_1_blk_mem_gen_prim_w... Compiling module xil_defaultlib.blk_mem_gen_1_blk_mem_gen_prim_w... Compiling module xil_defaultlib.blk_mem_gen_1_blk_mem_gen_generi... Compiling module xil_defaultlib.blk_mem_gen_1_blk_mem_gen_top Compiling module xil_defaultlib.blk_mem_gen_1_blk_mem_gen_v8_3_6... Compiling module xil_defaultlib.blk_mem_gen_1_blk_mem_gen_v8_3_6 Compiling module xil_defaultlib.blk_mem_gen_1 
+// Tcl Message: Built simulation snapshot aes_enc_tb_time_synth 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:23 . Memory (MB): peak = 1737.871 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '23' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.sim/sim_1/synth/timing' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "aes_enc_tb_time_synth -key {Post-Synthesis:sim_1:Timing:aes_enc_tb} -tclbatch {aes_enc_tb.tcl} -view {C:/College/Thesis/VivadoProjects/AES_encrypt/aes_enc_tb_behav1.wcfg} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2017.2 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_STOPPED
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: Time resolution is 1 ps 
+// Tcl Message: open_wave_config C:/College/Thesis/VivadoProjects/AES_encrypt/aes_enc_tb_behav1.wcfg 
+// Tcl Message: source aes_enc_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// Tcl Message: $finish called at time : 960 ns : File "C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sim_1/new/aes_enc_tb.v" Line 55 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'aes_enc_tb_time_synth' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:28 . Memory (MB): peak = 1737.871 ; gain = 0.000 
+// 'd' command handler elapsed time: 28 seconds
+// Elapsed time: 28 seconds
+dismissDialog("Run Simulation"); // e:bs (cg:JFrame)
+// Elapsed time: 32 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "encryption.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 52 seconds
+selectCodeEditor("encryption.v", 269, 220); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 19 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k:JideButton (JPanel:JComponent, cg:JFrame)
+closeTask("Simulation", "Post-Synthesis Simulation - Timing - sim_1 - aes_enc_tb", "DesignTask.SIMULATION");
+// x:aN (cg:JFrame): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, x:aN)
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+dismissDialog("Confirm Close"); // x:aN (cg:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u:M (JViewport:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// ak:q (cg:JFrame): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a:JButton (JPanel:JComponent, ak:q)
+// bs:g (cg:JFrame):  Save Constraints : addNotify
+// bs:g (cg:JFrame):  Resetting Runs : addNotify
+dismissDialog("Save Project"); // ak:q (cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_RESET
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bs:g (cg:JFrame):  Starting Design Runs : addNotify
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Mon Aug 21 18:07:29 2017] Launched synth_1... Run output will be captured here: C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 4 seconds
+dismissDialog("Starting Design Runs"); // bs:g (cg:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// ah:x (cg:JFrame): Synthesis Completed: addNotify
+// Elapsed time: 73 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ah:x)
+dismissDialog("Synthesis Completed"); // ah:x (cg:JFrame)
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // h:k (JPanel:JComponent, cg:JFrame)
+// bs:g (cg:JFrame):  Reloading : addNotify
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,600 MB. GUI used memory: 76 MB. Current time: 8/21/17 6:08:49 PM EDT
+// Engine heap size: 1,600 MB. GUI used memory: 76 MB. Current time: 8/21/17 6:08:49 PM EDT
+// Tcl Message: refresh_design 
+// Tcl Message: INFO: [Project 1-454] Reading design checkpoint 'c:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.dcp' for cell 'B0' INFO: [Project 1-454] Reading design checkpoint 'c:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.dcp' for cell 'B1' 
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,600 MB. GUI used memory: 58 MB. Current time: 8/21/17 6:08:51 PM EDT
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Device: addNotify
+// DeviceView Instantiated
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds 
+// Tcl Message: INFO: [Project 1-479] Netlist was created with Vivado 2017.2 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 1737.871 ; gain = 0.000 
+dismissDialog("Reloading"); // bs:g (cg:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u:M (JViewport:JComponent, cg:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_POST_SYNTHESIS_TIMING, "Run Post-Synthesis Timing Simulation"); // ac:JMenuItem (ai:JPopupMenu, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_POST_SYNTHESIS_TIMING
+// TclEventType: FILE_SET_CHANGE
+// e:bs (cg:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation -mode post-synthesis -type timing 
+// Tcl Message: INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'... INFO: [SIM-utils-25] write_verilog -mode timesim -nolib -sdf_anno true -force -file "C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.sim/sim_1/synth/timing/aes_enc_tb_time_synth.v" INFO: [SIM-utils-27] Writing SDF file... INFO: [SIM-utils-28] write_sdf -mode timesim -process_corner slow -force -file "C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.sim/sim_1/synth/timing/aes_enc_tb_time_synth.sdf" 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.sim/sim_1/synth/timing' 
+// Tcl Message: Vivado Simulator 2017.2 Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved. Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 036f8e38103f480f9a48b6941301fc84 --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot aes_enc_tb_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.aes_enc_tb xil_defaultlib.glbl -log elaborate.log  Using 2 slave threads. Starting static elaboration 
+// Tcl Message: Completed static elaboration 
+// Tcl Message: Starting simulation data flow analysis Completed simulation data flow analysis INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "aes_enc_tb_time_synth.sdf", for root module "aes_enc_tb/T". INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "aes_enc_tb_time_synth.sdf", for root module "aes_enc_tb/T". Time Resolution for simulation is 1ps Compiling module simprims_ver.GND Compiling module simprims_ver.RB18_INTERNAL_VLOG(DOA_REG=0,DOB... 
+// Tcl Message: Compiling module simprims_ver.x_lut1_mux2 Compiling module simprims_ver.LUT1 Compiling module simprims_ver.FDPE_default Compiling module simprims_ver.FDCE_default Compiling module simprims_ver.latchsre_ldce Compiling module simprims_ver.LDCE(INIT=1'b1) Compiling module simprims_ver.LDCE Compiling module simprims_ver.LUT6 Compiling module simprims_ver.MUXF8 Compiling module simprims_ver.MUXF7 Compiling module simprims_ver.x_lut2_mux4 Compiling module simprims_ver.LUT2 Compiling module simprims_ver.x_lut3_mux8 Compiling module simprims_ver.LUT3 Compiling module simprims_ver.LUT4 Compiling module simprims_ver.LUT5 Compiling module xil_defaultlib.encryption 
+// Tcl Message: Compiling module xil_defaultlib.expandedKeyAddrCounter Compiling module simprims_ver.BUFG Compiling module simprims_ver.CARRY4 Compiling module xil_defaultlib.PlaintextAddrCounter Compiling module simprims_ver.OBUF Compiling module simprims_ver.IBUF Compiling module xil_defaultlib.top Compiling module xil_defaultlib.aes_enc_tb Compiling module xil_defaultlib.glbl 
+// Tcl Message: Built simulation snapshot aes_enc_tb_time_synth  ****** Webtalk v2017.2 (64-bit)   **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017   **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017     ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.  source C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.sim/sim_1/synth/timing/xsim.dir/aes_enc_tb_time_synth/webtalk/xsim_webtalk.tcl -notrace 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [Common 17-186] 'C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.sim/sim_1/synth/timing/xsim.dir/aes_enc_tb_time_synth/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Mon Aug 21 18:09:24 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2017.2/doc/webtalk_introduction.html. INFO: [Common 17-206] Exiting Webtalk at Mon Aug 21 18:09:24 2017... 
+// Tcl Message: run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:24 . Memory (MB): peak = 1737.871 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '23' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.sim/sim_1/synth/timing' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "aes_enc_tb_time_synth -key {Post-Synthesis:sim_1:Timing:aes_enc_tb} -tclbatch {aes_enc_tb.tcl} -view {C:/College/Thesis/VivadoProjects/AES_encrypt/aes_enc_tb_behav1.wcfg} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2017.2 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_STOPPED
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: Time resolution is 1 ps 
+// Tcl Message: open_wave_config C:/College/Thesis/VivadoProjects/AES_encrypt/aes_enc_tb_behav1.wcfg 
+// Tcl Message: source aes_enc_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// Tcl Message: $finish called at time : 960 ns : File "C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sim_1/new/aes_enc_tb.v" Line 55 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'aes_enc_tb_time_synth' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:29 . Memory (MB): peak = 1737.871 ; gain = 0.000 
+// 'd' command handler elapsed time: 29 seconds
+// Elapsed time: 29 seconds
+dismissDialog("Run Simulation"); // e:bs (cg:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 47 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "aes_enc_tb_behav1.wcfg", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,600 MB. GUI used memory: 87 MB. Current time: 8/21/17 6:10:15 PM EDT
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "encryption.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// Elapsed time: 81 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u:M (JViewport:JComponent, cg:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ac:JMenuItem (ai:JPopupMenu, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// e:bs (cg:JFrame):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Tcl Message: launch_simulation 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1737.871 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.sim/sim_1/behav' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "aes_enc_tb_behav -key {Behavioral:sim_1:Functional:aes_enc_tb} -tclbatch {aes_enc_tb.tcl} -view {C:/College/Thesis/VivadoProjects/AES_encrypt/aes_enc_tb_behav1.wcfg} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2017.2 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_STOPPED
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: Time resolution is 1 ps 
+// Tcl Message: open_wave_config C:/College/Thesis/VivadoProjects/AES_encrypt/aes_enc_tb_behav1.wcfg 
+// Tcl Message: source aes_enc_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'aes_enc_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1737.871 ; gain = 0.000 
+// 'd' command handler elapsed time: 9 seconds
+dismissDialog("Run Simulation"); // e:bs (cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "encryption.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectCodeEditor("encryption.v", 140, 262); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 37 seconds
+collapseTreeTable(PAResourceQtoS.SimulationScopesPanel_SIMULATION_SCOPES_TREE_TABLE, "T ; top ; Verilog Module", 1); // d:af (JViewport:JComponent, cg:JFrame)
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+selectTreeTable(PAResourceQtoS.SimulationScopesPanel_SIMULATION_SCOPES_TREE_TABLE, "T ; top ; Verilog Module", 1, "T", 0, true); // d:af (JViewport:JComponent, cg:JFrame) - Node
+expandTreeTable(PAResourceQtoS.SimulationScopesPanel_SIMULATION_SCOPES_TREE_TABLE, "T ; top ; Verilog Module", 1); // d:af (JViewport:JComponent, cg:JFrame)
+selectTreeTable(PAResourceQtoS.SimulationScopesPanel_SIMULATION_SCOPES_TREE_TABLE, "E0 ; encryption ; Verilog Module", 6, "encryption", 1, false); // d:af (JViewport:JComponent, cg:JFrame)
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "l[63:0][7:0] ; XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,00,c4,e8,5d,45,49,31,dc ; Array", 19, "l[63:0][7:0]", 0, true); // n:af (JViewport:JComponent, cg:JFrame) - Node
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "l[63:0][7:0] ; XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,00,c4,e8,5d,45,49,31,dc ; Array", 19, "l[63:0][7:0]", 0, true); // n:af (JViewport:JComponent, cg:JFrame) - Node
+// Elapsed time: 130 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "aes_enc_tb.v", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "encryption.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectCodeEditor("encryption.v", 57, 227); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 51 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k:JideButton (JPanel:JComponent, cg:JFrame)
+closeTask("Simulation", "Behavioral Simulation - Functional - sim_1 - aes_enc_tb", "DesignTask.SIMULATION");
+// x:aN (cg:JFrame): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, x:aN)
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+dismissDialog("Confirm Close"); // x:aN (cg:JFrame)
+selectCodeEditor("encryption.v", 198, 250); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("encryption.v", 208, 246); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 14 seconds
+typeControlKey((HResource) null, "encryption.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "encryption.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "encryption.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "encryption.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "encryption.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "encryption.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "encryption.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// [GUI Memory]: 154 MB (+2338kb) [00:50:48]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u:M (JViewport:JComponent, cg:JFrame)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis]", 4); // u:M (JViewport:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bs:g (cg:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bs:g (cg:JFrame):  Starting Design Runs : addNotify
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// Tcl Message: [Mon Aug 21 18:17:01 2017] Launched synth_1... Run output will be captured here: C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bs:g (cg:JFrame)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// ah:x (cg:JFrame): Synthesis Completed: addNotify
+// Elapsed time: 71 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ah:x)
+dismissDialog("Synthesis Completed"); // ah:x (cg:JFrame)
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // h:k (JPanel:JComponent, cg:JFrame)
+// bs:g (cg:JFrame):  Reloading : addNotify
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,600 MB. GUI used memory: 81 MB. Current time: 8/21/17 6:18:16 PM EDT
+// Engine heap size: 1,600 MB. GUI used memory: 82 MB. Current time: 8/21/17 6:18:16 PM EDT
+// Tcl Message: refresh_design 
+// Tcl Message: INFO: [Project 1-454] Reading design checkpoint 'c:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.dcp' for cell 'B0' INFO: [Project 1-454] Reading design checkpoint 'c:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.dcp' for cell 'B1' 
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,600 MB. GUI used memory: 61 MB. Current time: 8/21/17 6:18:17 PM EDT
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Device: addNotify
+// DeviceView Instantiated
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds 
+// Tcl Message: INFO: [Project 1-479] Netlist was created with Vivado 2017.2 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 1745.602 ; gain = 0.000 
+dismissDialog("Reloading"); // bs:g (cg:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u:M (JViewport:JComponent, cg:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_POST_SYNTHESIS_TIMING, "Run Post-Synthesis Timing Simulation"); // ac:JMenuItem (ai:JPopupMenu, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_POST_SYNTHESIS_TIMING
+// TclEventType: FILE_SET_CHANGE
+// e:bs (cg:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation -mode post-synthesis -type timing 
+// Tcl Message: INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'... INFO: [SIM-utils-25] write_verilog -mode timesim -nolib -sdf_anno true -force -file "C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.sim/sim_1/synth/timing/aes_enc_tb_time_synth.v" INFO: [SIM-utils-27] Writing SDF file... INFO: [SIM-utils-28] write_sdf -mode timesim -process_corner slow -force -file "C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.sim/sim_1/synth/timing/aes_enc_tb_time_synth.sdf" 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.sim/sim_1/synth/timing' 
+// Tcl Message: Vivado Simulator 2017.2 Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved. Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 036f8e38103f480f9a48b6941301fc84 --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot aes_enc_tb_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.aes_enc_tb xil_defaultlib.glbl -log elaborate.log  Using 2 slave threads. Starting static elaboration 
+// Tcl Message: Completed static elaboration 
+// Tcl Message: Starting simulation data flow analysis Completed simulation data flow analysis INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "aes_enc_tb_time_synth.sdf", for root module "aes_enc_tb/T". INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "aes_enc_tb_time_synth.sdf", for root module "aes_enc_tb/T". 
+// Tcl Message: Compiling module simprims_ver.x_lut1_mux2 Compiling module simprims_ver.LUT1 Compiling module simprims_ver.FDPE_default Compiling module simprims_ver.FDCE_default Compiling module simprims_ver.latchsre_ldce Compiling module simprims_ver.LDCE(INIT=1'b1) Compiling module simprims_ver.LDCE Compiling module simprims_ver.LUT6 Compiling module simprims_ver.MUXF8 Compiling module simprims_ver.MUXF7 Compiling module simprims_ver.x_lut2_mux4 Compiling module simprims_ver.LUT2 Compiling module simprims_ver.x_lut3_mux8 Compiling module simprims_ver.LUT3 Compiling module simprims_ver.LUT4 Compiling module simprims_ver.LUT5 Compiling module xil_defaultlib.encryption 
+// Tcl Message: Compiling module xil_defaultlib.expandedKeyAddrCounter Compiling module simprims_ver.BUFG Compiling module simprims_ver.CARRY4 Compiling module xil_defaultlib.PlaintextAddrCounter Compiling module simprims_ver.OBUF Compiling module simprims_ver.IBUF Compiling module xil_defaultlib.top Compiling module xil_defaultlib.aes_enc_tb Compiling module xil_defaultlib.glbl 
+// Tcl Message: Built simulation snapshot aes_enc_tb_time_synth  ****** Webtalk v2017.2 (64-bit)   **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017   **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017     ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.  source C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.sim/sim_1/synth/timing/xsim.dir/aes_enc_tb_time_synth/webtalk/xsim_webtalk.tcl -notrace 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [Common 17-186] 'C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.sim/sim_1/synth/timing/xsim.dir/aes_enc_tb_time_synth/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Mon Aug 21 18:18:55 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2017.2/doc/webtalk_introduction.html. INFO: [Common 17-206] Exiting Webtalk at Mon Aug 21 18:18:55 2017... 
+// Tcl Message: run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:24 . Memory (MB): peak = 1745.602 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '23' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.sim/sim_1/synth/timing' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "aes_enc_tb_time_synth -key {Post-Synthesis:sim_1:Timing:aes_enc_tb} -tclbatch {aes_enc_tb.tcl} -view {C:/College/Thesis/VivadoProjects/AES_encrypt/aes_enc_tb_behav1.wcfg} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2017.2 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_STOPPED
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: Time resolution is 1 ps 
+// Tcl Message: open_wave_config C:/College/Thesis/VivadoProjects/AES_encrypt/aes_enc_tb_behav1.wcfg 
+// Tcl Message: source aes_enc_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// Tcl Message: $finish called at time : 960 ns : File "C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sim_1/new/aes_enc_tb.v" Line 55 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'aes_enc_tb_time_synth' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:28 . Memory (MB): peak = 1745.602 ; gain = 0.000 
+// 'd' command handler elapsed time: 28 seconds
+// Elapsed time: 29 seconds
+dismissDialog("Run Simulation"); // e:bs (cg:JFrame)
+// Elapsed time: 57 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u:M (JViewport:JComponent, cg:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ac:JMenuItem (ai:JPopupMenu, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// e:bs (cg:JFrame):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Tcl Message: launch_simulation 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1745.602 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.sim/sim_1/behav' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "aes_enc_tb_behav -key {Behavioral:sim_1:Functional:aes_enc_tb} -tclbatch {aes_enc_tb.tcl} -view {C:/College/Thesis/VivadoProjects/AES_encrypt/aes_enc_tb_behav1.wcfg} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2017.2 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_STOPPED
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: Time resolution is 1 ps 
+// Tcl Message: open_wave_config C:/College/Thesis/VivadoProjects/AES_encrypt/aes_enc_tb_behav1.wcfg 
+// Tcl Message: source aes_enc_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'aes_enc_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1745.602 ; gain = 0.000 
+// 'd' command handler elapsed time: 9 seconds
+dismissDialog("Run Simulation"); // e:bs (cg:JFrame)
+// Elapsed time: 11 seconds
+expandTreeTable(PAResourceQtoS.SimulationScopesPanel_SIMULATION_SCOPES_TREE_TABLE, "T ; top ; Verilog Module", 1); // d:af (JViewport:JComponent, cg:JFrame)
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+selectTreeTable(PAResourceQtoS.SimulationScopesPanel_SIMULATION_SCOPES_TREE_TABLE, "E0 ; encryption ; Verilog Module", 6, "E0", 0, false); // d:af (JViewport:JComponent, cg:JFrame)
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "l[63:0][7:0] ; XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,XX,00,c4,e8,5d,45,49,31,dc ; Array", 19, "l[63:0][7:0]", 0, true); // n:af (JViewport:JComponent, cg:JFrame) - Node
+// Elapsed time: 32 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "aes_enc_tb.v", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "encryption.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// Elapsed time: 51 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k:JideButton (JPanel:JComponent, cg:JFrame)
+closeTask("Simulation", "Behavioral Simulation - Functional - sim_1 - aes_enc_tb", "DesignTask.SIMULATION");
+// x:aN (cg:JFrame): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, x:aN)
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+dismissDialog("Confirm Close"); // x:aN (cg:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("encryption.v", 39, 398); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u:M (JViewport:JComponent, cg:JFrame)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0); // u:M (JViewport:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bs:g (cg:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bs:g (cg:JFrame):  Starting Design Runs : addNotify
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// Tcl Message: [Mon Aug 21 18:22:18 2017] Launched synth_1... Run output will be captured here: C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bs:g (cg:JFrame)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// ah:x (cg:JFrame): Synthesis Completed: addNotify
+// Elapsed time: 57 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ah:x)
+dismissDialog("Synthesis Completed"); // ah:x (cg:JFrame)
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // h:k (JPanel:JComponent, cg:JFrame)
+// bs:g (cg:JFrame):  Reloading : addNotify
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,600 MB. GUI used memory: 82 MB. Current time: 8/21/17 6:23:19 PM EDT
+// Engine heap size: 1,600 MB. GUI used memory: 83 MB. Current time: 8/21/17 6:23:19 PM EDT
+// Tcl Message: refresh_design 
+// Tcl Message: INFO: [Project 1-454] Reading design checkpoint 'c:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.dcp' for cell 'B0' INFO: [Project 1-454] Reading design checkpoint 'c:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.dcp' for cell 'B1' 
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,600 MB. GUI used memory: 65 MB. Current time: 8/21/17 6:23:21 PM EDT
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Device: addNotify
+// DeviceView Instantiated
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds 
+// Tcl Message: INFO: [Project 1-479] Netlist was created with Vivado 2017.2 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1745.602 ; gain = 0.000 
+dismissDialog("Reloading"); // bs:g (cg:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u:M (JViewport:JComponent, cg:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_POST_SYNTHESIS_TIMING, "Run Post-Synthesis Timing Simulation"); // ac:JMenuItem (ai:JPopupMenu, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_POST_SYNTHESIS_TIMING
+// TclEventType: FILE_SET_CHANGE
+// e:bs (cg:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation -mode post-synthesis -type timing 
+// Tcl Message: INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'... INFO: [SIM-utils-25] write_verilog -mode timesim -nolib -sdf_anno true -force -file "C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.sim/sim_1/synth/timing/aes_enc_tb_time_synth.v" INFO: [SIM-utils-27] Writing SDF file... INFO: [SIM-utils-28] write_sdf -mode timesim -process_corner slow -force -file "C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.sim/sim_1/synth/timing/aes_enc_tb_time_synth.sdf" 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.sim/sim_1/synth/timing' 
+// Tcl Message: Vivado Simulator 2017.2 Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved. Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 036f8e38103f480f9a48b6941301fc84 --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot aes_enc_tb_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.aes_enc_tb xil_defaultlib.glbl -log elaborate.log  Using 2 slave threads. Starting static elaboration 
+// Tcl Message: Completed static elaboration 
+// Tcl Message: Starting simulation data flow analysis Completed simulation data flow analysis INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "aes_enc_tb_time_synth.sdf", for root module "aes_enc_tb/T". INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "aes_enc_tb_time_synth.sdf", for root module "aes_enc_tb/T". 
+// Tcl Message: Built simulation snapshot aes_enc_tb_time_synth  ****** Webtalk v2017.2 (64-bit)   **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017   **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017     ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.  source C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.sim/sim_1/synth/timing/xsim.dir/aes_enc_tb_time_synth/webtalk/xsim_webtalk.tcl -notrace 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [Common 17-186] 'C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.sim/sim_1/synth/timing/xsim.dir/aes_enc_tb_time_synth/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Mon Aug 21 18:23:57 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2017.2/doc/webtalk_introduction.html. INFO: [Common 17-206] Exiting Webtalk at Mon Aug 21 18:23:57 2017... 
+// Tcl Message: run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:24 . Memory (MB): peak = 1745.602 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '24' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.sim/sim_1/synth/timing' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "aes_enc_tb_time_synth -key {Post-Synthesis:sim_1:Timing:aes_enc_tb} -tclbatch {aes_enc_tb.tcl} -view {C:/College/Thesis/VivadoProjects/AES_encrypt/aes_enc_tb_behav1.wcfg} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2017.2 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_STOPPED
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: Time resolution is 1 ps 
+// Tcl Message: open_wave_config C:/College/Thesis/VivadoProjects/AES_encrypt/aes_enc_tb_behav1.wcfg 
+// Tcl Message: source aes_enc_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// Tcl Message: $finish called at time : 960 ns : File "C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sim_1/new/aes_enc_tb.v" Line 55 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'aes_enc_tb_time_synth' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:29 . Memory (MB): peak = 1745.602 ; gain = 0.000 
+// 'd' command handler elapsed time: 29 seconds
+// Elapsed time: 29 seconds
+dismissDialog("Run Simulation"); // e:bs (cg:JFrame)
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k:JideButton (JPanel:JComponent, cg:JFrame)
+closeTask("Simulation", "Post-Synthesis Simulation - Timing - sim_1 - aes_enc_tb", "DesignTask.SIMULATION");
+// x:aN (cg:JFrame): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, x:aN)
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+dismissDialog("Confirm Close"); // x:aN (cg:JFrame)
+selectCodeEditor("encryption.v", 290, 323); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("encryption.v", 220, 106); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "encryption.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 27 seconds
+selectCodeEditor("encryption.v", 245, 335); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("encryption.v", 335, 188); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("encryption.v", 279, 284); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "encryption.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "encryption.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("encryption.v", 307, 325); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 19 seconds
+selectCodeEditor("encryption.v", 275, 254); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("encryption.v", 102, 207); // bI:J (JPanel:JComponent, cg:JFrame)
+// [GUI Memory]: 163 MB (+1111kb) [00:59:51]
+// Elapsed time: 34 seconds
+selectCodeEditor("encryption.v", 240, 211); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 49 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 50 seconds
+typeControlKey((HResource) null, "encryption.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "encryption.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 45 seconds
+typeControlKey((HResource) null, "encryption.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "encryption.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 61 seconds
+selectCodeEditor("encryption.v", 113, 350); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 25 seconds
+selectCodeEditor("encryption.v", 240, 349); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 32 seconds
+typeControlKey((HResource) null, "encryption.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "encryption.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 33 seconds
+selectCodeEditor("encryption.v", 114, 309); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 73 seconds
+selectCodeEditor("encryption.v", 355, 313); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 15 seconds
+selectCodeEditor("encryption.v", 484, 260); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("encryption.v", 234, 213); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("encryption.v", 234, 213, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("encryption.v", 234, 213); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "encryption.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "encryption.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 18 seconds
+selectCodeEditor("encryption.v", 310, 311); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "encryption.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "encryption.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u:M (JViewport:JComponent, cg:JFrame)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis]", 3); // u:M (JViewport:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bs:g (cg:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bs:g (cg:JFrame):  Starting Design Runs : addNotify
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// Tcl Message: [Mon Aug 21 18:33:30 2017] Launched synth_1... Run output will be captured here: C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bs:g (cg:JFrame)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// ah:x (cg:JFrame): Synthesis Completed: addNotify
+// Elapsed time: 75 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ah:x)
+dismissDialog("Synthesis Completed"); // ah:x (cg:JFrame)
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // h:k (JPanel:JComponent, cg:JFrame)
+// bs:g (cg:JFrame):  Reloading : addNotify
+// Tcl Message: refresh_design 
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,600 MB. GUI used memory: 91 MB. Current time: 8/21/17 6:34:58 PM EDT
+// Engine heap size: 1,600 MB. GUI used memory: 92 MB. Current time: 8/21/17 6:34:58 PM EDT
+// Tcl Message: INFO: [Project 1-454] Reading design checkpoint 'c:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.dcp' for cell 'B0' INFO: [Project 1-454] Reading design checkpoint 'c:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.dcp' for cell 'B1' 
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,600 MB. GUI used memory: 67 MB. Current time: 8/21/17 6:34:59 PM EDT
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Device: addNotify
+// DeviceView Instantiated
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds 
+// Tcl Message: INFO: [Project 1-479] Netlist was created with Vivado 2017.2 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 1745.602 ; gain = 0.000 
+dismissDialog("Reloading"); // bs:g (cg:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u:M (JViewport:JComponent, cg:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_POST_SYNTHESIS_TIMING, "Run Post-Synthesis Timing Simulation"); // ac:JMenuItem (ai:JPopupMenu, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_POST_SYNTHESIS_TIMING
+// TclEventType: FILE_SET_CHANGE
+// e:bs (cg:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation -mode post-synthesis -type timing 
+// Tcl Message: INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'... INFO: [SIM-utils-25] write_verilog -mode timesim -nolib -sdf_anno true -force -file "C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.sim/sim_1/synth/timing/aes_enc_tb_time_synth.v" INFO: [SIM-utils-27] Writing SDF file... INFO: [SIM-utils-28] write_sdf -mode timesim -process_corner slow -force -file "C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.sim/sim_1/synth/timing/aes_enc_tb_time_synth.sdf" 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.sim/sim_1/synth/timing' 
+// Tcl Message: Vivado Simulator 2017.2 Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved. Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 036f8e38103f480f9a48b6941301fc84 --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot aes_enc_tb_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.aes_enc_tb xil_defaultlib.glbl -log elaborate.log  Using 2 slave threads. Starting static elaboration 
+// Tcl Message: Completed static elaboration 
+// Tcl Message: Starting simulation data flow analysis 
+// Tcl Message: Completed simulation data flow analysis INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "aes_enc_tb_time_synth.sdf", for root module "aes_enc_tb/T". INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "aes_enc_tb_time_synth.sdf", for root module "aes_enc_tb/T". 
+// Tcl Message: Compiling module simprims_ver.x_lut1_mux2 Compiling module simprims_ver.LUT1 Compiling module simprims_ver.FDPE_default Compiling module simprims_ver.FDCE_default Compiling module simprims_ver.latchsre_ldce Compiling module simprims_ver.LDCE(INIT=1'b1) Compiling module simprims_ver.LDCE Compiling module simprims_ver.LUT6 Compiling module simprims_ver.MUXF8 Compiling module simprims_ver.MUXF7 Compiling module simprims_ver.x_lut2_mux4 Compiling module simprims_ver.LUT2 Compiling module simprims_ver.LUT4 Compiling module simprims_ver.LUT5 Compiling module simprims_ver.x_lut3_mux8 Compiling module simprims_ver.LUT3 Compiling module xil_defaultlib.encryption 
+// Tcl Message: Compiling module xil_defaultlib.expandedKeyAddrCounter Compiling module simprims_ver.BUFG Compiling module simprims_ver.CARRY4 Compiling module xil_defaultlib.PlaintextAddrCounter Compiling module simprims_ver.OBUF Compiling module simprims_ver.IBUF Compiling module xil_defaultlib.top Compiling module xil_defaultlib.aes_enc_tb Compiling module xil_defaultlib.glbl 
+// Tcl Message: Built simulation snapshot aes_enc_tb_time_synth 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:43 . Memory (MB): peak = 1745.602 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '43' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.sim/sim_1/synth/timing' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "aes_enc_tb_time_synth -key {Post-Synthesis:sim_1:Timing:aes_enc_tb} -tclbatch {aes_enc_tb.tcl} -view {C:/College/Thesis/VivadoProjects/AES_encrypt/aes_enc_tb_behav1.wcfg} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2017.2 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_STOPPED
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: Time resolution is 1 ps 
+// Tcl Message: open_wave_config C:/College/Thesis/VivadoProjects/AES_encrypt/aes_enc_tb_behav1.wcfg 
+// Tcl Message: source aes_enc_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// Tcl Message: $finish called at time : 960 ns : File "C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sim_1/new/aes_enc_tb.v" Line 55 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'aes_enc_tb_time_synth' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:48 . Memory (MB): peak = 1745.602 ; gain = 0.000 
+// 'd' command handler elapsed time: 48 seconds
+// Elapsed time: 48 seconds
+dismissDialog("Run Simulation"); // e:bs (cg:JFrame)
+// Elapsed time: 31 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "aes_enc_tb.v", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "encryption.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 65 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k:JideButton (JPanel:JComponent, cg:JFrame)
+closeTask("Simulation", "Post-Synthesis Simulation - Timing - sim_1 - aes_enc_tb", "DesignTask.SIMULATION");
+// x:aN (cg:JFrame): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, x:aN)
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+dismissDialog("Confirm Close"); // x:aN (cg:JFrame)
+selectCodeEditor("encryption.v", 227, 400); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u:M (JViewport:JComponent, cg:JFrame)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis]", 3); // u:M (JViewport:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_GENERATED
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bs:g (cg:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bs:g (cg:JFrame):  Starting Design Runs : addNotify
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// Tcl Message: [Mon Aug 21 18:38:07 2017] Launched synth_1... Run output will be captured here: C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bs:g (cg:JFrame)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// ah:x (cg:JFrame): Synthesis Completed: addNotify
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// Elapsed time: 76 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ah:x)
+dismissDialog("Synthesis Completed"); // ah:x (cg:JFrame)
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // h:k (JPanel:JComponent, cg:JFrame)
+// bs:g (cg:JFrame):  Reloading : addNotify
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,600 MB. GUI used memory: 96 MB. Current time: 8/21/17 6:39:27 PM EDT
+// Engine heap size: 1,600 MB. GUI used memory: 97 MB. Current time: 8/21/17 6:39:27 PM EDT
+// Tcl Message: refresh_design 
+// Tcl Message: INFO: [Project 1-454] Reading design checkpoint 'c:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.dcp' for cell 'B0' INFO: [Project 1-454] Reading design checkpoint 'c:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.dcp' for cell 'B1' 
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,600 MB. GUI used memory: 69 MB. Current time: 8/21/17 6:39:29 PM EDT
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Device: addNotify
+// DeviceView Instantiated
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds 
+// Tcl Message: INFO: [Project 1-479] Netlist was created with Vivado 2017.2 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 1796.875 ; gain = 0.000 
+dismissDialog("Reloading"); // bs:g (cg:JFrame)
+// Elapsed time: 25 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u:M (JViewport:JComponent, cg:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_POST_SYNTHESIS_TIMING, "Run Post-Synthesis Timing Simulation"); // ac:JMenuItem (ai:JPopupMenu, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_POST_SYNTHESIS_TIMING
+// TclEventType: FILE_SET_CHANGE
+// e:bs (cg:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation -mode post-synthesis -type timing 
+// Tcl Message: INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'... INFO: [SIM-utils-25] write_verilog -mode timesim -nolib -sdf_anno true -force -file "C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.sim/sim_1/synth/timing/aes_enc_tb_time_synth.v" 
+// Tcl Message: INFO: [SIM-utils-27] Writing SDF file... INFO: [SIM-utils-28] write_sdf -mode timesim -process_corner slow -force -file "C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.sim/sim_1/synth/timing/aes_enc_tb_time_synth.sdf" 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.sim/sim_1/synth/timing' 
+// Tcl Message: Vivado Simulator 2017.2 Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved. Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 036f8e38103f480f9a48b6941301fc84 --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot aes_enc_tb_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.aes_enc_tb xil_defaultlib.glbl -log elaborate.log  Using 2 slave threads. Starting static elaboration 
+// Tcl Message: Completed static elaboration 
+// Tcl Message: Starting simulation data flow analysis 
+// Tcl Message: Completed simulation data flow analysis INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "aes_enc_tb_time_synth.sdf", for root module "aes_enc_tb/T". INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "aes_enc_tb_time_synth.sdf", for root module "aes_enc_tb/T". 
+// Tcl Message: Built simulation snapshot aes_enc_tb_time_synth 
+// Tcl Message:  ****** Webtalk v2017.2 (64-bit)   **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017   **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017     ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.  source C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.sim/sim_1/synth/timing/xsim.dir/aes_enc_tb_time_synth/webtalk/xsim_webtalk.tcl -notrace 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 61.340 ; gain = 1.133 INFO: [Common 17-206] Exiting Webtalk at Mon Aug 21 18:40:48 2017... 
+// Tcl Message: run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:47 . Memory (MB): peak = 1796.875 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '46' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.sim/sim_1/synth/timing' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "aes_enc_tb_time_synth -key {Post-Synthesis:sim_1:Timing:aes_enc_tb} -tclbatch {aes_enc_tb.tcl} -view {C:/College/Thesis/VivadoProjects/AES_encrypt/aes_enc_tb_behav1.wcfg} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2017.2 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_STOPPED
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: Time resolution is 1 ps 
+// Tcl Message: open_wave_config C:/College/Thesis/VivadoProjects/AES_encrypt/aes_enc_tb_behav1.wcfg 
+// Tcl Message: source aes_enc_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// Tcl Message: $finish called at time : 960 ns : File "C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sim_1/new/aes_enc_tb.v" Line 55 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'aes_enc_tb_time_synth' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:52 . Memory (MB): peak = 1796.875 ; gain = 0.000 
+// 'd' command handler elapsed time: 52 seconds
+// Elapsed time: 52 seconds
+dismissDialog("Run Simulation"); // e:bs (cg:JFrame)
+// Elapsed time: 24 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k:JideButton (JPanel:JComponent, cg:JFrame)
+closeTask("Simulation", "Post-Synthesis Simulation - Timing - sim_1 - aes_enc_tb", "DesignTask.SIMULATION");
+// x:aN (cg:JFrame): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, x:aN)
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+dismissDialog("Confirm Close"); // x:aN (cg:JFrame)
+selectCodeEditor("encryption.v", 196, 229); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("encryption.v", 264, 356); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("encryption.v", 288, 224); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("encryption.v", 255, 100); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "encryption.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "encryption.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "encryption.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "encryption.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "encryption.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+// [GUI Memory]: 173 MB (+1139kb) [01:16:01]
+// Elapsed time: 31 seconds
+selectCodeEditor("encryption.v", 320, 163); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("encryption.v", 278, 277); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("encryption.v", 294, 312); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "encryption.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "encryption.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "encryption.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("encryption.v", 89, 137); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 17 seconds
+selectCodeEditor("encryption.v", 254, 294); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("encryption.v", 108, 248); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 158 seconds
+selectCodeEditor("encryption.v", 264, 248); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("encryption.v", 249, 244); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("encryption.v", 263, 244); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("encryption.v", 263, 244, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 69 seconds
+selectCodeEditor("encryption.v", 494, 228); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("encryption.v", 24, 109); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "encryption.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "encryption.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 82 seconds
+selectCodeEditor("encryption.v", 109, 276); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 116 seconds
+selectCodeEditor("encryption.v", 456, 370); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "encryption.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "encryption.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u:M (JViewport:JComponent, cg:JFrame)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis]", 3); // u:M (JViewport:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bs:g (cg:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bs:g (cg:JFrame):  Starting Design Runs : addNotify
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// Tcl Message: [Mon Aug 21 18:50:34 2017] Launched synth_1... Run output will be captured here: C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bs:g (cg:JFrame)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// ah:x (cg:JFrame): Synthesis Completed: addNotify
+// Elapsed time: 116 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ah:x)
+dismissDialog("Synthesis Completed"); // ah:x (cg:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u:M (JViewport:JComponent, cg:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_POST_SYNTHESIS_TIMING, "Run Post-Synthesis Timing Simulation"); // ac:JMenuItem (ai:JPopupMenu, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_POST_SYNTHESIS_TIMING
+// 'd' command handler elapsed time: 10 seconds
+// Elapsed time: 10 seconds
+selectButton("PAResourceQtoS.SimulationRun_DESIGN_STALE_AND_NEEDS_TOBE_CLOSED_Cancel", "Cancel"); // JButton:AbstractButton (JPanel:JComponent, G:JDialog)
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // h:k (JPanel:JComponent, cg:JFrame)
+// bs:g (cg:JFrame):  Reloading : addNotify
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,600 MB. GUI used memory: 92 MB. Current time: 8/21/17 6:52:47 PM EDT
+// Engine heap size: 1,600 MB. GUI used memory: 92 MB. Current time: 8/21/17 6:52:47 PM EDT
+// Tcl Message: refresh_design 
+// Tcl Message: INFO: [Project 1-454] Reading design checkpoint 'c:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.dcp' for cell 'B0' INFO: [Project 1-454] Reading design checkpoint 'c:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.dcp' for cell 'B1' 
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,600 MB. GUI used memory: 71 MB. Current time: 8/21/17 6:52:48 PM EDT
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Device: addNotify
+// DeviceView Instantiated
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds 
+// Tcl Message: INFO: [Project 1-479] Netlist was created with Vivado 2017.2 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1864.676 ; gain = 10.859 
+dismissDialog("Reloading"); // bs:g (cg:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u:M (JViewport:JComponent, cg:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_POST_SYNTHESIS_TIMING, "Run Post-Synthesis Timing Simulation"); // ac:JMenuItem (ai:JPopupMenu, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_POST_SYNTHESIS_TIMING
+// TclEventType: FILE_SET_CHANGE
+// e:bs (cg:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation -mode post-synthesis -type timing 
+// Tcl Message: INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'... INFO: [SIM-utils-25] write_verilog -mode timesim -nolib -sdf_anno true -force -file "C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.sim/sim_1/synth/timing/aes_enc_tb_time_synth.v" INFO: [SIM-utils-27] Writing SDF file... INFO: [SIM-utils-28] write_sdf -mode timesim -process_corner slow -force -file "C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.sim/sim_1/synth/timing/aes_enc_tb_time_synth.sdf" 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.sim/sim_1/synth/timing' 
+// Tcl Message: Vivado Simulator 2017.2 Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved. Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 036f8e38103f480f9a48b6941301fc84 --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot aes_enc_tb_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.aes_enc_tb xil_defaultlib.glbl -log elaborate.log  Using 2 slave threads. Starting static elaboration 
+// Tcl Message: Completed static elaboration 
+// Tcl Message: Starting simulation data flow analysis 
+// Tcl Message: Completed simulation data flow analysis INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "aes_enc_tb_time_synth.sdf", for root module "aes_enc_tb/T". INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "aes_enc_tb_time_synth.sdf", for root module "aes_enc_tb/T". 
+// Tcl Message: Compiling module simprims_ver.x_lut1_mux2 Compiling module simprims_ver.LUT1 Compiling module simprims_ver.FDPE_default Compiling module simprims_ver.FDCE_default Compiling module simprims_ver.latchsre_ldce Compiling module simprims_ver.LDCE(INIT=1'b1) Compiling module simprims_ver.LDCE Compiling module simprims_ver.LUT6 Compiling module simprims_ver.MUXF8 Compiling module simprims_ver.MUXF7 Compiling module simprims_ver.x_lut2_mux4 Compiling module simprims_ver.LUT2 Compiling module simprims_ver.LUT4 Compiling module simprims_ver.LUT5 Compiling module simprims_ver.x_lut3_mux8 Compiling module simprims_ver.LUT3 Compiling module xil_defaultlib.encryption 
+// Tcl Message: Compiling module xil_defaultlib.expandedKeyAddrCounter Compiling module simprims_ver.BUFG Compiling module simprims_ver.CARRY4 Compiling module xil_defaultlib.PlaintextAddrCounter Compiling module simprims_ver.OBUF Compiling module simprims_ver.IBUF Compiling module xil_defaultlib.top Compiling module xil_defaultlib.aes_enc_tb Compiling module xil_defaultlib.glbl 
+// Tcl Message: Built simulation snapshot aes_enc_tb_time_synth 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:01:15 . Memory (MB): peak = 1864.676 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '75' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.sim/sim_1/synth/timing' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "aes_enc_tb_time_synth -key {Post-Synthesis:sim_1:Timing:aes_enc_tb} -tclbatch {aes_enc_tb.tcl} -view {C:/College/Thesis/VivadoProjects/AES_encrypt/aes_enc_tb_behav1.wcfg} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2017.2 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_STOPPED
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: Time resolution is 1 ps 
+// Tcl Message: open_wave_config C:/College/Thesis/VivadoProjects/AES_encrypt/aes_enc_tb_behav1.wcfg 
+// Tcl Message: source aes_enc_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// Tcl Message: $finish called at time : 960 ns : File "C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sim_1/new/aes_enc_tb.v" Line 55 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'aes_enc_tb_time_synth' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:01:21 . Memory (MB): peak = 1864.676 ; gain = 0.000 
+// 'd' command handler elapsed time: 81 seconds
+// Elapsed time: 81 seconds
+dismissDialog("Run Simulation"); // e:bs (cg:JFrame)
+// Elapsed time: 49 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k:JideButton (JPanel:JComponent, cg:JFrame)
+closeTask("Simulation", "Post-Synthesis Simulation - Timing - sim_1 - aes_enc_tb", "DesignTask.SIMULATION");
+// x:aN (cg:JFrame): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, x:aN)
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+dismissDialog("Confirm Close"); // x:aN (cg:JFrame)
+// Elapsed time: 35 seconds
+selectCodeEditor("encryption.v", 395, 270); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 23 seconds
+typeControlKey((HResource) null, "encryption.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "encryption.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "encryption.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "encryption.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 50 seconds
+selectCodeEditor("encryption.v", 273, 354); // bI:J (JPanel:JComponent, cg:JFrame)
+// [GUI Memory]: 182 MB (+547kb) [01:31:00]
+// Elapsed time: 13 seconds
+selectCodeEditor("encryption.v", 121, 275); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 18 seconds
+typeControlKey((HResource) null, "encryption.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "encryption.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "encryption.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 14 seconds
+selectCodeEditor("encryption.v", 186, 333); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("encryption.v", 121, 277); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 40 seconds
+selectCodeEditor("encryption.v", 128, 325); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 225 seconds
+selectCodeEditor("encryption.v", 257, 311); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 99 seconds
+selectCodeEditor("encryption.v", 79, 230); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "encryption.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "encryption.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// [GUI Memory]: 194 MB (+3321kb) [01:39:29]
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 97 seconds
+selectCodeEditor("encryption.v", 368, 260); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "encryption.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "encryption.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u:M (JViewport:JComponent, cg:JFrame)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation]", 5); // u:M (JViewport:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_GENERATED
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bs:g (cg:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bs:g (cg:JFrame):  Starting Design Runs : addNotify
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// Tcl Message: [Mon Aug 21 19:06:10 2017] Launched synth_1... Run output will be captured here: C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bs:g (cg:JFrame)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// ah:x (cg:JFrame): Synthesis Completed: addNotify
+// Elapsed time: 77 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ah:x)
+dismissDialog("Synthesis Completed"); // ah:x (cg:JFrame)
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // h:k (JPanel:JComponent, cg:JFrame)
+// bs:g (cg:JFrame):  Reloading : addNotify
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,600 MB. GUI used memory: 115 MB. Current time: 8/21/17 7:07:31 PM EDT
+// Engine heap size: 1,600 MB. GUI used memory: 116 MB. Current time: 8/21/17 7:07:31 PM EDT
+// Tcl Message: refresh_design 
+// Tcl Message: INFO: [Project 1-454] Reading design checkpoint 'c:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.dcp' for cell 'B0' INFO: [Project 1-454] Reading design checkpoint 'c:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.dcp' for cell 'B1' 
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,600 MB. GUI used memory: 74 MB. Current time: 8/21/17 7:07:32 PM EDT
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Device: addNotify
+// DeviceView Instantiated
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds 
+// Tcl Message: INFO: [Project 1-479] Netlist was created with Vivado 2017.2 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1886.215 ; gain = 0.000 
+dismissDialog("Reloading"); // bs:g (cg:JFrame)
+// Elapsed time: 20 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u:M (JViewport:JComponent, cg:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_POST_SYNTHESIS_TIMING, "Run Post-Synthesis Timing Simulation"); // ac:JMenuItem (ai:JPopupMenu, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_POST_SYNTHESIS_TIMING
+// TclEventType: FILE_SET_CHANGE
+// e:bs (cg:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation -mode post-synthesis -type timing 
+// Tcl Message: INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'... INFO: [SIM-utils-25] write_verilog -mode timesim -nolib -sdf_anno true -force -file "C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.sim/sim_1/synth/timing/aes_enc_tb_time_synth.v" 
+// Tcl Message: INFO: [SIM-utils-27] Writing SDF file... INFO: [SIM-utils-28] write_sdf -mode timesim -process_corner slow -force -file "C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.sim/sim_1/synth/timing/aes_enc_tb_time_synth.sdf" 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.sim/sim_1/synth/timing' 
+// Tcl Message: Vivado Simulator 2017.2 Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved. Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 036f8e38103f480f9a48b6941301fc84 --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot aes_enc_tb_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.aes_enc_tb xil_defaultlib.glbl -log elaborate.log  Using 2 slave threads. Starting static elaboration 
+// Tcl Message: Completed static elaboration 
+// Tcl Message: Starting simulation data flow analysis 
+// Tcl Message: Completed simulation data flow analysis INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "aes_enc_tb_time_synth.sdf", for root module "aes_enc_tb/T". INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "aes_enc_tb_time_synth.sdf", for root module "aes_enc_tb/T". 
+// Tcl Message: Time Resolution for simulation is 1ps Compiling module simprims_ver.GND Compiling module simprims_ver.RB18_INTERNAL_VLOG(DOA_REG=0,DOB... 
+// Tcl Message: Compiling module simprims_ver.x_lut1_mux2 Compiling module simprims_ver.LUT1 Compiling module simprims_ver.FDPE_default Compiling module simprims_ver.FDCE_default Compiling module simprims_ver.latchsre_ldce Compiling module simprims_ver.LDCE(INIT=1'b1) Compiling module simprims_ver.LDCE Compiling module simprims_ver.LUT6 Compiling module simprims_ver.MUXF8 Compiling module simprims_ver.MUXF7 Compiling module simprims_ver.x_lut2_mux4 Compiling module simprims_ver.LUT2 Compiling module simprims_ver.LUT4 Compiling module simprims_ver.LUT5 Compiling module simprims_ver.x_lut3_mux8 Compiling module simprims_ver.LUT3 Compiling module xil_defaultlib.encryption 
+// Tcl Message: Compiling module xil_defaultlib.expandedKeyAddrCounter 
+// Tcl Message: Compiling module simprims_ver.BUFG Compiling module simprims_ver.CARRY4 Compiling module xil_defaultlib.PlaintextAddrCounter Compiling module simprims_ver.OBUF Compiling module simprims_ver.IBUF Compiling module xil_defaultlib.top Compiling module xil_defaultlib.aes_enc_tb Compiling module xil_defaultlib.glbl 
+// Tcl Message: Built simulation snapshot aes_enc_tb_time_synth 
+// Tcl Message:  ****** Webtalk v2017.2 (64-bit)   **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017   **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017     ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.  source C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.sim/sim_1/synth/timing/xsim.dir/aes_enc_tb_time_synth/webtalk/xsim_webtalk.tcl -notrace 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [Common 17-186] 'C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.sim/sim_1/synth/timing/xsim.dir/aes_enc_tb_time_synth/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Mon Aug 21 19:10:04 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2017.2/doc/webtalk_introduction.html. INFO: [Common 17-206] Exiting Webtalk at Mon Aug 21 19:10:04 2017... 
+// Tcl Message: run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:02:02 . Memory (MB): peak = 1886.215 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '122' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.sim/sim_1/synth/timing' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "aes_enc_tb_time_synth -key {Post-Synthesis:sim_1:Timing:aes_enc_tb} -tclbatch {aes_enc_tb.tcl} -view {C:/College/Thesis/VivadoProjects/AES_encrypt/aes_enc_tb_behav1.wcfg} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2017.2 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// Tcl Message: open_wave_config C:/College/Thesis/VivadoProjects/AES_encrypt/aes_enc_tb_behav1.wcfg 
+// Tcl Message: source aes_enc_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_STOPPED
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: $finish called at time : 960 ns : File "C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sim_1/new/aes_enc_tb.v" Line 55 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'aes_enc_tb_time_synth' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:02:10 . Memory (MB): peak = 1886.215 ; gain = 0.000 
+// 'd' command handler elapsed time: 129 seconds
+// Elapsed time: 129 seconds
+dismissDialog("Run Simulation"); // e:bs (cg:JFrame)

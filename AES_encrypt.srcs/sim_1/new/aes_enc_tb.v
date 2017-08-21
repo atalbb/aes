@@ -30,7 +30,7 @@ parameter HALF_CLK = 5;
     parameter _17_FULL_CLK = 17 * FULL_CLK;
     //parameter
     reg clk,rst,enb,enk;
-    wire [31:0]data;
+    wire [127:0]data;
     wire finalDone;
     top T(clk,rst,enk,enb,finalDone,data);
     initial begin

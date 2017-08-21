@@ -29,7 +29,7 @@ module top(input wire clk,
            //output [31:0]plainTextBRAMOUT,
            //output [31:0]expandedKeyBRAMOUT
            output wire cipherTextDone,
-           output wire [31:0]cipherTextOut
+           output wire [127:0]cipherTextOut
            );
 wire [31:0]plainTextBRAMOUT;
 wire [31:0]expandedKeyBRAMOUT;

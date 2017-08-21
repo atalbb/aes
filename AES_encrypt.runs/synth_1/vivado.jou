@@ -2,8 +2,8 @@
 # Vivado v2017.2 (64-bit)
 # SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
 # IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
-# Start of session at: Mon Aug 21 13:43:45 2017
-# Process ID: 5188
+# Start of session at: Mon Aug 21 19:06:11 2017
+# Process ID: 5488
 # Current directory: C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.runs/synth_1
 # Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
 # Log file: C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.runs/synth_1/top.vds
