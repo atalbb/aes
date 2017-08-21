@@ -26,12 +26,12 @@ module top(input wire clk,
            input wire rst,           
            input wire enExpandedKeyIn,
            input wire enPlainTextIn,           
-           output [31:0]plainTextBRAMOUT,
-           output [31:0]expandedKeyBRAMOUT
-           //output wire cipherTextDone,
-           //output wire [31:0]cipherTextOut
+           //output [31:0]plainTextBRAMOUT,
+           //output [31:0]expandedKeyBRAMOUT
+           output wire cipherTextDone,
+           output wire [31:0]cipherTextOut
            );
-//wire [31:0]plainTextBRAMOUT;
+wire [31:0]plainTextBRAMOUT;
 wire [31:0]expandedKeyBRAMOUT;
 wire plainTextAddrValid;
 wire expandedKeyAddrValid;
@@ -41,7 +41,7 @@ PlaintextAddrCounter PT1(clk,rst,enPlainTextIn,plainTextAddrValid,plainTextAddr)
 blk_mem_gen_0 B0(clk,plainTextAddrValid,0,plainTextAddr,32'h0,plainTextBRAMOUT);//BRAM for HashIn
 expandedKeyAddrCounter EK0(clk,rst,enExpandedKeyIn,expandedKeyAddrValid,expandedKeyAddr);
 blk_mem_gen_1 B1(clk,expandedKeyAddrValid,0,expandedKeyAddr,32'h0,expandedKeyBRAMOUT);//BRAM for HashIn
-//encryption E0(clk,rst,enExpandedKeyIn,expandedKeyBRAMOUT,enPlainTextIn,plainTextBRAMOUT,cipherTextDone,cipherTextOut);
+encryption E0(clk,rst,enExpandedKeyIn,expandedKeyBRAMOUT,enPlainTextIn,plainTextBRAMOUT,cipherTextDone,cipherTextOut);
 
 endmodule
 

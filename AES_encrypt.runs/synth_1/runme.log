@@ -14,24 +14,124 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 4016 
-WARNING: [Synth 8-2611] redeclaration of ansi port expandedKeyBRAMOUT is not allowed [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/top.v:35]
+INFO: Helper process launched with PID 4348 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 391.973 ; gain = 84.363
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 383.512 ; gain = 76.605
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'top' [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/top.v:25]
 INFO: [Synth 8-638] synthesizing module 'PlaintextAddrCounter' [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/PlaintextAddrCounter.v:23]
 INFO: [Synth 8-256] done synthesizing module 'PlaintextAddrCounter' (1#1) [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/PlaintextAddrCounter.v:23]
-INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.runs/synth_1/.Xil/Vivado-6700-LAPTOP-L1N8U9P6/realtime/blk_mem_gen_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_0' (2#1) [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.runs/synth_1/.Xil/Vivado-6700-LAPTOP-L1N8U9P6/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.runs/synth_1/.Xil/Vivado-5188-LAPTOP-L1N8U9P6/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_0' (2#1) [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.runs/synth_1/.Xil/Vivado-5188-LAPTOP-L1N8U9P6/realtime/blk_mem_gen_0_stub.v:6]
 INFO: [Synth 8-638] synthesizing module 'expandedKeyAddrCounter' [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/ciphertextAddrCounter.v:23]
 	Parameter N bound to: 59 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'expandedKeyAddrCounter' (3#1) [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/ciphertextAddrCounter.v:23]
-INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_1' [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.runs/synth_1/.Xil/Vivado-6700-LAPTOP-L1N8U9P6/realtime/blk_mem_gen_1_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_1' (4#1) [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.runs/synth_1/.Xil/Vivado-6700-LAPTOP-L1N8U9P6/realtime/blk_mem_gen_1_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'top' (5#1) [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/top.v:25]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_1' [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.runs/synth_1/.Xil/Vivado-5188-LAPTOP-L1N8U9P6/realtime/blk_mem_gen_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_1' (4#1) [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.runs/synth_1/.Xil/Vivado-5188-LAPTOP-L1N8U9P6/realtime/blk_mem_gen_1_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'encryption' [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/encryption.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/encryption.v:48]
+WARNING: [Synth 8-567] referenced signal 'expandedKey' should be on the sensitivity list [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/encryption.v:47]
+WARNING: [Synth 8-567] referenced signal 'plaintext' should be on the sensitivity list [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/encryption.v:47]
+WARNING: [Synth 8-6014] Unused sequential element count_flag_reg was removed.  [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/encryption.v:51]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[59] was removed.  [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/encryption.v:67]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[58] was removed.  [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/encryption.v:67]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[57] was removed.  [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/encryption.v:67]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[56] was removed.  [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/encryption.v:67]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[55] was removed.  [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/encryption.v:67]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[54] was removed.  [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/encryption.v:67]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[53] was removed.  [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/encryption.v:67]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[52] was removed.  [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/encryption.v:67]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[51] was removed.  [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/encryption.v:67]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[50] was removed.  [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/encryption.v:67]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[49] was removed.  [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/encryption.v:67]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[48] was removed.  [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/encryption.v:67]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[47] was removed.  [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/encryption.v:67]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[46] was removed.  [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/encryption.v:67]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[45] was removed.  [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/encryption.v:67]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[44] was removed.  [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/encryption.v:67]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[43] was removed.  [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/encryption.v:67]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[42] was removed.  [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/encryption.v:67]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[41] was removed.  [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/encryption.v:67]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[40] was removed.  [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/encryption.v:67]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[39] was removed.  [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/encryption.v:67]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[38] was removed.  [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/encryption.v:67]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[37] was removed.  [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/encryption.v:67]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[36] was removed.  [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/encryption.v:67]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[35] was removed.  [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/encryption.v:67]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[34] was removed.  [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/encryption.v:67]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[33] was removed.  [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/encryption.v:67]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[32] was removed.  [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/encryption.v:67]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[31] was removed.  [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/encryption.v:67]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[30] was removed.  [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/encryption.v:67]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[29] was removed.  [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/encryption.v:67]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[28] was removed.  [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/encryption.v:67]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[27] was removed.  [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/encryption.v:67]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[26] was removed.  [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/encryption.v:67]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[25] was removed.  [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/encryption.v:67]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[24] was removed.  [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/encryption.v:67]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[23] was removed.  [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/encryption.v:67]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[22] was removed.  [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/encryption.v:67]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[21] was removed.  [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/encryption.v:67]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[20] was removed.  [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/encryption.v:67]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[19] was removed.  [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/encryption.v:67]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[18] was removed.  [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/encryption.v:67]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[17] was removed.  [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/encryption.v:67]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[16] was removed.  [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/encryption.v:67]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[15] was removed.  [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/encryption.v:67]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[14] was removed.  [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/encryption.v:67]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[13] was removed.  [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/encryption.v:67]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[12] was removed.  [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/encryption.v:67]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[11] was removed.  [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/encryption.v:67]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[10] was removed.  [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/encryption.v:67]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[9] was removed.  [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/encryption.v:67]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[8] was removed.  [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/encryption.v:67]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[7] was removed.  [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/encryption.v:67]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[6] was removed.  [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/encryption.v:67]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[5] was removed.  [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/encryption.v:67]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[4] was removed.  [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/encryption.v:67]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[3] was removed.  [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/encryption.v:67]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[2] was removed.  [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/encryption.v:67]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[1] was removed.  [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/encryption.v:67]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[0] was removed.  [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/encryption.v:67]
+WARNING: [Synth 8-6014] Unused sequential element w_reg[2] was removed.  [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/encryption.v:439]
+WARNING: [Synth 8-6014] Unused sequential element w_reg[1] was removed.  [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/encryption.v:439]
+WARNING: [Synth 8-6014] Unused sequential element w_reg[0] was removed.  [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/encryption.v:439]
+INFO: [Synth 8-256] done synthesizing module 'encryption' (5#1) [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/encryption.v:23]
+INFO: [Synth 8-256] done synthesizing module 'top' (6#1) [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/top.v:25]
+WARNING: [Synth 8-3331] design encryption has unconnected port expandedKey[31]
+WARNING: [Synth 8-3331] design encryption has unconnected port expandedKey[30]
+WARNING: [Synth 8-3331] design encryption has unconnected port expandedKey[29]
+WARNING: [Synth 8-3331] design encryption has unconnected port expandedKey[28]
+WARNING: [Synth 8-3331] design encryption has unconnected port expandedKey[27]
+WARNING: [Synth 8-3331] design encryption has unconnected port expandedKey[26]
+WARNING: [Synth 8-3331] design encryption has unconnected port expandedKey[25]
+WARNING: [Synth 8-3331] design encryption has unconnected port expandedKey[24]
+WARNING: [Synth 8-3331] design encryption has unconnected port expandedKey[23]
+WARNING: [Synth 8-3331] design encryption has unconnected port expandedKey[22]
+WARNING: [Synth 8-3331] design encryption has unconnected port expandedKey[21]
+WARNING: [Synth 8-3331] design encryption has unconnected port expandedKey[20]
+WARNING: [Synth 8-3331] design encryption has unconnected port expandedKey[19]
+WARNING: [Synth 8-3331] design encryption has unconnected port expandedKey[18]
+WARNING: [Synth 8-3331] design encryption has unconnected port expandedKey[17]
+WARNING: [Synth 8-3331] design encryption has unconnected port expandedKey[16]
+WARNING: [Synth 8-3331] design encryption has unconnected port expandedKey[15]
+WARNING: [Synth 8-3331] design encryption has unconnected port expandedKey[14]
+WARNING: [Synth 8-3331] design encryption has unconnected port expandedKey[13]
+WARNING: [Synth 8-3331] design encryption has unconnected port expandedKey[12]
+WARNING: [Synth 8-3331] design encryption has unconnected port expandedKey[11]
+WARNING: [Synth 8-3331] design encryption has unconnected port expandedKey[10]
+WARNING: [Synth 8-3331] design encryption has unconnected port expandedKey[9]
+WARNING: [Synth 8-3331] design encryption has unconnected port expandedKey[8]
+WARNING: [Synth 8-3331] design encryption has unconnected port expandedKey[7]
+WARNING: [Synth 8-3331] design encryption has unconnected port expandedKey[6]
+WARNING: [Synth 8-3331] design encryption has unconnected port expandedKey[5]
+WARNING: [Synth 8-3331] design encryption has unconnected port expandedKey[4]
+WARNING: [Synth 8-3331] design encryption has unconnected port expandedKey[3]
+WARNING: [Synth 8-3331] design encryption has unconnected port expandedKey[2]
+WARNING: [Synth 8-3331] design encryption has unconnected port expandedKey[1]
+WARNING: [Synth 8-3331] design encryption has unconnected port expandedKey[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 416.773 ; gain = 109.164
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 423.590 ; gain = 116.684
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -41,32 +141,32 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 416.773 ; gain = 109.164
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 423.590 ; gain = 116.684
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.runs/synth_1/.Xil/Vivado-6700-LAPTOP-L1N8U9P6/dcp5/blk_mem_gen_0_in_context.xdc] for cell 'B0'
-Finished Parsing XDC File [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.runs/synth_1/.Xil/Vivado-6700-LAPTOP-L1N8U9P6/dcp5/blk_mem_gen_0_in_context.xdc] for cell 'B0'
-Parsing XDC File [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.runs/synth_1/.Xil/Vivado-6700-LAPTOP-L1N8U9P6/dcp7/blk_mem_gen_1_in_context.xdc] for cell 'B1'
-Finished Parsing XDC File [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.runs/synth_1/.Xil/Vivado-6700-LAPTOP-L1N8U9P6/dcp7/blk_mem_gen_1_in_context.xdc] for cell 'B1'
+Parsing XDC File [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.runs/synth_1/.Xil/Vivado-5188-LAPTOP-L1N8U9P6/dcp5/blk_mem_gen_0_in_context.xdc] for cell 'B0'
+Finished Parsing XDC File [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.runs/synth_1/.Xil/Vivado-5188-LAPTOP-L1N8U9P6/dcp5/blk_mem_gen_0_in_context.xdc] for cell 'B0'
+Parsing XDC File [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.runs/synth_1/.Xil/Vivado-5188-LAPTOP-L1N8U9P6/dcp7/blk_mem_gen_1_in_context.xdc] for cell 'B1'
+Finished Parsing XDC File [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.runs/synth_1/.Xil/Vivado-5188-LAPTOP-L1N8U9P6/dcp7/blk_mem_gen_1_in_context.xdc] for cell 'B1'
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 722.988 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 711.027 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 722.988 ; gain = 415.379
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 711.027 ; gain = 404.121
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 722.988 ; gain = 415.379
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 711.027 ; gain = 404.121
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -74,7 +174,7 @@ Start Applying 'set_property' XDC Constraints
 Applied set_property DONT_TOUCH = true for B0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for B1. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 722.988 ; gain = 415.379
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 711.027 ; gain = 404.121
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5544] ROM "flag" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "flag" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
@@ -85,8 +185,99 @@ INFO: [Synth 8-5544] ROM "flag" won't be mapped to Block RAM because address siz
 INFO: [Synth 8-5544] ROM "flag" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "valid" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 WARNING: [Synth 8-6014] Unused sequential element addr_reg was removed.  [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/ciphertextAddrCounter.v:37]
+INFO: [Synth 8-802] inferred FSM for state register 'curr_state_reg' in module 'encryption'
+WARNING: [Synth 8-6014] Unused sequential element curr_state_reg was removed.  [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/encryption.v:41]
+WARNING: [Synth 8-6014] Unused sequential element next_state_reg was removed.  [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/encryption.v:50]
+INFO: [Synth 8-5546] ROM "ciphertext" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-327] inferring latch for variable 'ciphertextDone_reg' [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/encryption.v:463]
+WARNING: [Synth 8-6014] Unused sequential element curr_state_reg was removed.  [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/encryption.v:41]
+WARNING: [Synth 8-327] inferring latch for variable 'next_state_reg' [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/encryption.v:50]
+WARNING: [Synth 8-6014] Unused sequential element curr_state_reg was removed.  [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/encryption.v:41]
+WARNING: [Synth 8-327] inferring latch for variable 'next_state_reg' [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/encryption.v:50]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE | 000000000000000000000000000000000000000000000000000000000000000000000001 |                       0000000000
+                 iSTATE0 | 000000000000000000000000000000000000000000000000000000000000000000000010 |                       0000000001
+                 iSTATE1 | 000000000000000000000000000000000000000000000000000000000000000000000100 |                       0000000010
+                 iSTATE2 | 000000000000000000000000000000000000000000000000000000000000000000001000 |                       0000000011
+                 iSTATE3 | 000000000000000000000000000000000000000000000000000000000000000000010000 |                       0000000100
+                 iSTATE4 | 000000000000000000000000000000000000000000000000000000000000000000100000 |                       0000000101
+                 iSTATE5 | 000000000000000000000000000000000000000000000000000000000000000001000000 |                       0000000110
+                 iSTATE6 | 000000000000000000000000000000000000000000000000000000000000000010000000 |                       0000000111
+                 iSTATE7 | 000000000000000000000000000000000000000000000000000000000000000100000000 |                       0000001000
+                 iSTATE8 | 000000000000000000000000000000000000000000000000000000000000001000000000 |                       0000001001
+                 iSTATE9 | 000000000000000000000000000000000000000000000000000000000000010000000000 |                       0000001010
+                iSTATE10 | 000000000000000000000000000000000000000000000000000000000000100000000000 |                       0000001011
+                iSTATE11 | 000000000000000000000000000000000000000000000000000000000001000000000000 |                       0000001100
+                iSTATE12 | 000000000000000000000000000000000000000000000000000000000010000000000000 |                       0000001101
+                iSTATE13 | 000000000000000000000000000000000000000000000000000000000100000000000000 |                       0000001110
+                iSTATE14 | 000000000000000000000000000000000000000000000000000000001000000000000000 |                       0000001111
+                iSTATE15 | 000000000000000000000000000000000000000000000000000000010000000000000000 |                       0000010000
+                iSTATE16 | 000000000000000000000000000000000000000000000000000000100000000000000000 |                       0000010001
+                iSTATE17 | 000000000000000000000000000000000000000000000000000001000000000000000000 |                       0000010010
+                iSTATE18 | 000000000000000000000000000000000000000000000000000010000000000000000000 |                       0000010011
+                iSTATE19 | 000000000000000000000000000000000000000000000000000100000000000000000000 |                       0000010100
+                iSTATE20 | 000000000000000000000000000000000000000000000000001000000000000000000000 |                       0000010101
+                iSTATE21 | 000000000000000000000000000000000000000000000000010000000000000000000000 |                       0000010110
+                iSTATE22 | 000000000000000000000000000000000000000000000000100000000000000000000000 |                       0000010111
+                iSTATE23 | 000000000000000000000000000000000000000000000001000000000000000000000000 |                       0000011000
+                iSTATE24 | 000000000000000000000000000000000000000000000010000000000000000000000000 |                       0000011001
+                iSTATE25 | 000000000000000000000000000000000000000000000100000000000000000000000000 |                       0000011010
+                iSTATE26 | 000000000000000000000000000000000000000000001000000000000000000000000000 |                       0000011011
+                iSTATE27 | 000000000000000000000000000000000000000000010000000000000000000000000000 |                       0000011100
+                iSTATE28 | 000000000000000000000000000000000000000000100000000000000000000000000000 |                       0000011101
+                iSTATE29 | 000000000000000000000000000000000000000001000000000000000000000000000000 |                       0000011110
+                iSTATE30 | 000000000000000000000000000000000000000010000000000000000000000000000000 |                       0000011111
+                iSTATE31 | 000000000000000000000000000000000000000100000000000000000000000000000000 |                       0000100000
+                iSTATE32 | 000000000000000000000000000000000000001000000000000000000000000000000000 |                       0000100001
+                iSTATE33 | 000000000000000000000000000000000000010000000000000000000000000000000000 |                       0000100010
+                iSTATE34 | 000000000000000000000000000000000000100000000000000000000000000000000000 |                       0000100011
+                iSTATE35 | 000000000000000000000000000000000001000000000000000000000000000000000000 |                       0000100100
+                iSTATE36 | 000000000000000000000000000000000010000000000000000000000000000000000000 |                       0000100101
+                iSTATE37 | 000000000000000000000000000000000100000000000000000000000000000000000000 |                       0000100110
+                iSTATE38 | 000000000000000000000000000000001000000000000000000000000000000000000000 |                       0000100111
+                iSTATE39 | 000000000000000000000000000000010000000000000000000000000000000000000000 |                       0000101000
+                iSTATE40 | 000000000000000000000000000000100000000000000000000000000000000000000000 |                       0000101001
+                iSTATE41 | 000000000000000000000000000001000000000000000000000000000000000000000000 |                       0000101010
+                iSTATE42 | 000000000000000000000000000010000000000000000000000000000000000000000000 |                       0000101011
+                iSTATE43 | 000000000000000000000000000100000000000000000000000000000000000000000000 |                       0000101100
+                iSTATE44 | 000000000000000000000000001000000000000000000000000000000000000000000000 |                       0000101101
+                iSTATE45 | 000000000000000000000000010000000000000000000000000000000000000000000000 |                       0000101110
+                iSTATE46 | 000000000000000000000000100000000000000000000000000000000000000000000000 |                       0000101111
+                iSTATE47 | 000000000000000000000001000000000000000000000000000000000000000000000000 |                       0000110000
+                iSTATE48 | 000000000000000000000010000000000000000000000000000000000000000000000000 |                       0000110001
+                iSTATE49 | 000000000000000000000100000000000000000000000000000000000000000000000000 |                       0000110010
+                iSTATE50 | 000000000000000000001000000000000000000000000000000000000000000000000000 |                       0000110011
+                iSTATE51 | 000000000000000000010000000000000000000000000000000000000000000000000000 |                       0000110100
+                iSTATE52 | 000000000000000000100000000000000000000000000000000000000000000000000000 |                       0000110101
+                iSTATE53 | 000000000000000001000000000000000000000000000000000000000000000000000000 |                       0000110110
+                iSTATE54 | 000000000000000010000000000000000000000000000000000000000000000000000000 |                       0000110111
+                iSTATE55 | 000000000000000100000000000000000000000000000000000000000000000000000000 |                       0000111000
+                iSTATE56 | 000000000000001000000000000000000000000000000000000000000000000000000000 |                       0000111001
+                iSTATE57 | 000000000000010000000000000000000000000000000000000000000000000000000000 |                       0000111010
+                iSTATE58 | 000000000000100000000000000000000000000000000000000000000000000000000000 |                       0000111011
+                iSTATE59 | 000000000001000000000000000000000000000000000000000000000000000000000000 |                       0000111100
+                iSTATE60 | 000000000010000000000000000000000000000000000000000000000000000000000000 |                       0000111101
+                iSTATE61 | 000000000100000000000000000000000000000000000000000000000000000000000000 |                       0000111110
+                iSTATE62 | 000000001000000000000000000000000000000000000000000000000000000000000000 |                       0000111111
+                iSTATE63 | 000000010000000000000000000000000000000000000000000000000000000000000000 |                       0001000000
+                iSTATE64 | 000000100000000000000000000000000000000000000000000000000000000000000000 |                       0001000001
+                iSTATE65 | 000001000000000000000000000000000000000000000000000000000000000000000000 |                       0001000010
+                iSTATE66 | 000010000000000000000000000000000000000000000000000000000000000000000000 |                       0001000011
+                iSTATE67 | 000100000000000000000000000000000000000000000000000000000000000000000000 |                       0001000100
+                iSTATE68 | 001000000000000000000000000000000000000000000000000000000000000000000000 |                       0001000101
+                iSTATE69 | 010000000000000000000000000000000000000000000000000000000000000000000000 |                       0001000110
+                iSTATE70 | 100000000000000000000000000000000000000000000000000000000000000000000000 |                       0001000111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'curr_state_reg' using encoding 'one-hot' in module 'encryption'
+WARNING: [Synth 8-6014] Unused sequential element next_state_reg was removed.  [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/encryption.v:50]
+WARNING: [Synth 8-6014] Unused sequential element curr_state_reg was removed.  [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/encryption.v:41]
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_next_state_reg' [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/encryption.v:50]
+WARNING: [Synth 8-327] inferring latch for variable 'ciphertext_reg' [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/encryption.v:462]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg[3]' [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/encryption.v:439]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 722.988 ; gain = 415.379
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 711.027 ; gain = 404.121
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -105,9 +296,11 @@ Detailed RTL Component Info :
 	                2 Bit    Registers := 2     
 	                1 Bit    Registers := 2     
 +---Muxes : 
+	  72 Input     10 Bit        Muxes := 1     
 	   2 Input      8 Bit        Muxes := 1     
 	   3 Input      2 Bit        Muxes := 2     
 	   2 Input      1 Bit        Muxes := 27    
+	  72 Input      1 Bit        Muxes := 3     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -138,6 +331,11 @@ Detailed RTL Component Info :
 	   2 Input      8 Bit        Muxes := 1     
 	   3 Input      2 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 13    
+Module encryption 
+Detailed RTL Component Info : 
++---Muxes : 
+	  72 Input     10 Bit        Muxes := 1     
+	  72 Input      1 Bit        Muxes := 3     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -158,10 +356,12 @@ WARNING: [Synth 8-6014] Unused sequential element PT1/addr_reg was removed.  [C:
 WARNING: [Synth 8-6014] Unused sequential element EK0/addr_reg was removed.  [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/ciphertextAddrCounter.v:37]
 INFO: [Synth 8-3333] propagating constant 1 across sequential element (\PT1/temp0_inferred /\PT1/temp_reg[0] )
 INFO: [Synth 8-3333] propagating constant 1 across sequential element (\PT1/temp0_inferred /\PT1/temp_reg[1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\E0/ciphertextDone_reg )
+WARNING: [Synth 8-3332] Sequential element (E0/ciphertextDone_reg) is unused and will be removed from module top.
 WARNING: [Synth 8-3332] Sequential element (PT1/temp_reg[1]) is unused and will be removed from module top.
 WARNING: [Synth 8-3332] Sequential element (PT1/temp_reg[0]) is unused and will be removed from module top.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 722.988 ; gain = 415.379
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 711.027 ; gain = 404.121
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -173,13 +373,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 722.988 ; gain = 415.379
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 711.027 ; gain = 404.121
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 722.988 ; gain = 415.379
+Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 711.027 ; gain = 404.121
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -191,7 +391,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 722.988 ; gain = 415.379
+Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 712.539 ; gain = 405.633
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -214,8 +414,9 @@ Start Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
+WARNING: [Synth 8-5396] Clock pin G has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/encryption.v:462]
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 722.988 ; gain = 415.379
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 712.539 ; gain = 405.633
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -228,7 +429,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 722.988 ; gain = 415.379
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 712.539 ; gain = 405.633
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -240,25 +441,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 722.988 ; gain = 415.379
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 712.539 ; gain = 405.633
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 722.988 ; gain = 415.379
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 712.539 ; gain = 405.633
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 722.988 ; gain = 415.379
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 712.539 ; gain = 405.633
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 722.988 ; gain = 415.379
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 712.539 ; gain = 405.633
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -278,44 +479,48 @@ Report Cell Usage:
 +------+--------------+------+
 |1     |blk_mem_gen_0 |     1|
 |2     |blk_mem_gen_1 |     1|
-|3     |BUFG          |     1|
+|3     |BUFG          |     3|
 |4     |CARRY4        |     1|
 |5     |LUT1          |     3|
 |6     |LUT2          |     7|
-|7     |LUT3          |     7|
+|7     |LUT3          |     9|
 |8     |LUT4          |    16|
-|9     |LUT5          |     5|
-|10    |LUT6          |     7|
-|11    |FDCE          |    28|
-|12    |IBUF          |     4|
-|13    |OBUF          |    64|
+|9     |LUT5          |     7|
+|10    |LUT6          |    22|
+|11    |FDCE          |    99|
+|12    |FDPE          |     1|
+|13    |LD            |   136|
+|14    |IBUF          |     4|
+|15    |OBUF          |    33|
 +------+--------------+------+
 
 Report Instance Areas: 
 +------+---------+-----------------------+------+
 |      |Instance |Module                 |Cells |
 +------+---------+-----------------------+------+
-|1     |top      |                       |   207|
-|2     |  EK0    |expandedKeyAddrCounter |    27|
-|3     |  PT1    |PlaintextAddrCounter   |    47|
+|1     |top      |                       |   405|
+|2     |  E0     |encryption             |   228|
+|3     |  EK0    |expandedKeyAddrCounter |    27|
+|4     |  PT1    |PlaintextAddrCounter   |    46|
 +------+---------+-----------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 722.988 ; gain = 415.379
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 712.539 ; gain = 405.633
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 8 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:25 . Memory (MB): peak = 722.988 ; gain = 109.164
-Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 722.988 ; gain = 415.379
+Synthesis finished with 0 errors, 0 critical warnings and 22 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:23 . Memory (MB): peak = 712.539 ; gain = 118.195
+Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 712.539 ; gain = 405.633
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 141 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
+  A total of 136 instances were transformed.
+  LD => LDCE: 136 instances
 
-28 Infos, 9 Warnings, 0 Critical Warnings and 0 Errors encountered.
+35 Infos, 120 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 722.988 ; gain = 421.121
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 714.957 ; gain = 412.500
 INFO: [Common 17-1381] The checkpoint 'C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.runs/synth_1/top.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 722.988 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Wed Aug  9 16:43:51 2017...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 714.957 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Aug 21 13:44:24 2017...

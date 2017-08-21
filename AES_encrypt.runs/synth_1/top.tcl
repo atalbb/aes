@@ -21,6 +21,7 @@ add_files C:/College/Thesis/VivadoProjects/AES_encrypt/Test1.coe
 read_verilog -library xil_defaultlib {
   C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/PlaintextAddrCounter.v
   C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/ciphertextAddrCounter.v
+  C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/encryption.v
   C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/new/top.v
 }
 read_ip -quiet C:/College/Thesis/VivadoProjects/AES_encrypt/AES_encrypt.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci

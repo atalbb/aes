@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="aes_enc_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="aes_enc_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="959999200fs"></ZoomStartTime>
+      <ZoomEndTime time="960002751fs"></ZoomEndTime>
+      <Cursor1Time time="960000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="64"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="13" />
+   <wvobject fp_name="/aes_enc_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/aes_enc_tb/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/aes_enc_tb/enb" type="logic">
+      <obj_property name="ElementShortName">enb</obj_property>
+      <obj_property name="ObjectShortName">enb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/aes_enc_tb/enk" type="logic">
+      <obj_property name="ElementShortName">enk</obj_property>
+      <obj_property name="ObjectShortName">enk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/aes_enc_tb/T/EK0/valid" type="logic">
+      <obj_property name="ElementShortName">valid</obj_property>
+      <obj_property name="ObjectShortName">valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/aes_enc_tb/key" type="array">
+      <obj_property name="ElementShortName">key[31:0]</obj_property>
+      <obj_property name="ObjectShortName">key[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/aes_enc_tb/T/PT1/valid" type="logic">
+      <obj_property name="ElementShortName">valid</obj_property>
+      <obj_property name="ObjectShortName">valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/aes_enc_tb/data" type="array">
+      <obj_property name="ElementShortName">data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/aes_enc_tb/HALF_CLK" type="array">
+      <obj_property name="ElementShortName">HALF_CLK[31:0]</obj_property>
+      <obj_property name="ObjectShortName">HALF_CLK[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/aes_enc_tb/FULL_CLK" type="array">
+      <obj_property name="ElementShortName">FULL_CLK[31:0]</obj_property>
+      <obj_property name="ObjectShortName">FULL_CLK[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/aes_enc_tb/_5_FULL_CLK" type="array">
+      <obj_property name="ElementShortName">_5_FULL_CLK[31:0]</obj_property>
+      <obj_property name="ObjectShortName">_5_FULL_CLK[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/aes_enc_tb/_16_FULL_CLK" type="array">
+      <obj_property name="ElementShortName">_16_FULL_CLK[31:0]</obj_property>
+      <obj_property name="ObjectShortName">_16_FULL_CLK[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/aes_enc_tb/_17_FULL_CLK" type="array">
+      <obj_property name="ElementShortName">_17_FULL_CLK[31:0]</obj_property>
+      <obj_property name="ObjectShortName">_17_FULL_CLK[31:0]</obj_property>
+   </wvobject>
+</wave_config>
