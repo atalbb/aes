@@ -1,0 +1,96 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.1 (win64) Build 1846317 Fri Apr 14 18:55:03 MDT 2017
+| Date         : Sat Mar 10 20:13:39 2018
+| Host         : DESKTOP-F64LM88 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    31 |
+| Unused register locations in slices containing registers |    53 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             501 |          202 |
+| No           | No                    | Yes                    |              22 |            9 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |             136 |           51 |
+| Yes          | Yes                   | No                     |              24 |            9 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++------------------------------------------------+---------------------------+---------------------------+------------------+----------------+
+|                  Clock Signal                  |       Enable Signal       |      Set/Reset Signal     | Slice Load Count | Bel Load Count |
++------------------------------------------------+---------------------------+---------------------------+------------------+----------------+
+|  AES1/ledDone_reg_i_2_n_1                      |                           |                           |                1 |              1 |
+|  AES1/FSM_sequential_next_state_reg[3]_i_2_n_1 |                           |                           |                1 |              4 |
+|  clk_IBUF_BUFG                                 |                           |                           |                3 |              4 |
+|  clk_IBUF_BUFG                                 | U1/bit_count              | U1/tx_buff_reg[1][0]_0    |                2 |              4 |
+|  clk_IBUF_BUFG                                 | U1/byte_count             | U1/tx_buff_reg[1][0]_0    |                2 |              6 |
+|  clk_IBUF_BUFG                                 | U1/tx_buff[17][5]_i_2_n_1 | U1/tx_buff[17][5]_i_1_n_1 |                2 |              6 |
+|  clk_IBUF_BUFG                                 | U1/tx_buff[16][5]_i_2_n_1 | U1/tx_buff[16][5]_i_1_n_1 |                1 |              6 |
+|  clk_IBUF_BUFG                                 | U1/tx_buff[18][5]_i_2_n_1 | U1/tx_buff[18][5]_i_1_n_1 |                2 |              6 |
+|  clk_IBUF_BUFG                                 | U1/tx_buff[19][5]_i_2_n_1 | U1/tx_buff[19][5]_i_1_n_1 |                4 |              6 |
+|  clk_IBUF_BUFG                                 | U1/tx_buff[0][6]_i_1_n_1  | U1/tx_buff_reg[1][0]_0    |                3 |              7 |
+|  clk_IBUF_BUFG                                 | U1/tx_buff[10][6]_i_1_n_1 | U1/tx_buff_reg[1][0]_0    |                3 |              7 |
+|  clk_IBUF_BUFG                                 | U1/tx_buff[15][6]_i_1_n_1 | U1/tx_buff_reg[1][0]_0    |                4 |              7 |
+|  clk_IBUF_BUFG                                 | U1/tx_buff[12][6]_i_1_n_1 | U1/tx_buff_reg[1][0]_0    |                2 |              7 |
+|  clk_IBUF_BUFG                                 | U1/tx_buff[13][6]_i_1_n_1 | U1/tx_buff_reg[1][0]_0    |                3 |              7 |
+|  clk_IBUF_BUFG                                 | U1/tx_buff[14][6]_i_1_n_1 | U1/tx_buff_reg[1][0]_0    |                3 |              7 |
+|  clk_IBUF_BUFG                                 | U1/tx_buff[11][6]_i_1_n_1 | U1/tx_buff_reg[1][0]_0    |                2 |              7 |
+|  clk_IBUF_BUFG                                 | U1/tx_buff[1][6]_i_1_n_1  | U1/tx_buff_reg[1][0]_0    |                2 |              7 |
+|  clk_IBUF_BUFG                                 | U1/tx_buff[2][6]_i_1_n_1  | U1/tx_buff_reg[1][0]_0    |                3 |              7 |
+|  clk_IBUF_BUFG                                 | U1/tx_buff[4][6]_i_1_n_1  | U1/tx_buff_reg[1][0]_0    |                3 |              7 |
+|  clk_IBUF_BUFG                                 | U1/tx_buff[3][6]_i_1_n_1  | U1/tx_buff_reg[1][0]_0    |                4 |              7 |
+|  clk_IBUF_BUFG                                 | U1/tx_buff[9][6]_i_1_n_1  | U1/tx_buff_reg[1][0]_0    |                2 |              7 |
+|  clk_IBUF_BUFG                                 | U1/tx_buff[8][6]_i_1_n_1  | U1/tx_buff_reg[1][0]_0    |                2 |              7 |
+|  clk_IBUF_BUFG                                 | U1/tx_buff[6][6]_i_1_n_1  | U1/tx_buff_reg[1][0]_0    |                2 |              7 |
+|  clk_IBUF_BUFG                                 | U1/tx_buff[7][6]_i_1_n_1  | U1/tx_buff_reg[1][0]_0    |                3 |              7 |
+|  clk_IBUF_BUFG                                 | U1/tx_buff[5][6]_i_1_n_1  | U1/tx_buff_reg[1][0]_0    |                2 |              7 |
+|  clk_IBUF_BUFG                                 | U1/p_3_in                 | U1/tx_buff_reg[1][0]_0    |                4 |             14 |
+|  clk_IBUF_BUFG                                 |                           | U1/tx_buff_reg[1][0]_0    |                9 |             22 |
+|  l                                             |                           |                           |               50 |            108 |
+|  w1                                            |                           |                           |               38 |            128 |
+|  d                                             |                           |                           |               73 |            128 |
+|  n_0_966_BUFG                                  |                           |                           |               36 |            128 |
++------------------------------------------------+---------------------------+---------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                     1 |
+| 4      |                     3 |
+| 6      |                     5 |
+| 7      |                    16 |
+| 14     |                     1 |
+| 16+    |                     5 |
++--------+-----------------------+
+
+
