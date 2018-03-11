@@ -2,8 +2,8 @@
 # Vivado v2017.1 (64-bit)
 # SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
 # IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
-# Start of session at: Sat Mar 10 20:12:53 2018
-# Process ID: 5712
+# Start of session at: Sat Mar 10 22:20:22 2018
+# Process ID: 9620
 # Current directory: C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.runs/impl_1
 # Command line: vivado.exe -log top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top.tcl -notrace
 # Log file: C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.runs/impl_1/top.vdi

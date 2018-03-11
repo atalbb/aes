@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2017.1 (win64) Build 1846317 Fri Apr 14 18:55:03 MDT 2017
-| Date             : Sat Mar 10 20:14:28 2018
+| Date             : Sat Mar 10 22:22:06 2018
 | Host             : DESKTOP-F64LM88 running 64-bit major release  (build 9200)
 | Command          : report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
 | Design           : top
@@ -30,12 +30,12 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 0.588 |
-| Dynamic (W)              | 0.490 |
+| Total On-Chip Power (W)  | 0.620 |
+| Dynamic (W)              | 0.521 |
 | Device Static (W)        | 0.099 |
 | Effective TJA (C/W)      | 4.6   |
-| Max Ambient (C)          | 82.3  |
-| Junction Temperature (C) | 27.7  |
+| Max Ambient (C)          | 82.2  |
+| Junction Temperature (C) | 27.8  |
 | Confidence Level         | Low   |
 | Setting File             | ---   |
 | Simulation Activity File | ---   |
@@ -49,17 +49,17 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     0.077 |     1761 |       --- |             --- |
-|   LUT as Logic |     0.063 |      775 |     63400 |            1.22 |
-|   BUFG         |     0.006 |        5 |        32 |           15.63 |
-|   Register     |     0.005 |      683 |    126800 |            0.54 |
-|   CARRY4       |     0.003 |        3 |     15850 |            0.02 |
-|   F7/F8 Muxes  |    <0.001 |      188 |     63400 |            0.30 |
-|   Others       |     0.000 |       60 |       --- |             --- |
-| Signals        |     0.097 |     1269 |       --- |             --- |
-| I/O            |     0.316 |       14 |       210 |            6.67 |
+| Slice Logic    |     0.102 |     6582 |       --- |             --- |
+|   LUT as Logic |     0.088 |     3353 |     63400 |            5.29 |
+|   BUFG         |     0.006 |       10 |        32 |           31.25 |
+|   Register     |     0.005 |     1450 |    126800 |            1.14 |
+|   CARRY4       |     0.003 |       98 |     15850 |            0.62 |
+|   F7/F8 Muxes  |    <0.001 |     1423 |     63400 |            2.24 |
+|   Others       |     0.000 |      101 |       --- |             --- |
+| Signals        |     0.109 |     3485 |       --- |             --- |
+| I/O            |     0.310 |       14 |       210 |            6.67 |
 | Static Power   |     0.099 |          |           |                 |
-| Total          |     0.588 |          |           |                 |
+| Total          |     0.620 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -69,9 +69,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.198 |       0.182 |      0.016 |
-| Vccaux    |       1.800 |     0.030 |       0.011 |      0.018 |
-| Vcco33    |       3.300 |     0.091 |       0.087 |      0.004 |
+| Vccint    |       1.000 |     0.236 |       0.219 |      0.016 |
+| Vccaux    |       1.800 |     0.029 |       0.011 |      0.018 |
+| Vcco33    |       3.300 |     0.089 |       0.085 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -136,9 +136,9 @@ Table of Contents
 +--------+-----------+
 | Name   | Power (W) |
 +--------+-----------+
-| top    |     0.490 |
-|   AES1 |     0.004 |
-|   U1   |     0.133 |
+| top    |     0.521 |
+|   AES1 |     0.001 |
+|   U1   |     0.170 |
 +--------+-----------+
 
 
