@@ -14,58 +14,55 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 6992 
+INFO: Helper process launched with PID 7916 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 324.512 ; gain = 87.922
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 325.445 ; gain = 89.258
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'top' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/top.v:25]
 INFO: [Synth 8-638] synthesizing module 'aes_enc_core' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:23]
-WARNING: [Synth 8-567] referenced signal 'l' should be on the sensitivity list [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:80]
-WARNING: [Synth 8-567] referenced signal 'l1' should be on the sensitivity list [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:80]
-WARNING: [Synth 8-567] referenced signal 'l2' should be on the sensitivity list [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:80]
-WARNING: [Synth 8-567] referenced signal 'l3' should be on the sensitivity list [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:80]
-WARNING: [Synth 8-567] referenced signal 'l4' should be on the sensitivity list [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:80]
-WARNING: [Synth 8-6014] Unused sequential element k_reg[59] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:276]
-WARNING: [Synth 8-6014] Unused sequential element k_reg[58] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:276]
-WARNING: [Synth 8-6014] Unused sequential element k_reg[57] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:276]
-WARNING: [Synth 8-6014] Unused sequential element k_reg[56] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:276]
-WARNING: [Synth 8-6014] Unused sequential element k_reg[55] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:276]
-WARNING: [Synth 8-6014] Unused sequential element k_reg[54] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:276]
-WARNING: [Synth 8-6014] Unused sequential element k_reg[53] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:276]
-WARNING: [Synth 8-6014] Unused sequential element k_reg[52] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:276]
-WARNING: [Synth 8-6014] Unused sequential element k_reg[51] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:276]
-WARNING: [Synth 8-6014] Unused sequential element k_reg[50] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:276]
-WARNING: [Synth 8-6014] Unused sequential element k_reg[49] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:276]
-WARNING: [Synth 8-6014] Unused sequential element k_reg[48] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:276]
-WARNING: [Synth 8-6014] Unused sequential element k_reg[47] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:276]
-WARNING: [Synth 8-6014] Unused sequential element k_reg[46] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:276]
-WARNING: [Synth 8-6014] Unused sequential element k_reg[45] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:276]
-WARNING: [Synth 8-6014] Unused sequential element k_reg[44] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:276]
-WARNING: [Synth 8-6014] Unused sequential element k_reg[43] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:276]
-WARNING: [Synth 8-6014] Unused sequential element k_reg[42] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:276]
-WARNING: [Synth 8-6014] Unused sequential element k_reg[41] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:276]
-WARNING: [Synth 8-6014] Unused sequential element k_reg[40] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:276]
-WARNING: [Synth 8-6014] Unused sequential element k_reg[39] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:276]
-WARNING: [Synth 8-6014] Unused sequential element k_reg[38] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:276]
-WARNING: [Synth 8-6014] Unused sequential element k_reg[37] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:276]
-WARNING: [Synth 8-6014] Unused sequential element k_reg[36] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:276]
-WARNING: [Synth 8-6014] Unused sequential element k_reg[35] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:276]
-WARNING: [Synth 8-6014] Unused sequential element k_reg[34] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:276]
-WARNING: [Synth 8-6014] Unused sequential element k_reg[33] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:276]
-WARNING: [Synth 8-6014] Unused sequential element k_reg[32] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:276]
-WARNING: [Synth 8-6014] Unused sequential element k_reg[31] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:276]
-WARNING: [Synth 8-6014] Unused sequential element k_reg[30] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:276]
-WARNING: [Synth 8-6014] Unused sequential element k_reg[29] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:276]
-WARNING: [Synth 8-6014] Unused sequential element k_reg[28] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:276]
-WARNING: [Synth 8-6014] Unused sequential element k_reg[27] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:276]
-WARNING: [Synth 8-6014] Unused sequential element k_reg[26] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:276]
-WARNING: [Synth 8-6014] Unused sequential element k_reg[25] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:276]
-WARNING: [Synth 8-6014] Unused sequential element k_reg[24] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:276]
-WARNING: [Synth 8-6014] Unused sequential element k_reg[23] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:276]
-WARNING: [Synth 8-6014] Unused sequential element k_reg[22] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:276]
-WARNING: [Synth 8-6014] Unused sequential element k_reg[21] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:276]
-WARNING: [Synth 8-6014] Unused sequential element k_reg[20] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:276]
-WARNING: [Synth 8-3848] Net lTable[0] in module/entity aes_enc_core does not have driver. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:54]
+WARNING: [Synth 8-567] referenced signal 'l' should be on the sensitivity list [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:85]
+WARNING: [Synth 8-567] referenced signal 'l1' should be on the sensitivity list [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:85]
+WARNING: [Synth 8-567] referenced signal 'l2' should be on the sensitivity list [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:85]
+WARNING: [Synth 8-567] referenced signal 'l3' should be on the sensitivity list [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:85]
+WARNING: [Synth 8-567] referenced signal 'l4' should be on the sensitivity list [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:85]
+WARNING: [Synth 8-567] referenced signal 'l5' should be on the sensitivity list [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:85]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[59] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:281]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[58] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:281]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[57] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:281]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[56] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:281]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[55] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:281]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[54] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:281]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[53] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:281]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[52] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:281]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[51] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:281]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[50] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:281]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[49] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:281]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[48] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:281]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[47] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:281]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[46] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:281]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[45] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:281]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[44] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:281]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[43] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:281]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[42] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:281]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[41] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:281]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[40] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:281]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[39] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:281]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[38] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:281]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[37] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:281]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[36] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:281]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[35] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:281]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[34] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:281]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[33] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:281]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[32] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:281]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[31] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:281]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[30] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:281]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[29] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:281]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[28] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:281]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[27] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:281]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[26] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:281]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[25] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:281]
+WARNING: [Synth 8-6014] Unused sequential element k_reg[24] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:281]
+WARNING: [Synth 8-3848] Net lTable[0] in module/entity aes_enc_core does not have driver. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:56]
 WARNING: [Synth 8-3848] Net led_out in module/entity aes_enc_core does not have driver. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:31]
 INFO: [Synth 8-256] done synthesizing module 'aes_enc_core' (1#1) [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:23]
 INFO: [Synth 8-638] synthesizing module 'uart_tx' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/uart_tx.v:21]
@@ -181,7 +178,7 @@ WARNING: [Synth 8-3331] design aes_enc_core has unconnected port keyIn[1829]
 WARNING: [Synth 8-3331] design aes_enc_core has unconnected port keyIn[1828]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 964.707 ; gain = 728.117
+Finished RTL Elaboration : Time (s): cpu = 00:00:44 ; elapsed = 00:00:49 . Memory (MB): peak = 1087.207 ; gain = 851.020
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -191,7 +188,7 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 964.707 ; gain = 728.117
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:50 ; elapsed = 00:00:55 . Memory (MB): peak = 1087.207 ; gain = 851.020
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -207,183 +204,187 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1218.633 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1320.313 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:01:08 ; elapsed = 00:01:13 . Memory (MB): peak = 1218.633 ; gain = 982.043
+Finished Constraint Validation : Time (s): cpu = 00:01:28 ; elapsed = 00:01:37 . Memory (MB): peak = 1320.313 ; gain = 1084.125
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:01:08 ; elapsed = 00:01:13 . Memory (MB): peak = 1218.633 ; gain = 982.043
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:28 ; elapsed = 00:01:37 . Memory (MB): peak = 1320.313 ; gain = 1084.125
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:08 ; elapsed = 00:01:13 . Memory (MB): peak = 1218.633 ; gain = 982.043
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:28 ; elapsed = 00:01:37 . Memory (MB): peak = 1320.313 ; gain = 1084.125
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-6014] Unused sequential element sbox_reg[255] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:86]
-WARNING: [Synth 8-6014] Unused sequential element sbox_reg[254] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:86]
-WARNING: [Synth 8-6014] Unused sequential element sbox_reg[253] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:86]
-WARNING: [Synth 8-6014] Unused sequential element sbox_reg[252] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:86]
-WARNING: [Synth 8-6014] Unused sequential element sbox_reg[251] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:86]
-WARNING: [Synth 8-6014] Unused sequential element sbox_reg[250] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:86]
-WARNING: [Synth 8-6014] Unused sequential element sbox_reg[249] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:86]
-WARNING: [Synth 8-6014] Unused sequential element sbox_reg[248] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:86]
-WARNING: [Synth 8-6014] Unused sequential element sbox_reg[247] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:86]
-WARNING: [Synth 8-6014] Unused sequential element sbox_reg[246] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:86]
-WARNING: [Synth 8-6014] Unused sequential element sbox_reg[245] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:86]
-WARNING: [Synth 8-6014] Unused sequential element sbox_reg[244] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:86]
-WARNING: [Synth 8-6014] Unused sequential element sbox_reg[243] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:86]
-WARNING: [Synth 8-6014] Unused sequential element sbox_reg[242] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:86]
-WARNING: [Synth 8-6014] Unused sequential element sbox_reg[241] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:86]
-WARNING: [Synth 8-6014] Unused sequential element sbox_reg[240] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:86]
-WARNING: [Synth 8-6014] Unused sequential element sbox_reg[239] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:86]
-WARNING: [Synth 8-6014] Unused sequential element sbox_reg[238] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:86]
-WARNING: [Synth 8-6014] Unused sequential element sbox_reg[237] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:86]
-WARNING: [Synth 8-6014] Unused sequential element sbox_reg[236] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:86]
-WARNING: [Synth 8-6014] Unused sequential element sbox_reg[235] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:86]
-WARNING: [Synth 8-6014] Unused sequential element sbox_reg[234] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:86]
-WARNING: [Synth 8-6014] Unused sequential element sbox_reg[233] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:86]
-WARNING: [Synth 8-6014] Unused sequential element sbox_reg[232] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:86]
-WARNING: [Synth 8-6014] Unused sequential element sbox_reg[231] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:86]
-WARNING: [Synth 8-6014] Unused sequential element sbox_reg[230] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:86]
-WARNING: [Synth 8-6014] Unused sequential element sbox_reg[229] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:86]
-WARNING: [Synth 8-6014] Unused sequential element sbox_reg[228] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:86]
-WARNING: [Synth 8-6014] Unused sequential element sbox_reg[227] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:86]
-WARNING: [Synth 8-6014] Unused sequential element sbox_reg[226] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:86]
-WARNING: [Synth 8-6014] Unused sequential element sbox_reg[225] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:86]
-WARNING: [Synth 8-6014] Unused sequential element sbox_reg[224] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:86]
-WARNING: [Synth 8-6014] Unused sequential element sbox_reg[223] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:86]
-WARNING: [Synth 8-6014] Unused sequential element sbox_reg[222] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:86]
-WARNING: [Synth 8-6014] Unused sequential element sbox_reg[221] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:86]
-WARNING: [Synth 8-6014] Unused sequential element sbox_reg[220] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:86]
-WARNING: [Synth 8-6014] Unused sequential element sbox_reg[219] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:86]
-WARNING: [Synth 8-6014] Unused sequential element sbox_reg[218] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:86]
-WARNING: [Synth 8-6014] Unused sequential element sbox_reg[217] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:86]
-WARNING: [Synth 8-6014] Unused sequential element sbox_reg[216] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:86]
-WARNING: [Synth 8-6014] Unused sequential element sbox_reg[215] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:86]
-WARNING: [Synth 8-6014] Unused sequential element sbox_reg[214] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:86]
-WARNING: [Synth 8-6014] Unused sequential element sbox_reg[213] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:86]
-WARNING: [Synth 8-6014] Unused sequential element sbox_reg[212] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:86]
-WARNING: [Synth 8-6014] Unused sequential element sbox_reg[211] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:86]
-WARNING: [Synth 8-6014] Unused sequential element sbox_reg[210] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:86]
-WARNING: [Synth 8-6014] Unused sequential element sbox_reg[209] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:86]
-WARNING: [Synth 8-6014] Unused sequential element sbox_reg[208] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:86]
-WARNING: [Synth 8-6014] Unused sequential element sbox_reg[207] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:86]
-WARNING: [Synth 8-6014] Unused sequential element sbox_reg[206] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:86]
-WARNING: [Synth 8-6014] Unused sequential element sbox_reg[205] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:86]
-WARNING: [Synth 8-6014] Unused sequential element sbox_reg[204] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:86]
-WARNING: [Synth 8-6014] Unused sequential element sbox_reg[203] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:86]
-WARNING: [Synth 8-6014] Unused sequential element sbox_reg[202] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:86]
-WARNING: [Synth 8-6014] Unused sequential element sbox_reg[201] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:86]
-WARNING: [Synth 8-6014] Unused sequential element sbox_reg[200] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:86]
-WARNING: [Synth 8-6014] Unused sequential element sbox_reg[199] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:86]
-WARNING: [Synth 8-6014] Unused sequential element sbox_reg[198] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:86]
-WARNING: [Synth 8-6014] Unused sequential element sbox_reg[197] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:86]
+WARNING: [Synth 8-6014] Unused sequential element sbox_reg[255] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:91]
+WARNING: [Synth 8-6014] Unused sequential element sbox_reg[254] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:91]
+WARNING: [Synth 8-6014] Unused sequential element sbox_reg[253] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:91]
+WARNING: [Synth 8-6014] Unused sequential element sbox_reg[252] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:91]
+WARNING: [Synth 8-6014] Unused sequential element sbox_reg[251] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:91]
+WARNING: [Synth 8-6014] Unused sequential element sbox_reg[250] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:91]
+WARNING: [Synth 8-6014] Unused sequential element sbox_reg[249] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:91]
+WARNING: [Synth 8-6014] Unused sequential element sbox_reg[248] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:91]
+WARNING: [Synth 8-6014] Unused sequential element sbox_reg[247] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:91]
+WARNING: [Synth 8-6014] Unused sequential element sbox_reg[246] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:91]
+WARNING: [Synth 8-6014] Unused sequential element sbox_reg[245] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:91]
+WARNING: [Synth 8-6014] Unused sequential element sbox_reg[244] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:91]
+WARNING: [Synth 8-6014] Unused sequential element sbox_reg[243] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:91]
+WARNING: [Synth 8-6014] Unused sequential element sbox_reg[242] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:91]
+WARNING: [Synth 8-6014] Unused sequential element sbox_reg[241] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:91]
+WARNING: [Synth 8-6014] Unused sequential element sbox_reg[240] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:91]
+WARNING: [Synth 8-6014] Unused sequential element sbox_reg[239] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:91]
+WARNING: [Synth 8-6014] Unused sequential element sbox_reg[238] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:91]
+WARNING: [Synth 8-6014] Unused sequential element sbox_reg[237] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:91]
+WARNING: [Synth 8-6014] Unused sequential element sbox_reg[236] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:91]
+WARNING: [Synth 8-6014] Unused sequential element sbox_reg[235] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:91]
+WARNING: [Synth 8-6014] Unused sequential element sbox_reg[234] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:91]
+WARNING: [Synth 8-6014] Unused sequential element sbox_reg[233] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:91]
+WARNING: [Synth 8-6014] Unused sequential element sbox_reg[232] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:91]
+WARNING: [Synth 8-6014] Unused sequential element sbox_reg[231] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:91]
+WARNING: [Synth 8-6014] Unused sequential element sbox_reg[230] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:91]
+WARNING: [Synth 8-6014] Unused sequential element sbox_reg[229] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:91]
+WARNING: [Synth 8-6014] Unused sequential element sbox_reg[228] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:91]
+WARNING: [Synth 8-6014] Unused sequential element sbox_reg[227] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:91]
+WARNING: [Synth 8-6014] Unused sequential element sbox_reg[226] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:91]
+WARNING: [Synth 8-6014] Unused sequential element sbox_reg[225] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:91]
+WARNING: [Synth 8-6014] Unused sequential element sbox_reg[224] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:91]
+WARNING: [Synth 8-6014] Unused sequential element sbox_reg[223] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:91]
+WARNING: [Synth 8-6014] Unused sequential element sbox_reg[222] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:91]
+WARNING: [Synth 8-6014] Unused sequential element sbox_reg[221] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:91]
+WARNING: [Synth 8-6014] Unused sequential element sbox_reg[220] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:91]
+WARNING: [Synth 8-6014] Unused sequential element sbox_reg[219] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:91]
+WARNING: [Synth 8-6014] Unused sequential element sbox_reg[218] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:91]
+WARNING: [Synth 8-6014] Unused sequential element sbox_reg[217] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:91]
+WARNING: [Synth 8-6014] Unused sequential element sbox_reg[216] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:91]
+WARNING: [Synth 8-6014] Unused sequential element sbox_reg[215] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:91]
+WARNING: [Synth 8-6014] Unused sequential element sbox_reg[214] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:91]
+WARNING: [Synth 8-6014] Unused sequential element sbox_reg[213] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:91]
+WARNING: [Synth 8-6014] Unused sequential element sbox_reg[212] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:91]
+WARNING: [Synth 8-6014] Unused sequential element sbox_reg[211] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:91]
+WARNING: [Synth 8-6014] Unused sequential element sbox_reg[210] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:91]
+WARNING: [Synth 8-6014] Unused sequential element sbox_reg[209] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:91]
+WARNING: [Synth 8-6014] Unused sequential element sbox_reg[208] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:91]
+WARNING: [Synth 8-6014] Unused sequential element sbox_reg[207] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:91]
+WARNING: [Synth 8-6014] Unused sequential element sbox_reg[206] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:91]
+WARNING: [Synth 8-6014] Unused sequential element sbox_reg[205] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:91]
+WARNING: [Synth 8-6014] Unused sequential element sbox_reg[204] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:91]
+WARNING: [Synth 8-6014] Unused sequential element sbox_reg[203] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:91]
+WARNING: [Synth 8-6014] Unused sequential element sbox_reg[202] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:91]
+WARNING: [Synth 8-6014] Unused sequential element sbox_reg[201] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:91]
+WARNING: [Synth 8-6014] Unused sequential element sbox_reg[200] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:91]
+WARNING: [Synth 8-6014] Unused sequential element sbox_reg[199] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:91]
+WARNING: [Synth 8-6014] Unused sequential element sbox_reg[198] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:91]
+WARNING: [Synth 8-6014] Unused sequential element sbox_reg[197] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:91]
+WARNING: [Synth 8-6014] Unused sequential element sbox_reg[196] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:91]
+WARNING: [Synth 8-6014] Unused sequential element sbox_reg[195] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:91]
+WARNING: [Synth 8-6014] Unused sequential element sbox_reg[194] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:91]
+WARNING: [Synth 8-6014] Unused sequential element sbox_reg[193] was removed.  [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:91]
 INFO: [Common 17-14] Message 'Synth 8-6014' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-WARNING: [Synth 8-3936] Found unconnected internal register 'l_reg[29]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:309]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l_reg[31]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:309]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l_reg[24]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:309]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l_reg[30]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:309]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l_reg[27]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:309]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l_reg[28]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:309]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l_reg[25]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:309]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l_reg[26]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:309]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l_reg[21]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:309]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l_reg[23]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:309]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l_reg[16]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:309]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l_reg[22]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:309]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l_reg[19]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:309]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l_reg[20]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:309]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l_reg[17]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:309]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l_reg[18]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:309]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l_reg[13]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:309]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l_reg[15]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:309]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l_reg[8]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:309]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l_reg[14]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:309]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l_reg[11]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:309]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l_reg[12]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:309]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l_reg[9]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:309]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l_reg[10]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:309]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l_reg[5]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:309]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l_reg[7]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:309]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l_reg[0]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:309]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l_reg[6]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:309]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l_reg[3]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:309]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l_reg[4]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:309]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l_reg[1]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:309]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l_reg[2]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:309]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l1_reg[29]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:476]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l1_reg[31]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:476]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l1_reg[24]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:476]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l1_reg[30]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:476]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l1_reg[27]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:476]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l1_reg[28]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:476]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l1_reg[25]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:476]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l1_reg[26]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:476]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l1_reg[21]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:476]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l1_reg[23]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:476]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l1_reg[16]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:476]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l1_reg[22]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:476]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l1_reg[19]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:476]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l1_reg[20]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:476]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l1_reg[17]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:476]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l1_reg[18]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:476]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l1_reg[13]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:476]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l1_reg[15]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:476]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l1_reg[8]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:476]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l1_reg[14]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:476]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l1_reg[11]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:476]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l1_reg[12]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:476]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l1_reg[9]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:476]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l1_reg[10]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:476]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l1_reg[5]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:476]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l1_reg[7]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:476]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l1_reg[0]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:476]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l1_reg[6]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:476]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l1_reg[3]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:476]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l1_reg[4]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:476]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l1_reg[1]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:476]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l1_reg[2]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:476]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l2_reg[29]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:643]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l2_reg[31]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:643]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l2_reg[24]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:643]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l2_reg[30]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:643]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l2_reg[27]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:643]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l2_reg[28]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:643]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l2_reg[25]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:643]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l2_reg[26]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:643]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l2_reg[21]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:643]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l2_reg[23]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:643]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l2_reg[16]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:643]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l2_reg[22]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:643]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l2_reg[19]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:643]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l2_reg[20]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:643]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l2_reg[17]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:643]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l2_reg[18]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:643]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l2_reg[13]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:643]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l2_reg[15]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:643]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l2_reg[8]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:643]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l2_reg[14]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:643]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l2_reg[11]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:643]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l2_reg[12]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:643]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l2_reg[9]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:643]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l2_reg[10]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:643]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l2_reg[5]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:643]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l2_reg[7]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:643]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l2_reg[0]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:643]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l2_reg[6]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:643]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l2_reg[3]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:643]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l2_reg[4]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:643]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l2_reg[1]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:643]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l2_reg[2]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:643]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l3_reg[29]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:809]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l3_reg[31]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:809]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l3_reg[24]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:809]
-WARNING: [Synth 8-3936] Found unconnected internal register 'l3_reg[30]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:809]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l_reg[29]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:314]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l_reg[31]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:314]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l_reg[24]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:314]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l_reg[30]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:314]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l_reg[27]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:314]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l_reg[28]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:314]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l_reg[25]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:314]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l_reg[26]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:314]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l_reg[21]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:314]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l_reg[23]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:314]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l_reg[16]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:314]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l_reg[22]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:314]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l_reg[19]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:314]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l_reg[20]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:314]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l_reg[17]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:314]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l_reg[18]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:314]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l_reg[13]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:314]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l_reg[15]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:314]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l_reg[8]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:314]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l_reg[14]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:314]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l_reg[11]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:314]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l_reg[12]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:314]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l_reg[9]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:314]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l_reg[10]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:314]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l_reg[5]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:314]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l_reg[7]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:314]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l_reg[0]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:314]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l_reg[6]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:314]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l_reg[3]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:314]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l_reg[4]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:314]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l_reg[1]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:314]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l_reg[2]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:314]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l1_reg[29]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:481]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l1_reg[31]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:481]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l1_reg[24]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:481]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l1_reg[30]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:481]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l1_reg[27]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:481]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l1_reg[28]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:481]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l1_reg[25]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:481]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l1_reg[26]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:481]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l1_reg[21]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:481]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l1_reg[23]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:481]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l1_reg[16]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:481]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l1_reg[22]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:481]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l1_reg[19]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:481]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l1_reg[20]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:481]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l1_reg[17]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:481]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l1_reg[18]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:481]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l1_reg[13]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:481]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l1_reg[15]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:481]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l1_reg[8]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:481]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l1_reg[14]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:481]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l1_reg[11]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:481]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l1_reg[12]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:481]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l1_reg[9]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:481]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l1_reg[10]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:481]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l1_reg[5]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:481]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l1_reg[7]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:481]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l1_reg[0]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:481]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l1_reg[6]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:481]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l1_reg[3]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:481]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l1_reg[4]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:481]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l1_reg[1]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:481]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l1_reg[2]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:481]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l2_reg[29]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:648]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l2_reg[31]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:648]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l2_reg[24]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:648]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l2_reg[30]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:648]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l2_reg[27]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:648]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l2_reg[28]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:648]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l2_reg[25]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:648]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l2_reg[26]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:648]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l2_reg[21]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:648]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l2_reg[23]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:648]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l2_reg[16]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:648]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l2_reg[22]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:648]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l2_reg[19]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:648]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l2_reg[20]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:648]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l2_reg[17]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:648]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l2_reg[18]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:648]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l2_reg[13]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:648]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l2_reg[15]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:648]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l2_reg[8]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:648]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l2_reg[14]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:648]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l2_reg[11]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:648]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l2_reg[12]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:648]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l2_reg[9]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:648]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l2_reg[10]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:648]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l2_reg[5]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:648]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l2_reg[7]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:648]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l2_reg[0]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:648]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l2_reg[6]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:648]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l2_reg[3]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:648]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l2_reg[4]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:648]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l2_reg[1]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:648]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l2_reg[2]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:648]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l3_reg[29]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:814]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l3_reg[31]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:814]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l3_reg[24]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:814]
+WARNING: [Synth 8-3936] Found unconnected internal register 'l3_reg[30]' and it is trimmed from '9' to '8' bits. [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:814]
 INFO: [Common 17-14] Message 'Synth 8-3936' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Synth 8-802] inferred FSM for state register 'curr_state_reg' in module 'aes_enc_core'
 INFO: [Synth 8-5546] ROM "sbox" won't be mapped to RAM because it is too sparse
@@ -412,6 +413,11 @@ INFO: [Synth 8-5546] ROM "tempRow4" won't be mapped to RAM because it is too spa
 INFO: [Synth 8-5546] ROM "l4" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "d4" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "w5" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tempStart5" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tempRow5" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "l5" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d5" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "w6" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "ledDone" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "encDone" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "cipher" won't be mapped to RAM because it is too sparse
@@ -456,183 +462,193 @@ INFO: [Synth 8-5546] ROM "tx_buff_reg[1]" won't be mapped to RAM because it is t
 INFO: [Synth 8-5546] ROM "tx_buff_reg[1]" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "tx_buff_reg[0]" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "tx_buff_reg[0]" won't be mapped to RAM because it is too sparse
-WARNING: [Synth 8-327] inferring latch for variable 'encDone_reg' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:84]
-WARNING: [Synth 8-327] inferring latch for variable 'next_state_reg' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:246]
-WARNING: [Synth 8-327] inferring latch for variable 'next_state_reg' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:246]
+WARNING: [Synth 8-327] inferring latch for variable 'encDone_reg' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:89]
+WARNING: [Synth 8-327] inferring latch for variable 'next_state_reg' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:251]
+WARNING: [Synth 8-327] inferring latch for variable 'next_state_reg' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:251]
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
-                  iSTATE |                            00000 |                       0000000000
-                 iSTATE0 |                            00001 |                       0000000001
-                 iSTATE1 |                            00010 |                       0000000010
-                 iSTATE2 |                            00011 |                       0000000011
-                 iSTATE3 |                            00100 |                       0000000100
-                 iSTATE4 |                            00101 |                       0000000101
-                 iSTATE5 |                            00110 |                       0000000110
-                 iSTATE6 |                            00111 |                       0000000111
-                 iSTATE7 |                            01000 |                       0000001000
-                 iSTATE8 |                            01001 |                       0000001001
-                 iSTATE9 |                            01010 |                       0000001010
-                iSTATE10 |                            01011 |                       0000001011
-                iSTATE11 |                            01100 |                       0000001100
-                iSTATE12 |                            01101 |                       0000001101
-                iSTATE13 |                            01110 |                       0000001110
-                iSTATE14 |                            01111 |                       0000001111
-                iSTATE15 |                            10000 |                       0000010000
-                iSTATE16 |                            10001 |                       0000010001
-                iSTATE17 |                            10010 |                       0000010010
-                iSTATE18 |                            10011 |                       0000010011
-                iSTATE19 |                            10100 |                       0000010100
-                iSTATE20 |                            10101 |                       0000010101
-                iSTATE21 |                            10110 |                       0000010110
-                iSTATE22 |                            10111 |                       0000010111
-                iSTATE23 |                            11000 |                       0000011000
-                iSTATE24 |                            11001 |                       0000011001
-                iSTATE25 |                            11010 |                       0000011010
-                iSTATE26 |                            11011 |                       0000011011
-                iSTATE27 |                            11100 |                       0001100011
-                iSTATE28 |                            11101 |                       0001100100
+                  iSTATE | 00000000000000000000000000000000001 |                       0000000000
+                 iSTATE0 | 00000000000000000000000000000000010 |                       0000000001
+                 iSTATE1 | 00000000000000000000000000000000100 |                       0000000010
+                 iSTATE2 | 00000000000000000000000000000001000 |                       0000000011
+                 iSTATE3 | 00000000000000000000000000000010000 |                       0000000100
+                 iSTATE4 | 00000000000000000000000000000100000 |                       0000000101
+                 iSTATE5 | 00000000000000000000000000001000000 |                       0000000110
+                 iSTATE6 | 00000000000000000000000000010000000 |                       0000000111
+                 iSTATE7 | 00000000000000000000000000100000000 |                       0000001000
+                 iSTATE8 | 00000000000000000000000001000000000 |                       0000001001
+                 iSTATE9 | 00000000000000000000000010000000000 |                       0000001010
+                iSTATE10 | 00000000000000000000000100000000000 |                       0000001011
+                iSTATE11 | 00000000000000000000001000000000000 |                       0000001100
+                iSTATE12 | 00000000000000000000010000000000000 |                       0000001101
+                iSTATE13 | 00000000000000000000100000000000000 |                       0000001110
+                iSTATE14 | 00000000000000000001000000000000000 |                       0000001111
+                iSTATE15 | 00000000000000000010000000000000000 |                       0000010000
+                iSTATE16 | 00000000000000000100000000000000000 |                       0000010001
+                iSTATE17 | 00000000000000001000000000000000000 |                       0000010010
+                iSTATE18 | 00000000000000010000000000000000000 |                       0000010011
+                iSTATE19 | 00000000000000100000000000000000000 |                       0000010100
+                iSTATE20 | 00000000000001000000000000000000000 |                       0000010101
+                iSTATE21 | 00000000000010000000000000000000000 |                       0000010110
+                iSTATE22 | 00000000000100000000000000000000000 |                       0000010111
+                iSTATE23 | 00000000001000000000000000000000000 |                       0000011000
+                iSTATE24 | 00000000010000000000000000000000000 |                       0000011001
+                iSTATE25 | 00000000100000000000000000000000000 |                       0000011010
+                iSTATE26 | 00000001000000000000000000000000000 |                       0000011011
+                iSTATE27 | 00000010000000000000000000000000000 |                       0000011100
+                iSTATE28 | 00000100000000000000000000000000000 |                       0000011101
+                iSTATE29 | 00001000000000000000000000000000000 |                       0000011110
+                iSTATE30 | 00010000000000000000000000000000000 |                       0000011111
+                iSTATE31 | 00100000000000000000000000000000000 |                       0000100000
+                iSTATE32 | 01000000000000000000000000000000000 |                       0001100011
+                iSTATE33 | 10000000000000000000000000000000000 |                       0001100100
 ---------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'curr_state_reg' using encoding 'sequential' in module 'aes_enc_core'
-WARNING: [Synth 8-327] inferring latch for variable 'FSM_sequential_next_state_reg' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:246]
-WARNING: [Synth 8-327] inferring latch for variable 'cipher_reg' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:1115]
-WARNING: [Synth 8-327] inferring latch for variable 'ledDone_reg' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:83]
-WARNING: [Synth 8-327] inferring latch for variable 'w5_reg[3]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:1108]
-WARNING: [Synth 8-327] inferring latch for variable 'w5_reg[2]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:1108]
-WARNING: [Synth 8-327] inferring latch for variable 'w5_reg[1]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:1108]
-WARNING: [Synth 8-327] inferring latch for variable 'w5_reg[0]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:1108]
-WARNING: [Synth 8-327] inferring latch for variable 'd4_reg[15]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:1089]
-WARNING: [Synth 8-327] inferring latch for variable 'd4_reg[14]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:1089]
-WARNING: [Synth 8-327] inferring latch for variable 'd4_reg[13]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:1089]
-WARNING: [Synth 8-327] inferring latch for variable 'd4_reg[12]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:1089]
-WARNING: [Synth 8-327] inferring latch for variable 'd4_reg[11]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:1089]
-WARNING: [Synth 8-327] inferring latch for variable 'd4_reg[10]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:1089]
-WARNING: [Synth 8-327] inferring latch for variable 'd4_reg[9]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:1089]
-WARNING: [Synth 8-327] inferring latch for variable 'd4_reg[8]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:1089]
-WARNING: [Synth 8-327] inferring latch for variable 'd4_reg[7]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:1089]
-WARNING: [Synth 8-327] inferring latch for variable 'd4_reg[6]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:1089]
-WARNING: [Synth 8-327] inferring latch for variable 'd4_reg[5]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:1089]
-WARNING: [Synth 8-327] inferring latch for variable 'd4_reg[4]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:1089]
-WARNING: [Synth 8-327] inferring latch for variable 'd4_reg[3]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:1089]
-WARNING: [Synth 8-327] inferring latch for variable 'd4_reg[2]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:1089]
-WARNING: [Synth 8-327] inferring latch for variable 'd4_reg[1]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:1089]
-WARNING: [Synth 8-327] inferring latch for variable 'd4_reg[0]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:1089]
-WARNING: [Synth 8-327] inferring latch for variable 'tempRow4_reg[13]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:956]
-WARNING: [Synth 8-327] inferring latch for variable 'tempRow4_reg[14]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:956]
-WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[255]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:140]
-WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[254]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:140]
-WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[253]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:140]
-WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[252]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:140]
-WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[251]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:140]
-WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[250]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:140]
-WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[249]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:140]
-WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[248]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:140]
-WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[247]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:140]
-WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[246]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:140]
-WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[245]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:140]
-WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[244]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:140]
-WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[243]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:140]
-WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[242]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:140]
-WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[241]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:140]
-WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[240]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:140]
-WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[239]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:140]
-WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[238]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:140]
-WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[237]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:140]
-WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[236]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:140]
-WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[235]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:140]
-WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[234]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:140]
-WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[233]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:140]
-WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[232]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:140]
-WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[231]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:140]
-WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[230]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:140]
-WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[229]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:140]
-WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[228]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:140]
-WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[227]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:140]
-WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[226]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:140]
-WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[225]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:140]
-WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[224]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:140]
-WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[223]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:140]
-WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[222]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:140]
-WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[221]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:140]
-WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[220]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:140]
-WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[219]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:140]
-WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[218]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:140]
-WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[217]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:140]
-WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[216]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:140]
-WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[215]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:140]
-WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[214]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:140]
-WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[213]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:140]
-WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[212]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:140]
-WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[211]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:140]
-WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[210]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:140]
-WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[209]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:140]
-WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[208]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:140]
-WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[207]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:140]
-WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[206]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:140]
-WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[205]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:140]
-WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[204]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:140]
-WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[203]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:140]
-WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[202]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:140]
-WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[201]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:140]
-WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[200]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:140]
-WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[199]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:140]
-WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[198]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:140]
-WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[197]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:140]
-WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[196]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:140]
-WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[195]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:140]
-WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[194]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:140]
-WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[193]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:140]
-WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[192]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:140]
-WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[191]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:140]
-WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[190]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:140]
-WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[189]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:140]
-WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[188]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:140]
-WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[187]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:140]
-WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[186]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:140]
-WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[185]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:140]
-WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[184]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:140]
+INFO: [Synth 8-3354] encoded FSM with state register 'curr_state_reg' using encoding 'one-hot' in module 'aes_enc_core'
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_next_state_reg' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:251]
+WARNING: [Synth 8-327] inferring latch for variable 'cipher_reg' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:1286]
+WARNING: [Synth 8-327] inferring latch for variable 'ledDone_reg' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:88]
+WARNING: [Synth 8-327] inferring latch for variable 'w6_reg[3]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:1279]
+WARNING: [Synth 8-327] inferring latch for variable 'w6_reg[2]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:1279]
+WARNING: [Synth 8-327] inferring latch for variable 'w6_reg[1]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:1279]
+WARNING: [Synth 8-327] inferring latch for variable 'w6_reg[0]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:1279]
+WARNING: [Synth 8-327] inferring latch for variable 'd5_reg[15]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:1260]
+WARNING: [Synth 8-327] inferring latch for variable 'd5_reg[14]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:1260]
+WARNING: [Synth 8-327] inferring latch for variable 'd5_reg[13]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:1260]
+WARNING: [Synth 8-327] inferring latch for variable 'd5_reg[12]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:1260]
+WARNING: [Synth 8-327] inferring latch for variable 'd5_reg[11]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:1260]
+WARNING: [Synth 8-327] inferring latch for variable 'd5_reg[10]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:1260]
+WARNING: [Synth 8-327] inferring latch for variable 'd5_reg[9]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:1260]
+WARNING: [Synth 8-327] inferring latch for variable 'd5_reg[8]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:1260]
+WARNING: [Synth 8-327] inferring latch for variable 'd5_reg[7]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:1260]
+WARNING: [Synth 8-327] inferring latch for variable 'd5_reg[6]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:1260]
+WARNING: [Synth 8-327] inferring latch for variable 'd5_reg[5]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:1260]
+WARNING: [Synth 8-327] inferring latch for variable 'd5_reg[4]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:1260]
+WARNING: [Synth 8-327] inferring latch for variable 'd5_reg[3]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:1260]
+WARNING: [Synth 8-327] inferring latch for variable 'd5_reg[2]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:1260]
+WARNING: [Synth 8-327] inferring latch for variable 'd5_reg[1]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:1260]
+WARNING: [Synth 8-327] inferring latch for variable 'd5_reg[0]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:1260]
+WARNING: [Synth 8-327] inferring latch for variable 'tempRow5_reg[13]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:1127]
+WARNING: [Synth 8-327] inferring latch for variable 'tempRow5_reg[14]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:1127]
+WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[255]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:145]
+WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[254]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:145]
+WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[253]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:145]
+WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[252]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:145]
+WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[251]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:145]
+WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[250]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:145]
+WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[249]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:145]
+WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[248]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:145]
+WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[247]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:145]
+WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[246]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:145]
+WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[245]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:145]
+WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[244]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:145]
+WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[243]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:145]
+WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[242]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:145]
+WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[241]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:145]
+WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[240]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:145]
+WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[239]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:145]
+WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[238]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:145]
+WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[237]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:145]
+WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[236]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:145]
+WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[235]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:145]
+WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[234]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:145]
+WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[233]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:145]
+WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[232]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:145]
+WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[231]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:145]
+WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[230]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:145]
+WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[229]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:145]
+WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[228]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:145]
+WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[227]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:145]
+WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[226]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:145]
+WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[225]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:145]
+WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[224]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:145]
+WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[223]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:145]
+WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[222]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:145]
+WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[221]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:145]
+WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[220]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:145]
+WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[219]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:145]
+WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[218]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:145]
+WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[217]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:145]
+WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[216]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:145]
+WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[215]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:145]
+WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[214]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:145]
+WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[213]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:145]
+WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[212]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:145]
+WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[211]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:145]
+WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[210]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:145]
+WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[209]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:145]
+WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[208]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:145]
+WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[207]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:145]
+WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[206]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:145]
+WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[205]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:145]
+WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[204]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:145]
+WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[203]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:145]
+WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[202]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:145]
+WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[201]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:145]
+WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[200]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:145]
+WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[199]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:145]
+WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[198]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:145]
+WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[197]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:145]
+WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[196]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:145]
+WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[195]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:145]
+WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[194]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:145]
+WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[193]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:145]
+WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[192]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:145]
+WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[191]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:145]
+WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[190]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:145]
+WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[189]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:145]
+WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[188]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:145]
+WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[187]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:145]
+WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[186]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:145]
+WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[185]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:145]
+WARNING: [Synth 8-327] inferring latch for variable 'eTable_reg[184]' [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:145]
 INFO: [Common 17-14] Message 'Synth 8-327' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:51 ; elapsed = 00:01:57 . Memory (MB): peak = 1349.418 ; gain = 1112.828
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:02:31 ; elapsed = 00:02:46 . Memory (MB): peak = 1510.660 ; gain = 1274.473
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
 +------+-------------------+------------+----------+
 |      |RTL Partition      |Replication |Instances |
 +------+-------------------+------------+----------+
-|1     |aes_enc_core__GB0  |           1|     30423|
-|2     |aes_enc_core__GB1  |           1|      8376|
-|3     |aes_enc_core__GB2  |           1|     12240|
-|4     |aes_enc_core__GB3  |           1|     25056|
-|5     |aes_enc_core__GB4  |           1|     18936|
-|6     |aes_enc_core__GB5  |           1|     25184|
-|7     |aes_enc_core__GB6  |           1|     16864|
-|8     |aes_enc_core__GB7  |           1|     14160|
+|1     |aes_enc_core__GB0  |           1|     33488|
+|2     |aes_enc_core__GB1  |           1|     27096|
+|3     |aes_enc_core__GB2  |           1|     29632|
+|4     |aes_enc_core__GB3  |           1|     12240|
+|5     |aes_enc_core__GB4  |           1|     27096|
+|6     |aes_enc_core__GB5  |           1|     31282|
+|7     |aes_enc_core__GB6  |           1|      8160|
+|8     |aes_enc_core__GB7  |           1|     12368|
 |9     |aes_enc_core__GB8  |           1|     14280|
 |10    |aes_enc_core__GB9  |           1|     18360|
-|11    |aes_enc_core__GB10 |           1|     24504|
-|12    |aes_enc_core__GB11 |           1|     22568|
-|13    |aes_enc_core__GB12 |           1|     33464|
-|14    |aes_enc_core__GB13 |           1|     16320|
-|15    |aes_enc_core__GB14 |           1|     25104|
-|16    |aes_enc_core__GB15 |           1|     25056|
-|17    |aes_enc_core__GB16 |           1|     25056|
-|18    |aes_enc_core__GB17 |           1|     33248|
-|19    |aes_enc_core__GB18 |           1|     31528|
-|20    |aes_enc_core__GB19 |           1|     10200|
-|21    |aes_enc_core__GB20 |           1|     10424|
-|22    |aes_enc_core__GB21 |           1|     25056|
-|23    |aes_enc_core__GB22 |           1|     10368|
-|24    |aes_enc_core__GB23 |           1|     24864|
-|25    |aes_enc_core__GB24 |           1|     33424|
-|26    |aes_enc_core__GB25 |           1|     12776|
-|27    |aes_enc_core__GB26 |           1|     14336|
-|28    |aes_enc_core__GB27 |           1|     16736|
-|29    |aes_enc_core__GB28 |           1|     25056|
-|30    |aes_enc_core__GB29 |           1|     31176|
-|31    |aes_enc_core__GB30 |           1|     27104|
-|32    |aes_enc_core__GB31 |           1|      8192|
-|33    |uart_tx            |           1|      3262|
+|11    |aes_enc_core__GB10 |           1|     24728|
+|12    |aes_enc_core__GB11 |           1|     31550|
+|13    |aes_enc_core__GB12 |           1|     12824|
+|14    |aes_enc_core__GB13 |           1|     12442|
+|15    |aes_enc_core__GB14 |           1|     14280|
+|16    |aes_enc_core__GB15 |           1|     29576|
+|17    |aes_enc_core__GB16 |           1|      8160|
+|18    |aes_enc_core__GB17 |           1|     10296|
+|19    |aes_enc_core__GB18 |           1|     14280|
+|20    |aes_enc_core__GB19 |           1|     25056|
+|21    |aes_enc_core__GB20 |           1|     31264|
+|22    |aes_enc_core__GB21 |           1|     29336|
+|23    |aes_enc_core__GB22 |           1|     31000|
+|24    |aes_enc_core__GB23 |           1|     10984|
+|25    |aes_enc_core__GB24 |           1|     31176|
+|26    |aes_enc_core__GB25 |           1|     29248|
+|27    |aes_enc_core__GB26 |           1|     20944|
+|28    |aes_enc_core__GB27 |           1|     25088|
+|29    |aes_enc_core__GB28 |           1|     28560|
+|30    |aes_enc_core__GB29 |           1|     31904|
+|31    |aes_enc_core__GB30 |           1|     10200|
+|32    |aes_enc_core__GB31 |           1|     12352|
+|33    |aes_enc_core__GB32 |           1|     26744|
+|34    |aes_enc_core__GB33 |           1|     25328|
+|35    |aes_enc_core__GB34 |           1|     26976|
+|36    |aes_enc_core__GB35 |           1|     18400|
+|37    |aes_enc_core__GB36 |           1|     16896|
+|38    |uart_tx            |           1|      3262|
 +------+-------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -640,13 +656,13 @@ Start RTL Component Statistics
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     13 Bit       Adders := 1     
-	   2 Input      9 Bit       Adders := 160   
-	   2 Input      8 Bit       Adders := 160   
+	   2 Input      9 Bit       Adders := 192   
+	   2 Input      8 Bit       Adders := 192   
 	   2 Input      6 Bit       Adders := 1     
 	   2 Input      4 Bit       Adders := 1     
 +---XORs : 
-	   2 Input     32 Bit         XORs := 20    
-	   4 Input      8 Bit         XORs := 80    
+	   2 Input     32 Bit         XORs := 24    
+	   4 Input      8 Bit         XORs := 96    
 +---Registers : 
 	               13 Bit    Registers := 1     
 	                8 Bit    Registers := 20    
@@ -654,15 +670,15 @@ Detailed RTL Component Info :
 	                4 Bit    Registers := 1     
 	                1 Bit    Registers := 3     
 +---Muxes : 
+	  35 Input     35 Bit        Muxes := 1     
 	   2 Input     13 Bit        Muxes := 4     
-	  30 Input     10 Bit        Muxes := 1     
-	   2 Input      8 Bit        Muxes := 243   
+	  35 Input     10 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 275   
 	   4 Input      8 Bit        Muxes := 19    
 	   2 Input      7 Bit        Muxes := 2     
 	   3 Input      7 Bit        Muxes := 19    
-	  30 Input      5 Bit        Muxes := 1     
 	   2 Input      4 Bit        Muxes := 1     
-	  30 Input      1 Bit        Muxes := 34    
+	  35 Input      1 Bit        Muxes := 6     
 	   2 Input      1 Bit        Muxes := 15    
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
@@ -674,16 +690,16 @@ Hierarchical RTL Component report
 Module aes_enc_core 
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input      9 Bit       Adders := 160   
-	   2 Input      8 Bit       Adders := 160   
+	   2 Input      9 Bit       Adders := 192   
+	   2 Input      8 Bit       Adders := 192   
 +---XORs : 
-	   2 Input     32 Bit         XORs := 20    
-	   4 Input      8 Bit         XORs := 80    
+	   2 Input     32 Bit         XORs := 24    
+	   4 Input      8 Bit         XORs := 96    
 +---Muxes : 
-	  30 Input     10 Bit        Muxes := 1     
-	   2 Input      8 Bit        Muxes := 160   
-	  30 Input      5 Bit        Muxes := 1     
-	  30 Input      1 Bit        Muxes := 34    
+	  35 Input     35 Bit        Muxes := 1     
+	  35 Input     10 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 192   
+	  35 Input      1 Bit        Muxes := 6     
 	   2 Input      1 Bit        Muxes := 4     
 Module uart_tx 
 Detailed RTL Component Info : 
@@ -721,304 +737,314 @@ INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (AES1i_31/\eTable_reg[195][0] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (AES1i_31/\eTable_reg[195][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (AES1i_31/\eTable_reg[195][2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (AES1i_31/\eTable_reg[195][3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (AES1i_31/\eTable_reg[195][4] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (AES1i_31/\eTable_reg[195][5] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (AES1i_31/\eTable_reg[195][6] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (AES1i_31/\eTable_reg[195][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (AES1i_31/\eTable_reg[243][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (AES1i_31/\eTable_reg[243][1] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (AES1i_31/\eTable_reg[243][2] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (AES1i_31/\eTable_reg[243][3] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (AES1i_31/\eTable_reg[243][4] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (AES1i_31/\eTable_reg[243][5] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (AES1i_31/\eTable_reg[243][6] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (AES1i_31/\eTable_reg[243][7] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (AES1i_31/\eTable_reg[202][0] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (AES1i_31/\eTable_reg[202][1] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (AES1i_31/\eTable_reg[202][2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (AES1i_31/\eTable_reg[202][3] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (AES1i_31/\eTable_reg[202][4] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (AES1i_31/\eTable_reg[202][5] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (AES1i_31/\eTable_reg[202][6] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (AES1i_31/\eTable_reg[202][7] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (AES1i_31/\eTable_reg[229][0] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (AES1i_31/\eTable_reg[229][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (AES1i_31/\eTable_reg[229][2] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (AES1i_31/\eTable_reg[229][3] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (AES1i_31/\eTable_reg[229][4] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (AES1i_31/\eTable_reg[229][5] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (AES1i_31/\eTable_reg[229][6] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (AES1i_31/\eTable_reg[229][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (AES1i_31/\eTable_reg[237][0] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (AES1i_31/\eTable_reg[237][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (AES1i_31/\eTable_reg[237][2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (AES1i_31/\eTable_reg[237][3] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (AES1i_31/\eTable_reg[237][4] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (AES1i_31/\eTable_reg[237][5] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (AES1i_31/\eTable_reg[237][6] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (AES1i_31/\eTable_reg[237][7] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (AES1i_31/\eTable_reg[84][0] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (AES1i_31/\eTable_reg[84][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (AES1i_31/\eTable_reg[84][2] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (AES1i_31/\eTable_reg[84][3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (AES1i_31/\eTable_reg[84][4] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (AES1i_31/\eTable_reg[84][5] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (AES1i_31/\eTable_reg[84][6] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (AES1i_31/\eTable_reg[84][7] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (AES1i_31/\eTable_reg[186][0] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (AES1i_31/\eTable_reg[186][1] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (AES1i_31/\eTable_reg[186][2] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (AES1i_31/\eTable_reg[186][3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (AES1i_31/\eTable_reg[186][4] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (AES1i_31/\eTable_reg[186][5] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (AES1i_31/\eTable_reg[186][6] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (AES1i_31/\eTable_reg[186][7] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (AES1i_31/\eTable_reg[190][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (AES1i_31/\eTable_reg[190][1] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (AES1i_31/\eTable_reg[190][2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (AES1i_31/\eTable_reg[190][3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (AES1i_31/\eTable_reg[190][4] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (AES1i_31/\eTable_reg[190][5] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (AES1i_31/\eTable_reg[190][6] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (AES1i_31/\eTable_reg[190][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (AES1i_31/\eTable_reg[101][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (AES1i_31/\eTable_reg[101][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (AES1i_31/\eTable_reg[101][2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (AES1i_31/\eTable_reg[101][3] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (AES1i_31/\eTable_reg[101][4] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (AES1i_31/\eTable_reg[101][5] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (AES1i_31/\eTable_reg[101][6] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (AES1i_31/\eTable_reg[101][7] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (AES1i_31/\eTable_reg[255][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (AES1i_31/\eTable_reg[255][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (AES1i_31/\eTable_reg[255][2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (AES1i_31/\eTable_reg[255][3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (AES1i_31/\eTable_reg[255][4] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (AES1i_31/\eTable_reg[255][5] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (AES1i_31/\eTable_reg[255][6] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (AES1i_31/\eTable_reg[255][7] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (AES1i_31/\eTable_reg[66][0] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (AES1i_31/\eTable_reg[66][1] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (AES1i_31/\eTable_reg[66][2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (AES1i_31/\eTable_reg[66][3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (AES1i_31/\eTable_reg[66][4] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (AES1i_31/\eTable_reg[66][5] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (AES1i_31/\eTable_reg[66][6] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (AES1i_31/\eTable_reg[66][7] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (AES1i_31/\eTable_reg[114][0] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (AES1i_31/\eTable_reg[114][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (AES1i_31/\eTable_reg[114][2] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (AES1i_31/\eTable_reg[114][3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (AES1i_31/\eTable_reg[114][4] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (AES1i_31/\eTable_reg[114][5] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (AES1i_31/\eTable_reg[114][6] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (AES1i_31/\eTable_reg[114][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (AES1i_31/\eTable_reg[112][0] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (AES1i_31/\eTable_reg[112][1] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (AES1i_31/\eTable_reg[112][2] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (AES1i_31/\eTable_reg[112][3] )
-INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U1/\tx_buff_reg[19][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U1/\tx_buff_reg[18][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U1/\tx_buff_reg[17][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U1/\tx_buff_reg[16][7] )
 WARNING: [Synth 8-3332] Sequential element (tx_buff_reg[18][7]) is unused and will be removed from module uart_tx.
 WARNING: [Synth 8-3332] Sequential element (tx_buff_reg[17][7]) is unused and will be removed from module uart_tx.
 WARNING: [Synth 8-3332] Sequential element (tx_buff_reg[16][7]) is unused and will be removed from module uart_tx.
 WARNING: [Synth 8-3332] Sequential element (tx_buff_reg[19][7]) is unused and will be removed from module uart_tx.
-INFO: [Synth 8-3886] merging instance 'k_reg[16][0]' (LD) to 'k_reg[16][1]'
-INFO: [Synth 8-3886] merging instance 'k_reg[16][1]' (LD) to 'k_reg[16][2]'
-INFO: [Synth 8-3886] merging instance 'k_reg[16][2]' (LD) to 'k_reg[16][3]'
-INFO: [Synth 8-3886] merging instance 'k_reg[16][3]' (LD) to 'k_reg[16][13]'
-INFO: [Synth 8-3886] merging instance 'k_reg[16][4]' (LD) to 'k_reg[16][5]'
-INFO: [Synth 8-3886] merging instance 'k_reg[16][5]' (LD) to 'k_reg[16][6]'
-INFO: [Synth 8-3886] merging instance 'k_reg[16][6]' (LD) to 'k_reg[16][7]'
-INFO: [Synth 8-3886] merging instance 'k_reg[16][7]' (LD) to 'k_reg[16][8]'
-INFO: [Synth 8-3886] merging instance 'k_reg[16][8]' (LD) to 'k_reg[16][9]'
-INFO: [Synth 8-3886] merging instance 'k_reg[16][9]' (LD) to 'k_reg[16][10]'
-INFO: [Synth 8-3886] merging instance 'k_reg[16][10]' (LD) to 'k_reg[16][11]'
-INFO: [Synth 8-3886] merging instance 'k_reg[16][11]' (LD) to 'k_reg[16][12]'
-INFO: [Synth 8-3886] merging instance 'k_reg[16][12]' (LD) to 'k_reg[16][14]'
-INFO: [Synth 8-3886] merging instance 'k_reg[16][13]' (LD) to 'k_reg[16][19]'
-INFO: [Synth 8-3886] merging instance 'k_reg[16][14]' (LD) to 'k_reg[16][15]'
-INFO: [Synth 8-3886] merging instance 'k_reg[16][15]' (LD) to 'k_reg[16][16]'
-INFO: [Synth 8-3886] merging instance 'k_reg[16][16]' (LD) to 'k_reg[16][17]'
-INFO: [Synth 8-3886] merging instance 'k_reg[16][17]' (LD) to 'k_reg[16][18]'
-INFO: [Synth 8-3886] merging instance 'k_reg[16][18]' (LD) to 'k_reg[16][23]'
-INFO: [Synth 8-3886] merging instance 'k_reg[16][19]' (LD) to 'k_reg[16][20]'
-INFO: [Synth 8-3886] merging instance 'k_reg[16][20]' (LD) to 'k_reg[16][21]'
-INFO: [Synth 8-3886] merging instance 'k_reg[16][21]' (LD) to 'k_reg[16][22]'
-INFO: [Synth 8-3886] merging instance 'k_reg[16][22]' (LD) to 'k_reg[16][24]'
-INFO: [Synth 8-3886] merging instance 'k_reg[16][23]' (LD) to 'k_reg[16][25]'
-INFO: [Synth 8-3886] merging instance 'k_reg[16][24]' (LD) to 'k_reg[16][28]'
-INFO: [Synth 8-3886] merging instance 'k_reg[16][25]' (LD) to 'k_reg[16][26]'
-INFO: [Synth 8-3886] merging instance 'k_reg[16][26]' (LD) to 'k_reg[16][27]'
-INFO: [Synth 8-3886] merging instance 'k_reg[16][27]' (LD) to 'k_reg[16][29]'
-INFO: [Synth 8-3886] merging instance 'k_reg[16][28]' (LD) to 'k_reg[16][30]'
-INFO: [Synth 8-3886] merging instance 'k_reg[16][29]' (LD) to 'k_reg[16][31]'
-INFO: [Synth 8-3886] merging instance 'k_reg[16][30]' (LD) to 'k_reg[17][0]'
-INFO: [Synth 8-3886] merging instance 'k_reg[16][31]' (LD) to 'k_reg[17][3]'
-INFO: [Synth 8-3886] merging instance 'k_reg[14][0]' (LD) to 'k_reg[17][3]'
-INFO: [Synth 8-3886] merging instance 'k_reg[14][1]' (LD) to 'k_reg[17][0]'
-INFO: [Synth 8-3886] merging instance 'k_reg[14][2]' (LD) to 'k_reg[17][0]'
-INFO: [Synth 8-3886] merging instance 'k_reg[14][3]' (LD) to 'k_reg[17][0]'
-INFO: [Synth 8-3886] merging instance 'k_reg[14][4]' (LD) to 'k_reg[17][0]'
-INFO: [Synth 8-3886] merging instance 'k_reg[14][5]' (LD) to 'k_reg[17][0]'
-INFO: [Synth 8-3886] merging instance 'k_reg[14][6]' (LD) to 'k_reg[17][3]'
-INFO: [Synth 8-3886] merging instance 'k_reg[14][7]' (LD) to 'k_reg[17][3]'
-INFO: [Synth 8-3886] merging instance 'k_reg[15][24]' (LD) to 'k_reg[17][0]'
-INFO: [Synth 8-3886] merging instance 'k_reg[15][25]' (LD) to 'k_reg[17][3]'
-INFO: [Synth 8-3886] merging instance 'k_reg[15][26]' (LD) to 'k_reg[17][3]'
-INFO: [Synth 8-3886] merging instance 'k_reg[15][27]' (LD) to 'k_reg[17][0]'
-INFO: [Synth 8-3886] merging instance 'k_reg[15][28]' (LD) to 'k_reg[17][0]'
-INFO: [Synth 8-3886] merging instance 'k_reg[15][29]' (LD) to 'k_reg[17][0]'
-INFO: [Synth 8-3886] merging instance 'k_reg[15][30]' (LD) to 'k_reg[17][0]'
-INFO: [Synth 8-3886] merging instance 'k_reg[15][31]' (LD) to 'k_reg[17][0]'
-INFO: [Synth 8-3886] merging instance 'k_reg[15][16]' (LD) to 'k_reg[17][0]'
-INFO: [Synth 8-3886] merging instance 'k_reg[15][17]' (LD) to 'k_reg[17][0]'
-INFO: [Synth 8-3886] merging instance 'k_reg[15][18]' (LD) to 'k_reg[17][0]'
-INFO: [Synth 8-3886] merging instance 'k_reg[15][19]' (LD) to 'k_reg[17][0]'
-INFO: [Synth 8-3886] merging instance 'k_reg[15][20]' (LD) to 'k_reg[17][0]'
-INFO: [Synth 8-3886] merging instance 'k_reg[15][21]' (LD) to 'k_reg[17][0]'
-INFO: [Synth 8-3886] merging instance 'k_reg[15][22]' (LD) to 'k_reg[17][3]'
-INFO: [Synth 8-3886] merging instance 'k_reg[15][23]' (LD) to 'k_reg[17][0]'
-INFO: [Synth 8-3886] merging instance 'k_reg[12][8]' (LD) to 'k_reg[17][0]'
-INFO: [Synth 8-3886] merging instance 'k_reg[12][9]' (LD) to 'k_reg[17][0]'
-INFO: [Synth 8-3886] merging instance 'k_reg[12][10]' (LD) to 'k_reg[17][0]'
-INFO: [Synth 8-3886] merging instance 'k_reg[12][11]' (LD) to 'k_reg[17][3]'
-INFO: [Synth 8-3886] merging instance 'k_reg[12][12]' (LD) to 'k_reg[17][0]'
-INFO: [Synth 8-3886] merging instance 'k_reg[12][13]' (LD) to 'k_reg[17][3]'
-INFO: [Synth 8-3886] merging instance 'k_reg[12][14]' (LD) to 'k_reg[17][0]'
-INFO: [Synth 8-3886] merging instance 'k_reg[12][15]' (LD) to 'k_reg[17][3]'
-INFO: [Synth 8-3886] merging instance 'k_reg[17][0]' (LD) to 'k_reg[17][1]'
-INFO: [Synth 8-3886] merging instance 'k_reg[17][1]' (LD) to 'k_reg[17][2]'
-INFO: [Synth 8-3886] merging instance 'k_reg[17][2]' (LD) to 'k_reg[17][4]'
-INFO: [Synth 8-3886] merging instance 'k_reg[17][3]' (LD) to 'k_reg[17][5]'
-INFO: [Synth 8-3886] merging instance 'k_reg[17][4]' (LD) to 'k_reg[17][7]'
-INFO: [Synth 8-3886] merging instance 'k_reg[17][5]' (LD) to 'k_reg[17][6]'
-INFO: [Synth 8-3886] merging instance 'k_reg[17][6]' (LD) to 'k_reg[17][8]'
-INFO: [Synth 8-3886] merging instance 'k_reg[17][7]' (LD) to 'k_reg[17][10]'
-INFO: [Synth 8-3886] merging instance 'k_reg[17][8]' (LD) to 'k_reg[17][9]'
-INFO: [Synth 8-3886] merging instance 'k_reg[17][9]' (LD) to 'k_reg[17][11]'
-INFO: [Synth 8-3886] merging instance 'k_reg[17][10]' (LD) to 'k_reg[17][13]'
-INFO: [Synth 8-3886] merging instance 'k_reg[17][11]' (LD) to 'k_reg[17][12]'
-INFO: [Synth 8-3886] merging instance 'k_reg[17][12]' (LD) to 'k_reg[17][16]'
-INFO: [Synth 8-3886] merging instance 'k_reg[17][13]' (LD) to 'k_reg[17][14]'
-INFO: [Synth 8-3886] merging instance 'k_reg[17][14]' (LD) to 'k_reg[17][15]'
-INFO: [Synth 8-3886] merging instance 'k_reg[17][15]' (LD) to 'k_reg[17][17]'
-INFO: [Synth 8-3886] merging instance 'k_reg[17][16]' (LD) to 'k_reg[17][20]'
-INFO: [Synth 8-3886] merging instance 'k_reg[17][17]' (LD) to 'k_reg[17][18]'
-INFO: [Synth 8-3886] merging instance 'k_reg[17][18]' (LD) to 'k_reg[17][19]'
-INFO: [Synth 8-3886] merging instance 'k_reg[17][19]' (LD) to 'k_reg[17][28]'
-INFO: [Synth 8-3886] merging instance 'k_reg[17][20]' (LD) to 'k_reg[17][21]'
-INFO: [Synth 8-3886] merging instance 'k_reg[17][21]' (LD) to 'k_reg[17][22]'
-INFO: [Synth 8-3886] merging instance 'k_reg[17][22]' (LD) to 'k_reg[17][23]'
-INFO: [Synth 8-3886] merging instance 'k_reg[17][23]' (LD) to 'k_reg[17][24]'
-INFO: [Synth 8-3886] merging instance 'k_reg[17][24]' (LD) to 'k_reg[17][25]'
-INFO: [Synth 8-3886] merging instance 'k_reg[17][25]' (LD) to 'k_reg[17][26]'
-INFO: [Synth 8-3886] merging instance 'k_reg[17][26]' (LD) to 'k_reg[17][27]'
-INFO: [Synth 8-3886] merging instance 'k_reg[17][27]' (LD) to 'k_reg[19][0]'
-INFO: [Synth 8-3886] merging instance 'k_reg[17][28]' (LD) to 'k_reg[17][29]'
-INFO: [Synth 8-3886] merging instance 'k_reg[17][29]' (LD) to 'k_reg[17][30]'
-INFO: [Synth 8-3886] merging instance 'k_reg[17][30]' (LD) to 'k_reg[17][31]'
-INFO: [Synth 8-3886] merging instance 'k_reg[17][31]' (LD) to 'k_reg[19][3]'
-INFO: [Synth 8-3886] merging instance 'k_reg[13][8]' (LD) to 'k_reg[19][3]'
-INFO: [Synth 8-3886] merging instance 'k_reg[13][9]' (LD) to 'k_reg[19][0]'
-INFO: [Synth 8-3886] merging instance 'k_reg[13][10]' (LD) to 'k_reg[19][0]'
-INFO: [Synth 8-3886] merging instance 'k_reg[13][11]' (LD) to 'k_reg[19][0]'
+INFO: [Synth 8-3886] merging instance 'k_reg[19][24]' (LD) to 'k_reg[17][3]'
+INFO: [Synth 8-3886] merging instance 'k_reg[19][25]' (LD) to 'k_reg[17][3]'
+INFO: [Synth 8-3886] merging instance 'k_reg[19][26]' (LD) to 'k_reg[17][0]'
+INFO: [Synth 8-3886] merging instance 'k_reg[19][27]' (LD) to 'k_reg[17][0]'
+INFO: [Synth 8-3886] merging instance 'k_reg[19][28]' (LD) to 'k_reg[17][0]'
+INFO: [Synth 8-3886] merging instance 'k_reg[19][29]' (LD) to 'k_reg[17][0]'
+INFO: [Synth 8-3886] merging instance 'k_reg[19][30]' (LD) to 'k_reg[17][0]'
+INFO: [Synth 8-3886] merging instance 'k_reg[19][31]' (LD) to 'k_reg[17][0]'
+INFO: [Synth 8-3886] merging instance 'k_reg[17][8]' (LD) to 'k_reg[17][3]'
+INFO: [Synth 8-3886] merging instance 'k_reg[17][9]' (LD) to 'k_reg[17][3]'
+INFO: [Synth 8-3886] merging instance 'k_reg[17][10]' (LD) to 'k_reg[17][0]'
+INFO: [Synth 8-3886] merging instance 'k_reg[17][11]' (LD) to 'k_reg[17][3]'
+INFO: [Synth 8-3886] merging instance 'k_reg[17][12]' (LD) to 'k_reg[17][3]'
+INFO: [Synth 8-3886] merging instance 'k_reg[17][13]' (LD) to 'k_reg[17][0]'
+INFO: [Synth 8-3886] merging instance 'k_reg[17][14]' (LD) to 'k_reg[17][0]'
+INFO: [Synth 8-3886] merging instance 'k_reg[17][15]' (LD) to 'k_reg[17][0]'
+INFO: [Synth 8-3886] merging instance 'k_reg[11][0]' (LD) to 'k_reg[17][0]'
+INFO: [Synth 8-3886] merging instance 'k_reg[11][1]' (LD) to 'k_reg[17][0]'
+INFO: [Synth 8-3886] merging instance 'k_reg[11][2]' (LD) to 'k_reg[17][3]'
+INFO: [Synth 8-3886] merging instance 'k_reg[11][3]' (LD) to 'k_reg[17][3]'
+INFO: [Synth 8-3886] merging instance 'k_reg[11][4]' (LD) to 'k_reg[17][3]'
+INFO: [Synth 8-3886] merging instance 'k_reg[11][5]' (LD) to 'k_reg[17][0]'
+INFO: [Synth 8-3886] merging instance 'k_reg[11][6]' (LD) to 'k_reg[17][0]'
+INFO: [Synth 8-3886] merging instance 'k_reg[11][7]' (LD) to 'k_reg[17][3]'
+INFO: [Synth 8-3886] merging instance 'k_reg[11][8]' (LD) to 'k_reg[17][0]'
+INFO: [Synth 8-3886] merging instance 'k_reg[11][9]' (LD) to 'k_reg[17][0]'
+INFO: [Synth 8-3886] merging instance 'k_reg[11][10]' (LD) to 'k_reg[17][0]'
+INFO: [Synth 8-3886] merging instance 'k_reg[11][11]' (LD) to 'k_reg[17][0]'
+INFO: [Synth 8-3886] merging instance 'k_reg[11][12]' (LD) to 'k_reg[17][0]'
+INFO: [Synth 8-3886] merging instance 'k_reg[11][13]' (LD) to 'k_reg[17][0]'
+INFO: [Synth 8-3886] merging instance 'k_reg[11][14]' (LD) to 'k_reg[17][3]'
+INFO: [Synth 8-3886] merging instance 'k_reg[11][15]' (LD) to 'k_reg[17][3]'
+INFO: [Synth 8-3886] merging instance 'k_reg[11][16]' (LD) to 'k_reg[17][0]'
+INFO: [Synth 8-3886] merging instance 'k_reg[11][17]' (LD) to 'k_reg[17][3]'
+INFO: [Synth 8-3886] merging instance 'k_reg[11][18]' (LD) to 'k_reg[17][0]'
+INFO: [Synth 8-3886] merging instance 'k_reg[11][19]' (LD) to 'k_reg[17][0]'
+INFO: [Synth 8-3886] merging instance 'k_reg[11][20]' (LD) to 'k_reg[17][3]'
+INFO: [Synth 8-3886] merging instance 'k_reg[11][21]' (LD) to 'k_reg[17][3]'
+INFO: [Synth 8-3886] merging instance 'k_reg[11][22]' (LD) to 'k_reg[17][3]'
+INFO: [Synth 8-3886] merging instance 'k_reg[11][23]' (LD) to 'k_reg[17][0]'
+INFO: [Synth 8-3886] merging instance 'k_reg[11][24]' (LD) to 'k_reg[17][3]'
+INFO: [Synth 8-3886] merging instance 'k_reg[11][25]' (LD) to 'k_reg[17][0]'
+INFO: [Synth 8-3886] merging instance 'k_reg[11][26]' (LD) to 'k_reg[17][3]'
+INFO: [Synth 8-3886] merging instance 'k_reg[11][27]' (LD) to 'k_reg[17][0]'
+INFO: [Synth 8-3886] merging instance 'k_reg[11][28]' (LD) to 'k_reg[17][0]'
+INFO: [Synth 8-3886] merging instance 'k_reg[11][29]' (LD) to 'k_reg[17][3]'
+INFO: [Synth 8-3886] merging instance 'k_reg[11][30]' (LD) to 'k_reg[17][0]'
+INFO: [Synth 8-3886] merging instance 'k_reg[11][31]' (LD) to 'k_reg[17][3]'
+INFO: [Synth 8-3886] merging instance 'k_reg[8][0]' (LD) to 'k_reg[17][3]'
+INFO: [Synth 8-3886] merging instance 'k_reg[8][1]' (LD) to 'k_reg[17][3]'
+INFO: [Synth 8-3886] merging instance 'k_reg[8][2]' (LD) to 'k_reg[17][3]'
+INFO: [Synth 8-3886] merging instance 'k_reg[8][3]' (LD) to 'k_reg[17][3]'
+INFO: [Synth 8-3886] merging instance 'k_reg[8][4]' (LD) to 'k_reg[17][3]'
+INFO: [Synth 8-3886] merging instance 'k_reg[8][5]' (LD) to 'k_reg[17][0]'
+INFO: [Synth 8-3886] merging instance 'k_reg[8][6]' (LD) to 'k_reg[17][0]'
+INFO: [Synth 8-3886] merging instance 'k_reg[8][7]' (LD) to 'k_reg[17][3]'
+INFO: [Synth 8-3886] merging instance 'k_reg[8][8]' (LD) to 'k_reg[17][0]'
+INFO: [Synth 8-3886] merging instance 'k_reg[8][9]' (LD) to 'k_reg[17][3]'
+INFO: [Synth 8-3886] merging instance 'k_reg[8][10]' (LD) to 'k_reg[17][0]'
+INFO: [Synth 8-3886] merging instance 'k_reg[8][11]' (LD) to 'k_reg[17][0]'
+INFO: [Synth 8-3886] merging instance 'k_reg[8][12]' (LD) to 'k_reg[17][0]'
+INFO: [Synth 8-3886] merging instance 'k_reg[8][13]' (LD) to 'k_reg[17][0]'
+INFO: [Synth 8-3886] merging instance 'k_reg[8][14]' (LD) to 'k_reg[17][3]'
+INFO: [Synth 8-3886] merging instance 'k_reg[8][15]' (LD) to 'k_reg[17][3]'
+INFO: [Synth 8-3886] merging instance 'k_reg[8][16]' (LD) to 'k_reg[17][3]'
+INFO: [Synth 8-3886] merging instance 'k_reg[8][17]' (LD) to 'k_reg[17][3]'
+INFO: [Synth 8-3886] merging instance 'k_reg[8][18]' (LD) to 'k_reg[17][0]'
+INFO: [Synth 8-3886] merging instance 'k_reg[8][19]' (LD) to 'k_reg[17][0]'
+INFO: [Synth 8-3886] merging instance 'k_reg[8][20]' (LD) to 'k_reg[17][3]'
+INFO: [Synth 8-3886] merging instance 'k_reg[8][21]' (LD) to 'k_reg[17][3]'
+INFO: [Synth 8-3886] merging instance 'k_reg[8][22]' (LD) to 'k_reg[17][3]'
+INFO: [Synth 8-3886] merging instance 'k_reg[8][23]' (LD) to 'k_reg[17][0]'
+INFO: [Synth 8-3886] merging instance 'k_reg[8][24]' (LD) to 'k_reg[17][3]'
+INFO: [Synth 8-3886] merging instance 'k_reg[8][25]' (LD) to 'k_reg[17][0]'
+INFO: [Synth 8-3886] merging instance 'k_reg[8][26]' (LD) to 'k_reg[17][3]'
+INFO: [Synth 8-3886] merging instance 'k_reg[8][27]' (LD) to 'k_reg[17][0]'
+INFO: [Synth 8-3886] merging instance 'k_reg[8][28]' (LD) to 'k_reg[17][0]'
+INFO: [Synth 8-3886] merging instance 'k_reg[8][29]' (LD) to 'k_reg[17][3]'
+INFO: [Synth 8-3886] merging instance 'k_reg[8][30]' (LD) to 'k_reg[17][0]'
+INFO: [Synth 8-3886] merging instance 'k_reg[8][31]' (LD) to 'k_reg[17][3]'
+INFO: [Synth 8-3886] merging instance 'k_reg[10][0]' (LD) to 'k_reg[17][3]'
+INFO: [Synth 8-3886] merging instance 'k_reg[10][1]' (LD) to 'k_reg[17][3]'
+INFO: [Synth 8-3886] merging instance 'k_reg[10][2]' (LD) to 'k_reg[17][0]'
+INFO: [Synth 8-3886] merging instance 'k_reg[10][3]' (LD) to 'k_reg[17][0]'
+INFO: [Synth 8-3886] merging instance 'k_reg[10][4]' (LD) to 'k_reg[17][3]'
+INFO: [Synth 8-3886] merging instance 'k_reg[10][5]' (LD) to 'k_reg[17][0]'
+INFO: [Synth 8-3886] merging instance 'k_reg[10][6]' (LD) to 'k_reg[17][0]'
+INFO: [Synth 8-3886] merging instance 'k_reg[10][7]' (LD) to 'k_reg[17][3]'
+INFO: [Synth 8-3886] merging instance 'k_reg[10][8]' (LD) to 'k_reg[17][0]'
+INFO: [Synth 8-3886] merging instance 'k_reg[10][9]' (LD) to 'k_reg[17][3]'
+INFO: [Synth 8-3886] merging instance 'k_reg[10][10]' (LD) to 'k_reg[17][3]'
+INFO: [Synth 8-3886] merging instance 'k_reg[10][11]' (LD) to 'k_reg[17][3]'
+INFO: [Synth 8-3886] merging instance 'k_reg[10][12]' (LD) to 'k_reg[17][0]'
+INFO: [Synth 8-3886] merging instance 'k_reg[10][13]' (LD) to 'k_reg[17][0]'
+INFO: [Synth 8-3886] merging instance 'k_reg[10][14]' (LD) to 'k_reg[17][3]'
+INFO: [Synth 8-3886] merging instance 'k_reg[10][15]' (LD) to 'k_reg[17][3]'
+INFO: [Synth 8-3886] merging instance 'k_reg[10][16]' (LD) to 'k_reg[17][3]'
+INFO: [Synth 8-3886] merging instance 'k_reg[10][17]' (LD) to 'k_reg[17][3]'
+INFO: [Synth 8-3886] merging instance 'k_reg[10][18]' (LD) to 'k_reg[17][3]'
+INFO: [Synth 8-3886] merging instance 'k_reg[10][19]' (LD) to 'k_reg[17][3]'
 INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\k_reg[7][28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\k_reg[7][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\k_reg[9][13] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\k_reg[9][15] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\w_reg[3][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\k_reg[3][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\tempStart_reg[3][29] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\tempStart_reg[3][31] )
 INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\k_reg[22][30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\k_reg[22][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sbox_reg[82][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sbox_reg[82][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sbox_reg[82][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sbox_reg[82][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sbox_reg[82][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sbox_reg[82][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sbox_reg[82][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sbox_reg[82][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sbox_reg[121][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\sbox_reg[121][1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\sbox_reg[121][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sbox_reg[121][3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\sbox_reg[121][4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\sbox_reg[121][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sbox_reg[121][6] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\sbox_reg[121][7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\eTable_reg[1][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\eTable_reg[1][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\eTable_reg[1][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\eTable_reg[1][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\eTable_reg[1][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\eTable_reg[1][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\eTable_reg[1][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\eTable_reg[1][7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\eTable_reg[2][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\eTable_reg[2][1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\eTable_reg[2][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\eTable_reg[2][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\eTable_reg[2][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\eTable_reg[2][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\eTable_reg[2][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\eTable_reg[2][7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\eTable_reg[3][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\eTable_reg[3][1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\eTable_reg[3][2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\eTable_reg[3][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\eTable_reg[3][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\eTable_reg[3][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\eTable_reg[3][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\eTable_reg[3][7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\eTable_reg[4][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\eTable_reg[4][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\eTable_reg[4][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\eTable_reg[4][3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\eTable_reg[4][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\eTable_reg[4][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\eTable_reg[4][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\eTable_reg[4][7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\eTable_reg[5][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\eTable_reg[5][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\eTable_reg[5][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\eTable_reg[5][3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\eTable_reg[5][4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\eTable_reg[5][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\eTable_reg[5][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\eTable_reg[5][7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\eTable_reg[6][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\eTable_reg[6][1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\eTable_reg[6][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\eTable_reg[6][3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\eTable_reg[6][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\eTable_reg[6][5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\eTable_reg[6][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\eTable_reg[6][7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\eTable_reg[255][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\eTable_reg[255][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\eTable_reg[255][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\eTable_reg[255][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\eTable_reg[255][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\eTable_reg[255][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\eTable_reg[255][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\eTable_reg[255][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\eTable_reg[254][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\eTable_reg[254][1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\eTable_reg[254][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\eTable_reg[254][3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\eTable_reg[254][4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\eTable_reg[254][5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\eTable_reg[254][6] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\eTable_reg[254][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\eTable_reg[253][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\eTable_reg[253][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\eTable_reg[253][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\eTable_reg[253][3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\eTable_reg[253][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\eTable_reg[253][5] )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:07:45 ; elapsed = 00:08:39 . Memory (MB): peak = 2042.441 ; gain = 1805.852
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:10:42 ; elapsed = 00:12:12 . Memory (MB): peak = 2318.090 ; gain = 2081.902
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
 +------+-------------------+------------+----------+
 |      |RTL Partition      |Replication |Instances |
 +------+-------------------+------------+----------+
-|1     |aes_enc_core__GB0  |           1|     29691|
-|2     |aes_enc_core__GB1  |           1|      2317|
-|3     |aes_enc_core__GB2  |           1|     12240|
-|4     |aes_enc_core__GB3  |           1|     24880|
-|5     |aes_enc_core__GB4  |           1|     18716|
-|6     |aes_enc_core__GB5  |           1|     25052|
-|7     |aes_enc_core__GB6  |           1|     16688|
-|8     |aes_enc_core__GB7  |           1|     13202|
+|1     |aes_enc_core__GB0  |           1|     33224|
+|2     |aes_enc_core__GB1  |           1|     26920|
+|3     |aes_enc_core__GB2  |           1|     29280|
+|4     |aes_enc_core__GB3  |           1|     12240|
+|5     |aes_enc_core__GB4  |           1|     26920|
+|6     |aes_enc_core__GB5  |           1|     30420|
+|7     |aes_enc_core__GB6  |           1|      8160|
+|8     |aes_enc_core__GB7  |           1|     12318|
 |9     |aes_enc_core__GB8  |           1|     14280|
 |10    |aes_enc_core__GB9  |           1|     18360|
-|11    |aes_enc_core__GB10 |           1|     24504|
-|12    |aes_enc_core__GB11 |           1|     22568|
-|13    |aes_enc_core__GB12 |           1|     33244|
-|14    |aes_enc_core__GB13 |           1|     16320|
-|15    |aes_enc_core__GB14 |           1|     24906|
-|16    |aes_enc_core__GB15 |           1|     24880|
-|17    |aes_enc_core__GB16 |           1|     24880|
-|18    |aes_enc_core__GB17 |           1|     33072|
-|19    |aes_enc_core__GB18 |           1|     31264|
-|20    |aes_enc_core__GB19 |           1|     10200|
-|21    |aes_enc_core__GB20 |           1|     10336|
-|22    |aes_enc_core__GB21 |           1|     24880|
-|23    |aes_enc_core__GB22 |           1|      4120|
-|24    |aes_enc_core__GB23 |           1|     24754|
-|25    |aes_enc_core__GB24 |           1|     33204|
-|26    |aes_enc_core__GB25 |           1|     12568|
-|27    |aes_enc_core__GB26 |           1|     14336|
-|28    |aes_enc_core__GB27 |           1|     16560|
-|29    |aes_enc_core__GB28 |           1|     24880|
-|30    |aes_enc_core__GB29 |           1|     31044|
-|31    |aes_enc_core__GB30 |           1|     26928|
-|32    |aes_enc_core__GB31 |           1|      1251|
-|33    |uart_tx            |           1|      1118|
+|11    |aes_enc_core__GB10 |           1|     24684|
+|12    |aes_enc_core__GB11 |           1|     31279|
+|13    |aes_enc_core__GB12 |           1|        72|
+|14    |aes_enc_core__GB13 |           1|     12361|
+|15    |aes_enc_core__GB14 |           1|     14280|
+|16    |aes_enc_core__GB15 |           1|     29268|
+|17    |aes_enc_core__GB16 |           1|      8160|
+|18    |aes_enc_core__GB17 |           1|     10296|
+|19    |aes_enc_core__GB18 |           1|     14280|
+|20    |aes_enc_core__GB19 |           1|     24880|
+|21    |aes_enc_core__GB20 |           1|     31088|
+|22    |aes_enc_core__GB21 |           1|     29072|
+|23    |aes_enc_core__GB22 |           1|     30868|
+|24    |aes_enc_core__GB23 |           1|     10696|
+|25    |aes_enc_core__GB24 |           1|     31044|
+|26    |aes_enc_core__GB25 |           1|     29050|
+|27    |aes_enc_core__GB26 |           1|     20790|
+|28    |aes_enc_core__GB27 |           1|     24912|
+|29    |aes_enc_core__GB28 |           1|     28560|
+|30    |aes_enc_core__GB29 |           1|     31508|
+|31    |aes_enc_core__GB30 |           1|     10200|
+|32    |aes_enc_core__GB31 |           1|     12308|
+|33    |aes_enc_core__GB32 |           1|     26744|
+|34    |aes_enc_core__GB33 |           1|     25054|
+|35    |aes_enc_core__GB34 |           1|     26800|
+|36    |aes_enc_core__GB35 |           1|      4852|
+|37    |aes_enc_core__GB36 |           1|     16720|
+|38    |uart_tx            |           1|      1118|
 +------+-------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:08:08 ; elapsed = 00:09:03 . Memory (MB): peak = 2210.594 ; gain = 1974.004
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:11:11 ; elapsed = 00:12:43 . Memory (MB): peak = 2488.332 ; gain = 2252.145
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:08:49 ; elapsed = 00:09:45 . Memory (MB): peak = 2214.191 ; gain = 1977.602
+Finished Timing Optimization : Time (s): cpu = 00:12:25 ; elapsed = 00:14:03 . Memory (MB): peak = 2490.539 ; gain = 2254.352
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
 +------+-------------------+------------+----------+
 |      |RTL Partition      |Replication |Instances |
 +------+-------------------+------------+----------+
-|1     |aes_enc_core__GB0  |           1|      7373|
-|2     |aes_enc_core__GB1  |           1|      2269|
-|3     |aes_enc_core__GB2  |           1|       826|
-|4     |aes_enc_core__GB3  |           1|      5720|
-|5     |aes_enc_core__GB4  |           1|      4216|
-|6     |aes_enc_core__GB5  |           1|      6113|
-|7     |aes_enc_core__GB6  |           1|      4036|
-|8     |aes_enc_core__GB7  |           1|      3416|
-|9     |aes_enc_core__GB8  |           1|      2867|
-|10    |aes_enc_core__GB9  |           1|      2478|
-|11    |aes_enc_core__GB10 |           1|      3681|
-|12    |aes_enc_core__GB11 |           1|      4627|
-|13    |aes_enc_core__GB12 |           1|      7719|
-|14    |aes_enc_core__GB13 |           1|      3272|
-|15    |aes_enc_core__GB14 |           1|      5741|
-|16    |aes_enc_core__GB15 |           1|      4018|
-|17    |aes_enc_core__GB16 |           1|      5720|
-|18    |aes_enc_core__GB17 |           1|      7388|
-|19    |aes_enc_core__GB18 |           1|      6060|
-|20    |aes_enc_core__GB20 |           1|      2429|
-|21    |aes_enc_core__GB21 |           1|      5720|
-|22    |aes_enc_core__GB23 |           1|      3300|
-|23    |aes_enc_core__GB24 |           1|      7623|
-|24    |aes_enc_core__GB25 |           1|      2782|
-|25    |aes_enc_core__GB26 |           1|      2919|
-|26    |aes_enc_core__GB27 |           1|      3588|
-|27    |aes_enc_core__GB28 |           1|      5720|
-|28    |aes_enc_core__GB29 |           1|      7224|
-|29    |aes_enc_core__GB30 |           1|      6137|
-|30    |aes_enc_core__GB31 |           1|      1251|
-|31    |uart_tx            |           1|      1118|
+|1     |aes_enc_core__GB0  |           1|      7634|
+|2     |aes_enc_core__GB1  |           1|      6133|
+|3     |aes_enc_core__GB2  |           1|      7126|
+|4     |aes_enc_core__GB3  |           1|      2478|
+|5     |aes_enc_core__GB4  |           1|      6133|
+|6     |aes_enc_core__GB5  |           1|      8175|
+|7     |aes_enc_core__GB6  |           1|      1636|
+|8     |aes_enc_core__GB7  |           1|      2532|
+|9     |aes_enc_core__GB8  |           1|      2863|
+|10    |aes_enc_core__GB9  |           1|      3701|
+|11    |aes_enc_core__GB10 |           1|      5327|
+|12    |aes_enc_core__GB11 |           1|      6541|
+|13    |aes_enc_core__GB12 |           1|        19|
+|14    |aes_enc_core__GB13 |           1|      1476|
+|15    |aes_enc_core__GB15 |           1|      5603|
+|16    |aes_enc_core__GB17 |           1|      2385|
+|17    |aes_enc_core__GB19 |           1|      5720|
+|18    |aes_enc_core__GB20 |           1|      7255|
+|19    |aes_enc_core__GB21 |           1|      6632|
+|20    |aes_enc_core__GB22 |           1|      6372|
+|21    |aes_enc_core__GB23 |           1|      2549|
+|22    |aes_enc_core__GB24 |           1|      7224|
+|23    |aes_enc_core__GB25 |           1|      6681|
+|24    |aes_enc_core__GB26 |           1|      4840|
+|25    |aes_enc_core__GB27 |           1|      5752|
+|26    |aes_enc_core__GB28 |           1|      5726|
+|27    |aes_enc_core__GB29 |           1|      7766|
+|28    |aes_enc_core__GB30 |           1|      2065|
+|29    |aes_enc_core__GB31 |           1|      2637|
+|30    |aes_enc_core__GB32 |           1|      5765|
+|31    |aes_enc_core__GB33 |           1|      5636|
+|32    |aes_enc_core__GB34 |           1|      6009|
+|33    |aes_enc_core__GB35 |           1|      4776|
+|34    |aes_enc_core__GB36 |           1|      4068|
+|35    |uart_tx            |           1|      1118|
 +------+-------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Technology Mapping
@@ -1026,7 +1052,7 @@ Start Technology Mapping
 WARNING: [Synth 8-3332] Sequential element (AES1/l_reg[30][1]) is unused and will be removed from module top.
 WARNING: [Synth 8-3332] Sequential element (AES1/l_reg[12][7]) is unused and will be removed from module top.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:09:06 ; elapsed = 00:10:03 . Memory (MB): peak = 2236.652 ; gain = 2000.063
+Finished Technology Mapping : Time (s): cpu = 00:12:52 ; elapsed = 00:14:33 . Memory (MB): peak = 2514.121 ; gain = 2277.934
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1049,8 +1075,37 @@ Start Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
+WARNING: [Synth 8-5396] Clock pin G has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:762]
+WARNING: [Synth 8-5396] Clock pin G has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:648]
+WARNING: [Synth 8-5396] Clock pin G has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:481]
+WARNING: [Synth 8-5396] Clock pin G has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:595]
+WARNING: [Synth 8-5396] Clock pin G has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:980]
+WARNING: [Synth 8-5396] Clock pin G has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:1094]
+WARNING: [Synth 8-5396] Clock pin G has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:454]
+WARNING: [Synth 8-5396] Clock pin G has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:461]
+WARNING: [Synth 8-5396] Clock pin G has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:447]
+WARNING: [Synth 8-5396] Clock pin G has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:1286]
+WARNING: [Synth 8-5396] Clock pin G has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:1279]
+WARNING: [Synth 8-5396] Clock pin G has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:1260]
+WARNING: [Synth 8-5396] Clock pin G has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:1146]
+WARNING: [Synth 8-5396] Clock pin G has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:1127]
+WARNING: [Synth 8-5396] Clock pin G has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:1120]
+WARNING: [Synth 8-5396] Clock pin G has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:1113]
+WARNING: [Synth 8-5396] Clock pin G has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:961]
+WARNING: [Synth 8-5396] Clock pin G has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:954]
+WARNING: [Synth 8-5396] Clock pin G has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:947]
+WARNING: [Synth 8-5396] Clock pin G has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:928]
+WARNING: [Synth 8-5396] Clock pin G has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:814]
+WARNING: [Synth 8-5396] Clock pin G has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:795]
+WARNING: [Synth 8-5396] Clock pin G has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:788]
+WARNING: [Synth 8-5396] Clock pin G has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:781]
+WARNING: [Synth 8-5396] Clock pin G has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:628]
+WARNING: [Synth 8-5396] Clock pin G has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:621]
+WARNING: [Synth 8-5396] Clock pin G has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:614]
+WARNING: [Synth 8-5396] Clock pin G has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:428]
+WARNING: [Synth 8-5396] Clock pin G has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/sources_1/new/aes_enc_core.v:314]
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:09:09 ; elapsed = 00:10:05 . Memory (MB): peak = 2236.652 ; gain = 2000.063
+Finished IO Insertion : Time (s): cpu = 00:12:55 ; elapsed = 00:14:36 . Memory (MB): peak = 2514.121 ; gain = 2277.934
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1063,7 +1118,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:09:09 ; elapsed = 00:10:05 . Memory (MB): peak = 2236.652 ; gain = 2000.063
+Finished Renaming Generated Instances : Time (s): cpu = 00:12:55 ; elapsed = 00:14:36 . Memory (MB): peak = 2514.121 ; gain = 2277.934
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1075,25 +1130,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:09:09 ; elapsed = 00:10:06 . Memory (MB): peak = 2236.652 ; gain = 2000.063
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:12:56 ; elapsed = 00:14:37 . Memory (MB): peak = 2514.121 ; gain = 2277.934
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:09:09 ; elapsed = 00:10:06 . Memory (MB): peak = 2236.652 ; gain = 2000.063
+Finished Renaming Generated Ports : Time (s): cpu = 00:12:56 ; elapsed = 00:14:37 . Memory (MB): peak = 2514.121 ; gain = 2277.934
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:09:10 ; elapsed = 00:10:06 . Memory (MB): peak = 2236.652 ; gain = 2000.063
+Finished Handling Custom Attributes : Time (s): cpu = 00:12:56 ; elapsed = 00:14:38 . Memory (MB): peak = 2514.121 ; gain = 2277.934
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:09:10 ; elapsed = 00:10:06 . Memory (MB): peak = 2236.652 ; gain = 2000.063
+Finished Renaming Generated Nets : Time (s): cpu = 00:12:57 ; elapsed = 00:14:38 . Memory (MB): peak = 2514.121 ; gain = 2277.934
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -1109,20 +1164,20 @@ Report Cell Usage:
 +------+-------+------+
 |      |Cell   |Count |
 +------+-------+------+
-|1     |BUFG   |    12|
-|2     |CARRY4 |   473|
-|3     |LUT1   |   424|
-|4     |LUT2   |   354|
-|5     |LUT3   |   415|
-|6     |LUT4   |   321|
-|7     |LUT5   |   198|
-|8     |LUT6   | 11155|
-|9     |MUXF7  |  3688|
-|10    |MUXF8  |  1149|
-|11    |FDCE   |   156|
-|12    |FDPE   |     3|
+|1     |BUFG   |     2|
+|2     |CARRY4 |   573|
+|3     |LUT1   |   786|
+|4     |LUT2   |   415|
+|5     |LUT3   |   483|
+|6     |LUT4   |   406|
+|7     |LUT5   |   412|
+|8     |LUT6   | 13284|
+|9     |MUXF7  |  4756|
+|10    |MUXF8  |  1521|
+|11    |FDCE   |   185|
+|12    |FDPE   |     4|
 |13    |FDRE   |    28|
-|14    |LD     |  3702|
+|14    |LD     |  4500|
 |15    |IBUF   |     4|
 |16    |OBUF   |     2|
 |17    |OBUFT  |     8|
@@ -1132,29 +1187,30 @@ Report Instance Areas:
 +------+---------+-------------+------+
 |      |Instance |Module       |Cells |
 +------+---------+-------------+------+
-|1     |top      |             | 22092|
-|2     |  AES1   |aes_enc_core | 21559|
+|1     |top      |             | 27369|
+|2     |  AES1   |aes_enc_core | 26846|
 |3     |  U1     |uart_tx      |   507|
 +------+---------+-------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:09:10 ; elapsed = 00:10:06 . Memory (MB): peak = 2236.652 ; gain = 2000.063
+Finished Writing Synthesis Report : Time (s): cpu = 00:12:57 ; elapsed = 00:14:38 . Memory (MB): peak = 2514.121 ; gain = 2277.934
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 1341 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:08:10 ; elapsed = 00:09:44 . Memory (MB): peak = 2236.652 ; gain = 1746.137
-Synthesis Optimization Complete : Time (s): cpu = 00:09:10 ; elapsed = 00:10:07 . Memory (MB): peak = 2236.652 ; gain = 2000.063
+Synthesis finished with 0 errors, 0 critical warnings and 1478 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:11:38 ; elapsed = 00:14:07 . Memory (MB): peak = 2514.121 ; gain = 2044.828
+Synthesis Optimization Complete : Time (s): cpu = 00:12:57 ; elapsed = 00:14:39 . Memory (MB): peak = 2514.121 ; gain = 2277.934
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 4179 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 5077 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
 WARNING: [Netlist 29-101] Netlist 'top' is not ideal for floorplanning, since the cellview 'aes_enc_core' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 3702 instances were transformed.
-  LD => LDCE: 3702 instances
+  A total of 4500 instances were transformed.
+  LD => LDCE: 4500 instances
 
-298 Infos, 420 Warnings, 0 Critical Warnings and 0 Errors encountered.
+304 Infos, 450 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:09:17 ; elapsed = 00:10:15 . Memory (MB): peak = 2236.652 ; gain = 2002.148
+synth_design: Time (s): cpu = 00:13:06 ; elapsed = 00:14:50 . Memory (MB): peak = 2514.121 ; gain = 2279.992
 INFO: [Common 17-1381] The checkpoint 'C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.runs/synth_1/top.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.138 . Memory (MB): peak = 2236.652 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Sat Mar 10 23:25:18 2018...
+write_checkpoint: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 2514.121 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.234 . Memory (MB): peak = 2514.121 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun Mar 11 00:21:11 2018...
