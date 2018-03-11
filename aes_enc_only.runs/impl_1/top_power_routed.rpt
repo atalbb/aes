@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2017.1 (win64) Build 1846317 Fri Apr 14 18:55:03 MDT 2017
-| Date             : Sun Mar 11 00:24:25 2018
+| Date             : Sun Mar 11 01:23:12 2018
 | Host             : DESKTOP-F64LM88 running 64-bit major release  (build 9200)
 | Command          : report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
 | Design           : top
@@ -30,12 +30,12 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 0.752 |
-| Dynamic (W)              | 0.653 |
+| Total On-Chip Power (W)  | 0.761 |
+| Dynamic (W)              | 0.661 |
 | Device Static (W)        | 0.099 |
 | Effective TJA (C/W)      | 4.6   |
-| Max Ambient (C)          | 81.6  |
-| Junction Temperature (C) | 28.4  |
+| Max Ambient (C)          | 81.5  |
+| Junction Temperature (C) | 28.5  |
 | Confidence Level         | Low   |
 | Setting File             | ---   |
 | Simulation Activity File | ---   |
@@ -49,17 +49,17 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     0.097 |    25776 |       --- |             --- |
-|   LUT as Logic |     0.081 |    13922 |     63400 |           21.96 |
+| Slice Logic    |     0.102 |    30408 |       --- |             --- |
+|   LUT as Logic |     0.086 |    16500 |     63400 |           26.03 |
 |   BUFG         |     0.007 |        2 |        32 |            6.25 |
-|   Register     |     0.005 |     4585 |    126800 |            3.62 |
-|   CARRY4       |     0.003 |      483 |     15850 |            3.05 |
-|   F7/F8 Muxes  |    <0.001 |     5969 |     63400 |            9.41 |
-|   Others       |     0.000 |      168 |       --- |             --- |
-| Signals        |     0.123 |    13030 |       --- |             --- |
+|   Register     |     0.005 |     5363 |    126800 |            4.23 |
+|   CARRY4       |     0.003 |      579 |     15850 |            3.65 |
+|   F7/F8 Muxes  |    <0.001 |     7164 |     63400 |           11.30 |
+|   Others       |     0.000 |      156 |       --- |             --- |
+| Signals        |     0.126 |    15080 |       --- |             --- |
 | I/O            |     0.434 |       14 |       210 |            6.67 |
 | Static Power   |     0.099 |          |           |                 |
-| Total          |     0.752 |          |           |                 |
+| Total          |     0.761 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -69,7 +69,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.244 |       0.227 |      0.017 |
+| Vccint    |       1.000 |     0.253 |       0.236 |      0.017 |
 | Vccaux    |       1.800 |     0.034 |       0.016 |      0.018 |
 | Vcco33    |       3.300 |     0.124 |       0.120 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -136,9 +136,9 @@ Table of Contents
 +--------+-----------+
 | Name   | Power (W) |
 +--------+-----------+
-| top    |     0.653 |
+| top    |     0.661 |
 |   AES1 |     0.006 |
-|   U1   |     0.169 |
+|   U1   |     0.177 |
 +--------+-----------+
 
 
