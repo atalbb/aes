@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.1 (win64) Build 1846317 Fri Apr 14 18:55:03 MDT 2017
-| Date         : Sat Mar 10 22:48:10 2018
+| Date         : Sat Mar 10 23:27:49 2018
 | Host         : DESKTOP-F64LM88 running 64-bit major release  (build 9200)
 | Command      : report_drc -file top_drc_routed.rpt -pb top_drc_routed.pb -rpx top_drc_routed.rpx
 | Design       : top
@@ -24,12 +24,12 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 11
+             Violations found: 16
 +----------+----------+-----------------------------------------------------+------------+
 | Rule     | Severity | Description                                         | Violations |
 +----------+----------+-----------------------------------------------------+------------+
 | CFGBVS-1 | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties | 1          |
-| PDRC-153 | Warning  | Gated clock check                                   | 10         |
+| PDRC-153 | Warning  | Gated clock check                                   | 15         |
 +----------+----------+-----------------------------------------------------+------------+
 
 2. REPORT DETAILS
@@ -49,52 +49,77 @@ Related violations: <none>
 
 PDRC-153#1 Warning
 Gated clock check  
-Net AES1/FSM_sequential_next_state_reg[4]_i_2_n_1 is a gated clock net sourced by a combinational pin AES1/FSM_sequential_next_state_reg[4]_i_2/O, cell AES1/FSM_sequential_next_state_reg[4]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net AES1/FSM_sequential_next_state_reg[4]_i_2_n_0 is a gated clock net sourced by a combinational pin AES1/FSM_sequential_next_state_reg[4]_i_2/O, cell AES1/FSM_sequential_next_state_reg[4]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#2 Warning
 Gated clock check  
-Net AES1/d is a gated clock net sourced by a combinational pin AES1/d_reg[0][7]_i_2/O, cell AES1/d_reg[0][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net AES1/cipher_reg[127]_i_1_n_0 is a gated clock net sourced by a combinational pin AES1/cipher_reg[127]_i_1/O, cell AES1/cipher_reg[127]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#3 Warning
 Gated clock check  
-Net AES1/d1 is a gated clock net sourced by a combinational pin AES1/d1_reg[12][7]_i_2/O, cell AES1/d1_reg[12][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net AES1/d2 is a gated clock net sourced by a combinational pin AES1/d2_reg[8][7]_i_2/O, cell AES1/d2_reg[8][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#4 Warning
 Gated clock check  
-Net AES1/ledDone_reg_i_2_n_1 is a gated clock net sourced by a combinational pin AES1/ledDone_reg_i_2/O, cell AES1/ledDone_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net AES1/d3 is a gated clock net sourced by a combinational pin AES1/d3_reg[11][7]_i_2/O, cell AES1/d3_reg[11][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#5 Warning
 Gated clock check  
-Net AES1/tempRow1 is a gated clock net sourced by a combinational pin AES1/tempRow1_reg[2][7]_i_2/O, cell AES1/tempRow1_reg[2][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net AES1/d4 is a gated clock net sourced by a combinational pin AES1/d4_reg[3][7]_i_2/O, cell AES1/d4_reg[3][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#6 Warning
 Gated clock check  
-Net AES1/tempStart1 is a gated clock net sourced by a combinational pin AES1/tempStart1_reg[1][31]_i_1/O, cell AES1/tempStart1_reg[1][31]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net AES1/ledDone_reg_i_2_n_0 is a gated clock net sourced by a combinational pin AES1/ledDone_reg_i_2/O, cell AES1/ledDone_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#7 Warning
 Gated clock check  
-Net AES1/tempStart3 is a gated clock net sourced by a combinational pin AES1/tempStart3_reg[2][31]_i_1/O, cell AES1/tempStart3_reg[2][31]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net AES1/tempRow2 is a gated clock net sourced by a combinational pin AES1/tempRow2_reg[11][7]_i_2/O, cell AES1/tempRow2_reg[11][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#8 Warning
 Gated clock check  
-Net AES1/w1 is a gated clock net sourced by a combinational pin AES1/w1_reg[2][31]_i_1/O, cell AES1/w1_reg[2][31]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net AES1/tempRow3 is a gated clock net sourced by a combinational pin AES1/tempRow3_reg[11][7]_i_2/O, cell AES1/tempRow3_reg[11][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#9 Warning
 Gated clock check  
-Net AES1/w2 is a gated clock net sourced by a combinational pin AES1/w2_reg[3][31]_i_1/O, cell AES1/w2_reg[3][31]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net AES1/tempRow4 is a gated clock net sourced by a combinational pin AES1/tempRow4_reg[1][7]_i_2/O, cell AES1/tempRow4_reg[1][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#10 Warning
 Gated clock check  
+Net AES1/tempStart3 is a gated clock net sourced by a combinational pin AES1/tempStart3_reg[3][31]_i_1/O, cell AES1/tempStart3_reg[3][31]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#11 Warning
+Gated clock check  
+Net AES1/tempStart4 is a gated clock net sourced by a combinational pin AES1/tempStart4_reg[3][31]_i_1/O, cell AES1/tempStart4_reg[3][31]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#12 Warning
+Gated clock check  
+Net AES1/w2 is a gated clock net sourced by a combinational pin AES1/w2_reg[2][31]_i_1/O, cell AES1/w2_reg[2][31]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#13 Warning
+Gated clock check  
+Net AES1/w3 is a gated clock net sourced by a combinational pin AES1/w3_reg[3][31]_i_1/O, cell AES1/w3_reg[3][31]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#14 Warning
+Gated clock check  
 Net AES1/w4 is a gated clock net sourced by a combinational pin AES1/w4_reg[0][31]_i_1/O, cell AES1/w4_reg[0][31]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#15 Warning
+Gated clock check  
+Net AES1/w5 is a gated clock net sourced by a combinational pin AES1/w5_reg[3][31]_i_1/O, cell AES1/w5_reg[3][31]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 

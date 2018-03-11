@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2017.1 (win64) Build 1846317 Fri Apr 14 18:55:03 MDT 2017
-| Date             : Sat Mar 10 22:48:20 2018
+| Date             : Sat Mar 10 23:28:03 2018
 | Host             : DESKTOP-F64LM88 running 64-bit major release  (build 9200)
 | Command          : report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
 | Design           : top
@@ -30,12 +30,12 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 0.627 |
-| Dynamic (W)              | 0.528 |
+| Total On-Chip Power (W)  | 0.562 |
+| Dynamic (W)              | 0.464 |
 | Device Static (W)        | 0.099 |
 | Effective TJA (C/W)      | 4.6   |
-| Max Ambient (C)          | 82.1  |
-| Junction Temperature (C) | 27.9  |
+| Max Ambient (C)          | 82.4  |
+| Junction Temperature (C) | 27.6  |
 | Confidence Level         | Low   |
 | Setting File             | ---   |
 | Simulation Activity File | ---   |
@@ -49,17 +49,17 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     0.103 |    16202 |       --- |             --- |
-|   LUT as Logic |     0.088 |     8551 |     63400 |           13.49 |
+| Slice Logic    |     0.096 |    20703 |       --- |             --- |
+|   LUT as Logic |     0.082 |    11429 |     63400 |           18.03 |
 |   BUFG         |     0.006 |       12 |        32 |           37.50 |
-|   Register     |     0.005 |     2989 |    126800 |            2.36 |
-|   CARRY4       |     0.003 |      291 |     15850 |            1.84 |
-|   F7/F8 Muxes  |    <0.001 |     3861 |     63400 |            6.09 |
-|   Others       |     0.000 |      163 |       --- |             --- |
-| Signals        |     0.112 |     8015 |       --- |             --- |
-| I/O            |     0.313 |       14 |       210 |            6.67 |
+|   Register     |     0.005 |     3757 |    126800 |            2.96 |
+|   CARRY4       |     0.003 |      387 |     15850 |            2.44 |
+|   F7/F8 Muxes  |    <0.001 |     4513 |     63400 |            7.12 |
+|   Others       |     0.000 |      159 |       --- |             --- |
+| Signals        |     0.102 |    10835 |       --- |             --- |
+| I/O            |     0.266 |       14 |       210 |            6.67 |
 | Static Power   |     0.099 |          |           |                 |
-| Total          |     0.627 |          |           |                 |
+| Total          |     0.562 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -69,9 +69,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.240 |       0.224 |      0.016 |
-| Vccaux    |       1.800 |     0.029 |       0.011 |      0.018 |
-| Vcco33    |       3.300 |     0.090 |       0.086 |      0.004 |
+| Vccint    |       1.000 |     0.223 |       0.207 |      0.016 |
+| Vccaux    |       1.800 |     0.028 |       0.009 |      0.018 |
+| Vcco33    |       3.300 |     0.077 |       0.073 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -136,9 +136,9 @@ Table of Contents
 +--------+-----------+
 | Name   | Power (W) |
 +--------+-----------+
-| top    |     0.528 |
+| top    |     0.464 |
 |   AES1 |    <0.001 |
-|   U1   |     0.174 |
+|   U1   |     0.157 |
 +--------+-----------+
 
 
