@@ -607,10 +607,343 @@ always @(curr_state or start)begin
            w2[1] = {d1[4],d1[5],d1[6],d1[7]};
            w2[2] = {d1[8],d1[9],d1[10],d1[11]};
            w2[3] = {d1[12],d1[13],d1[14],d1[15]};
-           next_state = 99;
+           next_state = 13;
           end
+       13:begin          
+           tempStart2[0] = w2[0] ^ k[8];
+           tempStart2[1] = w2[1] ^ k[9];
+           tempStart2[2] = w2[2] ^ k[10];
+           tempStart2[3] = w2[3] ^ k[11];
+           next_state = 14;
+          end
+       14:begin
+          tempRow2[0] = sbox[tempStart2[0][31:24]];
+          tempRow2[13] = sbox[tempStart2[0][23:16]];
+          tempRow2[10] = sbox[tempStart2[0][15:8]];
+          tempRow2[7] = sbox[tempStart2[0][7:0]];        
+          tempRow2[4] = sbox[tempStart2[1][31:24]];
+          tempRow2[1] = sbox[tempStart2[1][23:16]];
+          tempRow2[14] = sbox[tempStart2[1][15:8]];
+          tempRow2[11] = sbox[tempStart2[1][7:0]];
+          tempRow2[8] = sbox[tempStart2[2][31:24]];
+          tempRow2[5] = sbox[tempStart2[2][23:16]];
+          tempRow2[2] = sbox[tempStart2[2][15:8]];
+          tempRow2[15] = sbox[tempStart2[2][7:0]];
+          tempRow2[12] = sbox[tempStart2[3][31:24]];
+          tempRow2[9] = sbox[tempStart2[3][23:16]];
+          tempRow2[6] = sbox[tempStart2[3][15:8]];
+          tempRow2[3] = sbox[tempStart2[3][7:0]]; 
+          next_state = 15;
+         end
+      15:begin
+           /* For b0*/
+           l2[0] = lTable[tempRow2[0]] + lTable[2];
+           if(l2[0] > 255)
+           l2[0] = l2[0]-255;
+           l2[1] = lTable[tempRow2[1]] + lTable[3];
+           if(l2[1] > 255)
+           l2[1] = l2[1]-255;
+           /* For b1 */
+           l2[2] = lTable[tempRow2[1]] + lTable[2];
+           if(l2[2] > 255)
+           l2[2] = l2[2]-255;
+           l2[3] = lTable[tempRow2[2]] + lTable[3];
+           if(l2[3] > 255)
+           l2[3] = l2[3]-255;
+           /* For b2*/
+           l2[4] = lTable[tempRow2[2]] + lTable[2];
+           if(l2[4] > 255)
+           l2[4] = l2[4]-255;
+           l2[5] = lTable[tempRow2[3]] + lTable[3];
+           if(l2[5] > 255)
+           l2[5] = l2[5]-255;
+           /* For b3*/
+           l2[6] = lTable[tempRow2[0]] + lTable[3];
+           if(l2[6] > 255)
+           l2[6] = l2[6]-255;
+           l2[7] = lTable[tempRow2[3]] + lTable[2];
+           if(l2[7] > 255)
+           l2[7] = l2[7]-255;            
+           /* For b4*/
+           l2[8] = lTable[tempRow2[4]] + lTable[2];
+           if(l2[8] > 255)
+           l2[8] = l2[8]-255;
+           l2[9] = lTable[tempRow2[5]] + lTable[3];
+           if(l2[9] > 255)
+           l2[9] = l2[9]-255;
+           /* For b5 */
+           l2[10] = lTable[tempRow2[5]] + lTable[2];
+           if(l2[10] > 255)
+           l2[10] = l2[10]-255;
+           l2[11] = lTable[tempRow2[6]] + lTable[3];
+           if(l2[11] > 255)
+           l2[11] = l2[11]-255;
+           /* For b6*/
+           l2[12] = lTable[tempRow2[6]] + lTable[2];
+           if(l2[12] > 255)
+           l2[12] = l2[12]-255;
+           l2[13] = lTable[tempRow2[7]] + lTable[3];
+           if(l2[13] > 255)
+           l2[13] = l2[13]-255;
+           /* For b7*/
+           l2[14] = lTable[tempRow2[4]] + lTable[3];
+           if(l2[14] > 255)
+           l2[14] = l2[14]-255;
+           l2[15] = lTable[tempRow2[7]] + lTable[2];
+           if(l2[15] > 255)
+           l2[15] = l2[15]-255;    
+           /* For b8*/
+           l2[16] = lTable[tempRow2[8]] + lTable[2];
+           if(l2[16] > 255)
+           l2[16] = l2[16]-255;
+           l2[17] = lTable[tempRow2[9]] + lTable[3];
+           if(l2[17] > 255)
+           l2[17] = l2[17]-255;
+           /* For b9 */
+           l2[18] = lTable[tempRow2[9]] + lTable[2];
+           if(l2[18] > 255)
+           l2[18] = l2[18]-255;
+           l2[19] = lTable[tempRow2[10]] + lTable[3];
+           if(l2[19] > 255)
+           l2[19] = l2[19]-255;
+           /* For b10*/
+           l2[20] = lTable[tempRow2[10]] + lTable[2];
+           if(l2[20] > 255)
+           l2[20] = l2[20]-255;
+           l2[21] = lTable[tempRow2[11]] + lTable[3];
+           if(l2[21] > 255)
+           l2[21] = l2[21]-255;
+           /* For b11*/
+           l2[22] = lTable[tempRow2[8]] + lTable[3];
+           if(l2[22] > 255)
+           l2[22] = l2[22]-255;
+           l2[23] = lTable[tempRow2[11]] + lTable[2];
+           if(l2[23] > 255)
+           l2[23] = l2[23]-255;    
+           /* For b12*/
+           l2[24] = lTable[tempRow2[12]] + lTable[2];
+           if(l2[24] > 255)
+           l2[24] = l2[24]-255;
+           l2[25] = lTable[tempRow2[13]] + lTable[3];
+           if(l2[25] > 255)
+           l2[25] = l2[25]-255;
+           /* For b13 */
+           l2[26] = lTable[tempRow2[13]] + lTable[2];
+           if(l2[26] > 255)
+           l2[26] = l2[26]-255;
+           l2[27] = lTable[tempRow2[14]] + lTable[3];
+           if(l2[27] > 255)
+           l2[27] = l2[27]-255;
+           /* For b14*/
+           l2[28] = lTable[tempRow2[14]] + lTable[2];
+           if(l2[28] > 255)
+           l2[28] = l2[28]-255;
+           l2[29] = lTable[tempRow2[15]] + lTable[3];
+           if(l2[29] > 255)
+           l2[29] = l2[29]-255;
+           /* For b15*/
+           l2[30] = lTable[tempRow2[12]] + lTable[3];
+           if(l2[30] > 255)
+           l2[30] = l2[30]-255;
+           l2[31] = lTable[tempRow2[15]] + lTable[2];
+           if(l2[31] > 255)
+           l2[31] = l2[31]-255;
+           next_state = 16;
+        end
+       16:begin 
+          d2[0] = eTable[l2[0]]^eTable[l2[1]]^tempRow2[2]^tempRow2[3];
+          d2[1] = tempRow2[0]^eTable[l2[2]]^eTable[l2[3]]^tempRow2[3];
+          d2[2] = tempRow2[0]^tempRow2[1]^eTable[l2[4]]^eTable[l2[5]];
+          d2[3] = eTable[l2[6]]^tempRow2[1]^tempRow2[2]^eTable[l2[7]];
+          d2[4] = eTable[l2[8]]^eTable[l2[9]]^tempRow2[6]^tempRow2[7];
+          d2[5] = tempRow2[4]^eTable[l2[10]]^eTable[l2[11]]^tempRow2[7];
+          d2[6] = tempRow2[4]^tempRow2[5]^eTable[l2[12]]^eTable[l2[13]];
+          d2[7] = eTable[l2[14]]^tempRow2[5]^tempRow2[6]^eTable[l2[15]];
+          d2[8] = eTable[l2[16]]^eTable[l2[17]]^tempRow2[10]^tempRow2[11];
+          d2[9] = tempRow2[8]^eTable[l2[18]]^eTable[l2[19]]^tempRow2[11];
+          d2[10] = tempRow2[8]^tempRow2[9]^eTable[l2[20]]^eTable[l2[21]];
+          d2[11] = eTable[l2[22]]^tempRow2[9]^tempRow2[10]^eTable[l2[23]];
+          d2[12] = eTable[l2[24]]^eTable[l2[25]]^tempRow2[14]^tempRow2[15];
+          d2[13] = tempRow2[12]^eTable[l2[26]]^eTable[l2[27]]^tempRow2[15];
+          d2[14] = tempRow2[12]^tempRow2[13]^eTable[l2[28]]^eTable[l2[29]];
+          d2[15] = eTable[l2[30]]^tempRow2[13]^tempRow2[14]^eTable[l2[31]];      
+          next_state = 17;
+        end
+      17: begin
+              w3[0] = {d2[0],d2[1],d2[2],d2[3]};
+              w3[1] = {d2[4],d2[5],d2[6],d2[7]};
+              w3[2] = {d2[8],d2[9],d2[10],d2[11]};
+              w3[3] = {d2[12],d2[13],d2[14],d2[15]};
+             next_state = 18;
+           end
+       18: begin
+             tempStart3[0] = w3[0] ^ k[12];
+             tempStart3[1] = w3[1] ^ k[13];
+             tempStart3[2] = w3[2] ^ k[14];
+             tempStart3[3] = w3[3] ^ k[15];
+             next_state = 19;
+           end
+        19:begin
+              tempRow3[0] = sbox[tempStart3[0][31:24]];
+              tempRow3[13] = sbox[tempStart3[0][23:16]];
+              tempRow3[10] = sbox[tempStart3[0][15:8]];
+              tempRow3[7] = sbox[tempStart3[0][7:0]];        
+              tempRow3[4] = sbox[tempStart3[1][31:24]];
+              tempRow3[1] = sbox[tempStart3[1][23:16]];
+              tempRow3[14] = sbox[tempStart3[1][15:8]];
+              tempRow3[11] = sbox[tempStart3[1][7:0]];
+              tempRow3[8] = sbox[tempStart3[2][31:24]];
+              tempRow3[5] = sbox[tempStart3[2][23:16]];
+              tempRow3[2] = sbox[tempStart3[2][15:8]];
+              tempRow3[15] = sbox[tempStart3[2][7:0]];
+              tempRow3[12] = sbox[tempStart3[3][31:24]];
+              tempRow3[9] = sbox[tempStart3[3][23:16]];
+              tempRow3[6] = sbox[tempStart3[3][15:8]];
+              tempRow3[3] = sbox[tempStart3[3][7:0]];  
+              next_state =  20;             
+          end
+        20:begin
+              l3[0] = lTable[tempRow3[0]] + lTable[2];
+              if(l3[0] > 255)
+              l3[0] = l3[0]-255;
+              l3[1] = lTable[tempRow3[1]] + lTable[3];
+              if(l3[1] > 255)
+              l3[1] = l3[1]-255;
+              /* For b1 */
+              l3[2] = lTable[tempRow3[1]] + lTable[2];
+              if(l3[2] > 255)
+              l3[2] = l3[2]-255;
+              l3[3] = lTable[tempRow3[2]] + lTable[3];
+              if(l3[3] > 255)
+              l3[3] = l3[3]-255;
+              /* For b2*/
+              l3[4] = lTable[tempRow3[2]] + lTable[2];
+              if(l3[4] > 255)
+              l3[4] = l3[4]-255;
+              l3[5] = lTable[tempRow3[3]] + lTable[3];
+              if(l3[5] > 255)
+              l3[5] = l3[5]-255;
+              /* For b3*/
+              l3[6] = lTable[tempRow3[0]] + lTable[3];
+              if(l3[6] > 255)
+              l3[6] = l3[6]-255;
+              l3[7] = lTable[tempRow3[3]] + lTable[2];
+              if(l3[7] > 255)
+              l3[7] = l3[7]-255;            
+              /* For b4*/
+              l3[8] = lTable[tempRow3[4]] + lTable[2];
+              if(l3[8] > 255)
+              l3[8] = l3[8]-255;
+              l3[9] = lTable[tempRow3[5]] + lTable[3];
+              if(l3[9] > 255)
+              l3[9] = l3[9]-255;
+              /* For b5 */
+              l3[10] = lTable[tempRow3[5]] + lTable[2];
+              if(l3[10] > 255)
+              l3[10] = l3[10]-255;
+              l3[11] = lTable[tempRow3[6]] + lTable[3];
+              if(l3[11] > 255)
+              l3[11] = l3[11]-255;
+              /* For b6*/
+              l3[12] = lTable[tempRow3[6]] + lTable[2];
+              if(l3[12] > 255)
+              l3[12] = l3[12]-255;
+              l3[13] = lTable[tempRow3[7]] + lTable[3];
+              if(l3[13] > 255)
+              l3[13] = l3[13]-255;
+              /* For b7*/
+              l3[14] = lTable[tempRow3[4]] + lTable[3];
+              if(l3[14] > 255)
+              l3[14] = l3[14]-255;
+              l3[15] = lTable[tempRow3[7]] + lTable[2];
+              if(l3[15] > 255)
+              l3[15] = l3[15]-255;    
+              /* For b8*/
+              l3[16] = lTable[tempRow3[8]] + lTable[2];
+              if(l3[16] > 255)
+              l3[16] = l3[16]-255;
+              l3[17] = lTable[tempRow3[9]] + lTable[3];
+              if(l3[17] > 255)
+              l3[17] = l3[17]-255;
+              /* For b9 */
+              l3[18] = lTable[tempRow3[9]] + lTable[2];
+              if(l3[18] > 255)
+              l3[18] = l3[18]-255;
+              l3[19] = lTable[tempRow3[10]] + lTable[3];
+              if(l3[19] > 255)
+              l3[19] = l3[19]-255;
+              /* For b10*/
+              l3[20] = lTable[tempRow3[10]] + lTable[2];
+              if(l3[20] > 255)
+              l3[20] = l3[20]-255;
+              l3[21] = lTable[tempRow3[11]] + lTable[3];
+              if(l3[21] > 255)
+              l3[21] = l3[21]-255;
+              /* For b11*/
+              l3[22] = lTable[tempRow3[8]] + lTable[3];
+              if(l3[22] > 255)
+              l3[22] = l3[22]-255;
+              l3[23] = lTable[tempRow3[11]] + lTable[2];
+              if(l3[23] > 255)
+              l3[23] = l3[23]-255;    
+              /* For b12*/
+              l3[24] = lTable[tempRow3[12]] + lTable[2];
+              if(l3[24] > 255)
+              l3[24] = l3[24]-255;
+              l3[25] = lTable[tempRow3[13]] + lTable[3];
+              if(l3[25] > 255)
+              l3[25] = l3[25]-255;
+              /* For b13 */
+              l3[26] = lTable[tempRow3[13]] + lTable[2];
+              if(l3[26] > 255)
+              l3[26] = l3[26]-255;
+              l3[27] = lTable[tempRow3[14]] + lTable[3];
+              if(l3[27] > 255)
+              l3[27] = l3[27]-255;
+              /* For b14*/
+              l3[28] = lTable[tempRow3[14]] + lTable[2];
+              if(l3[28] > 255)
+              l3[28] = l3[28]-255;
+              l3[29] = lTable[tempRow3[15]] + lTable[3];
+              if(l3[29] > 255)
+              l3[29] = l3[29]-255;
+              /* For b15*/
+              l3[30] = lTable[tempRow3[12]] + lTable[3];
+              if(l3[30] > 255)
+              l3[30] = l3[30]-255;
+              l3[31] = lTable[tempRow3[15]] + lTable[2];
+              if(l3[31] > 255)
+              l3[31] = l3[31]-255;
+              next_state = 21;    
+         end
+        21:begin
+              d3[0] = eTable[l3[0]]^eTable[l3[1]]^tempRow3[2]^tempRow3[3];
+              d3[1] = tempRow3[0]^eTable[l3[2]]^eTable[l3[3]]^tempRow3[3];
+              d3[2] = tempRow3[0]^tempRow3[1]^eTable[l3[4]]^eTable[l3[5]];
+              d3[3] = eTable[l3[6]]^tempRow3[1]^tempRow3[2]^eTable[l3[7]];
+              d3[4] = eTable[l3[8]]^eTable[l3[9]]^tempRow3[6]^tempRow3[7];
+              d3[5] = tempRow3[4]^eTable[l3[10]]^eTable[l3[11]]^tempRow3[7];
+              d3[6] = tempRow3[4]^tempRow3[5]^eTable[l3[12]]^eTable[l3[13]];
+              d3[7] = eTable[l3[14]]^tempRow3[5]^tempRow3[6]^eTable[l3[15]];
+              d3[8] = eTable[l3[16]]^eTable[l3[17]]^tempRow3[10]^tempRow3[11];
+              d3[9] = tempRow3[8]^eTable[l3[18]]^eTable[l3[19]]^tempRow3[11];
+              d3[10] = tempRow3[8]^tempRow3[9]^eTable[l3[20]]^eTable[l3[21]];
+              d3[11] = eTable[l3[22]]^tempRow3[9]^tempRow3[10]^eTable[l3[23]];
+              d3[12] = eTable[l3[24]]^eTable[l3[25]]^tempRow3[14]^tempRow3[15];
+              d3[13] = tempRow3[12]^eTable[l3[26]]^eTable[l3[27]]^tempRow3[15];
+              d3[14] = tempRow3[12]^tempRow3[13]^eTable[l3[28]]^eTable[l3[29]];
+              d3[15] = eTable[l3[30]]^tempRow3[13]^tempRow3[14]^eTable[l3[31]]; 
+              next_state = 22;
+         end
+       22: begin
+              w4[0] = {d3[0],d3[1],d3[2],d3[3]};
+              w4[1] = {d3[4],d3[5],d3[6],d3[7]};
+              w4[2] = {d3[8],d3[9],d3[10],d3[11]};
+              w4[3] = {d3[12],d3[13],d3[14],d3[15]};
+              next_state = 99;
+           end
     99: begin
-        cipher = {w2[0],w2[1],w2[2],w2[3]};
+        cipher = {w4[0],w4[1],w4[2],w4[3]};
         encDone =  1;  
         next_state = 100;
     end
@@ -828,341 +1161,8 @@ always @(curr_state or start)begin
 
 
 
-       13:begin
-       
-                         tempStart2[0] = w2[0] ^ k[8];
-                        tempStart2[1] = w2[1] ^ k[9];
-                        tempStart2[2] = w2[2] ^ k[10];
-                        tempStart2[3] = w2[3] ^ k[11];
-                        next_state = 14;
-                    end
-        14:begin
-                           tempRow2[0] = sbox[tempStart2[0][31:24]];
-                           tempRow2[13] = sbox[tempStart2[0][23:16]];
-                           tempRow2[10] = sbox[tempStart2[0][15:8]];
-                           tempRow2[7] = sbox[tempStart2[0][7:0]];        
-                           tempRow2[4] = sbox[tempStart2[1][31:24]];
-                           tempRow2[1] = sbox[tempStart2[1][23:16]];
-                           tempRow2[14] = sbox[tempStart2[1][15:8]];
-                           tempRow2[11] = sbox[tempStart2[1][7:0]];
-                           tempRow2[8] = sbox[tempStart2[2][31:24]];
-                           tempRow2[5] = sbox[tempStart2[2][23:16]];
-                           tempRow2[2] = sbox[tempStart2[2][15:8]];
-                           tempRow2[15] = sbox[tempStart2[2][7:0]];
-                           tempRow2[12] = sbox[tempStart2[3][31:24]];
-                           tempRow2[9] = sbox[tempStart2[3][23:16]];
-                           tempRow2[6] = sbox[tempStart2[3][15:8]];
-                           tempRow2[3] = sbox[tempStart2[3][7:0]]; 
-                            next_state = 15;
-                     end
 
-       15:begin
-                                                     /* For b0*/
-                    l2[0] = lTable[tempRow2[0]] + lTable[2];
-                    if(l2[0] > 255)
-                    l2[0] = l2[0]-255;
-                    l2[1] = lTable[tempRow2[1]] + lTable[3];
-                    if(l2[1] > 255)
-                    l2[1] = l2[1]-255;
-                    /* For b1 */
-                    l2[2] = lTable[tempRow2[1]] + lTable[2];
-                    if(l2[2] > 255)
-                    l2[2] = l2[2]-255;
-                    l2[3] = lTable[tempRow2[2]] + lTable[3];
-                    if(l2[3] > 255)
-                    l2[3] = l2[3]-255;
-                    /* For b2*/
-                    l2[4] = lTable[tempRow2[2]] + lTable[2];
-                    if(l2[4] > 255)
-                    l2[4] = l2[4]-255;
-                    l2[5] = lTable[tempRow2[3]] + lTable[3];
-                    if(l2[5] > 255)
-                    l2[5] = l2[5]-255;
-                    /* For b3*/
-                    l2[6] = lTable[tempRow2[0]] + lTable[3];
-                    if(l2[6] > 255)
-                    l2[6] = l2[6]-255;
-                    l2[7] = lTable[tempRow2[3]] + lTable[2];
-                    if(l2[7] > 255)
-                    l2[7] = l2[7]-255;            
-                    /* For b4*/
-                    l2[8] = lTable[tempRow2[4]] + lTable[2];
-                    if(l2[8] > 255)
-                    l2[8] = l2[8]-255;
-                    l2[9] = lTable[tempRow2[5]] + lTable[3];
-                    if(l2[9] > 255)
-                    l2[9] = l2[9]-255;
-                    /* For b5 */
-                    l2[10] = lTable[tempRow2[5]] + lTable[2];
-                    if(l2[10] > 255)
-                    l2[10] = l2[10]-255;
-                    l2[11] = lTable[tempRow2[6]] + lTable[3];
-                    if(l2[11] > 255)
-                    l2[11] = l2[11]-255;
-                    /* For b6*/
-                    l2[12] = lTable[tempRow2[6]] + lTable[2];
-                    if(l2[12] > 255)
-                    l2[12] = l2[12]-255;
-                    l2[13] = lTable[tempRow2[7]] + lTable[3];
-                    if(l2[13] > 255)
-                    l2[13] = l2[13]-255;
-                    /* For b7*/
-                    l2[14] = lTable[tempRow2[4]] + lTable[3];
-                    if(l2[14] > 255)
-                    l2[14] = l2[14]-255;
-                    l2[15] = lTable[tempRow2[7]] + lTable[2];
-                    if(l2[15] > 255)
-                    l2[15] = l2[15]-255;    
-                    /* For b8*/
-                    l2[16] = lTable[tempRow2[8]] + lTable[2];
-                    if(l2[16] > 255)
-                    l2[16] = l2[16]-255;
-                    l2[17] = lTable[tempRow2[9]] + lTable[3];
-                    if(l2[17] > 255)
-                    l2[17] = l2[17]-255;
-                    /* For b9 */
-                    l2[18] = lTable[tempRow2[9]] + lTable[2];
-                    if(l2[18] > 255)
-                    l2[18] = l2[18]-255;
-                    l2[19] = lTable[tempRow2[10]] + lTable[3];
-                    if(l2[19] > 255)
-                    l2[19] = l2[19]-255;
-                    /* For b10*/
-                    l2[20] = lTable[tempRow2[10]] + lTable[2];
-                    if(l2[20] > 255)
-                    l2[20] = l2[20]-255;
-                    l2[21] = lTable[tempRow2[11]] + lTable[3];
-                    if(l2[21] > 255)
-                    l2[21] = l2[21]-255;
-                    /* For b11*/
-                    l2[22] = lTable[tempRow2[8]] + lTable[3];
-                    if(l2[22] > 255)
-                    l2[22] = l2[22]-255;
-                    l2[23] = lTable[tempRow2[11]] + lTable[2];
-                    if(l2[23] > 255)
-                    l2[23] = l2[23]-255;    
-                    /* For b12*/
-                    l2[24] = lTable[tempRow2[12]] + lTable[2];
-                    if(l2[24] > 255)
-                    l2[24] = l2[24]-255;
-                    l2[25] = lTable[tempRow2[13]] + lTable[3];
-                    if(l2[25] > 255)
-                    l2[25] = l2[25]-255;
-                    /* For b13 */
-                    l2[26] = lTable[tempRow2[13]] + lTable[2];
-                    if(l2[26] > 255)
-                    l2[26] = l2[26]-255;
-                    l2[27] = lTable[tempRow2[14]] + lTable[3];
-                    if(l2[27] > 255)
-                    l2[27] = l2[27]-255;
-                    /* For b14*/
-                    l2[28] = lTable[tempRow2[14]] + lTable[2];
-                    if(l2[28] > 255)
-                    l2[28] = l2[28]-255;
-                    l2[29] = lTable[tempRow2[15]] + lTable[3];
-                    if(l2[29] > 255)
-                    l2[29] = l2[29]-255;
-                    /* For b15*/
-                    l2[30] = lTable[tempRow2[12]] + lTable[3];
-                    if(l2[30] > 255)
-                    l2[30] = l2[30]-255;
-                    l2[31] = lTable[tempRow2[15]] + lTable[2];
-                    if(l2[31] > 255)
-                    l2[31] = l2[31]-255;
-                         next_state = 16;
-                 end
-       16:begin 
-                       d2[0] = eTable[l2[0]]^eTable[l2[1]]^tempRow2[2]^tempRow2[3];
-                       d2[1] = tempRow2[0]^eTable[l2[2]]^eTable[l2[3]]^tempRow2[3];
-                       d2[2] = tempRow2[0]^tempRow2[1]^eTable[l2[4]]^eTable[l2[5]];
-                       d2[3] = eTable[l2[6]]^tempRow2[1]^tempRow2[2]^eTable[l2[7]];
-                       d2[4] = eTable[l2[8]]^eTable[l2[9]]^tempRow2[6]^tempRow2[7];
-                       d2[5] = tempRow2[4]^eTable[l2[10]]^eTable[l2[11]]^tempRow2[7];
-                       d2[6] = tempRow2[4]^tempRow2[5]^eTable[l2[12]]^eTable[l2[13]];
-                       d2[7] = eTable[l2[14]]^tempRow2[5]^tempRow2[6]^eTable[l2[15]];
-                       d2[8] = eTable[l2[16]]^eTable[l2[17]]^tempRow2[10]^tempRow2[11];
-                       d2[9] = tempRow2[8]^eTable[l2[18]]^eTable[l2[19]]^tempRow2[11];
-                       d2[10] = tempRow2[8]^tempRow2[9]^eTable[l2[20]]^eTable[l2[21]];
-                       d2[11] = eTable[l2[22]]^tempRow2[9]^tempRow2[10]^eTable[l2[23]];
-                       d2[12] = eTable[l2[24]]^eTable[l2[25]]^tempRow2[14]^tempRow2[15];
-                       d2[13] = tempRow2[12]^eTable[l2[26]]^eTable[l2[27]]^tempRow2[15];
-                       d2[14] = tempRow2[12]^tempRow2[13]^eTable[l2[28]]^eTable[l2[29]];
-                       d2[15] = eTable[l2[30]]^tempRow2[13]^tempRow2[14]^eTable[l2[31]];      
-                       next_state = 17;
-                      end
-                   17: begin
-                           w3[0] = {d2[0],d2[1],d2[2],d2[3]};
-                           w3[1] = {d2[4],d2[5],d2[6],d2[7]};
-                           w3[2] = {d2[8],d2[9],d2[10],d2[11]};
-                           w3[3] = {d2[12],d2[13],d2[14],d2[15]};
-                          next_state = 18;
-                        end
-                    18: begin
-                          tempStart3[0] = w3[0] ^ k[12];
-                          tempStart3[1] = w3[1] ^ k[13];
-                          tempStart3[2] = w3[2] ^ k[14];
-                          tempStart3[3] = w3[3] ^ k[15];
-                        next_state = 19;
-                    end
-       19:begin
-                       tempRow3[0] = sbox[tempStart3[0][31:24]];
-                       tempRow3[13] = sbox[tempStart3[0][23:16]];
-                       tempRow3[10] = sbox[tempStart3[0][15:8]];
-                       tempRow3[7] = sbox[tempStart3[0][7:0]];        
-                       tempRow3[4] = sbox[tempStart3[1][31:24]];
-                       tempRow3[1] = sbox[tempStart3[1][23:16]];
-                       tempRow3[14] = sbox[tempStart3[1][15:8]];
-                       tempRow3[11] = sbox[tempStart3[1][7:0]];
-                       tempRow3[8] = sbox[tempStart3[2][31:24]];
-                       tempRow3[5] = sbox[tempStart3[2][23:16]];
-                       tempRow3[2] = sbox[tempStart3[2][15:8]];
-                       tempRow3[15] = sbox[tempStart3[2][7:0]];
-                       tempRow3[12] = sbox[tempStart3[3][31:24]];
-                       tempRow3[9] = sbox[tempStart3[3][23:16]];
-                       tempRow3[6] = sbox[tempStart3[3][15:8]];
-                       tempRow3[3] = sbox[tempStart3[3][7:0]];  
-                      next_state =  20;             
-                       end
-       20:begin
-                    l3[0] = lTable[tempRow3[0]] + lTable[2];
-                       if(l3[0] > 255)
-                       l3[0] = l3[0]-255;
-                       l3[1] = lTable[tempRow3[1]] + lTable[3];
-                       if(l3[1] > 255)
-                       l3[1] = l3[1]-255;
-                       /* For b1 */
-                       l3[2] = lTable[tempRow3[1]] + lTable[2];
-                       if(l3[2] > 255)
-                       l3[2] = l3[2]-255;
-                       l3[3] = lTable[tempRow3[2]] + lTable[3];
-                       if(l3[3] > 255)
-                       l3[3] = l3[3]-255;
-                       /* For b2*/
-                       l3[4] = lTable[tempRow3[2]] + lTable[2];
-                       if(l3[4] > 255)
-                       l3[4] = l3[4]-255;
-                       l3[5] = lTable[tempRow3[3]] + lTable[3];
-                       if(l3[5] > 255)
-                       l3[5] = l3[5]-255;
-                       /* For b3*/
-                       l3[6] = lTable[tempRow3[0]] + lTable[3];
-                       if(l3[6] > 255)
-                       l3[6] = l3[6]-255;
-                       l3[7] = lTable[tempRow3[3]] + lTable[2];
-                       if(l3[7] > 255)
-                       l3[7] = l3[7]-255;            
-                       /* For b4*/
-                       l3[8] = lTable[tempRow3[4]] + lTable[2];
-                       if(l3[8] > 255)
-                       l3[8] = l3[8]-255;
-                       l3[9] = lTable[tempRow3[5]] + lTable[3];
-                       if(l3[9] > 255)
-                       l3[9] = l3[9]-255;
-                       /* For b5 */
-                       l3[10] = lTable[tempRow3[5]] + lTable[2];
-                       if(l3[10] > 255)
-                       l3[10] = l3[10]-255;
-                       l3[11] = lTable[tempRow3[6]] + lTable[3];
-                       if(l3[11] > 255)
-                       l3[11] = l3[11]-255;
-                       /* For b6*/
-                       l3[12] = lTable[tempRow3[6]] + lTable[2];
-                       if(l3[12] > 255)
-                       l3[12] = l3[12]-255;
-                       l3[13] = lTable[tempRow3[7]] + lTable[3];
-                       if(l3[13] > 255)
-                       l3[13] = l3[13]-255;
-                       /* For b7*/
-                       l3[14] = lTable[tempRow3[4]] + lTable[3];
-                       if(l3[14] > 255)
-                       l3[14] = l3[14]-255;
-                       l3[15] = lTable[tempRow3[7]] + lTable[2];
-                       if(l3[15] > 255)
-                       l3[15] = l3[15]-255;    
-                       /* For b8*/
-                       l3[16] = lTable[tempRow3[8]] + lTable[2];
-                       if(l3[16] > 255)
-                       l3[16] = l3[16]-255;
-                       l3[17] = lTable[tempRow3[9]] + lTable[3];
-                       if(l3[17] > 255)
-                       l3[17] = l3[17]-255;
-                       /* For b9 */
-                       l3[18] = lTable[tempRow3[9]] + lTable[2];
-                       if(l3[18] > 255)
-                       l3[18] = l3[18]-255;
-                       l3[19] = lTable[tempRow3[10]] + lTable[3];
-                       if(l3[19] > 255)
-                       l3[19] = l3[19]-255;
-                       /* For b10*/
-                       l3[20] = lTable[tempRow3[10]] + lTable[2];
-                       if(l3[20] > 255)
-                       l3[20] = l3[20]-255;
-                       l3[21] = lTable[tempRow3[11]] + lTable[3];
-                       if(l3[21] > 255)
-                       l3[21] = l3[21]-255;
-                       /* For b11*/
-                       l3[22] = lTable[tempRow3[8]] + lTable[3];
-                       if(l3[22] > 255)
-                       l3[22] = l3[22]-255;
-                       l3[23] = lTable[tempRow3[11]] + lTable[2];
-                       if(l3[23] > 255)
-                       l3[23] = l3[23]-255;    
-                       /* For b12*/
-                       l3[24] = lTable[tempRow3[12]] + lTable[2];
-                       if(l3[24] > 255)
-                       l3[24] = l3[24]-255;
-                       l3[25] = lTable[tempRow3[13]] + lTable[3];
-                       if(l3[25] > 255)
-                       l3[25] = l3[25]-255;
-                       /* For b13 */
-                       l3[26] = lTable[tempRow3[13]] + lTable[2];
-                       if(l3[26] > 255)
-                       l3[26] = l3[26]-255;
-                       l3[27] = lTable[tempRow3[14]] + lTable[3];
-                       if(l3[27] > 255)
-                       l3[27] = l3[27]-255;
-                       /* For b14*/
-                       l3[28] = lTable[tempRow3[14]] + lTable[2];
-                       if(l3[28] > 255)
-                       l3[28] = l3[28]-255;
-                       l3[29] = lTable[tempRow3[15]] + lTable[3];
-                       if(l3[29] > 255)
-                       l3[29] = l3[29]-255;
-                       /* For b15*/
-                       l3[30] = lTable[tempRow3[12]] + lTable[3];
-                       if(l3[30] > 255)
-                       l3[30] = l3[30]-255;
-                       l3[31] = lTable[tempRow3[15]] + lTable[2];
-                       if(l3[31] > 255)
-                       l3[31] = l3[31]-255;
-                          next_state = 21;    
-                      end
-       21:begin
-                           d3[0] = eTable[l3[0]]^eTable[l3[1]]^tempRow3[2]^tempRow3[3];
-                           d3[1] = tempRow3[0]^eTable[l3[2]]^eTable[l3[3]]^tempRow3[3];
-                           d3[2] = tempRow3[0]^tempRow3[1]^eTable[l3[4]]^eTable[l3[5]];
-                           d3[3] = eTable[l3[6]]^tempRow3[1]^tempRow3[2]^eTable[l3[7]];
-                           d3[4] = eTable[l3[8]]^eTable[l3[9]]^tempRow3[6]^tempRow3[7];
-                           d3[5] = tempRow3[4]^eTable[l3[10]]^eTable[l3[11]]^tempRow3[7];
-                           d3[6] = tempRow3[4]^tempRow3[5]^eTable[l3[12]]^eTable[l3[13]];
-                           d3[7] = eTable[l3[14]]^tempRow3[5]^tempRow3[6]^eTable[l3[15]];
-                           d3[8] = eTable[l3[16]]^eTable[l3[17]]^tempRow3[10]^tempRow3[11];
-                           d3[9] = tempRow3[8]^eTable[l3[18]]^eTable[l3[19]]^tempRow3[11];
-                           d3[10] = tempRow3[8]^tempRow3[9]^eTable[l3[20]]^eTable[l3[21]];
-                           d3[11] = eTable[l3[22]]^tempRow3[9]^tempRow3[10]^eTable[l3[23]];
-                           d3[12] = eTable[l3[24]]^eTable[l3[25]]^tempRow3[14]^tempRow3[15];
-                           d3[13] = tempRow3[12]^eTable[l3[26]]^eTable[l3[27]]^tempRow3[15];
-                           d3[14] = tempRow3[12]^tempRow3[13]^eTable[l3[28]]^eTable[l3[29]];
-                           d3[15] = eTable[l3[30]]^tempRow3[13]^tempRow3[14]^eTable[l3[31]]; 
-                            next_state = 22;
-                  end
-                22: begin
-                           w4[0] = {d3[0],d3[1],d3[2],d3[3]};
-                           w4[1] = {d3[4],d3[5],d3[6],d3[7]};
-                           w4[2] = {d3[8],d3[9],d3[10],d3[11]};
-                           w4[3] = {d3[12],d3[13],d3[14],d3[15]};
-                          next_state = 23;
-                        end
+
                     23: begin
                           tempStart4[0] = w4[0] ^ k[16];
                           tempStart4[1] = w4[1] ^ k[17];
