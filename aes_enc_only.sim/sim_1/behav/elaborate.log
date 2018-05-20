@@ -1,0 +1,14 @@
+Vivado Simulator 2017.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.1/bin/unwrapped/win64.o/xelab.exe -wto 0f5bd61fbb634e5bbf834367541f3d91 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot enc_testbench_behav xil_defaultlib.enc_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1920 for port keyIn [C:/College/Thesis/AES_2018/aes_dec_only - test/aes_enc_only.srcs/sim_1/new/enc_testbench.v:37]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.aes_enc_core
+Compiling module xil_defaultlib.enc_testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot enc_testbench_behav
