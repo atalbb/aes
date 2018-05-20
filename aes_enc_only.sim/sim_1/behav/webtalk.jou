@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Tue May 15 00:06:06 2018
+# Process ID: 7012
+# Current directory: C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.sim/sim_1/behav
+# Command line: wbtcv.exe -mode batch -source C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.sim/sim_1/behav/xsim.dir/enc_testbench_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.sim/sim_1/behav/webtalk.log
+# Journal file: C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.sim/sim_1/behav\webtalk.jou
+#-----------------------------------------------------------
+source C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.sim/sim_1/behav/xsim.dir/enc_testbench_behav/webtalk/xsim_webtalk.tcl -notrace
