@@ -1,0 +1,42 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Sun Jun 17 17:24:53 2018
+# Process ID: 9976
+# Current directory: C:/College/Thesis/AES_2018/Blockread1/Blockread1.runs/blk_mem_gen_1_synth_1
+# Command line: vivado.exe -log blk_mem_gen_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source blk_mem_gen_1.tcl
+# Log file: C:/College/Thesis/AES_2018/Blockread1/Blockread1.runs/blk_mem_gen_1_synth_1/blk_mem_gen_1.vds
+# Journal file: C:/College/Thesis/AES_2018/Blockread1/Blockread1.runs/blk_mem_gen_1_synth_1\vivado.jou
+#-----------------------------------------------------------
+source blk_mem_gen_1.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 336.273 ; gain = 87.957
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_1' [c:/College/Thesis/AES_2018/Blockread1/Blockread1.srcs/sources_1/ip/blk_mem_gen_1/synth/blk_mem_gen_1.vhd:70]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_1' (9#1) [c:/College/Thesis/AES_2018/Blockread1/Blockread1.srcs/sources_1/ip/blk_mem_gen_1/synth/blk_mem_gen_1.vhd:70]
+Finished RTL Elaboration : Time (s): cpu = 00:01:07 ; elapsed = 00:01:08 . Memory (MB): peak = 593.820 ; gain = 345.504
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:07 ; elapsed = 00:01:08 . Memory (MB): peak = 593.820 ; gain = 345.504
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 648.031 ; gain = 1.504
+Finished Constraint Validation : Time (s): cpu = 00:01:19 ; elapsed = 00:01:21 . Memory (MB): peak = 648.031 ; gain = 399.715
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:19 ; elapsed = 00:01:21 . Memory (MB): peak = 648.031 ; gain = 399.715
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:19 ; elapsed = 00:01:21 . Memory (MB): peak = 648.031 ; gain = 399.715
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:19 ; elapsed = 00:01:21 . Memory (MB): peak = 648.031 ; gain = 399.715
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:19 ; elapsed = 00:01:21 . Memory (MB): peak = 648.031 ; gain = 399.715
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:31 ; elapsed = 00:01:33 . Memory (MB): peak = 699.316 ; gain = 451.000
+Finished Timing Optimization : Time (s): cpu = 00:01:31 ; elapsed = 00:01:33 . Memory (MB): peak = 699.391 ; gain = 451.074
+Finished Technology Mapping : Time (s): cpu = 00:01:31 ; elapsed = 00:01:33 . Memory (MB): peak = 708.922 ; gain = 460.605
+Finished IO Insertion : Time (s): cpu = 00:01:32 ; elapsed = 00:01:34 . Memory (MB): peak = 708.922 ; gain = 460.605
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:32 ; elapsed = 00:01:34 . Memory (MB): peak = 708.922 ; gain = 460.605
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:32 ; elapsed = 00:01:34 . Memory (MB): peak = 708.922 ; gain = 460.605
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:32 ; elapsed = 00:01:34 . Memory (MB): peak = 708.922 ; gain = 460.605
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:32 ; elapsed = 00:01:34 . Memory (MB): peak = 708.922 ; gain = 460.605
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:32 ; elapsed = 00:01:34 . Memory (MB): peak = 708.922 ; gain = 460.605
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |RAMB18E1 |     1|
++------+---------+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:32 ; elapsed = 00:01:34 . Memory (MB): peak = 708.922 ; gain = 460.605
+synth_design: Time (s): cpu = 00:01:34 ; elapsed = 00:01:37 . Memory (MB): peak = 719.488 ; gain = 471.172
