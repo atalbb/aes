@@ -1,0 +1,143 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.1 (win64) Build 1846317 Fri Apr 14 18:55:03 MDT 2017
+| Date         : Thu Aug 30 14:31:49 2018
+| Host         : DESKTOP-GJPCRJL running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    72 |
+| Unused register locations in slices containing registers |   173 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               4 |            1 |
+| No           | No                    | Yes                    |              42 |           23 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |             781 |          287 |
+| Yes          | Yes                   | No                     |              24 |           10 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++----------------+------------------------------------+------------------------------+------------------+----------------+
+|  Clock Signal  |            Enable Signal           |       Set/Reset Signal       | Slice Load Count | Bel Load Count |
++----------------+------------------------------------+------------------------------+------------------+----------------+
+|  clk_IBUF_BUFG | u0/mix1/p_0_in[120]                | u0/mix1/data_o_reg_reg[3]_0  |                1 |              1 |
+|  clk_IBUF_BUFG | u0/ks1/next_key_reg                | u0/sub1/data_reg_reg[44]_0   |                1 |              1 |
+|  clk_IBUF_BUFG | u0/ks1/col[31]_i_1_n_0             | u0/sub1/data_reg_reg[44]_0   |                1 |              1 |
+|  clk_IBUF_BUFG | T1/p_3_in                          | u0/ks1/col_reg[28]_0         |                1 |              1 |
+|  clk_IBUF_BUFG | u0/sub1/p_0_in[120]                | u0/sub1/data_reg_reg[44]_0   |                1 |              1 |
+|  clk_IBUF_BUFG | u0/ks1/col[7]_i_1_n_0              | u0/ks1/key_reg_reg[13]_0     |                1 |              2 |
+|  clk_IBUF_BUFG | u0/sub1/p_0_in[104]                | u0/ks1/key_reg_reg[13]_0     |                2 |              2 |
+|  clk_IBUF_BUFG |                                    | u0/mix1/data_o_reg_reg[3]_0  |                3 |              3 |
+|  clk_IBUF_BUFG | u0/ks1/col[31]_i_1_n_0             | u0/ks1/col_reg[28]_0         |                2 |              3 |
+|  clk_IBUF_BUFG | u0/sub1/p_0_in[40]                 | u0/sub1/data_reg_reg[45]_0   |                3 |              3 |
+|  clk_IBUF_BUFG | u0/mix1/next_data_o                | T1/tx_buff_reg[5][0]_0       |                3 |              3 |
+|  clk_IBUF_BUFG |                                    |                              |                1 |              4 |
+|  clk_IBUF_BUFG | u0/sub1/E[0]                       | u0/sub1/data_reg_reg[44]_0   |                2 |              4 |
+|  clk_IBUF_BUFG | u0/ks1/addroundkey_round_reg[0][0] | u0/sub1/data_reg_reg[44]_0   |                1 |              4 |
+|  clk_IBUF_BUFG | u0/ks1/col[31]_i_1_n_0             | u0/ks1/key_reg_reg[13]_0     |                2 |              4 |
+|  clk_IBUF_BUFG | T1/bit_count                       | u0/sub1/data_reg_reg[44]_0   |                1 |              4 |
+|  clk_IBUF_BUFG |                                    | u0/mix1/data_o_reg_reg[32]_0 |                3 |              5 |
+|  clk_IBUF_BUFG | u0/sub1/state[4]_i_1_n_0           | u0/ks1/key_reg_reg[13]_0     |                2 |              5 |
+|  clk_IBUF_BUFG | u0/sub1/p_0_in[40]                 | u0/sub1/data_reg_reg[44]_0   |                3 |              5 |
+|  clk_IBUF_BUFG |                                    | u0/sub1/data_reg_reg[44]_0   |                3 |              6 |
+|  clk_IBUF_BUFG | T1/tx_buff[19][5]_i_2_n_0          | T1/tx_buff[19][5]_i_1_n_0    |                3 |              6 |
+|  clk_IBUF_BUFG | T1/tx_buff[18][5]_i_2_n_0          | T1/tx_buff[18][5]_i_1_n_0    |                3 |              6 |
+|  clk_IBUF_BUFG | u0/ks1/col[7]_i_1_n_0              | u0/sub1/data_reg_reg[45]_0   |                3 |              6 |
+|  clk_IBUF_BUFG | T1/tx_buff[17][5]_i_2_n_0          | T1/tx_buff[17][5]_i_1_n_0    |                3 |              6 |
+|  clk_IBUF_BUFG | T1/tx_buff[16][5]_i_2_n_0          | T1/tx_buff[16][5]_i_1_n_0    |                1 |              6 |
+|  clk_IBUF_BUFG | T1/byte_count                      | u0/sub1/data_reg_reg[44]_0   |                2 |              6 |
+|  clk_IBUF_BUFG | u0/sub1/p_0_in[104]                | u0/sub1/data_reg_reg[45]_0   |                4 |              6 |
+|  clk_IBUF_BUFG | T1/tx_buff[15][6]_i_1_n_0          | T1/tx_buff_reg[5][0]_0       |                3 |              7 |
+|  clk_IBUF_BUFG | T1/tx_buff[6][6]_i_1_n_0           | T1/tx_buff_reg[5][0]_0       |                3 |              7 |
+|  clk_IBUF_BUFG | T1/tx_buff[4][6]_i_1_n_0           | T1/tx_buff_reg[5][0]_0       |                2 |              7 |
+|  clk_IBUF_BUFG | T1/tx_buff[3][6]_i_1_n_0           | u0/mix1/data_o_reg_reg[32]_0 |                4 |              7 |
+|  clk_IBUF_BUFG | T1/tx_buff[2][6]_i_1_n_0           | T1/tx_buff_reg[5][0]_0       |                3 |              7 |
+|  clk_IBUF_BUFG | T1/tx_buff[5][6]_i_1_n_0           | T1/tx_buff_reg[5][0]_0       |                2 |              7 |
+|  clk_IBUF_BUFG | T1/tx_buff[8][6]_i_1_n_0           | T1/tx_buff_reg[5][0]_0       |                3 |              7 |
+|  clk_IBUF_BUFG | T1/tx_buff[7][6]_i_1_n_0           | T1/tx_buff_reg[5][0]_0       |                3 |              7 |
+|  clk_IBUF_BUFG | T1/tx_buff[9][6]_i_1_n_0           | T1/tx_buff_reg[5][0]_0       |                4 |              7 |
+|  clk_IBUF_BUFG | T1/tx_buff[1][6]_i_1_n_0           | u0/mix1/data_o_reg_reg[32]_0 |                3 |              7 |
+|  clk_IBUF_BUFG | u0/sub1/p_0_in[120]                | u0/ks1/key_reg_reg[13]_0     |                1 |              7 |
+|  clk_IBUF_BUFG | T1/tx_buff[11][6]_i_1_n_0          | T1/tx_buff_reg[5][0]_0       |                2 |              7 |
+|  clk_IBUF_BUFG | T1/tx_buff[0][6]_i_1_n_0           | T1/tx_buff_reg[5][0]_0       |                4 |              7 |
+|  clk_IBUF_BUFG | T1/tx_buff[10][6]_i_1_n_0          | T1/tx_buff_reg[5][0]_0       |                4 |              7 |
+|  clk_IBUF_BUFG | T1/tx_buff[12][6]_i_1_n_0          | T1/tx_buff_reg[5][0]_0       |                2 |              7 |
+|  clk_IBUF_BUFG | T1/tx_buff[13][6]_i_1_n_0          | T1/tx_buff_reg[5][0]_0       |                2 |              7 |
+|  clk_IBUF_BUFG | T1/tx_buff[14][6]_i_1_n_0          | T1/tx_buff_reg[5][0]_0       |                3 |              7 |
+|  clk_IBUF_BUFG | u0/sub1/p_0_in[16]                 | u0/sub1/data_reg_reg[44]_0   |                3 |              8 |
+|  clk_IBUF_BUFG | u0/sub1/p_0_in[48]                 | u0/sub1/data_reg_reg[45]_0   |                4 |              8 |
+|  clk_IBUF_BUFG | u0/sub1/p_0_in[72]                 | u0/sub1/data_reg_reg[45]_0   |                2 |              8 |
+|  clk_IBUF_BUFG | u0/sub1/p_0_in[80]                 | u0/sub1/data_reg_reg[45]_0   |                6 |              8 |
+|  clk_IBUF_BUFG | u0/sub1/p_0_in[24]                 | u0/sub1/data_reg_reg[44]_0   |                2 |              8 |
+|  clk_IBUF_BUFG | u0/sub1/p_0_in[0]                  | u0/sub1/data_reg_reg[44]_0   |                5 |              8 |
+|  clk_IBUF_BUFG | u0/sub1/p_0_in[64]                 | u0/sub1/data_reg_reg[45]_0   |                4 |              8 |
+|  clk_IBUF_BUFG | u0/ks1/col[23]_i_1_n_0             | u0/ks1/key_reg_reg[13]_0     |                3 |              8 |
+|  clk_IBUF_BUFG | u0/sub1/p_0_in[8]                  | u0/sub1/data_reg_reg[44]_0   |                3 |              8 |
+|  clk_IBUF_BUFG | u0/sub1/p_0_in[88]                 | u0/sub1/data_reg_reg[45]_0   |                2 |              8 |
+|  clk_IBUF_BUFG | u0/sub1/p_0_in[56]                 | u0/sub1/data_reg_reg[45]_0   |                2 |              8 |
+|  clk_IBUF_BUFG | u0/sub1/p_0_in[32]                 | u0/sub1/data_reg_reg[44]_0   |                2 |              8 |
+|  clk_IBUF_BUFG | u0/sub1/p_0_in[96]                 | u0/sub1/data_reg_reg[45]_0   |                3 |              8 |
+|  clk_IBUF_BUFG | u0/sub1/p_0_in[112]                | u0/ks1/key_reg_reg[13]_0     |                4 |              8 |
+|  clk_IBUF_BUFG |                                    | u0/mix1/data_o_reg_reg[81]_0 |                7 |             12 |
+|  clk_IBUF_BUFG | T1/p_3_in                          | u0/mix1/data_o_reg_reg[81]_0 |                3 |             13 |
+|  clk_IBUF_BUFG | u0/mix1/data_reg[95]_i_1__0_n_0    | u0/mix1/data_o_reg_reg[81]_0 |                3 |             15 |
+|  clk_IBUF_BUFG |                                    | T1/tx_buff_reg[5][0]_0       |                7 |             16 |
+|  clk_IBUF_BUFG | u0/mix1/data_reg[95]_i_1__0_n_0    | u0/mix1/data_o_reg_reg[32]_0 |                5 |             17 |
+|  clk_IBUF_BUFG | u0/mix1/next_data_o                | u0/mix1/data_o_reg_reg[3]_0  |               13 |             30 |
+|  clk_IBUF_BUFG | u0/mix1/p_0_in[120]                | u0/mix1/data_o_reg_reg[81]_0 |                7 |             31 |
+|  clk_IBUF_BUFG | u0/mix1/data_reg[63]_i_1__0_n_0    | u0/mix1/data_o_reg_reg[32]_0 |                7 |             32 |
+|  clk_IBUF_BUFG | u0/ks1/E[0]                        | u0/sub1/data_reg_reg[44]_0   |               24 |             45 |
+|  clk_IBUF_BUFG | u0/mix1/next_data_o                | u0/mix1/data_o_reg_reg[81]_0 |               16 |             46 |
+|  clk_IBUF_BUFG | u0/ks1/next_key_reg                | u0/sub1/data_reg_reg[45]_0   |               11 |             46 |
+|  clk_IBUF_BUFG | u0/mix1/next_data_o                | u0/mix1/data_o_reg_reg[32]_0 |               13 |             49 |
+|  clk_IBUF_BUFG | u0/ks1/next_key_reg                | u0/ks1/key_reg_reg[13]_0     |               18 |             81 |
+|  clk_IBUF_BUFG | u0/ks1/E[0]                        | u0/mix1/data_o_reg_reg[3]_0  |               38 |             83 |
++----------------+------------------------------------+------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                     5 |
+| 2      |                     2 |
+| 3      |                     4 |
+| 4      |                     5 |
+| 5      |                     3 |
+| 6      |                     8 |
+| 7      |                    17 |
+| 8      |                    14 |
+| 12     |                     1 |
+| 13     |                     1 |
+| 15     |                     1 |
+| 16+    |                    11 |
++--------+-----------------------+
+
+
