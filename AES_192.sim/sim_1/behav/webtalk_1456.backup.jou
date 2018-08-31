@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Fri Aug 31 11:55:11 2018
+# Process ID: 1456
+# Current directory: C:/College/Thesis/AES_2018/AES_192/AES_192.sim/sim_1/behav
+# Command line: wbtcv.exe -mode batch -source C:/College/Thesis/AES_2018/AES_192/AES_192.sim/sim_1/behav/xsim.dir/top_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/College/Thesis/AES_2018/AES_192/AES_192.sim/sim_1/behav/webtalk.log
+# Journal file: C:/College/Thesis/AES_2018/AES_192/AES_192.sim/sim_1/behav\webtalk.jou
+#-----------------------------------------------------------
+source C:/College/Thesis/AES_2018/AES_192/AES_192.sim/sim_1/behav/xsim.dir/top_behav/webtalk/xsim_webtalk.tcl -notrace

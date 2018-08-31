@@ -1,0 +1,680 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Fri Aug 31 12:05:02 2018
+# Process ID: 11120
+# Current directory: C:/College/Thesis/AES_2018/AES_192/AES_192.runs/synth_1
+# Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: C:/College/Thesis/AES_2018/AES_192/AES_192.runs/synth_1/top.vds
+# Journal file: C:/College/Thesis/AES_2018/AES_192/AES_192.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace
+Command: synth_design -top top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 3520 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 324.512 ; gain = 88.043
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/top.v:22]
+INFO: [Synth 8-638] synthesizing module 'aes192' [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/aes192.v:52]
+INFO: [Synth 8-638] synthesizing module 'sbox' [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/sbox.v:60]
+WARNING: [Synth 8-6014] Unused sequential element first_mux_data_var_reg was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/sbox.v:121]
+WARNING: [Synth 8-6014] Unused sequential element first_mux_InvInput_reg was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/sbox.v:122]
+WARNING: [Synth 8-6014] Unused sequential element first_mux_aA_reg was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/sbox.v:128]
+WARNING: [Synth 8-6014] Unused sequential element first_mux_aB_reg was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/sbox.v:128]
+WARNING: [Synth 8-6014] Unused sequential element first_mux_aC_reg was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/sbox.v:129]
+WARNING: [Synth 8-6014] Unused sequential element first_mux_aD_reg was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/sbox.v:129]
+WARNING: [Synth 8-6014] Unused sequential element end_mux_data_var_reg was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/sbox.v:179]
+WARNING: [Synth 8-6014] Unused sequential element end_mux_aA_reg was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/sbox.v:185]
+WARNING: [Synth 8-6014] Unused sequential element end_mux_aB_reg was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/sbox.v:185]
+WARNING: [Synth 8-6014] Unused sequential element end_mux_aC_reg was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/sbox.v:186]
+WARNING: [Synth 8-6014] Unused sequential element end_mux_aD_reg was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/sbox.v:186]
+WARNING: [Synth 8-6014] Unused sequential element inversemap_alp_t_reg was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/sbox.v:215]
+WARNING: [Synth 8-6014] Unused sequential element inversemap_ahp_t_reg was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/sbox.v:216]
+WARNING: [Synth 8-6014] Unused sequential element aA_reg was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/sbox.v:218]
+WARNING: [Synth 8-6014] Unused sequential element aB_reg was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/sbox.v:219]
+WARNING: [Synth 8-6014] Unused sequential element mul1_aA_reg was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/sbox.v:243]
+WARNING: [Synth 8-6014] Unused sequential element mul1_a_reg was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/sbox.v:244]
+WARNING: [Synth 8-6014] Unused sequential element mul2_aA_reg was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/sbox.v:264]
+WARNING: [Synth 8-6014] Unused sequential element mul2_aB_reg was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/sbox.v:265]
+WARNING: [Synth 8-6014] Unused sequential element mul3_aA_reg was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/sbox.v:285]
+WARNING: [Synth 8-6014] Unused sequential element mul3_aB_reg was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/sbox.v:286]
+WARNING: [Synth 8-6014] Unused sequential element intermediate_aA_reg was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/sbox.v:306]
+WARNING: [Synth 8-6014] Unused sequential element intermediate_aB_reg was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/sbox.v:307]
+WARNING: [Synth 8-6014] Unused sequential element inversion_to_invert_var_reg was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/sbox.v:338]
+WARNING: [Synth 8-6014] Unused sequential element inversion_aA_reg was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/sbox.v:341]
+WARNING: [Synth 8-6014] Unused sequential element al_reg was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/sbox.v:163]
+WARNING: [Synth 8-6014] Unused sequential element ah_reg was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/sbox.v:164]
+WARNING: [Synth 8-6014] Unused sequential element next_ah_reg_reg was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/sbox.v:165]
+WARNING: [Synth 8-6014] Unused sequential element inva_reg was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/sbox.v:230]
+WARNING: [Synth 8-6014] Unused sequential element alxh_reg was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/sbox.v:251]
+WARNING: [Synth 8-6014] Unused sequential element ahp_reg was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/sbox.v:272]
+WARNING: [Synth 8-6014] Unused sequential element alp_reg was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/sbox.v:293]
+WARNING: [Synth 8-6014] Unused sequential element next_to_invert_reg was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/sbox.v:326]
+WARNING: [Synth 8-6014] Unused sequential element d_reg was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/sbox.v:347]
+WARNING: [Synth 8-6014] Unused sequential element next_alph_reg was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/sbox.v:364]
+WARNING: [Synth 8-6014] Unused sequential element ah2_reg was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/sbox.v:380]
+WARNING: [Synth 8-6014] Unused sequential element al2_reg was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/sbox.v:396]
+WARNING: [Synth 8-6014] Unused sequential element end_mux_data_o_var_reg was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/sbox.v:187]
+WARNING: [Synth 8-6014] Unused sequential element intermediate_ah2e_reg was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/sbox.v:308]
+WARNING: [Synth 8-6014] Unused sequential element intermediate_ah2epl2_reg was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/sbox.v:314]
+INFO: [Synth 8-256] done synthesizing module 'sbox' (1#1) [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/sbox.v:60]
+INFO: [Synth 8-638] synthesizing module 'subbytes' [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/subbytes.v:63]
+WARNING: [Synth 8-6014] Unused sequential element data_i_var_reg was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/subbytes.v:172]
+WARNING: [Synth 8-6014] Unused sequential element data_array_reg[15] was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/subbytes.v:174]
+WARNING: [Synth 8-6014] Unused sequential element data_array_reg[14] was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/subbytes.v:174]
+WARNING: [Synth 8-6014] Unused sequential element data_array_reg[13] was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/subbytes.v:174]
+WARNING: [Synth 8-6014] Unused sequential element data_array_reg[12] was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/subbytes.v:174]
+WARNING: [Synth 8-6014] Unused sequential element data_array_reg[11] was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/subbytes.v:174]
+WARNING: [Synth 8-6014] Unused sequential element data_array_reg[10] was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/subbytes.v:174]
+WARNING: [Synth 8-6014] Unused sequential element data_array_reg[9] was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/subbytes.v:174]
+WARNING: [Synth 8-6014] Unused sequential element data_array_reg[8] was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/subbytes.v:174]
+WARNING: [Synth 8-6014] Unused sequential element data_array_reg[7] was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/subbytes.v:174]
+WARNING: [Synth 8-6014] Unused sequential element data_array_reg[6] was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/subbytes.v:174]
+WARNING: [Synth 8-6014] Unused sequential element data_array_reg[5] was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/subbytes.v:174]
+WARNING: [Synth 8-6014] Unused sequential element data_array_reg[4] was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/subbytes.v:174]
+WARNING: [Synth 8-6014] Unused sequential element data_array_reg[3] was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/subbytes.v:174]
+WARNING: [Synth 8-6014] Unused sequential element data_array_reg[2] was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/subbytes.v:174]
+WARNING: [Synth 8-6014] Unused sequential element data_array_reg[1] was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/subbytes.v:174]
+WARNING: [Synth 8-6014] Unused sequential element data_array_reg[0] was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/subbytes.v:174]
+WARNING: [Synth 8-6014] Unused sequential element data_reg_var_reg[15] was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/subbytes.v:191]
+WARNING: [Synth 8-6014] Unused sequential element data_reg_var_reg[14] was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/subbytes.v:191]
+WARNING: [Synth 8-6014] Unused sequential element data_reg_var_reg[13] was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/subbytes.v:191]
+WARNING: [Synth 8-6014] Unused sequential element data_reg_var_reg[12] was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/subbytes.v:191]
+WARNING: [Synth 8-6014] Unused sequential element data_reg_var_reg[11] was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/subbytes.v:191]
+WARNING: [Synth 8-6014] Unused sequential element data_reg_var_reg[10] was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/subbytes.v:191]
+WARNING: [Synth 8-6014] Unused sequential element data_reg_var_reg[9] was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/subbytes.v:191]
+WARNING: [Synth 8-6014] Unused sequential element data_reg_var_reg[8] was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/subbytes.v:191]
+WARNING: [Synth 8-6014] Unused sequential element data_reg_var_reg[7] was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/subbytes.v:191]
+WARNING: [Synth 8-6014] Unused sequential element data_reg_var_reg[6] was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/subbytes.v:191]
+WARNING: [Synth 8-6014] Unused sequential element data_reg_var_reg[5] was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/subbytes.v:191]
+WARNING: [Synth 8-6014] Unused sequential element data_reg_var_reg[4] was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/subbytes.v:191]
+WARNING: [Synth 8-6014] Unused sequential element data_reg_var_reg[3] was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/subbytes.v:191]
+WARNING: [Synth 8-6014] Unused sequential element data_reg_var_reg[2] was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/subbytes.v:191]
+WARNING: [Synth 8-6014] Unused sequential element data_reg_var_reg[1] was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/subbytes.v:191]
+WARNING: [Synth 8-6014] Unused sequential element data_reg_var_reg[0] was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/subbytes.v:191]
+WARNING: [Synth 8-6014] Unused sequential element data_reg_128_reg was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/subbytes.v:238]
+INFO: [Synth 8-256] done synthesizing module 'subbytes' (2#1) [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/subbytes.v:63]
+INFO: [Synth 8-638] synthesizing module 'mixcolum' [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/mixcolum.v:60]
+INFO: [Synth 8-638] synthesizing module 'word_mixcolum' [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/word_mixcolum.v:60]
+INFO: [Synth 8-638] synthesizing module 'byte_mixcolum' [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/byte_mixcolum.v:60]
+WARNING: [Synth 8-6014] Unused sequential element w1_reg was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/byte_mixcolum.v:85]
+WARNING: [Synth 8-6014] Unused sequential element w2_reg was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/byte_mixcolum.v:86]
+WARNING: [Synth 8-6014] Unused sequential element w3_reg was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/byte_mixcolum.v:87]
+WARNING: [Synth 8-6014] Unused sequential element w4_reg was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/byte_mixcolum.v:88]
+WARNING: [Synth 8-6014] Unused sequential element w5_reg was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/byte_mixcolum.v:89]
+WARNING: [Synth 8-6014] Unused sequential element w6_reg was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/byte_mixcolum.v:90]
+WARNING: [Synth 8-6014] Unused sequential element w7_reg was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/byte_mixcolum.v:91]
+WARNING: [Synth 8-6014] Unused sequential element w8_reg was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/byte_mixcolum.v:92]
+WARNING: [Synth 8-6014] Unused sequential element outx_var_reg was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/byte_mixcolum.v:94]
+INFO: [Synth 8-256] done synthesizing module 'byte_mixcolum' (3#1) [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/byte_mixcolum.v:60]
+WARNING: [Synth 8-6014] Unused sequential element in_var_reg was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/word_mixcolum.v:104]
+WARNING: [Synth 8-6014] Unused sequential element outx_reg was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/word_mixcolum.v:127]
+WARNING: [Synth 8-6014] Unused sequential element outy_reg was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/word_mixcolum.v:128]
+INFO: [Synth 8-256] done synthesizing module 'word_mixcolum' (4#1) [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/word_mixcolum.v:60]
+INFO: [Synth 8-226] default block is never used [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/mixcolum.v:146]
+WARNING: [Synth 8-6014] Unused sequential element data_i_var_reg was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/mixcolum.v:136]
+WARNING: [Synth 8-6014] Unused sequential element data_reg_var_reg was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/mixcolum.v:137]
+WARNING: [Synth 8-6014] Unused sequential element aux_reg was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/mixcolum.v:153]
+INFO: [Synth 8-256] done synthesizing module 'mixcolum' (5#1) [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/mixcolum.v:60]
+INFO: [Synth 8-638] synthesizing module 'keysched192' [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/keysched192.v:51]
+WARNING: [Synth 8-6014] Unused sequential element zero_reg was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/keysched192.v:173]
+WARNING: [Synth 8-6014] Unused sequential element col_t_reg was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/keysched192.v:175]
+WARNING: [Synth 8-6014] Unused sequential element W_var_reg was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/keysched192.v:176]
+WARNING: [Synth 8-6014] Unused sequential element K_var_reg was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/keysched192.v:188]
+INFO: [Synth 8-256] done synthesizing module 'keysched192' (6#1) [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/keysched192.v:51]
+INFO: [Synth 8-226] default block is never used [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/aes192.v:195]
+WARNING: [Synth 8-6014] Unused sequential element one_reg was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/aes192.v:285]
+WARNING: [Synth 8-6014] Unused sequential element two_reg was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/aes192.v:286]
+WARNING: [Synth 8-6014] Unused sequential element three_reg was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/aes192.v:287]
+WARNING: [Synth 8-6014] Unused sequential element four_reg was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/aes192.v:288]
+WARNING: [Synth 8-6014] Unused sequential element roundvalue_reg was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/aes192.v:290]
+WARNING: [Synth 8-6014] Unused sequential element data_var_reg was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/aes192.v:293]
+WARNING: [Synth 8-6014] Unused sequential element round_data_var_reg was removed.  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/aes192.v:294]
+INFO: [Common 17-14] Message 'Synth 8-6014' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-256] done synthesizing module 'aes192' (7#1) [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/aes192.v:52]
+INFO: [Synth 8-638] synthesizing module 'uart_tx' [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/uart_tx.v:21]
+	Parameter bit_time bound to: 868 - type: integer 
+WARNING: [Synth 8-5788] Register tx_buff_reg[19] in module uart_tx is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/uart_tx.v:52]
+WARNING: [Synth 8-5788] Register tx_buff_reg[18] in module uart_tx is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/uart_tx.v:52]
+WARNING: [Synth 8-5788] Register tx_buff_reg[17] in module uart_tx is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/uart_tx.v:52]
+WARNING: [Synth 8-5788] Register tx_buff_reg[16] in module uart_tx is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/uart_tx.v:52]
+INFO: [Synth 8-256] done synthesizing module 'uart_tx' (8#1) [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/uart_tx.v:21]
+INFO: [Synth 8-256] done synthesizing module 'top' (9#1) [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/sources_1/new/top.v:22]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 377.754 ; gain = 141.285
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 377.754 ; gain = 141.285
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/constrs_1/new/constr.xdc]
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/constrs_1/new/constr.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/College/Thesis/AES_2018/AES_192/AES_192.srcs/constrs_1/new/constr.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 720.488 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 720.488 ; gain = 484.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 720.488 ; gain = 484.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 720.488 ; gain = 484.020
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "data_reg_var_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg_var_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg_var_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg_var_reg[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg_var_reg[4]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg_var_reg[5]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg_var_reg[6]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg_var_reg[7]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg_var_reg[8]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg_var_reg[9]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg_var_reg[10]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg_var_reg[11]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg_var_reg[12]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg_var_reg[13]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg_var_reg[14]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg_var_reg[15]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "next_ready_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'keysched192'
+INFO: [Synth 8-5544] ROM "next_col" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_key_reg" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_round" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "tx_buff_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[0]" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              000 |                              000
+                 iSTATE0 |                              001 |                              001
+                 iSTATE1 |                              010 |                              010
+                 iSTATE2 |                              011 |                              011
+                 iSTATE3 |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'keysched192'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 720.488 ; gain = 484.020
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     13 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 7     
++---XORs : 
+	   2 Input    128 Bit         XORs := 4     
+	   3 Input     32 Bit         XORs := 1     
+	   2 Input     32 Bit         XORs := 5     
+	   2 Input      8 Bit         XORs := 12    
+	   3 Input      8 Bit         XORs := 4     
+	   4 Input      8 Bit         XORs := 4     
+	   2 Input      4 Bit         XORs := 16    
+	   2 Input      1 Bit         XORs := 59    
+	   3 Input      1 Bit         XORs := 11    
+	   4 Input      1 Bit         XORs := 16    
+	   5 Input      1 Bit         XORs := 3     
++---Registers : 
+	              192 Bit    Registers := 1     
+	              128 Bit    Registers := 4     
+	               64 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	               13 Bit    Registers := 1     
+	                8 Bit    Registers := 20    
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 6     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 11    
++---Muxes : 
+	   2 Input    192 Bit        Muxes := 1     
+	   3 Input    128 Bit        Muxes := 2     
+	   2 Input    128 Bit        Muxes := 14    
+	   4 Input    128 Bit        Muxes := 1     
+	   2 Input     64 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 2     
+	   4 Input     32 Bit        Muxes := 1     
+	   5 Input     32 Bit        Muxes := 2     
+	   2 Input     13 Bit        Muxes := 4     
+	   2 Input      8 Bit        Muxes := 104   
+	   5 Input      8 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 19    
+	   2 Input      7 Bit        Muxes := 2     
+	   3 Input      7 Bit        Muxes := 19    
+	   3 Input      5 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
+	   5 Input      4 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 39    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module sbox 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 59    
+	   3 Input      1 Bit         XORs := 11    
+	   4 Input      1 Bit         XORs := 16    
+	   5 Input      1 Bit         XORs := 3     
++---Registers : 
+	                4 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+Module subbytes 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	              128 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   3 Input    128 Bit        Muxes := 2     
+	   2 Input    128 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 17    
+	   3 Input      5 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 2     
+Module byte_mixcolum 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 3     
+	   3 Input      8 Bit         XORs := 1     
+	   4 Input      8 Bit         XORs := 1     
+	   2 Input      4 Bit         XORs := 4     
+Module mixcolum 
+Detailed RTL Component Info : 
++---Registers : 
+	              128 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   4 Input    128 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	   4 Input     32 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 2     
+Module keysched192 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input     32 Bit         XORs := 1     
+	   2 Input     32 Bit         XORs := 5     
++---Registers : 
+	              192 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   5 Input     32 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 1     
+	   5 Input      8 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 3     
+Module aes192 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 6     
++---XORs : 
+	   2 Input    128 Bit         XORs := 4     
++---Registers : 
+	              128 Bit    Registers := 1     
+	               64 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input    192 Bit        Muxes := 1     
+	   2 Input    128 Bit        Muxes := 13    
+	   2 Input     64 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	   5 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 28    
+Module uart_tx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     13 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               13 Bit    Registers := 1     
+	                8 Bit    Registers := 20    
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     13 Bit        Muxes := 4     
+	   2 Input      8 Bit        Muxes := 83    
+	   4 Input      8 Bit        Muxes := 19    
+	   2 Input      7 Bit        Muxes := 2     
+	   3 Input      7 Bit        Muxes := 19    
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 11    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "data_reg_var_reg[15]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg_var_reg[14]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg_var_reg[13]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg_var_reg[12]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg_var_reg[11]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg_var_reg[10]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg_var_reg[9]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg_var_reg[8]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg_var_reg[7]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg_var_reg[6]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg_var_reg[5]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg_var_reg[4]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg_var_reg[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg_var_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg_var_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg_var_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\T1/tx_buff_reg[19][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\T1/tx_buff_reg[18][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\T1/tx_buff_reg[17][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\T1/tx_buff_reg[16][7] )
+WARNING: [Synth 8-3332] Sequential element (data_reg_reg[31]) is unused and will be removed from module mixcolum.
+WARNING: [Synth 8-3332] Sequential element (data_reg_reg[30]) is unused and will be removed from module mixcolum.
+WARNING: [Synth 8-3332] Sequential element (data_reg_reg[29]) is unused and will be removed from module mixcolum.
+WARNING: [Synth 8-3332] Sequential element (data_reg_reg[28]) is unused and will be removed from module mixcolum.
+WARNING: [Synth 8-3332] Sequential element (data_reg_reg[27]) is unused and will be removed from module mixcolum.
+WARNING: [Synth 8-3332] Sequential element (data_reg_reg[26]) is unused and will be removed from module mixcolum.
+WARNING: [Synth 8-3332] Sequential element (data_reg_reg[25]) is unused and will be removed from module mixcolum.
+WARNING: [Synth 8-3332] Sequential element (data_reg_reg[24]) is unused and will be removed from module mixcolum.
+WARNING: [Synth 8-3332] Sequential element (data_reg_reg[23]) is unused and will be removed from module mixcolum.
+WARNING: [Synth 8-3332] Sequential element (data_reg_reg[22]) is unused and will be removed from module mixcolum.
+WARNING: [Synth 8-3332] Sequential element (data_reg_reg[21]) is unused and will be removed from module mixcolum.
+WARNING: [Synth 8-3332] Sequential element (data_reg_reg[20]) is unused and will be removed from module mixcolum.
+WARNING: [Synth 8-3332] Sequential element (data_reg_reg[19]) is unused and will be removed from module mixcolum.
+WARNING: [Synth 8-3332] Sequential element (data_reg_reg[18]) is unused and will be removed from module mixcolum.
+WARNING: [Synth 8-3332] Sequential element (data_reg_reg[17]) is unused and will be removed from module mixcolum.
+WARNING: [Synth 8-3332] Sequential element (data_reg_reg[16]) is unused and will be removed from module mixcolum.
+WARNING: [Synth 8-3332] Sequential element (data_reg_reg[15]) is unused and will be removed from module mixcolum.
+WARNING: [Synth 8-3332] Sequential element (data_reg_reg[14]) is unused and will be removed from module mixcolum.
+WARNING: [Synth 8-3332] Sequential element (data_reg_reg[13]) is unused and will be removed from module mixcolum.
+WARNING: [Synth 8-3332] Sequential element (data_reg_reg[12]) is unused and will be removed from module mixcolum.
+WARNING: [Synth 8-3332] Sequential element (data_reg_reg[11]) is unused and will be removed from module mixcolum.
+WARNING: [Synth 8-3332] Sequential element (data_reg_reg[10]) is unused and will be removed from module mixcolum.
+WARNING: [Synth 8-3332] Sequential element (data_reg_reg[9]) is unused and will be removed from module mixcolum.
+WARNING: [Synth 8-3332] Sequential element (data_reg_reg[8]) is unused and will be removed from module mixcolum.
+WARNING: [Synth 8-3332] Sequential element (data_reg_reg[7]) is unused and will be removed from module mixcolum.
+WARNING: [Synth 8-3332] Sequential element (data_reg_reg[6]) is unused and will be removed from module mixcolum.
+WARNING: [Synth 8-3332] Sequential element (data_reg_reg[5]) is unused and will be removed from module mixcolum.
+WARNING: [Synth 8-3332] Sequential element (data_reg_reg[4]) is unused and will be removed from module mixcolum.
+WARNING: [Synth 8-3332] Sequential element (data_reg_reg[3]) is unused and will be removed from module mixcolum.
+WARNING: [Synth 8-3332] Sequential element (data_reg_reg[2]) is unused and will be removed from module mixcolum.
+WARNING: [Synth 8-3332] Sequential element (data_reg_reg[1]) is unused and will be removed from module mixcolum.
+WARNING: [Synth 8-3332] Sequential element (data_reg_reg[0]) is unused and will be removed from module mixcolum.
+WARNING: [Synth 8-3332] Sequential element (col_reg[15]) is unused and will be removed from module keysched192.
+WARNING: [Synth 8-3332] Sequential element (col_reg[14]) is unused and will be removed from module keysched192.
+WARNING: [Synth 8-3332] Sequential element (col_reg[13]) is unused and will be removed from module keysched192.
+WARNING: [Synth 8-3332] Sequential element (col_reg[12]) is unused and will be removed from module keysched192.
+WARNING: [Synth 8-3332] Sequential element (col_reg[11]) is unused and will be removed from module keysched192.
+WARNING: [Synth 8-3332] Sequential element (col_reg[10]) is unused and will be removed from module keysched192.
+WARNING: [Synth 8-3332] Sequential element (col_reg[9]) is unused and will be removed from module keysched192.
+WARNING: [Synth 8-3332] Sequential element (col_reg[8]) is unused and will be removed from module keysched192.
+WARNING: [Synth 8-3332] Sequential element (ready_o_reg) is unused and will be removed from module aes192.
+WARNING: [Synth 8-3332] Sequential element (T1/tx_buff_reg[18][7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (T1/tx_buff_reg[17][7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (T1/tx_buff_reg[16][7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (T1/tx_buff_reg[19][7]) is unused and will be removed from module top.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 720.488 ; gain = 484.020
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:56 ; elapsed = 00:00:58 . Memory (MB): peak = 765.637 ; gain = 529.168
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:57 ; elapsed = 00:00:59 . Memory (MB): peak = 768.293 ; gain = 531.824
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:58 ; elapsed = 00:01:01 . Memory (MB): peak = 828.883 ; gain = 592.414
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:59 ; elapsed = 00:01:02 . Memory (MB): peak = 828.883 ; gain = 592.414
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:59 ; elapsed = 00:01:02 . Memory (MB): peak = 828.883 ; gain = 592.414
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:59 ; elapsed = 00:01:02 . Memory (MB): peak = 828.883 ; gain = 592.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:59 ; elapsed = 00:01:02 . Memory (MB): peak = 828.883 ; gain = 592.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:00 ; elapsed = 00:01:02 . Memory (MB): peak = 828.883 ; gain = 592.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:00 ; elapsed = 00:01:02 . Memory (MB): peak = 828.883 ; gain = 592.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     3|
+|3     |LUT1   |    25|
+|4     |LUT2   |   152|
+|5     |LUT3   |   111|
+|6     |LUT4   |   186|
+|7     |LUT5   |   315|
+|8     |LUT6   |   691|
+|9     |MUXF7  |    23|
+|10    |MUXF8  |     8|
+|11    |FDCE   |   948|
+|12    |FDPE   |     3|
+|13    |FDRE   |    28|
+|14    |IBUF   |     4|
+|15    |OBUF   |     1|
++------+-------+------+
+
+Report Instance Areas: 
++------+----------+--------------+------+
+|      |Instance  |Module        |Cells |
++------+----------+--------------+------+
+|1     |top       |              |  2499|
+|2     |  T1      |uart_tx       |   494|
+|3     |  u0      |aes192        |  1999|
+|4     |    ks1   |keysched192   |   902|
+|5     |    mix1  |mixcolum      |   306|
+|6     |      w1  |word_mixcolum |    36|
+|7     |    sbox1 |sbox          |    43|
+|8     |    sub1  |subbytes      |   521|
++------+----------+--------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:00 ; elapsed = 00:01:02 . Memory (MB): peak = 828.883 ; gain = 592.414
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 53 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:44 ; elapsed = 00:00:53 . Memory (MB): peak = 828.883 ; gain = 249.680
+Synthesis Optimization Complete : Time (s): cpu = 00:01:00 ; elapsed = 00:01:03 . Memory (MB): peak = 828.883 ; gain = 592.414
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+115 Infos, 149 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:03 ; elapsed = 00:01:07 . Memory (MB): peak = 828.883 ; gain = 594.449
+INFO: [Common 17-1381] The checkpoint 'C:/College/Thesis/AES_2018/AES_192/AES_192.runs/synth_1/top.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.074 . Memory (MB): peak = 828.883 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Aug 31 12:06:16 2018...
