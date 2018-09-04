@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.1 (win64) Build 1846317 Fri Apr 14 18:55:03 MDT 2017
-| Date         : Sun May 20 18:08:02 2018
+| Date         : Tue Sep  4 04:10:46 2018
 | Host         : DESKTOP-GJPCRJL running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -warn_on_violation -max_paths 10 -file top_timing_summary_routed.rpt -rpx top_timing_summary_routed.rpx
 | Design       : top
@@ -52,23 +52,133 @@ Table of Contents
 
 1. checking no_clock
 --------------------
- There are 188 register/latch pins with no clock driven by root clock pin: clk (HIGH)
+ There are 244 register/latch pins with no clock driven by root clock pin: clk (HIGH)
 
- There are 7 register/latch pins with no clock driven by root clock pin: encStart (HIGH)
+ There are 62 register/latch pins with no clock driven by root clock pin: encStart (HIGH)
 
- There are 8 register/latch pins with no clock driven by root clock pin: AES1/curr_state_reg[0]/Q (HIGH)
+ There are 63 register/latch pins with no clock driven by root clock pin: AES1/FSM_onehot_curr_state_reg[0]/Q (HIGH)
 
- There are 8 register/latch pins with no clock driven by root clock pin: AES1/curr_state_reg[1]/Q (HIGH)
+ There are 62 register/latch pins with no clock driven by root clock pin: AES1/FSM_onehot_curr_state_reg[10]/Q (HIGH)
 
- There are 8 register/latch pins with no clock driven by root clock pin: AES1/curr_state_reg[2]/Q (HIGH)
+ There are 62 register/latch pins with no clock driven by root clock pin: AES1/FSM_onehot_curr_state_reg[11]/Q (HIGH)
 
- There are 8 register/latch pins with no clock driven by root clock pin: AES1/curr_state_reg[3]/Q (HIGH)
+ There are 62 register/latch pins with no clock driven by root clock pin: AES1/FSM_onehot_curr_state_reg[12]/Q (HIGH)
 
- There are 8 register/latch pins with no clock driven by root clock pin: AES1/curr_state_reg[4]/Q (HIGH)
+ There are 62 register/latch pins with no clock driven by root clock pin: AES1/FSM_onehot_curr_state_reg[13]/Q (HIGH)
 
- There are 8 register/latch pins with no clock driven by root clock pin: AES1/curr_state_reg[5]/Q (HIGH)
+ There are 62 register/latch pins with no clock driven by root clock pin: AES1/FSM_onehot_curr_state_reg[14]/Q (HIGH)
 
- There are 8 register/latch pins with no clock driven by root clock pin: AES1/curr_state_reg[6]/Q (HIGH)
+ There are 62 register/latch pins with no clock driven by root clock pin: AES1/FSM_onehot_curr_state_reg[15]/Q (HIGH)
+
+ There are 62 register/latch pins with no clock driven by root clock pin: AES1/FSM_onehot_curr_state_reg[16]/Q (HIGH)
+
+ There are 62 register/latch pins with no clock driven by root clock pin: AES1/FSM_onehot_curr_state_reg[17]/Q (HIGH)
+
+ There are 85 register/latch pins with no clock driven by root clock pin: AES1/FSM_onehot_curr_state_reg[18]/Q (HIGH)
+
+ There are 126 register/latch pins with no clock driven by root clock pin: AES1/FSM_onehot_curr_state_reg[19]/Q (HIGH)
+
+ There are 62 register/latch pins with no clock driven by root clock pin: AES1/FSM_onehot_curr_state_reg[1]/Q (HIGH)
+
+ There are 126 register/latch pins with no clock driven by root clock pin: AES1/FSM_onehot_curr_state_reg[20]/Q (HIGH)
+
+ There are 126 register/latch pins with no clock driven by root clock pin: AES1/FSM_onehot_curr_state_reg[21]/Q (HIGH)
+
+ There are 146 register/latch pins with no clock driven by root clock pin: AES1/FSM_onehot_curr_state_reg[22]/Q (HIGH)
+
+ There are 190 register/latch pins with no clock driven by root clock pin: AES1/FSM_onehot_curr_state_reg[23]/Q (HIGH)
+
+ There are 190 register/latch pins with no clock driven by root clock pin: AES1/FSM_onehot_curr_state_reg[24]/Q (HIGH)
+
+ There are 190 register/latch pins with no clock driven by root clock pin: AES1/FSM_onehot_curr_state_reg[25]/Q (HIGH)
+
+ There are 190 register/latch pins with no clock driven by root clock pin: AES1/FSM_onehot_curr_state_reg[26]/Q (HIGH)
+
+ There are 190 register/latch pins with no clock driven by root clock pin: AES1/FSM_onehot_curr_state_reg[27]/Q (HIGH)
+
+ There are 190 register/latch pins with no clock driven by root clock pin: AES1/FSM_onehot_curr_state_reg[28]/Q (HIGH)
+
+ There are 190 register/latch pins with no clock driven by root clock pin: AES1/FSM_onehot_curr_state_reg[29]/Q (HIGH)
+
+ There are 62 register/latch pins with no clock driven by root clock pin: AES1/FSM_onehot_curr_state_reg[2]/Q (HIGH)
+
+ There are 190 register/latch pins with no clock driven by root clock pin: AES1/FSM_onehot_curr_state_reg[30]/Q (HIGH)
+
+ There are 190 register/latch pins with no clock driven by root clock pin: AES1/FSM_onehot_curr_state_reg[31]/Q (HIGH)
+
+ There are 190 register/latch pins with no clock driven by root clock pin: AES1/FSM_onehot_curr_state_reg[32]/Q (HIGH)
+
+ There are 190 register/latch pins with no clock driven by root clock pin: AES1/FSM_onehot_curr_state_reg[33]/Q (HIGH)
+
+ There are 190 register/latch pins with no clock driven by root clock pin: AES1/FSM_onehot_curr_state_reg[34]/Q (HIGH)
+
+ There are 190 register/latch pins with no clock driven by root clock pin: AES1/FSM_onehot_curr_state_reg[35]/Q (HIGH)
+
+ There are 190 register/latch pins with no clock driven by root clock pin: AES1/FSM_onehot_curr_state_reg[36]/Q (HIGH)
+
+ There are 190 register/latch pins with no clock driven by root clock pin: AES1/FSM_onehot_curr_state_reg[37]/Q (HIGH)
+
+ There are 190 register/latch pins with no clock driven by root clock pin: AES1/FSM_onehot_curr_state_reg[38]/Q (HIGH)
+
+ There are 190 register/latch pins with no clock driven by root clock pin: AES1/FSM_onehot_curr_state_reg[39]/Q (HIGH)
+
+ There are 62 register/latch pins with no clock driven by root clock pin: AES1/FSM_onehot_curr_state_reg[3]/Q (HIGH)
+
+ There are 190 register/latch pins with no clock driven by root clock pin: AES1/FSM_onehot_curr_state_reg[40]/Q (HIGH)
+
+ There are 190 register/latch pins with no clock driven by root clock pin: AES1/FSM_onehot_curr_state_reg[41]/Q (HIGH)
+
+ There are 190 register/latch pins with no clock driven by root clock pin: AES1/FSM_onehot_curr_state_reg[42]/Q (HIGH)
+
+ There are 190 register/latch pins with no clock driven by root clock pin: AES1/FSM_onehot_curr_state_reg[43]/Q (HIGH)
+
+ There are 190 register/latch pins with no clock driven by root clock pin: AES1/FSM_onehot_curr_state_reg[44]/Q (HIGH)
+
+ There are 190 register/latch pins with no clock driven by root clock pin: AES1/FSM_onehot_curr_state_reg[45]/Q (HIGH)
+
+ There are 190 register/latch pins with no clock driven by root clock pin: AES1/FSM_onehot_curr_state_reg[46]/Q (HIGH)
+
+ There are 190 register/latch pins with no clock driven by root clock pin: AES1/FSM_onehot_curr_state_reg[47]/Q (HIGH)
+
+ There are 190 register/latch pins with no clock driven by root clock pin: AES1/FSM_onehot_curr_state_reg[48]/Q (HIGH)
+
+ There are 190 register/latch pins with no clock driven by root clock pin: AES1/FSM_onehot_curr_state_reg[49]/Q (HIGH)
+
+ There are 62 register/latch pins with no clock driven by root clock pin: AES1/FSM_onehot_curr_state_reg[4]/Q (HIGH)
+
+ There are 190 register/latch pins with no clock driven by root clock pin: AES1/FSM_onehot_curr_state_reg[50]/Q (HIGH)
+
+ There are 190 register/latch pins with no clock driven by root clock pin: AES1/FSM_onehot_curr_state_reg[51]/Q (HIGH)
+
+ There are 190 register/latch pins with no clock driven by root clock pin: AES1/FSM_onehot_curr_state_reg[52]/Q (HIGH)
+
+ There are 190 register/latch pins with no clock driven by root clock pin: AES1/FSM_onehot_curr_state_reg[53]/Q (HIGH)
+
+ There are 190 register/latch pins with no clock driven by root clock pin: AES1/FSM_onehot_curr_state_reg[54]/Q (HIGH)
+
+ There are 190 register/latch pins with no clock driven by root clock pin: AES1/FSM_onehot_curr_state_reg[55]/Q (HIGH)
+
+ There are 190 register/latch pins with no clock driven by root clock pin: AES1/FSM_onehot_curr_state_reg[56]/Q (HIGH)
+
+ There are 190 register/latch pins with no clock driven by root clock pin: AES1/FSM_onehot_curr_state_reg[57]/Q (HIGH)
+
+ There are 190 register/latch pins with no clock driven by root clock pin: AES1/FSM_onehot_curr_state_reg[58]/Q (HIGH)
+
+ There are 190 register/latch pins with no clock driven by root clock pin: AES1/FSM_onehot_curr_state_reg[59]/Q (HIGH)
+
+ There are 62 register/latch pins with no clock driven by root clock pin: AES1/FSM_onehot_curr_state_reg[5]/Q (HIGH)
+
+ There are 190 register/latch pins with no clock driven by root clock pin: AES1/FSM_onehot_curr_state_reg[60]/Q (HIGH)
+
+ There are 63 register/latch pins with no clock driven by root clock pin: AES1/FSM_onehot_curr_state_reg[61]/Q (HIGH)
+
+ There are 62 register/latch pins with no clock driven by root clock pin: AES1/FSM_onehot_curr_state_reg[6]/Q (HIGH)
+
+ There are 62 register/latch pins with no clock driven by root clock pin: AES1/FSM_onehot_curr_state_reg[7]/Q (HIGH)
+
+ There are 62 register/latch pins with no clock driven by root clock pin: AES1/FSM_onehot_curr_state_reg[8]/Q (HIGH)
+
+ There are 62 register/latch pins with no clock driven by root clock pin: AES1/FSM_onehot_curr_state_reg[9]/Q (HIGH)
 
 
 2. checking constant_clock
@@ -83,7 +193,7 @@ Table of Contents
 
 4. checking unconstrained_internal_endpoints
 --------------------------------------------
- There are 520 pins that are not constrained for maximum delay. (HIGH)
+ There are 5826 pins that are not constrained for maximum delay. (HIGH)
 
  There are 0 pins that are not constrained for maximum delay due to constant clock.
 

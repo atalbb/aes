@@ -52,12 +52,12 @@ set rc [catch {
   set_property board_part digilentinc.com:nexys4:part0:1.1 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir {C:/College/Thesis/AES_2018/aes_dec_only - test/aes_enc_only.cache/wt} [current_project]
-  set_property parent.project_path {C:/College/Thesis/AES_2018/aes_dec_only - test/aes_enc_only.xpr} [current_project]
-  set_property ip_output_repo {{C:/College/Thesis/AES_2018/aes_dec_only - test/aes_enc_only.cache/ip}} [current_project]
+  set_property webtalk.parent_dir C:/College/Thesis/AES_2018/AES_DEC_ONLY/aes_enc_only.cache/wt [current_project]
+  set_property parent.project_path C:/College/Thesis/AES_2018/AES_DEC_ONLY/aes_enc_only.xpr [current_project]
+  set_property ip_output_repo C:/College/Thesis/AES_2018/AES_DEC_ONLY/aes_enc_only.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet {{C:/College/Thesis/AES_2018/aes_dec_only - test/aes_enc_only.runs/synth_1/top.dcp}}
-  read_xdc {{C:/College/Thesis/AES_2018/aes_dec_only - test/aes_enc_only.srcs/constrs_1/new/aes_constr.xdc}}
+  add_files -quiet C:/College/Thesis/AES_2018/AES_DEC_ONLY/aes_enc_only.runs/synth_1/top.dcp
+  read_xdc C:/College/Thesis/AES_2018/AES_DEC_ONLY/aes_enc_only.srcs/constrs_1/new/aes_constr.xdc
   link_design -top top -part xc7a100tcsg324-1
   close_msg_db -file init_design.pb
 } RESULT]

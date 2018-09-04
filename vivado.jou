@@ -2,61 +2,44 @@
 # Vivado v2017.1 (64-bit)
 # SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
 # IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
-# Start of session at: Sat May 19 21:11:21 2018
-# Process ID: 9576
-# Current directory: C:/College/Thesis/AES_2018/aes_dec_only - test
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8960 C:\College\Thesis\AES_2018\aes_dec_only - test\aes_enc_only.xpr
-# Log file: C:/College/Thesis/AES_2018/aes_dec_only - test/vivado.log
-# Journal file: C:/College/Thesis/AES_2018/aes_dec_only - test\vivado.jou
+# Start of session at: Tue Sep  4 01:12:47 2018
+# Process ID: 9948
+# Current directory: C:/College/Thesis/AES_2018/AES_DEC_ONLY
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1312 C:\College\Thesis\AES_2018\AES_DEC_ONLY\aes_enc_only.xpr
+# Log file: C:/College/Thesis/AES_2018/AES_DEC_ONLY/vivado.log
+# Journal file: C:/College/Thesis/AES_2018/AES_DEC_ONLY\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project {C:/College/Thesis/AES_2018/aes_dec_only - test/aes_enc_only.xpr}
+open_project C:/College/Thesis/AES_2018/AES_DEC_ONLY/aes_enc_only.xpr
 update_compile_order -fileset sources_1
 open_hw
 connect_hw_server -url localhost:3121
-current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210274592338A]
-set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210274592338A]
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210274592278A]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210274592278A]
 open_hw_target
-set_property PROGRAM.FILE {C:/College/Thesis/AES_2018/aes_dec_only - test/aes_enc_only.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/College/Thesis/AES_2018/AES_DEC_ONLY/aes_enc_only.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
 current_hw_device [get_hw_devices xc7a100t_0]
 refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
 set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
 set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {C:/College/Thesis/AES_2018/aes_dec_only - test/aes_enc_only.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/College/Thesis/AES_2018/AES_DEC_ONLY/aes_enc_only.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
 program_hw_devices [get_hw_devices xc7a100t_0]
 refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
 close_hw
-launch_simulation
-source enc_testbench.tcl
-close_sim
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 2
-wait_on_run impl_1
 reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 2
 wait_on_run impl_1
 open_hw
 connect_hw_server -url localhost:3121
-current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210274592338A]
-set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210274592338A]
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210274592278A]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210274592278A]
 open_hw_target
-set_property PROGRAM.FILE {C:/College/Thesis/AES_2018/aes_dec_only - test/aes_enc_only.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/College/Thesis/AES_2018/AES_DEC_ONLY/aes_enc_only.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
 current_hw_device [get_hw_devices xc7a100t_0]
 refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
 set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
 set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {C:/College/Thesis/AES_2018/aes_dec_only - test/aes_enc_only.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
-program_hw_devices [get_hw_devices xc7a100t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
-launch_simulation
-source enc_testbench.tcl
-close_sim
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 2
-wait_on_run impl_1
-set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {C:/College/Thesis/AES_2018/aes_dec_only - test/aes_enc_only.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/College/Thesis/AES_2018/AES_DEC_ONLY/aes_enc_only.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
 program_hw_devices [get_hw_devices xc7a100t_0]
 refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
 reset_run synth_1
@@ -64,7 +47,7 @@ launch_runs impl_1 -to_step write_bitstream -jobs 2
 wait_on_run impl_1
 set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
 set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {C:/College/Thesis/AES_2018/aes_dec_only - test/aes_enc_only.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/College/Thesis/AES_2018/AES_DEC_ONLY/aes_enc_only.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
 program_hw_devices [get_hw_devices xc7a100t_0]
 refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
 reset_run synth_1
@@ -72,42 +55,86 @@ launch_runs impl_1 -to_step write_bitstream -jobs 2
 wait_on_run impl_1
 set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
 set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {C:/College/Thesis/AES_2018/aes_dec_only - test/aes_enc_only.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/College/Thesis/AES_2018/AES_DEC_ONLY/aes_enc_only.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
 program_hw_devices [get_hw_devices xc7a100t_0]
 refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw
 reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 2
 wait_on_run impl_1
-set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {C:/College/Thesis/AES_2018/aes_dec_only - test/aes_enc_only.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
-program_hw_devices [get_hw_devices xc7a100t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 2
-wait_on_run impl_1
-set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {C:/College/Thesis/AES_2018/aes_dec_only - test/aes_enc_only.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
-program_hw_devices [get_hw_devices xc7a100t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 2
-wait_on_run impl_1
-disconnect_hw_server localhost:3121
+open_hw
 connect_hw_server -url localhost:3121
-current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210274592338A]
-set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210274592338A]
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210274592278A]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210274592278A]
 open_hw_target
-set_property PROGRAM.FILE {C:/College/Thesis/AES_2018/aes_dec_only - test/aes_enc_only.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/College/Thesis/AES_2018/AES_DEC_ONLY/aes_enc_only.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
 current_hw_device [get_hw_devices xc7a100t_0]
 refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
 set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
 set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {C:/College/Thesis/AES_2018/aes_dec_only - test/aes_enc_only.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/College/Thesis/AES_2018/AES_DEC_ONLY/aes_enc_only.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
 program_hw_devices [get_hw_devices xc7a100t_0]
 refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
 reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 2
 wait_on_run impl_1
-disconnect_hw_server localhost:3121
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/College/Thesis/AES_2018/AES_DEC_ONLY/aes_enc_only.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/College/Thesis/AES_2018/AES_DEC_ONLY/aes_enc_only.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/College/Thesis/AES_2018/AES_DEC_ONLY/aes_enc_only.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_hw
+connect_hw_server -url localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210274592278A]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210274592278A]
+open_hw_target
+set_property PROGRAM.FILE {C:/College/Thesis/AES_2018/AES_DEC_ONLY/aes_enc_only.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/College/Thesis/AES_2018/AES_DEC_ONLY/aes_enc_only.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/College/Thesis/AES_2018/AES_DEC_ONLY/aes_enc_only.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/College/Thesis/AES_2018/AES_DEC_ONLY/aes_enc_only.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
