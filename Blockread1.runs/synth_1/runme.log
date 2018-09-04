@@ -1,0 +1,2255 @@
+
+*** Running vivado
+    with args -log top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+
+
+****** Vivado v2017.1 (64-bit)
+  **** SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+  **** IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source top.tcl -notrace
+Command: synth_design -top top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 4684 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 337.059 ; gain = 84.340
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/top.v:25]
+INFO: [Synth 8-638] synthesizing module 'counter' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/counter.v:23]
+INFO: [Synth 8-256] done synthesizing module 'counter' (1#1) [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/counter.v:23]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.runs/synth_1/.Xil/Vivado-5236-DESKTOP-GJPCRJL/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_0' (2#1) [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.runs/synth_1/.Xil/Vivado-5236-DESKTOP-GJPCRJL/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'HashMsgIn' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/HashIn.v:107]
+	Parameter delay bound to: 3'b000 
+	Parameter END_ADDR bound to: 66 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element RAM_reg[66] was removed.  [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/HashIn.v:126]
+WARNING: [Synth 8-6014] Unused sequential element RAM_reg[65] was removed.  [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/HashIn.v:126]
+WARNING: [Synth 8-6014] Unused sequential element RAM_reg[64] was removed.  [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/HashIn.v:126]
+WARNING: [Synth 8-6014] Unused sequential element RAM_reg[63] was removed.  [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/HashIn.v:126]
+WARNING: [Synth 8-6014] Unused sequential element RAM_reg[62] was removed.  [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/HashIn.v:126]
+WARNING: [Synth 8-6014] Unused sequential element RAM_reg[61] was removed.  [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/HashIn.v:126]
+WARNING: [Synth 8-6014] Unused sequential element RAM_reg[60] was removed.  [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/HashIn.v:126]
+WARNING: [Synth 8-5788] Register RAM_reg[59] in module HashMsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/HashIn.v:126]
+WARNING: [Synth 8-5788] Register RAM_reg[58] in module HashMsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/HashIn.v:126]
+WARNING: [Synth 8-5788] Register RAM_reg[57] in module HashMsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/HashIn.v:126]
+WARNING: [Synth 8-5788] Register RAM_reg[56] in module HashMsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/HashIn.v:126]
+WARNING: [Synth 8-5788] Register RAM_reg[55] in module HashMsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/HashIn.v:126]
+WARNING: [Synth 8-5788] Register RAM_reg[54] in module HashMsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/HashIn.v:126]
+WARNING: [Synth 8-5788] Register RAM_reg[53] in module HashMsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/HashIn.v:126]
+WARNING: [Synth 8-5788] Register RAM_reg[52] in module HashMsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/HashIn.v:126]
+WARNING: [Synth 8-5788] Register RAM_reg[51] in module HashMsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/HashIn.v:126]
+WARNING: [Synth 8-5788] Register RAM_reg[50] in module HashMsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/HashIn.v:126]
+WARNING: [Synth 8-5788] Register RAM_reg[49] in module HashMsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/HashIn.v:126]
+WARNING: [Synth 8-5788] Register RAM_reg[48] in module HashMsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/HashIn.v:126]
+WARNING: [Synth 8-5788] Register RAM_reg[47] in module HashMsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/HashIn.v:126]
+WARNING: [Synth 8-5788] Register RAM_reg[46] in module HashMsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/HashIn.v:126]
+WARNING: [Synth 8-5788] Register RAM_reg[45] in module HashMsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/HashIn.v:126]
+WARNING: [Synth 8-5788] Register RAM_reg[44] in module HashMsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/HashIn.v:126]
+WARNING: [Synth 8-5788] Register RAM_reg[43] in module HashMsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/HashIn.v:126]
+WARNING: [Synth 8-5788] Register RAM_reg[42] in module HashMsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/HashIn.v:126]
+WARNING: [Synth 8-5788] Register RAM_reg[41] in module HashMsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/HashIn.v:126]
+WARNING: [Synth 8-5788] Register RAM_reg[40] in module HashMsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/HashIn.v:126]
+WARNING: [Synth 8-5788] Register RAM_reg[39] in module HashMsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/HashIn.v:126]
+WARNING: [Synth 8-5788] Register RAM_reg[38] in module HashMsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/HashIn.v:126]
+WARNING: [Synth 8-5788] Register RAM_reg[37] in module HashMsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/HashIn.v:126]
+WARNING: [Synth 8-5788] Register RAM_reg[36] in module HashMsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/HashIn.v:126]
+WARNING: [Synth 8-5788] Register RAM_reg[35] in module HashMsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/HashIn.v:126]
+WARNING: [Synth 8-5788] Register RAM_reg[34] in module HashMsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/HashIn.v:126]
+WARNING: [Synth 8-5788] Register RAM_reg[33] in module HashMsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/HashIn.v:126]
+WARNING: [Synth 8-5788] Register RAM_reg[32] in module HashMsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/HashIn.v:126]
+WARNING: [Synth 8-5788] Register RAM_reg[31] in module HashMsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/HashIn.v:126]
+WARNING: [Synth 8-5788] Register RAM_reg[30] in module HashMsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/HashIn.v:126]
+WARNING: [Synth 8-5788] Register RAM_reg[29] in module HashMsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/HashIn.v:126]
+WARNING: [Synth 8-5788] Register RAM_reg[28] in module HashMsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/HashIn.v:126]
+WARNING: [Synth 8-5788] Register RAM_reg[27] in module HashMsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/HashIn.v:126]
+WARNING: [Synth 8-5788] Register RAM_reg[26] in module HashMsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/HashIn.v:126]
+WARNING: [Synth 8-5788] Register RAM_reg[25] in module HashMsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/HashIn.v:126]
+WARNING: [Synth 8-5788] Register RAM_reg[24] in module HashMsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/HashIn.v:126]
+WARNING: [Synth 8-5788] Register RAM_reg[23] in module HashMsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/HashIn.v:126]
+WARNING: [Synth 8-5788] Register RAM_reg[22] in module HashMsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/HashIn.v:126]
+WARNING: [Synth 8-5788] Register RAM_reg[21] in module HashMsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/HashIn.v:126]
+WARNING: [Synth 8-5788] Register RAM_reg[20] in module HashMsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/HashIn.v:126]
+WARNING: [Synth 8-5788] Register RAM_reg[19] in module HashMsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/HashIn.v:126]
+WARNING: [Synth 8-5788] Register RAM_reg[18] in module HashMsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/HashIn.v:126]
+WARNING: [Synth 8-5788] Register RAM_reg[17] in module HashMsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/HashIn.v:126]
+WARNING: [Synth 8-5788] Register RAM_reg[16] in module HashMsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/HashIn.v:126]
+WARNING: [Synth 8-5788] Register RAM_reg[15] in module HashMsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/HashIn.v:126]
+WARNING: [Synth 8-5788] Register RAM_reg[14] in module HashMsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/HashIn.v:126]
+WARNING: [Synth 8-5788] Register RAM_reg[13] in module HashMsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/HashIn.v:126]
+WARNING: [Synth 8-5788] Register RAM_reg[12] in module HashMsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/HashIn.v:126]
+WARNING: [Synth 8-5788] Register RAM_reg[11] in module HashMsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/HashIn.v:126]
+WARNING: [Synth 8-5788] Register RAM_reg[10] in module HashMsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/HashIn.v:126]
+WARNING: [Synth 8-5788] Register RAM_reg[9] in module HashMsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/HashIn.v:126]
+WARNING: [Synth 8-5788] Register RAM_reg[8] in module HashMsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/HashIn.v:126]
+WARNING: [Synth 8-5788] Register RAM_reg[7] in module HashMsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/HashIn.v:126]
+WARNING: [Synth 8-5788] Register RAM_reg[6] in module HashMsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/HashIn.v:126]
+WARNING: [Synth 8-5788] Register RAM_reg[5] in module HashMsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/HashIn.v:126]
+WARNING: [Synth 8-5788] Register RAM_reg[4] in module HashMsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/HashIn.v:126]
+WARNING: [Synth 8-5788] Register RAM_reg[3] in module HashMsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/HashIn.v:126]
+WARNING: [Synth 8-5788] Register RAM_reg[2] in module HashMsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/HashIn.v:126]
+WARNING: [Synth 8-5788] Register RAM_reg[1] in module HashMsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/HashIn.v:126]
+WARNING: [Synth 8-5788] Register RAM_reg[0] in module HashMsgIn is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/HashIn.v:126]
+INFO: [Synth 8-256] done synthesizing module 'HashMsgIn' (3#1) [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/HashIn.v:107]
+WARNING: [Synth 8-689] width (8) of port connection 'addr' does not match port width (32) of module 'HashMsgIn' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/top.v:47]
+INFO: [Synth 8-638] synthesizing module 'aes_enc_core' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:23]
+WARNING: [Synth 8-567] referenced signal 'keyIn' should be on the sensitivity list [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:906]
+WARNING: [Synth 8-567] referenced signal 'sbox' should be on the sensitivity list [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:906]
+WARNING: [Synth 8-567] referenced signal 'mul2' should be on the sensitivity list [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:906]
+WARNING: [Synth 8-567] referenced signal 'mul3' should be on the sensitivity list [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:906]
+WARNING: [Synth 8-3848] Net led_out in module/entity aes_enc_core does not have driver. [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:31]
+INFO: [Synth 8-256] done synthesizing module 'aes_enc_core' (4#1) [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:23]
+INFO: [Synth 8-638] synthesizing module 'uart_tx' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/uart_tx.v:21]
+	Parameter bit_time bound to: 868 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element ledout_reg was removed.  [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/uart_tx.v:74]
+WARNING: [Synth 8-5788] Register tx_buff_reg[19] in module uart_tx is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/uart_tx.v:52]
+WARNING: [Synth 8-5788] Register tx_buff_reg[18] in module uart_tx is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/uart_tx.v:52]
+WARNING: [Synth 8-5788] Register tx_buff_reg[17] in module uart_tx is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/uart_tx.v:52]
+WARNING: [Synth 8-5788] Register tx_buff_reg[16] in module uart_tx is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/uart_tx.v:52]
+INFO: [Synth 8-256] done synthesizing module 'uart_tx' (5#1) [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/uart_tx.v:21]
+INFO: [Synth 8-256] done synthesizing module 'top' (6#1) [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/top.v:25]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port led_out[7]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port led_out[6]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port led_out[5]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port led_out[4]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port led_out[3]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port led_out[2]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port led_out[1]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port led_out[0]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port dataIn[127]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port dataIn[126]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port dataIn[125]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port dataIn[124]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port dataIn[123]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port dataIn[122]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port dataIn[121]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port dataIn[120]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port dataIn[119]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port dataIn[118]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port dataIn[117]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port dataIn[116]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port dataIn[115]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port dataIn[114]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port dataIn[113]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port dataIn[112]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port dataIn[111]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port dataIn[110]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port dataIn[109]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port dataIn[108]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port dataIn[107]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port dataIn[106]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port dataIn[105]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port dataIn[104]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port dataIn[103]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port dataIn[102]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port dataIn[101]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port dataIn[100]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port dataIn[99]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port dataIn[98]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port dataIn[97]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port dataIn[96]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port dataIn[95]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port dataIn[94]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port dataIn[93]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port dataIn[92]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port dataIn[91]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port dataIn[90]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port dataIn[89]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port dataIn[88]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port dataIn[87]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port dataIn[86]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port dataIn[85]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port dataIn[84]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port dataIn[83]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port dataIn[82]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port dataIn[81]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port dataIn[80]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port dataIn[79]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port dataIn[78]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port dataIn[77]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port dataIn[76]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port dataIn[75]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port dataIn[74]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port dataIn[73]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port dataIn[72]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port dataIn[71]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port dataIn[70]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port dataIn[69]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port dataIn[68]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port dataIn[67]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port dataIn[66]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port dataIn[65]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port dataIn[64]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port dataIn[63]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port dataIn[62]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port dataIn[61]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port dataIn[60]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port dataIn[59]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port dataIn[58]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port dataIn[57]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port dataIn[56]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port dataIn[55]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port dataIn[54]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port dataIn[53]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port dataIn[52]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port dataIn[51]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port dataIn[50]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port dataIn[49]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port dataIn[48]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port dataIn[47]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port dataIn[46]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port dataIn[45]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port dataIn[44]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port dataIn[43]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port dataIn[42]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port dataIn[41]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port dataIn[40]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port dataIn[39]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port dataIn[38]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port dataIn[37]
+WARNING: [Synth 8-3331] design aes_enc_core has unconnected port dataIn[36]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:41 ; elapsed = 00:00:52 . Memory (MB): peak = 996.047 ; gain = 743.328
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:47 ; elapsed = 00:00:58 . Memory (MB): peak = 996.047 ; gain = 743.328
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.runs/synth_1/.Xil/Vivado-5236-DESKTOP-GJPCRJL/dcp3/blk_mem_gen_0_in_context.xdc] for cell 'B0'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.runs/synth_1/.Xil/Vivado-5236-DESKTOP-GJPCRJL/dcp3/blk_mem_gen_0_in_context.xdc] for cell 'B0'
+Parsing XDC File [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/constrs_1/new/constr.xdc]
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/constrs_1/new/constr.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/constrs_1/new/constr.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1168.430 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:01:13 ; elapsed = 00:01:28 . Memory (MB): peak = 1168.430 ; gain = 915.711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:13 ; elapsed = 00:01:28 . Memory (MB): peak = 1168.430 ; gain = 915.711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for B0. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:13 ; elapsed = 00:01:28 . Memory (MB): peak = 1168.430 ; gain = 915.711
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element out_reg was removed.  [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/counter.v:30]
+INFO: [Synth 8-5545] ROM "RAM_reg[59]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[58]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[57]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[56]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[55]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[54]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[53]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[52]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[51]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[50]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[49]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[48]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[47]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[46]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[45]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[44]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[43]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[42]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[41]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[40]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[39]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[38]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[37]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[36]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[35]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[34]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[33]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[32]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[31]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[30]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[29]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[28]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[27]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[26]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[25]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[24]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[23]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[22]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[21]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[20]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[19]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[18]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[17]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[16]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[15]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[14]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[13]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[12]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[11]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[10]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[9]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[8]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[7]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[6]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[5]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[4]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "hashO" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-802] inferred FSM for state register 'curr_state_reg' in module 'aes_enc_core'
+WARNING: [Synth 8-6014] Unused sequential element curr_state_reg was removed.  [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:901]
+WARNING: [Synth 8-6014] Unused sequential element next_state_reg was removed.  [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:911]
+INFO: [Synth 8-5546] ROM "tempStart" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tempSbox" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tempRow" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "w1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tempStart1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tempSbox1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tempRow1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "w2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tempStart2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tempSbox2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tempRow2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "w3" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tempStart3" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tempSbox3" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tempRow3" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d3" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "w4" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tempStart4" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tempSbox4" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tempRow4" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d4" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "w5" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tempStart5" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tempSbox5" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tempRow5" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d5" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "w6" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tempStart6" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tempSbox6" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tempRow6" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d6" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "w7" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tempStart7" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tempSbox7" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tempRow7" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d7" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "w8" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tempStart8" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tempSbox8" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tempRow8" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d8" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "w9" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tempStart9" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tempSbox9" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tempRow9" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d9" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "w10" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tempStart10" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tempSbox10" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tempRow10" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d10" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "w11" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tempStart11" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tempSbox11" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tempRow11" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d11" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "w12" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tempStart12" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tempSbox12" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tempRow12" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d12" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "w13" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tempStart13" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tempSbox13" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tempRow13" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d13" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "w14" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ledDone" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "encDone" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cipher" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Common 17-14] Message 'Synth 8-5546' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-6014] Unused sequential element bit_count_reg was removed.  [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/uart_tx.v:48]
+WARNING: [Synth 8-6014] Unused sequential element byte_count_reg was removed.  [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/uart_tx.v:72]
+WARNING: [Synth 8-327] inferring latch for variable 'encDone_reg' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:910]
+WARNING: [Synth 8-327] inferring latch for variable 'next_state_reg' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:911]
+WARNING: [Synth 8-327] inferring latch for variable 'cipher_reg' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:1766]
+WARNING: [Synth 8-327] inferring latch for variable 'ledDone_reg' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:909]
+WARNING: [Synth 8-327] inferring latch for variable 'w14_reg[3]' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:1755]
+WARNING: [Synth 8-327] inferring latch for variable 'w14_reg[2]' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:1755]
+WARNING: [Synth 8-327] inferring latch for variable 'w14_reg[1]' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:1755]
+WARNING: [Synth 8-327] inferring latch for variable 'w14_reg[0]' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:1755]
+WARNING: [Synth 8-327] inferring latch for variable 'd13_reg[15]' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:1735]
+WARNING: [Synth 8-327] inferring latch for variable 'd13_reg[14]' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:1735]
+WARNING: [Synth 8-327] inferring latch for variable 'd13_reg[13]' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:1735]
+WARNING: [Synth 8-327] inferring latch for variable 'd13_reg[12]' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:1735]
+WARNING: [Synth 8-327] inferring latch for variable 'd13_reg[11]' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:1735]
+WARNING: [Synth 8-327] inferring latch for variable 'd13_reg[10]' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:1735]
+WARNING: [Synth 8-327] inferring latch for variable 'd13_reg[9]' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:1735]
+WARNING: [Synth 8-327] inferring latch for variable 'd13_reg[8]' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:1735]
+WARNING: [Synth 8-327] inferring latch for variable 'd13_reg[7]' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:1735]
+WARNING: [Synth 8-327] inferring latch for variable 'd13_reg[6]' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:1735]
+WARNING: [Synth 8-327] inferring latch for variable 'd13_reg[5]' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:1735]
+WARNING: [Synth 8-327] inferring latch for variable 'd13_reg[4]' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:1735]
+WARNING: [Synth 8-327] inferring latch for variable 'd13_reg[3]' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:1735]
+WARNING: [Synth 8-327] inferring latch for variable 'd13_reg[2]' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:1735]
+WARNING: [Synth 8-327] inferring latch for variable 'd13_reg[1]' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:1735]
+WARNING: [Synth 8-327] inferring latch for variable 'd13_reg[0]' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:1735]
+WARNING: [Synth 8-327] inferring latch for variable 'k_reg[59]' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:950]
+WARNING: [Synth 8-327] inferring latch for variable 'tempRow13_reg[15]' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:1728]
+WARNING: [Synth 8-327] inferring latch for variable 'tempRow13_reg[14]' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:1728]
+WARNING: [Synth 8-327] inferring latch for variable 'tempRow13_reg[13]' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:1728]
+WARNING: [Synth 8-327] inferring latch for variable 'tempRow13_reg[12]' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:1728]
+WARNING: [Synth 8-327] inferring latch for variable 'k_reg[58]' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:950]
+WARNING: [Synth 8-327] inferring latch for variable 'tempRow13_reg[11]' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:1728]
+WARNING: [Synth 8-327] inferring latch for variable 'tempRow13_reg[10]' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:1728]
+WARNING: [Synth 8-327] inferring latch for variable 'tempRow13_reg[9]' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:1728]
+WARNING: [Synth 8-327] inferring latch for variable 'tempRow13_reg[8]' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:1728]
+WARNING: [Synth 8-327] inferring latch for variable 'k_reg[57]' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:950]
+WARNING: [Synth 8-327] inferring latch for variable 'tempRow13_reg[7]' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:1728]
+WARNING: [Synth 8-327] inferring latch for variable 'tempRow13_reg[6]' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:1728]
+WARNING: [Synth 8-327] inferring latch for variable 'tempRow13_reg[5]' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:1728]
+WARNING: [Synth 8-327] inferring latch for variable 'tempRow13_reg[4]' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:1728]
+WARNING: [Synth 8-327] inferring latch for variable 'k_reg[56]' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:950]
+WARNING: [Synth 8-327] inferring latch for variable 'tempRow13_reg[3]' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:1728]
+WARNING: [Synth 8-327] inferring latch for variable 'tempRow13_reg[2]' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:1728]
+WARNING: [Synth 8-327] inferring latch for variable 'tempRow13_reg[1]' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:1728]
+WARNING: [Synth 8-327] inferring latch for variable 'tempRow13_reg[0]' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:1728]
+WARNING: [Synth 8-327] inferring latch for variable 'tempSbox13_reg[11]' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:1720]
+WARNING: [Synth 8-327] inferring latch for variable 'tempSbox13_reg[6]' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:1720]
+WARNING: [Synth 8-327] inferring latch for variable 'tempSbox13_reg[1]' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:1720]
+WARNING: [Synth 8-327] inferring latch for variable 'tempSbox13_reg[12]' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:1720]
+WARNING: [Synth 8-327] inferring latch for variable 'tempSbox13_reg[7]' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:1720]
+WARNING: [Synth 8-327] inferring latch for variable 'tempSbox13_reg[2]' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:1720]
+WARNING: [Synth 8-327] inferring latch for variable 'tempSbox13_reg[13]' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:1720]
+WARNING: [Synth 8-327] inferring latch for variable 'tempSbox13_reg[8]' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:1720]
+WARNING: [Synth 8-327] inferring latch for variable 'tempSbox13_reg[3]' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:1720]
+WARNING: [Synth 8-327] inferring latch for variable 'tempSbox13_reg[14]' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:1720]
+WARNING: [Synth 8-327] inferring latch for variable 'tempSbox13_reg[9]' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:1720]
+WARNING: [Synth 8-327] inferring latch for variable 'tempSbox13_reg[4]' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:1720]
+WARNING: [Synth 8-327] inferring latch for variable 'tempSbox13_reg[15]' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:1720]
+WARNING: [Synth 8-327] inferring latch for variable 'tempSbox13_reg[10]' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:1720]
+WARNING: [Synth 8-327] inferring latch for variable 'tempSbox13_reg[5]' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:1720]
+WARNING: [Synth 8-327] inferring latch for variable 'tempSbox13_reg[0]' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:1720]
+WARNING: [Synth 8-327] inferring latch for variable 'tempStart13_reg[2]_rep' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:1712]
+WARNING: [Synth 8-327] inferring latch for variable 'tempStart13_reg[1]' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:1712]
+WARNING: [Synth 8-327] inferring latch for variable 'tempStart13_reg[0]' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:1712]
+WARNING: [Synth 8-327] inferring latch for variable 'tempStart13_reg[3]' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:1712]
+WARNING: [Synth 8-327] inferring latch for variable 'tempStart13_reg[1]_rep' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:1712]
+WARNING: [Synth 8-327] inferring latch for variable 'tempStart13_reg[2]' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:1712]
+WARNING: [Synth 8-327] inferring latch for variable 'tempStart13_reg[0]_rep' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:1712]
+WARNING: [Synth 8-327] inferring latch for variable 'tempStart13_reg[3]_rep' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:1712]
+WARNING: [Synth 8-327] inferring latch for variable 'k_reg[54]' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:950]
+WARNING: [Synth 8-327] inferring latch for variable 'w13_reg[2]' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:1701]
+WARNING: [Synth 8-327] inferring latch for variable 'k_reg[53]' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:950]
+WARNING: [Synth 8-327] inferring latch for variable 'w13_reg[1]' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:1701]
+WARNING: [Synth 8-327] inferring latch for variable 'k_reg[52]' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:950]
+WARNING: [Synth 8-327] inferring latch for variable 'w13_reg[0]' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:1701]
+WARNING: [Synth 8-327] inferring latch for variable 'k_reg[55]' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:950]
+WARNING: [Synth 8-327] inferring latch for variable 'w13_reg[3]' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:1701]
+WARNING: [Synth 8-327] inferring latch for variable 'd12_reg[11]' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:1681]
+WARNING: [Synth 8-327] inferring latch for variable 'd12_reg[10]' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:1681]
+WARNING: [Synth 8-327] inferring latch for variable 'd12_reg[9]' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:1681]
+WARNING: [Synth 8-327] inferring latch for variable 'd12_reg[8]' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:1681]
+WARNING: [Synth 8-327] inferring latch for variable 'd12_reg[7]' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:1681]
+WARNING: [Synth 8-327] inferring latch for variable 'd12_reg[6]' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:1681]
+WARNING: [Synth 8-327] inferring latch for variable 'd12_reg[5]' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:1681]
+WARNING: [Synth 8-327] inferring latch for variable 'd12_reg[4]' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:1681]
+WARNING: [Synth 8-327] inferring latch for variable 'd12_reg[3]' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:1681]
+WARNING: [Synth 8-327] inferring latch for variable 'd12_reg[2]' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:1681]
+WARNING: [Synth 8-327] inferring latch for variable 'd12_reg[1]' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:1681]
+WARNING: [Synth 8-327] inferring latch for variable 'd12_reg[0]' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:1681]
+WARNING: [Synth 8-327] inferring latch for variable 'd12_reg[15]' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:1681]
+WARNING: [Synth 8-327] inferring latch for variable 'd12_reg[14]' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:1681]
+WARNING: [Synth 8-327] inferring latch for variable 'd12_reg[13]' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:1681]
+WARNING: [Synth 8-327] inferring latch for variable 'd12_reg[12]' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:1681]
+WARNING: [Synth 8-327] inferring latch for variable 'tempRow12_reg[9]' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:1674]
+WARNING: [Synth 8-327] inferring latch for variable 'tempRow12_reg[10]' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:1674]
+WARNING: [Synth 8-327] inferring latch for variable 'tempRow12_reg[11]_rep' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:1674]
+WARNING: [Synth 8-327] inferring latch for variable 'tempRow12_reg[8]_rep' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:1674]
+WARNING: [Synth 8-327] inferring latch for variable 'tempRow12_reg[10]_rep' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:1674]
+WARNING: [Synth 8-327] inferring latch for variable 'tempRow12_reg[11]_rep' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:1674]
+WARNING: [Synth 8-327] inferring latch for variable 'tempRow12_reg[8]' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:1674]
+WARNING: [Synth 8-327] inferring latch for variable 'tempRow12_reg[9]_rep' [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/core_logic.v:1674]
+INFO: [Common 17-14] Message 'Synth 8-327' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:02:19 ; elapsed = 00:02:44 . Memory (MB): peak = 1173.738 ; gain = 921.020
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+------------------+------------+----------+
+|      |RTL Partition     |Replication |Instances |
++------+------------------+------------+----------+
+|1     |aes_enc_core__GB0 |           1|     30555|
+|2     |aes_enc_core__GB1 |           1|     29664|
+|3     |top__GC0          |           1|     11664|
++------+------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3538] Detected potentially large (wide) register hashO_reg [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/HashIn.v:121]
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     13 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 56    
+	   2 Input      8 Bit         XORs := 16    
+	   4 Input      8 Bit         XORs := 208   
++---Registers : 
+	             1920 Bit    Registers := 1     
+	              128 Bit    Registers := 1     
+	               32 Bit    Registers := 60    
+	               13 Bit    Registers := 1     
+	                8 Bit    Registers := 21    
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     13 Bit        Muxes := 4     
+	  88 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 83    
+	   4 Input      8 Bit        Muxes := 19    
+	   2 Input      7 Bit        Muxes := 2     
+	   3 Input      7 Bit        Muxes := 19    
+	   2 Input      4 Bit        Muxes := 1     
+	  88 Input      1 Bit        Muxes := 81    
+	   2 Input      1 Bit        Muxes := 72    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3538] Detected potentially large (wide) register hashO_reg [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/HashIn.v:121]
+Hierarchical RTL Component report 
+Module aes_enc_core 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     32 Bit         XORs := 56    
+	   2 Input      8 Bit         XORs := 16    
+	   4 Input      8 Bit         XORs := 208   
++---Muxes : 
+	  88 Input      8 Bit        Muxes := 1     
+	  88 Input      1 Bit        Muxes := 81    
+Module counter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+Module HashMsgIn 
+Detailed RTL Component Info : 
++---Registers : 
+	             1920 Bit    Registers := 1     
+	              128 Bit    Registers := 1     
+	               32 Bit    Registers := 60    
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 61    
+Module uart_tx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     13 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               13 Bit    Registers := 1     
+	                8 Bit    Registers := 20    
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     13 Bit        Muxes := 4     
+	   2 Input      8 Bit        Muxes := 83    
+	   4 Input      8 Bit        Muxes := 19    
+	   2 Input      7 Bit        Muxes := 2     
+	   3 Input      7 Bit        Muxes := 19    
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 11    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "hashO" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[59]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[58]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[57]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[56]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[55]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[54]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[53]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[52]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[51]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[50]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[49]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[48]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[47]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[46]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[45]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[44]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[43]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[42]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[41]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[40]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[39]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[38]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[37]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[36]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[35]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[34]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[33]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[32]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[31]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[30]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[29]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[28]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[27]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[26]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[25]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[24]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[23]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[22]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Common 17-14] Message 'Synth 8-5545' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-6014] Unused sequential element C0/out_reg was removed.  [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/counter.v:30]
+WARNING: [Synth 8-6014] Unused sequential element U1/byte_count_reg was removed.  [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/uart_tx.v:72]
+WARNING: [Synth 8-6014] Unused sequential element U1/bit_count_reg was removed.  [C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.srcs/sources_1/new/uart_tx.v:48]
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[3][29]' (LD) to 'AES1i_0/w_reg[2][30]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[3][28]' (LD) to 'AES1i_0/w_reg[2][30]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[3][27]' (LD) to 'AES1i_0/w_reg[2][31]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[3][26]' (LD) to 'AES1i_0/w_reg[2][31]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[3][25]' (LD) to 'AES1i_0/w_reg[2][30]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[3][24]' (LD) to 'AES1i_0/w_reg[2][30]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[2][5]' (LD) to 'AES1i_0/w_reg[2][31]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[2][4]' (LD) to 'AES1i_0/w_reg[2][31]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[2][3]' (LD) to 'AES1i_0/w_reg[2][31]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[2][2]' (LD) to 'AES1i_0/w_reg[2][30]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[2][1]' (LD) to 'AES1i_0/w_reg[2][31]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[2][0]' (LD) to 'AES1i_0/w_reg[2][31]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[1][13]' (LD) to 'AES1i_0/w_reg[2][31]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[1][12]' (LD) to 'AES1i_0/w_reg[2][30]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[1][11]' (LD) to 'AES1i_0/w_reg[2][30]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[1][10]' (LD) to 'AES1i_0/w_reg[2][31]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[1][9]' (LD) to 'AES1i_0/w_reg[2][31]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[1][8]' (LD) to 'AES1i_0/w_reg[2][30]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[0][21]' (LD) to 'AES1i_0/w_reg[2][30]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[0][20]' (LD) to 'AES1i_0/w_reg[2][31]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[0][19]' (LD) to 'AES1i_0/w_reg[2][30]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[0][18]' (LD) to 'AES1i_0/w_reg[2][30]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[0][17]' (LD) to 'AES1i_0/w_reg[2][30]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[0][16]' (LD) to 'AES1i_0/w_reg[2][31]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[2][29]' (LD) to 'AES1i_0/w_reg[2][30]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[2][28]' (LD) to 'AES1i_0/w_reg[2][30]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[2][27]' (LD) to 'AES1i_0/w_reg[2][31]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[2][26]' (LD) to 'AES1i_0/w_reg[2][30]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[2][25]' (LD) to 'AES1i_0/w_reg[2][30]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[2][24]' (LD) to 'AES1i_0/w_reg[2][30]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[1][5]' (LD) to 'AES1i_0/w_reg[2][31]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[1][4]' (LD) to 'AES1i_0/w_reg[2][31]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[1][3]' (LD) to 'AES1i_0/w_reg[2][30]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[1][2]' (LD) to 'AES1i_0/w_reg[2][31]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[1][1]' (LD) to 'AES1i_0/w_reg[2][31]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[1][0]' (LD) to 'AES1i_0/w_reg[2][31]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[0][13]' (LD) to 'AES1i_0/w_reg[2][31]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[0][12]' (LD) to 'AES1i_0/w_reg[2][30]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[0][11]' (LD) to 'AES1i_0/w_reg[2][30]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[0][10]' (LD) to 'AES1i_0/w_reg[2][30]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[0][9]' (LD) to 'AES1i_0/w_reg[2][31]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[0][8]' (LD) to 'AES1i_0/w_reg[2][30]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[3][21]' (LD) to 'AES1i_0/w_reg[2][30]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[3][20]' (LD) to 'AES1i_0/w_reg[2][31]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[3][19]' (LD) to 'AES1i_0/w_reg[2][31]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[3][18]' (LD) to 'AES1i_0/w_reg[2][31]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[3][17]' (LD) to 'AES1i_0/w_reg[2][30]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[3][16]' (LD) to 'AES1i_0/w_reg[2][31]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[1][29]' (LD) to 'AES1i_0/w_reg[2][30]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[1][28]' (LD) to 'AES1i_0/w_reg[2][30]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[1][27]' (LD) to 'AES1i_0/w_reg[2][30]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[1][26]' (LD) to 'AES1i_0/w_reg[2][31]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[1][25]' (LD) to 'AES1i_0/w_reg[2][30]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[1][24]' (LD) to 'AES1i_0/w_reg[2][30]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[0][5]' (LD) to 'AES1i_0/w_reg[2][31]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[0][4]' (LD) to 'AES1i_0/w_reg[2][31]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[0][3]' (LD) to 'AES1i_0/w_reg[2][30]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[0][2]' (LD) to 'AES1i_0/w_reg[2][30]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[0][1]' (LD) to 'AES1i_0/w_reg[2][31]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[0][0]' (LD) to 'AES1i_0/w_reg[2][31]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[3][13]' (LD) to 'AES1i_0/w_reg[2][31]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[3][12]' (LD) to 'AES1i_0/w_reg[2][30]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[3][11]' (LD) to 'AES1i_0/w_reg[2][31]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[3][10]' (LD) to 'AES1i_0/w_reg[2][31]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[3][9]' (LD) to 'AES1i_0/w_reg[2][31]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[3][8]' (LD) to 'AES1i_0/w_reg[2][30]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[2][21]' (LD) to 'AES1i_0/w_reg[2][30]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[2][20]' (LD) to 'AES1i_0/w_reg[2][31]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[2][19]' (LD) to 'AES1i_0/w_reg[2][31]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[2][18]' (LD) to 'AES1i_0/w_reg[2][30]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[2][17]' (LD) to 'AES1i_0/w_reg[2][30]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[2][16]' (LD) to 'AES1i_0/w_reg[2][31]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[0][29]' (LD) to 'AES1i_0/w_reg[2][30]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[0][28]' (LD) to 'AES1i_0/w_reg[2][30]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[0][27]' (LD) to 'AES1i_0/w_reg[2][30]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[0][26]' (LD) to 'AES1i_0/w_reg[2][30]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[0][25]' (LD) to 'AES1i_0/w_reg[2][30]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[0][24]' (LD) to 'AES1i_0/w_reg[2][30]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[3][5]' (LD) to 'AES1i_0/w_reg[2][31]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[3][4]' (LD) to 'AES1i_0/w_reg[2][31]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[3][3]' (LD) to 'AES1i_0/w_reg[2][31]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[3][2]' (LD) to 'AES1i_0/w_reg[2][31]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[3][1]' (LD) to 'AES1i_0/w_reg[2][31]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[3][0]' (LD) to 'AES1i_0/w_reg[2][31]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[2][13]' (LD) to 'AES1i_0/w_reg[2][31]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[2][12]' (LD) to 'AES1i_0/w_reg[2][30]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[2][11]' (LD) to 'AES1i_0/w_reg[2][31]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[2][10]' (LD) to 'AES1i_0/w_reg[2][30]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[2][9]' (LD) to 'AES1i_0/w_reg[2][31]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[2][8]' (LD) to 'AES1i_0/w_reg[2][30]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[1][21]' (LD) to 'AES1i_0/w_reg[2][30]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[1][20]' (LD) to 'AES1i_0/w_reg[2][31]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[1][19]' (LD) to 'AES1i_0/w_reg[2][30]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[1][18]' (LD) to 'AES1i_0/w_reg[2][31]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[1][17]' (LD) to 'AES1i_0/w_reg[2][30]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/w_reg[1][16]' (LD) to 'AES1i_0/w_reg[2][31]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/tempStart_reg[3]_rep[29]' (LD) to 'AES1i_0/tempStart_reg[3][29]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/tempStart_reg[3]_rep[28]' (LD) to 'AES1i_0/tempStart_reg[3][28]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/tempStart_reg[3]_rep[27]' (LD) to 'AES1i_0/tempStart_reg[3][27]'
+INFO: [Synth 8-3886] merging instance 'AES1i_0/tempStart_reg[3]_rep[26]' (LD) to 'AES1i_0/tempStart_reg[3][26]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (AES1i_0/\w_reg[1][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (AES1i_0/\w_reg[1][23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (AES1i_0/i_0/\next_state_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\U1/tx_buff_reg[19][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\U1/tx_buff_reg[18][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\U1/tx_buff_reg[17][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\U1/tx_buff_reg[16][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[32] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[33] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[34] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[35] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[36] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[37] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[38] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[39] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[40] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[41] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[42] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[43] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[44] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[45] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[46] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[47] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[48] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[49] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[50] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[51] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[52] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[53] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[54] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[55] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[56] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[57] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[58] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[59] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[60] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[61] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[62] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[63] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[64] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[65] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[66] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[67] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[68] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[69] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[70] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[71] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[72] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[73] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[74] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[75] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[76] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[77] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[78] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[79] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[80] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[81] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[82] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[83] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[84] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[85] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[86] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[87] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[88] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[89] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[90] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[91] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\HM1/msgO_reg[92] )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:04:04 ; elapsed = 00:04:56 . Memory (MB): peak = 1173.738 ; gain = 921.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++-------------+------------+---------------+----------------+
+|Module Name  | RTL Object | Depth x Width | Implemented As | 
++-------------+------------+---------------+----------------+
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul3       | 256x8         | LUT            | 
+|aes_enc_core | mul2       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|aes_enc_core | sbox       | 256x8         | LUT            | 
+|top          | next_state | 1024x8        | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | sbox       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
+|top          | mul3       | 256x8         | LUT            | 
+|top          | mul2       | 256x8         | LUT            | 
++-------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+------------------+------------+----------+
+|      |RTL Partition     |Replication |Instances |
++------+------------------+------------+----------+
+|1     |aes_enc_core__GB0 |           1|     24229|
+|2     |aes_enc_core__GB1 |           1|     13088|
+|3     |top__GC0          |           1|      4868|
++------+------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:04:18 ; elapsed = 00:05:11 . Memory (MB): peak = 1191.648 ; gain = 938.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:04:18 ; elapsed = 00:05:11 . Memory (MB): peak = 1191.648 ; gain = 938.930
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+------------------+------------+----------+
+|      |RTL Partition     |Replication |Instances |
++------+------------------+------------+----------+
+|1     |aes_enc_core__GB0 |           1|     24229|
+|2     |aes_enc_core__GB1 |           1|     13088|
+|3     |top__GC0          |           1|      4868|
++------+------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:04:26 ; elapsed = 00:05:19 . Memory (MB): peak = 1224.176 ; gain = 971.457
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:04:29 ; elapsed = 00:05:22 . Memory (MB): peak = 1224.176 ; gain = 971.457
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:04:29 ; elapsed = 00:05:22 . Memory (MB): peak = 1224.176 ; gain = 971.457
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:04:30 ; elapsed = 00:05:23 . Memory (MB): peak = 1224.176 ; gain = 971.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:04:30 ; elapsed = 00:05:24 . Memory (MB): peak = 1224.176 ; gain = 971.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:04:31 ; elapsed = 00:05:24 . Memory (MB): peak = 1224.176 ; gain = 971.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:04:31 ; elapsed = 00:05:24 . Memory (MB): peak = 1224.176 ; gain = 971.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |blk_mem_gen_0 |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------------+------+
+|      |Cell          |Count |
++------+--------------+------+
+|1     |blk_mem_gen_0 |     1|
+|2     |BUFG          |    12|
+|3     |CARRY4        |     3|
+|4     |LUT1          |    97|
+|5     |LUT2          |  1828|
+|6     |LUT3          |   335|
+|7     |LUT4          |   657|
+|8     |LUT5          |  1487|
+|9     |LUT6          |  7448|
+|10    |MUXF7         |  3598|
+|11    |MUXF8         |  1799|
+|12    |FDCE          |  2096|
+|13    |FDPE          |     3|
+|14    |FDRE          |  1948|
+|15    |LD            | 11017|
+|16    |IBUF          |     4|
+|17    |OBUF          |     2|
+|18    |OBUFT         |     8|
++------+--------------+------+
+
+Report Instance Areas: 
++------+---------+-------------+------+
+|      |Instance |Module       |Cells |
++------+---------+-------------+------+
+|1     |top      |             | 32374|
+|2     |  AES1   |aes_enc_core | 27841|
+|3     |  C0     |counter      |   111|
+|4     |  HM1    |HashMsgIn    |  3859|
+|5     |  U1     |uart_tx      |   505|
++------+---------+-------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:04:31 ; elapsed = 00:05:24 . Memory (MB): peak = 1224.176 ; gain = 971.457
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1340 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:03:28 ; elapsed = 00:05:06 . Memory (MB): peak = 1224.176 ; gain = 799.074
+Synthesis Optimization Complete : Time (s): cpu = 00:04:31 ; elapsed = 00:05:24 . Memory (MB): peak = 1224.176 ; gain = 971.457
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 11024 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 2 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'top' is not ideal for floorplanning, since the cellview 'aes_enc_core' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 11017 instances were transformed.
+  LD => LDCE: 11017 instances
+
+432 Infos, 287 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:04:41 ; elapsed = 00:05:35 . Memory (MB): peak = 1224.176 ; gain = 976.141
+INFO: [Common 17-1381] The checkpoint 'C:/College/Thesis/AES_2018/Blockread1 - mixcol/Blockread1.runs/synth_1/top.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1224.176 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.255 . Memory (MB): peak = 1224.176 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Sep  4 00:23:22 2018...

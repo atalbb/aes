@@ -1,0 +1,254 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.1 (win64) Build 1846317 Fri Apr 14 18:55:03 MDT 2017
+| Date         : Tue Sep  4 00:25:25 2018
+| Host         : DESKTOP-GJPCRJL running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |   186 |
+| Unused register locations in slices containing registers |   174 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |           11019 |         4712 |
+| No           | No                    | Yes                    |              35 |           15 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |            1948 |          343 |
+| Yes          | No                    | Yes                    |            2064 |          365 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++---------------------------------+---------------------------+---------------------------+------------------+----------------+
+|           Clock Signal          |       Enable Signal       |      Set/Reset Signal     | Slice Load Count | Bel Load Count |
++---------------------------------+---------------------------+---------------------------+------------------+----------------+
+|  clk_IBUF_BUFG                  | U1/p_3_in                 | HM1/hashO_reg[247]_0      |                1 |              1 |
+|  AES1/ledDone_reg_i_1_n_6       |                           |                           |                1 |              1 |
+|  clk_IBUF_BUFG                  |                           |                           |                1 |              2 |
+|  clk_IBUF_BUFG                  | U1/bit_count              | U1/baud_count[12]_i_3_n_6 |                2 |              4 |
+|  clk_IBUF_BUFG                  | U1/byte_count             | U1/baud_count[12]_i_3_n_6 |                1 |              6 |
+|  clk_IBUF_BUFG                  | U1/tx_buff[11][6]_i_1_n_6 | U1/baud_count[12]_i_3_n_6 |                2 |              7 |
+|  clk_IBUF_BUFG                  | U1/tx_buff[17][6]_i_1_n_6 |                           |                1 |              7 |
+|  clk_IBUF_BUFG                  | U1/tx_buff[8][6]_i_1_n_6  | U1/baud_count[12]_i_3_n_6 |                3 |              7 |
+|  clk_IBUF_BUFG                  | U1/tx_buff[9][6]_i_1_n_6  | U1/baud_count[12]_i_3_n_6 |                2 |              7 |
+|  clk_IBUF_BUFG                  | U1/tx_buff[7][6]_i_1_n_6  | U1/baud_count[12]_i_3_n_6 |                2 |              7 |
+|  clk_IBUF_BUFG                  | U1/tx_buff[3][6]_i_1_n_6  | U1/baud_count[12]_i_3_n_6 |                3 |              7 |
+|  clk_IBUF_BUFG                  | U1/tx_buff[4][6]_i_1_n_6  | U1/baud_count[12]_i_3_n_6 |                3 |              7 |
+|  clk_IBUF_BUFG                  | U1/tx_buff[6][6]_i_1_n_6  | U1/baud_count[12]_i_3_n_6 |                2 |              7 |
+|  clk_IBUF_BUFG                  | U1/tx_buff[5][6]_i_1_n_6  | U1/baud_count[12]_i_3_n_6 |                2 |              7 |
+|  clk_IBUF_BUFG                  | U1/tx_buff[19][6]_i_1_n_6 |                           |                2 |              7 |
+|  clk_IBUF_BUFG                  | U1/tx_buff[2][6]_i_1_n_6  | U1/baud_count[12]_i_3_n_6 |                2 |              7 |
+|  clk_IBUF_BUFG                  | U1/tx_buff[18][6]_i_1_n_6 |                           |                2 |              7 |
+|  clk_IBUF_BUFG                  | U1/tx_buff[1][6]_i_1_n_6  | U1/baud_count[12]_i_3_n_6 |                2 |              7 |
+|  clk_IBUF_BUFG                  | U1/tx_buff[12][6]_i_1_n_6 | U1/baud_count[12]_i_3_n_6 |                2 |              7 |
+|  clk_IBUF_BUFG                  | U1/tx_buff[13][6]_i_1_n_6 | U1/baud_count[12]_i_3_n_6 |                2 |              7 |
+|  clk_IBUF_BUFG                  | U1/tx_buff[15][6]_i_1_n_6 | U1/baud_count[12]_i_3_n_6 |                2 |              7 |
+|  clk_IBUF_BUFG                  | U1/tx_buff[16][6]_i_1_n_6 |                           |                1 |              7 |
+|  clk_IBUF_BUFG                  | U1/tx_buff[14][6]_i_1_n_6 | U1/baud_count[12]_i_3_n_6 |                3 |              7 |
+|  clk_IBUF_BUFG                  | U1/tx_buff[10][6]_i_1_n_6 | U1/baud_count[12]_i_3_n_6 |                3 |              7 |
+|  clk_IBUF_BUFG                  | U1/tx_buff[0][6]_i_1_n_6  | U1/baud_count[12]_i_3_n_6 |                2 |              7 |
+|  clk_IBUF_BUFG                  | C0/out[7]_i_1_n_6         | HM1/done_reg_0            |                3 |              8 |
+|  clk_IBUF_BUFG                  |                           | HM1/hashO_reg[1861]_0     |                3 |              8 |
+|  AES1/next_state_reg[7]_i_2_n_6 |                           |                           |                2 |              8 |
+|  clk_IBUF_BUFG                  | C0/hashO_reg[1919][0]     | HM1/hashO_reg[247]_0      |                2 |              9 |
+|  clk_IBUF_BUFG                  |                           | HM1/done_reg_0            |                3 |              9 |
+|  clk_IBUF_BUFG                  | U1/p_3_in                 | U1/baud_count[12]_i_3_n_6 |                3 |             13 |
+|  clk_IBUF_BUFG                  |                           | U1/baud_count[12]_i_3_n_6 |                9 |             18 |
+|  clk_IBUF_BUFG                  | C0/RAM_reg[38][31][0]     |                           |                5 |             32 |
+|  clk_IBUF_BUFG                  | C0/RAM_reg[54][31][0]     |                           |                6 |             32 |
+|  clk_IBUF_BUFG                  | C0/RAM_reg[11][31][0]     |                           |                4 |             32 |
+|  clk_IBUF_BUFG                  | C0/RAM_reg[24][31][0]     |                           |                7 |             32 |
+|  clk_IBUF_BUFG                  | C0/RAM_reg[31][31][0]     |                           |                7 |             32 |
+|  clk_IBUF_BUFG                  | C0/RAM_reg[29][31][0]     |                           |                5 |             32 |
+|  clk_IBUF_BUFG                  | C0/RAM_reg[34][31][0]     |                           |                4 |             32 |
+|  clk_IBUF_BUFG                  | C0/RAM_reg[33][31][0]     |                           |                5 |             32 |
+|  clk_IBUF_BUFG                  | C0/RAM_reg[42][31][0]     |                           |                6 |             32 |
+|  clk_IBUF_BUFG                  | C0/RAM_reg[23][31][0]     |                           |                7 |             32 |
+|  clk_IBUF_BUFG                  | C0/RAM_reg[25][31][0]     |                           |                5 |             32 |
+|  clk_IBUF_BUFG                  | C0/RAM_reg[19][31][0]     |                           |                5 |             32 |
+|  clk_IBUF_BUFG                  | C0/RAM_reg[13][31][0]     |                           |                5 |             32 |
+|  clk_IBUF_BUFG                  | C0/RAM_reg[35][31][0]     |                           |                6 |             32 |
+|  clk_IBUF_BUFG                  | C0/RAM_reg[39][31][0]     |                           |                5 |             32 |
+|  clk_IBUF_BUFG                  | C0/RAM_reg[1][31][0]      |                           |                6 |             32 |
+|  clk_IBUF_BUFG                  | C0/RAM_reg[41][31][0]     |                           |                6 |             32 |
+|  clk_IBUF_BUFG                  | C0/RAM_reg[43][31][0]     |                           |                6 |             32 |
+|  clk_IBUF_BUFG                  | C0/RAM_reg[46][31][0]     |                           |                6 |             32 |
+|  clk_IBUF_BUFG                  | C0/RAM_reg[47][31][0]     |                           |                5 |             32 |
+|  clk_IBUF_BUFG                  | C0/RAM_reg[48][31][0]     |                           |                4 |             32 |
+|  clk_IBUF_BUFG                  | C0/RAM_reg[22][0][0]      |                           |                6 |             32 |
+|  clk_IBUF_BUFG                  | C0/RAM_reg[49][31][0]     |                           |                4 |             32 |
+|  clk_IBUF_BUFG                  | C0/RAM_reg[40][31][0]     |                           |                7 |             32 |
+|  clk_IBUF_BUFG                  | C0/RAM_reg[45][31][0]     |                           |                4 |             32 |
+|  clk_IBUF_BUFG                  | C0/RAM_reg[20][31][0]     |                           |                5 |             32 |
+|  clk_IBUF_BUFG                  | C0/RAM_reg[3][31][0]      |                           |                9 |             32 |
+|  clk_IBUF_BUFG                  | C0/RAM_reg[44][31][0]     |                           |                5 |             32 |
+|  clk_IBUF_BUFG                  | C0/RAM_reg[57][31][0]     |                           |                6 |             32 |
+|  clk_IBUF_BUFG                  | C0/RAM_reg[56][31][0]     |                           |                9 |             32 |
+|  clk_IBUF_BUFG                  | C0/RAM_reg[53][31][0]     |                           |                6 |             32 |
+|  clk_IBUF_BUFG                  | C0/RAM_reg[5][31][0]      |                           |                8 |             32 |
+|  clk_IBUF_BUFG                  | C0/RAM_reg[6][31][0]      |                           |                5 |             32 |
+|  clk_IBUF_BUFG                  | C0/RAM_reg[8][31][0]      |                           |                6 |             32 |
+|  clk_IBUF_BUFG                  | C0/RAM_reg[51][31][0]     |                           |                5 |             32 |
+|  clk_IBUF_BUFG                  | C0/RAM_reg[59][31][0]     |                           |               11 |             32 |
+|  clk_IBUF_BUFG                  | C0/RAM_reg[55][31][0]     |                           |                5 |             32 |
+|  clk_IBUF_BUFG                  | C0/RAM_reg[58][31][0]     |                           |                8 |             32 |
+|  clk_IBUF_BUFG                  | C0/RAM_reg[7][31][0]      |                           |                5 |             32 |
+|  clk_IBUF_BUFG                  | C0/RAM_reg[9][31][0]      |                           |                4 |             32 |
+|  clk_IBUF_BUFG                  | C0/RAM_reg[52][31][0]     |                           |                5 |             32 |
+|  clk_IBUF_BUFG                  | C0/RAM_reg[18][31][0]     |                           |                5 |             32 |
+|  clk_IBUF_BUFG                  | C0/RAM_reg[4][31][0]      |                           |                8 |             32 |
+|  clk_IBUF_BUFG                  | C0/RAM_reg[0][31][0]      |                           |                6 |             32 |
+|  clk_IBUF_BUFG                  | C0/RAM_reg[12][31][0]     |                           |                4 |             32 |
+|  clk_IBUF_BUFG                  | C0/RAM_reg[14][31][0]     |                           |                6 |             32 |
+|  clk_IBUF_BUFG                  | C0/RAM_reg[16][31][0]     |                           |                5 |             32 |
+|  clk_IBUF_BUFG                  | C0/RAM_reg[17][31][0]     |                           |                4 |             32 |
+|  clk_IBUF_BUFG                  | C0/RAM_reg[26][31][0]     |                           |                6 |             32 |
+|  clk_IBUF_BUFG                  | C0/RAM_reg[2][31][0]      |                           |                5 |             32 |
+|  clk_IBUF_BUFG                  | C0/RAM_reg[30][31][0]     |                           |                5 |             32 |
+|  clk_IBUF_BUFG                  | C0/RAM_reg[36][31][0]     |                           |                4 |             32 |
+|  clk_IBUF_BUFG                  | C0/RAM_reg[37][31][0]     |                           |                5 |             32 |
+|  clk_IBUF_BUFG                  | C0/E[0]                   |                           |                6 |             32 |
+|  clk_IBUF_BUFG                  | C0/RAM_reg[10][0][0]      |                           |                5 |             32 |
+|  clk_IBUF_BUFG                  | C0/RAM_reg[15][31][0]     |                           |                4 |             32 |
+|  clk_IBUF_BUFG                  | C0/RAM_reg[21][31][0]     |                           |                4 |             32 |
+|  clk_IBUF_BUFG                  | C0/RAM_reg[27][31][0]     |                           |                6 |             32 |
+|  clk_IBUF_BUFG                  | C0/RAM_reg[28][31][0]     |                           |                6 |             32 |
+|  clk_IBUF_BUFG                  | C0/RAM_reg[32][31][0]     |                           |                5 |             32 |
+|  clk_IBUF_BUFG                  | C0/hashO_reg[1919][0]     | HM1/done_reg_0            |               15 |            104 |
+|  clk_IBUF_BUFG                  | C0/hashO_reg[1919][0]     | HM1/hashO_reg[1861]_0     |               21 |            113 |
+|  clk_IBUF_BUFG                  | C0/hashO_reg[1919][0]     | HM1/hashO[1727]_i_1_n_6   |               19 |            121 |
+|  clk_IBUF_BUFG                  | C0/hashO_reg[1919][0]     | HM1/hashO[607]_i_1_n_6    |               24 |            121 |
+|  clk_IBUF_BUFG                  | C0/hashO_reg[1919][0]     | HM1/hashO[1535]_i_1_n_6   |               18 |            121 |
+|  clk_IBUF_BUFG                  | C0/hashO_reg[1919][0]     | HM1/hashO[1919]_i_2_n_6   |               20 |            121 |
+|  clk_IBUF_BUFG                  | C0/hashO_reg[1919][0]     | HM1/hashO[1305]_i_1_n_6   |               20 |            121 |
+|  clk_IBUF_BUFG                  | C0/hashO_reg[1919][0]     | HM1/hashO[1023]_i_1_n_6   |               20 |            121 |
+|  clk_IBUF_BUFG                  | C0/hashO_reg[1919][0]     | HM1/hashO[1119]_i_1_n_6   |               19 |            121 |
+|  clk_IBUF_BUFG                  | C0/hashO_reg[1919][0]     | HM1/hashO[122]_i_1_n_6    |               21 |            121 |
+|  clk_IBUF_BUFG                  | C0/hashO_reg[1919][0]     | HM1/hashO[246]_i_1_n_6    |               21 |            121 |
+|  clk_IBUF_BUFG                  | C0/hashO_reg[1919][0]     | HM1/hashO[871]_i_1_n_6    |               21 |            121 |
+|  clk_IBUF_BUFG                  | C0/hashO_reg[1919][0]     | HM1/hashO[1791]_i_1_n_6   |               23 |            121 |
+|  clk_IBUF_BUFG                  | C0/hashO_reg[1919][0]     | HM1/hashO[1279]_i_1_n_6   |               20 |            121 |
+|  clk_IBUF_BUFG                  | C0/hashO_reg[1919][0]     | HM1/hashO[1522]_i_1_n_6   |               16 |            121 |
+|  clk_IBUF_BUFG                  | C0/hashO_reg[1919][0]     | HM1/hashO[1631]_i_1_n_6   |               18 |            121 |
+|  AES1/d8                        |                           |                           |               39 |            128 |
+|  AES1/d9                        |                           |                           |               37 |            128 |
+|  AES1/d3                        |                           |                           |               34 |            128 |
+|  AES1/d4                        |                           |                           |               37 |            128 |
+|  AES1/d5                        |                           |                           |               34 |            128 |
+|  AES1/d6                        |                           |                           |               47 |            128 |
+|  AES1/tempRow12                 |                           |                           |               47 |            128 |
+|  AES1/tempRow13                 |                           |                           |               39 |            128 |
+|  AES1/tempRow2                  |                           |                           |               42 |            128 |
+|  AES1/tempRow3                  |                           |                           |               35 |            128 |
+|  AES1/tempRow4                  |                           |                           |               33 |            128 |
+|  AES1/tempRow5                  |                           |                           |               35 |            128 |
+|  AES1/tempRow6                  |                           |                           |               49 |            128 |
+|  AES1/tempRow7                  |                           |                           |               41 |            128 |
+|  AES1/tempRow9                  |                           |                           |               39 |            128 |
+|  AES1/tempSbox10                |                           |                           |              128 |            128 |
+|  AES1/tempSbox1                 |                           |                           |              128 |            128 |
+|  AES1/tempSbox                  |                           |                           |              128 |            128 |
+|  AES1/tempSbox11                |                           |                           |              128 |            128 |
+|  AES1/tempRow10                 |                           |                           |               42 |            128 |
+|  AES1/tempRow1                  |                           |                           |               40 |            128 |
+|  AES1/tempRow11                 |                           |                           |               44 |            128 |
+|  AES1/tempSbox12                |                           |                           |              128 |            128 |
+|  AES1/tempSbox3                 |                           |                           |              128 |            128 |
+|  AES1/tempSbox4                 |                           |                           |              128 |            128 |
+|  AES1/tempSbox2                 |                           |                           |              128 |            128 |
+|  AES1/tempSbox8                 |                           |                           |              128 |            128 |
+|  AES1/tempSbox6                 |                           |                           |              128 |            128 |
+|  AES1/tempSbox7                 |                           |                           |              128 |            128 |
+|  AES1/tempStart                 |                           |                           |               46 |            128 |
+|  AES1/w4                        |                           |                           |               36 |            128 |
+|  AES1/tempSbox5                 |                           |                           |              128 |            128 |
+|  AES1/d2                        |                           |                           |               40 |            128 |
+|  AES1/d                         |                           |                           |               39 |            128 |
+|  AES1/d1                        |                           |                           |               38 |            128 |
+|  AES1/cipher_reg[127]_i_1_n_6   |                           |                           |               37 |            128 |
+|  AES1/w6                        |                           |                           |               38 |            128 |
+|  AES1/d10                       |                           |                           |               37 |            128 |
+|  AES1/d11                       |                           |                           |               45 |            128 |
+|  AES1/d12                       |                           |                           |               45 |            128 |
+|  AES1/d13                       |                           |                           |               38 |            128 |
+|  AES1/d7                        |                           |                           |               40 |            128 |
+|  AES1/w2                        |                           |                           |               44 |            128 |
+|  AES1/w8                        |                           |                           |               46 |            128 |
+|  AES1/w9                        |                           |                           |               43 |            128 |
+|  AES1/w5                        |                           |                           |               35 |            128 |
+|  AES1/w3                        |                           |                           |               41 |            128 |
+|  AES1/tempStart2                |                           |                           |               47 |            128 |
+|  AES1/tempStart13               |                           |                           |               50 |            128 |
+|  AES1/tempStart12               |                           |                           |               56 |            128 |
+|  AES1/w13                       |                           |                           |               48 |            128 |
+|  AES1/w14                       |                           |                           |               39 |            128 |
+|  AES1/w12                       |                           |                           |               52 |            128 |
+|  AES1/w11                       |                           |                           |               41 |            128 |
+|  AES1/tempRow8                  |                           |                           |               38 |            128 |
+|  AES1/w10                       |                           |                           |               38 |            128 |
+|  AES1/w1                        |                           |                           |               40 |            128 |
+|  AES1/tempStart9                |                           |                           |               50 |            128 |
+|  AES1/tempStart8                |                           |                           |               47 |            128 |
+|  AES1/tempStart7                |                           |                           |               54 |            128 |
+|  AES1/tempStart6                |                           |                           |               43 |            128 |
+|  AES1/tempStart5                |                           |                           |               37 |            128 |
+|  AES1/tempStart4                |                           |                           |               34 |            128 |
+|  AES1/tempStart3                |                           |                           |               48 |            128 |
+|  AES1/tempSbox9                 |                           |                           |              128 |            128 |
+|  AES1/tempStart11               |                           |                           |               50 |            128 |
+|  AES1/tempStart1                |                           |                           |               42 |            128 |
+|  tempStart10                    |                           |                           |               39 |            128 |
+|  tempRow                        |                           |                           |               49 |            128 |
+|  w7                             |                           |                           |               46 |            128 |
+|  tempSbox13                     |                           |                           |              128 |            128 |
+|  k                              |                           |                           |               73 |            256 |
+|  n_5_76_BUFG                    |                           |                           |               72 |            256 |
+|  n_2_74_BUFG                    |                           |                           |               69 |            256 |
+|  n_4_75_BUFG                    |                           |                           |               70 |            256 |
+|  n_3_62_BUFG                    |                           |                           |               68 |            256 |
+|  n_1_77_BUFG                    |                           |                           |               69 |            256 |
+|  n_0_79_BUFG                    |                           |                           |              105 |            384 |
++---------------------------------+---------------------------+---------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                     2 |
+| 2      |                     1 |
+| 4      |                     1 |
+| 6      |                     1 |
+| 7      |                    20 |
+| 8      |                     3 |
+| 9      |                     2 |
+| 13     |                     1 |
+| 16+    |                   155 |
++--------+-----------------------+
+
+
