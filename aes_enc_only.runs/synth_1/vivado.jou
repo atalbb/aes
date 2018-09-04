@@ -2,11 +2,11 @@
 # Vivado v2017.1 (64-bit)
 # SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
 # IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
-# Start of session at: Wed May 16 19:56:46 2018
-# Process ID: 9704
-# Current directory: C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.runs/synth_1
+# Start of session at: Mon Sep  3 23:58:58 2018
+# Process ID: 6404
+# Current directory: C:/College/Thesis/AES_2018/aes_enc_only_mixcol/aes_enc_only.runs/synth_1
 # Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
-# Log file: C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.runs/synth_1/top.vds
-# Journal file: C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.runs/synth_1\vivado.jou
+# Log file: C:/College/Thesis/AES_2018/aes_enc_only_mixcol/aes_enc_only.runs/synth_1/top.vds
+# Journal file: C:/College/Thesis/AES_2018/aes_enc_only_mixcol/aes_enc_only.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source top.tcl -notrace

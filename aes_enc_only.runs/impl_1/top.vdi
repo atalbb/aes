@@ -2,28 +2,29 @@
 # Vivado v2017.1 (64-bit)
 # SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
 # IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
-# Start of session at: Wed May 16 20:40:06 2018
-# Process ID: 8132
-# Current directory: C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.runs/impl_1
+# Start of session at: Tue Sep  4 00:04:21 2018
+# Process ID: 3112
+# Current directory: C:/College/Thesis/AES_2018/aes_enc_only_mixcol/aes_enc_only.runs/impl_1
 # Command line: vivado.exe -log top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top.tcl -notrace
-# Log file: C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.runs/impl_1/top.vdi
-# Journal file: C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.runs/impl_1\vivado.jou
+# Log file: C:/College/Thesis/AES_2018/aes_enc_only_mixcol/aes_enc_only.runs/impl_1/top.vdi
+# Journal file: C:/College/Thesis/AES_2018/aes_enc_only_mixcol/aes_enc_only.runs/impl_1\vivado.jou
 #-----------------------------------------------------------
 source top.tcl -notrace
 Design is defaulting to srcset: sources_1
 Design is defaulting to constrset: constrs_1
 INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'top' is not ideal for floorplanning, since the cellview 'aes_enc_core' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
 INFO: [Project 1-479] Netlist was created with Vivado 2017.1
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
-Parsing XDC File [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/constrs_1/new/aes_constr.xdc]
-Finished Parsing XDC File [C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.srcs/constrs_1/new/aes_constr.xdc]
+Parsing XDC File [C:/College/Thesis/AES_2018/aes_enc_only_mixcol/aes_enc_only.srcs/constrs_1/new/aes_constr.xdc]
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/aes_enc_only_mixcol/aes_enc_only.srcs/constrs_1/new/aes_constr.xdc]
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-link_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 545.805 ; gain = 303.699
+link_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 567.445 ; gain = 325.047
 Command: opt_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t-csg324'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t-csg324'
@@ -36,7 +37,7 @@ report_drc (run_mandatory_drcs) completed successfully
 INFO: [Project 1-461] DRC finished with 0 Errors
 INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.765 . Memory (MB): peak = 557.570 ; gain = 11.766
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.904 . Memory (MB): peak = 569.031 ; gain = 1.586
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 
 Starting Logic Optimization Task
@@ -44,60 +45,60 @@ Starting Logic Optimization Task
 Phase 1 Retarget
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Opt 31-49] Retargeted 0 cell(s).
-Phase 1 Retarget | Checksum: 22bd84870
+Phase 1 Retarget | Checksum: 1149e2c68
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.037 . Memory (MB): peak = 1116.828 ; gain = 0.000
-INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 12 cells
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1135.820 ; gain = 0.000
+INFO: [Opt 31-389] Phase Retarget created 48 cells and removed 60 cells
 
 Phase 2 Constant propagation
-INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Phase 2 Constant propagation | Checksum: 22bd84870
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 1 load pin(s).
+Phase 2 Constant propagation | Checksum: 1e93d8dd6
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.048 . Memory (MB): peak = 1116.828 ; gain = 0.000
-INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1135.820 ; gain = 0.000
+INFO: [Opt 31-389] Phase Constant propagation created 226 cells and removed 428 cells
 
 Phase 3 Sweep
-Phase 3 Sweep | Checksum: 1a22427bb
+Phase 3 Sweep | Checksum: 1bce9bb82
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.055 . Memory (MB): peak = 1116.828 ; gain = 0.000
-INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 0 cells
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1135.820 ; gain = 0.000
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 82 cells
 
 Phase 4 BUFG optimization
-Phase 4 BUFG optimization | Checksum: 1a22427bb
+Phase 4 BUFG optimization | Checksum: 1bce9bb82
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.063 . Memory (MB): peak = 1116.828 ; gain = 0.000
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1135.820 ; gain = 0.000
 INFO: [Opt 31-389] Phase BUFG optimization created 0 cells and removed 0 cells
 
 Phase 5 Shift Register Optimization
-Phase 5 Shift Register Optimization | Checksum: 1a22427bb
+Phase 5 Shift Register Optimization | Checksum: 1bce9bb82
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.065 . Memory (MB): peak = 1116.828 ; gain = 0.000
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1135.820 ; gain = 0.000
 INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
 
 Starting Connectivity Check Task
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1116.828 ; gain = 0.000
-Ending Logic Optimization Task | Checksum: 1a22427bb
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 1135.820 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 1bce9bb82
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.068 . Memory (MB): peak = 1116.828 ; gain = 0.000
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1135.820 ; gain = 0.000
 
 Starting Power Optimization Task
 INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
-Ending Power Optimization Task | Checksum: bd2c4e82
+Ending Power Optimization Task | Checksum: 1346e6aed
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1116.828 ; gain = 0.000
-21 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 1135.820 ; gain = 0.000
+21 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
 opt_design completed successfully
-opt_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1116.828 ; gain = 571.023
+opt_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1135.820 ; gain = 568.375
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.070 . Memory (MB): peak = 1116.828 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.runs/impl_1/top_opt.dcp' has been generated.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.085 . Memory (MB): peak = 1135.820 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/College/Thesis/AES_2018/aes_enc_only_mixcol/aes_enc_only.runs/impl_1/top_opt.dcp' has been generated.
 Command: report_drc -file top_drc_opted.rpt
 INFO: [DRC 23-27] Running DRC with 2 threads
-INFO: [Coretcl 2-168] The results of DRC are in file C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.runs/impl_1/top_drc_opted.rpt.
+INFO: [Coretcl 2-168] The results of DRC are in file C:/College/Thesis/AES_2018/aes_enc_only_mixcol/aes_enc_only.runs/impl_1/top_drc_opted.rpt.
 report_drc completed successfully
 INFO: [Chipscope 16-241] No debug cores found in the current design.
 Before running the implement_debug_core command, either use the Set Up Debug wizard (GUI mode)
@@ -123,117 +124,118 @@ INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 
 Phase 1 Placer Initialization
 
 Phase 1.1 Placer Initialization Netlist Sorting
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1116.828 ; gain = 0.000
-Phase 1.1 Placer Initialization Netlist Sorting | Checksum: b24786ee
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1135.820 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 104aac2e5
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1116.828 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 1135.820 ; gain = 0.000
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1116.828 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1135.820 ; gain = 0.000
 
 Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
 INFO: [Timing 38-35] Done setting XDC timing constraints.
-Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 80e5f557
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 192387c23
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1116.828 ; gain = 0.000
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:11 . Memory (MB): peak = 1135.820 ; gain = 0.000
 
 Phase 1.3 Build Placer Netlist Model
-Phase 1.3 Build Placer Netlist Model | Checksum: bc88bdda
+Phase 1.3 Build Placer Netlist Model | Checksum: 229a20830
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1116.828 ; gain = 0.000
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:11 . Memory (MB): peak = 1135.820 ; gain = 0.000
 
 Phase 1.4 Constrain Clocks/Macros
-Phase 1.4 Constrain Clocks/Macros | Checksum: bc88bdda
+Phase 1.4 Constrain Clocks/Macros | Checksum: 229a20830
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1116.828 ; gain = 0.000
-Phase 1 Placer Initialization | Checksum: bc88bdda
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:11 . Memory (MB): peak = 1135.820 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 229a20830
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1116.828 ; gain = 0.000
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:11 . Memory (MB): peak = 1135.820 ; gain = 0.000
 
 Phase 2 Global Placement
 WARNING: [Place 46-30] place_design is not in timing mode. Skip physical synthesis in placer
-Phase 2 Global Placement | Checksum: ee2ed25d
+Phase 2 Global Placement | Checksum: 2762c6b7a
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1116.828 ; gain = 0.000
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:15 . Memory (MB): peak = 1135.820 ; gain = 0.000
 
 Phase 3 Detail Placement
 
 Phase 3.1 Commit Multi Column Macros
-Phase 3.1 Commit Multi Column Macros | Checksum: ee2ed25d
+Phase 3.1 Commit Multi Column Macros | Checksum: 2762c6b7a
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1116.828 ; gain = 0.000
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:15 . Memory (MB): peak = 1135.820 ; gain = 0.000
 
 Phase 3.2 Commit Most Macros & LUTRAMs
-Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 16c405cf5
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1c521fac2
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1116.828 ; gain = 0.000
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:15 . Memory (MB): peak = 1135.820 ; gain = 0.000
 
 Phase 3.3 Area Swap Optimization
-Phase 3.3 Area Swap Optimization | Checksum: 189b5398f
+Phase 3.3 Area Swap Optimization | Checksum: 20a0fce03
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1116.828 ; gain = 0.000
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:15 . Memory (MB): peak = 1135.820 ; gain = 0.000
 
 Phase 3.4 Pipeline Register Optimization
-Phase 3.4 Pipeline Register Optimization | Checksum: 189b5398f
+Phase 3.4 Pipeline Register Optimization | Checksum: 1a22f73c2
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1116.828 ; gain = 0.000
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:15 . Memory (MB): peak = 1135.820 ; gain = 0.000
 
 Phase 3.5 Small Shape Detail Placement
-Phase 3.5 Small Shape Detail Placement | Checksum: 14af71f30
+Phase 3.5 Small Shape Detail Placement | Checksum: 2005b3596
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1116.828 ; gain = 0.000
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:20 . Memory (MB): peak = 1135.820 ; gain = 0.000
 
 Phase 3.6 Re-assign LUT pins
-Phase 3.6 Re-assign LUT pins | Checksum: 14af71f30
+Phase 3.6 Re-assign LUT pins | Checksum: 2005b3596
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1116.828 ; gain = 0.000
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:21 . Memory (MB): peak = 1135.820 ; gain = 0.000
 
 Phase 3.7 Pipeline Register Optimization
-Phase 3.7 Pipeline Register Optimization | Checksum: 14af71f30
+Phase 3.7 Pipeline Register Optimization | Checksum: 1d7b03441
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1116.828 ; gain = 0.000
-Phase 3 Detail Placement | Checksum: 14af71f30
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:21 . Memory (MB): peak = 1135.820 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 1d7b03441
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1116.828 ; gain = 0.000
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:21 . Memory (MB): peak = 1135.820 ; gain = 0.000
 
 Phase 4 Post Placement Optimization and Clean-Up
 
 Phase 4.1 Post Commit Optimization
-Phase 4.1 Post Commit Optimization | Checksum: 14af71f30
+Phase 4.1 Post Commit Optimization | Checksum: 1d7b03441
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1116.828 ; gain = 0.000
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:21 . Memory (MB): peak = 1135.820 ; gain = 0.000
 
 Phase 4.2 Post Placement Cleanup
-Phase 4.2 Post Placement Cleanup | Checksum: 14af71f30
+Phase 4.2 Post Placement Cleanup | Checksum: 1d7b03441
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1116.828 ; gain = 0.000
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:21 . Memory (MB): peak = 1135.820 ; gain = 0.000
 
 Phase 4.3 Placer Reporting
-Phase 4.3 Placer Reporting | Checksum: 14af71f30
+Phase 4.3 Placer Reporting | Checksum: 1d7b03441
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1116.828 ; gain = 0.000
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:21 . Memory (MB): peak = 1135.820 ; gain = 0.000
 
 Phase 4.4 Final Placement Cleanup
-Phase 4.4 Final Placement Cleanup | Checksum: 17528ba93
+Phase 4.4 Final Placement Cleanup | Checksum: 1c1fd4f16
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1116.828 ; gain = 0.000
-Phase 4 Post Placement Optimization and Clean-Up | Checksum: 17528ba93
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:22 . Memory (MB): peak = 1135.820 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1c1fd4f16
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1116.828 ; gain = 0.000
-Ending Placer Task | Checksum: e98a873c
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:22 . Memory (MB): peak = 1135.820 ; gain = 0.000
+Ending Placer Task | Checksum: 19233d91a
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1116.828 ; gain = 0.000
-36 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:22 . Memory (MB): peak = 1135.820 ; gain = 0.000
+36 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
 place_design completed successfully
+place_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:24 . Memory (MB): peak = 1135.820 ; gain = 0.000
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.106 . Memory (MB): peak = 1116.828 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.runs/impl_1/top_placed.dcp' has been generated.
-report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.056 . Memory (MB): peak = 1116.828 ; gain = 0.000
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 1116.828 ; gain = 0.000
-report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1116.828 ; gain = 0.000
+Write XDEF Complete: Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1135.820 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/College/Thesis/AES_2018/aes_enc_only_mixcol/aes_enc_only.runs/impl_1/top_placed.dcp' has been generated.
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.061 . Memory (MB): peak = 1135.820 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.200 . Memory (MB): peak = 1135.820 ; gain = 0.000
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 1135.820 ; gain = 0.000
 Command: route_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t-csg324'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t-csg324'
@@ -247,67 +249,68 @@ INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more in
 
 Starting Routing Task
 INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
-Checksum: PlaceDB: 524f66f1 ConstDB: 0 ShapeSum: 973b204b RouteDB: 0
+Checksum: PlaceDB: b827be26 ConstDB: 0 ShapeSum: da0c1af4 RouteDB: 0
 
 Phase 1 Build RT Design
-Phase 1 Build RT Design | Checksum: 1212a2625
+Phase 1 Build RT Design | Checksum: 1eb1471e3
 
-Time (s): cpu = 00:00:41 ; elapsed = 00:00:37 . Memory (MB): peak = 1249.730 ; gain = 132.902
+Time (s): cpu = 00:00:48 ; elapsed = 00:00:45 . Memory (MB): peak = 1287.840 ; gain = 152.020
 
 Phase 2 Router Initialization
 INFO: [Route 35-64] No timing constraints were detected. The router will operate in resource-optimization mode.
 
 Phase 2.1 Fix Topology Constraints
-Phase 2.1 Fix Topology Constraints | Checksum: 1212a2625
+Phase 2.1 Fix Topology Constraints | Checksum: 1eb1471e3
 
-Time (s): cpu = 00:00:41 ; elapsed = 00:00:37 . Memory (MB): peak = 1255.203 ; gain = 138.375
+Time (s): cpu = 00:00:48 ; elapsed = 00:00:45 . Memory (MB): peak = 1295.082 ; gain = 159.262
 
 Phase 2.2 Pre Route Cleanup
-Phase 2.2 Pre Route Cleanup | Checksum: 1212a2625
+Phase 2.2 Pre Route Cleanup | Checksum: 1eb1471e3
 
-Time (s): cpu = 00:00:41 ; elapsed = 00:00:37 . Memory (MB): peak = 1255.203 ; gain = 138.375
+Time (s): cpu = 00:00:48 ; elapsed = 00:00:45 . Memory (MB): peak = 1295.082 ; gain = 159.262
  Number of Nodes with overlaps = 0
-Phase 2 Router Initialization | Checksum: 19fe05d9a
+Phase 2 Router Initialization | Checksum: c582431f
 
-Time (s): cpu = 00:00:42 ; elapsed = 00:00:38 . Memory (MB): peak = 1263.668 ; gain = 146.840
+Time (s): cpu = 00:00:51 ; elapsed = 00:00:48 . Memory (MB): peak = 1324.906 ; gain = 189.086
 
 Phase 3 Initial Routing
-Phase 3 Initial Routing | Checksum: 113785085
+Phase 3 Initial Routing | Checksum: 1a3031860
 
-Time (s): cpu = 00:00:42 ; elapsed = 00:00:38 . Memory (MB): peak = 1263.668 ; gain = 146.840
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:49 . Memory (MB): peak = 1324.906 ; gain = 189.086
 
 Phase 4 Rip-up And Reroute
 
 Phase 4.1 Global Iteration 0
- Number of Nodes with overlaps = 50
+ Number of Nodes with overlaps = 1695
+ Number of Nodes with overlaps = 146
  Number of Nodes with overlaps = 0
-Phase 4.1 Global Iteration 0 | Checksum: 18efb9dd7
+Phase 4.1 Global Iteration 0 | Checksum: 1692ee381
 
-Time (s): cpu = 00:00:42 ; elapsed = 00:00:38 . Memory (MB): peak = 1263.668 ; gain = 146.840
-Phase 4 Rip-up And Reroute | Checksum: 18efb9dd7
+Time (s): cpu = 00:00:56 ; elapsed = 00:00:51 . Memory (MB): peak = 1324.906 ; gain = 189.086
+Phase 4 Rip-up And Reroute | Checksum: 1692ee381
 
-Time (s): cpu = 00:00:42 ; elapsed = 00:00:38 . Memory (MB): peak = 1263.668 ; gain = 146.840
+Time (s): cpu = 00:00:56 ; elapsed = 00:00:51 . Memory (MB): peak = 1324.906 ; gain = 189.086
 
 Phase 5 Delay and Skew Optimization
-Phase 5 Delay and Skew Optimization | Checksum: 18efb9dd7
+Phase 5 Delay and Skew Optimization | Checksum: 1692ee381
 
-Time (s): cpu = 00:00:42 ; elapsed = 00:00:38 . Memory (MB): peak = 1263.668 ; gain = 146.840
+Time (s): cpu = 00:00:56 ; elapsed = 00:00:51 . Memory (MB): peak = 1324.906 ; gain = 189.086
 
 Phase 6 Post Hold Fix
 
 Phase 6.1 Hold Fix Iter
-Phase 6.1 Hold Fix Iter | Checksum: 18efb9dd7
+Phase 6.1 Hold Fix Iter | Checksum: 1692ee381
 
-Time (s): cpu = 00:00:42 ; elapsed = 00:00:38 . Memory (MB): peak = 1263.668 ; gain = 146.840
-Phase 6 Post Hold Fix | Checksum: 18efb9dd7
+Time (s): cpu = 00:00:56 ; elapsed = 00:00:51 . Memory (MB): peak = 1324.906 ; gain = 189.086
+Phase 6 Post Hold Fix | Checksum: 1692ee381
 
-Time (s): cpu = 00:00:42 ; elapsed = 00:00:38 . Memory (MB): peak = 1263.668 ; gain = 146.840
+Time (s): cpu = 00:00:56 ; elapsed = 00:00:51 . Memory (MB): peak = 1324.906 ; gain = 189.086
 
 Phase 7 Route finalize
 
 Router Utilization Summary
-  Global Vertical Routing Utilization    = 0.0426078 %
-  Global Horizontal Routing Utilization  = 0.0458937 %
+  Global Vertical Routing Utilization    = 0.851808 %
+  Global Horizontal Routing Utilization  = 1.19977 %
   Routable Net Status*
   *Does not include unroutable nets such as driverless and loadless.
   Run report_route_status for detailed report.
@@ -317,47 +320,47 @@ Router Utilization Summary
   Number of Node Overlaps             = 0
 
 Congestion Report
-North Dir 1x1 Area, Max Cong = 18.018%, No Congested Regions.
-South Dir 1x1 Area, Max Cong = 30.6306%, No Congested Regions.
-East Dir 1x1 Area, Max Cong = 26.4706%, No Congested Regions.
-West Dir 1x1 Area, Max Cong = 29.4118%, No Congested Regions.
-Phase 7 Route finalize | Checksum: 18efb9dd7
+North Dir 1x1 Area, Max Cong = 31.5315%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 29.7297%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 44.1176%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 39.7059%, No Congested Regions.
+Phase 7 Route finalize | Checksum: 1692ee381
 
-Time (s): cpu = 00:00:42 ; elapsed = 00:00:38 . Memory (MB): peak = 1263.668 ; gain = 146.840
+Time (s): cpu = 00:00:57 ; elapsed = 00:00:51 . Memory (MB): peak = 1324.906 ; gain = 189.086
 
 Phase 8 Verifying routed nets
 
  Verification completed successfully
-Phase 8 Verifying routed nets | Checksum: 18efb9dd7
+Phase 8 Verifying routed nets | Checksum: 1692ee381
 
-Time (s): cpu = 00:00:42 ; elapsed = 00:00:38 . Memory (MB): peak = 1263.668 ; gain = 146.840
+Time (s): cpu = 00:00:57 ; elapsed = 00:00:51 . Memory (MB): peak = 1324.906 ; gain = 189.086
 
 Phase 9 Depositing Routes
-Phase 9 Depositing Routes | Checksum: 1640a3ab1
+Phase 9 Depositing Routes | Checksum: e6f8b984
 
-Time (s): cpu = 00:00:42 ; elapsed = 00:00:38 . Memory (MB): peak = 1263.668 ; gain = 146.840
+Time (s): cpu = 00:00:58 ; elapsed = 00:00:52 . Memory (MB): peak = 1324.906 ; gain = 189.086
 INFO: [Route 35-16] Router Completed Successfully
 
-Time (s): cpu = 00:00:42 ; elapsed = 00:00:38 . Memory (MB): peak = 1263.668 ; gain = 146.840
+Time (s): cpu = 00:00:58 ; elapsed = 00:00:52 . Memory (MB): peak = 1324.906 ; gain = 189.086
 
 Routing Is Done.
-44 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+44 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
 route_design completed successfully
-route_design: Time (s): cpu = 00:00:44 ; elapsed = 00:00:39 . Memory (MB): peak = 1263.668 ; gain = 146.840
+route_design: Time (s): cpu = 00:01:02 ; elapsed = 00:00:54 . Memory (MB): peak = 1324.906 ; gain = 189.086
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.118 . Memory (MB): peak = 1263.668 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.runs/impl_1/top_routed.dcp' has been generated.
+Write XDEF Complete: Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1324.906 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/College/Thesis/AES_2018/aes_enc_only_mixcol/aes_enc_only.runs/impl_1/top_routed.dcp' has been generated.
 Command: report_drc -file top_drc_routed.rpt -pb top_drc_routed.pb -rpx top_drc_routed.rpx
 INFO: [DRC 23-27] Running DRC with 2 threads
-INFO: [Coretcl 2-168] The results of DRC are in file C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.runs/impl_1/top_drc_routed.rpt.
+INFO: [Coretcl 2-168] The results of DRC are in file C:/College/Thesis/AES_2018/aes_enc_only_mixcol/aes_enc_only.runs/impl_1/top_drc_routed.rpt.
 report_drc completed successfully
 Command: report_methodology -file top_methodology_drc_routed.rpt -rpx top_methodology_drc_routed.rpx
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 INFO: [DRC 23-133] Running Methodology with 2 threads
-INFO: [Coretcl 2-1520] The results of Report Methodology are in file C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.runs/impl_1/top_methodology_drc_routed.rpt.
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file C:/College/Thesis/AES_2018/aes_enc_only_mixcol/aes_enc_only.runs/impl_1/top_methodology_drc_routed.rpt.
 report_methodology completed successfully
 Command: report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
 WARNING: [Power 33-232] No user defined clocks were found in the design!
@@ -366,7 +369,7 @@ INFO: [Timing 38-35] Done setting XDC timing constraints.
 Running Vector-less Activity Propagation...
 
 Finished Running Vector-less Activity Propagation
-51 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+51 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
 report_power completed successfully
 INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
 INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
@@ -386,10 +389,42 @@ WARNING: [DRC CFGBVS-1] Missing CFGBVS and CONFIG_VOLTAGE Design Properties: Nei
  #where value2 is the voltage provided to configuration bank 0
 
 Refer to the device configuration user guide for more information.
+WARNING: [DRC PDRC-153] Gated clock check: Net AES1/cipher_reg[127]_i_1_n_0 is a gated clock net sourced by a combinational pin AES1/cipher_reg[127]_i_1/O, cell AES1/cipher_reg[127]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net AES1/d11 is a gated clock net sourced by a combinational pin AES1/d11_reg[8][7]_i_2/O, cell AES1/d11_reg[8][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net AES1/d12 is a gated clock net sourced by a combinational pin AES1/d12_reg[12][7]_i_2/O, cell AES1/d12_reg[12][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net AES1/d13 is a gated clock net sourced by a combinational pin AES1/d13_reg[15][7]_i_1/O, cell AES1/d13_reg[15][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net AES1/d5 is a gated clock net sourced by a combinational pin AES1/d5_reg[0][4]_i_1/O, cell AES1/d5_reg[0][4]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net AES1/d7 is a gated clock net sourced by a combinational pin AES1/d7_reg[8][7]_i_2/O, cell AES1/d7_reg[8][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net AES1/d8 is a gated clock net sourced by a combinational pin AES1/d8_reg[4][7]_i_2/O, cell AES1/d8_reg[4][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net AES1/d9 is a gated clock net sourced by a combinational pin AES1/d9_reg[0][7]_i_2/O, cell AES1/d9_reg[0][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 WARNING: [DRC PDRC-153] Gated clock check: Net AES1/ledDone_reg_i_1_n_0 is a gated clock net sourced by a combinational pin AES1/ledDone_reg_i_1/O, cell AES1/ledDone_reg_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 WARNING: [DRC PDRC-153] Gated clock check: Net AES1/next_state_reg[6]_i_2_n_0 is a gated clock net sourced by a combinational pin AES1/next_state_reg[6]_i_2/O, cell AES1/next_state_reg[6]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net AES1/tempRow10 is a gated clock net sourced by a combinational pin AES1/tempRow10_reg[3][0]_i_1/O, cell AES1/tempRow10_reg[3][0]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net AES1/tempRow12 is a gated clock net sourced by a combinational pin AES1/tempRow12_reg[11][0]_i_1/O, cell AES1/tempRow12_reg[11][0]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net AES1/tempRow13 is a gated clock net sourced by a combinational pin AES1/tempRow13_reg[15][7]_i_1/O, cell AES1/tempRow13_reg[15][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net AES1/tempRow6 is a gated clock net sourced by a combinational pin AES1/tempRow6_reg[3][0]_i_1/O, cell AES1/tempRow6_reg[3][0]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net AES1/tempRow8 is a gated clock net sourced by a combinational pin AES1/tempRow8_reg[11][0]_i_1/O, cell AES1/tempRow8_reg[11][0]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net AES1/tempRow9 is a gated clock net sourced by a combinational pin AES1/tempRow9_reg[7][0]_i_1/O, cell AES1/tempRow9_reg[7][0]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net AES1/tempSbox10 is a gated clock net sourced by a combinational pin AES1/tempSbox10_reg[5][7]_i_2/O, cell AES1/tempSbox10_reg[5][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net AES1/tempSbox11 is a gated clock net sourced by a combinational pin AES1/tempSbox11_reg[1][7]_i_2/O, cell AES1/tempSbox11_reg[1][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net AES1/tempSbox13 is a gated clock net sourced by a combinational pin AES1/tempSbox13_reg[11][7]_i_2/O, cell AES1/tempSbox13_reg[11][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net AES1/tempSbox6 is a gated clock net sourced by a combinational pin AES1/tempSbox6_reg[12][7]_i_2/O, cell AES1/tempSbox6_reg[12][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net AES1/tempSbox7 is a gated clock net sourced by a combinational pin AES1/tempSbox7_reg[1][7]_i_2/O, cell AES1/tempSbox7_reg[1][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net AES1/tempSbox9 is a gated clock net sourced by a combinational pin AES1/tempSbox9_reg[9][7]_i_2/O, cell AES1/tempSbox9_reg[9][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net AES1/tempStart11 is a gated clock net sourced by a combinational pin AES1/tempStart11_reg[2][29]_i_1/O, cell AES1/tempStart11_reg[2][29]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net AES1/tempStart12 is a gated clock net sourced by a combinational pin AES1/tempStart12_reg[3][29]_i_1/O, cell AES1/tempStart12_reg[3][29]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net AES1/tempStart6 is a gated clock net sourced by a combinational pin AES1/tempStart6_reg[1][20]_i_1/O, cell AES1/tempStart6_reg[1][20]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net AES1/tempStart7 is a gated clock net sourced by a combinational pin AES1/tempStart7_reg[2][29]_i_2/O, cell AES1/tempStart7_reg[2][29]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net AES1/tempStart8 is a gated clock net sourced by a combinational pin AES1/tempStart8_reg[1][29]_i_1/O, cell AES1/tempStart8_reg[1][29]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net AES1/w11 is a gated clock net sourced by a combinational pin AES1/w11_reg[0][31]_i_1/O, cell AES1/w11_reg[0][31]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net AES1/w12 is a gated clock net sourced by a combinational pin AES1/w12_reg[3][31]_i_1/O, cell AES1/w12_reg[3][31]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net AES1/w13 is a gated clock net sourced by a combinational pin AES1/w13_reg[2][31]_i_1/O, cell AES1/w13_reg[2][31]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net AES1/w6 is a gated clock net sourced by a combinational pin AES1/w6_reg[0][28]_i_1/O, cell AES1/w6_reg[0][28]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net AES1/w7 is a gated clock net sourced by a combinational pin AES1/w7_reg[0][31]_i_1/O, cell AES1/w7_reg[0][31]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net AES1/w8 is a gated clock net sourced by a combinational pin AES1/w8_reg[3][31]_i_1/O, cell AES1/w8_reg[3][31]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net AES1/w9 is a gated clock net sourced by a combinational pin AES1/w9_reg[2][31]_i_1/O, cell AES1/w9_reg[2][31]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 report_drc (run_mandatory_drcs) completed successfully
-INFO: [Vivado 12-3199] DRC finished with 0 Errors, 3 Warnings
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 35 Warnings
 INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
 INFO: [Project 1-821] Please set project.enableDesignId to be 'true'.
 INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
@@ -402,8 +437,8 @@ Creating bitstream...
 Writing bitstream ./top.bit...
 INFO: [Vivado 12-1842] Bitgen Completed Successfully.
 INFO: [Project 1-120] WebTalk data collection is mandatory when using a WebPACK part without a full Vivado license. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
-INFO: [Common 17-186] 'C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Wed May 16 20:41:49 2018. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2017.1/doc/webtalk_introduction.html.
-62 Infos, 6 Warnings, 0 Critical Warnings and 0 Errors encountered.
+INFO: [Common 17-186] 'C:/College/Thesis/AES_2018/aes_enc_only_mixcol/aes_enc_only.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Tue Sep  4 00:07:16 2018. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2017.1/doc/webtalk_introduction.html.
+62 Infos, 39 Warnings, 0 Critical Warnings and 0 Errors encountered.
 write_bitstream completed successfully
-write_bitstream: Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1706.789 ; gain = 410.434
-INFO: [Common 17-206] Exiting Vivado at Wed May 16 20:41:49 2018...
+write_bitstream: Time (s): cpu = 00:00:33 ; elapsed = 00:00:28 . Memory (MB): peak = 1820.133 ; gain = 452.668
+INFO: [Common 17-206] Exiting Vivado at Tue Sep  4 00:07:16 2018...

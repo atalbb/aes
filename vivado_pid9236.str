@@ -1,0 +1,808 @@
+/*
+
+Vivado v2017.1 (64-bit)
+SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+
+Process ID: 9236
+License: Customer
+
+Current time: 	9/3/18 10:34:11 PM EDT
+Time zone: 	Eastern Standard Time (America/New_York)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1536x864
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 119 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Xilinx/Vivado/2017.1/tps/win64/jre
+JVM executable location: 	C:/Xilinx/Vivado/2017.1/tps/win64/jre/bin/java.exe
+Java library paths: C:/Xilinx/Vivado/2017.1/bin/unwrapped/win64.o;C:/WINDOWS/Sun/Java/bin;C:/WINDOWS/system32;C:/WINDOWS;C:/Xilinx/Vivado/2017.1/bin;C:/Xilinx/Vivado/2017.1/lib/win64.o;C:/Xilinx/Vivado/2017.1/tps/win64/jre/bin/server;C:/Xilinx/Vivado/2017.1/tps/win64/jre/bin;C:/Xilinx/SDK/2017.1/bin;C:/Xilinx/Vivado/2017.1/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2017.1/ids_lite/ISE/lib/nt64;C:/Xilinx/Vivado_HLS/2017.1/bin;C:/WINDOWS/system32;C:/WINDOWS;C:/WINDOWS/System32/Wbem;C:/WINDOWS/System32/WindowsPowerShell/v1.0/;C:/Program Files/Git/cmd;C:/WINDOWS/System32/OpenSSH/;C:/Users/ATAL/AppData/Local/Microsoft/WindowsApps;;C:/Xilinx/Vivado/2017.1/tps/mingw/6.2.0/win64.o/nt/bin;C:/Xilinx/Vivado/2017.1/tps/mingw/6.2.0/win64.o/nt/libexec/gcc/x86_64-w64-mingw32/6.2.0;.
+
+User name: 	ATAL
+User home directory: C:/Users/ATAL
+User working directory: C:/College/Thesis/AES_2018/aes_enc_only_mixcol
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2017.1
+RDI_DATADIR: C:/Xilinx/Vivado/2017.1/data
+RDI_BINDIR: C:/Xilinx/Vivado/2017.1/bin
+
+User preferences location: C:/Users/ATAL/AppData/Roaming/Xilinx/Vivado
+Vivado preferences directory: C:/Users/ATAL/AppData/Roaming/Xilinx/Vivado/2017.1/vivado.xml
+Vivado layouts directory: C:/Users/ATAL/AppData/Roaming/Xilinx/Vivado/2017.1/layouts
+PlanAhead jar location: 	C:/Xilinx/Vivado/2017.1/lib/classes/planAhead.jar
+Vivado Look & Feel: 	[Synthetica - the extended Synth Look and Feel. - ui.g.i.H]
+Engine tmp dir: 	C:/College/Thesis/AES_2018/aes_enc_only_mixcol/.Xil/Vivado-9236-DESKTOP-GJPCRJL
+
+GUI allocated memory:	177 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 497 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 57 MB (+57703kb) [00:00:08]
+// [Engine Memory]: 427 MB (+296008kb) [00:00:08]
+// TclEventType: PROJECT_OPEN_DIALOG
+// bs:g (cg:JFrame):  Open Project : addNotify
+// Opening Vivado Project: C:\College\Thesis\AES_2018\aes_enc_only_mixcol\aes_enc_only.xpr. Version: Vivado v2017.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/College/Thesis/AES_2018/aes_enc_only_mixcol/aes_enc_only.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/College/Thesis/AES_2018/aes_enc_only_mixcol/aes_enc_only.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/College/Thesis/AES_2018/aes_enc_only' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 68 MB (+7569kb) [00:00:12]
+// [Engine Memory]: 515 MB (+70386kb) [00:00:12]
+// [Engine Memory]: 551 MB (+9988kb) [00:00:14]
+// [GUI Memory]: 76 MB (+5764kb) [00:00:15]
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.1/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 565 MB. GUI used memory: 41 MB. Current time: 9/3/18 10:34:17 PM EDT
+// Tcl Message: open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:08 . Memory (MB): peak = 752.902 ; gain = 72.855 
+// Project name: aes_enc_only; location: C:/College/Thesis/AES_2018/aes_enc_only_mixcol; part: xc7a100tcsg324-1
+dismissDialog("Open Project"); // bs:g (cg:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 147 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 1); // B:i (D:JPanel, cg:JFrame)
+// PAPropertyPanels.initPanels (aes_enc_core.v) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), AES1 : aes_enc_core (aes_enc_core.v)]", 2, false); // B:i (D:JPanel, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), AES1 : aes_enc_core (aes_enc_core.v)]", 2, false, false, false, false, false, true); // B:i (D:JPanel, cg:JFrame) - Double Click
+// [Engine Memory]: 578 MB (+276kb) [00:02:48]
+// Elapsed time: 70 seconds
+selectCodeEditor("aes_enc_core.v", 767, 156); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("aes_enc_core.v", 91, 233); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "aes_enc_core.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 15 seconds
+selectCodeEditor("aes_enc_core.v", 288, 245); // bI:J (JPanel:JComponent, cg:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 590 MB. GUI used memory: 43 MB. Current time: 9/3/18 10:38:28 PM EDT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 14 seconds
+selectCodeEditor("aes_enc_core.v", 102, 83); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("aes_enc_core.v", 102, 83, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+// [GUI Memory]: 80 MB (+136kb) [00:04:57]
+// [GUI Memory]: 84 MB (+81kb) [00:06:01]
+// Elapsed time: 161 seconds
+selectCodeEditor("aes_enc_core.v", 155, 74); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("aes_enc_core.v", 164, 205); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 10 seconds
+selectCodeEditor("aes_enc_core.v", 273, 200); // bI:J (JPanel:JComponent, cg:JFrame)
+// [GUI Memory]: 94 MB (+5522kb) [00:07:42]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 36 seconds
+selectCodeEditor("aes_enc_core.v", 740, 246); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 17 seconds
+typeControlKey(null, null, 'z');
+// Elapsed time: 10 seconds
+selectCodeEditor("aes_enc_core.v", 742, 156); // bI:J (JPanel:JComponent, cg:JFrame)
+// [GUI Memory]: 99 MB (+63kb) [00:09:32]
+// Elapsed time: 61 seconds
+selectCodeEditor("aes_enc_core.v", 386, 216); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "aes_enc_core.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("aes_enc_core.v", 106, 147); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "aes_enc_core.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("aes_enc_core.v", 26, 26); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("aes_enc_core.v", 381, 200); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("aes_enc_core.v", 389, 264); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "aes_enc_core.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 177 seconds
+selectCodeEditor("aes_enc_core.v", 91, 128); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("aes_enc_core.v", 91, 128, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+// Elapsed time: 12 seconds
+selectCodeEditor("aes_enc_core.v", 72, 64); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("aes_enc_core.v", 72, 64, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+typeControlKey((HResource) null, "aes_enc_core.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 46 seconds
+selectCodeEditor("aes_enc_core.v", 79, 64); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("aes_enc_core.v", 79, 64, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+typeControlKey((HResource) null, "aes_enc_core.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 70 seconds
+selectCodeEditor("aes_enc_core.v", 768, 213); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 267 seconds
+selectCodeEditor("aes_enc_core.v", 398, 248); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "aes_enc_core.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("aes_enc_core.v", 2, 59); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 73 seconds
+selectCodeEditor("aes_enc_core.v", 28, 25); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("aes_enc_core.v", 275, 259); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("aes_enc_core.v", 72, 158); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 16 seconds
+selectCodeEditor("aes_enc_core.v", 41, 192); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 11 seconds
+selectCodeEditor("aes_enc_core.v", 45, 197); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("aes_enc_core.v", 45, 197, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+typeControlKey((HResource) null, "aes_enc_core.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 19 seconds
+selectCodeEditor("aes_enc_core.v", 161, 265); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("aes_enc_core.v", 162, 265, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+typeControlKey((HResource) null, "aes_enc_core.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("aes_enc_core.v", 409, 160); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "aes_enc_core.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "aes_enc_core.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u:M (JViewport:JComponent, cg:JFrame)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis]", 3); // u:M (JViewport:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bs:g (cg:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+dismissDialog("Resetting Runs"); // bs:g (cg:JFrame)
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// bs:g (cg:JFrame):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// [Engine Memory]: 632 MB (+25888kb) [00:22:42]
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Mon Sep  3 22:56:43 2018] Launched synth_1... Run output will be captured here: C:/College/Thesis/AES_2018/aes_enc_only_mixcol/aes_enc_only.runs/synth_1/runme.log [Mon Sep  3 22:56:43 2018] Launched impl_1... Run output will be captured here: C:/College/Thesis/AES_2018/aes_enc_only_mixcol/aes_enc_only.runs/impl_1/runme.log 
+// HMemoryUtils.trashcanNow. Engine heap size: 632 MB. GUI used memory: 43 MB. Current time: 9/3/18 10:56:43 PM EDT
+dismissDialog("Generate Bitstream"); // bs:g (cg:JFrame)
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah:x (cg:JFrame): Bitstream Generation Completed: addNotify
+// Elapsed time: 232 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ah:x)
+dismissDialog("Bitstream Generation Completed"); // ah:x (cg:JFrame)
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 18); // u:M (JViewport:JComponent, cg:JFrame)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 18); // u:M (JViewport:JComponent, cg:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 19, false); // u:M (JViewport:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenu(PAResourceOtoP.ProgramDebugTab_OPEN_RECENTLY_OPENED_TARGET, "Recent Targets"); // Z:JMenu (ai:JPopupMenu, Popup:JWindow)
+selectMenu(PAResourceOtoP.ProgramDebugTab_OPEN_RECENTLY_OPENED_TARGET, "Recent Targets"); // Z:JMenu (ai:JPopupMenu, Popup:JWindow)
+selectMenuItem(PAResourceCommand.PACommandNames_OPEN_TARGET_WIZARD, "Open New Target..."); // ac:JMenuItem (ai:JPopupMenu, Popup:JWindow)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+// Run Command: PAResourceCommand.PACommandNames_OPEN_TARGET_WIZARD
+// aM:g (cg:JFrame): Open New Hardware Target: addNotify
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, aM:g)
+// bs:g (aM:g):  Open Server : addNotify
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// bs:g (aM:g):  Open Target : addNotify
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+dismissDialog("Open Server"); // bs:g (aM:g)
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_TARGET_CLOSE
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, aM:g)
+// TclEventType: HW_SYSMON_DELETE
+dismissDialog("Open Target"); // bs:g (aM:g)
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, aM:g)
+// TclEventType: HW_OBJECT_DELETE
+// bs:g (aM:g):  Open Hardware Target : addNotify
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server -url localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210274592278A] 
+// TclEventType: HW_TARGET_CHANGE
+// Tcl Message: set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210274592278A] 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210274592278A 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/College/Thesis/AES_2018/aes_enc_only_mixcol/aes_enc_only.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// [Engine Memory]: 686 MB (+23113kb) [00:26:51]
+selectButton("FINISH", "Finish"); // JButton:AbstractButton (ButtonPanel:JPanel, aM:g)
+// 'H' command handler elapsed time: 8 seconds
+dismissDialog("Open Hardware Target"); // bs:g (aM:g)
+dismissDialog("Open New Hardware Target"); // aM:g (cg:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 691 MB. GUI used memory: 52 MB. Current time: 9/3/18 11:00:54 PM EDT
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 3000 ms.
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h:k (JPanel:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bz:aD (cg:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, bz:aD)
+// bs:g (cg:JFrame):  Program Device : addNotify
+dismissDialog("Program Device"); // bz:aD (cg:JFrame)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/College/Thesis/AES_2018/aes_enc_only_mixcol/aes_enc_only.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bs:g (cg:JFrame)
+// Elapsed time: 50 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k:JideButton (JPanel:JComponent, cg:JFrame)
+closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+// x:aN (cg:JFrame): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, x:aN)
+// TclEventType: HW_OBJECT_DELETE
+dismissDialog("Confirm Close"); // x:aN (cg:JFrame)
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_SESSION_CLOSE
+// Tcl Message: close_hw 
+// bs:g (cg:JFrame):  CLose Hardware Manager : addNotify
+dismissDialog("CLose Hardware Manager"); // bs:g (cg:JFrame)
+selectCodeEditor("aes_enc_core.v", 468, 286); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "aes_enc_core.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 1055 seconds
+selectCodeEditor("aes_enc_core.v", 461, 240); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "aes_enc_core.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 17, false); // u:M (JViewport:JComponent, cg:JFrame)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation]", 5); // u:M (JViewport:JComponent, cg:JFrame)
+// [GUI Memory]: 104 MB (+503kb) [00:45:44]
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bs:g (cg:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bs:g (cg:JFrame)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// bs:g (cg:JFrame):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Mon Sep  3 23:19:46 2018] Launched synth_1... Run output will be captured here: C:/College/Thesis/AES_2018/aes_enc_only_mixcol/aes_enc_only.runs/synth_1/runme.log [Mon Sep  3 23:19:46 2018] Launched impl_1... Run output will be captured here: C:/College/Thesis/AES_2018/aes_enc_only_mixcol/aes_enc_only.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bs:g (cg:JFrame)
+// Elapsed time: 13 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// Elapsed time: 105 seconds
+selectTab(PAResourceOtoP.ProjectSummaryUtilizationPanel_PROJECT_SUMMARY_UTILIZATION_PANEL_TABBED, PAResourceOtoP.ProjectSummaryUtilizationPanel_TABLE, "Table", 1); // f:i (C:JPanel, cg:JFrame)
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 24 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "aes_enc_core.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// TclEventType: RUN_COMPLETED
+// ah:x (cg:JFrame): Bitstream Generation Completed: addNotify
+// Elapsed time: 85 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ah:x)
+dismissDialog("Bitstream Generation Completed"); // ah:x (cg:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 19, false); // u:M (JViewport:JComponent, cg:JFrame)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug]", 6); // u:M (JViewport:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_OPEN_TARGET_WIZARD, "Open New Target..."); // ac:JMenuItem (ai:JPopupMenu, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+// Run Command: PAResourceCommand.PACommandNames_OPEN_TARGET_WIZARD
+// aM:g (cg:JFrame): Open New Hardware Target: addNotify
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, aM:g)
+// bs:g (aM:g):  Open Server : addNotify
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// bs:g (aM:g):  Open Target : addNotify
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+dismissDialog("Open Server"); // bs:g (aM:g)
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_TARGET_CLOSE
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, aM:g)
+// TclEventType: HW_SYSMON_DELETE
+dismissDialog("Open Target"); // bs:g (aM:g)
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, aM:g)
+// TclEventType: HW_OBJECT_DELETE
+// bs:g (aM:g):  Open Hardware Target : addNotify
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server -url localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210274592278A] 
+// TclEventType: HW_TARGET_CHANGE
+// Tcl Message: set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210274592278A] 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210274592278A 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/College/Thesis/AES_2018/aes_enc_only_mixcol/aes_enc_only.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+selectButton("FINISH", "Finish"); // JButton:AbstractButton (ButtonPanel:JPanel, aM:g)
+// 'H' command handler elapsed time: 9 seconds
+dismissDialog("Open Hardware Target"); // bs:g (aM:g)
+dismissDialog("Open New Hardware Target"); // aM:g (cg:JFrame)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h:k (JPanel:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bz:aD (cg:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, bz:aD)
+// bs:g (cg:JFrame):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bz:aD (cg:JFrame)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/College/Thesis/AES_2018/aes_enc_only_mixcol/aes_enc_only.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bs:g (cg:JFrame)
+// Elapsed time: 119 seconds
+selectCodeEditor("aes_enc_core.v", 169, 161); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("aes_enc_core.v", 33, 198); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("aes_enc_core.v", 164, 248); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("aes_enc_core.v", 42, 282); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("aes_enc_core.v", 163, 236); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("aes_enc_core.v", 33, 266); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("aes_enc_core.v", 33, 266, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("aes_enc_core.v", 156, 163); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("aes_enc_core.v", 156, 163, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("aes_enc_core.v", 28, 202); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("aes_enc_core.v", 28, 202, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("aes_enc_core.v", 152, 231); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("aes_enc_core.v", 152, 231, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("aes_enc_core.v", 34, 267); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("aes_enc_core.v", 34, 267, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("aes_enc_core.v", 161, 115); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("aes_enc_core.v", 161, 115, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("aes_enc_core.v", 30, 150); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("aes_enc_core.v", 30, 150, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("aes_enc_core.v", 158, 298); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("aes_enc_core.v", 158, 298, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("aes_enc_core.v", 32, 232); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("aes_enc_core.v", 32, 232, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("aes_enc_core.v", 152, 123); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("aes_enc_core.v", 152, 123, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("aes_enc_core.v", 37, 166); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("aes_enc_core.v", 37, 166, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("aes_enc_core.v", 153, 211); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("aes_enc_core.v", 153, 211, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("aes_enc_core.v", 29, 250); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("aes_enc_core.v", 29, 250, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("aes_enc_core.v", 149, 233); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("aes_enc_core.v", 149, 233, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("aes_enc_core.v", 157, 231); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("aes_enc_core.v", 157, 231, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("aes_enc_core.v", 36, 266); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("aes_enc_core.v", 36, 266, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 29 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 17, false); // u:M (JViewport:JComponent, cg:JFrame)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug]", 6); // u:M (JViewport:JComponent, cg:JFrame)
+// [GUI Memory]: 113 MB (+3348kb) [00:53:19]
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bs:g (cg:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+dismissDialog("Resetting Runs"); // bs:g (cg:JFrame)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Mon Sep  3 23:27:21 2018] Launched synth_1... Run output will be captured here: C:/College/Thesis/AES_2018/aes_enc_only_mixcol/aes_enc_only.runs/synth_1/runme.log [Mon Sep  3 23:27:21 2018] Launched impl_1... Run output will be captured here: C:/College/Thesis/AES_2018/aes_enc_only_mixcol/aes_enc_only.runs/impl_1/runme.log 
+// Elapsed time: 150 seconds
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aF:FrameContainer (ContainerContainer:JideSplitPane, cg:JFrame)
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+selectTab((HResource) null, (HResource) null, "Serial I/O Scans", 3); // aF:FrameContainer (ContainerContainer:JideSplitPane, cg:JFrame)
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aF:FrameContainer (ContainerContainer:JideSplitPane, cg:JFrame)
+// TclEventType: RUN_STEP_COMPLETED
+// HMemoryUtils.trashcanNow. Engine heap size: 696 MB. GUI used memory: 54 MB. Current time: 9/3/18 11:30:54 PM EDT
+// TclEventType: RUN_COMPLETED
+// ah:x (cg:JFrame): Bitstream Generation Completed: addNotify
+// Elapsed time: 104 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ah:x)
+dismissDialog("Bitstream Generation Completed"); // ah:x (cg:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 20, false); // u:M (JViewport:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h:k (JPanel:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bz:aD (cg:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, bz:aD)
+// bs:g (cg:JFrame):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bz:aD (cg:JFrame)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/College/Thesis/AES_2018/aes_enc_only_mixcol/aes_enc_only.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bs:g (cg:JFrame)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h:k (JPanel:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bz:aD (cg:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, bz:aD)
+// bs:g (cg:JFrame):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bz:aD (cg:JFrame)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/College/Thesis/AES_2018/aes_enc_only_mixcol/aes_enc_only.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 4 seconds
+dismissDialog("Program Device"); // bs:g (cg:JFrame)
+// Elapsed time: 69 seconds
+selectCodeEditor("aes_enc_core.v", 582, 271); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "aes_enc_core.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "aes_enc_core.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "aes_enc_core.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "aes_enc_core.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "aes_enc_core.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 604 seconds
+selectCodeEditor("aes_enc_core.v", 552, 241); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "aes_enc_core.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 17, false); // u:M (JViewport:JComponent, cg:JFrame)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation]", 5); // u:M (JViewport:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bs:g (cg:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+dismissDialog("Resetting Runs"); // bs:g (cg:JFrame)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Mon Sep  3 23:43:32 2018] Launched synth_1... Run output will be captured here: C:/College/Thesis/AES_2018/aes_enc_only_mixcol/aes_enc_only.runs/synth_1/runme.log [Mon Sep  3 23:43:32 2018] Launched impl_1... Run output will be captured here: C:/College/Thesis/AES_2018/aes_enc_only_mixcol/aes_enc_only.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah:x (cg:JFrame): Bitstream Generation Completed: addNotify
+// Elapsed time: 331 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ah:x)
+dismissDialog("Bitstream Generation Completed"); // ah:x (cg:JFrame)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h:k (JPanel:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bz:aD (cg:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, bz:aD)
+// bs:g (cg:JFrame):  Program Device : addNotify
+dismissDialog("Program Device"); // bz:aD (cg:JFrame)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/College/Thesis/AES_2018/aes_enc_only_mixcol/aes_enc_only.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bs:g (cg:JFrame)
+// Elapsed time: 58 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k:JideButton (JPanel:JComponent, cg:JFrame)
+closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+// x:aN (cg:JFrame): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, x:aN)
+// TclEventType: HW_OBJECT_DELETE
+dismissDialog("Confirm Close"); // x:aN (cg:JFrame)
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_SESSION_CLOSE
+// Tcl Message: close_hw 
+// bs:g (cg:JFrame):  CLose Hardware Manager : addNotify
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+dismissDialog("CLose Hardware Manager"); // bs:g (cg:JFrame)
+selectTab(PAResourceOtoP.ProjectSummaryUtilizationPanel_PROJECT_SUMMARY_UTILIZATION_PANEL_TABBED, PAResourceOtoP.ProjectSummaryUtilizationPanel_TABLE, "Table", 1); // f:i (C:JPanel, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "aes_enc_core.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectCodeEditor("aes_enc_core.v", 603, 273); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "aes_enc_core.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 406 seconds
+selectCodeEditor("aes_enc_core.v", 462, 130); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "aes_enc_core.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 17, false); // u:M (JViewport:JComponent, cg:JFrame)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis]", 3); // u:M (JViewport:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bs:g (cg:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+dismissDialog("Resetting Runs"); // bs:g (cg:JFrame)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Mon Sep  3 23:57:28 2018] Launched synth_1... Run output will be captured here: C:/College/Thesis/AES_2018/aes_enc_only_mixcol/aes_enc_only.runs/synth_1/runme.log [Mon Sep  3 23:57:28 2018] Launched impl_1... Run output will be captured here: C:/College/Thesis/AES_2018/aes_enc_only_mixcol/aes_enc_only.runs/impl_1/runme.log 
+// Elapsed time: 19 seconds
+selectButton(PAResourceQtoS.SyntheticaStateMonitor_CANCEL, "Cancel"); // h:k (JPanel:JComponent, cg:JFrame)
+// bs:g (cg:JFrame):  Resetting Runs : addNotify
+selectButton("PAResourceQtoS.StateMonitor_OK_TO_CANCEL_YOUR_RUNNING_SYNTHESIS_Cancel Process", "Cancel Process"); // JButton:AbstractButton (JPanel:JComponent, G:JDialog)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bs:g (cg:JFrame)
+// Elapsed time: 14 seconds
+selectCodeEditor("aes_enc_core.v", 188, 145); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 11 seconds
+selectCodeEditor("aes_enc_core.v", 154, 196); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("aes_enc_core.v", 205, 41); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 11 seconds
+selectCodeEditor("aes_enc_core.v", 0, 265); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 21 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 17, false); // u:M (JViewport:JComponent, cg:JFrame)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis]", 3); // u:M (JViewport:JComponent, cg:JFrame)
+// [GUI Memory]: 119 MB (+493kb) [01:24:54]
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bs:g (cg:JFrame):  Resetting Runs : addNotify
+dismissDialog("Resetting Runs"); // bs:g (cg:JFrame)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Mon Sep  3 23:58:56 2018] Launched synth_1... Run output will be captured here: C:/College/Thesis/AES_2018/aes_enc_only_mixcol/aes_enc_only.runs/synth_1/runme.log [Mon Sep  3 23:58:56 2018] Launched impl_1... Run output will be captured here: C:/College/Thesis/AES_2018/aes_enc_only_mixcol/aes_enc_only.runs/impl_1/runme.log 
+// HMemoryUtils.trashcanNow. Engine heap size: 696 MB. GUI used memory: 52 MB. Current time: 9/4/18 12:00:54 AM EDT
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah:x (cg:JFrame): Bitstream Generation Completed: addNotify
+// Elapsed time: 515 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ah:x)
+dismissDialog("Bitstream Generation Completed"); // ah:x (cg:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 19, false); // u:M (JViewport:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenu(PAResourceOtoP.ProgramDebugTab_OPEN_RECENTLY_OPENED_TARGET, "Recent Targets"); // Z:JMenu (ai:JPopupMenu, Popup:JWindow)
+selectMenu(PAResourceOtoP.ProgramDebugTab_OPEN_RECENTLY_OPENED_TARGET, "Recent Targets"); // Z:JMenu (ai:JPopupMenu, Popup:JWindow)
+selectMenu(PAResourceOtoP.ProgramDebugTab_OPEN_RECENTLY_OPENED_TARGET, "Recent Targets"); // Z:JMenu (ai:JPopupMenu, Popup:JWindow)
+selectMenuItem(PAResourceCommand.PACommandNames_OPEN_TARGET_WIZARD, "Open New Target..."); // ac:JMenuItem (ai:JPopupMenu, Popup:JWindow)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+// Run Command: PAResourceCommand.PACommandNames_OPEN_TARGET_WIZARD
+// aM:g (cg:JFrame): Open New Hardware Target: addNotify
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, aM:g)
+// bs:g (aM:g):  Open Server : addNotify
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// bs:g (aM:g):  Open Target : addNotify
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+dismissDialog("Open Server"); // bs:g (aM:g)
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_TARGET_CLOSE
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, aM:g)
+// TclEventType: HW_SYSMON_DELETE
+dismissDialog("Open Target"); // bs:g (aM:g)
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, aM:g)
+// TclEventType: HW_OBJECT_DELETE
+// bs:g (aM:g):  Open Hardware Target : addNotify
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server -url localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210274592278A] 
+// TclEventType: HW_TARGET_CHANGE
+// Tcl Message: set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210274592278A] 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210274592278A 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/College/Thesis/AES_2018/aes_enc_only_mixcol/aes_enc_only.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+selectButton("FINISH", "Finish"); // JButton:AbstractButton (ButtonPanel:JPanel, aM:g)
+// 'H' command handler elapsed time: 10 seconds
+dismissDialog("Open Hardware Target"); // bs:g (aM:g)
+dismissDialog("Open New Hardware Target"); // aM:g (cg:JFrame)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h:k (JPanel:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bz:aD (cg:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, bz:aD)
+// bs:g (cg:JFrame):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bz:aD (cg:JFrame)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/College/Thesis/AES_2018/aes_enc_only_mixcol/aes_enc_only.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bs:g (cg:JFrame)

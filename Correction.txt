@@ -1,0 +1,66 @@
+round[12].m_col 74 27 fa e4 d8 a6 95 26 9c e8 3d 31 5b e0 39 2b
+round[12].k_sch 25 41 fe 71 9b f5 00 25 88 13 bb d5 5a 72 1c 0a
+round[13].start 51 66 04 95 43 53 95 03 14 fb 86 e4 01 92 25 21
+round[13].s_box d1 33 f2 2a 1a ed 2a 7b fa 0f 44 69 7c 4f 3f fd
+round[13].s_row d1 ed 44 fd 1a 0f 3f 2a fa 4f f2 7b 7c 33 2a 69
+round[13].m_col 2c 21 a8 20 30 6f 15 4a b7 12 c7 5e ee 0d a0 4f
+
+
+d[5] = tempRow[4]^ET[10]^ET[11]^tempRow[7];
+	   1a^ET[10]^ET[11]^2a
+	   
+if(l[10] == 0)begin ET[10] = 0;end
+else begin ET[10] = eTable[l[10]];end
+if(l[11] == 0)begin ET[11] = 0;end
+else begin ET[11] = eTable[l[11]];end
+
+if(LT[10] > 255)begin l[10] = LT[10] - 255;end
+else  begin l[10] = LT[10];end
+if(LT[11] > 255)begin l[11] = LT[11] - 255;end
+else  begin l[11] = LT[11];end
+
+if(tempRow[5] == 0)begin LT[9] = 0;LT[10] = 0;end
+else begin LT[9] = lTable[tempRow[5]] + lTable[3];LT[10] =  lTable[tempRow[5]] + lTable[2];end
+/* For b11 & b12*/
+if(tempRow[6] == 0)begin LT[11] = 0;LT[12] = 0;end
+else begin LT[11] = lTable[tempRow[6]] + lTable[3];LT[12] = lTable[tempRow[6]] + lTable[2]; end
+
+tempRow[5]= 0f, tempRow[6] = 3f
+LT[9] = lTable[0f] + lTable[3] = 03 + 01 = 04;
+LT[10] = lTable[0f] + lTable[2] = 03 + 19 = 1C;
+
+LT[11] = lTable[3f] + lTable[3] = 8e + 01 = 8f
+LT[12] = lTable[3f] + lTable[2] = 8e + 19 = A7
+
+
+
+d[6] = tempRow[4]^tempRow[5]^ET[12]^ET[13];
+
+if(l[12] == 0)begin ET[12] = 0;end
+else begin ET[12] = eTable[l[12]];end
+if(l[13] == 0)begin ET[13] = 0;end
+else begin ET[13] = eTable[l[13]];end
+
+if(LT[12] > 255)begin l[12] = LT[12] - 255;end
+else  begin l[12] = LT[12];end
+if(LT[13] > 255)begin l[13] = LT[13] - 255;end
+else  begin l[13] = LT[13];end
+
+
+if(tempRow[6] == 0)begin LT[11] = 0;LT[12] = 0;end
+else begin LT[11] = lTable[tempRow[6]] + lTable[3];LT[12] = lTable[tempRow[6]] + lTable[2]; end
+/* For b13 & b15 */
+if(tempRow[7] == 0)begin LT[13] = 0;LT[15] = 0;end
+else begin LT[13] = lTable[tempRow[7]] + lTable[3];LT[15] = lTable[tempRow[7]] + lTable[2];end
+
+LT[13] = lTable[tempRow[7]] + lTable[3];lTable[2a] + lTable[3] = a6+01 = a7
+LT[15] = lTable[tempRow[7]] + lTable[2];
+
+
+
+
+
+
+
+/* Correction */
+l[3f] = 8e

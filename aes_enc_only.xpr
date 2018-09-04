@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="20" Path="C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.xpr">
+<Project Version="7" Minor="20" Path="C:/College/Thesis/AES_2018/aes_enc_only_mixcol/aes_enc_only.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="0f5bd61fbb634e5bbf834367541f3d91"/>

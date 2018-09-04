@@ -2,10 +2,10 @@
 # Vivado v2017.1 (64-bit)
 # SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
 # IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
-# Start of session at: Wed May 16 00:40:22 2018
-# Process ID: 2080
+# Start of session at: Wed May 16 19:46:53 2018
+# Process ID: 7796
 # Current directory: C:/College/Thesis/AES_2018/aes_enc_only
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9884 C:\College\Thesis\AES_2018\aes_enc_only\aes_enc_only.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2040 C:\College\Thesis\AES_2018\aes_enc_only\aes_enc_only.xpr
 # Log file: C:/College/Thesis/AES_2018/aes_enc_only/vivado.log
 # Journal file: C:/College/Thesis/AES_2018/aes_enc_only\vivado.jou
 #-----------------------------------------------------------
@@ -16,24 +16,16 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.1/data/ip'.
-open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:06 . Memory (MB): peak = 777.398 ; gain = 109.230
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:06 . Memory (MB): peak = 761.063 ; gain = 90.809
 update_compile_order -fileset sources_1
 reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 2
-[Wed May 16 00:43:41 2018] Launched synth_1...
+[Wed May 16 19:56:44 2018] Launched synth_1...
 Run output will be captured here: C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.runs/synth_1/runme.log
-[Wed May 16 00:43:41 2018] Launched impl_1...
+[Wed May 16 19:56:45 2018] Launched impl_1...
 Run output will be captured here: C:/College/Thesis/AES_2018/aes_enc_only/aes_enc_only.runs/impl_1/runme.log
 open_hw
 INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
-INFO: [Labtools 27-2222] Launching hw_server...
-INFO: [Labtools 27-2221] Launch Output:
-
-****** Xilinx hw_server v2017.1
-  **** Build date : Apr 14 2017-19:11:07
-    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
-
-
 connect_hw_server -url localhost:3121
 INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
 current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210274592338A]
@@ -62,4 +54,4 @@ Resolution:
 2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
 For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
 exit
-INFO: [Common 17-206] Exiting Vivado at Wed May 16 02:06:28 2018...
+INFO: [Common 17-206] Exiting Vivado at Wed May 16 21:38:26 2018...

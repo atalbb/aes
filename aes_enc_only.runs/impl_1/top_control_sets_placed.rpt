@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.1 (win64) Build 1846317 Fri Apr 14 18:55:03 MDT 2017
-| Date         : Wed May 16 20:40:44 2018
+| Date         : Tue Sep  4 00:05:36 2018
 | Host         : DESKTOP-GJPCRJL running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
 | Design       : top
@@ -22,8 +22,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |    26 |
-| Unused register locations in slices containing registers |    43 |
+| Number of unique control sets                            |    70 |
+| Unused register locations in slices containing registers |    74 |
 +----------------------------------------------------------+-------+
 
 
@@ -33,59 +33,103 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |               8 |            3 |
-| No           | No                    | Yes                    |              25 |           10 |
+| No           | No                    | No                     |            5190 |         2137 |
+| No           | No                    | Yes                    |              32 |           13 |
 | No           | Yes                   | No                     |               0 |            0 |
-| Yes          | No                    | No                     |              28 |            7 |
+| Yes          | No                    | No                     |               0 |            0 |
 | Yes          | No                    | Yes                    |             136 |           48 |
-| Yes          | Yes                   | No                     |               0 |            0 |
+| Yes          | Yes                   | No                     |              24 |            8 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 3. Detailed Control Set Information
 -----------------------------------
 
-+---------------------------------+---------------------------+------------------------+------------------+----------------+
-|           Clock Signal          |       Enable Signal       |    Set/Reset Signal    | Slice Load Count | Bel Load Count |
-+---------------------------------+---------------------------+------------------------+------------------+----------------+
-|  AES1/ledDone_reg_i_1_n_0       |                           |                        |                1 |              1 |
-|  clk_IBUF_BUFG                  | U1/bit_count              | U1/tx_buff_reg[1][0]_0 |                1 |              4 |
-|  clk_IBUF_BUFG                  | U1/byte_count             | U1/tx_buff_reg[1][0]_0 |                4 |              6 |
-|  AES1/next_state_reg[6]_i_2_n_0 |                           |                        |                2 |              7 |
-|  clk_IBUF_BUFG                  | U1/tx_buff[0][6]_i_1_n_0  | U1/tx_buff_reg[1][0]_0 |                2 |              7 |
-|  clk_IBUF_BUFG                  | U1/tx_buff[12][6]_i_1_n_0 | U1/tx_buff_reg[1][0]_0 |                2 |              7 |
-|  clk_IBUF_BUFG                  | U1/tx_buff[11][6]_i_1_n_0 | U1/tx_buff_reg[1][0]_0 |                2 |              7 |
-|  clk_IBUF_BUFG                  | U1/tx_buff[10][6]_i_1_n_0 | U1/tx_buff_reg[1][0]_0 |                2 |              7 |
-|  clk_IBUF_BUFG                  | U1/tx_buff[16][6]_i_1_n_0 |                        |                1 |              7 |
-|  clk_IBUF_BUFG                  | U1/tx_buff[13][6]_i_1_n_0 | U1/tx_buff_reg[1][0]_0 |                1 |              7 |
-|  clk_IBUF_BUFG                  | U1/tx_buff[15][6]_i_1_n_0 | U1/tx_buff_reg[1][0]_0 |                3 |              7 |
-|  clk_IBUF_BUFG                  | U1/tx_buff[14][6]_i_1_n_0 | U1/tx_buff_reg[1][0]_0 |                4 |              7 |
-|  clk_IBUF_BUFG                  | U1/tx_buff[17][6]_i_1_n_0 |                        |                1 |              7 |
-|  clk_IBUF_BUFG                  | U1/tx_buff[18][6]_i_1_n_0 |                        |                2 |              7 |
-|  clk_IBUF_BUFG                  | U1/tx_buff[1][6]_i_1_n_0  | U1/tx_buff_reg[1][0]_0 |                1 |              7 |
-|  clk_IBUF_BUFG                  | U1/tx_buff[5][6]_i_1_n_0  | U1/tx_buff_reg[1][0]_0 |                2 |              7 |
-|  clk_IBUF_BUFG                  | U1/tx_buff[6][6]_i_1_n_0  | U1/tx_buff_reg[1][0]_0 |                1 |              7 |
-|  clk_IBUF_BUFG                  | U1/tx_buff[8][6]_i_1_n_0  | U1/tx_buff_reg[1][0]_0 |                3 |              7 |
-|  clk_IBUF_BUFG                  | U1/tx_buff[2][6]_i_1_n_0  | U1/tx_buff_reg[1][0]_0 |                2 |              7 |
-|  clk_IBUF_BUFG                  | U1/tx_buff[4][6]_i_1_n_0  | U1/tx_buff_reg[1][0]_0 |                1 |              7 |
-|  clk_IBUF_BUFG                  | U1/tx_buff[19][6]_i_1_n_0 |                        |                3 |              7 |
-|  clk_IBUF_BUFG                  | U1/tx_buff[7][6]_i_1_n_0  | U1/tx_buff_reg[1][0]_0 |                6 |              7 |
-|  clk_IBUF_BUFG                  | U1/tx_buff[3][6]_i_1_n_0  | U1/tx_buff_reg[1][0]_0 |                2 |              7 |
-|  clk_IBUF_BUFG                  | U1/tx_buff[9][6]_i_1_n_0  | U1/tx_buff_reg[1][0]_0 |                5 |              7 |
-|  clk_IBUF_BUFG                  | U1/p_3_in                 | U1/tx_buff_reg[1][0]_0 |                4 |             14 |
-|  clk_IBUF_BUFG                  |                           | U1/tx_buff_reg[1][0]_0 |               10 |             25 |
-+---------------------------------+---------------------------+------------------------+------------------+----------------+
++---------------------------------+---------------------------+---------------------------+------------------+----------------+
+|           Clock Signal          |       Enable Signal       |      Set/Reset Signal     | Slice Load Count | Bel Load Count |
++---------------------------------+---------------------------+---------------------------+------------------+----------------+
+|  AES1/ledDone_reg_i_1_n_0       |                           |                           |                1 |              1 |
+|  clk_IBUF_BUFG                  |                           |                           |                2 |              4 |
+|  clk_IBUF_BUFG                  | U1/bit_count              | U1/tx_buff_reg[1][0]_0    |                1 |              4 |
+|  clk_IBUF_BUFG                  | U1/tx_buff[18][5]_i_2_n_0 | U1/tx_buff[18][5]_i_1_n_0 |                2 |              6 |
+|  clk_IBUF_BUFG                  | U1/byte_count             | U1/tx_buff_reg[1][0]_0    |                2 |              6 |
+|  clk_IBUF_BUFG                  | U1/tx_buff[16][5]_i_2_n_0 | U1/tx_buff[16][5]_i_1_n_0 |                2 |              6 |
+|  clk_IBUF_BUFG                  | U1/tx_buff[19][5]_i_2_n_0 | U1/tx_buff[19][5]_i_1_n_0 |                2 |              6 |
+|  clk_IBUF_BUFG                  | U1/tx_buff[17][5]_i_2_n_0 | U1/tx_buff[17][5]_i_1_n_0 |                2 |              6 |
+|  clk_IBUF_BUFG                  | U1/tx_buff[9][6]_i_1_n_0  | U1/tx_buff_reg[1][0]_0    |                3 |              7 |
+|  clk_IBUF_BUFG                  | U1/tx_buff[8][6]_i_1_n_0  | U1/tx_buff_reg[1][0]_0    |                3 |              7 |
+|  clk_IBUF_BUFG                  | U1/tx_buff[7][6]_i_1_n_0  | U1/tx_buff_reg[1][0]_0    |                3 |              7 |
+|  clk_IBUF_BUFG                  | U1/tx_buff[11][6]_i_1_n_0 | U1/tx_buff_reg[1][0]_0    |                3 |              7 |
+|  clk_IBUF_BUFG                  | U1/tx_buff[10][6]_i_1_n_0 | U1/tx_buff_reg[1][0]_0    |                2 |              7 |
+|  clk_IBUF_BUFG                  | U1/tx_buff[12][6]_i_1_n_0 | U1/tx_buff_reg[1][0]_0    |                3 |              7 |
+|  clk_IBUF_BUFG                  | U1/tx_buff[0][6]_i_1_n_0  | U1/tx_buff_reg[1][0]_0    |                2 |              7 |
+|  clk_IBUF_BUFG                  | U1/tx_buff[2][6]_i_1_n_0  | U1/tx_buff_reg[1][0]_0    |                2 |              7 |
+|  AES1/next_state_reg[6]_i_2_n_0 |                           |                           |                2 |              7 |
+|  clk_IBUF_BUFG                  | U1/tx_buff[13][6]_i_1_n_0 | U1/tx_buff_reg[1][0]_0    |                2 |              7 |
+|  clk_IBUF_BUFG                  | U1/tx_buff[15][6]_i_1_n_0 | U1/tx_buff_reg[1][0]_0    |                2 |              7 |
+|  clk_IBUF_BUFG                  | U1/tx_buff[1][6]_i_1_n_0  | U1/tx_buff_reg[1][0]_0    |                3 |              7 |
+|  clk_IBUF_BUFG                  | U1/tx_buff[14][6]_i_1_n_0 | U1/tx_buff_reg[1][0]_0    |                3 |              7 |
+|  clk_IBUF_BUFG                  | U1/tx_buff[4][6]_i_1_n_0  | U1/tx_buff_reg[1][0]_0    |                2 |              7 |
+|  clk_IBUF_BUFG                  | U1/tx_buff[3][6]_i_1_n_0  | U1/tx_buff_reg[1][0]_0    |                3 |              7 |
+|  clk_IBUF_BUFG                  | U1/tx_buff[5][6]_i_1_n_0  | U1/tx_buff_reg[1][0]_0    |                2 |              7 |
+|  clk_IBUF_BUFG                  | U1/tx_buff[6][6]_i_1_n_0  | U1/tx_buff_reg[1][0]_0    |                2 |              7 |
+|  clk_IBUF_BUFG                  | U1/p_3_in                 | U1/tx_buff_reg[1][0]_0    |                5 |             14 |
+|  AES1/d5                        |                           |                           |                6 |             19 |
+|  AES1/w6                        |                           |                           |                7 |             19 |
+|  clk_IBUF_BUFG                  |                           | U1/tx_buff_reg[1][0]_0    |               13 |             32 |
+|  AES1/tempStart6                |                           |                           |               12 |             34 |
+|  AES1/tempRow6                  |                           |                           |               39 |            121 |
+|  AES1/tempSbox6                 |                           |                           |               49 |            121 |
+|  AES1/d12                       |                           |                           |               35 |            128 |
+|  d6                             |                           |                           |               39 |            128 |
+|  AES1/d13                       |                           |                           |               36 |            128 |
+|  AES1/d11                       |                           |                           |               36 |            128 |
+|  d10                            |                           |                           |               35 |            128 |
+|  tempStart10                    |                           |                           |               39 |            128 |
+|  tempRow7                       |                           |                           |               39 |            128 |
+|  tempRow11                      |                           |                           |               36 |            128 |
+|  tempSbox8                      |                           |                           |              128 |            128 |
+|  tempSbox12                     |                           |                           |              128 |            128 |
+|  tempStart9                     |                           |                           |               35 |            128 |
+|  w14                            |                           |                           |               35 |            128 |
+|  tempStart13                    |                           |                           |               44 |            128 |
+|  w10                            |                           |                           |               35 |            128 |
+|  AES1/tempRow10                 |                           |                           |               34 |            128 |
+|  AES1/tempRow13                 |                           |                           |               36 |            128 |
+|  AES1/d7                        |                           |                           |               34 |            128 |
+|  AES1/tempRow8                  |                           |                           |               36 |            128 |
+|  AES1/tempRow9                  |                           |                           |               33 |            128 |
+|  AES1/tempSbox10                |                           |                           |              128 |            128 |
+|  AES1/tempSbox11                |                           |                           |              128 |            128 |
+|  AES1/tempSbox13                |                           |                           |              128 |            128 |
+|  AES1/d8                        |                           |                           |               34 |            128 |
+|  AES1/tempSbox7                 |                           |                           |              128 |            128 |
+|  AES1/tempSbox9                 |                           |                           |              128 |            128 |
+|  AES1/tempStart11               |                           |                           |               35 |            128 |
+|  AES1/tempRow12                 |                           |                           |               38 |            128 |
+|  AES1/tempStart12               |                           |                           |               38 |            128 |
+|  AES1/d9                        |                           |                           |               33 |            128 |
+|  AES1/tempStart7                |                           |                           |               43 |            128 |
+|  AES1/tempStart8                |                           |                           |               39 |            128 |
+|  AES1/w13                       |                           |                           |               37 |            128 |
+|  AES1/w11                       |                           |                           |               34 |            128 |
+|  AES1/w12                       |                           |                           |               33 |            128 |
+|  AES1/w8                        |                           |                           |               38 |            128 |
+|  AES1/cipher_reg[127]_i_1_n_0   |                           |                           |               33 |            128 |
+|  AES1/w9                        |                           |                           |               35 |            128 |
+|  AES1/w7                        |                           |                           |               36 |            128 |
++---------------------------------+---------------------------+---------------------------+------------------+----------------+
 
 
 +--------+-----------------------+
 | Fanout | Number of ControlSets |
 +--------+-----------------------+
 | 1      |                     1 |
-| 4      |                     1 |
-| 6      |                     1 |
-| 7      |                    21 |
+| 4      |                     2 |
+| 6      |                     5 |
+| 7      |                    17 |
 | 14     |                     1 |
-| 16+    |                     1 |
+| 16+    |                    44 |
 +--------+-----------------------+
 
 
