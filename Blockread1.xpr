@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="20" Path="C:/College/Thesis/AES_2018/Blockread1/Blockread1.xpr">
+<Project Version="7" Minor="20" Path="C:/College/Thesis/AES_2018/AES_ENC_MEM/Blockread1.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="805ffc9f803d4cb1990e414644492508"/>

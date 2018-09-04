@@ -3,8 +3,8 @@
 // Tool Version: Vivado v.2017.1 (win64) Build 1846317 Fri Apr 14 18:55:03 MDT 2017
 // Date        : Sun Jun 17 13:26:22 2018
 // Host        : DESKTOP-GJPCRJL running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub
-//               C:/College/Thesis/AES_2018/Blockread1/Blockread1.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_stub.v
+// Command     : write_verilog -force -mode synth_stub -rename_top blk_mem_gen_0 -prefix
+//               blk_mem_gen_0_ blk_mem_gen_0_stub.v
 // Design      : blk_mem_gen_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7a100tcsg324-1

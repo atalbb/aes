@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2017.1 (win64) Build 1846317 Fri Apr 14 18:55:03 MDT 2017
-| Date             : Sun Jun 17 21:09:51 2018
+| Date             : Tue Sep  4 01:00:27 2018
 | Host             : DESKTOP-GJPCRJL running 64-bit major release  (build 9200)
 | Command          : report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
 | Design           : top
@@ -29,18 +29,18 @@ Table of Contents
 1. Summary
 ----------
 
-+--------------------------+------------------------------------+
-| Total On-Chip Power (W)  | 1431.109 (Junction temp exceeded!) |
-| Dynamic (W)              | 1430.311                           |
-| Device Static (W)        | 0.798                              |
-| Effective TJA (C/W)      | 4.6                                |
-| Max Ambient (C)          | 0.0                                |
-| Junction Temperature (C) | 125.0                              |
-| Confidence Level         | Low                                |
-| Setting File             | ---                                |
-| Simulation Activity File | ---                                |
-| Design Nets Matched      | NA                                 |
-+--------------------------+------------------------------------+
++--------------------------+-----------------------------------+
+| Total On-Chip Power (W)  | 319.450 (Junction temp exceeded!) |
+| Dynamic (W)              | 318.653                           |
+| Device Static (W)        | 0.798                             |
+| Effective TJA (C/W)      | 4.6                               |
+| Max Ambient (C)          | 0.0                               |
+| Junction Temperature (C) | 125.0                             |
+| Confidence Level         | Low                               |
+| Setting File             | ---                               |
+| Simulation Activity File | ---                               |
+| Design Nets Matched      | NA                                |
++--------------------------+-----------------------------------+
 
 
 1.1 On-Chip Components
@@ -49,18 +49,18 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |   772.996 |    93343 |       --- |             --- |
-|   LUT as Logic |   728.839 |    42918 |     63400 |           67.69 |
-|   F7/F8 Muxes  |    38.039 |    15368 |     63400 |           24.24 |
-|   CARRY4       |     6.103 |     1043 |     15850 |            6.58 |
-|   Register     |     0.016 |    25643 |    126800 |           20.22 |
+| Slice Logic    |   157.375 |    32778 |       --- |             --- |
+|   LUT as Logic |   145.263 |    11504 |     63400 |           18.15 |
+|   F7/F8 Muxes  |    12.090 |     5382 |     63400 |            8.49 |
+|   Register     |     0.016 |    15451 |    126800 |           12.19 |
 |   BUFG         |     0.006 |       12 |        32 |           37.50 |
-|   Others       |     0.000 |      226 |       --- |             --- |
-| Signals        |   656.982 |    53988 |       --- |             --- |
+|   CARRY4       |     0.002 |        3 |     15850 |            0.02 |
+|   Others       |     0.000 |       17 |       --- |             --- |
+| Signals        |   160.974 |    19354 |       --- |             --- |
 | Block RAM      |     0.071 |        1 |       135 |            0.74 |
 | I/O            |     0.228 |       14 |       210 |            6.67 |
 | Static Power   |     0.798 |          |           |                 |
-| Total          |  1431.075 |          |           |                 |
+| Total          |   319.446 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -70,7 +70,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |  1430.649 |    1430.086 |      0.563 |
+| Vccint    |       1.000 |   318.991 |     318.427 |      0.563 |
 | Vccaux    |       1.800 |     0.101 |       0.008 |      0.093 |
 | Vcco33    |       3.300 |     0.066 |       0.062 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -137,26 +137,26 @@ Table of Contents
 +----------------------------------------------+-----------+
 | Name                                         | Power (W) |
 +----------------------------------------------+-----------+
-| top                                          |  1430.278 |
-|   AES1                                       |  1425.263 |
-|   B0                                         |     3.405 |
-|     U0                                       |     3.405 |
-|       inst_blk_mem_gen                       |     3.405 |
-|         gnbram.gnativebmg.native_blk_mem_gen |     3.405 |
-|           valid.cstr                         |     3.405 |
-|             ramloop[0].ram.r                 |     3.405 |
-|               prim_init.ram                  |     3.405 |
-|   B1                                         |     0.232 |
-|     U0                                       |     0.232 |
-|       inst_blk_mem_gen                       |     0.232 |
-|         gnbram.gnativebmg.native_blk_mem_gen |     0.232 |
-|           valid.cstr                         |     0.232 |
-|             ramloop[0].ram.r                 |     0.232 |
-|               prim_init.ram                  |     0.232 |
-|   C0                                         |     0.276 |
+| top                                          |   318.648 |
+|   AES1                                       |   314.040 |
+|   B0                                         |     3.062 |
+|     U0                                       |     3.062 |
+|       inst_blk_mem_gen                       |     3.062 |
+|         gnbram.gnativebmg.native_blk_mem_gen |     3.062 |
+|           valid.cstr                         |     3.062 |
+|             ramloop[0].ram.r                 |     3.062 |
+|               prim_init.ram                  |     3.062 |
+|   B1                                         |     0.230 |
+|     U0                                       |     0.230 |
+|       inst_blk_mem_gen                       |     0.230 |
+|         gnbram.gnativebmg.native_blk_mem_gen |     0.230 |
+|           valid.cstr                         |     0.230 |
+|             ramloop[0].ram.r                 |     0.230 |
+|               prim_init.ram                  |     0.230 |
+|   C0                                         |     0.240 |
 |   D1                                         |     0.001 |
-|   HM1                                        |     0.029 |
-|   U1                                         |     0.660 |
+|   HM1                                        |     0.024 |
+|   U1                                         |     0.669 |
 +----------------------------------------------+-----------+
 
 

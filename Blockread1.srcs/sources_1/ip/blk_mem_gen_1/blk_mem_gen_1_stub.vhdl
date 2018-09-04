@@ -1,10 +1,10 @@
 -- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2017.1 (win64) Build 1846317 Fri Apr 14 18:55:03 MDT 2017
--- Date        : Sun Jun 17 17:26:38 2018
+-- Date        : Sun Jun 17 17:26:37 2018
 -- Host        : DESKTOP-GJPCRJL running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode synth_stub
---               c:/College/Thesis/AES_2018/Blockread1/Blockread1.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub -rename_top blk_mem_gen_1 -prefix
+--               blk_mem_gen_1_ blk_mem_gen_1_stub.vhdl
 -- Design      : blk_mem_gen_1
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7a100tcsg324-1
