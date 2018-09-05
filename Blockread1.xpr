@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="20" Path="C:/College/Thesis/AES_2018/AES_ENC_MEM/Blockread1.xpr">
+<Project Version="7" Minor="20" Path="C:/College/Thesis/AES_2018/AES_ENC_DEC_MEM/Blockread1.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="805ffc9f803d4cb1990e414644492508"/>
@@ -60,6 +60,13 @@
         </FileInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/new/core_logic.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/core_logic_dec.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>

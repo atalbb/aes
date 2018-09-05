@@ -24,12 +24,12 @@ module aes_enc_core(input clk,
                   input rst,
                   input start,
                   input dstart,
+                  input [1:0]enc_dec,
                   input [1919:0]keyIn, // 60 words(32-bit) expanded key
                   input [127:0]dataIn, // 4 word(32-bit) data block
                   output reg encDone,
                   output reg [127:0]cipher,
-                  output reg ledDone,
-                  output reg [7:0]led_out
+                  output reg ledDone
 
     );
 /* Current State and Next State Declartion */    
@@ -903,12 +903,17 @@ always @ (posedge clk or negedge rst)begin
         curr_state <=  next_state;
 end    
  
-always @(curr_state or start)begin
+always @(curr_state or start or dstart or enc_dec)begin
     case(curr_state)
-        0: begin
+    0: begin
         ledDone = 0;    
-        encDone = 0;        
-        next_state = 1; 
+        encDone = 0;
+        if(enc_dec == 2'b01)begin        
+            next_state = 1; 
+        end 
+//        else begin
+//            next_state = 0;
+//        end
      end
     1: begin
        if(start) begin

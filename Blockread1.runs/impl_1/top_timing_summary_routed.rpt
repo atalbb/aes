@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.1 (win64) Build 1846317 Fri Apr 14 18:55:03 MDT 2017
-| Date         : Tue Sep  4 01:00:33 2018
+| Date         : Tue Sep  4 23:47:36 2018
 | Host         : DESKTOP-GJPCRJL running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -warn_on_violation -max_paths 10 -file top_timing_summary_routed.rpt -rpx top_timing_summary_routed.rpx
 | Design       : top
@@ -52,7 +52,11 @@ Table of Contents
 
 1. checking no_clock
 --------------------
- There are 4310 register/latch pins with no clock driven by root clock pin: clk (HIGH)
+ There are 4328 register/latch pins with no clock driven by root clock pin: clk (HIGH)
+
+ There are 16 register/latch pins with no clock driven by root clock pin: enc_dec[0] (HIGH)
+
+ There are 16 register/latch pins with no clock driven by root clock pin: enc_dec[1] (HIGH)
 
  There are 11145 register/latch pins with no clock driven by root clock pin: AES1/curr_state_reg[0]/Q (HIGH)
 
@@ -70,9 +74,25 @@ Table of Contents
 
  There are 11145 register/latch pins with no clock driven by root clock pin: AES1/curr_state_reg[7]/Q (HIGH)
 
- There are 136 register/latch pins with no clock driven by root clock pin: D1/done_reg/Q (HIGH)
+ There are 9481 register/latch pins with no clock driven by root clock pin: AES2/curr_state_reg[0]/Q (HIGH)
 
- There are 1928 register/latch pins with no clock driven by root clock pin: HM1/done_reg/Q (HIGH)
+ There are 9481 register/latch pins with no clock driven by root clock pin: AES2/curr_state_reg[1]/Q (HIGH)
+
+ There are 9481 register/latch pins with no clock driven by root clock pin: AES2/curr_state_reg[2]/Q (HIGH)
+
+ There are 9481 register/latch pins with no clock driven by root clock pin: AES2/curr_state_reg[3]/Q (HIGH)
+
+ There are 9481 register/latch pins with no clock driven by root clock pin: AES2/curr_state_reg[4]/Q (HIGH)
+
+ There are 9481 register/latch pins with no clock driven by root clock pin: AES2/curr_state_reg[5]/Q (HIGH)
+
+ There are 9480 register/latch pins with no clock driven by root clock pin: AES2/curr_state_reg[6]/Q (HIGH)
+
+ There are 9481 register/latch pins with no clock driven by root clock pin: AES2/curr_state_reg[7]/Q (HIGH)
+
+ There are 2056 register/latch pins with no clock driven by root clock pin: dec_data_en_reg/Q (HIGH)
+
+ There are 2056 register/latch pins with no clock driven by root clock pin: enc_data_en_reg/Q (HIGH)
 
 
 2. checking constant_clock
@@ -87,21 +107,21 @@ Table of Contents
 
 4. checking unconstrained_internal_endpoints
 --------------------------------------------
- There are 22003 pins that are not constrained for maximum delay. (HIGH)
+ There are 31498 pins that are not constrained for maximum delay. (HIGH)
 
  There are 0 pins that are not constrained for maximum delay due to constant clock.
 
 
 5. checking no_input_delay
 --------------------------
- There are 3 input ports with no input delay specified. (HIGH)
+ There are 5 input ports with no input delay specified. (HIGH)
 
  There are 0 input ports with no input delay but user has a false path constraint.
 
 
 6. checking no_output_delay
 ---------------------------
- There are 2 ports with no output delay specified. (HIGH)
+ There are 3 ports with no output delay specified. (HIGH)
 
  There are 0 ports with no output delay but user has a false path constraint
 

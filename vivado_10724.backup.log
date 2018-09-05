@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Tue Sep  4 15:09:27 2018
+# Process ID: 10724
+# Current directory: C:/College/Thesis/AES_2018/AES_ENC_MEM
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent32 C:\College\Thesis\AES_2018\AES_ENC_MEM\Blockread1.xpr
+# Log file: C:/College/Thesis/AES_2018/AES_ENC_MEM/vivado.log
+# Journal file: C:/College/Thesis/AES_2018/AES_ENC_MEM\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/College/Thesis/AES_2018/AES_ENC_MEM/Blockread1.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.1/data/ip'.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:07 . Memory (MB): peak = 744.055 ; gain = 96.262
+update_compile_order -fileset sources_1
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Sep  4 15:19:23 2018...
