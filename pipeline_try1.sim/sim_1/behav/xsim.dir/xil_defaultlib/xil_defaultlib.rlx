@@ -1,0 +1,17 @@
+0.6
+2017.1
+Apr 14 2017
+19:10:27
+C:/College/Thesis/AES_2018/fall2018/pipeline_try1/pipeline_try1.sim/sim_1/behav/glbl.v,1492045073,verilog,,,,glbl,,,,,,,,
+C:/College/Thesis/AES_2018/fall2018/pipeline_try1/pipeline_try1.srcs/sim_1/new/tb.v,1536276175,verilog,,,,tb,,,,,,,,
+C:/College/Thesis/AES_2018/fall2018/pipeline_try1/pipeline_try1.srcs/sources_1/ip/data_mem_gen_0/sim/data_mem_gen_0.v,1536266923,verilog,,,,data_mem_gen_0,,,,,,,,
+C:/College/Thesis/AES_2018/fall2018/pipeline_try1/pipeline_try1.srcs/sources_1/new/KeyGeneration.v,1536294825,verilog,,,,KeyGeneration,,,,,,,,
+C:/College/Thesis/AES_2018/fall2018/pipeline_try1/pipeline_try1.srcs/sources_1/new/aescipher.v,1536347038,verilog,,,,aescipher,,,,,,,,
+C:/College/Thesis/AES_2018/fall2018/pipeline_try1/pipeline_try1.srcs/sources_1/new/databuffer.v,1536297083,verilog,,,,databuffer,,,,,,,,
+C:/College/Thesis/AES_2018/fall2018/pipeline_try1/pipeline_try1.srcs/sources_1/new/mixcolumn.v,1536343482,verilog,,,,mixcolumn,,,,,,,,
+C:/College/Thesis/AES_2018/fall2018/pipeline_try1/pipeline_try1.srcs/sources_1/new/rounds.v,1536294819,verilog,,,,rounds,,,,,,,,
+C:/College/Thesis/AES_2018/fall2018/pipeline_try1/pipeline_try1.srcs/sources_1/new/rounndlast.v,1536294876,verilog,,,,rounndlast,,,,,,,,
+C:/College/Thesis/AES_2018/fall2018/pipeline_try1/pipeline_try1.srcs/sources_1/new/sbox.v,1536294843,verilog,,,,sbox,,,,,,,,
+C:/College/Thesis/AES_2018/fall2018/pipeline_try1/pipeline_try1.srcs/sources_1/new/shiftrow.v,1536294858,verilog,,,,shiftrow,,,,,,,,
+C:/College/Thesis/AES_2018/fall2018/pipeline_try1/pipeline_try1.srcs/sources_1/new/subbytes.v,1536294831,verilog,,,,subbytes,,,,,,,,
+C:/College/Thesis/AES_2018/fall2018/pipeline_try1/pipeline_try1.srcs/sources_1/new/top.v,1536296952,verilog,,,,top,,,,,,,,

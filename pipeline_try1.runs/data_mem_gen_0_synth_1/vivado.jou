@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Thu Sep  6 16:48:46 2018
+# Process ID: 8620
+# Current directory: C:/College/Thesis/AES_2018/fall2018/pipeline_try1/pipeline_try1.runs/data_mem_gen_0_synth_1
+# Command line: vivado.exe -log data_mem_gen_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source data_mem_gen_0.tcl
+# Log file: C:/College/Thesis/AES_2018/fall2018/pipeline_try1/pipeline_try1.runs/data_mem_gen_0_synth_1/data_mem_gen_0.vds
+# Journal file: C:/College/Thesis/AES_2018/fall2018/pipeline_try1/pipeline_try1.runs/data_mem_gen_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source data_mem_gen_0.tcl -notrace
