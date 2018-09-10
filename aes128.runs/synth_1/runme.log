@@ -14,9 +14,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 3700 
+INFO: Helper process launched with PID 4484 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 324.910 ; gain = 88.578
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 325.055 ; gain = 88.801
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'AES_TOP' [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/AES_TOP.v:4]
 INFO: [Synth 8-638] synthesizing module 'aescipher' [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:7]
@@ -33,12 +33,35 @@ INFO: [Synth 8-256] done synthesizing module 'sbox' (2#1) [C:/College/Thesis/AES
 INFO: [Synth 8-256] done synthesizing module 'subbytes' (3#1) [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/subbytes.v:3]
 INFO: [Synth 8-638] synthesizing module 'shiftrow' [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/shiftrow.v:3]
 INFO: [Synth 8-256] done synthesizing module 'shiftrow' (4#1) [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/shiftrow.v:3]
-INFO: [Synth 8-638] synthesizing module 'mixcolumn' [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/mixcolumn.v:3]
-INFO: [Synth 8-256] done synthesizing module 'mixcolumn' (5#1) [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/mixcolumn.v:3]
-WARNING: [Synth 8-5788] Register rndout_reg in module rounds is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/rounds.v:35]
-INFO: [Synth 8-256] done synthesizing module 'rounds' (6#1) [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/rounds.v:3]
+INFO: [Synth 8-638] synthesizing module 'inv_mix_columns' [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/mixcolumn.v:1844]
+INFO: [Synth 8-638] synthesizing module 'inv_word_mix_columns' [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/mixcolumn.v:1800]
+INFO: [Synth 8-638] synthesizing module 'inv_byte_mix_columns' [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/mixcolumn.v:1756]
+INFO: [Synth 8-638] synthesizing module 'MULE' [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/mixcolumn.v:1669]
+INFO: [Synth 8-638] synthesizing module 'xtimes' [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/mixcolumn.v:1632]
+INFO: [Synth 8-256] done synthesizing module 'xtimes' (5#1) [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/mixcolumn.v:1632]
+INFO: [Synth 8-256] done synthesizing module 'MULE' (6#1) [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/mixcolumn.v:1669]
+INFO: [Synth 8-638] synthesizing module 'MULB' [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/mixcolumn.v:1687]
+INFO: [Synth 8-256] done synthesizing module 'MULB' (7#1) [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/mixcolumn.v:1687]
+INFO: [Synth 8-638] synthesizing module 'MULD' [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/mixcolumn.v:1705]
+INFO: [Synth 8-256] done synthesizing module 'MULD' (8#1) [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/mixcolumn.v:1705]
+INFO: [Synth 8-638] synthesizing module 'MUL9' [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/mixcolumn.v:1723]
+INFO: [Synth 8-256] done synthesizing module 'MUL9' (9#1) [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/mixcolumn.v:1723]
+INFO: [Synth 8-256] done synthesizing module 'inv_byte_mix_columns' (10#1) [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/mixcolumn.v:1756]
+INFO: [Synth 8-256] done synthesizing module 'inv_word_mix_columns' (11#1) [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/mixcolumn.v:1800]
+INFO: [Synth 8-256] done synthesizing module 'inv_mix_columns' (12#1) [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/mixcolumn.v:1844]
+INFO: [Synth 8-638] synthesizing module 'mix_columns' [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/mixcolumn.v:1825]
+INFO: [Synth 8-638] synthesizing module 'word_mix_columns' [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/mixcolumn.v:1775]
+INFO: [Synth 8-638] synthesizing module 'byte_mix_columns' [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/mixcolumn.v:1740]
+INFO: [Synth 8-638] synthesizing module 'MUL3' [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/mixcolumn.v:1653]
+INFO: [Synth 8-256] done synthesizing module 'MUL3' (13#1) [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/mixcolumn.v:1653]
+INFO: [Synth 8-256] done synthesizing module 'byte_mix_columns' (14#1) [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/mixcolumn.v:1740]
+INFO: [Synth 8-256] done synthesizing module 'word_mix_columns' (15#1) [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/mixcolumn.v:1775]
+INFO: [Synth 8-256] done synthesizing module 'mix_columns' (16#1) [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/mixcolumn.v:1825]
+WARNING: [Synth 8-5788] Register rndout_reg in module rounds is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/rounds.v:37]
+WARNING: [Synth 8-5788] Register invMixColIn_reg in module rounds is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/rounds.v:21]
+INFO: [Synth 8-256] done synthesizing module 'rounds' (17#1) [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/rounds.v:3]
 INFO: [Synth 8-638] synthesizing module 'rounndlast' [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/rounndlast.v:3]
-INFO: [Synth 8-256] done synthesizing module 'rounndlast' (7#1) [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/rounndlast.v:3]
+INFO: [Synth 8-256] done synthesizing module 'rounndlast' (18#1) [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/rounndlast.v:3]
 WARNING: [Synth 8-5788] Register r0_reg_reg in module aescipher is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:24]
 WARNING: [Synth 8-5788] Register r1_reg_reg in module aescipher is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:25]
 WARNING: [Synth 8-5788] Register r2_reg_reg in module aescipher is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:26]
@@ -55,7 +78,7 @@ WARNING: [Synth 8-5788] Register r12_reg_reg in module aescipher is has both Set
 WARNING: [Synth 8-5788] Register r13_reg_reg in module aescipher is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
 WARNING: [Synth 8-3848] Net ready_o in module/entity aescipher does not have driver. [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:9]
 WARNING: [Synth 8-3848] Net keyout13 in module/entity aescipher does not have driver. [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:20]
-INFO: [Synth 8-256] done synthesizing module 'aescipher' (8#1) [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:7]
+INFO: [Synth 8-256] done synthesizing module 'aescipher' (19#1) [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:7]
 INFO: [Synth 8-638] synthesizing module 'uart_tx' [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/uart_tx.v:21]
 	Parameter bit_time bound to: 868 - type: integer 
 WARNING: [Synth 8-6014] Unused sequential element ledout_reg was removed.  [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/uart_tx.v:74]
@@ -63,9 +86,9 @@ WARNING: [Synth 8-5788] Register tx_buff_reg[19] in module uart_tx is has both S
 WARNING: [Synth 8-5788] Register tx_buff_reg[18] in module uart_tx is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/uart_tx.v:52]
 WARNING: [Synth 8-5788] Register tx_buff_reg[17] in module uart_tx is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/uart_tx.v:52]
 WARNING: [Synth 8-5788] Register tx_buff_reg[16] in module uart_tx is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/uart_tx.v:52]
-INFO: [Synth 8-256] done synthesizing module 'uart_tx' (9#1) [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/uart_tx.v:21]
+INFO: [Synth 8-256] done synthesizing module 'uart_tx' (20#1) [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/uart_tx.v:21]
 WARNING: [Synth 8-3848] Net finalDone in module/entity AES_TOP does not have driver. [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/AES_TOP.v:14]
-INFO: [Synth 8-256] done synthesizing module 'AES_TOP' (10#1) [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/AES_TOP.v:4]
+INFO: [Synth 8-256] done synthesizing module 'AES_TOP' (21#1) [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/AES_TOP.v:4]
 WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[127]
 WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[126]
 WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[125]
@@ -168,7 +191,7 @@ WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[29]
 WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[28]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 428.914 ; gain = 192.582
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 375.035 ; gain = 138.781
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -279,7 +302,7 @@ WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[29] to constant 0 [C:/C
 WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[28] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
 INFO: [Common 17-14] Message 'Synth 8-3295' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 428.914 ; gain = 192.582
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 375.035 ; gain = 138.781
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -295,22 +318,22 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 787.016 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 797.398 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 787.016 ; gain = 550.684
+Finished Constraint Validation : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 797.398 ; gain = 561.145
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 787.016 ; gain = 550.684
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 797.398 ; gain = 561.145
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 787.016 ; gain = 550.684
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 797.398 ; gain = 561.145
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "tx_buff_reg[19]" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "tx_buff_reg[19]" won't be mapped to RAM because it is too sparse
@@ -357,14 +380,14 @@ WARNING: [Synth 8-6014] Unused sequential element byte_count_reg was removed.  [
 WARNING: [Synth 8-327] inferring latch for variable 'keyout_reg' [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/KeyGeneration.v:14]
 WARNING: [Synth 8-327] inferring latch for variable 'c_reg' [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/sbox.v:35]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 787.016 ; gain = 550.684
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 797.398 ; gain = 561.145
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
 +------+---------------+------------+----------+
 |      |RTL Partition  |Replication |Instances |
 +------+---------------+------------+----------+
-|1     |rounds         |          13|     11371|
+|1     |rounds         |          13|      7565|
 |2     |aescipher__GC0 |           1|      5585|
 |3     |uart_tx        |           1|      3262|
 +------+---------------+------------+----------+
@@ -378,9 +401,12 @@ Detailed RTL Component Info :
 	   2 Input      4 Bit       Adders := 1     
 +---XORs : 
 	   2 Input    128 Bit         XORs := 29    
+	   3 Input      8 Bit         XORs := 624   
+	   2 Input      8 Bit         XORs := 416   
 	   4 Input      8 Bit         XORs := 416   
+	   2 Input      4 Bit         XORs := 2912  
 +---Registers : 
-	              128 Bit    Registers := 66    
+	              128 Bit    Registers := 79    
 	               13 Bit    Registers := 1     
 	                8 Bit    Registers := 20    
 	                6 Bit    Registers := 1     
@@ -388,9 +414,9 @@ Detailed RTL Component Info :
 	                1 Bit    Registers := 3     
 +---Muxes : 
 	  30 Input    128 Bit        Muxes := 14    
-	   2 Input    128 Bit        Muxes := 53    
+	   2 Input    128 Bit        Muxes := 40    
 	   2 Input     13 Bit        Muxes := 4     
-	   2 Input      8 Bit        Muxes := 627   
+	   2 Input      8 Bit        Muxes := 419   
 	   4 Input      8 Bit        Muxes := 19    
 	   2 Input      7 Bit        Muxes := 2     
 	   3 Input      7 Bit        Muxes := 19    
@@ -477,20 +503,1358 @@ Module shiftrow__1
 Detailed RTL Component Info : 
 +---Muxes : 
 	   2 Input      8 Bit        Muxes := 8     
-Module mixcolumn 
+Module xtimes__127 
 Detailed RTL Component Info : 
 +---XORs : 
-	   4 Input      8 Bit         XORs := 32    
-+---Muxes : 
-	   2 Input      8 Bit        Muxes := 16    
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__126 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__125 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module MULE__7 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      8 Bit         XORs := 1     
+Module xtimes__124 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__123 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__122 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module MULB__7 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      8 Bit         XORs := 1     
+Module xtimes__121 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__120 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__119 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module MULD__7 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      8 Bit         XORs := 1     
+Module xtimes__118 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__117 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__116 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module MUL9__7 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
+Module inv_byte_mix_columns__7 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input      8 Bit         XORs := 1     
+Module xtimes__115 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__114 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__113 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module MULE__6 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      8 Bit         XORs := 1     
+Module xtimes__112 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__111 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__110 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module MULB__6 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      8 Bit         XORs := 1     
+Module xtimes__109 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__108 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__107 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module MULD__6 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      8 Bit         XORs := 1     
+Module xtimes__106 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__105 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__104 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module MUL9__6 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
+Module inv_byte_mix_columns__6 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input      8 Bit         XORs := 1     
+Module xtimes__103 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__102 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__101 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module MULE__5 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      8 Bit         XORs := 1     
+Module xtimes__100 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__99 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__98 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module MULB__5 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      8 Bit         XORs := 1     
+Module xtimes__97 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__96 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__95 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module MULD__5 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      8 Bit         XORs := 1     
+Module xtimes__94 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__93 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__92 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module MUL9__5 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
+Module inv_byte_mix_columns__5 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input      8 Bit         XORs := 1     
+Module xtimes__91 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__90 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__89 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module MULE__4 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      8 Bit         XORs := 1     
+Module xtimes__88 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__87 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__86 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module MULB__4 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      8 Bit         XORs := 1     
+Module xtimes__85 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__84 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__83 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module MULD__4 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      8 Bit         XORs := 1     
+Module xtimes__82 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__81 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__80 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module MUL9__4 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
+Module inv_byte_mix_columns__4 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input      8 Bit         XORs := 1     
+Module xtimes__175 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__174 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__173 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module MULE__11 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      8 Bit         XORs := 1     
+Module xtimes__172 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__171 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__170 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module MULB__11 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      8 Bit         XORs := 1     
+Module xtimes__169 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__168 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__167 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module MULD__11 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      8 Bit         XORs := 1     
+Module xtimes__166 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__165 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__164 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module MUL9__11 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
+Module inv_byte_mix_columns__11 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input      8 Bit         XORs := 1     
+Module xtimes__163 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__162 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__161 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module MULE__10 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      8 Bit         XORs := 1     
+Module xtimes__160 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__159 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__158 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module MULB__10 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      8 Bit         XORs := 1     
+Module xtimes__157 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__156 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__155 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module MULD__10 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      8 Bit         XORs := 1     
+Module xtimes__154 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__153 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__152 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module MUL9__10 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
+Module inv_byte_mix_columns__10 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input      8 Bit         XORs := 1     
+Module xtimes__151 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__150 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__149 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module MULE__9 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      8 Bit         XORs := 1     
+Module xtimes__148 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__147 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__146 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module MULB__9 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      8 Bit         XORs := 1     
+Module xtimes__145 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__144 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__143 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module MULD__9 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      8 Bit         XORs := 1     
+Module xtimes__142 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__141 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__140 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module MUL9__9 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
+Module inv_byte_mix_columns__9 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input      8 Bit         XORs := 1     
+Module xtimes__139 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__138 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__137 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module MULE__8 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      8 Bit         XORs := 1     
+Module xtimes__136 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__135 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__134 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module MULB__8 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      8 Bit         XORs := 1     
+Module xtimes__133 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__132 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__131 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module MULD__8 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      8 Bit         XORs := 1     
+Module xtimes__130 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__129 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__128 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module MUL9__8 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
+Module inv_byte_mix_columns__8 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input      8 Bit         XORs := 1     
+Module xtimes__223 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__222 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__221 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module MULE__15 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      8 Bit         XORs := 1     
+Module xtimes__220 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__219 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__218 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module MULB__15 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      8 Bit         XORs := 1     
+Module xtimes__217 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__216 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__215 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module MULD__15 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      8 Bit         XORs := 1     
+Module xtimes__214 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__213 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__212 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module MUL9__15 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
+Module inv_byte_mix_columns__15 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input      8 Bit         XORs := 1     
+Module xtimes__211 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__210 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__209 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module MULE__14 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      8 Bit         XORs := 1     
+Module xtimes__208 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__207 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__206 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module MULB__14 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      8 Bit         XORs := 1     
+Module xtimes__205 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__204 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__203 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module MULD__14 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      8 Bit         XORs := 1     
+Module xtimes__202 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__201 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__200 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module MUL9__14 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
+Module inv_byte_mix_columns__14 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input      8 Bit         XORs := 1     
+Module xtimes__199 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__198 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__197 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module MULE__13 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      8 Bit         XORs := 1     
+Module xtimes__196 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__195 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__194 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module MULB__13 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      8 Bit         XORs := 1     
+Module xtimes__193 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__192 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__191 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module MULD__13 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      8 Bit         XORs := 1     
+Module xtimes__190 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__189 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__188 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module MUL9__13 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
+Module inv_byte_mix_columns__13 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input      8 Bit         XORs := 1     
+Module xtimes__187 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__186 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__185 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module MULE__12 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      8 Bit         XORs := 1     
+Module xtimes__184 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__183 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__182 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module MULB__12 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      8 Bit         XORs := 1     
+Module xtimes__181 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__180 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__179 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module MULD__12 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      8 Bit         XORs := 1     
+Module xtimes__178 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__177 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__176 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module MUL9__12 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
+Module inv_byte_mix_columns__12 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input      8 Bit         XORs := 1     
+Module xtimes__55 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__54 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__53 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module MULE__1 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      8 Bit         XORs := 1     
+Module xtimes__52 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__51 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__50 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module MULB__1 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      8 Bit         XORs := 1     
+Module xtimes__49 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__48 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__47 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module MULD__1 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      8 Bit         XORs := 1     
+Module xtimes__46 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__45 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__44 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module MUL9__1 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
+Module inv_byte_mix_columns__1 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input      8 Bit         XORs := 1     
+Module xtimes__67 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__66 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__65 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module MULE__2 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      8 Bit         XORs := 1     
+Module xtimes__64 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__63 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__62 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module MULB__2 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      8 Bit         XORs := 1     
+Module xtimes__61 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__60 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__59 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module MULD__2 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      8 Bit         XORs := 1     
+Module xtimes__58 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__57 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__56 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module MUL9__2 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
+Module inv_byte_mix_columns__2 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input      8 Bit         XORs := 1     
+Module xtimes__79 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__78 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__77 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module MULE__3 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      8 Bit         XORs := 1     
+Module xtimes__76 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__75 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__74 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module MULB__3 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      8 Bit         XORs := 1     
+Module xtimes__73 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__72 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__71 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module MULD__3 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      8 Bit         XORs := 1     
+Module xtimes__70 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__69 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__68 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module MUL9__3 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
+Module inv_byte_mix_columns__3 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input      8 Bit         XORs := 1     
+Module xtimes__12 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__13 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module MULE 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      8 Bit         XORs := 1     
+Module xtimes__9 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__10 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__11 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module MULB 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      8 Bit         XORs := 1     
+Module xtimes__6 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__7 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__8 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module MULD 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      8 Bit         XORs := 1     
+Module xtimes__3 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__4 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__5 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module MUL9 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
+Module inv_byte_mix_columns 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input      8 Bit         XORs := 1     
+Module xtimes__27 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__26 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module MUL3__7 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
+Module byte_mix_columns__7 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input      8 Bit         XORs := 1     
+Module xtimes__25 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__24 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module MUL3__6 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
+Module byte_mix_columns__6 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input      8 Bit         XORs := 1     
+Module xtimes__23 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__22 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module MUL3__5 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
+Module byte_mix_columns__5 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input      8 Bit         XORs := 1     
+Module xtimes__21 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__20 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module MUL3__4 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
+Module byte_mix_columns__4 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input      8 Bit         XORs := 1     
+Module xtimes__35 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__34 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module MUL3__11 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
+Module byte_mix_columns__11 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input      8 Bit         XORs := 1     
+Module xtimes__33 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__32 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module MUL3__10 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
+Module byte_mix_columns__10 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input      8 Bit         XORs := 1     
+Module xtimes__31 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__30 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module MUL3__9 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
+Module byte_mix_columns__9 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input      8 Bit         XORs := 1     
+Module xtimes__29 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__28 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module MUL3__8 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
+Module byte_mix_columns__8 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input      8 Bit         XORs := 1     
+Module xtimes__43 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__42 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module MUL3__15 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
+Module byte_mix_columns__15 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input      8 Bit         XORs := 1     
+Module xtimes__41 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__40 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module MUL3__14 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
+Module byte_mix_columns__14 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input      8 Bit         XORs := 1     
+Module xtimes__39 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__38 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module MUL3__13 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
+Module byte_mix_columns__13 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input      8 Bit         XORs := 1     
+Module xtimes__37 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__36 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module MUL3__12 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
+Module byte_mix_columns__12 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input      8 Bit         XORs := 1     
+Module xtimes__15 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__14 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module MUL3__1 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
+Module byte_mix_columns__1 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input      8 Bit         XORs := 1     
+Module xtimes__17 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__16 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module MUL3__2 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
+Module byte_mix_columns__2 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input      8 Bit         XORs := 1     
+Module xtimes__19 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__18 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module MUL3__3 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
+Module byte_mix_columns__3 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input      8 Bit         XORs := 1     
+Module xtimes__2 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module xtimes__1 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module MUL3 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
+Module byte_mix_columns 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input      8 Bit         XORs := 1     
 Module rounds 
 Detailed RTL Component Info : 
 +---XORs : 
 	   2 Input    128 Bit         XORs := 2     
 +---Registers : 
-	              128 Bit    Registers := 4     
+	              128 Bit    Registers := 5     
 +---Muxes : 
-	   2 Input    128 Bit        Muxes := 4     
+	   2 Input    128 Bit        Muxes := 3     
 Module KeyGeneration 
 Detailed RTL Component Info : 
 +---Muxes : 
@@ -614,106 +1978,106 @@ Start Cross Boundary and Area Optimization
 WARNING: [Synth 8-6014] Unused sequential element byte_count_reg was removed.  [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/uart_tx.v:72]
 WARNING: [Synth 8-6014] Unused sequential element bit_count_reg was removed.  [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/uart_tx.v:48]
 INFO: [Synth 8-3886] merging instance 'rounds:/t0/keyout_reg[21]' (LD) to 'rounds:/t0/keyout_reg[110]'
-WARNING: [Synth 8-3332] Sequential element (q0/c_reg[7]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q0/c_reg[6]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q0/c_reg[5]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q0/c_reg[4]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q0/c_reg[3]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q0/c_reg[2]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q0/c_reg[1]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q0/c_reg[0]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q1/c_reg[7]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q1/c_reg[6]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q1/c_reg[5]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q1/c_reg[4]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q1/c_reg[3]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q1/c_reg[2]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q1/c_reg[1]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q1/c_reg[0]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q2/c_reg[7]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q2/c_reg[6]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q2/c_reg[5]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q2/c_reg[4]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q2/c_reg[3]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q2/c_reg[2]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q2/c_reg[1]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q2/c_reg[0]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q3/c_reg[7]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q3/c_reg[6]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q3/c_reg[5]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q3/c_reg[4]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q3/c_reg[3]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q3/c_reg[2]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q3/c_reg[1]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q3/c_reg[0]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q4/c_reg[7]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q4/c_reg[6]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q4/c_reg[5]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q4/c_reg[4]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q4/c_reg[3]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q4/c_reg[2]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q4/c_reg[1]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q4/c_reg[0]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q5/c_reg[7]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q5/c_reg[6]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q5/c_reg[5]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q5/c_reg[4]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q5/c_reg[3]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q5/c_reg[2]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q5/c_reg[1]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q5/c_reg[0]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q6/c_reg[7]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q6/c_reg[6]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q6/c_reg[5]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q6/c_reg[4]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q6/c_reg[3]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q6/c_reg[2]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q6/c_reg[1]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q6/c_reg[0]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q7/c_reg[7]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q7/c_reg[6]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q7/c_reg[5]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q7/c_reg[4]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q7/c_reg[3]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q7/c_reg[2]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q7/c_reg[1]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q7/c_reg[0]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q8/c_reg[7]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q8/c_reg[6]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q8/c_reg[5]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q8/c_reg[4]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q8/c_reg[3]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q8/c_reg[2]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q8/c_reg[1]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q8/c_reg[0]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q9/c_reg[7]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q9/c_reg[6]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q9/c_reg[5]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q9/c_reg[4]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q9/c_reg[3]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q9/c_reg[2]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q9/c_reg[1]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q9/c_reg[0]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q10/c_reg[7]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q10/c_reg[6]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q10/c_reg[5]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q10/c_reg[4]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q10/c_reg[3]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q10/c_reg[2]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q10/c_reg[1]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q10/c_reg[0]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q11/c_reg[7]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q11/c_reg[6]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q11/c_reg[5]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q11/c_reg[4]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q11/c_reg[3]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q11/c_reg[2]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q11/c_reg[1]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q11/c_reg[0]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q12/c_reg[7]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q12/c_reg[6]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q12/c_reg[5]) is unused and will be removed from module subbytes__1.
-WARNING: [Synth 8-3332] Sequential element (q12/c_reg[4]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (t1/q0/c_reg[7]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q0/c_reg[6]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q0/c_reg[5]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q0/c_reg[4]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q0/c_reg[3]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q0/c_reg[2]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q0/c_reg[1]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q0/c_reg[0]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q1/c_reg[7]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q1/c_reg[6]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q1/c_reg[5]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q1/c_reg[4]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q1/c_reg[3]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q1/c_reg[2]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q1/c_reg[1]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q1/c_reg[0]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q2/c_reg[7]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q2/c_reg[6]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q2/c_reg[5]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q2/c_reg[4]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q2/c_reg[3]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q2/c_reg[2]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q2/c_reg[1]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q2/c_reg[0]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q3/c_reg[7]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q3/c_reg[6]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q3/c_reg[5]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q3/c_reg[4]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q3/c_reg[3]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q3/c_reg[2]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q3/c_reg[1]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q3/c_reg[0]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q4/c_reg[7]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q4/c_reg[6]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q4/c_reg[5]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q4/c_reg[4]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q4/c_reg[3]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q4/c_reg[2]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q4/c_reg[1]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q4/c_reg[0]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q5/c_reg[7]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q5/c_reg[6]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q5/c_reg[5]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q5/c_reg[4]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q5/c_reg[3]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q5/c_reg[2]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q5/c_reg[1]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q5/c_reg[0]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q6/c_reg[7]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q6/c_reg[6]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q6/c_reg[5]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q6/c_reg[4]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q6/c_reg[3]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q6/c_reg[2]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q6/c_reg[1]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q6/c_reg[0]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q7/c_reg[7]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q7/c_reg[6]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q7/c_reg[5]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q7/c_reg[4]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q7/c_reg[3]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q7/c_reg[2]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q7/c_reg[1]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q7/c_reg[0]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q8/c_reg[7]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q8/c_reg[6]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q8/c_reg[5]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q8/c_reg[4]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q8/c_reg[3]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q8/c_reg[2]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q8/c_reg[1]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q8/c_reg[0]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q9/c_reg[7]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q9/c_reg[6]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q9/c_reg[5]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q9/c_reg[4]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q9/c_reg[3]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q9/c_reg[2]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q9/c_reg[1]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q9/c_reg[0]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q10/c_reg[7]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q10/c_reg[6]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q10/c_reg[5]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q10/c_reg[4]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q10/c_reg[3]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q10/c_reg[2]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q10/c_reg[1]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q10/c_reg[0]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q11/c_reg[7]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q11/c_reg[6]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q11/c_reg[5]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q11/c_reg[4]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q11/c_reg[3]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q11/c_reg[2]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q11/c_reg[1]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q11/c_reg[0]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q12/c_reg[7]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q12/c_reg[6]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q12/c_reg[5]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q12/c_reg[4]) is unused and will be removed from module rounds.
 INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Synth 8-3886] merging instance 'u1i_0/r14/t0/keyout_reg[0]' (LD) to 'u1i_0/r14/t0/keyout_reg[112]'
 INFO: [Synth 8-3333] propagating constant 1 across sequential element (u1i_0/\r14/t0/keyout_reg[1] )
@@ -917,7 +2281,7 @@ INFO: [Synth 8-3333] propagating constant 0 across sequential element (u1i_0/\r0
 INFO: [Synth 8-3333] propagating constant 1 across sequential element (u1i_0/\r0_reg_reg[86] )
 INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:30 ; elapsed = 00:01:48 . Memory (MB): peak = 1106.766 ; gain = 870.434
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:16 ; elapsed = 00:01:24 . Memory (MB): peak = 954.785 ; gain = 718.531
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -929,230 +2293,38 @@ ROM:
 +------------+--------------+---------------+----------------+
 |sbox        | c            | 256x8         | LUT            | 
 |sbox        | c            | 256x8         | LUT            | 
-|mixcolumn   | mul13        | 256x8         | LUT            | 
-|mixcolumn   | mul9         | 256x8         | LUT            | 
-|mixcolumn   | mul14        | 256x8         | LUT            | 
-|mixcolumn   | mul11        | 256x8         | LUT            | 
-|mixcolumn   | mul2         | 256x8         | LUT            | 
-|mixcolumn   | mul3         | 256x8         | LUT            | 
-|mixcolumn   | mul9         | 256x8         | LUT            | 
-|mixcolumn   | mul14        | 256x8         | LUT            | 
-|mixcolumn   | mul11        | 256x8         | LUT            | 
-|mixcolumn   | mul13        | 256x8         | LUT            | 
-|mixcolumn   | mul2         | 256x8         | LUT            | 
-|mixcolumn   | mul3         | 256x8         | LUT            | 
-|mixcolumn   | mul14        | 256x8         | LUT            | 
-|mixcolumn   | mul11        | 256x8         | LUT            | 
-|mixcolumn   | mul13        | 256x8         | LUT            | 
-|mixcolumn   | mul9         | 256x8         | LUT            | 
-|mixcolumn   | mul2         | 256x8         | LUT            | 
-|mixcolumn   | mul3         | 256x8         | LUT            | 
-|mixcolumn   | mul11        | 256x8         | LUT            | 
-|mixcolumn   | mul13        | 256x8         | LUT            | 
-|mixcolumn   | mul9         | 256x8         | LUT            | 
-|mixcolumn   | mul14        | 256x8         | LUT            | 
-|mixcolumn   | mul3         | 256x8         | LUT            | 
-|mixcolumn   | mul2         | 256x8         | LUT            | 
-|mixcolumn   | mul13        | 256x8         | LUT            | 
-|mixcolumn   | mul9         | 256x8         | LUT            | 
-|mixcolumn   | mul14        | 256x8         | LUT            | 
-|mixcolumn   | mul11        | 256x8         | LUT            | 
-|mixcolumn   | mul2         | 256x8         | LUT            | 
-|mixcolumn   | mul3         | 256x8         | LUT            | 
-|mixcolumn   | mul9         | 256x8         | LUT            | 
-|mixcolumn   | mul14        | 256x8         | LUT            | 
-|mixcolumn   | mul11        | 256x8         | LUT            | 
-|mixcolumn   | mul13        | 256x8         | LUT            | 
-|mixcolumn   | mul2         | 256x8         | LUT            | 
-|mixcolumn   | mul3         | 256x8         | LUT            | 
-|mixcolumn   | mul14        | 256x8         | LUT            | 
-|mixcolumn   | mul11        | 256x8         | LUT            | 
-|mixcolumn   | mul13        | 256x8         | LUT            | 
-|mixcolumn   | mul9         | 256x8         | LUT            | 
-|mixcolumn   | mul2         | 256x8         | LUT            | 
-|mixcolumn   | mul3         | 256x8         | LUT            | 
-|mixcolumn   | mul11        | 256x8         | LUT            | 
-|mixcolumn   | mul13        | 256x8         | LUT            | 
-|mixcolumn   | mul9         | 256x8         | LUT            | 
-|mixcolumn   | mul14        | 256x8         | LUT            | 
-|mixcolumn   | mul3         | 256x8         | LUT            | 
-|mixcolumn   | mul2         | 256x8         | LUT            | 
-|mixcolumn   | mul13        | 256x8         | LUT            | 
-|mixcolumn   | mul9         | 256x8         | LUT            | 
-|mixcolumn   | mul14        | 256x8         | LUT            | 
-|mixcolumn   | mul11        | 256x8         | LUT            | 
-|mixcolumn   | mul2         | 256x8         | LUT            | 
-|mixcolumn   | mul3         | 256x8         | LUT            | 
-|mixcolumn   | mul9         | 256x8         | LUT            | 
-|mixcolumn   | mul14        | 256x8         | LUT            | 
-|mixcolumn   | mul11        | 256x8         | LUT            | 
-|mixcolumn   | mul13        | 256x8         | LUT            | 
-|mixcolumn   | mul2         | 256x8         | LUT            | 
-|mixcolumn   | mul3         | 256x8         | LUT            | 
-|mixcolumn   | mul14        | 256x8         | LUT            | 
-|mixcolumn   | mul11        | 256x8         | LUT            | 
-|mixcolumn   | mul13        | 256x8         | LUT            | 
-|mixcolumn   | mul9         | 256x8         | LUT            | 
-|mixcolumn   | mul2         | 256x8         | LUT            | 
-|mixcolumn   | mul3         | 256x8         | LUT            | 
-|mixcolumn   | mul11        | 256x8         | LUT            | 
-|mixcolumn   | mul13        | 256x8         | LUT            | 
-|mixcolumn   | mul9         | 256x8         | LUT            | 
-|mixcolumn   | mul14        | 256x8         | LUT            | 
-|mixcolumn   | mul3         | 256x8         | LUT            | 
-|mixcolumn   | mul2         | 256x8         | LUT            | 
-|mixcolumn   | mul13        | 256x8         | LUT            | 
-|mixcolumn   | mul9         | 256x8         | LUT            | 
-|mixcolumn   | mul14        | 256x8         | LUT            | 
-|mixcolumn   | mul11        | 256x8         | LUT            | 
-|mixcolumn   | mul2         | 256x8         | LUT            | 
-|mixcolumn   | mul3         | 256x8         | LUT            | 
-|mixcolumn   | mul9         | 256x8         | LUT            | 
-|mixcolumn   | mul14        | 256x8         | LUT            | 
-|mixcolumn   | mul11        | 256x8         | LUT            | 
-|mixcolumn   | mul13        | 256x8         | LUT            | 
-|mixcolumn   | mul2         | 256x8         | LUT            | 
-|mixcolumn   | mul3         | 256x8         | LUT            | 
-|mixcolumn   | mul14        | 256x8         | LUT            | 
-|mixcolumn   | mul11        | 256x8         | LUT            | 
-|mixcolumn   | mul13        | 256x8         | LUT            | 
-|mixcolumn   | mul9         | 256x8         | LUT            | 
-|mixcolumn   | mul2         | 256x8         | LUT            | 
-|mixcolumn   | mul3         | 256x8         | LUT            | 
-|mixcolumn   | mul11        | 256x8         | LUT            | 
-|mixcolumn   | mul13        | 256x8         | LUT            | 
-|mixcolumn   | mul9         | 256x8         | LUT            | 
-|mixcolumn   | mul14        | 256x8         | LUT            | 
-|mixcolumn   | mul3         | 256x8         | LUT            | 
-|mixcolumn   | mul2         | 256x8         | LUT            | 
-|subbytes    | q0/c         | 256x8         | LUT            | 
-|subbytes    | q0/c         | 256x8         | LUT            | 
-|subbytes    | q1/c         | 256x8         | LUT            | 
-|subbytes    | q1/c         | 256x8         | LUT            | 
-|subbytes    | q2/c         | 256x8         | LUT            | 
-|subbytes    | q2/c         | 256x8         | LUT            | 
-|subbytes    | q3/c         | 256x8         | LUT            | 
-|subbytes    | q3/c         | 256x8         | LUT            | 
-|subbytes    | q4/c         | 256x8         | LUT            | 
-|subbytes    | q4/c         | 256x8         | LUT            | 
-|subbytes    | q5/c         | 256x8         | LUT            | 
-|subbytes    | q5/c         | 256x8         | LUT            | 
-|subbytes    | q6/c         | 256x8         | LUT            | 
-|subbytes    | q6/c         | 256x8         | LUT            | 
-|subbytes    | q7/c         | 256x8         | LUT            | 
-|subbytes    | q7/c         | 256x8         | LUT            | 
-|subbytes    | q8/c         | 256x8         | LUT            | 
-|subbytes    | q8/c         | 256x8         | LUT            | 
-|subbytes    | q9/c         | 256x8         | LUT            | 
-|subbytes    | q9/c         | 256x8         | LUT            | 
-|subbytes    | q10/c        | 256x8         | LUT            | 
-|subbytes    | q10/c        | 256x8         | LUT            | 
-|subbytes    | q11/c        | 256x8         | LUT            | 
-|subbytes    | q11/c        | 256x8         | LUT            | 
-|subbytes    | q12/c        | 256x8         | LUT            | 
-|subbytes    | q12/c        | 256x8         | LUT            | 
-|subbytes    | q13/c        | 256x8         | LUT            | 
-|subbytes    | q13/c        | 256x8         | LUT            | 
-|subbytes    | q14/c        | 256x8         | LUT            | 
-|subbytes    | q14/c        | 256x8         | LUT            | 
-|subbytes    | q16/c        | 256x8         | LUT            | 
-|subbytes    | q16/c        | 256x8         | LUT            | 
-|mixcolumn   | mul13        | 256x8         | LUT            | 
-|mixcolumn   | mul9         | 256x8         | LUT            | 
-|mixcolumn   | mul14        | 256x8         | LUT            | 
-|mixcolumn   | mul11        | 256x8         | LUT            | 
-|mixcolumn   | mul2         | 256x8         | LUT            | 
-|mixcolumn   | mul3         | 256x8         | LUT            | 
-|mixcolumn   | mul9         | 256x8         | LUT            | 
-|mixcolumn   | mul14        | 256x8         | LUT            | 
-|mixcolumn   | mul11        | 256x8         | LUT            | 
-|mixcolumn   | mul13        | 256x8         | LUT            | 
-|mixcolumn   | mul2         | 256x8         | LUT            | 
-|mixcolumn   | mul3         | 256x8         | LUT            | 
-|mixcolumn   | mul14        | 256x8         | LUT            | 
-|mixcolumn   | mul11        | 256x8         | LUT            | 
-|mixcolumn   | mul13        | 256x8         | LUT            | 
-|mixcolumn   | mul9         | 256x8         | LUT            | 
-|mixcolumn   | mul2         | 256x8         | LUT            | 
-|mixcolumn   | mul3         | 256x8         | LUT            | 
-|mixcolumn   | mul11        | 256x8         | LUT            | 
-|mixcolumn   | mul13        | 256x8         | LUT            | 
-|mixcolumn   | mul9         | 256x8         | LUT            | 
-|mixcolumn   | mul14        | 256x8         | LUT            | 
-|mixcolumn   | mul3         | 256x8         | LUT            | 
-|mixcolumn   | mul2         | 256x8         | LUT            | 
-|mixcolumn   | mul13        | 256x8         | LUT            | 
-|mixcolumn   | mul9         | 256x8         | LUT            | 
-|mixcolumn   | mul14        | 256x8         | LUT            | 
-|mixcolumn   | mul11        | 256x8         | LUT            | 
-|mixcolumn   | mul2         | 256x8         | LUT            | 
-|mixcolumn   | mul3         | 256x8         | LUT            | 
-|mixcolumn   | mul9         | 256x8         | LUT            | 
-|mixcolumn   | mul14        | 256x8         | LUT            | 
-|mixcolumn   | mul11        | 256x8         | LUT            | 
-|mixcolumn   | mul13        | 256x8         | LUT            | 
-|mixcolumn   | mul2         | 256x8         | LUT            | 
-|mixcolumn   | mul3         | 256x8         | LUT            | 
-|mixcolumn   | mul14        | 256x8         | LUT            | 
-|mixcolumn   | mul11        | 256x8         | LUT            | 
-|mixcolumn   | mul13        | 256x8         | LUT            | 
-|mixcolumn   | mul9         | 256x8         | LUT            | 
-|mixcolumn   | mul2         | 256x8         | LUT            | 
-|mixcolumn   | mul3         | 256x8         | LUT            | 
-|mixcolumn   | mul11        | 256x8         | LUT            | 
-|mixcolumn   | mul13        | 256x8         | LUT            | 
-|mixcolumn   | mul9         | 256x8         | LUT            | 
-|mixcolumn   | mul14        | 256x8         | LUT            | 
-|mixcolumn   | mul3         | 256x8         | LUT            | 
-|mixcolumn   | mul2         | 256x8         | LUT            | 
-|mixcolumn   | mul13        | 256x8         | LUT            | 
-|mixcolumn   | mul9         | 256x8         | LUT            | 
-|mixcolumn   | mul14        | 256x8         | LUT            | 
-|mixcolumn   | mul11        | 256x8         | LUT            | 
-|mixcolumn   | mul2         | 256x8         | LUT            | 
-|mixcolumn   | mul3         | 256x8         | LUT            | 
-|mixcolumn   | mul9         | 256x8         | LUT            | 
-|mixcolumn   | mul14        | 256x8         | LUT            | 
-|mixcolumn   | mul11        | 256x8         | LUT            | 
-|mixcolumn   | mul13        | 256x8         | LUT            | 
-|mixcolumn   | mul2         | 256x8         | LUT            | 
-|mixcolumn   | mul3         | 256x8         | LUT            | 
-|mixcolumn   | mul14        | 256x8         | LUT            | 
-|mixcolumn   | mul11        | 256x8         | LUT            | 
-|mixcolumn   | mul13        | 256x8         | LUT            | 
-|mixcolumn   | mul9         | 256x8         | LUT            | 
-|mixcolumn   | mul2         | 256x8         | LUT            | 
-|mixcolumn   | mul3         | 256x8         | LUT            | 
-|mixcolumn   | mul11        | 256x8         | LUT            | 
-|mixcolumn   | mul13        | 256x8         | LUT            | 
-|mixcolumn   | mul9         | 256x8         | LUT            | 
-|mixcolumn   | mul14        | 256x8         | LUT            | 
-|mixcolumn   | mul3         | 256x8         | LUT            | 
-|mixcolumn   | mul2         | 256x8         | LUT            | 
-|mixcolumn   | mul13        | 256x8         | LUT            | 
-|mixcolumn   | mul9         | 256x8         | LUT            | 
-|mixcolumn   | mul14        | 256x8         | LUT            | 
-|mixcolumn   | mul11        | 256x8         | LUT            | 
-|mixcolumn   | mul2         | 256x8         | LUT            | 
-|mixcolumn   | mul3         | 256x8         | LUT            | 
-|mixcolumn   | mul9         | 256x8         | LUT            | 
-|mixcolumn   | mul14        | 256x8         | LUT            | 
-|mixcolumn   | mul11        | 256x8         | LUT            | 
-|mixcolumn   | mul13        | 256x8         | LUT            | 
-|mixcolumn   | mul2         | 256x8         | LUT            | 
-|mixcolumn   | mul3         | 256x8         | LUT            | 
-|mixcolumn   | mul14        | 256x8         | LUT            | 
-|mixcolumn   | mul11        | 256x8         | LUT            | 
-|mixcolumn   | mul13        | 256x8         | LUT            | 
-|mixcolumn   | mul9         | 256x8         | LUT            | 
-|mixcolumn   | mul2         | 256x8         | LUT            | 
-|mixcolumn   | mul3         | 256x8         | LUT            | 
-|mixcolumn   | mul11        | 256x8         | LUT            | 
-|mixcolumn   | mul13        | 256x8         | LUT            | 
-|mixcolumn   | mul9         | 256x8         | LUT            | 
-|mixcolumn   | mul14        | 256x8         | LUT            | 
-|mixcolumn   | mul3         | 256x8         | LUT            | 
-|mixcolumn   | mul2         | 256x8         | LUT            | 
+|rounds      | t1/q0/c      | 256x8         | LUT            | 
+|rounds      | t1/q0/c      | 256x8         | LUT            | 
+|rounds      | t1/q1/c      | 256x8         | LUT            | 
+|rounds      | t1/q1/c      | 256x8         | LUT            | 
+|rounds      | t1/q2/c      | 256x8         | LUT            | 
+|rounds      | t1/q2/c      | 256x8         | LUT            | 
+|rounds      | t1/q3/c      | 256x8         | LUT            | 
+|rounds      | t1/q3/c      | 256x8         | LUT            | 
+|rounds      | t1/q4/c      | 256x8         | LUT            | 
+|rounds      | t1/q4/c      | 256x8         | LUT            | 
+|rounds      | t1/q5/c      | 256x8         | LUT            | 
+|rounds      | t1/q5/c      | 256x8         | LUT            | 
+|rounds      | t1/q6/c      | 256x8         | LUT            | 
+|rounds      | t1/q6/c      | 256x8         | LUT            | 
+|rounds      | t1/q7/c      | 256x8         | LUT            | 
+|rounds      | t1/q7/c      | 256x8         | LUT            | 
+|rounds      | t1/q8/c      | 256x8         | LUT            | 
+|rounds      | t1/q8/c      | 256x8         | LUT            | 
+|rounds      | t1/q9/c      | 256x8         | LUT            | 
+|rounds      | t1/q9/c      | 256x8         | LUT            | 
+|rounds      | t1/q10/c     | 256x8         | LUT            | 
+|rounds      | t1/q10/c     | 256x8         | LUT            | 
+|rounds      | t1/q11/c     | 256x8         | LUT            | 
+|rounds      | t1/q11/c     | 256x8         | LUT            | 
+|rounds      | t1/q12/c     | 256x8         | LUT            | 
+|rounds      | t1/q12/c     | 256x8         | LUT            | 
+|rounds      | t1/q13/c     | 256x8         | LUT            | 
+|rounds      | t1/q13/c     | 256x8         | LUT            | 
+|rounds      | t1/q14/c     | 256x8         | LUT            | 
+|rounds      | t1/q14/c     | 256x8         | LUT            | 
+|rounds      | t1/q16/c     | 256x8         | LUT            | 
+|rounds      | t1/q16/c     | 256x8         | LUT            | 
 |AES_TOP     | r14/t1/q0/c  | 256x8         | LUT            | 
 |AES_TOP     | r14/t1/q0/c  | 256x8         | LUT            | 
 |AES_TOP     | r14/t1/q1/c  | 256x8         | LUT            | 
@@ -1195,60 +2367,60 @@ Report RTL Partitions:
 +------+---------------+------------+----------+
 |      |RTL Partition  |Replication |Instances |
 +------+---------------+------------+----------+
-|1     |rounds         |           1|      7180|
+|1     |rounds         |           1|      4937|
 |2     |aescipher__GC0 |           1|      4003|
 |3     |uart_tx        |           1|      1118|
-|4     |rounds__1      |           1|      7328|
-|5     |rounds__2      |           1|      7319|
-|6     |rounds__3      |           1|      7359|
-|7     |rounds__4      |           1|      7331|
-|8     |rounds__5      |           1|      7331|
-|9     |rounds__6      |           1|      7921|
-|10    |rounds__7      |           1|      7321|
-|11    |rounds__8      |           1|      7315|
-|12    |rounds__9      |           1|      7365|
-|13    |rounds__10     |           1|      7333|
-|14    |rounds__11     |           1|      7321|
-|15    |rounds__12     |           1|      7329|
+|4     |rounds__1      |           1|      5450|
+|5     |rounds__2      |           1|      5440|
+|6     |rounds__3      |           1|      5456|
+|7     |rounds__4      |           1|      5454|
+|8     |rounds__5      |           1|      5452|
+|9     |rounds__6      |           1|      5911|
+|10    |rounds__7      |           1|      5442|
+|11    |rounds__8      |           1|      5438|
+|12    |rounds__9      |           1|      5462|
+|13    |rounds__10     |           1|      5454|
+|14    |rounds__11     |           1|      5443|
+|15    |rounds__12     |           1|      5456|
 +------+---------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:42 ; elapsed = 00:02:01 . Memory (MB): peak = 1263.773 ; gain = 1027.441
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:32 ; elapsed = 00:01:42 . Memory (MB): peak = 1110.191 ; gain = 873.938
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:42 ; elapsed = 00:02:01 . Memory (MB): peak = 1264.145 ; gain = 1027.813
+Finished Timing Optimization : Time (s): cpu = 00:01:32 ; elapsed = 00:01:42 . Memory (MB): peak = 1110.488 ; gain = 874.234
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
 +------+---------------+------------+----------+
 |      |RTL Partition  |Replication |Instances |
 +------+---------------+------------+----------+
-|1     |rounds         |           1|      7180|
+|1     |rounds         |           1|      4937|
 |2     |aescipher__GC0 |           1|      4003|
 |3     |uart_tx        |           1|      1118|
-|4     |rounds__1      |           1|      7328|
-|5     |rounds__2      |           1|      7319|
-|6     |rounds__3      |           1|      7359|
-|7     |rounds__4      |           1|      7331|
-|8     |rounds__5      |           1|      7331|
-|9     |rounds__6      |           1|      7921|
-|10    |rounds__7      |           1|      7321|
-|11    |rounds__8      |           1|      7315|
-|12    |rounds__9      |           1|      7365|
-|13    |rounds__10     |           1|      7333|
-|14    |rounds__11     |           1|      7321|
-|15    |rounds__12     |           1|      7329|
+|4     |rounds__1      |           1|      5450|
+|5     |rounds__2      |           1|      5440|
+|6     |rounds__3      |           1|      5456|
+|7     |rounds__4      |           1|      5454|
+|8     |rounds__5      |           1|      5452|
+|9     |rounds__6      |           1|      5911|
+|10    |rounds__7      |           1|      5442|
+|11    |rounds__8      |           1|      5438|
+|12    |rounds__9      |           1|      5462|
+|13    |rounds__10     |           1|      5454|
+|14    |rounds__11     |           1|      5443|
+|15    |rounds__12     |           1|      5456|
 +------+---------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:02:00 ; elapsed = 00:02:20 . Memory (MB): peak = 1287.020 ; gain = 1050.688
+Finished Technology Mapping : Time (s): cpu = 00:01:46 ; elapsed = 00:01:57 . Memory (MB): peak = 1132.828 ; gain = 896.574
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1272,7 +2444,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:02:04 ; elapsed = 00:02:24 . Memory (MB): peak = 1287.020 ; gain = 1050.688
+Finished IO Insertion : Time (s): cpu = 00:01:51 ; elapsed = 00:02:03 . Memory (MB): peak = 1132.828 ; gain = 896.574
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1285,7 +2457,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:02:05 ; elapsed = 00:02:25 . Memory (MB): peak = 1287.020 ; gain = 1050.688
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:51 ; elapsed = 00:02:04 . Memory (MB): peak = 1132.828 ; gain = 896.574
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1297,25 +2469,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:08 ; elapsed = 00:02:28 . Memory (MB): peak = 1287.020 ; gain = 1050.688
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:54 ; elapsed = 00:02:07 . Memory (MB): peak = 1132.828 ; gain = 896.574
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:02:09 ; elapsed = 00:02:29 . Memory (MB): peak = 1287.020 ; gain = 1050.688
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:55 ; elapsed = 00:02:08 . Memory (MB): peak = 1132.828 ; gain = 896.574
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:02:16 ; elapsed = 00:02:37 . Memory (MB): peak = 1287.020 ; gain = 1050.688
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:07 ; elapsed = 00:02:20 . Memory (MB): peak = 1132.828 ; gain = 896.574
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:02:16 ; elapsed = 00:02:37 . Memory (MB): peak = 1287.020 ; gain = 1050.688
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:07 ; elapsed = 00:02:20 . Memory (MB): peak = 1132.828 ; gain = 896.574
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -1334,301 +2506,287 @@ Report Cell Usage:
 |1     |BUFG   |     1|
 |2     |CARRY4 |     3|
 |3     |LUT1   |    16|
-|4     |LUT2   |   189|
-|5     |LUT3   |  4773|
-|6     |LUT4   |  2730|
-|7     |LUT5   |  3599|
-|8     |LUT6   | 17517|
-|9     |MUXF7  |  7252|
-|10    |MUXF8  |  2441|
-|11    |FDCE   |  5143|
-|12    |FDPE   |     3|
-|13    |FDRE   |  3366|
-|14    |IBUF   |     5|
-|15    |OBUF   |     1|
-|16    |OBUFT  |     1|
+|4     |LUT2   |  1591|
+|5     |LUT3   |  2709|
+|6     |LUT4   |   851|
+|7     |LUT5   |  2619|
+|8     |LUT6   | 19945|
+|9     |MUXF7  |  6874|
+|10    |FDCE   |  5247|
+|11    |FDPE   |     3|
+|12    |FDRE   |  5030|
+|13    |IBUF   |     5|
+|14    |OBUF   |     1|
+|15    |OBUFT  |     1|
 +------+-------+------+
 
 Report Instance Areas: 
-+------+------------+--------------+------+
-|      |Instance    |Module        |Cells |
-+------+------------+--------------+------+
-|1     |top         |              | 47040|
-|2     |  T1        |uart_tx       |   506|
-|3     |  u1        |aescipher     | 46526|
-|4     |    r1      |rounds        |  3282|
-|5     |      t1    |subbytes_242  |   649|
-|6     |        q0  |sbox_244      |    34|
-|7     |        q1  |sbox_245      |    47|
-|8     |        q10 |sbox_246      |    35|
-|9     |        q11 |sbox_247      |    45|
-|10    |        q12 |sbox_248      |    35|
-|11    |        q13 |sbox_249      |    44|
-|12    |        q14 |sbox_250      |    35|
-|13    |        q16 |sbox_251      |    44|
-|14    |        q2  |sbox_252      |    38|
-|15    |        q3  |sbox_253      |    46|
-|16    |        q4  |sbox_254      |    38|
-|17    |        q5  |sbox_255      |    42|
-|18    |        q6  |sbox_256      |    39|
-|19    |        q7  |sbox_257      |    46|
-|20    |        q8  |sbox_258      |    38|
-|21    |        q9  |sbox_259      |    43|
-|22    |      t3    |mixcolumn_243 |   244|
-|23    |    r10     |rounds_0      |  3336|
-|24    |      t1    |subbytes_224  |   704|
-|25    |        q0  |sbox_226      |    40|
-|26    |        q1  |sbox_227      |    48|
-|27    |        q10 |sbox_228      |    40|
-|28    |        q11 |sbox_229      |    48|
-|29    |        q12 |sbox_230      |    40|
-|30    |        q13 |sbox_231      |    48|
-|31    |        q14 |sbox_232      |    40|
-|32    |        q16 |sbox_233      |    48|
-|33    |        q2  |sbox_234      |    40|
-|34    |        q3  |sbox_235      |    48|
-|35    |        q4  |sbox_236      |    40|
-|36    |        q5  |sbox_237      |    48|
-|37    |        q6  |sbox_238      |    40|
-|38    |        q7  |sbox_239      |    48|
-|39    |        q8  |sbox_240      |    40|
-|40    |        q9  |sbox_241      |    48|
-|41    |      t3    |mixcolumn_225 |   255|
-|42    |    r11     |rounds_1      |  3336|
-|43    |      t1    |subbytes_206  |   704|
-|44    |        q0  |sbox_208      |    40|
-|45    |        q1  |sbox_209      |    48|
-|46    |        q10 |sbox_210      |    40|
-|47    |        q11 |sbox_211      |    48|
-|48    |        q12 |sbox_212      |    40|
-|49    |        q13 |sbox_213      |    48|
-|50    |        q14 |sbox_214      |    40|
-|51    |        q16 |sbox_215      |    48|
-|52    |        q2  |sbox_216      |    40|
-|53    |        q3  |sbox_217      |    48|
-|54    |        q4  |sbox_218      |    40|
-|55    |        q5  |sbox_219      |    48|
-|56    |        q6  |sbox_220      |    40|
-|57    |        q7  |sbox_221      |    48|
-|58    |        q8  |sbox_222      |    40|
-|59    |        q9  |sbox_223      |    48|
-|60    |      t3    |mixcolumn_207 |   252|
-|61    |    r12     |rounds_2      |  3336|
-|62    |      t1    |subbytes_188  |   704|
-|63    |        q0  |sbox_190      |    40|
-|64    |        q1  |sbox_191      |    48|
-|65    |        q10 |sbox_192      |    40|
-|66    |        q11 |sbox_193      |    48|
-|67    |        q12 |sbox_194      |    40|
-|68    |        q13 |sbox_195      |    48|
-|69    |        q14 |sbox_196      |    40|
-|70    |        q16 |sbox_197      |    48|
-|71    |        q2  |sbox_198      |    40|
-|72    |        q3  |sbox_199      |    48|
-|73    |        q4  |sbox_200      |    40|
-|74    |        q5  |sbox_201      |    48|
-|75    |        q6  |sbox_202      |    40|
-|76    |        q7  |sbox_203      |    48|
-|77    |        q8  |sbox_204      |    40|
-|78    |        q9  |sbox_205      |    48|
-|79    |      t3    |mixcolumn_189 |   251|
-|80    |    r13     |rounds_3      |  3336|
-|81    |      t1    |subbytes_170  |   704|
-|82    |        q0  |sbox_172      |    40|
-|83    |        q1  |sbox_173      |    48|
-|84    |        q10 |sbox_174      |    40|
-|85    |        q11 |sbox_175      |    48|
-|86    |        q12 |sbox_176      |    40|
-|87    |        q13 |sbox_177      |    48|
-|88    |        q14 |sbox_178      |    40|
-|89    |        q16 |sbox_179      |    48|
-|90    |        q2  |sbox_180      |    40|
-|91    |        q3  |sbox_181      |    48|
-|92    |        q4  |sbox_182      |    40|
-|93    |        q5  |sbox_183      |    48|
-|94    |        q6  |sbox_184      |    40|
-|95    |        q7  |sbox_185      |    48|
-|96    |        q8  |sbox_186      |    40|
-|97    |        q9  |sbox_187      |    48|
-|98    |      t3    |mixcolumn_171 |   252|
-|99    |    r14     |rounndlast    |   450|
-|100   |      t1    |subbytes_153  |   405|
-|101   |        q0  |sbox_154      |    38|
-|102   |        q1  |sbox_155      |    16|
-|103   |        q10 |sbox_156      |    34|
-|104   |        q11 |sbox_157      |    16|
-|105   |        q12 |sbox_158      |    35|
-|106   |        q13 |sbox_159      |    16|
-|107   |        q14 |sbox_160      |    33|
-|108   |        q16 |sbox_161      |    16|
-|109   |        q2  |sbox_162      |    36|
-|110   |        q3  |sbox_163      |    16|
-|111   |        q4  |sbox_164      |    33|
-|112   |        q5  |sbox_165      |    16|
-|113   |        q6  |sbox_166      |    34|
-|114   |        q7  |sbox_167      |    16|
-|115   |        q8  |sbox_168      |    34|
-|116   |        q9  |sbox_169      |    16|
-|117   |      t2    |shiftrow      |    20|
-|118   |    r2      |rounds_4      |  3336|
-|119   |      t1    |subbytes_135  |   704|
-|120   |        q0  |sbox_137      |    40|
-|121   |        q1  |sbox_138      |    48|
-|122   |        q10 |sbox_139      |    40|
-|123   |        q11 |sbox_140      |    48|
-|124   |        q12 |sbox_141      |    40|
-|125   |        q13 |sbox_142      |    48|
-|126   |        q14 |sbox_143      |    40|
-|127   |        q16 |sbox_144      |    48|
-|128   |        q2  |sbox_145      |    40|
-|129   |        q3  |sbox_146      |    48|
-|130   |        q4  |sbox_147      |    40|
-|131   |        q5  |sbox_148      |    48|
-|132   |        q6  |sbox_149      |    40|
-|133   |        q7  |sbox_150      |    48|
-|134   |        q8  |sbox_151      |    40|
-|135   |        q9  |sbox_152      |    48|
-|136   |      t3    |mixcolumn_136 |   252|
-|137   |    r3      |rounds_5      |  3336|
-|138   |      t1    |subbytes_117  |   704|
-|139   |        q0  |sbox_119      |    40|
-|140   |        q1  |sbox_120      |    48|
-|141   |        q10 |sbox_121      |    40|
-|142   |        q11 |sbox_122      |    48|
-|143   |        q12 |sbox_123      |    40|
-|144   |        q13 |sbox_124      |    48|
-|145   |        q14 |sbox_125      |    40|
-|146   |        q16 |sbox_126      |    48|
-|147   |        q2  |sbox_127      |    40|
-|148   |        q3  |sbox_128      |    48|
-|149   |        q4  |sbox_129      |    40|
-|150   |        q5  |sbox_130      |    48|
-|151   |        q6  |sbox_131      |    40|
-|152   |        q7  |sbox_132      |    48|
-|153   |        q8  |sbox_133      |    40|
-|154   |        q9  |sbox_134      |    48|
-|155   |      t3    |mixcolumn_118 |   248|
-|156   |    r4      |rounds_6      |  3336|
-|157   |      t1    |subbytes_99   |   704|
-|158   |        q0  |sbox_101      |    40|
-|159   |        q1  |sbox_102      |    48|
-|160   |        q10 |sbox_103      |    40|
-|161   |        q11 |sbox_104      |    48|
-|162   |        q12 |sbox_105      |    40|
-|163   |        q13 |sbox_106      |    48|
-|164   |        q14 |sbox_107      |    40|
-|165   |        q16 |sbox_108      |    48|
-|166   |        q2  |sbox_109      |    40|
-|167   |        q3  |sbox_110      |    48|
-|168   |        q4  |sbox_111      |    40|
-|169   |        q5  |sbox_112      |    48|
-|170   |        q6  |sbox_113      |    40|
-|171   |        q7  |sbox_114      |    48|
-|172   |        q8  |sbox_115      |    40|
-|173   |        q9  |sbox_116      |    48|
-|174   |      t3    |mixcolumn_100 |   254|
-|175   |    r5      |rounds_7      |  3336|
-|176   |      t1    |subbytes_81   |   704|
-|177   |        q0  |sbox_83       |    40|
-|178   |        q1  |sbox_84       |    48|
-|179   |        q10 |sbox_85       |    40|
-|180   |        q11 |sbox_86       |    48|
-|181   |        q12 |sbox_87       |    40|
-|182   |        q13 |sbox_88       |    48|
-|183   |        q14 |sbox_89       |    40|
-|184   |        q16 |sbox_90       |    48|
-|185   |        q2  |sbox_91       |    40|
-|186   |        q3  |sbox_92       |    48|
-|187   |        q4  |sbox_93       |    40|
-|188   |        q5  |sbox_94       |    48|
-|189   |        q6  |sbox_95       |    40|
-|190   |        q7  |sbox_96       |    48|
-|191   |        q8  |sbox_97       |    40|
-|192   |        q9  |sbox_98       |    48|
-|193   |      t3    |mixcolumn_82  |   258|
-|194   |    r6      |rounds_8      |  3336|
-|195   |      t1    |subbytes_63   |   704|
-|196   |        q0  |sbox_65       |    40|
-|197   |        q1  |sbox_66       |    48|
-|198   |        q10 |sbox_67       |    40|
-|199   |        q11 |sbox_68       |    48|
-|200   |        q12 |sbox_69       |    40|
-|201   |        q13 |sbox_70       |    48|
-|202   |        q14 |sbox_71       |    40|
-|203   |        q16 |sbox_72       |    48|
-|204   |        q2  |sbox_73       |    40|
-|205   |        q3  |sbox_74       |    48|
-|206   |        q4  |sbox_75       |    40|
-|207   |        q5  |sbox_76       |    48|
-|208   |        q6  |sbox_77       |    40|
-|209   |        q7  |sbox_78       |    48|
-|210   |        q8  |sbox_79       |    40|
-|211   |        q9  |sbox_80       |    48|
-|212   |      t3    |mixcolumn_64  |   258|
-|213   |    r7      |rounds_9      |  3336|
-|214   |      t1    |subbytes_45   |   704|
-|215   |        q0  |sbox_47       |    40|
-|216   |        q1  |sbox_48       |    48|
-|217   |        q10 |sbox_49       |    40|
-|218   |        q11 |sbox_50       |    48|
-|219   |        q12 |sbox_51       |    40|
-|220   |        q13 |sbox_52       |    48|
-|221   |        q14 |sbox_53       |    40|
-|222   |        q16 |sbox_54       |    48|
-|223   |        q2  |sbox_55       |    40|
-|224   |        q3  |sbox_56       |    48|
-|225   |        q4  |sbox_57       |    40|
-|226   |        q5  |sbox_58       |    48|
-|227   |        q6  |sbox_59       |    40|
-|228   |        q7  |sbox_60       |    48|
-|229   |        q8  |sbox_61       |    40|
-|230   |        q9  |sbox_62       |    48|
-|231   |      t3    |mixcolumn_46  |   272|
-|232   |    r8      |rounds_10     |  3336|
-|233   |      t1    |subbytes_27   |   704|
-|234   |        q0  |sbox_29       |    40|
-|235   |        q1  |sbox_30       |    48|
-|236   |        q10 |sbox_31       |    40|
-|237   |        q11 |sbox_32       |    48|
-|238   |        q12 |sbox_33       |    40|
-|239   |        q13 |sbox_34       |    48|
-|240   |        q14 |sbox_35       |    40|
-|241   |        q16 |sbox_36       |    48|
-|242   |        q2  |sbox_37       |    40|
-|243   |        q3  |sbox_38       |    48|
-|244   |        q4  |sbox_39       |    40|
-|245   |        q5  |sbox_40       |    48|
-|246   |        q6  |sbox_41       |    40|
-|247   |        q7  |sbox_42       |    48|
-|248   |        q8  |sbox_43       |    40|
-|249   |        q9  |sbox_44       |    48|
-|250   |      t3    |mixcolumn_28  |   254|
-|251   |    r9      |rounds_11     |  3336|
-|252   |      t1    |subbytes      |   704|
-|253   |        q0  |sbox          |    40|
-|254   |        q1  |sbox_12       |    48|
-|255   |        q10 |sbox_13       |    40|
-|256   |        q11 |sbox_14       |    48|
-|257   |        q12 |sbox_15       |    40|
-|258   |        q13 |sbox_16       |    48|
-|259   |        q14 |sbox_17       |    40|
-|260   |        q16 |sbox_18       |    48|
-|261   |        q2  |sbox_19       |    40|
-|262   |        q3  |sbox_20       |    48|
-|263   |        q4  |sbox_21       |    40|
-|264   |        q5  |sbox_22       |    48|
-|265   |        q6  |sbox_23       |    40|
-|266   |        q7  |sbox_24       |    48|
-|267   |        q8  |sbox_25       |    40|
-|268   |        q9  |sbox_26       |    48|
-|269   |      t3    |mixcolumn     |   249|
-+------+------------+--------------+------+
++------+------------+-------------+------+
+|      |Instance    |Module       |Cells |
++------+------------+-------------+------+
+|1     |top         |             | 44896|
+|2     |  T1        |uart_tx      |   506|
+|3     |  u1        |aescipher    | 44382|
+|4     |    r1      |rounds       |  3157|
+|5     |      t1    |subbytes_231 |   507|
+|6     |        q0  |sbox_232     |    32|
+|7     |        q1  |sbox_233     |    32|
+|8     |        q10 |sbox_234     |    32|
+|9     |        q11 |sbox_235     |    32|
+|10    |        q12 |sbox_236     |    32|
+|11    |        q13 |sbox_237     |    32|
+|12    |        q14 |sbox_238     |    32|
+|13    |        q16 |sbox_239     |    27|
+|14    |        q2  |sbox_240     |    32|
+|15    |        q3  |sbox_241     |    32|
+|16    |        q4  |sbox_242     |    32|
+|17    |        q5  |sbox_243     |    32|
+|18    |        q6  |sbox_244     |    32|
+|19    |        q7  |sbox_245     |    32|
+|20    |        q8  |sbox_246     |    32|
+|21    |        q9  |sbox_247     |    32|
+|22    |    r10     |rounds_0     |  3157|
+|23    |      t1    |subbytes_214 |   505|
+|24    |        q0  |sbox_215     |    32|
+|25    |        q1  |sbox_216     |    32|
+|26    |        q10 |sbox_217     |    32|
+|27    |        q11 |sbox_218     |    32|
+|28    |        q12 |sbox_219     |    32|
+|29    |        q13 |sbox_220     |    32|
+|30    |        q14 |sbox_221     |    32|
+|31    |        q16 |sbox_222     |    25|
+|32    |        q2  |sbox_223     |    32|
+|33    |        q3  |sbox_224     |    32|
+|34    |        q4  |sbox_225     |    32|
+|35    |        q5  |sbox_226     |    32|
+|36    |        q6  |sbox_227     |    32|
+|37    |        q7  |sbox_228     |    32|
+|38    |        q8  |sbox_229     |    32|
+|39    |        q9  |sbox_230     |    32|
+|40    |    r11     |rounds_1     |  3160|
+|41    |      t1    |subbytes_197 |   517|
+|42    |        q0  |sbox_198     |    32|
+|43    |        q1  |sbox_199     |    32|
+|44    |        q10 |sbox_200     |    32|
+|45    |        q11 |sbox_201     |    32|
+|46    |        q12 |sbox_202     |    32|
+|47    |        q13 |sbox_203     |    32|
+|48    |        q14 |sbox_204     |    32|
+|49    |        q16 |sbox_205     |    37|
+|50    |        q2  |sbox_206     |    32|
+|51    |        q3  |sbox_207     |    32|
+|52    |        q4  |sbox_208     |    32|
+|53    |        q5  |sbox_209     |    32|
+|54    |        q6  |sbox_210     |    32|
+|55    |        q7  |sbox_211     |    32|
+|56    |        q8  |sbox_212     |    32|
+|57    |        q9  |sbox_213     |    32|
+|58    |    r12     |rounds_2     |  3160|
+|59    |      t1    |subbytes_180 |   516|
+|60    |        q0  |sbox_181     |    32|
+|61    |        q1  |sbox_182     |    32|
+|62    |        q10 |sbox_183     |    32|
+|63    |        q11 |sbox_184     |    32|
+|64    |        q12 |sbox_185     |    32|
+|65    |        q13 |sbox_186     |    32|
+|66    |        q14 |sbox_187     |    32|
+|67    |        q16 |sbox_188     |    36|
+|68    |        q2  |sbox_189     |    32|
+|69    |        q3  |sbox_190     |    32|
+|70    |        q4  |sbox_191     |    32|
+|71    |        q5  |sbox_192     |    32|
+|72    |        q6  |sbox_193     |    32|
+|73    |        q7  |sbox_194     |    32|
+|74    |        q8  |sbox_195     |    32|
+|75    |        q9  |sbox_196     |    32|
+|76    |    r13     |rounds_3     |  3159|
+|77    |      t1    |subbytes_163 |   511|
+|78    |        q0  |sbox_164     |    32|
+|79    |        q1  |sbox_165     |    32|
+|80    |        q10 |sbox_166     |    32|
+|81    |        q11 |sbox_167     |    32|
+|82    |        q12 |sbox_168     |    32|
+|83    |        q13 |sbox_169     |    32|
+|84    |        q14 |sbox_170     |    32|
+|85    |        q16 |sbox_171     |    31|
+|86    |        q2  |sbox_172     |    32|
+|87    |        q3  |sbox_173     |    32|
+|88    |        q4  |sbox_174     |    32|
+|89    |        q5  |sbox_175     |    32|
+|90    |        q6  |sbox_176     |    32|
+|91    |        q7  |sbox_177     |    32|
+|92    |        q8  |sbox_178     |    32|
+|93    |        q9  |sbox_179     |    32|
+|94    |    r14     |rounndlast   |   450|
+|95    |      t1    |subbytes_146 |   405|
+|96    |        q0  |sbox_147     |    38|
+|97    |        q1  |sbox_148     |    16|
+|98    |        q10 |sbox_149     |    34|
+|99    |        q11 |sbox_150     |    16|
+|100   |        q12 |sbox_151     |    35|
+|101   |        q13 |sbox_152     |    16|
+|102   |        q14 |sbox_153     |    33|
+|103   |        q16 |sbox_154     |    16|
+|104   |        q2  |sbox_155     |    36|
+|105   |        q3  |sbox_156     |    16|
+|106   |        q4  |sbox_157     |    33|
+|107   |        q5  |sbox_158     |    16|
+|108   |        q6  |sbox_159     |    34|
+|109   |        q7  |sbox_160     |    16|
+|110   |        q8  |sbox_161     |    34|
+|111   |        q9  |sbox_162     |    16|
+|112   |      t2    |shiftrow     |    20|
+|113   |    r2      |rounds_4     |  3160|
+|114   |      t1    |subbytes_129 |   514|
+|115   |        q0  |sbox_130     |    32|
+|116   |        q1  |sbox_131     |    32|
+|117   |        q10 |sbox_132     |    32|
+|118   |        q11 |sbox_133     |    32|
+|119   |        q12 |sbox_134     |    32|
+|120   |        q13 |sbox_135     |    32|
+|121   |        q14 |sbox_136     |    32|
+|122   |        q16 |sbox_137     |    34|
+|123   |        q2  |sbox_138     |    32|
+|124   |        q3  |sbox_139     |    32|
+|125   |        q4  |sbox_140     |    32|
+|126   |        q5  |sbox_141     |    32|
+|127   |        q6  |sbox_142     |    32|
+|128   |        q7  |sbox_143     |    32|
+|129   |        q8  |sbox_144     |    32|
+|130   |        q9  |sbox_145     |    32|
+|131   |    r3      |rounds_5     |  3160|
+|132   |      t1    |subbytes_112 |   512|
+|133   |        q0  |sbox_113     |    32|
+|134   |        q1  |sbox_114     |    32|
+|135   |        q10 |sbox_115     |    32|
+|136   |        q11 |sbox_116     |    32|
+|137   |        q12 |sbox_117     |    32|
+|138   |        q13 |sbox_118     |    32|
+|139   |        q14 |sbox_119     |    32|
+|140   |        q16 |sbox_120     |    32|
+|141   |        q2  |sbox_121     |    32|
+|142   |        q3  |sbox_122     |    32|
+|143   |        q4  |sbox_123     |    32|
+|144   |        q5  |sbox_124     |    32|
+|145   |        q6  |sbox_125     |    32|
+|146   |        q7  |sbox_126     |    32|
+|147   |        q8  |sbox_127     |    32|
+|148   |        q9  |sbox_128     |    32|
+|149   |    r4      |rounds_6     |  3157|
+|150   |      t1    |subbytes_95  |   507|
+|151   |        q0  |sbox_96      |    32|
+|152   |        q1  |sbox_97      |    32|
+|153   |        q10 |sbox_98      |    32|
+|154   |        q11 |sbox_99      |    32|
+|155   |        q12 |sbox_100     |    32|
+|156   |        q13 |sbox_101     |    32|
+|157   |        q14 |sbox_102     |    32|
+|158   |        q16 |sbox_103     |    27|
+|159   |        q2  |sbox_104     |    32|
+|160   |        q3  |sbox_105     |    32|
+|161   |        q4  |sbox_106     |    32|
+|162   |        q5  |sbox_107     |    32|
+|163   |        q6  |sbox_108     |    32|
+|164   |        q7  |sbox_109     |    32|
+|165   |        q8  |sbox_110     |    32|
+|166   |        q9  |sbox_111     |    32|
+|167   |    r5      |rounds_7     |  3160|
+|168   |      t1    |subbytes_78  |   514|
+|169   |        q0  |sbox_79      |    32|
+|170   |        q1  |sbox_80      |    32|
+|171   |        q10 |sbox_81      |    32|
+|172   |        q11 |sbox_82      |    32|
+|173   |        q12 |sbox_83      |    32|
+|174   |        q13 |sbox_84      |    32|
+|175   |        q14 |sbox_85      |    32|
+|176   |        q16 |sbox_86      |    34|
+|177   |        q2  |sbox_87      |    32|
+|178   |        q3  |sbox_88      |    32|
+|179   |        q4  |sbox_89      |    32|
+|180   |        q5  |sbox_90      |    32|
+|181   |        q6  |sbox_91      |    32|
+|182   |        q7  |sbox_92      |    32|
+|183   |        q8  |sbox_93      |    32|
+|184   |        q9  |sbox_94      |    32|
+|185   |    r6      |rounds_8     |  3158|
+|186   |      t1    |subbytes_61  |   510|
+|187   |        q0  |sbox_62      |    32|
+|188   |        q1  |sbox_63      |    32|
+|189   |        q10 |sbox_64      |    32|
+|190   |        q11 |sbox_65      |    32|
+|191   |        q12 |sbox_66      |    32|
+|192   |        q13 |sbox_67      |    32|
+|193   |        q14 |sbox_68      |    32|
+|194   |        q16 |sbox_69      |    30|
+|195   |        q2  |sbox_70      |    32|
+|196   |        q3  |sbox_71      |    32|
+|197   |        q4  |sbox_72      |    32|
+|198   |        q5  |sbox_73      |    32|
+|199   |        q6  |sbox_74      |    32|
+|200   |        q7  |sbox_75      |    32|
+|201   |        q8  |sbox_76      |    32|
+|202   |        q9  |sbox_77      |    32|
+|203   |    r7      |rounds_9     |  3265|
+|204   |      t1    |subbytes_44  |   624|
+|205   |        q0  |sbox_45      |    40|
+|206   |        q1  |sbox_46      |    40|
+|207   |        q10 |sbox_47      |    40|
+|208   |        q11 |sbox_48      |    40|
+|209   |        q12 |sbox_49      |    40|
+|210   |        q13 |sbox_50      |    40|
+|211   |        q14 |sbox_51      |    40|
+|212   |        q16 |sbox_52      |    24|
+|213   |        q2  |sbox_53      |    40|
+|214   |        q3  |sbox_54      |    40|
+|215   |        q4  |sbox_55      |    40|
+|216   |        q5  |sbox_56      |    40|
+|217   |        q6  |sbox_57      |    40|
+|218   |        q7  |sbox_58      |    40|
+|219   |        q8  |sbox_59      |    40|
+|220   |        q9  |sbox_60      |    40|
+|221   |    r8      |rounds_10    |  3158|
+|222   |      t1    |subbytes_27  |   509|
+|223   |        q0  |sbox_28      |    32|
+|224   |        q1  |sbox_29      |    32|
+|225   |        q10 |sbox_30      |    32|
+|226   |        q11 |sbox_31      |    32|
+|227   |        q12 |sbox_32      |    32|
+|228   |        q13 |sbox_33      |    32|
+|229   |        q14 |sbox_34      |    32|
+|230   |        q16 |sbox_35      |    29|
+|231   |        q2  |sbox_36      |    32|
+|232   |        q3  |sbox_37      |    32|
+|233   |        q4  |sbox_38      |    32|
+|234   |        q5  |sbox_39      |    32|
+|235   |        q6  |sbox_40      |    32|
+|236   |        q7  |sbox_41      |    32|
+|237   |        q8  |sbox_42      |    32|
+|238   |        q9  |sbox_43      |    32|
+|239   |    r9      |rounds_11    |  3160|
+|240   |      t1    |subbytes     |   516|
+|241   |        q0  |sbox         |    32|
+|242   |        q1  |sbox_12      |    32|
+|243   |        q10 |sbox_13      |    32|
+|244   |        q11 |sbox_14      |    32|
+|245   |        q12 |sbox_15      |    32|
+|246   |        q13 |sbox_16      |    32|
+|247   |        q14 |sbox_17      |    32|
+|248   |        q16 |sbox_18      |    36|
+|249   |        q2  |sbox_19      |    32|
+|250   |        q3  |sbox_20      |    32|
+|251   |        q4  |sbox_21      |    32|
+|252   |        q5  |sbox_22      |    32|
+|253   |        q6  |sbox_23      |    32|
+|254   |        q7  |sbox_24      |    32|
+|255   |        q8  |sbox_25      |    32|
+|256   |        q9  |sbox_26      |    32|
++------+------------+-------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:02:16 ; elapsed = 00:02:37 . Memory (MB): peak = 1287.020 ; gain = 1050.688
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:07 ; elapsed = 00:02:20 . Memory (MB): peak = 1132.828 ; gain = 896.574
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 1058 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:56 ; elapsed = 00:02:24 . Memory (MB): peak = 1287.020 ; gain = 692.586
-Synthesis Optimization Complete : Time (s): cpu = 00:02:17 ; elapsed = 00:02:37 . Memory (MB): peak = 1287.020 ; gain = 1050.688
+Synthesis finished with 0 errors, 0 critical warnings and 1306 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:46 ; elapsed = 00:02:06 . Memory (MB): peak = 1132.828 ; gain = 474.211
+Synthesis Optimization Complete : Time (s): cpu = 00:02:07 ; elapsed = 00:02:20 . Memory (MB): peak = 1132.828 ; gain = 896.574
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -1637,10 +2795,10 @@ INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-278 Infos, 331 Warnings, 0 Critical Warnings and 0 Errors encountered.
+300 Infos, 332 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:02:29 ; elapsed = 00:02:52 . Memory (MB): peak = 1287.020 ; gain = 1052.773
+synth_design: Time (s): cpu = 00:02:18 ; elapsed = 00:02:34 . Memory (MB): peak = 1132.828 ; gain = 898.602
 INFO: [Common 17-1381] The checkpoint 'C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.runs/synth_1/AES_TOP.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 1287.020 ; gain = 0.000
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.331 . Memory (MB): peak = 1287.020 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Sun Sep  9 00:40:34 2018...
+write_checkpoint: Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 1132.828 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.296 . Memory (MB): peak = 1132.828 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun Sep  9 23:51:36 2018...

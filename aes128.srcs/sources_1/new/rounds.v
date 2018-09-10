@@ -10,15 +10,17 @@ wire [127:0]keyout;
 output reg[127:0]rndout;
 
 //wire [127:0] sb,sr,mcl;
-reg [127:0]subBytesIn,shiftRowIn,mixColIn;
-wire [127:0] subBytesOut,shiftRowOut,mixColOut;
+reg [127:0]subBytesIn,shiftRowIn,mixColIn,invMixColIn;
+wire [127:0] subBytesOut,shiftRowOut,mixColOut,invMixColOut;
 reg [127:0]addRoundKeyData;
 reg [127:0]addRoundKeyResult;
 
 KeyGeneration t0(rc,decrypt,0,keyout);
 subbytes t1(subBytesIn,subBytesOut,decrypt);
 shiftrow t2(shiftRowIn,shiftRowOut,decrypt);
-mixcolumn t3(mixColIn,mixColOut,decrypt);
+inv_mix_columns t3(invMixColIn,invMixColOut);
+mix_columns t4(mixColIn,mixColOut);
+//mixcolumn t3(mixColIn,mixColOut,decrypt);
 //assign rndout= keyout^mixColOut;
 
 always @(posedge clk or negedge reset)
@@ -36,8 +38,8 @@ always @(posedge clk or negedge reset)
             end else if(decrypt == 1)begin
                 subBytesIn <= shiftRowOut;
                 shiftRowIn <= data;
-                mixColIn <= keyout ^ subBytesOut;
-                rndout <= mixColOut; 
+                invMixColIn <= keyout ^ subBytesOut;
+                rndout <= invMixColOut; 
             end
       end
     

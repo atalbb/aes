@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.1 (win64) Build 1846317 Fri Apr 14 18:55:03 MDT 2017
-| Date         : Sun Sep  9 00:42:47 2018
+| Date         : Sun Sep  9 23:54:00 2018
 | Host         : DESKTOP-GJPCRJL running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file AES_TOP_control_sets_placed.rpt
 | Design       : AES_TOP
@@ -22,7 +22,7 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |    27 |
+| Number of unique control sets                            |    41 |
 | Unused register locations in slices containing registers |    48 |
 +----------------------------------------------------------+-------+
 
@@ -33,12 +33,12 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |               4 |            2 |
-| No           | No                    | Yes                    |            5010 |         1386 |
+| No           | No                    | No                     |               4 |            3 |
+| No           | No                    | Yes                    |            3450 |         1489 |
 | No           | Yes                   | No                     |               0 |            0 |
-| Yes          | No                    | No                     |            3338 |         2479 |
-| Yes          | No                    | Yes                    |             136 |           58 |
-| Yes          | Yes                   | No                     |              24 |            8 |
+| Yes          | No                    | No                     |            5002 |         2799 |
+| Yes          | No                    | Yes                    |            1800 |          721 |
+| Yes          | Yes                   | No                     |              24 |           10 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
@@ -48,33 +48,47 @@ Table of Contents
 +----------------+---------------------------+---------------------------+------------------+----------------+
 |  Clock Signal  |       Enable Signal       |      Set/Reset Signal     | Slice Load Count | Bel Load Count |
 +----------------+---------------------------+---------------------------+------------------+----------------+
-|  clk_IBUF_BUFG |                           |                           |                2 |              4 |
-|  clk_IBUF_BUFG | T1/bit_count              | u1/r1/shiftRowIn_reg[0]_0 |                1 |              4 |
-|  clk_IBUF_BUFG | T1/byte_count             | u1/r1/shiftRowIn_reg[0]_0 |                2 |              6 |
-|  clk_IBUF_BUFG | T1/tx_buff[16][5]_i_2_n_0 | T1/tx_buff[16][5]_i_1_n_0 |                2 |              6 |
+|  clk_IBUF_BUFG |                           |                           |                3 |              4 |
+|  clk_IBUF_BUFG | T1/bit_count              | u1/r1/mixColIn_reg[0]_0   |                2 |              4 |
+|  clk_IBUF_BUFG | T1/tx_buff[16][5]_i_2_n_0 | T1/tx_buff[16][5]_i_1_n_0 |                3 |              6 |
+|  clk_IBUF_BUFG | T1/byte_count             | u1/r1/mixColIn_reg[0]_0   |                1 |              6 |
 |  clk_IBUF_BUFG | T1/tx_buff[17][5]_i_2_n_0 | T1/tx_buff[17][5]_i_1_n_0 |                2 |              6 |
-|  clk_IBUF_BUFG | T1/tx_buff[18][5]_i_2_n_0 | T1/tx_buff[18][5]_i_1_n_0 |                2 |              6 |
+|  clk_IBUF_BUFG | T1/tx_buff[18][5]_i_2_n_0 | T1/tx_buff[18][5]_i_1_n_0 |                3 |              6 |
 |  clk_IBUF_BUFG | T1/tx_buff[19][5]_i_2_n_0 | T1/tx_buff[19][5]_i_1_n_0 |                2 |              6 |
-|  clk_IBUF_BUFG | T1/tx_buff[9][6]_i_1_n_0  | u1/r1/shiftRowIn_reg[0]_0 |                2 |              7 |
-|  clk_IBUF_BUFG | T1/tx_buff[8][6]_i_1_n_0  | u1/r1/shiftRowIn_reg[0]_0 |                3 |              7 |
-|  clk_IBUF_BUFG | T1/tx_buff[7][6]_i_1_n_0  | u1/r1/shiftRowIn_reg[0]_0 |                4 |              7 |
-|  clk_IBUF_BUFG | T1/tx_buff[6][6]_i_1_n_0  | u1/r1/shiftRowIn_reg[0]_0 |                2 |              7 |
-|  clk_IBUF_BUFG | T1/tx_buff[12][6]_i_1_n_0 | u1/r1/shiftRowIn_reg[0]_0 |                3 |              7 |
-|  clk_IBUF_BUFG | T1/tx_buff[10][6]_i_1_n_0 | u1/r1/shiftRowIn_reg[0]_0 |                2 |              7 |
-|  clk_IBUF_BUFG | T1/tx_buff[0][6]_i_1_n_0  | u1/r1/shiftRowIn_reg[0]_0 |                6 |              7 |
-|  clk_IBUF_BUFG | T1/tx_buff[11][6]_i_1_n_0 | u1/r1/shiftRowIn_reg[0]_0 |                3 |              7 |
-|  clk_IBUF_BUFG | T1/tx_buff[13][6]_i_1_n_0 | u1/r1/shiftRowIn_reg[0]_0 |                3 |              7 |
-|  clk_IBUF_BUFG | T1/tx_buff[14][6]_i_1_n_0 | u1/r1/shiftRowIn_reg[0]_0 |                2 |              7 |
-|  clk_IBUF_BUFG | T1/tx_buff[15][6]_i_1_n_0 | u1/r1/shiftRowIn_reg[0]_0 |                4 |              7 |
-|  clk_IBUF_BUFG | T1/tx_buff[5][6]_i_1_n_0  | u1/r1/shiftRowIn_reg[0]_0 |                4 |              7 |
-|  clk_IBUF_BUFG | T1/tx_buff[1][6]_i_1_n_0  | u1/r1/shiftRowIn_reg[0]_0 |                3 |              7 |
-|  clk_IBUF_BUFG | T1/tx_buff[2][6]_i_1_n_0  | u1/r1/shiftRowIn_reg[0]_0 |                4 |              7 |
-|  clk_IBUF_BUFG | T1/tx_buff[3][6]_i_1_n_0  | u1/r1/shiftRowIn_reg[0]_0 |                3 |              7 |
-|  clk_IBUF_BUFG | T1/tx_buff[4][6]_i_1_n_0  | u1/r1/shiftRowIn_reg[0]_0 |                3 |              7 |
-|  clk_IBUF_BUFG | T1/p_3_in                 | u1/r1/shiftRowIn_reg[0]_0 |                4 |             14 |
-|  clk_IBUF_BUFG | rst_IBUF                  |                           |             1432 |           1664 |
-|  clk_IBUF_BUFG | u1/r0_reg                 |                           |             1047 |           1674 |
-|  clk_IBUF_BUFG |                           | u1/r1/shiftRowIn_reg[0]_0 |             1386 |           5010 |
+|  clk_IBUF_BUFG | T1/tx_buff[13][6]_i_1_n_0 | u1/r1/mixColIn_reg[0]_0   |                2 |              7 |
+|  clk_IBUF_BUFG | T1/tx_buff[12][6]_i_1_n_0 | u1/r1/mixColIn_reg[0]_0   |                3 |              7 |
+|  clk_IBUF_BUFG | T1/tx_buff[0][6]_i_1_n_0  | u1/r1/mixColIn_reg[0]_0   |                2 |              7 |
+|  clk_IBUF_BUFG | T1/tx_buff[11][6]_i_1_n_0 | u1/r1/mixColIn_reg[0]_0   |                3 |              7 |
+|  clk_IBUF_BUFG | T1/tx_buff[14][6]_i_1_n_0 | u1/r1/mixColIn_reg[0]_0   |                2 |              7 |
+|  clk_IBUF_BUFG | T1/tx_buff[15][6]_i_1_n_0 | u1/r1/mixColIn_reg[0]_0   |                3 |              7 |
+|  clk_IBUF_BUFG | T1/tx_buff[3][6]_i_1_n_0  | u1/r1/mixColIn_reg[0]_0   |                4 |              7 |
+|  clk_IBUF_BUFG | T1/tx_buff[4][6]_i_1_n_0  | u1/r1/mixColIn_reg[0]_0   |                2 |              7 |
+|  clk_IBUF_BUFG | T1/tx_buff[2][6]_i_1_n_0  | u1/r1/mixColIn_reg[0]_0   |                4 |              7 |
+|  clk_IBUF_BUFG | T1/tx_buff[1][6]_i_1_n_0  | u1/r1/mixColIn_reg[0]_0   |                5 |              7 |
+|  clk_IBUF_BUFG | T1/tx_buff[8][6]_i_1_n_0  | u1/r1/mixColIn_reg[0]_0   |                2 |              7 |
+|  clk_IBUF_BUFG | T1/tx_buff[7][6]_i_1_n_0  | u1/r1/mixColIn_reg[0]_0   |                3 |              7 |
+|  clk_IBUF_BUFG | T1/tx_buff[9][6]_i_1_n_0  | u1/r1/mixColIn_reg[0]_0   |                2 |              7 |
+|  clk_IBUF_BUFG | T1/tx_buff[5][6]_i_1_n_0  | u1/r1/mixColIn_reg[0]_0   |                4 |              7 |
+|  clk_IBUF_BUFG | T1/tx_buff[6][6]_i_1_n_0  | u1/r1/mixColIn_reg[0]_0   |                3 |              7 |
+|  clk_IBUF_BUFG | T1/tx_buff[10][6]_i_1_n_0 | u1/r1/mixColIn_reg[0]_0   |                4 |              7 |
+|  clk_IBUF_BUFG | T1/p_3_in                 | u1/r1/mixColIn_reg[0]_0   |                5 |             14 |
+|  clk_IBUF_BUFG | u1/r1/invMixColIn         |                           |              103 |            128 |
+|  clk_IBUF_BUFG | u1/r10/invMixColIn        |                           |              103 |            128 |
+|  clk_IBUF_BUFG | u1/r11/invMixColIn        |                           |               99 |            128 |
+|  clk_IBUF_BUFG | u1/r8/invMixColIn         |                           |               96 |            128 |
+|  clk_IBUF_BUFG | u1/r13/invMixColIn        |                           |              102 |            128 |
+|  clk_IBUF_BUFG | u1/r9/invMixColIn         |                           |               96 |            128 |
+|  clk_IBUF_BUFG | u1/r12/invMixColIn        |                           |              109 |            128 |
+|  clk_IBUF_BUFG | u1/r3/invMixColIn         |                           |               98 |            128 |
+|  clk_IBUF_BUFG | u1/r6/invMixColIn         |                           |              102 |            128 |
+|  clk_IBUF_BUFG | u1/r2/invMixColIn         |                           |               99 |            128 |
+|  clk_IBUF_BUFG | u1/r4/invMixColIn         |                           |              100 |            128 |
+|  clk_IBUF_BUFG | u1/r5/invMixColIn         |                           |              102 |            128 |
+|  clk_IBUF_BUFG | u1/r7/invMixColIn         |                           |              111 |            128 |
+|  clk_IBUF_BUFG | u1/r1/E[0]                | u1/r1/mixColIn_reg[0]_0   |              665 |           1664 |
+|  clk_IBUF_BUFG | rst_IBUF                  |                           |              689 |           1664 |
+|  clk_IBUF_BUFG | u1/r0_reg                 |                           |              790 |           1674 |
+|  clk_IBUF_BUFG |                           | u1/r1/mixColIn_reg[0]_0   |             1489 |           3450 |
 +----------------+---------------------------+---------------------------+------------------+----------------+
 
 
@@ -85,7 +99,7 @@ Table of Contents
 | 6      |                     5 |
 | 7      |                    16 |
 | 14     |                     1 |
-| 16+    |                     3 |
+| 16+    |                    17 |
 +--------+-----------------------+
 
 
