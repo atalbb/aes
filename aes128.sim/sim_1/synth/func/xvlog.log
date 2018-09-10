@@ -1,0 +1,7 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/AES_2018/aes128/aes128.sim/sim_1/synth/func/AES_TB_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AES_TOP
+INFO: [VRFC 10-311] analyzing module aesWrapper
+INFO: [VRFC 10-311] analyzing module aescipher
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/AES_2018/aes128/aes128.srcs/sim_1/new/AES_TB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AES_TB

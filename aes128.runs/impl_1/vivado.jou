@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Sun Sep  9 00:40:41 2018
+# Process ID: 2864
+# Current directory: C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.runs/impl_1
+# Command line: vivado.exe -log AES_TOP.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source AES_TOP.tcl -notrace
+# Log file: C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.runs/impl_1/AES_TOP.vdi
+# Journal file: C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source AES_TOP.tcl -notrace

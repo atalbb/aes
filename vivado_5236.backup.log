@@ -1,0 +1,29 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Sat Sep  8 17:46:54 2018
+# Process ID: 5236
+# Current directory: C:/College/Thesis/AES_2018/aes256 - pipetest
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3684 C:\College\Thesis\AES_2018\aes256 - pipetest\aes128.xpr
+# Log file: C:/College/Thesis/AES_2018/aes256 - pipetest/vivado.log
+# Journal file: C:/College/Thesis/AES_2018/aes256 - pipetest\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/College/Thesis/AES_2018/aes256 - pipetest - Copy' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.1/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:06 . Memory (MB): peak = 780.832 ; gain = 116.332
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Sat Sep  8 17:47:50 2018] Launched synth_1...
+Run output will be captured here: C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.runs/synth_1/runme.log
+[Sat Sep  8 17:47:50 2018] Launched impl_1...
+Run output will be captured here: C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Sep  8 18:54:50 2018...

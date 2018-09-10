@@ -1,0 +1,1646 @@
+
+*** Running vivado
+    with args -log AES_TOP.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source AES_TOP.tcl
+
+
+****** Vivado v2017.1 (64-bit)
+  **** SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+  **** IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source AES_TOP.tcl -notrace
+Command: synth_design -top AES_TOP -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 3700 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 324.910 ; gain = 88.578
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'AES_TOP' [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/AES_TOP.v:4]
+INFO: [Synth 8-638] synthesizing module 'aescipher' [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:7]
+INFO: [Synth 8-638] synthesizing module 'rounds' [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/rounds.v:3]
+INFO: [Synth 8-638] synthesizing module 'KeyGeneration' [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/KeyGeneration.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/KeyGeneration.v:13]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/KeyGeneration.v:30]
+WARNING: [Synth 8-567] referenced signal 'decrypt' should be on the sensitivity list [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/KeyGeneration.v:11]
+INFO: [Synth 8-256] done synthesizing module 'KeyGeneration' (1#1) [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/KeyGeneration.v:3]
+INFO: [Synth 8-638] synthesizing module 'subbytes' [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/subbytes.v:3]
+INFO: [Synth 8-638] synthesizing module 'sbox' [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/sbox.v:23]
+WARNING: [Synth 8-567] referenced signal 'decrypt' should be on the sensitivity list [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/sbox.v:32]
+INFO: [Synth 8-256] done synthesizing module 'sbox' (2#1) [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/sbox.v:23]
+INFO: [Synth 8-256] done synthesizing module 'subbytes' (3#1) [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/subbytes.v:3]
+INFO: [Synth 8-638] synthesizing module 'shiftrow' [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/shiftrow.v:3]
+INFO: [Synth 8-256] done synthesizing module 'shiftrow' (4#1) [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/shiftrow.v:3]
+INFO: [Synth 8-638] synthesizing module 'mixcolumn' [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/mixcolumn.v:3]
+INFO: [Synth 8-256] done synthesizing module 'mixcolumn' (5#1) [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/mixcolumn.v:3]
+WARNING: [Synth 8-5788] Register rndout_reg in module rounds is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/rounds.v:35]
+INFO: [Synth 8-256] done synthesizing module 'rounds' (6#1) [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/rounds.v:3]
+INFO: [Synth 8-638] synthesizing module 'rounndlast' [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/rounndlast.v:3]
+INFO: [Synth 8-256] done synthesizing module 'rounndlast' (7#1) [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/rounndlast.v:3]
+WARNING: [Synth 8-5788] Register r0_reg_reg in module aescipher is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:24]
+WARNING: [Synth 8-5788] Register r1_reg_reg in module aescipher is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:25]
+WARNING: [Synth 8-5788] Register r2_reg_reg in module aescipher is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:26]
+WARNING: [Synth 8-5788] Register r3_reg_reg in module aescipher is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:27]
+WARNING: [Synth 8-5788] Register r4_reg_reg in module aescipher is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:28]
+WARNING: [Synth 8-5788] Register r5_reg_reg in module aescipher is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:29]
+WARNING: [Synth 8-5788] Register r6_reg_reg in module aescipher is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:30]
+WARNING: [Synth 8-5788] Register r7_reg_reg in module aescipher is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:31]
+WARNING: [Synth 8-5788] Register r8_reg_reg in module aescipher is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:32]
+WARNING: [Synth 8-5788] Register r9_reg_reg in module aescipher is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:33]
+WARNING: [Synth 8-5788] Register r10_reg_reg in module aescipher is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:34]
+WARNING: [Synth 8-5788] Register r11_reg_reg in module aescipher is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:35]
+WARNING: [Synth 8-5788] Register r12_reg_reg in module aescipher is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:36]
+WARNING: [Synth 8-5788] Register r13_reg_reg in module aescipher is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3848] Net ready_o in module/entity aescipher does not have driver. [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:9]
+WARNING: [Synth 8-3848] Net keyout13 in module/entity aescipher does not have driver. [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:20]
+INFO: [Synth 8-256] done synthesizing module 'aescipher' (8#1) [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:7]
+INFO: [Synth 8-638] synthesizing module 'uart_tx' [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/uart_tx.v:21]
+	Parameter bit_time bound to: 868 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element ledout_reg was removed.  [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/uart_tx.v:74]
+WARNING: [Synth 8-5788] Register tx_buff_reg[19] in module uart_tx is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/uart_tx.v:52]
+WARNING: [Synth 8-5788] Register tx_buff_reg[18] in module uart_tx is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/uart_tx.v:52]
+WARNING: [Synth 8-5788] Register tx_buff_reg[17] in module uart_tx is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/uart_tx.v:52]
+WARNING: [Synth 8-5788] Register tx_buff_reg[16] in module uart_tx is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/uart_tx.v:52]
+INFO: [Synth 8-256] done synthesizing module 'uart_tx' (9#1) [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/uart_tx.v:21]
+WARNING: [Synth 8-3848] Net finalDone in module/entity AES_TOP does not have driver. [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/AES_TOP.v:14]
+INFO: [Synth 8-256] done synthesizing module 'AES_TOP' (10#1) [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/AES_TOP.v:4]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[127]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[126]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[125]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[124]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[123]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[122]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[121]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[120]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[119]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[118]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[117]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[116]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[115]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[114]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[113]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[112]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[111]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[110]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[109]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[108]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[107]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[106]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[105]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[104]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[103]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[102]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[101]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[100]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[99]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[98]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[97]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[96]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[95]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[94]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[93]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[92]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[91]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[90]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[89]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[88]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[87]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[86]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[85]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[84]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[83]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[82]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[81]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[80]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[79]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[78]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[77]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[76]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[75]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[74]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[73]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[72]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[71]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[70]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[69]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[68]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[67]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[66]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[65]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[64]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[63]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[62]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[61]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[60]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[59]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[58]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[57]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[56]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[55]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[54]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[53]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[52]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[51]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[50]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[49]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[48]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[47]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[46]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[45]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[44]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[43]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[42]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[41]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[40]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[39]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[38]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[37]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[36]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[35]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[34]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[33]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[32]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[31]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[30]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[29]
+WARNING: [Synth 8-3331] design KeyGeneration has unconnected port key[28]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 428.914 ; gain = 192.582
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[127] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[126] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[125] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[124] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[123] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[122] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[121] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[120] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[119] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[118] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[117] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[116] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[115] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[114] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[113] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[112] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[111] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[110] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[109] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[108] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[107] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[106] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[105] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[104] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[103] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[102] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[101] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[100] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[99] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[98] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[97] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[96] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[95] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[94] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[93] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[92] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[91] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[90] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[89] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[88] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[87] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[86] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[85] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[84] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[83] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[82] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[81] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[80] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[79] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[78] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[77] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[76] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[75] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[74] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[73] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[72] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[71] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[70] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[69] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[68] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[67] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[66] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[65] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[64] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[63] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[62] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[61] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[60] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[59] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[58] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[57] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[56] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[55] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[54] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[53] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[52] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[51] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[50] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[49] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[48] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[47] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[46] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[45] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[44] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[43] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[42] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[41] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[40] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[39] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[38] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[37] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[36] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[35] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[34] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[33] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[32] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[31] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[30] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[29] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+WARNING: [Synth 8-3295] tying undriven pin r14:keylastin[28] to constant 0 [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/aescipher.v:37]
+INFO: [Common 17-14] Message 'Synth 8-3295' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 428.914 ; gain = 192.582
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/constrs_1/new/constr.xdc]
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/constrs_1/new/constr.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/constrs_1/new/constr.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/AES_TOP_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/AES_TOP_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 787.016 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 787.016 ; gain = 550.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 787.016 ; gain = 550.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 787.016 ; gain = 550.684
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "tx_buff_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[0]" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element bit_count_reg was removed.  [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/uart_tx.v:48]
+WARNING: [Synth 8-6014] Unused sequential element byte_count_reg was removed.  [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/uart_tx.v:72]
+WARNING: [Synth 8-327] inferring latch for variable 'keyout_reg' [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/KeyGeneration.v:14]
+WARNING: [Synth 8-327] inferring latch for variable 'c_reg' [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/sbox.v:35]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 787.016 ; gain = 550.684
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+---------------+------------+----------+
+|      |RTL Partition  |Replication |Instances |
++------+---------------+------------+----------+
+|1     |rounds         |          13|     11371|
+|2     |aescipher__GC0 |           1|      5585|
+|3     |uart_tx        |           1|      3262|
++------+---------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     13 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	   2 Input    128 Bit         XORs := 29    
+	   4 Input      8 Bit         XORs := 416   
++---Registers : 
+	              128 Bit    Registers := 66    
+	               13 Bit    Registers := 1     
+	                8 Bit    Registers := 20    
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	  30 Input    128 Bit        Muxes := 14    
+	   2 Input    128 Bit        Muxes := 53    
+	   2 Input     13 Bit        Muxes := 4     
+	   2 Input      8 Bit        Muxes := 627   
+	   4 Input      8 Bit        Muxes := 19    
+	   2 Input      7 Bit        Muxes := 2     
+	   3 Input      7 Bit        Muxes := 19    
+	   2 Input      4 Bit        Muxes := 1     
+	  31 Input      1 Bit        Muxes := 14    
+	   2 Input      1 Bit        Muxes := 11    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module KeyGeneration__1 
+Detailed RTL Component Info : 
++---Muxes : 
+	  30 Input    128 Bit        Muxes := 1     
+	  31 Input      1 Bit        Muxes := 1     
+Module sbox__1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__3 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__4 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__5 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__6 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__7 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__8 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__9 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__10 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__11 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__12 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__13 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__14 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__15 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__16 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module shiftrow__1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 8     
+Module mixcolumn 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input      8 Bit         XORs := 32    
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 16    
+Module rounds 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input    128 Bit         XORs := 2     
++---Registers : 
+	              128 Bit    Registers := 4     
++---Muxes : 
+	   2 Input    128 Bit        Muxes := 4     
+Module KeyGeneration 
+Detailed RTL Component Info : 
++---Muxes : 
+	  30 Input    128 Bit        Muxes := 1     
+	  31 Input      1 Bit        Muxes := 1     
+Module sbox__17 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__18 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__19 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__20 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__21 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__22 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__23 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__24 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__25 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__26 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__27 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__28 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__29 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__30 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__31 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module shiftrow 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 8     
+Module rounndlast 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input    128 Bit         XORs := 1     
+Module aescipher 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input    128 Bit         XORs := 2     
++---Registers : 
+	              128 Bit    Registers := 14    
++---Muxes : 
+	   2 Input    128 Bit        Muxes := 1     
+Module uart_tx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     13 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               13 Bit    Registers := 1     
+	                8 Bit    Registers := 20    
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     13 Bit        Muxes := 4     
+	   2 Input      8 Bit        Muxes := 83    
+	   4 Input      8 Bit        Muxes := 19    
+	   2 Input      7 Bit        Muxes := 2     
+	   3 Input      7 Bit        Muxes := 19    
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 11    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element byte_count_reg was removed.  [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/uart_tx.v:72]
+WARNING: [Synth 8-6014] Unused sequential element bit_count_reg was removed.  [C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.srcs/sources_1/new/uart_tx.v:48]
+INFO: [Synth 8-3886] merging instance 'rounds:/t0/keyout_reg[21]' (LD) to 'rounds:/t0/keyout_reg[110]'
+WARNING: [Synth 8-3332] Sequential element (q0/c_reg[7]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q0/c_reg[6]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q0/c_reg[5]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q0/c_reg[4]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q0/c_reg[3]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q0/c_reg[2]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q0/c_reg[1]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q0/c_reg[0]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q1/c_reg[7]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q1/c_reg[6]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q1/c_reg[5]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q1/c_reg[4]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q1/c_reg[3]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q1/c_reg[2]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q1/c_reg[1]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q1/c_reg[0]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q2/c_reg[7]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q2/c_reg[6]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q2/c_reg[5]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q2/c_reg[4]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q2/c_reg[3]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q2/c_reg[2]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q2/c_reg[1]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q2/c_reg[0]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q3/c_reg[7]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q3/c_reg[6]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q3/c_reg[5]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q3/c_reg[4]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q3/c_reg[3]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q3/c_reg[2]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q3/c_reg[1]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q3/c_reg[0]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q4/c_reg[7]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q4/c_reg[6]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q4/c_reg[5]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q4/c_reg[4]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q4/c_reg[3]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q4/c_reg[2]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q4/c_reg[1]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q4/c_reg[0]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q5/c_reg[7]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q5/c_reg[6]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q5/c_reg[5]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q5/c_reg[4]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q5/c_reg[3]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q5/c_reg[2]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q5/c_reg[1]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q5/c_reg[0]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q6/c_reg[7]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q6/c_reg[6]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q6/c_reg[5]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q6/c_reg[4]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q6/c_reg[3]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q6/c_reg[2]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q6/c_reg[1]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q6/c_reg[0]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q7/c_reg[7]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q7/c_reg[6]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q7/c_reg[5]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q7/c_reg[4]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q7/c_reg[3]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q7/c_reg[2]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q7/c_reg[1]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q7/c_reg[0]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q8/c_reg[7]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q8/c_reg[6]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q8/c_reg[5]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q8/c_reg[4]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q8/c_reg[3]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q8/c_reg[2]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q8/c_reg[1]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q8/c_reg[0]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q9/c_reg[7]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q9/c_reg[6]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q9/c_reg[5]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q9/c_reg[4]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q9/c_reg[3]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q9/c_reg[2]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q9/c_reg[1]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q9/c_reg[0]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q10/c_reg[7]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q10/c_reg[6]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q10/c_reg[5]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q10/c_reg[4]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q10/c_reg[3]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q10/c_reg[2]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q10/c_reg[1]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q10/c_reg[0]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q11/c_reg[7]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q11/c_reg[6]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q11/c_reg[5]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q11/c_reg[4]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q11/c_reg[3]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q11/c_reg[2]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q11/c_reg[1]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q11/c_reg[0]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q12/c_reg[7]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q12/c_reg[6]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q12/c_reg[5]) is unused and will be removed from module subbytes__1.
+WARNING: [Synth 8-3332] Sequential element (q12/c_reg[4]) is unused and will be removed from module subbytes__1.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'u1i_0/r14/t0/keyout_reg[0]' (LD) to 'u1i_0/r14/t0/keyout_reg[112]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u1i_0/\r14/t0/keyout_reg[1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u1i_0/\r14/t0/keyout_reg[2] )
+INFO: [Synth 8-3886] merging instance 'u1i_0/r14/t0/keyout_reg[3]' (LD) to 'u1i_0/r14/t0/keyout_reg[112]'
+INFO: [Synth 8-3886] merging instance 'u1i_0/r14/t0/keyout_reg[4]' (LD) to 'u1i_0/r14/t0/keyout_reg[5]'
+INFO: [Synth 8-3886] merging instance 'u1i_0/r14/t0/keyout_reg[5]' (LD) to 'u1i_0/r14/t0/keyout_reg[12]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u1i_0/\r14/t0/keyout_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u1i_0/\r14/t0/keyout_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u1i_0/\r14/t0/keyout_reg[8] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u1i_0/\r14/t0/keyout_reg[9] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u1i_0/\r14/t0/keyout_reg[10] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u1i_0/\r14/t0/keyout_reg[11] )
+INFO: [Synth 8-3886] merging instance 'u1i_0/r14/t0/keyout_reg[12]' (LD) to 'u1i_0/r14/t0/keyout_reg[14]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u1i_0/\r14/t0/keyout_reg[13] )
+INFO: [Synth 8-3886] merging instance 'u1i_0/r14/t0/keyout_reg[14]' (LD) to 'u1i_0/r14/t0/keyout_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u1i_0/r14/t0/keyout_reg[15]' (LD) to 'u1i_0/r14/t0/keyout_reg[21]'
+INFO: [Synth 8-3886] merging instance 'u1i_0/r14/t0/keyout_reg[16]' (LD) to 'u1i_0/r14/t0/keyout_reg[112]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u1i_0/\r14/t0/keyout_reg[17] )
+INFO: [Synth 8-3886] merging instance 'u1i_0/r14/t0/keyout_reg[18]' (LD) to 'u1i_0/r14/t0/keyout_reg[112]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u1i_0/\r14/t0/keyout_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u1i_0/\r14/t0/keyout_reg[20] )
+INFO: [Synth 8-3886] merging instance 'u1i_0/r14/t0/keyout_reg[21]' (LD) to 'u1i_0/r14/t0/keyout_reg[22]'
+INFO: [Synth 8-3886] merging instance 'u1i_0/r14/t0/keyout_reg[22]' (LD) to 'u1i_0/r14/t0/keyout_reg[24]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u1i_0/\r14/t0/keyout_reg[23] )
+INFO: [Synth 8-3886] merging instance 'u1i_0/r14/t0/keyout_reg[24]' (LD) to 'u1i_0/r14/t0/keyout_reg[29]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u1i_0/\r14/t0/keyout_reg[25] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u1i_0/\r14/t0/keyout_reg[26] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u1i_0/\r14/t0/keyout_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u1i_0/\r14/t0/keyout_reg[28] )
+INFO: [Synth 8-3886] merging instance 'u1i_0/r14/t0/keyout_reg[29]' (LD) to 'u1i_0/r14/t0/keyout_reg[30]'
+INFO: [Synth 8-3886] merging instance 'u1i_0/r14/t0/keyout_reg[30]' (LD) to 'u1i_0/r14/t0/keyout_reg[34]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u1i_0/\r14/t0/keyout_reg[31] )
+INFO: [Synth 8-3886] merging instance 'u1i_0/r14/t0/keyout_reg[32]' (LD) to 'u1i_0/r14/t0/keyout_reg[112]'
+INFO: [Synth 8-3886] merging instance 'u1i_0/r14/t0/keyout_reg[33]' (LD) to 'u1i_0/r14/t0/keyout_reg[112]'
+INFO: [Synth 8-3886] merging instance 'u1i_0/r14/t0/keyout_reg[34]' (LD) to 'u1i_0/r14/t0/keyout_reg[36]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u1i_0/\r14/t0/keyout_reg[35] )
+INFO: [Synth 8-3886] merging instance 'u1i_0/r14/t0/keyout_reg[36]' (LD) to 'u1i_0/r14/t0/keyout_reg[37]'
+INFO: [Synth 8-3886] merging instance 'u1i_0/r14/t0/keyout_reg[37]' (LD) to 'u1i_0/r14/t0/keyout_reg[46]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u1i_0/\r14/t0/keyout_reg[38] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u1i_0/\r14/t0/keyout_reg[39] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u1i_0/\r14/t0/keyout_reg[40] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u1i_0/\r14/t0/keyout_reg[41] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u1i_0/\r14/t0/keyout_reg[42] )
+INFO: [Synth 8-3886] merging instance 'u1i_0/r14/t0/keyout_reg[43]' (LD) to 'u1i_0/r14/t0/keyout_reg[112]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u1i_0/\r14/t0/keyout_reg[44] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u1i_0/\r14/t0/keyout_reg[45] )
+INFO: [Synth 8-3886] merging instance 'u1i_0/r14/t0/keyout_reg[46]' (LD) to 'u1i_0/r14/t0/keyout_reg[47]'
+INFO: [Synth 8-3886] merging instance 'u1i_0/r14/t0/keyout_reg[47]' (LD) to 'u1i_0/r14/t0/keyout_reg[49]'
+INFO: [Synth 8-3886] merging instance 'u1i_0/r14/t0/keyout_reg[48]' (LD) to 'u1i_0/r14/t0/keyout_reg[112]'
+INFO: [Synth 8-3886] merging instance 'u1i_0/r14/t0/keyout_reg[49]' (LD) to 'u1i_0/r14/t0/keyout_reg[52]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u1i_0/\r14/t0/keyout_reg[50] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u1i_0/\r14/t0/keyout_reg[51] )
+INFO: [Synth 8-3886] merging instance 'u1i_0/r14/t0/keyout_reg[52]' (LD) to 'u1i_0/r14/t0/keyout_reg[56]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u1i_0/\r14/t0/keyout_reg[53] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u1i_0/\r14/t0/keyout_reg[54] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u1i_0/\r14/t0/keyout_reg[55] )
+INFO: [Synth 8-3886] merging instance 'u1i_0/r14/t0/keyout_reg[56]' (LD) to 'u1i_0/r14/t0/keyout_reg[57]'
+INFO: [Synth 8-3886] merging instance 'u1i_0/r14/t0/keyout_reg[57]' (LD) to 'u1i_0/r14/t0/keyout_reg[58]'
+INFO: [Synth 8-3886] merging instance 'u1i_0/r14/t0/keyout_reg[58]' (LD) to 'u1i_0/r14/t0/keyout_reg[60]'
+INFO: [Synth 8-3886] merging instance 'u1i_0/r14/t0/keyout_reg[59]' (LD) to 'u1i_0/r14/t0/keyout_reg[112]'
+INFO: [Synth 8-3886] merging instance 'u1i_0/r14/t0/keyout_reg[60]' (LD) to 'u1i_0/r14/t0/keyout_reg[61]'
+INFO: [Synth 8-3886] merging instance 'u1i_0/r14/t0/keyout_reg[61]' (LD) to 'u1i_0/r14/t0/keyout_reg[67]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u1i_0/\r14/t0/keyout_reg[62] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u1i_0/\r14/t0/keyout_reg[63] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u1i_0/\r14/t0/keyout_reg[64] )
+INFO: [Synth 8-3886] merging instance 'u1i_0/r14/t0/keyout_reg[65]' (LD) to 'u1i_0/r14/t0/keyout_reg[112]'
+INFO: [Synth 8-3886] merging instance 'u1i_0/r14/t0/keyout_reg[66]' (LD) to 'u1i_0/r14/t0/keyout_reg[112]'
+INFO: [Synth 8-3886] merging instance 'u1i_0/r14/t0/keyout_reg[67]' (LD) to 'u1i_0/r14/t0/keyout_reg[69]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u1i_0/\r14/t0/keyout_reg[68] )
+INFO: [Synth 8-3886] merging instance 'u1i_0/r14/t0/keyout_reg[69]' (LD) to 'u1i_0/r14/t0/keyout_reg[70]'
+INFO: [Synth 8-3886] merging instance 'u1i_0/r14/t0/keyout_reg[70]' (LD) to 'u1i_0/r14/t0/keyout_reg[71]'
+INFO: [Synth 8-3886] merging instance 'u1i_0/r14/t0/keyout_reg[71]' (LD) to 'u1i_0/r14/t0/keyout_reg[72]'
+INFO: [Synth 8-3886] merging instance 'u1i_0/r14/t0/keyout_reg[72]' (LD) to 'u1i_0/r14/t0/keyout_reg[75]'
+INFO: [Synth 8-3886] merging instance 'u1i_0/r14/t0/keyout_reg[73]' (LD) to 'u1i_0/r14/t0/keyout_reg[112]'
+INFO: [Synth 8-3886] merging instance 'u1i_0/r14/t0/keyout_reg[74]' (LD) to 'u1i_0/r14/t0/keyout_reg[112]'
+INFO: [Synth 8-3886] merging instance 'u1i_0/r14/t0/keyout_reg[75]' (LD) to 'u1i_0/r14/t0/keyout_reg[76]'
+INFO: [Synth 8-3886] merging instance 'u1i_0/r14/t0/keyout_reg[76]' (LD) to 'u1i_0/r14/t0/keyout_reg[77]'
+INFO: [Synth 8-3886] merging instance 'u1i_0/r14/t0/keyout_reg[77]' (LD) to 'u1i_0/r14/t0/keyout_reg[78]'
+INFO: [Synth 8-3886] merging instance 'u1i_0/r14/t0/keyout_reg[78]' (LD) to 'u1i_0/r14/t0/keyout_reg[83]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u1i_0/\r14/t0/keyout_reg[79] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u1i_0/\r14/t0/keyout_reg[80] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u1i_0/\r14/t0/keyout_reg[81] )
+INFO: [Synth 8-3886] merging instance 'u1i_0/r14/t0/keyout_reg[82]' (LD) to 'u1i_0/r14/t0/keyout_reg[112]'
+INFO: [Synth 8-3886] merging instance 'u1i_0/r14/t0/keyout_reg[83]' (LD) to 'u1i_0/r14/t0/keyout_reg[88]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u1i_0/\r14/t0/keyout_reg[84] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u1i_0/\r14/t0/keyout_reg[85] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u1i_0/\r14/t0/keyout_reg[86] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u1i_0/\r14/t0/keyout_reg[87] )
+INFO: [Synth 8-3886] merging instance 'u1i_0/r14/t0/keyout_reg[88]' (LD) to 'u1i_0/r14/t0/keyout_reg[89]'
+INFO: [Synth 8-3886] merging instance 'u1i_0/r14/t0/keyout_reg[89]' (LD) to 'u1i_0/r14/t0/keyout_reg[91]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u1i_0/\r14/t0/keyout_reg[90] )
+INFO: [Synth 8-3886] merging instance 'u1i_0/r14/t0/keyout_reg[91]' (LD) to 'u1i_0/r14/t0/keyout_reg[92]'
+INFO: [Synth 8-3886] merging instance 'u1i_0/r14/t0/keyout_reg[92]' (LD) to 'u1i_0/r14/t0/keyout_reg[93]'
+INFO: [Synth 8-3886] merging instance 'u1i_0/r14/t0/keyout_reg[93]' (LD) to 'u1i_0/r14/t0/keyout_reg[95]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u1i_0/\r14/t0/keyout_reg[94] )
+INFO: [Synth 8-3886] merging instance 'u1i_0/r14/t0/keyout_reg[95]' (LD) to 'u1i_0/r14/t0/keyout_reg[98]'
+INFO: [Synth 8-3886] merging instance 'u1i_0/r14/t0/keyout_reg[96]' (LD) to 'u1i_0/r14/t0/keyout_reg[112]'
+INFO: [Synth 8-3886] merging instance 'u1i_0/r14/t0/keyout_reg[97]' (LD) to 'u1i_0/r14/t0/keyout_reg[112]'
+INFO: [Synth 8-3886] merging instance 'u1i_0/r14/t0/keyout_reg[98]' (LD) to 'u1i_0/r14/t0/keyout_reg[99]'
+INFO: [Synth 8-3886] merging instance 'u1i_0/r14/t0/keyout_reg[99]' (LD) to 'u1i_0/r14/t0/keyout_reg[102]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u1i_0/\r14/t0/keyout_reg[100] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u1i_0/\r14/t0/keyout_reg[101] )
+INFO: [Synth 8-3886] merging instance 'u1i_0/r14/t0/keyout_reg[102]' (LD) to 'u1i_0/r14/t0/keyout_reg[103]'
+INFO: [Synth 8-3886] merging instance 'u1i_0/r14/t0/keyout_reg[103]' (LD) to 'u1i_0/r14/t0/keyout_reg[104]'
+INFO: [Synth 8-3886] merging instance 'u1i_0/r14/t0/keyout_reg[104]' (LD) to 'u1i_0/r14/t0/keyout_reg[107]'
+INFO: [Synth 8-3886] merging instance 'u1i_0/r14/t0/keyout_reg[105]' (LD) to 'u1i_0/r14/t0/keyout_reg[112]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u1i_0/\r14/t0/keyout_reg[106] )
+INFO: [Synth 8-3886] merging instance 'u1i_0/r14/t0/keyout_reg[107]' (LD) to 'u1i_0/r14/t0/keyout_reg[108]'
+INFO: [Synth 8-3886] merging instance 'u1i_0/r14/t0/keyout_reg[108]' (LD) to 'u1i_0/r14/t0/keyout_reg[109]'
+INFO: [Synth 8-3886] merging instance 'u1i_0/r14/t0/keyout_reg[109]' (LD) to 'u1i_0/r14/t0/keyout_reg[110]'
+INFO: [Synth 8-3886] merging instance 'u1i_0/r14/t0/keyout_reg[110]' (LD) to 'u1i_0/r14/t0/keyout_reg[114]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u1i_0/\r14/t0/keyout_reg[111] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u1i_0/\r14/t0/keyout_reg[113] )
+INFO: [Synth 8-3886] merging instance 'u1i_0/r14/t0/keyout_reg[114]' (LD) to 'u1i_0/r14/t0/keyout_reg[115]'
+INFO: [Synth 8-3886] merging instance 'u1i_0/r14/t0/keyout_reg[115]' (LD) to 'u1i_0/r14/t0/keyout_reg[116]'
+INFO: [Synth 8-3886] merging instance 'u1i_0/r14/t0/keyout_reg[116]' (LD) to 'u1i_0/r14/t0/keyout_reg[117]'
+INFO: [Synth 8-3886] merging instance 'u1i_0/r14/t0/keyout_reg[117]' (LD) to 'u1i_0/r14/t0/keyout_reg[118]'
+INFO: [Synth 8-3886] merging instance 'u1i_0/r14/t0/keyout_reg[118]' (LD) to 'u1i_0/r14/t0/keyout_reg[119]'
+INFO: [Synth 8-3886] merging instance 'u1i_0/r14/t0/keyout_reg[119]' (LD) to 'u1i_0/r14/t0/keyout_reg[122]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u1i_0/\r14/t0/keyout_reg[120] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u1i_0/\r14/t0/keyout_reg[121] )
+INFO: [Synth 8-3886] merging instance 'u1i_0/r14/t0/keyout_reg[122]' (LD) to 'u1i_0/r14/t0/keyout_reg[125]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u1i_0/\r14/t0/keyout_reg[123] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u1i_0/\r14/t0/keyout_reg[124] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u1i_0/\r14/t0/keyout_reg[126] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u1i_0/\r14/t0/keyout_reg[127] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (T1/\tx_buff_reg[19][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (T1/\tx_buff_reg[18][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (T1/\tx_buff_reg[17][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (T1/\tx_buff_reg[16][7] )
+INFO: [Synth 8-3886] merging instance 'u1i_0/r0_reg_reg[0]' (FDE) to 'u1i_0/r0_reg_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u1i_0/\r0_reg_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u1i_0/\r0_reg_reg[2] )
+INFO: [Synth 8-3886] merging instance 'u1i_0/r0_reg_reg[3]' (FDE) to 'u1i_0/r0_reg_reg[12]'
+INFO: [Synth 8-3886] merging instance 'u1i_0/r0_reg_reg[4]' (FDE) to 'u1i_0/r0_reg_reg[5]'
+INFO: [Synth 8-3886] merging instance 'u1i_0/r0_reg_reg[5]' (FDE) to 'u1i_0/r0_reg_reg[14]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u1i_0/\r0_reg_reg[6] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u1i_0/\r0_reg_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u1i_0/\r0_reg_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u1i_0/\r0_reg_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u1i_0/\r0_reg_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u1i_0/\r0_reg_reg[11] )
+INFO: [Synth 8-3886] merging instance 'u1i_0/r0_reg_reg[12]' (FDE) to 'u1i_0/r0_reg_reg[16]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u1i_0/\r0_reg_reg[13] )
+INFO: [Synth 8-3886] merging instance 'u1i_0/r0_reg_reg[14]' (FDE) to 'u1i_0/r0_reg_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u1i_0/r0_reg_reg[15]' (FDE) to 'u1i_0/r0_reg_reg[22]'
+INFO: [Synth 8-3886] merging instance 'u1i_0/r0_reg_reg[16]' (FDE) to 'u1i_0/r0_reg_reg[18]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u1i_0/\r0_reg_reg[17] )
+INFO: [Synth 8-3886] merging instance 'u1i_0/r0_reg_reg[18]' (FDE) to 'u1i_0/r0_reg_reg[21]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u1i_0/\r0_reg_reg[19] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u1i_0/\r0_reg_reg[20] )
+INFO: [Synth 8-3886] merging instance 'u1i_0/r0_reg_reg[21]' (FDE) to 'u1i_0/r0_reg_reg[24]'
+INFO: [Synth 8-3886] merging instance 'u1i_0/r0_reg_reg[22]' (FDE) to 'u1i_0/r0_reg_reg[30]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u1i_0/\r0_reg_reg[23] )
+INFO: [Synth 8-3886] merging instance 'u1i_0/r0_reg_reg[24]' (FDE) to 'u1i_0/r0_reg_reg[29]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u1i_0/\r0_reg_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u1i_0/\r0_reg_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u1i_0/\r0_reg_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u1i_0/\r0_reg_reg[28] )
+INFO: [Synth 8-3886] merging instance 'u1i_0/r0_reg_reg[29]' (FDE) to 'u1i_0/r0_reg_reg[32]'
+INFO: [Synth 8-3886] merging instance 'u1i_0/r0_reg_reg[30]' (FDE) to 'u1i_0/r0_reg_reg[36]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u1i_0/\r0_reg_reg[31] )
+INFO: [Synth 8-3886] merging instance 'u1i_0/r0_reg_reg[32]' (FDE) to 'u1i_0/r0_reg_reg[33]'
+INFO: [Synth 8-3886] merging instance 'u1i_0/r0_reg_reg[33]' (FDE) to 'u1i_0/r0_reg_reg[34]'
+INFO: [Synth 8-3886] merging instance 'u1i_0/r0_reg_reg[34]' (FDE) to 'u1i_0/r0_reg_reg[43]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u1i_0/\r0_reg_reg[35] )
+INFO: [Synth 8-3886] merging instance 'u1i_0/r0_reg_reg[36]' (FDE) to 'u1i_0/r0_reg_reg[37]'
+INFO: [Synth 8-3886] merging instance 'u1i_0/r0_reg_reg[37]' (FDE) to 'u1i_0/r0_reg_reg[47]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u1i_0/\r0_reg_reg[38] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u1i_0/\r0_reg_reg[39] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u1i_0/\r0_reg_reg[40] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u1i_0/\r0_reg_reg[41] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u1i_0/\r0_reg_reg[42] )
+INFO: [Synth 8-3886] merging instance 'u1i_0/r0_reg_reg[43]' (FDE) to 'u1i_0/r0_reg_reg[46]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u1i_0/\r0_reg_reg[44] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u1i_0/\r0_reg_reg[45] )
+INFO: [Synth 8-3886] merging instance 'u1i_0/r0_reg_reg[46]' (FDE) to 'u1i_0/r0_reg_reg[48]'
+INFO: [Synth 8-3886] merging instance 'u1i_0/r0_reg_reg[47]' (FDE) to 'u1i_0/r0_reg_reg[52]'
+INFO: [Synth 8-3886] merging instance 'u1i_0/r0_reg_reg[48]' (FDE) to 'u1i_0/r0_reg_reg[49]'
+INFO: [Synth 8-3886] merging instance 'u1i_0/r0_reg_reg[49]' (FDE) to 'u1i_0/r0_reg_reg[56]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u1i_0/\r0_reg_reg[50] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u1i_0/\r0_reg_reg[51] )
+INFO: [Synth 8-3886] merging instance 'u1i_0/r0_reg_reg[52]' (FDE) to 'u1i_0/r0_reg_reg[69]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u1i_0/\r0_reg_reg[53] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u1i_0/\r0_reg_reg[54] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u1i_0/\r0_reg_reg[55] )
+INFO: [Synth 8-3886] merging instance 'u1i_0/r0_reg_reg[56]' (FDE) to 'u1i_0/r0_reg_reg[57]'
+INFO: [Synth 8-3886] merging instance 'u1i_0/r0_reg_reg[57]' (FDE) to 'u1i_0/r0_reg_reg[58]'
+INFO: [Synth 8-3886] merging instance 'u1i_0/r0_reg_reg[58]' (FDE) to 'u1i_0/r0_reg_reg[59]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u1i_0/\r0_reg_reg[62] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u1i_0/\r0_reg_reg[63] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u1i_0/\r0_reg_reg[64] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u1i_0/\r0_reg_reg[68] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u1i_0/\r0_reg_reg[79] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u1i_0/\r0_reg_reg[80] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u1i_0/\r0_reg_reg[81] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u1i_0/\r0_reg_reg[84] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u1i_0/\r0_reg_reg[85] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u1i_0/\r0_reg_reg[86] )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:30 ; elapsed = 00:01:48 . Memory (MB): peak = 1106.766 ; gain = 870.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+--------------+---------------+----------------+
+|Module Name | RTL Object   | Depth x Width | Implemented As | 
++------------+--------------+---------------+----------------+
+|sbox        | c            | 256x8         | LUT            | 
+|sbox        | c            | 256x8         | LUT            | 
+|mixcolumn   | mul13        | 256x8         | LUT            | 
+|mixcolumn   | mul9         | 256x8         | LUT            | 
+|mixcolumn   | mul14        | 256x8         | LUT            | 
+|mixcolumn   | mul11        | 256x8         | LUT            | 
+|mixcolumn   | mul2         | 256x8         | LUT            | 
+|mixcolumn   | mul3         | 256x8         | LUT            | 
+|mixcolumn   | mul9         | 256x8         | LUT            | 
+|mixcolumn   | mul14        | 256x8         | LUT            | 
+|mixcolumn   | mul11        | 256x8         | LUT            | 
+|mixcolumn   | mul13        | 256x8         | LUT            | 
+|mixcolumn   | mul2         | 256x8         | LUT            | 
+|mixcolumn   | mul3         | 256x8         | LUT            | 
+|mixcolumn   | mul14        | 256x8         | LUT            | 
+|mixcolumn   | mul11        | 256x8         | LUT            | 
+|mixcolumn   | mul13        | 256x8         | LUT            | 
+|mixcolumn   | mul9         | 256x8         | LUT            | 
+|mixcolumn   | mul2         | 256x8         | LUT            | 
+|mixcolumn   | mul3         | 256x8         | LUT            | 
+|mixcolumn   | mul11        | 256x8         | LUT            | 
+|mixcolumn   | mul13        | 256x8         | LUT            | 
+|mixcolumn   | mul9         | 256x8         | LUT            | 
+|mixcolumn   | mul14        | 256x8         | LUT            | 
+|mixcolumn   | mul3         | 256x8         | LUT            | 
+|mixcolumn   | mul2         | 256x8         | LUT            | 
+|mixcolumn   | mul13        | 256x8         | LUT            | 
+|mixcolumn   | mul9         | 256x8         | LUT            | 
+|mixcolumn   | mul14        | 256x8         | LUT            | 
+|mixcolumn   | mul11        | 256x8         | LUT            | 
+|mixcolumn   | mul2         | 256x8         | LUT            | 
+|mixcolumn   | mul3         | 256x8         | LUT            | 
+|mixcolumn   | mul9         | 256x8         | LUT            | 
+|mixcolumn   | mul14        | 256x8         | LUT            | 
+|mixcolumn   | mul11        | 256x8         | LUT            | 
+|mixcolumn   | mul13        | 256x8         | LUT            | 
+|mixcolumn   | mul2         | 256x8         | LUT            | 
+|mixcolumn   | mul3         | 256x8         | LUT            | 
+|mixcolumn   | mul14        | 256x8         | LUT            | 
+|mixcolumn   | mul11        | 256x8         | LUT            | 
+|mixcolumn   | mul13        | 256x8         | LUT            | 
+|mixcolumn   | mul9         | 256x8         | LUT            | 
+|mixcolumn   | mul2         | 256x8         | LUT            | 
+|mixcolumn   | mul3         | 256x8         | LUT            | 
+|mixcolumn   | mul11        | 256x8         | LUT            | 
+|mixcolumn   | mul13        | 256x8         | LUT            | 
+|mixcolumn   | mul9         | 256x8         | LUT            | 
+|mixcolumn   | mul14        | 256x8         | LUT            | 
+|mixcolumn   | mul3         | 256x8         | LUT            | 
+|mixcolumn   | mul2         | 256x8         | LUT            | 
+|mixcolumn   | mul13        | 256x8         | LUT            | 
+|mixcolumn   | mul9         | 256x8         | LUT            | 
+|mixcolumn   | mul14        | 256x8         | LUT            | 
+|mixcolumn   | mul11        | 256x8         | LUT            | 
+|mixcolumn   | mul2         | 256x8         | LUT            | 
+|mixcolumn   | mul3         | 256x8         | LUT            | 
+|mixcolumn   | mul9         | 256x8         | LUT            | 
+|mixcolumn   | mul14        | 256x8         | LUT            | 
+|mixcolumn   | mul11        | 256x8         | LUT            | 
+|mixcolumn   | mul13        | 256x8         | LUT            | 
+|mixcolumn   | mul2         | 256x8         | LUT            | 
+|mixcolumn   | mul3         | 256x8         | LUT            | 
+|mixcolumn   | mul14        | 256x8         | LUT            | 
+|mixcolumn   | mul11        | 256x8         | LUT            | 
+|mixcolumn   | mul13        | 256x8         | LUT            | 
+|mixcolumn   | mul9         | 256x8         | LUT            | 
+|mixcolumn   | mul2         | 256x8         | LUT            | 
+|mixcolumn   | mul3         | 256x8         | LUT            | 
+|mixcolumn   | mul11        | 256x8         | LUT            | 
+|mixcolumn   | mul13        | 256x8         | LUT            | 
+|mixcolumn   | mul9         | 256x8         | LUT            | 
+|mixcolumn   | mul14        | 256x8         | LUT            | 
+|mixcolumn   | mul3         | 256x8         | LUT            | 
+|mixcolumn   | mul2         | 256x8         | LUT            | 
+|mixcolumn   | mul13        | 256x8         | LUT            | 
+|mixcolumn   | mul9         | 256x8         | LUT            | 
+|mixcolumn   | mul14        | 256x8         | LUT            | 
+|mixcolumn   | mul11        | 256x8         | LUT            | 
+|mixcolumn   | mul2         | 256x8         | LUT            | 
+|mixcolumn   | mul3         | 256x8         | LUT            | 
+|mixcolumn   | mul9         | 256x8         | LUT            | 
+|mixcolumn   | mul14        | 256x8         | LUT            | 
+|mixcolumn   | mul11        | 256x8         | LUT            | 
+|mixcolumn   | mul13        | 256x8         | LUT            | 
+|mixcolumn   | mul2         | 256x8         | LUT            | 
+|mixcolumn   | mul3         | 256x8         | LUT            | 
+|mixcolumn   | mul14        | 256x8         | LUT            | 
+|mixcolumn   | mul11        | 256x8         | LUT            | 
+|mixcolumn   | mul13        | 256x8         | LUT            | 
+|mixcolumn   | mul9         | 256x8         | LUT            | 
+|mixcolumn   | mul2         | 256x8         | LUT            | 
+|mixcolumn   | mul3         | 256x8         | LUT            | 
+|mixcolumn   | mul11        | 256x8         | LUT            | 
+|mixcolumn   | mul13        | 256x8         | LUT            | 
+|mixcolumn   | mul9         | 256x8         | LUT            | 
+|mixcolumn   | mul14        | 256x8         | LUT            | 
+|mixcolumn   | mul3         | 256x8         | LUT            | 
+|mixcolumn   | mul2         | 256x8         | LUT            | 
+|subbytes    | q0/c         | 256x8         | LUT            | 
+|subbytes    | q0/c         | 256x8         | LUT            | 
+|subbytes    | q1/c         | 256x8         | LUT            | 
+|subbytes    | q1/c         | 256x8         | LUT            | 
+|subbytes    | q2/c         | 256x8         | LUT            | 
+|subbytes    | q2/c         | 256x8         | LUT            | 
+|subbytes    | q3/c         | 256x8         | LUT            | 
+|subbytes    | q3/c         | 256x8         | LUT            | 
+|subbytes    | q4/c         | 256x8         | LUT            | 
+|subbytes    | q4/c         | 256x8         | LUT            | 
+|subbytes    | q5/c         | 256x8         | LUT            | 
+|subbytes    | q5/c         | 256x8         | LUT            | 
+|subbytes    | q6/c         | 256x8         | LUT            | 
+|subbytes    | q6/c         | 256x8         | LUT            | 
+|subbytes    | q7/c         | 256x8         | LUT            | 
+|subbytes    | q7/c         | 256x8         | LUT            | 
+|subbytes    | q8/c         | 256x8         | LUT            | 
+|subbytes    | q8/c         | 256x8         | LUT            | 
+|subbytes    | q9/c         | 256x8         | LUT            | 
+|subbytes    | q9/c         | 256x8         | LUT            | 
+|subbytes    | q10/c        | 256x8         | LUT            | 
+|subbytes    | q10/c        | 256x8         | LUT            | 
+|subbytes    | q11/c        | 256x8         | LUT            | 
+|subbytes    | q11/c        | 256x8         | LUT            | 
+|subbytes    | q12/c        | 256x8         | LUT            | 
+|subbytes    | q12/c        | 256x8         | LUT            | 
+|subbytes    | q13/c        | 256x8         | LUT            | 
+|subbytes    | q13/c        | 256x8         | LUT            | 
+|subbytes    | q14/c        | 256x8         | LUT            | 
+|subbytes    | q14/c        | 256x8         | LUT            | 
+|subbytes    | q16/c        | 256x8         | LUT            | 
+|subbytes    | q16/c        | 256x8         | LUT            | 
+|mixcolumn   | mul13        | 256x8         | LUT            | 
+|mixcolumn   | mul9         | 256x8         | LUT            | 
+|mixcolumn   | mul14        | 256x8         | LUT            | 
+|mixcolumn   | mul11        | 256x8         | LUT            | 
+|mixcolumn   | mul2         | 256x8         | LUT            | 
+|mixcolumn   | mul3         | 256x8         | LUT            | 
+|mixcolumn   | mul9         | 256x8         | LUT            | 
+|mixcolumn   | mul14        | 256x8         | LUT            | 
+|mixcolumn   | mul11        | 256x8         | LUT            | 
+|mixcolumn   | mul13        | 256x8         | LUT            | 
+|mixcolumn   | mul2         | 256x8         | LUT            | 
+|mixcolumn   | mul3         | 256x8         | LUT            | 
+|mixcolumn   | mul14        | 256x8         | LUT            | 
+|mixcolumn   | mul11        | 256x8         | LUT            | 
+|mixcolumn   | mul13        | 256x8         | LUT            | 
+|mixcolumn   | mul9         | 256x8         | LUT            | 
+|mixcolumn   | mul2         | 256x8         | LUT            | 
+|mixcolumn   | mul3         | 256x8         | LUT            | 
+|mixcolumn   | mul11        | 256x8         | LUT            | 
+|mixcolumn   | mul13        | 256x8         | LUT            | 
+|mixcolumn   | mul9         | 256x8         | LUT            | 
+|mixcolumn   | mul14        | 256x8         | LUT            | 
+|mixcolumn   | mul3         | 256x8         | LUT            | 
+|mixcolumn   | mul2         | 256x8         | LUT            | 
+|mixcolumn   | mul13        | 256x8         | LUT            | 
+|mixcolumn   | mul9         | 256x8         | LUT            | 
+|mixcolumn   | mul14        | 256x8         | LUT            | 
+|mixcolumn   | mul11        | 256x8         | LUT            | 
+|mixcolumn   | mul2         | 256x8         | LUT            | 
+|mixcolumn   | mul3         | 256x8         | LUT            | 
+|mixcolumn   | mul9         | 256x8         | LUT            | 
+|mixcolumn   | mul14        | 256x8         | LUT            | 
+|mixcolumn   | mul11        | 256x8         | LUT            | 
+|mixcolumn   | mul13        | 256x8         | LUT            | 
+|mixcolumn   | mul2         | 256x8         | LUT            | 
+|mixcolumn   | mul3         | 256x8         | LUT            | 
+|mixcolumn   | mul14        | 256x8         | LUT            | 
+|mixcolumn   | mul11        | 256x8         | LUT            | 
+|mixcolumn   | mul13        | 256x8         | LUT            | 
+|mixcolumn   | mul9         | 256x8         | LUT            | 
+|mixcolumn   | mul2         | 256x8         | LUT            | 
+|mixcolumn   | mul3         | 256x8         | LUT            | 
+|mixcolumn   | mul11        | 256x8         | LUT            | 
+|mixcolumn   | mul13        | 256x8         | LUT            | 
+|mixcolumn   | mul9         | 256x8         | LUT            | 
+|mixcolumn   | mul14        | 256x8         | LUT            | 
+|mixcolumn   | mul3         | 256x8         | LUT            | 
+|mixcolumn   | mul2         | 256x8         | LUT            | 
+|mixcolumn   | mul13        | 256x8         | LUT            | 
+|mixcolumn   | mul9         | 256x8         | LUT            | 
+|mixcolumn   | mul14        | 256x8         | LUT            | 
+|mixcolumn   | mul11        | 256x8         | LUT            | 
+|mixcolumn   | mul2         | 256x8         | LUT            | 
+|mixcolumn   | mul3         | 256x8         | LUT            | 
+|mixcolumn   | mul9         | 256x8         | LUT            | 
+|mixcolumn   | mul14        | 256x8         | LUT            | 
+|mixcolumn   | mul11        | 256x8         | LUT            | 
+|mixcolumn   | mul13        | 256x8         | LUT            | 
+|mixcolumn   | mul2         | 256x8         | LUT            | 
+|mixcolumn   | mul3         | 256x8         | LUT            | 
+|mixcolumn   | mul14        | 256x8         | LUT            | 
+|mixcolumn   | mul11        | 256x8         | LUT            | 
+|mixcolumn   | mul13        | 256x8         | LUT            | 
+|mixcolumn   | mul9         | 256x8         | LUT            | 
+|mixcolumn   | mul2         | 256x8         | LUT            | 
+|mixcolumn   | mul3         | 256x8         | LUT            | 
+|mixcolumn   | mul11        | 256x8         | LUT            | 
+|mixcolumn   | mul13        | 256x8         | LUT            | 
+|mixcolumn   | mul9         | 256x8         | LUT            | 
+|mixcolumn   | mul14        | 256x8         | LUT            | 
+|mixcolumn   | mul3         | 256x8         | LUT            | 
+|mixcolumn   | mul2         | 256x8         | LUT            | 
+|mixcolumn   | mul13        | 256x8         | LUT            | 
+|mixcolumn   | mul9         | 256x8         | LUT            | 
+|mixcolumn   | mul14        | 256x8         | LUT            | 
+|mixcolumn   | mul11        | 256x8         | LUT            | 
+|mixcolumn   | mul2         | 256x8         | LUT            | 
+|mixcolumn   | mul3         | 256x8         | LUT            | 
+|mixcolumn   | mul9         | 256x8         | LUT            | 
+|mixcolumn   | mul14        | 256x8         | LUT            | 
+|mixcolumn   | mul11        | 256x8         | LUT            | 
+|mixcolumn   | mul13        | 256x8         | LUT            | 
+|mixcolumn   | mul2         | 256x8         | LUT            | 
+|mixcolumn   | mul3         | 256x8         | LUT            | 
+|mixcolumn   | mul14        | 256x8         | LUT            | 
+|mixcolumn   | mul11        | 256x8         | LUT            | 
+|mixcolumn   | mul13        | 256x8         | LUT            | 
+|mixcolumn   | mul9         | 256x8         | LUT            | 
+|mixcolumn   | mul2         | 256x8         | LUT            | 
+|mixcolumn   | mul3         | 256x8         | LUT            | 
+|mixcolumn   | mul11        | 256x8         | LUT            | 
+|mixcolumn   | mul13        | 256x8         | LUT            | 
+|mixcolumn   | mul9         | 256x8         | LUT            | 
+|mixcolumn   | mul14        | 256x8         | LUT            | 
+|mixcolumn   | mul3         | 256x8         | LUT            | 
+|mixcolumn   | mul2         | 256x8         | LUT            | 
+|AES_TOP     | r14/t1/q0/c  | 256x8         | LUT            | 
+|AES_TOP     | r14/t1/q0/c  | 256x8         | LUT            | 
+|AES_TOP     | r14/t1/q1/c  | 256x8         | LUT            | 
+|AES_TOP     | r14/t1/q1/c  | 256x8         | LUT            | 
+|AES_TOP     | r14/t1/q2/c  | 256x8         | LUT            | 
+|AES_TOP     | r14/t1/q2/c  | 256x8         | LUT            | 
+|AES_TOP     | r14/t1/q3/c  | 256x8         | LUT            | 
+|AES_TOP     | r14/t1/q3/c  | 256x8         | LUT            | 
+|AES_TOP     | r14/t1/q4/c  | 256x8         | LUT            | 
+|AES_TOP     | r14/t1/q4/c  | 256x8         | LUT            | 
+|AES_TOP     | r14/t1/q5/c  | 256x8         | LUT            | 
+|AES_TOP     | r14/t1/q5/c  | 256x8         | LUT            | 
+|AES_TOP     | r14/t1/q6/c  | 256x8         | LUT            | 
+|AES_TOP     | r14/t1/q6/c  | 256x8         | LUT            | 
+|AES_TOP     | r14/t1/q7/c  | 256x8         | LUT            | 
+|AES_TOP     | r14/t1/q7/c  | 256x8         | LUT            | 
+|AES_TOP     | r14/t1/q8/c  | 256x8         | LUT            | 
+|AES_TOP     | r14/t1/q8/c  | 256x8         | LUT            | 
+|AES_TOP     | r14/t1/q9/c  | 256x8         | LUT            | 
+|AES_TOP     | r14/t1/q9/c  | 256x8         | LUT            | 
+|AES_TOP     | r14/t1/q10/c | 256x8         | LUT            | 
+|AES_TOP     | r14/t1/q10/c | 256x8         | LUT            | 
+|AES_TOP     | r14/t1/q11/c | 256x8         | LUT            | 
+|AES_TOP     | r14/t1/q11/c | 256x8         | LUT            | 
+|AES_TOP     | r14/t1/q12/c | 256x8         | LUT            | 
+|AES_TOP     | r14/t1/q12/c | 256x8         | LUT            | 
+|AES_TOP     | r14/t1/q13/c | 256x8         | LUT            | 
+|AES_TOP     | r14/t1/q13/c | 256x8         | LUT            | 
+|AES_TOP     | r14/t1/q14/c | 256x8         | LUT            | 
+|AES_TOP     | r14/t1/q14/c | 256x8         | LUT            | 
+|AES_TOP     | r14/t1/q16/c | 256x8         | LUT            | 
+|AES_TOP     | r14/t1/q16/c | 256x8         | LUT            | 
++------------+--------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+---------------+------------+----------+
+|      |RTL Partition  |Replication |Instances |
++------+---------------+------------+----------+
+|1     |rounds         |           1|      7180|
+|2     |aescipher__GC0 |           1|      4003|
+|3     |uart_tx        |           1|      1118|
+|4     |rounds__1      |           1|      7328|
+|5     |rounds__2      |           1|      7319|
+|6     |rounds__3      |           1|      7359|
+|7     |rounds__4      |           1|      7331|
+|8     |rounds__5      |           1|      7331|
+|9     |rounds__6      |           1|      7921|
+|10    |rounds__7      |           1|      7321|
+|11    |rounds__8      |           1|      7315|
+|12    |rounds__9      |           1|      7365|
+|13    |rounds__10     |           1|      7333|
+|14    |rounds__11     |           1|      7321|
+|15    |rounds__12     |           1|      7329|
++------+---------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:42 ; elapsed = 00:02:01 . Memory (MB): peak = 1263.773 ; gain = 1027.441
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:42 ; elapsed = 00:02:01 . Memory (MB): peak = 1264.145 ; gain = 1027.813
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+---------------+------------+----------+
+|      |RTL Partition  |Replication |Instances |
++------+---------------+------------+----------+
+|1     |rounds         |           1|      7180|
+|2     |aescipher__GC0 |           1|      4003|
+|3     |uart_tx        |           1|      1118|
+|4     |rounds__1      |           1|      7328|
+|5     |rounds__2      |           1|      7319|
+|6     |rounds__3      |           1|      7359|
+|7     |rounds__4      |           1|      7331|
+|8     |rounds__5      |           1|      7331|
+|9     |rounds__6      |           1|      7921|
+|10    |rounds__7      |           1|      7321|
+|11    |rounds__8      |           1|      7315|
+|12    |rounds__9      |           1|      7365|
+|13    |rounds__10     |           1|      7333|
+|14    |rounds__11     |           1|      7321|
+|15    |rounds__12     |           1|      7329|
++------+---------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:00 ; elapsed = 00:02:20 . Memory (MB): peak = 1287.020 ; gain = 1050.688
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:04 ; elapsed = 00:02:24 . Memory (MB): peak = 1287.020 ; gain = 1050.688
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:05 ; elapsed = 00:02:25 . Memory (MB): peak = 1287.020 ; gain = 1050.688
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:08 ; elapsed = 00:02:28 . Memory (MB): peak = 1287.020 ; gain = 1050.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:09 ; elapsed = 00:02:29 . Memory (MB): peak = 1287.020 ; gain = 1050.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:16 ; elapsed = 00:02:37 . Memory (MB): peak = 1287.020 ; gain = 1050.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:16 ; elapsed = 00:02:37 . Memory (MB): peak = 1287.020 ; gain = 1050.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     3|
+|3     |LUT1   |    16|
+|4     |LUT2   |   189|
+|5     |LUT3   |  4773|
+|6     |LUT4   |  2730|
+|7     |LUT5   |  3599|
+|8     |LUT6   | 17517|
+|9     |MUXF7  |  7252|
+|10    |MUXF8  |  2441|
+|11    |FDCE   |  5143|
+|12    |FDPE   |     3|
+|13    |FDRE   |  3366|
+|14    |IBUF   |     5|
+|15    |OBUF   |     1|
+|16    |OBUFT  |     1|
++------+-------+------+
+
+Report Instance Areas: 
++------+------------+--------------+------+
+|      |Instance    |Module        |Cells |
++------+------------+--------------+------+
+|1     |top         |              | 47040|
+|2     |  T1        |uart_tx       |   506|
+|3     |  u1        |aescipher     | 46526|
+|4     |    r1      |rounds        |  3282|
+|5     |      t1    |subbytes_242  |   649|
+|6     |        q0  |sbox_244      |    34|
+|7     |        q1  |sbox_245      |    47|
+|8     |        q10 |sbox_246      |    35|
+|9     |        q11 |sbox_247      |    45|
+|10    |        q12 |sbox_248      |    35|
+|11    |        q13 |sbox_249      |    44|
+|12    |        q14 |sbox_250      |    35|
+|13    |        q16 |sbox_251      |    44|
+|14    |        q2  |sbox_252      |    38|
+|15    |        q3  |sbox_253      |    46|
+|16    |        q4  |sbox_254      |    38|
+|17    |        q5  |sbox_255      |    42|
+|18    |        q6  |sbox_256      |    39|
+|19    |        q7  |sbox_257      |    46|
+|20    |        q8  |sbox_258      |    38|
+|21    |        q9  |sbox_259      |    43|
+|22    |      t3    |mixcolumn_243 |   244|
+|23    |    r10     |rounds_0      |  3336|
+|24    |      t1    |subbytes_224  |   704|
+|25    |        q0  |sbox_226      |    40|
+|26    |        q1  |sbox_227      |    48|
+|27    |        q10 |sbox_228      |    40|
+|28    |        q11 |sbox_229      |    48|
+|29    |        q12 |sbox_230      |    40|
+|30    |        q13 |sbox_231      |    48|
+|31    |        q14 |sbox_232      |    40|
+|32    |        q16 |sbox_233      |    48|
+|33    |        q2  |sbox_234      |    40|
+|34    |        q3  |sbox_235      |    48|
+|35    |        q4  |sbox_236      |    40|
+|36    |        q5  |sbox_237      |    48|
+|37    |        q6  |sbox_238      |    40|
+|38    |        q7  |sbox_239      |    48|
+|39    |        q8  |sbox_240      |    40|
+|40    |        q9  |sbox_241      |    48|
+|41    |      t3    |mixcolumn_225 |   255|
+|42    |    r11     |rounds_1      |  3336|
+|43    |      t1    |subbytes_206  |   704|
+|44    |        q0  |sbox_208      |    40|
+|45    |        q1  |sbox_209      |    48|
+|46    |        q10 |sbox_210      |    40|
+|47    |        q11 |sbox_211      |    48|
+|48    |        q12 |sbox_212      |    40|
+|49    |        q13 |sbox_213      |    48|
+|50    |        q14 |sbox_214      |    40|
+|51    |        q16 |sbox_215      |    48|
+|52    |        q2  |sbox_216      |    40|
+|53    |        q3  |sbox_217      |    48|
+|54    |        q4  |sbox_218      |    40|
+|55    |        q5  |sbox_219      |    48|
+|56    |        q6  |sbox_220      |    40|
+|57    |        q7  |sbox_221      |    48|
+|58    |        q8  |sbox_222      |    40|
+|59    |        q9  |sbox_223      |    48|
+|60    |      t3    |mixcolumn_207 |   252|
+|61    |    r12     |rounds_2      |  3336|
+|62    |      t1    |subbytes_188  |   704|
+|63    |        q0  |sbox_190      |    40|
+|64    |        q1  |sbox_191      |    48|
+|65    |        q10 |sbox_192      |    40|
+|66    |        q11 |sbox_193      |    48|
+|67    |        q12 |sbox_194      |    40|
+|68    |        q13 |sbox_195      |    48|
+|69    |        q14 |sbox_196      |    40|
+|70    |        q16 |sbox_197      |    48|
+|71    |        q2  |sbox_198      |    40|
+|72    |        q3  |sbox_199      |    48|
+|73    |        q4  |sbox_200      |    40|
+|74    |        q5  |sbox_201      |    48|
+|75    |        q6  |sbox_202      |    40|
+|76    |        q7  |sbox_203      |    48|
+|77    |        q8  |sbox_204      |    40|
+|78    |        q9  |sbox_205      |    48|
+|79    |      t3    |mixcolumn_189 |   251|
+|80    |    r13     |rounds_3      |  3336|
+|81    |      t1    |subbytes_170  |   704|
+|82    |        q0  |sbox_172      |    40|
+|83    |        q1  |sbox_173      |    48|
+|84    |        q10 |sbox_174      |    40|
+|85    |        q11 |sbox_175      |    48|
+|86    |        q12 |sbox_176      |    40|
+|87    |        q13 |sbox_177      |    48|
+|88    |        q14 |sbox_178      |    40|
+|89    |        q16 |sbox_179      |    48|
+|90    |        q2  |sbox_180      |    40|
+|91    |        q3  |sbox_181      |    48|
+|92    |        q4  |sbox_182      |    40|
+|93    |        q5  |sbox_183      |    48|
+|94    |        q6  |sbox_184      |    40|
+|95    |        q7  |sbox_185      |    48|
+|96    |        q8  |sbox_186      |    40|
+|97    |        q9  |sbox_187      |    48|
+|98    |      t3    |mixcolumn_171 |   252|
+|99    |    r14     |rounndlast    |   450|
+|100   |      t1    |subbytes_153  |   405|
+|101   |        q0  |sbox_154      |    38|
+|102   |        q1  |sbox_155      |    16|
+|103   |        q10 |sbox_156      |    34|
+|104   |        q11 |sbox_157      |    16|
+|105   |        q12 |sbox_158      |    35|
+|106   |        q13 |sbox_159      |    16|
+|107   |        q14 |sbox_160      |    33|
+|108   |        q16 |sbox_161      |    16|
+|109   |        q2  |sbox_162      |    36|
+|110   |        q3  |sbox_163      |    16|
+|111   |        q4  |sbox_164      |    33|
+|112   |        q5  |sbox_165      |    16|
+|113   |        q6  |sbox_166      |    34|
+|114   |        q7  |sbox_167      |    16|
+|115   |        q8  |sbox_168      |    34|
+|116   |        q9  |sbox_169      |    16|
+|117   |      t2    |shiftrow      |    20|
+|118   |    r2      |rounds_4      |  3336|
+|119   |      t1    |subbytes_135  |   704|
+|120   |        q0  |sbox_137      |    40|
+|121   |        q1  |sbox_138      |    48|
+|122   |        q10 |sbox_139      |    40|
+|123   |        q11 |sbox_140      |    48|
+|124   |        q12 |sbox_141      |    40|
+|125   |        q13 |sbox_142      |    48|
+|126   |        q14 |sbox_143      |    40|
+|127   |        q16 |sbox_144      |    48|
+|128   |        q2  |sbox_145      |    40|
+|129   |        q3  |sbox_146      |    48|
+|130   |        q4  |sbox_147      |    40|
+|131   |        q5  |sbox_148      |    48|
+|132   |        q6  |sbox_149      |    40|
+|133   |        q7  |sbox_150      |    48|
+|134   |        q8  |sbox_151      |    40|
+|135   |        q9  |sbox_152      |    48|
+|136   |      t3    |mixcolumn_136 |   252|
+|137   |    r3      |rounds_5      |  3336|
+|138   |      t1    |subbytes_117  |   704|
+|139   |        q0  |sbox_119      |    40|
+|140   |        q1  |sbox_120      |    48|
+|141   |        q10 |sbox_121      |    40|
+|142   |        q11 |sbox_122      |    48|
+|143   |        q12 |sbox_123      |    40|
+|144   |        q13 |sbox_124      |    48|
+|145   |        q14 |sbox_125      |    40|
+|146   |        q16 |sbox_126      |    48|
+|147   |        q2  |sbox_127      |    40|
+|148   |        q3  |sbox_128      |    48|
+|149   |        q4  |sbox_129      |    40|
+|150   |        q5  |sbox_130      |    48|
+|151   |        q6  |sbox_131      |    40|
+|152   |        q7  |sbox_132      |    48|
+|153   |        q8  |sbox_133      |    40|
+|154   |        q9  |sbox_134      |    48|
+|155   |      t3    |mixcolumn_118 |   248|
+|156   |    r4      |rounds_6      |  3336|
+|157   |      t1    |subbytes_99   |   704|
+|158   |        q0  |sbox_101      |    40|
+|159   |        q1  |sbox_102      |    48|
+|160   |        q10 |sbox_103      |    40|
+|161   |        q11 |sbox_104      |    48|
+|162   |        q12 |sbox_105      |    40|
+|163   |        q13 |sbox_106      |    48|
+|164   |        q14 |sbox_107      |    40|
+|165   |        q16 |sbox_108      |    48|
+|166   |        q2  |sbox_109      |    40|
+|167   |        q3  |sbox_110      |    48|
+|168   |        q4  |sbox_111      |    40|
+|169   |        q5  |sbox_112      |    48|
+|170   |        q6  |sbox_113      |    40|
+|171   |        q7  |sbox_114      |    48|
+|172   |        q8  |sbox_115      |    40|
+|173   |        q9  |sbox_116      |    48|
+|174   |      t3    |mixcolumn_100 |   254|
+|175   |    r5      |rounds_7      |  3336|
+|176   |      t1    |subbytes_81   |   704|
+|177   |        q0  |sbox_83       |    40|
+|178   |        q1  |sbox_84       |    48|
+|179   |        q10 |sbox_85       |    40|
+|180   |        q11 |sbox_86       |    48|
+|181   |        q12 |sbox_87       |    40|
+|182   |        q13 |sbox_88       |    48|
+|183   |        q14 |sbox_89       |    40|
+|184   |        q16 |sbox_90       |    48|
+|185   |        q2  |sbox_91       |    40|
+|186   |        q3  |sbox_92       |    48|
+|187   |        q4  |sbox_93       |    40|
+|188   |        q5  |sbox_94       |    48|
+|189   |        q6  |sbox_95       |    40|
+|190   |        q7  |sbox_96       |    48|
+|191   |        q8  |sbox_97       |    40|
+|192   |        q9  |sbox_98       |    48|
+|193   |      t3    |mixcolumn_82  |   258|
+|194   |    r6      |rounds_8      |  3336|
+|195   |      t1    |subbytes_63   |   704|
+|196   |        q0  |sbox_65       |    40|
+|197   |        q1  |sbox_66       |    48|
+|198   |        q10 |sbox_67       |    40|
+|199   |        q11 |sbox_68       |    48|
+|200   |        q12 |sbox_69       |    40|
+|201   |        q13 |sbox_70       |    48|
+|202   |        q14 |sbox_71       |    40|
+|203   |        q16 |sbox_72       |    48|
+|204   |        q2  |sbox_73       |    40|
+|205   |        q3  |sbox_74       |    48|
+|206   |        q4  |sbox_75       |    40|
+|207   |        q5  |sbox_76       |    48|
+|208   |        q6  |sbox_77       |    40|
+|209   |        q7  |sbox_78       |    48|
+|210   |        q8  |sbox_79       |    40|
+|211   |        q9  |sbox_80       |    48|
+|212   |      t3    |mixcolumn_64  |   258|
+|213   |    r7      |rounds_9      |  3336|
+|214   |      t1    |subbytes_45   |   704|
+|215   |        q0  |sbox_47       |    40|
+|216   |        q1  |sbox_48       |    48|
+|217   |        q10 |sbox_49       |    40|
+|218   |        q11 |sbox_50       |    48|
+|219   |        q12 |sbox_51       |    40|
+|220   |        q13 |sbox_52       |    48|
+|221   |        q14 |sbox_53       |    40|
+|222   |        q16 |sbox_54       |    48|
+|223   |        q2  |sbox_55       |    40|
+|224   |        q3  |sbox_56       |    48|
+|225   |        q4  |sbox_57       |    40|
+|226   |        q5  |sbox_58       |    48|
+|227   |        q6  |sbox_59       |    40|
+|228   |        q7  |sbox_60       |    48|
+|229   |        q8  |sbox_61       |    40|
+|230   |        q9  |sbox_62       |    48|
+|231   |      t3    |mixcolumn_46  |   272|
+|232   |    r8      |rounds_10     |  3336|
+|233   |      t1    |subbytes_27   |   704|
+|234   |        q0  |sbox_29       |    40|
+|235   |        q1  |sbox_30       |    48|
+|236   |        q10 |sbox_31       |    40|
+|237   |        q11 |sbox_32       |    48|
+|238   |        q12 |sbox_33       |    40|
+|239   |        q13 |sbox_34       |    48|
+|240   |        q14 |sbox_35       |    40|
+|241   |        q16 |sbox_36       |    48|
+|242   |        q2  |sbox_37       |    40|
+|243   |        q3  |sbox_38       |    48|
+|244   |        q4  |sbox_39       |    40|
+|245   |        q5  |sbox_40       |    48|
+|246   |        q6  |sbox_41       |    40|
+|247   |        q7  |sbox_42       |    48|
+|248   |        q8  |sbox_43       |    40|
+|249   |        q9  |sbox_44       |    48|
+|250   |      t3    |mixcolumn_28  |   254|
+|251   |    r9      |rounds_11     |  3336|
+|252   |      t1    |subbytes      |   704|
+|253   |        q0  |sbox          |    40|
+|254   |        q1  |sbox_12       |    48|
+|255   |        q10 |sbox_13       |    40|
+|256   |        q11 |sbox_14       |    48|
+|257   |        q12 |sbox_15       |    40|
+|258   |        q13 |sbox_16       |    48|
+|259   |        q14 |sbox_17       |    40|
+|260   |        q16 |sbox_18       |    48|
+|261   |        q2  |sbox_19       |    40|
+|262   |        q3  |sbox_20       |    48|
+|263   |        q4  |sbox_21       |    40|
+|264   |        q5  |sbox_22       |    48|
+|265   |        q6  |sbox_23       |    40|
+|266   |        q7  |sbox_24       |    48|
+|267   |        q8  |sbox_25       |    40|
+|268   |        q9  |sbox_26       |    48|
+|269   |      t3    |mixcolumn     |   249|
++------+------------+--------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:16 ; elapsed = 00:02:37 . Memory (MB): peak = 1287.020 ; gain = 1050.688
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1058 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:56 ; elapsed = 00:02:24 . Memory (MB): peak = 1287.020 ; gain = 692.586
+Synthesis Optimization Complete : Time (s): cpu = 00:02:17 ; elapsed = 00:02:37 . Memory (MB): peak = 1287.020 ; gain = 1050.688
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+278 Infos, 331 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:29 ; elapsed = 00:02:52 . Memory (MB): peak = 1287.020 ; gain = 1052.773
+INFO: [Common 17-1381] The checkpoint 'C:/College/Thesis/AES_2018/aes256 - pipetest/aes128.runs/synth_1/AES_TOP.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 1287.020 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.331 . Memory (MB): peak = 1287.020 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun Sep  9 00:40:34 2018...
