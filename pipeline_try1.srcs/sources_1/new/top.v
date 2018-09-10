@@ -25,7 +25,7 @@ module top(input clkIn,
            input loadKeyIn,
            input loadDataIn,
            input startIn,
-           input [1:0]encDecSelectIn,
+           input encDecSelectIn,
            output [127:0]dataout,
            //output [31:0]dataBram,
            //output [1:0]dataDoneOut
@@ -73,7 +73,7 @@ aescipher u1(.clk(clkIn),
              .load_i(dataStart),
              .decrypt_i(encDecSelectIn),
              .data_i(dataI),
-             .key(128'h 000102030405060708090a0b0c0d0e0f),
+             //.key(128'h 000102030405060708090a0b0c0d0e0f),
              .ready_o(dataDone),
              .data_o(dataout)
              );

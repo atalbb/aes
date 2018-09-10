@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="20" Path="C:/College/Thesis/AES_2018/fall2018/pipeline_try1/pipeline_try1.xpr">
+<Project Version="7" Minor="20" Path="C:/College/Thesis/AES_2018/fall2018/pipeline_try1 - clk_enc-44-decND/pipeline_try1.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="2f53f4ae96bc4d3f8dfda049cdc7c0f4"/>
@@ -29,7 +29,7 @@
     <Option Name="EnableBDX" Val="FALSE"/>
     <Option Name="DSABoardId" Val="nexys4"/>
     <Option Name="DSANumComputeUnits" Val="16"/>
-    <Option Name="WTXSimLaunchSim" Val="57"/>
+    <Option Name="WTXSimLaunchSim" Val="96"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>

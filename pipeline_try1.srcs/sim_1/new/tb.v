@@ -31,7 +31,7 @@ parameter _16_FULL_CLK = 16 * FULL_CLK;
 parameter _17_FULL_CLK = 17 * FULL_CLK;
 //parameter
 reg CLK,RST,LOADKEY,LOADDATA,START;
-reg [1:0]ENCDECSELECT;
+reg ENCDECSELECT;
 wire DATAOUTDONE;
 wire [127:0]DATAOUT;
 //wire [31:0]DATABRAM;
@@ -43,14 +43,14 @@ initial begin
          LOADKEY = 0;
          LOADDATA = 0;
          START = 0;
-         ENCDECSELECT = 2'b00;
+         ENCDECSELECT = 0;
     #100 RST = 1;
-         ENCDECSELECT = 2'b01;
+//         ENCDECSELECT = 1;
     #100 LOADKEY = 1;
          LOADDATA = 1;
     #40  START = 1;
     //#40  LOADDATA = 0;   
-    #500  $finish; // 1 clk for done signal to go down
+    #1000  $finish; // 1 clk for done signal to go down
 end
 
 always

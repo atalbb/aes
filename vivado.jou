@@ -2,10 +2,45 @@
 # Vivado v2017.1 (64-bit)
 # SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
 # IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
-# Start of session at: Fri Sep  7 13:45:36 2018
-# Process ID: 8780
-# Current directory: C:/College/Thesis/AES_2018/fall2018/pipeline_try1
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2452 C:\College\Thesis\AES_2018\fall2018\pipeline_try1\pipeline_try1.xpr
-# Log file: C:/College/Thesis/AES_2018/fall2018/pipeline_try1/vivado.log
-# Journal file: C:/College/Thesis/AES_2018/fall2018/pipeline_try1\vivado.jou
+# Start of session at: Sun Sep  9 16:52:51 2018
+# Process ID: 12352
+# Current directory: C:/College/Thesis/AES_2018/fall2018/pipeline_try1 - clk_enc-44-decND
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2996 C:\College\Thesis\AES_2018\fall2018\pipeline_try1 - clk_enc-44-decND\pipeline_try1.xpr
+# Log file: C:/College/Thesis/AES_2018/fall2018/pipeline_try1 - clk_enc-44-decND/vivado.log
+# Journal file: C:/College/Thesis/AES_2018/fall2018/pipeline_try1 - clk_enc-44-decND\vivado.jou
 #-----------------------------------------------------------
+start_gui
+open_project {C:/College/Thesis/AES_2018/fall2018/pipeline_try1 - clk_enc-44-decND/pipeline_try1.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+source tb.tcl
+close_sim
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_simulation
+source tb.tcl
+close_sim
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_simulation
+source tb.tcl
+close_sim
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_simulation
+source tb.tcl
+close_sim
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_simulation
+source tb.tcl
+close_sim
+launch_simulation
+source tb.tcl
+close_sim

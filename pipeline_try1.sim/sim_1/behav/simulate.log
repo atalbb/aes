@@ -3,4 +3,3 @@ Time resolution is 1 ps
  Block Memory Generator module loading initial data...
  Block Memory Generator data initialization complete.
 Block Memory Generator module tb.T.DATA1.inst.native_mem_module.blk_mem_gen_v8_3_6_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
-$finish called at time : 740 ns : File "C:/College/Thesis/AES_2018/fall2018/pipeline_try1/pipeline_try1.srcs/sim_1/new/tb.v" Line 53
