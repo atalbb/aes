@@ -1,10 +1,10 @@
 -- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2017.1 (win64) Build 1846317 Fri Apr 14 18:55:03 MDT 2017
--- Date        : Wed Sep 12 14:56:26 2018
+-- Date        : Mon Sep 10 23:39:40 2018
 -- Host        : DESKTOP-GJPCRJL running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim {C:/College/Thesis/AES_2018/AES_After
---               9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/ip/invSbox_mem_gen_0/invSbox_mem_gen_0_sim_netlist.vhdl}
+-- Command     : write_vhdl -force -mode funcsim -rename_top invSbox_mem_gen_0 -prefix
+--               invSbox_mem_gen_0_ invSbox_mem_gen_0_sim_netlist.vhdl
 -- Design      : invSbox_mem_gen_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -18,12 +18,11 @@ entity invSbox_mem_gen_0_blk_mem_gen_prim_wrapper_init is
   port (
     douta : out STD_LOGIC_VECTOR ( 7 downto 0 );
     clka : in STD_LOGIC;
+    ena : in STD_LOGIC;
     addra : in STD_LOGIC_VECTOR ( 7 downto 0 );
     dina : in STD_LOGIC_VECTOR ( 7 downto 0 );
     wea : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of invSbox_mem_gen_0_blk_mem_gen_prim_wrapper_init : entity is "blk_mem_gen_prim_wrapper_init";
 end invSbox_mem_gen_0_blk_mem_gen_prim_wrapper_init;
 
 architecture STRUCTURE of invSbox_mem_gen_0_blk_mem_gen_prim_wrapper_init is
@@ -211,8 +210,8 @@ begin
       DOPADOP(0) => \DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram_n_33\,
       DOPBDOP(1) => \DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram_n_34\,
       DOPBDOP(0) => \DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram_n_35\,
-      ENARDEN => '1',
-      ENBWREN => '1',
+      ENARDEN => ena,
+      ENBWREN => ena,
       REGCEAREGCE => '0',
       REGCEB => '0',
       RSTRAMARSTRAM => '0',
@@ -234,12 +233,11 @@ entity invSbox_mem_gen_0_blk_mem_gen_prim_width is
   port (
     douta : out STD_LOGIC_VECTOR ( 7 downto 0 );
     clka : in STD_LOGIC;
+    ena : in STD_LOGIC;
     addra : in STD_LOGIC_VECTOR ( 7 downto 0 );
     dina : in STD_LOGIC_VECTOR ( 7 downto 0 );
     wea : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of invSbox_mem_gen_0_blk_mem_gen_prim_width : entity is "blk_mem_gen_prim_width";
 end invSbox_mem_gen_0_blk_mem_gen_prim_width;
 
 architecture STRUCTURE of invSbox_mem_gen_0_blk_mem_gen_prim_width is
@@ -250,6 +248,7 @@ begin
       clka => clka,
       dina(7 downto 0) => dina(7 downto 0),
       douta(7 downto 0) => douta(7 downto 0),
+      ena => ena,
       wea(0) => wea(0)
     );
 end STRUCTURE;
@@ -261,12 +260,11 @@ entity invSbox_mem_gen_0_blk_mem_gen_generic_cstr is
   port (
     douta : out STD_LOGIC_VECTOR ( 7 downto 0 );
     clka : in STD_LOGIC;
+    ena : in STD_LOGIC;
     addra : in STD_LOGIC_VECTOR ( 7 downto 0 );
     dina : in STD_LOGIC_VECTOR ( 7 downto 0 );
     wea : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of invSbox_mem_gen_0_blk_mem_gen_generic_cstr : entity is "blk_mem_gen_generic_cstr";
 end invSbox_mem_gen_0_blk_mem_gen_generic_cstr;
 
 architecture STRUCTURE of invSbox_mem_gen_0_blk_mem_gen_generic_cstr is
@@ -277,6 +275,7 @@ begin
       clka => clka,
       dina(7 downto 0) => dina(7 downto 0),
       douta(7 downto 0) => douta(7 downto 0),
+      ena => ena,
       wea(0) => wea(0)
     );
 end STRUCTURE;
@@ -288,12 +287,11 @@ entity invSbox_mem_gen_0_blk_mem_gen_top is
   port (
     douta : out STD_LOGIC_VECTOR ( 7 downto 0 );
     clka : in STD_LOGIC;
+    ena : in STD_LOGIC;
     addra : in STD_LOGIC_VECTOR ( 7 downto 0 );
     dina : in STD_LOGIC_VECTOR ( 7 downto 0 );
     wea : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of invSbox_mem_gen_0_blk_mem_gen_top : entity is "blk_mem_gen_top";
 end invSbox_mem_gen_0_blk_mem_gen_top;
 
 architecture STRUCTURE of invSbox_mem_gen_0_blk_mem_gen_top is
@@ -304,6 +302,7 @@ begin
       clka => clka,
       dina(7 downto 0) => dina(7 downto 0),
       douta(7 downto 0) => douta(7 downto 0),
+      ena => ena,
       wea(0) => wea(0)
     );
 end STRUCTURE;
@@ -315,12 +314,11 @@ entity invSbox_mem_gen_0_blk_mem_gen_v8_3_6_synth is
   port (
     douta : out STD_LOGIC_VECTOR ( 7 downto 0 );
     clka : in STD_LOGIC;
+    ena : in STD_LOGIC;
     addra : in STD_LOGIC_VECTOR ( 7 downto 0 );
     dina : in STD_LOGIC_VECTOR ( 7 downto 0 );
     wea : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of invSbox_mem_gen_0_blk_mem_gen_v8_3_6_synth : entity is "blk_mem_gen_v8_3_6_synth";
 end invSbox_mem_gen_0_blk_mem_gen_v8_3_6_synth;
 
 architecture STRUCTURE of invSbox_mem_gen_0_blk_mem_gen_v8_3_6_synth is
@@ -331,6 +329,7 @@ begin
       clka => clka,
       dina(7 downto 0) => dina(7 downto 0),
       douta(7 downto 0) => douta(7 downto 0),
+      ena => ena,
       wea(0) => wea(0)
     );
 end STRUCTURE;
@@ -457,7 +456,7 @@ entity invSbox_mem_gen_0_blk_mem_gen_v8_3_6 is
   attribute C_HAS_AXI_ID : integer;
   attribute C_HAS_AXI_ID of invSbox_mem_gen_0_blk_mem_gen_v8_3_6 : entity is 0;
   attribute C_HAS_ENA : integer;
-  attribute C_HAS_ENA of invSbox_mem_gen_0_blk_mem_gen_v8_3_6 : entity is 0;
+  attribute C_HAS_ENA of invSbox_mem_gen_0_blk_mem_gen_v8_3_6 : entity is 1;
   attribute C_HAS_ENB : integer;
   attribute C_HAS_ENB of invSbox_mem_gen_0_blk_mem_gen_v8_3_6 : entity is 0;
   attribute C_HAS_INJECTERR : integer;
@@ -550,8 +549,6 @@ entity invSbox_mem_gen_0_blk_mem_gen_v8_3_6 is
   attribute C_WRITE_WIDTH_B of invSbox_mem_gen_0_blk_mem_gen_v8_3_6 : entity is 8;
   attribute C_XDEVICEFAMILY : string;
   attribute C_XDEVICEFAMILY of invSbox_mem_gen_0_blk_mem_gen_v8_3_6 : entity is "artix7";
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of invSbox_mem_gen_0_blk_mem_gen_v8_3_6 : entity is "blk_mem_gen_v8_3_6";
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of invSbox_mem_gen_0_blk_mem_gen_v8_3_6 : entity is "yes";
 end invSbox_mem_gen_0_blk_mem_gen_v8_3_6;
@@ -625,6 +622,7 @@ inst_blk_mem_gen: entity work.invSbox_mem_gen_0_blk_mem_gen_v8_3_6_synth
       clka => clka,
       dina(7 downto 0) => dina(7 downto 0),
       douta(7 downto 0) => douta(7 downto 0),
+      ena => ena,
       wea(0) => wea(0)
     );
 end STRUCTURE;
@@ -635,6 +633,7 @@ use UNISIM.VCOMPONENTS.ALL;
 entity invSbox_mem_gen_0 is
   port (
     clka : in STD_LOGIC;
+    ena : in STD_LOGIC;
     wea : in STD_LOGIC_VECTOR ( 0 to 0 );
     addra : in STD_LOGIC_VECTOR ( 7 downto 0 );
     dina : in STD_LOGIC_VECTOR ( 7 downto 0 );
@@ -724,7 +723,7 @@ architecture STRUCTURE of invSbox_mem_gen_0 is
   attribute C_HAS_AXI_ID : integer;
   attribute C_HAS_AXI_ID of U0 : label is 0;
   attribute C_HAS_ENA : integer;
-  attribute C_HAS_ENA of U0 : label is 0;
+  attribute C_HAS_ENA of U0 : label is 1;
   attribute C_HAS_ENB : integer;
   attribute C_HAS_ENB of U0 : label is 0;
   attribute C_HAS_INJECTERR : integer;
@@ -832,7 +831,7 @@ U0: entity work.invSbox_mem_gen_0_blk_mem_gen_v8_3_6
       douta(7 downto 0) => douta(7 downto 0),
       doutb(7 downto 0) => NLW_U0_doutb_UNCONNECTED(7 downto 0),
       eccpipece => '0',
-      ena => '0',
+      ena => ena,
       enb => '0',
       injectdbiterr => '0',
       injectsbiterr => '0',

@@ -11,7 +11,7 @@ output [127:0]rndout;
 wire [127:0] sb,sr,mcl;
 
 //KeyGeneration t0(rc,keyin,keyout);
-subbytes t1(data,sb,decrypt_i);
+subbytes t1(clk,data,sb,decrypt_i);
 shiftrow t2(sb,sr,decrypt_i);
 mixcolumn t3(sr,mcl,decrypt_i);
 assign rndout= keyin^mcl;

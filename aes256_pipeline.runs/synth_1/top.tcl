@@ -36,6 +36,14 @@ read_verilog -library xil_defaultlib {
   {C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/uart_tx.v}
   {C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/top.v}
 }
+read_ip -quiet {{C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/ip/invSbox_mem_gen_0/invSbox_mem_gen_0.xci}}
+set_property used_in_implementation false [get_files -all {{c:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/ip/invSbox_mem_gen_0/invSbox_mem_gen_0_ooc.xdc}}]
+set_property is_locked true [get_files {{C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/ip/invSbox_mem_gen_0/invSbox_mem_gen_0.xci}}]
+
+read_ip -quiet {{C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/ip/sbox_mem_gen_0/sbox_mem_gen_0.xci}}
+set_property used_in_implementation false [get_files -all {{c:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/ip/sbox_mem_gen_0/sbox_mem_gen_0_ooc.xdc}}]
+set_property is_locked true [get_files {{C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/ip/sbox_mem_gen_0/sbox_mem_gen_0.xci}}]
+
 read_ip -quiet {{C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/ip/data_mem_gen_0/data_mem_gen_0.xci}}
 set_property used_in_implementation false [get_files -all {{c:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/ip/data_mem_gen_0/data_mem_gen_0_ooc.xdc}}]
 set_property is_locked true [get_files {{C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/ip/data_mem_gen_0/data_mem_gen_0.xci}}]
@@ -55,6 +63,8 @@ foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
 read_xdc {{C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/constrs_1/new/const.xdc}}
 set_property used_in_implementation false [get_files {{C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/constrs_1/new/const.xdc}}]
 
+read_xdc dont_touch.xdc
+set_property used_in_implementation false [get_files dont_touch.xdc]
 
 synth_design -top top -part xc7a100tcsg324-1
 

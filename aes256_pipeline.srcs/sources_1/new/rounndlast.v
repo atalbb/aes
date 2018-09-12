@@ -9,7 +9,7 @@ output [127:0]fout;
 wire [127:0] sb,sr,mcl;
 
 //KeyGeneration t0(rc,keylastin,keyout);
-subbytes t1(rin,sb,decrypt_i);
+subbytes t1(clk,rin,sb,decrypt_i);
 shiftrow t2(sb,sr,decrypt_i);
 assign fout= keylastin^sr;
 

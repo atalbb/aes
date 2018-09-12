@@ -2,8 +2,8 @@
 # Vivado v2017.1 (64-bit)
 # SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
 # IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
-# Start of session at: Wed Sep 12 16:45:58 2018
-# Process ID: 7972
+# Start of session at: Wed Sep 12 19:40:44 2018
+# Process ID: 4776
 # Current directory: C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1
 # Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
 # Log file: C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/top.vds
@@ -15,9 +15,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 8028 
+INFO: Helper process launched with PID 4760 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 337.164 ; gain = 83.340
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 338.672 ; gain = 84.082
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'top' [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/top.v:23]
 INFO: [Synth 8-638] synthesizing module 'keyAddrCounter' [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/keyAddrCounter.v:23]
@@ -30,11 +30,11 @@ INFO: [Synth 8-638] synthesizing module 'dataAddrCounter' [C:/College/Thesis/AES
 	Parameter NDATA bound to: 17 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'dataAddrCounter' (2#1) [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/dataAddrCounter.v:21]
 WARNING: [Synth 8-689] width (128) of port connection 'dataAddrCount' does not match port width (8) of module 'dataAddrCounter' [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/top.v:57]
-INFO: [Synth 8-638] synthesizing module 'key_mem_gen_0' [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-7972-DESKTOP-GJPCRJL/realtime/key_mem_gen_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'key_mem_gen_0' (3#1) [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-7972-DESKTOP-GJPCRJL/realtime/key_mem_gen_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'key_mem_gen_0' [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/realtime/key_mem_gen_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'key_mem_gen_0' (3#1) [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/realtime/key_mem_gen_0_stub.v:6]
 WARNING: [Synth 8-689] width (128) of port connection 'addra' does not match port width (7) of module 'key_mem_gen_0' [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/top.v:63]
-INFO: [Synth 8-638] synthesizing module 'data_mem_gen_0' [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-7972-DESKTOP-GJPCRJL/realtime/data_mem_gen_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'data_mem_gen_0' (4#1) [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-7972-DESKTOP-GJPCRJL/realtime/data_mem_gen_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'data_mem_gen_0' [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/realtime/data_mem_gen_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'data_mem_gen_0' (4#1) [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/realtime/data_mem_gen_0_stub.v:6]
 WARNING: [Synth 8-689] width (128) of port connection 'addra' does not match port width (6) of module 'data_mem_gen_0' [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/top.v:71]
 INFO: [Synth 8-638] synthesizing module 'dataBuffer' [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/dataBuffer.v:23]
 WARNING: [Synth 8-6014] Unused sequential element RAM_reg[16] was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/dataBuffer.v:39]
@@ -125,19 +125,23 @@ WARNING: [Synth 8-689] width (128) of port connection 'addr' does not match port
 INFO: [Synth 8-638] synthesizing module 'aescore' [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/aescore.v:23]
 INFO: [Synth 8-638] synthesizing module 'rounds' [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/rounds.v:3]
 INFO: [Synth 8-638] synthesizing module 'subbytes' [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/subbytes.v:3]
+INFO: [Synth 8-638] synthesizing module 'sbox_mem_gen_0' [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/realtime/sbox_mem_gen_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'sbox_mem_gen_0' (7#1) [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/realtime/sbox_mem_gen_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'invSbox_mem_gen_0' [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/realtime/invSbox_mem_gen_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'invSbox_mem_gen_0' (8#1) [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/realtime/invSbox_mem_gen_0_stub.v:6]
 INFO: [Synth 8-638] synthesizing module 'sbox' [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/sbox.v:23]
 WARNING: [Synth 8-567] referenced signal 'decrypt' should be on the sensitivity list [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/sbox.v:32]
-INFO: [Synth 8-256] done synthesizing module 'sbox' (7#1) [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/sbox.v:23]
-INFO: [Synth 8-256] done synthesizing module 'subbytes' (8#1) [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/subbytes.v:3]
+INFO: [Synth 8-256] done synthesizing module 'sbox' (9#1) [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/sbox.v:23]
+INFO: [Synth 8-256] done synthesizing module 'subbytes' (10#1) [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/subbytes.v:3]
 INFO: [Synth 8-638] synthesizing module 'shiftrow' [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/shiftrow.v:3]
-INFO: [Synth 8-256] done synthesizing module 'shiftrow' (9#1) [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/shiftrow.v:3]
+INFO: [Synth 8-256] done synthesizing module 'shiftrow' (11#1) [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/shiftrow.v:3]
 INFO: [Synth 8-638] synthesizing module 'mixcolumn' [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/mixcolumn.v:3]
-INFO: [Synth 8-256] done synthesizing module 'mixcolumn' (10#1) [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/mixcolumn.v:3]
-INFO: [Synth 8-256] done synthesizing module 'rounds' (11#1) [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/rounds.v:3]
+INFO: [Synth 8-256] done synthesizing module 'mixcolumn' (12#1) [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/mixcolumn.v:3]
+INFO: [Synth 8-256] done synthesizing module 'rounds' (13#1) [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/rounds.v:3]
 INFO: [Synth 8-638] synthesizing module 'rounndlast' [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/rounndlast.v:3]
-INFO: [Synth 8-256] done synthesizing module 'rounndlast' (12#1) [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/rounndlast.v:3]
+INFO: [Synth 8-256] done synthesizing module 'rounndlast' (14#1) [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/rounndlast.v:3]
 WARNING: [Synth 8-3848] Net done in module/entity aescore does not have driver. [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/aescore.v:30]
-INFO: [Synth 8-256] done synthesizing module 'aescore' (13#1) [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/aescore.v:23]
+INFO: [Synth 8-256] done synthesizing module 'aescore' (15#1) [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/aescore.v:23]
 INFO: [Synth 8-638] synthesizing module 'uart_tx' [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/uart_tx.v:21]
 	Parameter bit_time bound to: 868 - type: integer 
 WARNING: [Synth 8-6014] Unused sequential element ledout_reg was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/uart_tx.v:74]
@@ -145,13 +149,11 @@ WARNING: [Synth 8-5788] Register tx_buff_reg[19] in module uart_tx is has both S
 WARNING: [Synth 8-5788] Register tx_buff_reg[18] in module uart_tx is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/uart_tx.v:52]
 WARNING: [Synth 8-5788] Register tx_buff_reg[17] in module uart_tx is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/uart_tx.v:52]
 WARNING: [Synth 8-5788] Register tx_buff_reg[16] in module uart_tx is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/uart_tx.v:52]
-INFO: [Synth 8-256] done synthesizing module 'uart_tx' (14#1) [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/uart_tx.v:21]
-INFO: [Synth 8-256] done synthesizing module 'top' (15#1) [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/top.v:23]
-WARNING: [Synth 8-3331] design rounndlast has unconnected port clk
-WARNING: [Synth 8-3331] design rounds has unconnected port clk
+INFO: [Synth 8-256] done synthesizing module 'uart_tx' (16#1) [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/uart_tx.v:21]
+INFO: [Synth 8-256] done synthesizing module 'top' (17#1) [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/top.v:23]
 WARNING: [Synth 8-3331] design aescore has unconnected port done
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 454.684 ; gain = 200.859
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 455.914 ; gain = 201.324
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -161,44 +163,466 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 454.684 ; gain = 200.859
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 455.914 ; gain = 201.324
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-7972-DESKTOP-GJPCRJL/dcp5/data_mem_gen_0_in_context.xdc] for cell 'D0'
-Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-7972-DESKTOP-GJPCRJL/dcp5/data_mem_gen_0_in_context.xdc] for cell 'D0'
-Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-7972-DESKTOP-GJPCRJL/dcp7/key_mem_gen_0_in_context.xdc] for cell 'K0'
-Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-7972-DESKTOP-GJPCRJL/dcp7/key_mem_gen_0_in_context.xdc] for cell 'K0'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r1/t1/ISB0'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r1/t1/ISB0'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r1/t1/ISB1'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r1/t1/ISB1'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r1/t1/ISB2'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r1/t1/ISB2'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r1/t1/ISB3'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r1/t1/ISB3'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r1/t1/ISB4'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r1/t1/ISB4'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r2/t1/ISB0'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r2/t1/ISB0'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r2/t1/ISB1'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r2/t1/ISB1'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r2/t1/ISB2'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r2/t1/ISB2'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r2/t1/ISB3'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r2/t1/ISB3'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r2/t1/ISB4'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r2/t1/ISB4'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r3/t1/ISB0'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r3/t1/ISB0'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r3/t1/ISB1'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r3/t1/ISB1'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r3/t1/ISB2'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r3/t1/ISB2'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r3/t1/ISB3'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r3/t1/ISB3'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r3/t1/ISB4'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r3/t1/ISB4'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r4/t1/ISB0'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r4/t1/ISB0'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r4/t1/ISB1'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r4/t1/ISB1'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r4/t1/ISB2'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r4/t1/ISB2'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r4/t1/ISB3'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r4/t1/ISB3'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r4/t1/ISB4'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r4/t1/ISB4'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r5/t1/ISB0'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r5/t1/ISB0'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r5/t1/ISB1'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r5/t1/ISB1'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r5/t1/ISB2'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r5/t1/ISB2'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r5/t1/ISB3'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r5/t1/ISB3'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r5/t1/ISB4'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r5/t1/ISB4'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r6/t1/ISB0'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r6/t1/ISB0'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r6/t1/ISB1'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r6/t1/ISB1'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r6/t1/ISB2'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r6/t1/ISB2'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r6/t1/ISB3'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r6/t1/ISB3'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r6/t1/ISB4'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r6/t1/ISB4'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r7/t1/ISB0'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r7/t1/ISB0'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r7/t1/ISB1'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r7/t1/ISB1'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r7/t1/ISB2'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r7/t1/ISB2'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r7/t1/ISB3'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r7/t1/ISB3'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r7/t1/ISB4'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r7/t1/ISB4'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r8/t1/ISB0'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r8/t1/ISB0'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r8/t1/ISB1'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r8/t1/ISB1'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r8/t1/ISB2'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r8/t1/ISB2'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r8/t1/ISB3'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r8/t1/ISB3'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r8/t1/ISB4'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r8/t1/ISB4'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r9/t1/ISB0'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r9/t1/ISB0'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r9/t1/ISB1'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r9/t1/ISB1'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r9/t1/ISB2'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r9/t1/ISB2'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r9/t1/ISB3'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r9/t1/ISB3'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r9/t1/ISB4'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r9/t1/ISB4'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r10/t1/ISB0'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r10/t1/ISB0'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r10/t1/ISB1'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r10/t1/ISB1'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r10/t1/ISB2'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r10/t1/ISB2'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r10/t1/ISB3'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r10/t1/ISB3'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r10/t1/ISB4'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r10/t1/ISB4'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r11/t1/ISB0'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r11/t1/ISB0'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r11/t1/ISB1'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r11/t1/ISB1'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r11/t1/ISB2'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r11/t1/ISB2'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r11/t1/ISB3'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r11/t1/ISB3'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r11/t1/ISB4'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r11/t1/ISB4'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r12/t1/ISB0'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r12/t1/ISB0'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r12/t1/ISB1'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r12/t1/ISB1'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r12/t1/ISB2'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r12/t1/ISB2'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r12/t1/ISB3'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r12/t1/ISB3'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r12/t1/ISB4'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r12/t1/ISB4'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r13/t1/ISB0'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r13/t1/ISB0'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r13/t1/ISB1'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r13/t1/ISB1'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r13/t1/ISB2'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r13/t1/ISB2'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r13/t1/ISB3'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r13/t1/ISB3'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r13/t1/ISB4'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r13/t1/ISB4'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r14/t1/ISB0'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r14/t1/ISB0'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r14/t1/ISB1'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r14/t1/ISB1'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r14/t1/ISB2'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r14/t1/ISB2'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r14/t1/ISB3'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r14/t1/ISB3'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r14/t1/ISB4'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp9/invSbox_mem_gen_0_in_context.xdc] for cell 'AES0/r14/t1/ISB4'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r1/t1/SB0'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r1/t1/SB0'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r1/t1/SB1'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r1/t1/SB1'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r1/t1/SB2'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r1/t1/SB2'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r1/t1/SB3'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r1/t1/SB3'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r1/t1/SB4'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r1/t1/SB4'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r2/t1/SB0'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r2/t1/SB0'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r2/t1/SB1'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r2/t1/SB1'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r2/t1/SB2'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r2/t1/SB2'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r2/t1/SB3'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r2/t1/SB3'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r2/t1/SB4'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r2/t1/SB4'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r3/t1/SB0'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r3/t1/SB0'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r3/t1/SB1'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r3/t1/SB1'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r3/t1/SB2'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r3/t1/SB2'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r3/t1/SB3'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r3/t1/SB3'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r3/t1/SB4'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r3/t1/SB4'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r4/t1/SB0'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r4/t1/SB0'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r4/t1/SB1'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r4/t1/SB1'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r4/t1/SB2'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r4/t1/SB2'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r4/t1/SB3'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r4/t1/SB3'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r4/t1/SB4'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r4/t1/SB4'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r5/t1/SB0'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r5/t1/SB0'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r5/t1/SB1'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r5/t1/SB1'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r5/t1/SB2'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r5/t1/SB2'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r5/t1/SB3'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r5/t1/SB3'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r5/t1/SB4'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r5/t1/SB4'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r6/t1/SB0'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r6/t1/SB0'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r6/t1/SB1'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r6/t1/SB1'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r6/t1/SB2'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r6/t1/SB2'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r6/t1/SB3'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r6/t1/SB3'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r6/t1/SB4'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r6/t1/SB4'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r7/t1/SB0'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r7/t1/SB0'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r7/t1/SB1'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r7/t1/SB1'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r7/t1/SB2'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r7/t1/SB2'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r7/t1/SB3'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r7/t1/SB3'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r7/t1/SB4'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r7/t1/SB4'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r8/t1/SB0'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r8/t1/SB0'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r8/t1/SB1'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r8/t1/SB1'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r8/t1/SB2'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r8/t1/SB2'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r8/t1/SB3'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r8/t1/SB3'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r8/t1/SB4'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r8/t1/SB4'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r9/t1/SB0'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r9/t1/SB0'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r9/t1/SB1'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r9/t1/SB1'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r9/t1/SB2'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r9/t1/SB2'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r9/t1/SB3'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r9/t1/SB3'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r9/t1/SB4'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r9/t1/SB4'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r10/t1/SB0'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r10/t1/SB0'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r10/t1/SB1'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r10/t1/SB1'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r10/t1/SB2'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r10/t1/SB2'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r10/t1/SB3'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r10/t1/SB3'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r10/t1/SB4'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r10/t1/SB4'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r11/t1/SB0'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r11/t1/SB0'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r11/t1/SB1'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r11/t1/SB1'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r11/t1/SB2'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r11/t1/SB2'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r11/t1/SB3'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r11/t1/SB3'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r11/t1/SB4'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r11/t1/SB4'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r12/t1/SB0'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r12/t1/SB0'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r12/t1/SB1'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r12/t1/SB1'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r12/t1/SB2'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r12/t1/SB2'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r12/t1/SB3'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r12/t1/SB3'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r12/t1/SB4'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r12/t1/SB4'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r13/t1/SB0'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r13/t1/SB0'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r13/t1/SB1'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r13/t1/SB1'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r13/t1/SB2'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r13/t1/SB2'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r13/t1/SB3'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r13/t1/SB3'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r13/t1/SB4'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r13/t1/SB4'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r14/t1/SB0'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r14/t1/SB0'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r14/t1/SB1'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r14/t1/SB1'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r14/t1/SB2'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r14/t1/SB2'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r14/t1/SB3'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r14/t1/SB3'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r14/t1/SB4'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp11/sbox_mem_gen_0_in_context.xdc] for cell 'AES0/r14/t1/SB4'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp13/data_mem_gen_0_in_context.xdc] for cell 'D0'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp13/data_mem_gen_0_in_context.xdc] for cell 'D0'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp15/key_mem_gen_0_in_context.xdc] for cell 'K0'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-4776-DESKTOP-GJPCRJL/dcp15/key_mem_gen_0_in_context.xdc] for cell 'K0'
 Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/constrs_1/new/const.xdc]
 Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/constrs_1/new/const.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/constrs_1/new/const.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 803.598 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.042 . Memory (MB): peak = 806.203 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 807.309 ; gain = 553.484
+Finished Constraint Validation : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 813.402 ; gain = 558.813
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 807.309 ; gain = 553.484
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 813.402 ; gain = 558.813
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for AES0/r1/t1/ISB0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r1/t1/ISB1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r1/t1/ISB2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r1/t1/ISB3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r1/t1/ISB4. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r1/t1/SB0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r1/t1/SB1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r1/t1/SB2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r1/t1/SB3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r1/t1/SB4. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r10/t1/ISB0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r10/t1/ISB1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r10/t1/ISB2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r10/t1/ISB3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r10/t1/ISB4. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r10/t1/SB0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r10/t1/SB1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r10/t1/SB2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r10/t1/SB3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r10/t1/SB4. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r11/t1/ISB0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r11/t1/ISB1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r11/t1/ISB2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r11/t1/ISB3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r11/t1/ISB4. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r11/t1/SB0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r11/t1/SB1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r11/t1/SB2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r11/t1/SB3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r11/t1/SB4. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r12/t1/ISB0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r12/t1/ISB1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r12/t1/ISB2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r12/t1/ISB3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r12/t1/ISB4. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r12/t1/SB0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r12/t1/SB1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r12/t1/SB2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r12/t1/SB3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r12/t1/SB4. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r13/t1/ISB0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r13/t1/ISB1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r13/t1/ISB2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r13/t1/ISB3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r13/t1/ISB4. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r13/t1/SB0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r13/t1/SB1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r13/t1/SB2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r13/t1/SB3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r13/t1/SB4. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r14/t1/ISB0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r14/t1/ISB1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r14/t1/ISB2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r14/t1/ISB3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r14/t1/ISB4. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r14/t1/SB0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r14/t1/SB1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r14/t1/SB2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r14/t1/SB3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r14/t1/SB4. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r2/t1/ISB0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r2/t1/ISB1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r2/t1/ISB2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r2/t1/ISB3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r2/t1/ISB4. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r2/t1/SB0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r2/t1/SB1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r2/t1/SB2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r2/t1/SB3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r2/t1/SB4. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r3/t1/ISB0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r3/t1/ISB1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r3/t1/ISB2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r3/t1/ISB3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r3/t1/ISB4. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r3/t1/SB0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r3/t1/SB1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r3/t1/SB2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r3/t1/SB3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r3/t1/SB4. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r4/t1/ISB0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r4/t1/ISB1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r4/t1/ISB2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r4/t1/ISB3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r4/t1/ISB4. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r4/t1/SB0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r4/t1/SB1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r4/t1/SB2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r4/t1/SB3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r4/t1/SB4. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r5/t1/ISB0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r5/t1/ISB1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r5/t1/ISB2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r5/t1/ISB3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r5/t1/ISB4. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r5/t1/SB0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r5/t1/SB1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r5/t1/SB2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r5/t1/SB3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r5/t1/SB4. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r6/t1/ISB0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r6/t1/ISB1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r6/t1/ISB2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r6/t1/ISB3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r6/t1/ISB4. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r6/t1/SB0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r6/t1/SB1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r6/t1/SB2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r6/t1/SB3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r6/t1/SB4. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r7/t1/ISB0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r7/t1/ISB1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r7/t1/ISB2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r7/t1/ISB3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r7/t1/ISB4. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r7/t1/SB0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r7/t1/SB1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r7/t1/SB2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r7/t1/SB3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r7/t1/SB4. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r8/t1/ISB0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r8/t1/ISB1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r8/t1/ISB2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r8/t1/ISB3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r8/t1/ISB4. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r8/t1/SB0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r8/t1/SB1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r8/t1/SB2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r8/t1/SB3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r8/t1/SB4. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r9/t1/ISB0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r9/t1/ISB1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r9/t1/ISB2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r9/t1/ISB3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r9/t1/ISB4. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r9/t1/SB0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r9/t1/SB1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r9/t1/SB2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r9/t1/SB3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for AES0/r9/t1/SB4. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for D0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for K0. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 807.309 ; gain = 553.484
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 813.402 ; gain = 558.813
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5544] ROM "keyAddrCount" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 WARNING: [Synth 8-6014] Unused sequential element dataAddrCount_reg was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/dataAddrCounter.v:29]
@@ -350,18 +774,45 @@ INFO: [Synth 8-5546] ROM "tx_buff_reg[0]" won't be mapped to RAM because it is t
 WARNING: [Synth 8-6014] Unused sequential element bit_count_reg was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/uart_tx.v:48]
 WARNING: [Synth 8-6014] Unused sequential element byte_count_reg was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/uart_tx.v:72]
 WARNING: [Synth 8-327] inferring latch for variable 'c_reg' [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/sbox.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 's_reg' [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/subbytes.v:19]
+WARNING: [Synth 8-327] inferring latch for variable 's_reg' [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/subbytes.v:19]
+WARNING: [Synth 8-327] inferring latch for variable 's_reg' [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/subbytes.v:19]
+WARNING: [Synth 8-327] inferring latch for variable 's_reg' [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/subbytes.v:19]
+WARNING: [Synth 8-327] inferring latch for variable 's_reg' [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/subbytes.v:19]
+WARNING: [Synth 8-327] inferring latch for variable 's_reg' [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/subbytes.v:19]
+WARNING: [Synth 8-327] inferring latch for variable 's_reg' [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/subbytes.v:19]
+WARNING: [Synth 8-327] inferring latch for variable 's_reg' [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/subbytes.v:19]
+WARNING: [Synth 8-327] inferring latch for variable 's_reg' [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/subbytes.v:19]
+WARNING: [Synth 8-327] inferring latch for variable 's_reg' [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/subbytes.v:19]
+WARNING: [Synth 8-327] inferring latch for variable 's_reg' [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/subbytes.v:19]
+WARNING: [Synth 8-327] inferring latch for variable 's_reg' [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/subbytes.v:19]
+WARNING: [Synth 8-327] inferring latch for variable 's_reg' [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/subbytes.v:19]
+WARNING: [Synth 8-327] inferring latch for variable 's_reg' [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/subbytes.v:19]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 807.309 ; gain = 553.484
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 813.402 ; gain = 558.813
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
-+------+--------------+------------+----------+
-|      |RTL Partition |Replication |Instances |
-+------+--------------+------------+----------+
-|1     |rounds        |          13|      8512|
-|2     |aescore__GC0  |           1|      5958|
-|3     |top__GC0      |           1|     18339|
-+------+--------------+------------+----------+
++------+------------------------+------------+----------+
+|      |RTL Partition           |Replication |Instances |
++------+------------------------+------------+----------+
+|1     |mixcolumn               |          13|      6272|
+|2     |rounds__xdcDup__1__GC0  |           1|      1849|
+|3     |rounds__xdcDup__6__GC0  |           1|      1849|
+|4     |rounds__xdcDup__7__GC0  |           1|      1849|
+|5     |rounds__xdcDup__8__GC0  |           1|      1849|
+|6     |rounds__xdcDup__9__GC0  |           1|      1849|
+|7     |rounds__xdcDup__10__GC0 |           1|      1849|
+|8     |rounds__xdcDup__11__GC0 |           1|      1849|
+|9     |rounds__xdcDup__12__GC0 |           1|      1849|
+|10    |rounds__GC0             |           1|      1849|
+|11    |rounds__xdcDup__2__GC0  |           1|      1849|
+|12    |rounds__xdcDup__3__GC0  |           1|      1849|
+|13    |rounds__xdcDup__4__GC0  |           1|      1849|
+|14    |rounds__xdcDup__5__GC0  |           1|      1849|
+|15    |aescore__GC0            |           1|      5567|
+|16    |top__GC0                |           1|     18339|
++------+------------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -386,10 +837,10 @@ Detailed RTL Component Info :
 	                4 Bit    Registers := 1     
 	                1 Bit    Registers := 6     
 +---Muxes : 
+	   2 Input    128 Bit        Muxes := 15    
 	   4 Input    128 Bit        Muxes := 1     
-	   2 Input    128 Bit        Muxes := 1     
 	   2 Input     13 Bit        Muxes := 4     
-	   2 Input      8 Bit        Muxes := 629   
+	   2 Input      8 Bit        Muxes := 559   
 	   4 Input      8 Bit        Muxes := 19    
 	   2 Input      7 Bit        Muxes := 2     
 	   3 Input      7 Bit        Muxes := 19    
@@ -406,58 +857,12 @@ Start RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-3538] Detected potentially large (wide) register keyOut_reg [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:34]
 Hierarchical RTL Component report 
-Module sbox__1 
+Module mixcolumn 
 Detailed RTL Component Info : 
++---XORs : 
+	   4 Input      8 Bit         XORs := 32    
 +---Muxes : 
-	   2 Input      8 Bit        Muxes := 1     
-Module sbox__2 
-Detailed RTL Component Info : 
-+---Muxes : 
-	   2 Input      8 Bit        Muxes := 1     
-Module sbox__3 
-Detailed RTL Component Info : 
-+---Muxes : 
-	   2 Input      8 Bit        Muxes := 1     
-Module sbox__4 
-Detailed RTL Component Info : 
-+---Muxes : 
-	   2 Input      8 Bit        Muxes := 1     
-Module sbox__5 
-Detailed RTL Component Info : 
-+---Muxes : 
-	   2 Input      8 Bit        Muxes := 1     
-Module sbox__6 
-Detailed RTL Component Info : 
-+---Muxes : 
-	   2 Input      8 Bit        Muxes := 1     
-Module sbox__7 
-Detailed RTL Component Info : 
-+---Muxes : 
-	   2 Input      8 Bit        Muxes := 1     
-Module sbox__8 
-Detailed RTL Component Info : 
-+---Muxes : 
-	   2 Input      8 Bit        Muxes := 1     
-Module sbox__9 
-Detailed RTL Component Info : 
-+---Muxes : 
-	   2 Input      8 Bit        Muxes := 1     
-Module sbox__10 
-Detailed RTL Component Info : 
-+---Muxes : 
-	   2 Input      8 Bit        Muxes := 1     
-Module sbox__11 
-Detailed RTL Component Info : 
-+---Muxes : 
-	   2 Input      8 Bit        Muxes := 1     
-Module sbox__12 
-Detailed RTL Component Info : 
-+---Muxes : 
-	   2 Input      8 Bit        Muxes := 1     
-Module sbox__13 
-Detailed RTL Component Info : 
-+---Muxes : 
-	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 16    
 Module sbox__14 
 Detailed RTL Component Info : 
 +---Muxes : 
@@ -470,20 +875,6 @@ Module sbox__16
 Detailed RTL Component Info : 
 +---Muxes : 
 	   2 Input      8 Bit        Muxes := 1     
-Module shiftrow__1 
-Detailed RTL Component Info : 
-+---Muxes : 
-	   2 Input      8 Bit        Muxes := 8     
-Module mixcolumn 
-Detailed RTL Component Info : 
-+---XORs : 
-	   4 Input      8 Bit         XORs := 32    
-+---Muxes : 
-	   2 Input      8 Bit        Muxes := 16    
-Module rounds 
-Detailed RTL Component Info : 
-+---XORs : 
-	   2 Input    128 Bit         XORs := 1     
 Module sbox__17 
 Detailed RTL Component Info : 
 +---Muxes : 
@@ -516,6 +907,18 @@ Module sbox__24
 Detailed RTL Component Info : 
 +---Muxes : 
 	   2 Input      8 Bit        Muxes := 1     
+Module subbytes__xdcDup__1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input    128 Bit        Muxes := 1     
+Module shiftrow__13 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 8     
+Module rounds__xdcDup__1 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input    128 Bit         XORs := 1     
 Module sbox__25 
 Detailed RTL Component Info : 
 +---Muxes : 
@@ -544,10 +947,698 @@ Module sbox__31
 Detailed RTL Component Info : 
 +---Muxes : 
 	   2 Input      8 Bit        Muxes := 1     
+Module sbox__32 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__33 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__34 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__35 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module subbytes__xdcDup__7 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input    128 Bit        Muxes := 1     
+Module shiftrow__14 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 8     
+Module rounds__xdcDup__6 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input    128 Bit         XORs := 1     
+Module sbox__36 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__37 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__38 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__39 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__40 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__41 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__42 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__43 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__44 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__45 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__46 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module subbytes__xdcDup__8 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input    128 Bit        Muxes := 1     
+Module shiftrow__15 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 8     
+Module rounds__xdcDup__7 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input    128 Bit         XORs := 1     
+Module sbox__47 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__48 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__49 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__50 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__51 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__52 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__53 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__54 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__55 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__56 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__57 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module subbytes__xdcDup__9 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input    128 Bit        Muxes := 1     
+Module shiftrow__16 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 8     
+Module rounds__xdcDup__8 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input    128 Bit         XORs := 1     
+Module sbox__58 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__59 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__60 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__61 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__62 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__63 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__64 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__65 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__66 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__67 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__68 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module subbytes__xdcDup__10 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input    128 Bit        Muxes := 1     
+Module shiftrow__17 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 8     
+Module rounds__xdcDup__9 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input    128 Bit         XORs := 1     
+Module sbox__69 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__70 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__71 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__72 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__73 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__74 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__75 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__76 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__77 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__78 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__79 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module subbytes__xdcDup__11 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input    128 Bit        Muxes := 1     
+Module shiftrow__18 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 8     
+Module rounds__xdcDup__10 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input    128 Bit         XORs := 1     
+Module sbox__80 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__81 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__82 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__83 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__84 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__85 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__86 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__87 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__88 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__89 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__90 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module subbytes__xdcDup__12 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input    128 Bit        Muxes := 1     
+Module shiftrow__19 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 8     
+Module rounds__xdcDup__11 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input    128 Bit         XORs := 1     
+Module sbox__91 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__92 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__93 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__94 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__95 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__96 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__97 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__98 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__99 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__100 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__101 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module subbytes__xdcDup__13 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input    128 Bit        Muxes := 1     
+Module shiftrow__20 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 8     
+Module rounds__xdcDup__12 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input    128 Bit         XORs := 1     
+Module sbox__102 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__103 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__104 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__105 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__106 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__107 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__108 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__109 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__110 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__111 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__112 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module subbytes 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input    128 Bit        Muxes := 1     
+Module shiftrow__21 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 8     
+Module rounds 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input    128 Bit         XORs := 1     
+Module sbox__113 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__114 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__115 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__116 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__117 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__118 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__119 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__120 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__121 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__122 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__123 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module subbytes__xdcDup__2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input    128 Bit        Muxes := 1     
+Module shiftrow__22 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 8     
+Module rounds__xdcDup__2 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input    128 Bit         XORs := 1     
+Module sbox__124 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__125 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__126 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__127 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__128 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__129 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__130 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__131 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__132 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__133 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__134 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module subbytes__xdcDup__3 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input    128 Bit        Muxes := 1     
+Module shiftrow__23 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 8     
+Module rounds__xdcDup__3 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input    128 Bit         XORs := 1     
+Module sbox__135 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__136 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__137 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__138 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__139 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__140 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__141 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__142 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__143 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__144 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__145 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module subbytes__xdcDup__4 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input    128 Bit        Muxes := 1     
+Module shiftrow__24 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 8     
+Module rounds__xdcDup__4 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input    128 Bit         XORs := 1     
+Module sbox__146 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__147 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__148 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__149 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__150 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__151 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__152 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__153 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__154 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__155 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__156 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module subbytes__xdcDup__5 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input    128 Bit        Muxes := 1     
+Module shiftrow__25 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 8     
+Module rounds__xdcDup__5 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input    128 Bit         XORs := 1     
+Module sbox__157 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__158 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__159 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__160 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__161 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__162 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__163 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__164 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__165 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__166 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
 Module sbox 
 Detailed RTL Component Info : 
 +---Muxes : 
 	   2 Input      8 Bit        Muxes := 1     
+Module subbytes__xdcDup__6 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input    128 Bit        Muxes := 1     
 Module shiftrow 
 Detailed RTL Component Info : 
 +---Muxes : 
@@ -647,113 +1738,113 @@ WARNING: [Synth 8-6014] Unused sequential element DC0/dataAddrCount_reg was remo
 WARNING: [Synth 8-6014] Unused sequential element U0/byte_count_reg was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/uart_tx.v:72]
 WARNING: [Synth 8-6014] Unused sequential element U0/bit_count_reg was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/uart_tx.v:48]
 WARNING: [Synth 8-3331] design top has unconnected port finalDone
-WARNING: [Synth 8-3332] Sequential element (t1/q0/c_reg[7]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q0/c_reg[6]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q0/c_reg[5]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q0/c_reg[4]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q0/c_reg[3]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q0/c_reg[2]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q0/c_reg[1]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q0/c_reg[0]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q1/c_reg[7]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q1/c_reg[6]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q1/c_reg[5]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q1/c_reg[4]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q1/c_reg[3]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q1/c_reg[2]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q1/c_reg[1]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q1/c_reg[0]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q2/c_reg[7]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q2/c_reg[6]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q2/c_reg[5]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q2/c_reg[4]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q2/c_reg[3]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q2/c_reg[2]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q2/c_reg[1]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q2/c_reg[0]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q3/c_reg[7]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q3/c_reg[6]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q3/c_reg[5]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q3/c_reg[4]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q3/c_reg[3]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q3/c_reg[2]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q3/c_reg[1]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q3/c_reg[0]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q4/c_reg[7]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q4/c_reg[6]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q4/c_reg[5]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q4/c_reg[4]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q4/c_reg[3]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q4/c_reg[2]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q4/c_reg[1]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q4/c_reg[0]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q5/c_reg[7]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q5/c_reg[6]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q5/c_reg[5]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q5/c_reg[4]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q5/c_reg[3]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q5/c_reg[2]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q5/c_reg[1]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q5/c_reg[0]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q6/c_reg[7]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q6/c_reg[6]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q6/c_reg[5]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q6/c_reg[4]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q6/c_reg[3]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q6/c_reg[2]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q6/c_reg[1]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q6/c_reg[0]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q7/c_reg[7]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q7/c_reg[6]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q7/c_reg[5]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q7/c_reg[4]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q7/c_reg[3]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q7/c_reg[2]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q7/c_reg[1]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q7/c_reg[0]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q8/c_reg[7]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q8/c_reg[6]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q8/c_reg[5]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q8/c_reg[4]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q8/c_reg[3]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q8/c_reg[2]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q8/c_reg[1]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q8/c_reg[0]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q9/c_reg[7]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q9/c_reg[6]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q9/c_reg[5]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q9/c_reg[4]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q9/c_reg[3]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q9/c_reg[2]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q9/c_reg[1]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q9/c_reg[0]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q10/c_reg[7]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q10/c_reg[6]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q10/c_reg[5]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q10/c_reg[4]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q10/c_reg[3]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q10/c_reg[2]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q10/c_reg[1]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q10/c_reg[0]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q11/c_reg[7]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q11/c_reg[6]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q11/c_reg[5]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q11/c_reg[4]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q11/c_reg[3]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q11/c_reg[2]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q11/c_reg[1]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q11/c_reg[0]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q12/c_reg[7]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q12/c_reg[6]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q12/c_reg[5]) is unused and will be removed from module rounds.
-WARNING: [Synth 8-3332] Sequential element (t1/q12/c_reg[4]) is unused and will be removed from module rounds.
-INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\U0/tx_buff_reg[19][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\U0/tx_buff_reg[18][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\U0/tx_buff_reg[17][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\U0/tx_buff_reg[16][7] )
+INFO: [Synth 8-3886] merging instance 'r1i_0/t1/s_reg[72]' (LD) to 'r1i_0/t1/q6/c_reg[0]'
+INFO: [Synth 8-3886] merging instance 'r1i_0/t1/s_reg[73]' (LD) to 'r1i_0/t1/q6/c_reg[1]'
+INFO: [Synth 8-3886] merging instance 'r1i_0/t1/s_reg[74]' (LD) to 'r1i_0/t1/q6/c_reg[2]'
+INFO: [Synth 8-3886] merging instance 'r1i_0/t1/s_reg[75]' (LD) to 'r1i_0/t1/q6/c_reg[3]'
+INFO: [Synth 8-3886] merging instance 'r1i_0/t1/s_reg[76]' (LD) to 'r1i_0/t1/q6/c_reg[4]'
+INFO: [Synth 8-3886] merging instance 'r1i_0/t1/s_reg[77]' (LD) to 'r1i_0/t1/q6/c_reg[5]'
+INFO: [Synth 8-3886] merging instance 'r1i_0/t1/s_reg[78]' (LD) to 'r1i_0/t1/q6/c_reg[6]'
+INFO: [Synth 8-3886] merging instance 'r1i_0/t1/s_reg[79]' (LD) to 'r1i_0/t1/q6/c_reg[7]'
+INFO: [Synth 8-3886] merging instance 'r1i_0/t1/s_reg[24]' (LD) to 'r1i_0/t1/q12/c_reg[0]'
+INFO: [Synth 8-3886] merging instance 'r1i_0/t1/s_reg[25]' (LD) to 'r1i_0/t1/q12/c_reg[1]'
+INFO: [Synth 8-3886] merging instance 'r1i_0/t1/s_reg[26]' (LD) to 'r1i_0/t1/q12/c_reg[2]'
+INFO: [Synth 8-3886] merging instance 'r1i_0/t1/s_reg[27]' (LD) to 'r1i_0/t1/q12/c_reg[3]'
+INFO: [Synth 8-3886] merging instance 'r1i_0/t1/s_reg[28]' (LD) to 'r1i_0/t1/q12/c_reg[4]'
+INFO: [Synth 8-3886] merging instance 'r1i_0/t1/s_reg[29]' (LD) to 'r1i_0/t1/q12/c_reg[5]'
+INFO: [Synth 8-3886] merging instance 'r1i_0/t1/s_reg[30]' (LD) to 'r1i_0/t1/q12/c_reg[6]'
+INFO: [Synth 8-3886] merging instance 'r1i_0/t1/s_reg[31]' (LD) to 'r1i_0/t1/q12/c_reg[7]'
+INFO: [Synth 8-3886] merging instance 'r1i_0/t1/s_reg[56]' (LD) to 'r1i_0/t1/q8/c_reg[0]'
+INFO: [Synth 8-3886] merging instance 'r1i_0/t1/s_reg[57]' (LD) to 'r1i_0/t1/q8/c_reg[1]'
+INFO: [Synth 8-3886] merging instance 'r1i_0/t1/s_reg[58]' (LD) to 'r1i_0/t1/q8/c_reg[2]'
+INFO: [Synth 8-3886] merging instance 'r1i_0/t1/s_reg[59]' (LD) to 'r1i_0/t1/q8/c_reg[3]'
+INFO: [Synth 8-3886] merging instance 'r1i_0/t1/s_reg[60]' (LD) to 'r1i_0/t1/q8/c_reg[4]'
+INFO: [Synth 8-3886] merging instance 'r1i_0/t1/s_reg[61]' (LD) to 'r1i_0/t1/q8/c_reg[5]'
+INFO: [Synth 8-3886] merging instance 'r1i_0/t1/s_reg[62]' (LD) to 'r1i_0/t1/q8/c_reg[6]'
+INFO: [Synth 8-3886] merging instance 'r1i_0/t1/s_reg[63]' (LD) to 'r1i_0/t1/q8/c_reg[7]'
+INFO: [Synth 8-3886] merging instance 'r1i_0/t1/s_reg[32]' (LD) to 'r1i_0/t1/q11/c_reg[0]'
+INFO: [Synth 8-3886] merging instance 'r1i_0/t1/s_reg[33]' (LD) to 'r1i_0/t1/q11/c_reg[1]'
+INFO: [Synth 8-3886] merging instance 'r1i_0/t1/s_reg[34]' (LD) to 'r1i_0/t1/q11/c_reg[2]'
+INFO: [Synth 8-3886] merging instance 'r1i_0/t1/s_reg[35]' (LD) to 'r1i_0/t1/q11/c_reg[3]'
+INFO: [Synth 8-3886] merging instance 'r1i_0/t1/s_reg[36]' (LD) to 'r1i_0/t1/q11/c_reg[4]'
+INFO: [Synth 8-3886] merging instance 'r1i_0/t1/s_reg[37]' (LD) to 'r1i_0/t1/q11/c_reg[5]'
+INFO: [Synth 8-3886] merging instance 'r1i_0/t1/s_reg[38]' (LD) to 'r1i_0/t1/q11/c_reg[6]'
+INFO: [Synth 8-3886] merging instance 'r1i_0/t1/s_reg[39]' (LD) to 'r1i_0/t1/q11/c_reg[7]'
+INFO: [Synth 8-3886] merging instance 'r1i_0/t1/s_reg[8]' (LD) to 'r1i_0/t1/q14/c_reg[0]'
+INFO: [Synth 8-3886] merging instance 'r1i_0/t1/s_reg[9]' (LD) to 'r1i_0/t1/q14/c_reg[1]'
+INFO: [Synth 8-3886] merging instance 'r1i_0/t1/s_reg[10]' (LD) to 'r1i_0/t1/q14/c_reg[2]'
+INFO: [Synth 8-3886] merging instance 'r1i_0/t1/s_reg[11]' (LD) to 'r1i_0/t1/q14/c_reg[3]'
+INFO: [Synth 8-3886] merging instance 'r1i_0/t1/s_reg[12]' (LD) to 'r1i_0/t1/q14/c_reg[4]'
+INFO: [Synth 8-3886] merging instance 'r1i_0/t1/s_reg[13]' (LD) to 'r1i_0/t1/q14/c_reg[5]'
+INFO: [Synth 8-3886] merging instance 'r1i_0/t1/s_reg[14]' (LD) to 'r1i_0/t1/q14/c_reg[6]'
+INFO: [Synth 8-3886] merging instance 'r1i_0/t1/s_reg[15]' (LD) to 'r1i_0/t1/q14/c_reg[7]'
+INFO: [Synth 8-3886] merging instance 'r1i_0/t1/s_reg[48]' (LD) to 'r1i_0/t1/q9/c_reg[0]'
+INFO: [Synth 8-3886] merging instance 'r1i_0/t1/s_reg[49]' (LD) to 'r1i_0/t1/q9/c_reg[1]'
+INFO: [Synth 8-3886] merging instance 'r1i_0/t1/s_reg[50]' (LD) to 'r1i_0/t1/q9/c_reg[2]'
+INFO: [Synth 8-3886] merging instance 'r1i_0/t1/s_reg[51]' (LD) to 'r1i_0/t1/q9/c_reg[3]'
+INFO: [Synth 8-3886] merging instance 'r1i_0/t1/s_reg[52]' (LD) to 'r1i_0/t1/q9/c_reg[4]'
+INFO: [Synth 8-3886] merging instance 'r1i_0/t1/s_reg[53]' (LD) to 'r1i_0/t1/q9/c_reg[5]'
+INFO: [Synth 8-3886] merging instance 'r1i_0/t1/s_reg[54]' (LD) to 'r1i_0/t1/q9/c_reg[6]'
+INFO: [Synth 8-3886] merging instance 'r1i_0/t1/s_reg[55]' (LD) to 'r1i_0/t1/q9/c_reg[7]'
+INFO: [Synth 8-3886] merging instance 'r1i_0/t1/s_reg[64]' (LD) to 'r1i_0/t1/q7/c_reg[0]'
+INFO: [Synth 8-3886] merging instance 'r1i_0/t1/s_reg[0]' (LD) to 'r1i_0/t1/q15/c_reg[0]'
+INFO: [Synth 8-3886] merging instance 'r1i_0/t1/s_reg[65]' (LD) to 'r1i_0/t1/q7/c_reg[1]'
+INFO: [Synth 8-3886] merging instance 'r1i_0/t1/s_reg[1]' (LD) to 'r1i_0/t1/q15/c_reg[1]'
+INFO: [Synth 8-3886] merging instance 'r1i_0/t1/s_reg[66]' (LD) to 'r1i_0/t1/q7/c_reg[2]'
+INFO: [Synth 8-3886] merging instance 'r1i_0/t1/s_reg[2]' (LD) to 'r1i_0/t1/q15/c_reg[2]'
+INFO: [Synth 8-3886] merging instance 'r1i_0/t1/s_reg[67]' (LD) to 'r1i_0/t1/q7/c_reg[3]'
+INFO: [Synth 8-3886] merging instance 'r1i_0/t1/s_reg[3]' (LD) to 'r1i_0/t1/q15/c_reg[3]'
+INFO: [Synth 8-3886] merging instance 'r1i_0/t1/s_reg[68]' (LD) to 'r1i_0/t1/q7/c_reg[4]'
+INFO: [Synth 8-3886] merging instance 'r1i_0/t1/s_reg[4]' (LD) to 'r1i_0/t1/q15/c_reg[4]'
+INFO: [Synth 8-3886] merging instance 'r1i_0/t1/s_reg[69]' (LD) to 'r1i_0/t1/q7/c_reg[5]'
+INFO: [Synth 8-3886] merging instance 'r1i_0/t1/s_reg[5]' (LD) to 'r1i_0/t1/q15/c_reg[5]'
+INFO: [Synth 8-3886] merging instance 'r1i_0/t1/s_reg[70]' (LD) to 'r1i_0/t1/q7/c_reg[6]'
+INFO: [Synth 8-3886] merging instance 'r1i_0/t1/s_reg[6]' (LD) to 'r1i_0/t1/q15/c_reg[6]'
+INFO: [Synth 8-3886] merging instance 'r1i_0/t1/s_reg[71]' (LD) to 'r1i_0/t1/q7/c_reg[7]'
+INFO: [Synth 8-3886] merging instance 'r1i_0/t1/s_reg[7]' (LD) to 'r1i_0/t1/q15/c_reg[7]'
+INFO: [Synth 8-3886] merging instance 'r1i_0/t1/s_reg[40]' (LD) to 'r1i_0/t1/q10/c_reg[0]'
+INFO: [Synth 8-3886] merging instance 'r1i_0/t1/s_reg[41]' (LD) to 'r1i_0/t1/q10/c_reg[1]'
+INFO: [Synth 8-3886] merging instance 'r1i_0/t1/s_reg[42]' (LD) to 'r1i_0/t1/q10/c_reg[2]'
+INFO: [Synth 8-3886] merging instance 'r1i_0/t1/s_reg[43]' (LD) to 'r1i_0/t1/q10/c_reg[3]'
+INFO: [Synth 8-3886] merging instance 'r1i_0/t1/s_reg[44]' (LD) to 'r1i_0/t1/q10/c_reg[4]'
+INFO: [Synth 8-3886] merging instance 'r1i_0/t1/s_reg[45]' (LD) to 'r1i_0/t1/q10/c_reg[5]'
+INFO: [Synth 8-3886] merging instance 'r1i_0/t1/s_reg[46]' (LD) to 'r1i_0/t1/q10/c_reg[6]'
+INFO: [Synth 8-3886] merging instance 'r1i_0/t1/s_reg[47]' (LD) to 'r1i_0/t1/q10/c_reg[7]'
+INFO: [Synth 8-3886] merging instance 'r1i_0/t1/s_reg[16]' (LD) to 'r1i_0/t1/q13/c_reg[0]'
+INFO: [Synth 8-3886] merging instance 'r1i_0/t1/s_reg[80]' (LD) to 'r1i_0/t1/q5/c_reg[0]'
+INFO: [Synth 8-3886] merging instance 'r1i_0/t1/s_reg[17]' (LD) to 'r1i_0/t1/q13/c_reg[1]'
+INFO: [Synth 8-3886] merging instance 'r1i_0/t1/s_reg[81]' (LD) to 'r1i_0/t1/q5/c_reg[1]'
+INFO: [Synth 8-3886] merging instance 'r1i_0/t1/s_reg[18]' (LD) to 'r1i_0/t1/q13/c_reg[2]'
+INFO: [Synth 8-3886] merging instance 'r1i_0/t1/s_reg[82]' (LD) to 'r1i_0/t1/q5/c_reg[2]'
+INFO: [Synth 8-3886] merging instance 'r1i_0/t1/s_reg[19]' (LD) to 'r1i_0/t1/q13/c_reg[3]'
+INFO: [Synth 8-3886] merging instance 'r1i_0/t1/s_reg[83]' (LD) to 'r1i_0/t1/q5/c_reg[3]'
+INFO: [Synth 8-3886] merging instance 'r1i_0/t1/s_reg[20]' (LD) to 'r1i_0/t1/q13/c_reg[4]'
+INFO: [Synth 8-3886] merging instance 'r1i_0/t1/s_reg[84]' (LD) to 'r1i_0/t1/q5/c_reg[4]'
+INFO: [Synth 8-3886] merging instance 'r1i_0/t1/s_reg[21]' (LD) to 'r1i_0/t1/q13/c_reg[5]'
+INFO: [Synth 8-3886] merging instance 'r1i_0/t1/s_reg[85]' (LD) to 'r1i_0/t1/q5/c_reg[5]'
+INFO: [Synth 8-3886] merging instance 'r1i_0/t1/s_reg[22]' (LD) to 'r1i_0/t1/q13/c_reg[6]'
+INFO: [Synth 8-3886] merging instance 'r1i_0/t1/s_reg[86]' (LD) to 'r1i_0/t1/q5/c_reg[6]'
+INFO: [Synth 8-3886] merging instance 'r1i_0/t1/s_reg[23]' (LD) to 'r1i_0/t1/q13/c_reg[7]'
+INFO: [Synth 8-3886] merging instance 'r1i_0/t1/s_reg[87]' (LD) to 'r1i_0/t1/q5/c_reg[7]'
+INFO: [Synth 8-3886] merging instance 'r2i_1/t1/s_reg[72]' (LD) to 'r2i_1/t1/q6/c_reg[0]'
+INFO: [Synth 8-3886] merging instance 'r2i_1/t1/s_reg[73]' (LD) to 'r2i_1/t1/q6/c_reg[1]'
+INFO: [Synth 8-3886] merging instance 'r2i_1/t1/s_reg[74]' (LD) to 'r2i_1/t1/q6/c_reg[2]'
+INFO: [Synth 8-3886] merging instance 'r2i_1/t1/s_reg[75]' (LD) to 'r2i_1/t1/q6/c_reg[3]'
+INFO: [Synth 8-3886] merging instance 'r2i_1/t1/s_reg[76]' (LD) to 'r2i_1/t1/q6/c_reg[4]'
+INFO: [Synth 8-3886] merging instance 'r2i_1/t1/s_reg[77]' (LD) to 'r2i_1/t1/q6/c_reg[5]'
+INFO: [Synth 8-3886] merging instance 'r2i_1/t1/s_reg[78]' (LD) to 'r2i_1/t1/q6/c_reg[6]'
+INFO: [Synth 8-3886] merging instance 'r2i_1/t1/s_reg[79]' (LD) to 'r2i_1/t1/q6/c_reg[7]'
+INFO: [Synth 8-3886] merging instance 'r2i_1/t1/s_reg[24]' (LD) to 'r2i_1/t1/q12/c_reg[0]'
+INFO: [Synth 8-3886] merging instance 'r2i_1/t1/s_reg[25]' (LD) to 'r2i_1/t1/q12/c_reg[1]'
+INFO: [Synth 8-3886] merging instance 'r2i_1/t1/s_reg[26]' (LD) to 'r2i_1/t1/q12/c_reg[2]'
+INFO: [Synth 8-3886] merging instance 'r2i_1/t1/s_reg[27]' (LD) to 'r2i_1/t1/q12/c_reg[3]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_14/\U0/tx_buff_reg[19][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_14/\U0/tx_buff_reg[18][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_14/\U0/tx_buff_reg[17][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_14/\U0/tx_buff_reg[16][7] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:20 ; elapsed = 00:01:28 . Memory (MB): peak = 807.309 ; gain = 553.484
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:51 ; elapsed = 00:02:04 . Memory (MB): peak = 813.402 ; gain = 558.813
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -957,48 +2048,292 @@ ROM:
 |mixcolumn   | mul14      | 256x8         | LUT            | 
 |mixcolumn   | mul3       | 256x8         | LUT            | 
 |mixcolumn   | mul2       | 256x8         | LUT            | 
-|rounds      | t1/q0/c    | 256x8         | LUT            | 
-|rounds      | t1/q0/c    | 256x8         | LUT            | 
-|rounds      | t1/q1/c    | 256x8         | LUT            | 
-|rounds      | t1/q1/c    | 256x8         | LUT            | 
-|rounds      | t1/q2/c    | 256x8         | LUT            | 
-|rounds      | t1/q2/c    | 256x8         | LUT            | 
-|rounds      | t1/q3/c    | 256x8         | LUT            | 
-|rounds      | t1/q3/c    | 256x8         | LUT            | 
-|rounds      | t1/q4/c    | 256x8         | LUT            | 
-|rounds      | t1/q4/c    | 256x8         | LUT            | 
-|rounds      | t1/q5/c    | 256x8         | LUT            | 
-|rounds      | t1/q5/c    | 256x8         | LUT            | 
-|rounds      | t1/q6/c    | 256x8         | LUT            | 
-|rounds      | t1/q6/c    | 256x8         | LUT            | 
-|rounds      | t1/q7/c    | 256x8         | LUT            | 
-|rounds      | t1/q7/c    | 256x8         | LUT            | 
-|rounds      | t1/q8/c    | 256x8         | LUT            | 
-|rounds      | t1/q8/c    | 256x8         | LUT            | 
-|rounds      | t1/q9/c    | 256x8         | LUT            | 
-|rounds      | t1/q9/c    | 256x8         | LUT            | 
-|rounds      | t1/q10/c   | 256x8         | LUT            | 
-|rounds      | t1/q10/c   | 256x8         | LUT            | 
-|rounds      | t1/q11/c   | 256x8         | LUT            | 
-|rounds      | t1/q11/c   | 256x8         | LUT            | 
-|rounds      | t1/q12/c   | 256x8         | LUT            | 
-|rounds      | t1/q12/c   | 256x8         | LUT            | 
-|rounds      | t1/q13/c   | 256x8         | LUT            | 
-|rounds      | t1/q13/c   | 256x8         | LUT            | 
-|rounds      | t1/q14/c   | 256x8         | LUT            | 
-|rounds      | t1/q14/c   | 256x8         | LUT            | 
-|rounds      | t1/q15/c   | 256x8         | LUT            | 
-|rounds      | t1/q15/c   | 256x8         | LUT            | 
-|rounndlast  | t1/q0/c    | 256x8         | LUT            | 
-|rounndlast  | t1/q0/c    | 256x8         | LUT            | 
-|rounndlast  | t1/q1/c    | 256x8         | LUT            | 
-|rounndlast  | t1/q1/c    | 256x8         | LUT            | 
-|rounndlast  | t1/q2/c    | 256x8         | LUT            | 
-|rounndlast  | t1/q2/c    | 256x8         | LUT            | 
-|rounndlast  | t1/q3/c    | 256x8         | LUT            | 
-|rounndlast  | t1/q3/c    | 256x8         | LUT            | 
-|rounndlast  | t1/q4/c    | 256x8         | LUT            | 
-|rounndlast  | t1/q4/c    | 256x8         | LUT            | 
+|top         | t1/q5/c    | 256x8         | LUT            | 
+|top         | t1/q5/c    | 256x8         | LUT            | 
+|top         | t1/q6/c    | 256x8         | LUT            | 
+|top         | t1/q6/c    | 256x8         | LUT            | 
+|top         | t1/q7/c    | 256x8         | LUT            | 
+|top         | t1/q7/c    | 256x8         | LUT            | 
+|top         | t1/q8/c    | 256x8         | LUT            | 
+|top         | t1/q8/c    | 256x8         | LUT            | 
+|top         | t1/q9/c    | 256x8         | LUT            | 
+|top         | t1/q9/c    | 256x8         | LUT            | 
+|top         | t1/q10/c   | 256x8         | LUT            | 
+|top         | t1/q10/c   | 256x8         | LUT            | 
+|top         | t1/q11/c   | 256x8         | LUT            | 
+|top         | t1/q11/c   | 256x8         | LUT            | 
+|top         | t1/q12/c   | 256x8         | LUT            | 
+|top         | t1/q12/c   | 256x8         | LUT            | 
+|top         | t1/q13/c   | 256x8         | LUT            | 
+|top         | t1/q13/c   | 256x8         | LUT            | 
+|top         | t1/q14/c   | 256x8         | LUT            | 
+|top         | t1/q14/c   | 256x8         | LUT            | 
+|top         | t1/q15/c   | 256x8         | LUT            | 
+|top         | t1/q15/c   | 256x8         | LUT            | 
+|top         | t1/q5/c    | 256x8         | LUT            | 
+|top         | t1/q5/c    | 256x8         | LUT            | 
+|top         | t1/q6/c    | 256x8         | LUT            | 
+|top         | t1/q6/c    | 256x8         | LUT            | 
+|top         | t1/q7/c    | 256x8         | LUT            | 
+|top         | t1/q7/c    | 256x8         | LUT            | 
+|top         | t1/q8/c    | 256x8         | LUT            | 
+|top         | t1/q8/c    | 256x8         | LUT            | 
+|top         | t1/q9/c    | 256x8         | LUT            | 
+|top         | t1/q9/c    | 256x8         | LUT            | 
+|top         | t1/q10/c   | 256x8         | LUT            | 
+|top         | t1/q10/c   | 256x8         | LUT            | 
+|top         | t1/q11/c   | 256x8         | LUT            | 
+|top         | t1/q11/c   | 256x8         | LUT            | 
+|top         | t1/q12/c   | 256x8         | LUT            | 
+|top         | t1/q12/c   | 256x8         | LUT            | 
+|top         | t1/q13/c   | 256x8         | LUT            | 
+|top         | t1/q13/c   | 256x8         | LUT            | 
+|top         | t1/q14/c   | 256x8         | LUT            | 
+|top         | t1/q14/c   | 256x8         | LUT            | 
+|top         | t1/q15/c   | 256x8         | LUT            | 
+|top         | t1/q15/c   | 256x8         | LUT            | 
+|top         | t1/q5/c    | 256x8         | LUT            | 
+|top         | t1/q5/c    | 256x8         | LUT            | 
+|top         | t1/q6/c    | 256x8         | LUT            | 
+|top         | t1/q6/c    | 256x8         | LUT            | 
+|top         | t1/q7/c    | 256x8         | LUT            | 
+|top         | t1/q7/c    | 256x8         | LUT            | 
+|top         | t1/q8/c    | 256x8         | LUT            | 
+|top         | t1/q8/c    | 256x8         | LUT            | 
+|top         | t1/q9/c    | 256x8         | LUT            | 
+|top         | t1/q9/c    | 256x8         | LUT            | 
+|top         | t1/q10/c   | 256x8         | LUT            | 
+|top         | t1/q10/c   | 256x8         | LUT            | 
+|top         | t1/q11/c   | 256x8         | LUT            | 
+|top         | t1/q11/c   | 256x8         | LUT            | 
+|top         | t1/q12/c   | 256x8         | LUT            | 
+|top         | t1/q12/c   | 256x8         | LUT            | 
+|top         | t1/q13/c   | 256x8         | LUT            | 
+|top         | t1/q13/c   | 256x8         | LUT            | 
+|top         | t1/q14/c   | 256x8         | LUT            | 
+|top         | t1/q14/c   | 256x8         | LUT            | 
+|top         | t1/q15/c   | 256x8         | LUT            | 
+|top         | t1/q15/c   | 256x8         | LUT            | 
+|top         | t1/q5/c    | 256x8         | LUT            | 
+|top         | t1/q5/c    | 256x8         | LUT            | 
+|top         | t1/q6/c    | 256x8         | LUT            | 
+|top         | t1/q6/c    | 256x8         | LUT            | 
+|top         | t1/q7/c    | 256x8         | LUT            | 
+|top         | t1/q7/c    | 256x8         | LUT            | 
+|top         | t1/q8/c    | 256x8         | LUT            | 
+|top         | t1/q8/c    | 256x8         | LUT            | 
+|top         | t1/q9/c    | 256x8         | LUT            | 
+|top         | t1/q9/c    | 256x8         | LUT            | 
+|top         | t1/q10/c   | 256x8         | LUT            | 
+|top         | t1/q10/c   | 256x8         | LUT            | 
+|top         | t1/q11/c   | 256x8         | LUT            | 
+|top         | t1/q11/c   | 256x8         | LUT            | 
+|top         | t1/q12/c   | 256x8         | LUT            | 
+|top         | t1/q12/c   | 256x8         | LUT            | 
+|top         | t1/q13/c   | 256x8         | LUT            | 
+|top         | t1/q13/c   | 256x8         | LUT            | 
+|top         | t1/q14/c   | 256x8         | LUT            | 
+|top         | t1/q14/c   | 256x8         | LUT            | 
+|top         | t1/q15/c   | 256x8         | LUT            | 
+|top         | t1/q15/c   | 256x8         | LUT            | 
+|top         | t1/q5/c    | 256x8         | LUT            | 
+|top         | t1/q5/c    | 256x8         | LUT            | 
+|top         | t1/q6/c    | 256x8         | LUT            | 
+|top         | t1/q6/c    | 256x8         | LUT            | 
+|top         | t1/q7/c    | 256x8         | LUT            | 
+|top         | t1/q7/c    | 256x8         | LUT            | 
+|top         | t1/q8/c    | 256x8         | LUT            | 
+|top         | t1/q8/c    | 256x8         | LUT            | 
+|top         | t1/q9/c    | 256x8         | LUT            | 
+|top         | t1/q9/c    | 256x8         | LUT            | 
+|top         | t1/q10/c   | 256x8         | LUT            | 
+|top         | t1/q10/c   | 256x8         | LUT            | 
+|top         | t1/q11/c   | 256x8         | LUT            | 
+|top         | t1/q11/c   | 256x8         | LUT            | 
+|top         | t1/q12/c   | 256x8         | LUT            | 
+|top         | t1/q12/c   | 256x8         | LUT            | 
+|top         | t1/q13/c   | 256x8         | LUT            | 
+|top         | t1/q13/c   | 256x8         | LUT            | 
+|top         | t1/q14/c   | 256x8         | LUT            | 
+|top         | t1/q14/c   | 256x8         | LUT            | 
+|top         | t1/q15/c   | 256x8         | LUT            | 
+|top         | t1/q15/c   | 256x8         | LUT            | 
+|top         | t1/q5/c    | 256x8         | LUT            | 
+|top         | t1/q5/c    | 256x8         | LUT            | 
+|top         | t1/q6/c    | 256x8         | LUT            | 
+|top         | t1/q6/c    | 256x8         | LUT            | 
+|top         | t1/q7/c    | 256x8         | LUT            | 
+|top         | t1/q7/c    | 256x8         | LUT            | 
+|top         | t1/q8/c    | 256x8         | LUT            | 
+|top         | t1/q8/c    | 256x8         | LUT            | 
+|top         | t1/q9/c    | 256x8         | LUT            | 
+|top         | t1/q9/c    | 256x8         | LUT            | 
+|top         | t1/q10/c   | 256x8         | LUT            | 
+|top         | t1/q10/c   | 256x8         | LUT            | 
+|top         | t1/q11/c   | 256x8         | LUT            | 
+|top         | t1/q11/c   | 256x8         | LUT            | 
+|top         | t1/q12/c   | 256x8         | LUT            | 
+|top         | t1/q12/c   | 256x8         | LUT            | 
+|top         | t1/q13/c   | 256x8         | LUT            | 
+|top         | t1/q13/c   | 256x8         | LUT            | 
+|top         | t1/q14/c   | 256x8         | LUT            | 
+|top         | t1/q14/c   | 256x8         | LUT            | 
+|top         | t1/q15/c   | 256x8         | LUT            | 
+|top         | t1/q15/c   | 256x8         | LUT            | 
+|top         | t1/q5/c    | 256x8         | LUT            | 
+|top         | t1/q5/c    | 256x8         | LUT            | 
+|top         | t1/q6/c    | 256x8         | LUT            | 
+|top         | t1/q6/c    | 256x8         | LUT            | 
+|top         | t1/q7/c    | 256x8         | LUT            | 
+|top         | t1/q7/c    | 256x8         | LUT            | 
+|top         | t1/q8/c    | 256x8         | LUT            | 
+|top         | t1/q8/c    | 256x8         | LUT            | 
+|top         | t1/q9/c    | 256x8         | LUT            | 
+|top         | t1/q9/c    | 256x8         | LUT            | 
+|top         | t1/q10/c   | 256x8         | LUT            | 
+|top         | t1/q10/c   | 256x8         | LUT            | 
+|top         | t1/q11/c   | 256x8         | LUT            | 
+|top         | t1/q11/c   | 256x8         | LUT            | 
+|top         | t1/q12/c   | 256x8         | LUT            | 
+|top         | t1/q12/c   | 256x8         | LUT            | 
+|top         | t1/q13/c   | 256x8         | LUT            | 
+|top         | t1/q13/c   | 256x8         | LUT            | 
+|top         | t1/q14/c   | 256x8         | LUT            | 
+|top         | t1/q14/c   | 256x8         | LUT            | 
+|top         | t1/q15/c   | 256x8         | LUT            | 
+|top         | t1/q15/c   | 256x8         | LUT            | 
+|top         | t1/q5/c    | 256x8         | LUT            | 
+|top         | t1/q5/c    | 256x8         | LUT            | 
+|top         | t1/q6/c    | 256x8         | LUT            | 
+|top         | t1/q6/c    | 256x8         | LUT            | 
+|top         | t1/q7/c    | 256x8         | LUT            | 
+|top         | t1/q7/c    | 256x8         | LUT            | 
+|top         | t1/q8/c    | 256x8         | LUT            | 
+|top         | t1/q8/c    | 256x8         | LUT            | 
+|top         | t1/q9/c    | 256x8         | LUT            | 
+|top         | t1/q9/c    | 256x8         | LUT            | 
+|top         | t1/q10/c   | 256x8         | LUT            | 
+|top         | t1/q10/c   | 256x8         | LUT            | 
+|top         | t1/q11/c   | 256x8         | LUT            | 
+|top         | t1/q11/c   | 256x8         | LUT            | 
+|top         | t1/q12/c   | 256x8         | LUT            | 
+|top         | t1/q12/c   | 256x8         | LUT            | 
+|top         | t1/q13/c   | 256x8         | LUT            | 
+|top         | t1/q13/c   | 256x8         | LUT            | 
+|top         | t1/q14/c   | 256x8         | LUT            | 
+|top         | t1/q14/c   | 256x8         | LUT            | 
+|top         | t1/q15/c   | 256x8         | LUT            | 
+|top         | t1/q15/c   | 256x8         | LUT            | 
+|top         | t1/q5/c    | 256x8         | LUT            | 
+|top         | t1/q5/c    | 256x8         | LUT            | 
+|top         | t1/q6/c    | 256x8         | LUT            | 
+|top         | t1/q6/c    | 256x8         | LUT            | 
+|top         | t1/q7/c    | 256x8         | LUT            | 
+|top         | t1/q7/c    | 256x8         | LUT            | 
+|top         | t1/q8/c    | 256x8         | LUT            | 
+|top         | t1/q8/c    | 256x8         | LUT            | 
+|top         | t1/q9/c    | 256x8         | LUT            | 
+|top         | t1/q9/c    | 256x8         | LUT            | 
+|top         | t1/q10/c   | 256x8         | LUT            | 
+|top         | t1/q10/c   | 256x8         | LUT            | 
+|top         | t1/q11/c   | 256x8         | LUT            | 
+|top         | t1/q11/c   | 256x8         | LUT            | 
+|top         | t1/q12/c   | 256x8         | LUT            | 
+|top         | t1/q12/c   | 256x8         | LUT            | 
+|top         | t1/q13/c   | 256x8         | LUT            | 
+|top         | t1/q13/c   | 256x8         | LUT            | 
+|top         | t1/q14/c   | 256x8         | LUT            | 
+|top         | t1/q14/c   | 256x8         | LUT            | 
+|top         | t1/q15/c   | 256x8         | LUT            | 
+|top         | t1/q15/c   | 256x8         | LUT            | 
+|top         | t1/q5/c    | 256x8         | LUT            | 
+|top         | t1/q5/c    | 256x8         | LUT            | 
+|top         | t1/q6/c    | 256x8         | LUT            | 
+|top         | t1/q6/c    | 256x8         | LUT            | 
+|top         | t1/q7/c    | 256x8         | LUT            | 
+|top         | t1/q7/c    | 256x8         | LUT            | 
+|top         | t1/q8/c    | 256x8         | LUT            | 
+|top         | t1/q8/c    | 256x8         | LUT            | 
+|top         | t1/q9/c    | 256x8         | LUT            | 
+|top         | t1/q9/c    | 256x8         | LUT            | 
+|top         | t1/q10/c   | 256x8         | LUT            | 
+|top         | t1/q10/c   | 256x8         | LUT            | 
+|top         | t1/q11/c   | 256x8         | LUT            | 
+|top         | t1/q11/c   | 256x8         | LUT            | 
+|top         | t1/q12/c   | 256x8         | LUT            | 
+|top         | t1/q12/c   | 256x8         | LUT            | 
+|top         | t1/q13/c   | 256x8         | LUT            | 
+|top         | t1/q13/c   | 256x8         | LUT            | 
+|top         | t1/q14/c   | 256x8         | LUT            | 
+|top         | t1/q14/c   | 256x8         | LUT            | 
+|top         | t1/q15/c   | 256x8         | LUT            | 
+|top         | t1/q15/c   | 256x8         | LUT            | 
+|top         | t1/q5/c    | 256x8         | LUT            | 
+|top         | t1/q5/c    | 256x8         | LUT            | 
+|top         | t1/q6/c    | 256x8         | LUT            | 
+|top         | t1/q6/c    | 256x8         | LUT            | 
+|top         | t1/q7/c    | 256x8         | LUT            | 
+|top         | t1/q7/c    | 256x8         | LUT            | 
+|top         | t1/q8/c    | 256x8         | LUT            | 
+|top         | t1/q8/c    | 256x8         | LUT            | 
+|top         | t1/q9/c    | 256x8         | LUT            | 
+|top         | t1/q9/c    | 256x8         | LUT            | 
+|top         | t1/q10/c   | 256x8         | LUT            | 
+|top         | t1/q10/c   | 256x8         | LUT            | 
+|top         | t1/q11/c   | 256x8         | LUT            | 
+|top         | t1/q11/c   | 256x8         | LUT            | 
+|top         | t1/q12/c   | 256x8         | LUT            | 
+|top         | t1/q12/c   | 256x8         | LUT            | 
+|top         | t1/q13/c   | 256x8         | LUT            | 
+|top         | t1/q13/c   | 256x8         | LUT            | 
+|top         | t1/q14/c   | 256x8         | LUT            | 
+|top         | t1/q14/c   | 256x8         | LUT            | 
+|top         | t1/q15/c   | 256x8         | LUT            | 
+|top         | t1/q15/c   | 256x8         | LUT            | 
+|top         | t1/q5/c    | 256x8         | LUT            | 
+|top         | t1/q5/c    | 256x8         | LUT            | 
+|top         | t1/q6/c    | 256x8         | LUT            | 
+|top         | t1/q6/c    | 256x8         | LUT            | 
+|top         | t1/q7/c    | 256x8         | LUT            | 
+|top         | t1/q7/c    | 256x8         | LUT            | 
+|top         | t1/q8/c    | 256x8         | LUT            | 
+|top         | t1/q8/c    | 256x8         | LUT            | 
+|top         | t1/q9/c    | 256x8         | LUT            | 
+|top         | t1/q9/c    | 256x8         | LUT            | 
+|top         | t1/q10/c   | 256x8         | LUT            | 
+|top         | t1/q10/c   | 256x8         | LUT            | 
+|top         | t1/q11/c   | 256x8         | LUT            | 
+|top         | t1/q11/c   | 256x8         | LUT            | 
+|top         | t1/q12/c   | 256x8         | LUT            | 
+|top         | t1/q12/c   | 256x8         | LUT            | 
+|top         | t1/q13/c   | 256x8         | LUT            | 
+|top         | t1/q13/c   | 256x8         | LUT            | 
+|top         | t1/q14/c   | 256x8         | LUT            | 
+|top         | t1/q14/c   | 256x8         | LUT            | 
+|top         | t1/q15/c   | 256x8         | LUT            | 
+|top         | t1/q15/c   | 256x8         | LUT            | 
+|top         | t1/q5/c    | 256x8         | LUT            | 
+|top         | t1/q5/c    | 256x8         | LUT            | 
+|top         | t1/q6/c    | 256x8         | LUT            | 
+|top         | t1/q6/c    | 256x8         | LUT            | 
+|top         | t1/q7/c    | 256x8         | LUT            | 
+|top         | t1/q7/c    | 256x8         | LUT            | 
+|top         | t1/q8/c    | 256x8         | LUT            | 
+|top         | t1/q8/c    | 256x8         | LUT            | 
+|top         | t1/q9/c    | 256x8         | LUT            | 
+|top         | t1/q9/c    | 256x8         | LUT            | 
+|top         | t1/q10/c   | 256x8         | LUT            | 
+|top         | t1/q10/c   | 256x8         | LUT            | 
+|top         | t1/q11/c   | 256x8         | LUT            | 
+|top         | t1/q11/c   | 256x8         | LUT            | 
+|top         | t1/q12/c   | 256x8         | LUT            | 
+|top         | t1/q12/c   | 256x8         | LUT            | 
+|top         | t1/q13/c   | 256x8         | LUT            | 
+|top         | t1/q13/c   | 256x8         | LUT            | 
+|top         | t1/q14/c   | 256x8         | LUT            | 
+|top         | t1/q14/c   | 256x8         | LUT            | 
+|top         | t1/q15/c   | 256x8         | LUT            | 
+|top         | t1/q15/c   | 256x8         | LUT            | 
 |rounndlast  | t1/q5/c    | 256x8         | LUT            | 
 |rounndlast  | t1/q5/c    | 256x8         | LUT            | 
 |rounndlast  | t1/q6/c    | 256x8         | LUT            | 
@@ -1028,39 +2363,65 @@ Finished ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
-+------+--------------+------------+----------+
-|      |RTL Partition |Replication |Instances |
-+------+--------------+------------+----------+
-|1     |rounds        |          13|      5856|
-|2     |aescore__GC0  |           1|      4295|
-|3     |top__GC0      |           1|      7296|
-+------+--------------+------------+----------+
++------+------------------------+------------+----------+
+|      |RTL Partition           |Replication |Instances |
++------+------------------------+------------+----------+
+|1     |mixcolumn               |          13|      3488|
+|2     |rounds__xdcDup__1__GC0  |           1|      1809|
+|3     |rounds__xdcDup__6__GC0  |           1|      1809|
+|4     |rounds__xdcDup__7__GC0  |           1|      1809|
+|5     |rounds__xdcDup__8__GC0  |           1|      1809|
+|6     |rounds__xdcDup__9__GC0  |           1|      1809|
+|7     |rounds__xdcDup__10__GC0 |           1|      1809|
+|8     |rounds__xdcDup__11__GC0 |           1|      1809|
+|9     |rounds__xdcDup__12__GC0 |           1|      1809|
+|10    |rounds__GC0             |           1|      1809|
+|11    |rounds__xdcDup__2__GC0  |           1|      1809|
+|12    |rounds__xdcDup__3__GC0  |           1|      1809|
+|13    |rounds__xdcDup__4__GC0  |           1|      1809|
+|14    |rounds__xdcDup__5__GC0  |           1|      1809|
+|15    |aescore__GC0            |           1|      3736|
+|16    |top__GC0                |           1|      7296|
++------+------------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:35 ; elapsed = 00:01:43 . Memory (MB): peak = 818.859 ; gain = 565.035
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:03 ; elapsed = 00:02:17 . Memory (MB): peak = 925.777 ; gain = 671.188
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:35 ; elapsed = 00:01:43 . Memory (MB): peak = 819.480 ; gain = 565.656
+Finished Timing Optimization : Time (s): cpu = 00:02:03 ; elapsed = 00:02:17 . Memory (MB): peak = 926.660 ; gain = 672.070
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
-+------+--------------+------------+----------+
-|      |RTL Partition |Replication |Instances |
-+------+--------------+------------+----------+
-|1     |rounds        |          13|      5856|
-|2     |aescore__GC0  |           1|      4295|
-|3     |top__GC0      |           1|      7296|
-+------+--------------+------------+----------+
++------+------------------------+------------+----------+
+|      |RTL Partition           |Replication |Instances |
++------+------------------------+------------+----------+
+|1     |mixcolumn               |          13|      3488|
+|2     |rounds__xdcDup__1__GC0  |           1|      1809|
+|3     |rounds__xdcDup__6__GC0  |           1|      1809|
+|4     |rounds__xdcDup__7__GC0  |           1|      1809|
+|5     |rounds__xdcDup__8__GC0  |           1|      1809|
+|6     |rounds__xdcDup__9__GC0  |           1|      1809|
+|7     |rounds__xdcDup__10__GC0 |           1|      1809|
+|8     |rounds__xdcDup__11__GC0 |           1|      1809|
+|9     |rounds__xdcDup__12__GC0 |           1|      1809|
+|10    |rounds__GC0             |           1|      1809|
+|11    |rounds__xdcDup__2__GC0  |           1|      1809|
+|12    |rounds__xdcDup__3__GC0  |           1|      1809|
+|13    |rounds__xdcDup__4__GC0  |           1|      1809|
+|14    |rounds__xdcDup__5__GC0  |           1|      1809|
+|15    |aescore__GC0            |           1|      3736|
+|16    |top__GC0                |           1|      7296|
++------+------------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:46 ; elapsed = 00:01:55 . Memory (MB): peak = 916.637 ; gain = 662.813
+Finished Technology Mapping : Time (s): cpu = 00:02:11 ; elapsed = 00:02:25 . Memory (MB): peak = 958.555 ; gain = 703.965
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1084,7 +2445,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:53 ; elapsed = 00:02:02 . Memory (MB): peak = 916.637 ; gain = 662.813
+Finished IO Insertion : Time (s): cpu = 00:02:15 ; elapsed = 00:02:29 . Memory (MB): peak = 958.555 ; gain = 703.965
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1097,7 +2458,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:54 ; elapsed = 00:02:02 . Memory (MB): peak = 916.637 ; gain = 662.813
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:15 ; elapsed = 00:02:29 . Memory (MB): peak = 958.555 ; gain = 703.965
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1109,112 +2470,274 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:56 ; elapsed = 00:02:05 . Memory (MB): peak = 916.637 ; gain = 662.813
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:17 ; elapsed = 00:02:31 . Memory (MB): peak = 958.555 ; gain = 703.965
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:58 ; elapsed = 00:02:06 . Memory (MB): peak = 916.637 ; gain = 662.813
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:17 ; elapsed = 00:02:31 . Memory (MB): peak = 958.555 ; gain = 703.965
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:59 ; elapsed = 00:02:07 . Memory (MB): peak = 916.637 ; gain = 662.813
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:18 ; elapsed = 00:02:32 . Memory (MB): peak = 958.555 ; gain = 703.965
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:59 ; elapsed = 00:02:07 . Memory (MB): peak = 916.637 ; gain = 662.813
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:18 ; elapsed = 00:02:32 . Memory (MB): peak = 958.555 ; gain = 703.965
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
 ---------------------------------------------------------------------------------
 
 Report BlackBoxes: 
-+------+---------------+----------+
-|      |BlackBox name  |Instances |
-+------+---------------+----------+
-|1     |key_mem_gen_0  |         1|
-|2     |data_mem_gen_0 |         1|
-+------+---------------+----------+
++------+------------------+----------+
+|      |BlackBox name     |Instances |
++------+------------------+----------+
+|1     |key_mem_gen_0     |         1|
+|2     |data_mem_gen_0    |         1|
+|3     |sbox_mem_gen_0    |        70|
+|4     |invSbox_mem_gen_0 |        70|
++------+------------------+----------+
 
 Report Cell Usage: 
-+------+---------------+------+
-|      |Cell           |Count |
-+------+---------------+------+
-|1     |data_mem_gen_0 |     1|
-|2     |key_mem_gen_0  |     1|
-|3     |BUFG           |     1|
-|4     |CARRY4         |     3|
-|5     |LUT1           |    49|
-|6     |LUT2           |   476|
-|7     |LUT3           |  1838|
-|8     |LUT4           |  1644|
-|9     |LUT5           |  4627|
-|10    |LUT6           | 18246|
-|11    |MUXF7          |  6790|
-|12    |MUXF8          |  1664|
-|13    |FDCE           |  4037|
-|14    |FDPE           |     7|
-|15    |FDRE           |  2460|
-|16    |LDC            |     1|
-|17    |IBUF           |     5|
-|18    |OBUF           |     1|
-|19    |OBUFT          |     1|
-+------+---------------+------+
++------+----------------------+------+
+|      |Cell                  |Count |
++------+----------------------+------+
+|1     |data_mem_gen_0        |     1|
+|2     |invSbox_mem_gen_0     |     1|
+|3     |invSbox_mem_gen_0__14 |     1|
+|4     |invSbox_mem_gen_0__15 |     1|
+|5     |invSbox_mem_gen_0__16 |     1|
+|6     |invSbox_mem_gen_0__17 |     1|
+|7     |invSbox_mem_gen_0__18 |     1|
+|8     |invSbox_mem_gen_0__19 |     1|
+|9     |invSbox_mem_gen_0__20 |     1|
+|10    |invSbox_mem_gen_0__21 |     1|
+|11    |invSbox_mem_gen_0__22 |     1|
+|12    |invSbox_mem_gen_0__23 |     1|
+|13    |invSbox_mem_gen_0__24 |     1|
+|14    |invSbox_mem_gen_0__25 |     1|
+|15    |invSbox_mem_gen_0__26 |     1|
+|16    |invSbox_mem_gen_0__27 |     1|
+|17    |invSbox_mem_gen_0__28 |     1|
+|18    |invSbox_mem_gen_0__29 |     1|
+|19    |invSbox_mem_gen_0__30 |     1|
+|20    |invSbox_mem_gen_0__31 |     1|
+|21    |invSbox_mem_gen_0__32 |     1|
+|22    |invSbox_mem_gen_0__33 |     1|
+|23    |invSbox_mem_gen_0__34 |     1|
+|24    |invSbox_mem_gen_0__35 |     1|
+|25    |invSbox_mem_gen_0__36 |     1|
+|26    |invSbox_mem_gen_0__37 |     1|
+|27    |invSbox_mem_gen_0__38 |     1|
+|28    |invSbox_mem_gen_0__39 |     1|
+|29    |invSbox_mem_gen_0__40 |     1|
+|30    |invSbox_mem_gen_0__41 |     1|
+|31    |invSbox_mem_gen_0__42 |     1|
+|32    |invSbox_mem_gen_0__43 |     1|
+|33    |invSbox_mem_gen_0__44 |     1|
+|34    |invSbox_mem_gen_0__45 |     1|
+|35    |invSbox_mem_gen_0__46 |     1|
+|36    |invSbox_mem_gen_0__47 |     1|
+|37    |invSbox_mem_gen_0__48 |     1|
+|38    |invSbox_mem_gen_0__49 |     1|
+|39    |invSbox_mem_gen_0__50 |     1|
+|40    |invSbox_mem_gen_0__51 |     1|
+|41    |invSbox_mem_gen_0__52 |     1|
+|42    |invSbox_mem_gen_0__53 |     1|
+|43    |invSbox_mem_gen_0__54 |     1|
+|44    |invSbox_mem_gen_0__55 |     1|
+|45    |invSbox_mem_gen_0__56 |     1|
+|46    |invSbox_mem_gen_0__57 |     1|
+|47    |invSbox_mem_gen_0__58 |     1|
+|48    |invSbox_mem_gen_0__59 |     1|
+|49    |invSbox_mem_gen_0__60 |     1|
+|50    |invSbox_mem_gen_0__61 |     1|
+|51    |invSbox_mem_gen_0__62 |     1|
+|52    |invSbox_mem_gen_0__63 |     1|
+|53    |invSbox_mem_gen_0__64 |     1|
+|54    |invSbox_mem_gen_0__65 |     1|
+|55    |invSbox_mem_gen_0__66 |     1|
+|56    |invSbox_mem_gen_0__67 |     1|
+|57    |invSbox_mem_gen_0__68 |     1|
+|58    |invSbox_mem_gen_0__69 |     1|
+|59    |invSbox_mem_gen_0__70 |     1|
+|60    |invSbox_mem_gen_0__71 |     1|
+|61    |invSbox_mem_gen_0__72 |     1|
+|62    |invSbox_mem_gen_0__73 |     1|
+|63    |invSbox_mem_gen_0__74 |     1|
+|64    |invSbox_mem_gen_0__75 |     1|
+|65    |invSbox_mem_gen_0__76 |     1|
+|66    |invSbox_mem_gen_0__77 |     1|
+|67    |invSbox_mem_gen_0__78 |     1|
+|68    |invSbox_mem_gen_0__79 |     1|
+|69    |invSbox_mem_gen_0__80 |     1|
+|70    |invSbox_mem_gen_0__81 |     1|
+|71    |invSbox_mem_gen_0__82 |     1|
+|72    |key_mem_gen_0         |     1|
+|73    |sbox_mem_gen_0        |     1|
+|74    |sbox_mem_gen_0__14    |     1|
+|75    |sbox_mem_gen_0__15    |     1|
+|76    |sbox_mem_gen_0__16    |     1|
+|77    |sbox_mem_gen_0__17    |     1|
+|78    |sbox_mem_gen_0__18    |     1|
+|79    |sbox_mem_gen_0__19    |     1|
+|80    |sbox_mem_gen_0__20    |     1|
+|81    |sbox_mem_gen_0__21    |     1|
+|82    |sbox_mem_gen_0__22    |     1|
+|83    |sbox_mem_gen_0__23    |     1|
+|84    |sbox_mem_gen_0__24    |     1|
+|85    |sbox_mem_gen_0__25    |     1|
+|86    |sbox_mem_gen_0__26    |     1|
+|87    |sbox_mem_gen_0__27    |     1|
+|88    |sbox_mem_gen_0__28    |     1|
+|89    |sbox_mem_gen_0__29    |     1|
+|90    |sbox_mem_gen_0__30    |     1|
+|91    |sbox_mem_gen_0__31    |     1|
+|92    |sbox_mem_gen_0__32    |     1|
+|93    |sbox_mem_gen_0__33    |     1|
+|94    |sbox_mem_gen_0__34    |     1|
+|95    |sbox_mem_gen_0__35    |     1|
+|96    |sbox_mem_gen_0__36    |     1|
+|97    |sbox_mem_gen_0__37    |     1|
+|98    |sbox_mem_gen_0__38    |     1|
+|99    |sbox_mem_gen_0__39    |     1|
+|100   |sbox_mem_gen_0__40    |     1|
+|101   |sbox_mem_gen_0__41    |     1|
+|102   |sbox_mem_gen_0__42    |     1|
+|103   |sbox_mem_gen_0__43    |     1|
+|104   |sbox_mem_gen_0__44    |     1|
+|105   |sbox_mem_gen_0__45    |     1|
+|106   |sbox_mem_gen_0__46    |     1|
+|107   |sbox_mem_gen_0__47    |     1|
+|108   |sbox_mem_gen_0__48    |     1|
+|109   |sbox_mem_gen_0__49    |     1|
+|110   |sbox_mem_gen_0__50    |     1|
+|111   |sbox_mem_gen_0__51    |     1|
+|112   |sbox_mem_gen_0__52    |     1|
+|113   |sbox_mem_gen_0__53    |     1|
+|114   |sbox_mem_gen_0__54    |     1|
+|115   |sbox_mem_gen_0__55    |     1|
+|116   |sbox_mem_gen_0__56    |     1|
+|117   |sbox_mem_gen_0__57    |     1|
+|118   |sbox_mem_gen_0__58    |     1|
+|119   |sbox_mem_gen_0__59    |     1|
+|120   |sbox_mem_gen_0__60    |     1|
+|121   |sbox_mem_gen_0__61    |     1|
+|122   |sbox_mem_gen_0__62    |     1|
+|123   |sbox_mem_gen_0__63    |     1|
+|124   |sbox_mem_gen_0__64    |     1|
+|125   |sbox_mem_gen_0__65    |     1|
+|126   |sbox_mem_gen_0__66    |     1|
+|127   |sbox_mem_gen_0__67    |     1|
+|128   |sbox_mem_gen_0__68    |     1|
+|129   |sbox_mem_gen_0__69    |     1|
+|130   |sbox_mem_gen_0__70    |     1|
+|131   |sbox_mem_gen_0__71    |     1|
+|132   |sbox_mem_gen_0__72    |     1|
+|133   |sbox_mem_gen_0__73    |     1|
+|134   |sbox_mem_gen_0__74    |     1|
+|135   |sbox_mem_gen_0__75    |     1|
+|136   |sbox_mem_gen_0__76    |     1|
+|137   |sbox_mem_gen_0__77    |     1|
+|138   |sbox_mem_gen_0__78    |     1|
+|139   |sbox_mem_gen_0__79    |     1|
+|140   |sbox_mem_gen_0__80    |     1|
+|141   |sbox_mem_gen_0__81    |     1|
+|142   |sbox_mem_gen_0__82    |     1|
+|143   |BUFG                  |     1|
+|144   |CARRY4                |     3|
+|145   |LUT1                  |    49|
+|146   |LUT2                  |  1828|
+|147   |LUT3                  |  2067|
+|148   |LUT4                  |  3329|
+|149   |LUT5                  |  2651|
+|150   |LUT6                  | 14313|
+|151   |MUXF7                 |  4246|
+|152   |FDCE                  |  4061|
+|153   |FDPE                  |     7|
+|154   |FDRE                  |  2460|
+|155   |LDC                   |     1|
+|156   |IBUF                  |     5|
+|157   |OBUF                  |     1|
+|158   |OBUFT                 |     1|
++------+----------------------+------+
 
 Report Instance Areas: 
-+------+------------+----------------+------+
-|      |Instance    |Module          |Cells |
-+------+------------+----------------+------+
-|1     |top         |                | 41914|
-|2     |  AES0      |aescore         | 36207|
-|3     |    r14     |rounndlast      |   440|
-|4     |      t1    |subbytes        |   320|
-|5     |        q0  |sbox            |    24|
-|6     |        q1  |sbox_12         |    16|
-|7     |        q10 |sbox_13         |    24|
-|8     |        q11 |sbox_14         |    16|
-|9     |        q12 |sbox_15         |    24|
-|10    |        q13 |sbox_16         |    16|
-|11    |        q14 |sbox_17         |    24|
-|12    |        q15 |sbox_18         |    16|
-|13    |        q2  |sbox_19         |    24|
-|14    |        q3  |sbox_20         |    16|
-|15    |        q4  |sbox_21         |    24|
-|16    |        q5  |sbox_22         |    16|
-|17    |        q6  |sbox_23         |    24|
-|18    |        q7  |sbox_24         |    16|
-|19    |        q8  |sbox_25         |    24|
-|20    |        q9  |sbox_26         |    16|
-|21    |    r1      |rounds          |  1624|
-|22    |    r10     |rounds_0        |  1624|
-|23    |    r11     |rounds_1        |  1624|
-|24    |    r12     |rounds_2        |  1624|
-|25    |    r13     |rounds_3        |  1624|
-|26    |    r2      |rounds_4        |  1624|
-|27    |    r3      |rounds_5        |  1624|
-|28    |    r4      |rounds_6        |  1624|
-|29    |    r5      |rounds_7        |  1624|
-|30    |    r6      |rounds_8        |  1624|
-|31    |    r7      |rounds_9        |  1624|
-|32    |    r8      |rounds_10       |  1624|
-|33    |    r9      |rounds_11       |  1624|
-|34    |  DB0       |dataBuffer      |   896|
-|35    |  DC0       |dataAddrCounter |   174|
-|36    |  KB0       |keyBuffer       |  3862|
-|37    |  KC0       |keyAddrCounter  |   217|
-|38    |  U0        |uart_tx         |   486|
-+------+------------+----------------+------+
++------+------------+---------------------+------+
+|      |Instance    |Module               |Cells |
++------+------------+---------------------+------+
+|1     |top         |                     | 36207|
+|2     |  AES0      |aescore              | 28844|
+|3     |    r1      |rounds__xdcDup__1    |  1640|
+|4     |      t1    |subbytes__xdcDup__1  |   136|
+|5     |      t3    |mixcolumn_21         |   800|
+|6     |    r10     |rounds__xdcDup__2    |  1640|
+|7     |      t1    |subbytes__xdcDup__2  |   136|
+|8     |      t3    |mixcolumn_20         |   800|
+|9     |    r11     |rounds__xdcDup__3    |  1640|
+|10    |      t1    |subbytes__xdcDup__3  |   136|
+|11    |      t3    |mixcolumn_19         |   800|
+|12    |    r12     |rounds__xdcDup__4    |  1640|
+|13    |      t1    |subbytes__xdcDup__4  |   136|
+|14    |      t3    |mixcolumn_18         |   800|
+|15    |    r13     |rounds__xdcDup__5    |  1640|
+|16    |      t1    |subbytes__xdcDup__5  |   136|
+|17    |      t3    |mixcolumn_17         |   800|
+|18    |    r14     |rounndlast           |   420|
+|19    |      t1    |subbytes__xdcDup__6  |   303|
+|20    |        q10 |sbox                 |    24|
+|21    |        q11 |sbox_7               |    16|
+|22    |        q12 |sbox_8               |    24|
+|23    |        q13 |sbox_9               |    16|
+|24    |        q14 |sbox_10              |    24|
+|25    |        q15 |sbox_11              |    16|
+|26    |        q5  |sbox_12              |    16|
+|27    |        q6  |sbox_13              |    24|
+|28    |        q7  |sbox_14              |    16|
+|29    |        q8  |sbox_15              |    24|
+|30    |        q9  |sbox_16              |    16|
+|31    |    r2      |rounds__xdcDup__6    |  1641|
+|32    |      t1    |subbytes__xdcDup__7  |   137|
+|33    |      t3    |mixcolumn_6          |   800|
+|34    |    r3      |rounds__xdcDup__7    |  1640|
+|35    |      t1    |subbytes__xdcDup__8  |   136|
+|36    |      t3    |mixcolumn_5          |   800|
+|37    |    r4      |rounds__xdcDup__8    |  1640|
+|38    |      t1    |subbytes__xdcDup__9  |   136|
+|39    |      t3    |mixcolumn_4          |   800|
+|40    |    r5      |rounds__xdcDup__9    |  1640|
+|41    |      t1    |subbytes__xdcDup__10 |   136|
+|42    |      t3    |mixcolumn_3          |   800|
+|43    |    r6      |rounds__xdcDup__10   |  1640|
+|44    |      t1    |subbytes__xdcDup__11 |   136|
+|45    |      t3    |mixcolumn_2          |   800|
+|46    |    r7      |rounds__xdcDup__11   |  1640|
+|47    |      t1    |subbytes__xdcDup__12 |   136|
+|48    |      t3    |mixcolumn_1          |   800|
+|49    |    r8      |rounds__xdcDup__12   |  1640|
+|50    |      t1    |subbytes__xdcDup__13 |   136|
+|51    |      t3    |mixcolumn_0          |   800|
+|52    |    r9      |rounds               |  1640|
+|53    |      t1    |subbytes             |   136|
+|54    |      t3    |mixcolumn            |   800|
+|55    |  DB0       |dataBuffer           |   896|
+|56    |  DC0       |dataAddrCounter      |   174|
+|57    |  KB0       |keyBuffer            |  5519|
+|58    |  KC0       |keyAddrCounter       |   217|
+|59    |  U0        |uart_tx              |   485|
++------+------------+---------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:59 ; elapsed = 00:02:07 . Memory (MB): peak = 916.637 ; gain = 662.813
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:19 ; elapsed = 00:02:32 . Memory (MB): peak = 958.555 ; gain = 703.965
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 137 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:36 ; elapsed = 00:01:54 . Memory (MB): peak = 916.637 ; gain = 310.188
-Synthesis Optimization Complete : Time (s): cpu = 00:01:59 ; elapsed = 00:02:08 . Memory (MB): peak = 916.637 ; gain = 662.813
+Synthesis finished with 0 errors, 0 critical warnings and 23 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:59 ; elapsed = 00:02:20 . Memory (MB): peak = 958.555 ; gain = 346.477
+Synthesis Optimization Complete : Time (s): cpu = 00:02:19 ; elapsed = 00:02:32 . Memory (MB): peak = 958.555 ; gain = 703.965
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 9 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -1224,10 +2747,10 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 1 instances were transformed.
   LDC => LDCE: 1 instances
 
-197 Infos, 206 Warnings, 0 Critical Warnings and 0 Errors encountered.
+301 Infos, 118 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:02:13 ; elapsed = 00:02:22 . Memory (MB): peak = 916.637 ; gain = 668.145
+synth_design: Time (s): cpu = 00:02:28 ; elapsed = 00:02:43 . Memory (MB): peak = 958.555 ; gain = 710.055
 INFO: [Common 17-1381] The checkpoint 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/top.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 916.637 ; gain = 0.000
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.259 . Memory (MB): peak = 916.637 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Wed Sep 12 16:48:36 2018...
+write_checkpoint: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 958.555 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.193 . Memory (MB): peak = 958.555 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Sep 12 19:43:40 2018...
