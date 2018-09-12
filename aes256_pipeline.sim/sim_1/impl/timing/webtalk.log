@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Webtalk v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Tue Sep 11 20:12:08 2018
+# Process ID: 6676
+# Current directory: C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/impl/timing
+# Command line: wbtcv.exe -mode batch -source C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/impl/timing/xsim.dir/tb_time_impl/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/impl/timing/webtalk.log
+# Journal file: C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/impl/timing\webtalk.jou
+#-----------------------------------------------------------
+source C:/College/Thesis/AES_2018/AES_After -notrace
+invalid command name "%"
+    while executing
+"% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current"
+    (file "C:/College/Thesis/AES_2018/AES_After" line 1)
+INFO: [Common 17-206] Exiting Webtalk at Tue Sep 11 20:12:09 2018...

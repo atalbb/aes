@@ -1,0 +1,2 @@
+sbox_mem_gen_0.v,verilog,xil_defaultlib,../../../../aes256_pipeline.srcs/sources_1/ip/sbox_mem_gen_0/sim/sbox_mem_gen_0.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

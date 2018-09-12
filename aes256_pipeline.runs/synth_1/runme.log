@@ -1,0 +1,1232 @@
+
+*** Running vivado
+    with args -log top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+
+
+****** Vivado v2017.1 (64-bit)
+  **** SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+  **** IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source top.tcl -notrace
+Command: synth_design -top top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 8028 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 337.164 ; gain = 83.340
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-638] synthesizing module 'keyAddrCounter' [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/keyAddrCounter.v:23]
+	Parameter NDATA1 bound to: 63 - type: integer 
+	Parameter NDATA2 bound to: 121 - type: integer 
+WARNING: [Synth 8-5788] Register keyAddrCount_reg in module keyAddrCounter is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/keyAddrCounter.v:30]
+INFO: [Synth 8-256] done synthesizing module 'keyAddrCounter' (1#1) [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/keyAddrCounter.v:23]
+WARNING: [Synth 8-689] width (128) of port connection 'keyAddrCount' does not match port width (8) of module 'keyAddrCounter' [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/top.v:52]
+INFO: [Synth 8-638] synthesizing module 'dataAddrCounter' [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/dataAddrCounter.v:21]
+	Parameter NDATA bound to: 17 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'dataAddrCounter' (2#1) [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/dataAddrCounter.v:21]
+WARNING: [Synth 8-689] width (128) of port connection 'dataAddrCount' does not match port width (8) of module 'dataAddrCounter' [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/top.v:57]
+INFO: [Synth 8-638] synthesizing module 'key_mem_gen_0' [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-7972-DESKTOP-GJPCRJL/realtime/key_mem_gen_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'key_mem_gen_0' (3#1) [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-7972-DESKTOP-GJPCRJL/realtime/key_mem_gen_0_stub.v:6]
+WARNING: [Synth 8-689] width (128) of port connection 'addra' does not match port width (7) of module 'key_mem_gen_0' [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/top.v:63]
+INFO: [Synth 8-638] synthesizing module 'data_mem_gen_0' [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-7972-DESKTOP-GJPCRJL/realtime/data_mem_gen_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'data_mem_gen_0' (4#1) [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-7972-DESKTOP-GJPCRJL/realtime/data_mem_gen_0_stub.v:6]
+WARNING: [Synth 8-689] width (128) of port connection 'addra' does not match port width (6) of module 'data_mem_gen_0' [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/top.v:71]
+INFO: [Synth 8-638] synthesizing module 'dataBuffer' [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/dataBuffer.v:23]
+WARNING: [Synth 8-6014] Unused sequential element RAM_reg[16] was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/dataBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[15] in module dataBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/dataBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[14] in module dataBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/dataBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[13] in module dataBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/dataBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[12] in module dataBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/dataBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[11] in module dataBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/dataBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[10] in module dataBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/dataBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[9] in module dataBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/dataBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[8] in module dataBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/dataBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[7] in module dataBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/dataBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[6] in module dataBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/dataBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[5] in module dataBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/dataBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[4] in module dataBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/dataBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[3] in module dataBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/dataBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[2] in module dataBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/dataBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[1] in module dataBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/dataBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[0] in module dataBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/dataBuffer.v:39]
+INFO: [Synth 8-256] done synthesizing module 'dataBuffer' (5#1) [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/dataBuffer.v:23]
+WARNING: [Synth 8-689] width (128) of port connection 'addr' does not match port width (8) of module 'dataBuffer' [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/top.v:78]
+INFO: [Synth 8-638] synthesizing module 'keyBuffer' [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:23]
+WARNING: [Synth 8-6014] Unused sequential element RAM_reg[62] was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-6014] Unused sequential element RAM_reg[61] was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-6014] Unused sequential element RAM_reg[60] was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[59] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[58] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[57] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[56] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[55] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[54] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[53] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[52] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[51] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[50] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[49] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[48] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[47] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[46] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[45] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[44] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[43] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[42] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[41] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[40] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[39] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[38] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[37] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[36] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[35] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[34] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[33] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[32] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[31] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[30] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[29] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[28] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[27] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[26] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[25] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[24] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[23] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[22] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[21] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[20] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[19] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[18] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[17] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[16] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[15] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[14] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[13] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[12] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[11] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[10] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[9] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[8] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[7] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[6] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[5] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[4] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[3] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[2] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[1] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[0] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+INFO: [Synth 8-256] done synthesizing module 'keyBuffer' (6#1) [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:23]
+WARNING: [Synth 8-689] width (128) of port connection 'addr' does not match port width (8) of module 'keyBuffer' [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/top.v:86]
+INFO: [Synth 8-638] synthesizing module 'aescore' [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/aescore.v:23]
+INFO: [Synth 8-638] synthesizing module 'rounds' [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/rounds.v:3]
+INFO: [Synth 8-638] synthesizing module 'subbytes' [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/subbytes.v:3]
+INFO: [Synth 8-638] synthesizing module 'sbox' [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/sbox.v:23]
+WARNING: [Synth 8-567] referenced signal 'decrypt' should be on the sensitivity list [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/sbox.v:32]
+INFO: [Synth 8-256] done synthesizing module 'sbox' (7#1) [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/sbox.v:23]
+INFO: [Synth 8-256] done synthesizing module 'subbytes' (8#1) [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/subbytes.v:3]
+INFO: [Synth 8-638] synthesizing module 'shiftrow' [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/shiftrow.v:3]
+INFO: [Synth 8-256] done synthesizing module 'shiftrow' (9#1) [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/shiftrow.v:3]
+INFO: [Synth 8-638] synthesizing module 'mixcolumn' [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/mixcolumn.v:3]
+INFO: [Synth 8-256] done synthesizing module 'mixcolumn' (10#1) [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/mixcolumn.v:3]
+INFO: [Synth 8-256] done synthesizing module 'rounds' (11#1) [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/rounds.v:3]
+INFO: [Synth 8-638] synthesizing module 'rounndlast' [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/rounndlast.v:3]
+INFO: [Synth 8-256] done synthesizing module 'rounndlast' (12#1) [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/rounndlast.v:3]
+WARNING: [Synth 8-3848] Net done in module/entity aescore does not have driver. [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/aescore.v:30]
+INFO: [Synth 8-256] done synthesizing module 'aescore' (13#1) [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/aescore.v:23]
+INFO: [Synth 8-638] synthesizing module 'uart_tx' [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/uart_tx.v:21]
+	Parameter bit_time bound to: 868 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element ledout_reg was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/uart_tx.v:74]
+WARNING: [Synth 8-5788] Register tx_buff_reg[19] in module uart_tx is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/uart_tx.v:52]
+WARNING: [Synth 8-5788] Register tx_buff_reg[18] in module uart_tx is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/uart_tx.v:52]
+WARNING: [Synth 8-5788] Register tx_buff_reg[17] in module uart_tx is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/uart_tx.v:52]
+WARNING: [Synth 8-5788] Register tx_buff_reg[16] in module uart_tx is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/uart_tx.v:52]
+INFO: [Synth 8-256] done synthesizing module 'uart_tx' (14#1) [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/uart_tx.v:21]
+INFO: [Synth 8-256] done synthesizing module 'top' (15#1) [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/top.v:23]
+WARNING: [Synth 8-3331] design rounndlast has unconnected port clk
+WARNING: [Synth 8-3331] design rounds has unconnected port clk
+WARNING: [Synth 8-3331] design aescore has unconnected port done
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 454.684 ; gain = 200.859
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 454.684 ; gain = 200.859
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-7972-DESKTOP-GJPCRJL/dcp5/data_mem_gen_0_in_context.xdc] for cell 'D0'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-7972-DESKTOP-GJPCRJL/dcp5/data_mem_gen_0_in_context.xdc] for cell 'D0'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-7972-DESKTOP-GJPCRJL/dcp7/key_mem_gen_0_in_context.xdc] for cell 'K0'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/.Xil/Vivado-7972-DESKTOP-GJPCRJL/dcp7/key_mem_gen_0_in_context.xdc] for cell 'K0'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/constrs_1/new/const.xdc]
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/constrs_1/new/const.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/constrs_1/new/const.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 803.598 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 807.309 ; gain = 553.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 807.309 ; gain = 553.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for D0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for K0. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 807.309 ; gain = 553.484
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "keyAddrCount" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element dataAddrCount_reg was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/dataAddrCounter.v:29]
+INFO: [Synth 8-5545] ROM "RAM_reg[15]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[14]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[13]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[12]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[11]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[10]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[9]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[8]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[7]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[6]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[5]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[4]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "dataOut" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "RAM_reg[59]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[59]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[58]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[58]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[57]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[57]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[56]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[56]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[55]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[55]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[54]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[54]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[53]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[53]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[52]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[52]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[51]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[51]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[50]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[50]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[49]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[49]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[48]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[48]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[47]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[47]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[46]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[46]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[45]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[45]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[44]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[44]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[43]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[43]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[42]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[42]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[41]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[41]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[40]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[40]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[39]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[39]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[38]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[38]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[37]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[37]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[36]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[36]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[35]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[35]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[34]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[34]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[33]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[33]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[32]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[32]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[31]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[31]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[30]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[30]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[29]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[29]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[28]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[28]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[27]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[27]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[26]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[26]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[25]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[25]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[24]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[24]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[23]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[23]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[22]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[22]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[21]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[21]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[20]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[20]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[19]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[19]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[18]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[18]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Common 17-14] Message 'Synth 8-5545' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-5546] ROM "keyOut" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "keyOut" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "decrypt" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "tx_buff_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx_buff_reg[0]" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element bit_count_reg was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/uart_tx.v:48]
+WARNING: [Synth 8-6014] Unused sequential element byte_count_reg was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/uart_tx.v:72]
+WARNING: [Synth 8-327] inferring latch for variable 'c_reg' [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/sbox.v:35]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 807.309 ; gain = 553.484
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |rounds        |          13|      8512|
+|2     |aescore__GC0  |           1|      5958|
+|3     |top__GC0      |           1|     18339|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3538] Detected potentially large (wide) register keyOut_reg [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:34]
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     13 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	   2 Input    128 Bit         XORs := 15    
+	   4 Input      8 Bit         XORs := 416   
++---Registers : 
+	             1920 Bit    Registers := 1     
+	              128 Bit    Registers := 15    
+	               32 Bit    Registers := 76    
+	               13 Bit    Registers := 1     
+	                8 Bit    Registers := 22    
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   4 Input    128 Bit        Muxes := 1     
+	   2 Input    128 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 4     
+	   2 Input      8 Bit        Muxes := 629   
+	   4 Input      8 Bit        Muxes := 19    
+	   2 Input      7 Bit        Muxes := 2     
+	   3 Input      7 Bit        Muxes := 19    
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 64    
+	   2 Input      1 Bit        Muxes := 153   
+	   4 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3538] Detected potentially large (wide) register keyOut_reg [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:34]
+Hierarchical RTL Component report 
+Module sbox__1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__3 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__4 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__5 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__6 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__7 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__8 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__9 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__10 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__11 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__12 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__13 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__14 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__15 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__16 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module shiftrow__1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 8     
+Module mixcolumn 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input      8 Bit         XORs := 32    
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 16    
+Module rounds 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input    128 Bit         XORs := 1     
+Module sbox__17 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__18 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__19 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__20 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__21 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__22 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__23 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__24 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__25 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__26 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__27 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__28 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__29 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__30 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__31 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module shiftrow 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 8     
+Module rounndlast 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input    128 Bit         XORs := 1     
+Module aescore 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input    128 Bit         XORs := 1     
++---Registers : 
+	              128 Bit    Registers := 14    
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module keyAddrCounter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module dataAddrCounter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+Module dataBuffer 
+Detailed RTL Component Info : 
++---Registers : 
+	              128 Bit    Registers := 1     
+	               32 Bit    Registers := 16    
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   4 Input    128 Bit        Muxes := 1     
+	   2 Input    128 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 19    
+	   4 Input      1 Bit        Muxes := 2     
+Module keyBuffer 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	             1920 Bit    Registers := 1     
+	               32 Bit    Registers := 60    
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 122   
+	   3 Input      1 Bit        Muxes := 62    
+Module uart_tx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     13 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               13 Bit    Registers := 1     
+	                8 Bit    Registers := 20    
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     13 Bit        Muxes := 4     
+	   2 Input      8 Bit        Muxes := 83    
+	   4 Input      8 Bit        Muxes := 19    
+	   2 Input      7 Bit        Muxes := 2     
+	   3 Input      7 Bit        Muxes := 19    
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 11    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "keyOut" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "keyOut" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element DB0/dataReady_reg was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/dataBuffer.v:35]
+INFO: [Synth 8-5546] ROM "DB0/dataOut" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element DC0/dataAddrCount_reg was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/dataAddrCounter.v:29]
+WARNING: [Synth 8-6014] Unused sequential element U0/byte_count_reg was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/uart_tx.v:72]
+WARNING: [Synth 8-6014] Unused sequential element U0/bit_count_reg was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/uart_tx.v:48]
+WARNING: [Synth 8-3331] design top has unconnected port finalDone
+WARNING: [Synth 8-3332] Sequential element (t1/q0/c_reg[7]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q0/c_reg[6]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q0/c_reg[5]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q0/c_reg[4]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q0/c_reg[3]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q0/c_reg[2]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q0/c_reg[1]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q0/c_reg[0]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q1/c_reg[7]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q1/c_reg[6]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q1/c_reg[5]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q1/c_reg[4]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q1/c_reg[3]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q1/c_reg[2]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q1/c_reg[1]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q1/c_reg[0]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q2/c_reg[7]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q2/c_reg[6]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q2/c_reg[5]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q2/c_reg[4]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q2/c_reg[3]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q2/c_reg[2]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q2/c_reg[1]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q2/c_reg[0]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q3/c_reg[7]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q3/c_reg[6]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q3/c_reg[5]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q3/c_reg[4]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q3/c_reg[3]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q3/c_reg[2]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q3/c_reg[1]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q3/c_reg[0]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q4/c_reg[7]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q4/c_reg[6]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q4/c_reg[5]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q4/c_reg[4]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q4/c_reg[3]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q4/c_reg[2]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q4/c_reg[1]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q4/c_reg[0]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q5/c_reg[7]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q5/c_reg[6]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q5/c_reg[5]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q5/c_reg[4]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q5/c_reg[3]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q5/c_reg[2]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q5/c_reg[1]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q5/c_reg[0]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q6/c_reg[7]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q6/c_reg[6]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q6/c_reg[5]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q6/c_reg[4]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q6/c_reg[3]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q6/c_reg[2]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q6/c_reg[1]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q6/c_reg[0]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q7/c_reg[7]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q7/c_reg[6]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q7/c_reg[5]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q7/c_reg[4]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q7/c_reg[3]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q7/c_reg[2]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q7/c_reg[1]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q7/c_reg[0]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q8/c_reg[7]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q8/c_reg[6]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q8/c_reg[5]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q8/c_reg[4]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q8/c_reg[3]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q8/c_reg[2]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q8/c_reg[1]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q8/c_reg[0]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q9/c_reg[7]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q9/c_reg[6]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q9/c_reg[5]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q9/c_reg[4]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q9/c_reg[3]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q9/c_reg[2]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q9/c_reg[1]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q9/c_reg[0]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q10/c_reg[7]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q10/c_reg[6]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q10/c_reg[5]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q10/c_reg[4]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q10/c_reg[3]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q10/c_reg[2]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q10/c_reg[1]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q10/c_reg[0]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q11/c_reg[7]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q11/c_reg[6]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q11/c_reg[5]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q11/c_reg[4]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q11/c_reg[3]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q11/c_reg[2]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q11/c_reg[1]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q11/c_reg[0]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q12/c_reg[7]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q12/c_reg[6]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q12/c_reg[5]) is unused and will be removed from module rounds.
+WARNING: [Synth 8-3332] Sequential element (t1/q12/c_reg[4]) is unused and will be removed from module rounds.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\U0/tx_buff_reg[19][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\U0/tx_buff_reg[18][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\U0/tx_buff_reg[17][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\U0/tx_buff_reg[16][7] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:20 ; elapsed = 00:01:28 . Memory (MB): peak = 807.309 ; gain = 553.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|sbox        | c          | 256x8         | LUT            | 
+|sbox        | c          | 256x8         | LUT            | 
+|mixcolumn   | mul13      | 256x8         | LUT            | 
+|mixcolumn   | mul9       | 256x8         | LUT            | 
+|mixcolumn   | mul14      | 256x8         | LUT            | 
+|mixcolumn   | mul11      | 256x8         | LUT            | 
+|mixcolumn   | mul2       | 256x8         | LUT            | 
+|mixcolumn   | mul3       | 256x8         | LUT            | 
+|mixcolumn   | mul9       | 256x8         | LUT            | 
+|mixcolumn   | mul14      | 256x8         | LUT            | 
+|mixcolumn   | mul11      | 256x8         | LUT            | 
+|mixcolumn   | mul13      | 256x8         | LUT            | 
+|mixcolumn   | mul2       | 256x8         | LUT            | 
+|mixcolumn   | mul3       | 256x8         | LUT            | 
+|mixcolumn   | mul14      | 256x8         | LUT            | 
+|mixcolumn   | mul11      | 256x8         | LUT            | 
+|mixcolumn   | mul13      | 256x8         | LUT            | 
+|mixcolumn   | mul9       | 256x8         | LUT            | 
+|mixcolumn   | mul2       | 256x8         | LUT            | 
+|mixcolumn   | mul3       | 256x8         | LUT            | 
+|mixcolumn   | mul11      | 256x8         | LUT            | 
+|mixcolumn   | mul13      | 256x8         | LUT            | 
+|mixcolumn   | mul9       | 256x8         | LUT            | 
+|mixcolumn   | mul14      | 256x8         | LUT            | 
+|mixcolumn   | mul3       | 256x8         | LUT            | 
+|mixcolumn   | mul2       | 256x8         | LUT            | 
+|mixcolumn   | mul13      | 256x8         | LUT            | 
+|mixcolumn   | mul9       | 256x8         | LUT            | 
+|mixcolumn   | mul14      | 256x8         | LUT            | 
+|mixcolumn   | mul11      | 256x8         | LUT            | 
+|mixcolumn   | mul2       | 256x8         | LUT            | 
+|mixcolumn   | mul3       | 256x8         | LUT            | 
+|mixcolumn   | mul9       | 256x8         | LUT            | 
+|mixcolumn   | mul14      | 256x8         | LUT            | 
+|mixcolumn   | mul11      | 256x8         | LUT            | 
+|mixcolumn   | mul13      | 256x8         | LUT            | 
+|mixcolumn   | mul2       | 256x8         | LUT            | 
+|mixcolumn   | mul3       | 256x8         | LUT            | 
+|mixcolumn   | mul14      | 256x8         | LUT            | 
+|mixcolumn   | mul11      | 256x8         | LUT            | 
+|mixcolumn   | mul13      | 256x8         | LUT            | 
+|mixcolumn   | mul9       | 256x8         | LUT            | 
+|mixcolumn   | mul2       | 256x8         | LUT            | 
+|mixcolumn   | mul3       | 256x8         | LUT            | 
+|mixcolumn   | mul11      | 256x8         | LUT            | 
+|mixcolumn   | mul13      | 256x8         | LUT            | 
+|mixcolumn   | mul9       | 256x8         | LUT            | 
+|mixcolumn   | mul14      | 256x8         | LUT            | 
+|mixcolumn   | mul3       | 256x8         | LUT            | 
+|mixcolumn   | mul2       | 256x8         | LUT            | 
+|mixcolumn   | mul13      | 256x8         | LUT            | 
+|mixcolumn   | mul9       | 256x8         | LUT            | 
+|mixcolumn   | mul14      | 256x8         | LUT            | 
+|mixcolumn   | mul11      | 256x8         | LUT            | 
+|mixcolumn   | mul2       | 256x8         | LUT            | 
+|mixcolumn   | mul3       | 256x8         | LUT            | 
+|mixcolumn   | mul9       | 256x8         | LUT            | 
+|mixcolumn   | mul14      | 256x8         | LUT            | 
+|mixcolumn   | mul11      | 256x8         | LUT            | 
+|mixcolumn   | mul13      | 256x8         | LUT            | 
+|mixcolumn   | mul2       | 256x8         | LUT            | 
+|mixcolumn   | mul3       | 256x8         | LUT            | 
+|mixcolumn   | mul14      | 256x8         | LUT            | 
+|mixcolumn   | mul11      | 256x8         | LUT            | 
+|mixcolumn   | mul13      | 256x8         | LUT            | 
+|mixcolumn   | mul9       | 256x8         | LUT            | 
+|mixcolumn   | mul2       | 256x8         | LUT            | 
+|mixcolumn   | mul3       | 256x8         | LUT            | 
+|mixcolumn   | mul11      | 256x8         | LUT            | 
+|mixcolumn   | mul13      | 256x8         | LUT            | 
+|mixcolumn   | mul9       | 256x8         | LUT            | 
+|mixcolumn   | mul14      | 256x8         | LUT            | 
+|mixcolumn   | mul3       | 256x8         | LUT            | 
+|mixcolumn   | mul2       | 256x8         | LUT            | 
+|mixcolumn   | mul13      | 256x8         | LUT            | 
+|mixcolumn   | mul9       | 256x8         | LUT            | 
+|mixcolumn   | mul14      | 256x8         | LUT            | 
+|mixcolumn   | mul11      | 256x8         | LUT            | 
+|mixcolumn   | mul2       | 256x8         | LUT            | 
+|mixcolumn   | mul3       | 256x8         | LUT            | 
+|mixcolumn   | mul9       | 256x8         | LUT            | 
+|mixcolumn   | mul14      | 256x8         | LUT            | 
+|mixcolumn   | mul11      | 256x8         | LUT            | 
+|mixcolumn   | mul13      | 256x8         | LUT            | 
+|mixcolumn   | mul2       | 256x8         | LUT            | 
+|mixcolumn   | mul3       | 256x8         | LUT            | 
+|mixcolumn   | mul14      | 256x8         | LUT            | 
+|mixcolumn   | mul11      | 256x8         | LUT            | 
+|mixcolumn   | mul13      | 256x8         | LUT            | 
+|mixcolumn   | mul9       | 256x8         | LUT            | 
+|mixcolumn   | mul2       | 256x8         | LUT            | 
+|mixcolumn   | mul3       | 256x8         | LUT            | 
+|mixcolumn   | mul11      | 256x8         | LUT            | 
+|mixcolumn   | mul13      | 256x8         | LUT            | 
+|mixcolumn   | mul9       | 256x8         | LUT            | 
+|mixcolumn   | mul14      | 256x8         | LUT            | 
+|mixcolumn   | mul3       | 256x8         | LUT            | 
+|mixcolumn   | mul2       | 256x8         | LUT            | 
+|mixcolumn   | mul13      | 256x8         | LUT            | 
+|mixcolumn   | mul9       | 256x8         | LUT            | 
+|mixcolumn   | mul14      | 256x8         | LUT            | 
+|mixcolumn   | mul11      | 256x8         | LUT            | 
+|mixcolumn   | mul2       | 256x8         | LUT            | 
+|mixcolumn   | mul3       | 256x8         | LUT            | 
+|mixcolumn   | mul9       | 256x8         | LUT            | 
+|mixcolumn   | mul14      | 256x8         | LUT            | 
+|mixcolumn   | mul11      | 256x8         | LUT            | 
+|mixcolumn   | mul13      | 256x8         | LUT            | 
+|mixcolumn   | mul2       | 256x8         | LUT            | 
+|mixcolumn   | mul3       | 256x8         | LUT            | 
+|mixcolumn   | mul14      | 256x8         | LUT            | 
+|mixcolumn   | mul11      | 256x8         | LUT            | 
+|mixcolumn   | mul13      | 256x8         | LUT            | 
+|mixcolumn   | mul9       | 256x8         | LUT            | 
+|mixcolumn   | mul2       | 256x8         | LUT            | 
+|mixcolumn   | mul3       | 256x8         | LUT            | 
+|mixcolumn   | mul11      | 256x8         | LUT            | 
+|mixcolumn   | mul13      | 256x8         | LUT            | 
+|mixcolumn   | mul9       | 256x8         | LUT            | 
+|mixcolumn   | mul14      | 256x8         | LUT            | 
+|mixcolumn   | mul3       | 256x8         | LUT            | 
+|mixcolumn   | mul2       | 256x8         | LUT            | 
+|mixcolumn   | mul13      | 256x8         | LUT            | 
+|mixcolumn   | mul9       | 256x8         | LUT            | 
+|mixcolumn   | mul14      | 256x8         | LUT            | 
+|mixcolumn   | mul11      | 256x8         | LUT            | 
+|mixcolumn   | mul2       | 256x8         | LUT            | 
+|mixcolumn   | mul3       | 256x8         | LUT            | 
+|mixcolumn   | mul9       | 256x8         | LUT            | 
+|mixcolumn   | mul14      | 256x8         | LUT            | 
+|mixcolumn   | mul11      | 256x8         | LUT            | 
+|mixcolumn   | mul13      | 256x8         | LUT            | 
+|mixcolumn   | mul2       | 256x8         | LUT            | 
+|mixcolumn   | mul3       | 256x8         | LUT            | 
+|mixcolumn   | mul14      | 256x8         | LUT            | 
+|mixcolumn   | mul11      | 256x8         | LUT            | 
+|mixcolumn   | mul13      | 256x8         | LUT            | 
+|mixcolumn   | mul9       | 256x8         | LUT            | 
+|mixcolumn   | mul2       | 256x8         | LUT            | 
+|mixcolumn   | mul3       | 256x8         | LUT            | 
+|mixcolumn   | mul11      | 256x8         | LUT            | 
+|mixcolumn   | mul13      | 256x8         | LUT            | 
+|mixcolumn   | mul9       | 256x8         | LUT            | 
+|mixcolumn   | mul14      | 256x8         | LUT            | 
+|mixcolumn   | mul3       | 256x8         | LUT            | 
+|mixcolumn   | mul2       | 256x8         | LUT            | 
+|mixcolumn   | mul13      | 256x8         | LUT            | 
+|mixcolumn   | mul9       | 256x8         | LUT            | 
+|mixcolumn   | mul14      | 256x8         | LUT            | 
+|mixcolumn   | mul11      | 256x8         | LUT            | 
+|mixcolumn   | mul2       | 256x8         | LUT            | 
+|mixcolumn   | mul3       | 256x8         | LUT            | 
+|mixcolumn   | mul9       | 256x8         | LUT            | 
+|mixcolumn   | mul14      | 256x8         | LUT            | 
+|mixcolumn   | mul11      | 256x8         | LUT            | 
+|mixcolumn   | mul13      | 256x8         | LUT            | 
+|mixcolumn   | mul2       | 256x8         | LUT            | 
+|mixcolumn   | mul3       | 256x8         | LUT            | 
+|mixcolumn   | mul14      | 256x8         | LUT            | 
+|mixcolumn   | mul11      | 256x8         | LUT            | 
+|mixcolumn   | mul13      | 256x8         | LUT            | 
+|mixcolumn   | mul9       | 256x8         | LUT            | 
+|mixcolumn   | mul2       | 256x8         | LUT            | 
+|mixcolumn   | mul3       | 256x8         | LUT            | 
+|mixcolumn   | mul11      | 256x8         | LUT            | 
+|mixcolumn   | mul13      | 256x8         | LUT            | 
+|mixcolumn   | mul9       | 256x8         | LUT            | 
+|mixcolumn   | mul14      | 256x8         | LUT            | 
+|mixcolumn   | mul3       | 256x8         | LUT            | 
+|mixcolumn   | mul2       | 256x8         | LUT            | 
+|mixcolumn   | mul13      | 256x8         | LUT            | 
+|mixcolumn   | mul9       | 256x8         | LUT            | 
+|mixcolumn   | mul14      | 256x8         | LUT            | 
+|mixcolumn   | mul11      | 256x8         | LUT            | 
+|mixcolumn   | mul2       | 256x8         | LUT            | 
+|mixcolumn   | mul3       | 256x8         | LUT            | 
+|mixcolumn   | mul9       | 256x8         | LUT            | 
+|mixcolumn   | mul14      | 256x8         | LUT            | 
+|mixcolumn   | mul11      | 256x8         | LUT            | 
+|mixcolumn   | mul13      | 256x8         | LUT            | 
+|mixcolumn   | mul2       | 256x8         | LUT            | 
+|mixcolumn   | mul3       | 256x8         | LUT            | 
+|mixcolumn   | mul14      | 256x8         | LUT            | 
+|mixcolumn   | mul11      | 256x8         | LUT            | 
+|mixcolumn   | mul13      | 256x8         | LUT            | 
+|mixcolumn   | mul9       | 256x8         | LUT            | 
+|mixcolumn   | mul2       | 256x8         | LUT            | 
+|mixcolumn   | mul3       | 256x8         | LUT            | 
+|mixcolumn   | mul11      | 256x8         | LUT            | 
+|mixcolumn   | mul13      | 256x8         | LUT            | 
+|mixcolumn   | mul9       | 256x8         | LUT            | 
+|mixcolumn   | mul14      | 256x8         | LUT            | 
+|mixcolumn   | mul3       | 256x8         | LUT            | 
+|mixcolumn   | mul2       | 256x8         | LUT            | 
+|rounds      | t1/q0/c    | 256x8         | LUT            | 
+|rounds      | t1/q0/c    | 256x8         | LUT            | 
+|rounds      | t1/q1/c    | 256x8         | LUT            | 
+|rounds      | t1/q1/c    | 256x8         | LUT            | 
+|rounds      | t1/q2/c    | 256x8         | LUT            | 
+|rounds      | t1/q2/c    | 256x8         | LUT            | 
+|rounds      | t1/q3/c    | 256x8         | LUT            | 
+|rounds      | t1/q3/c    | 256x8         | LUT            | 
+|rounds      | t1/q4/c    | 256x8         | LUT            | 
+|rounds      | t1/q4/c    | 256x8         | LUT            | 
+|rounds      | t1/q5/c    | 256x8         | LUT            | 
+|rounds      | t1/q5/c    | 256x8         | LUT            | 
+|rounds      | t1/q6/c    | 256x8         | LUT            | 
+|rounds      | t1/q6/c    | 256x8         | LUT            | 
+|rounds      | t1/q7/c    | 256x8         | LUT            | 
+|rounds      | t1/q7/c    | 256x8         | LUT            | 
+|rounds      | t1/q8/c    | 256x8         | LUT            | 
+|rounds      | t1/q8/c    | 256x8         | LUT            | 
+|rounds      | t1/q9/c    | 256x8         | LUT            | 
+|rounds      | t1/q9/c    | 256x8         | LUT            | 
+|rounds      | t1/q10/c   | 256x8         | LUT            | 
+|rounds      | t1/q10/c   | 256x8         | LUT            | 
+|rounds      | t1/q11/c   | 256x8         | LUT            | 
+|rounds      | t1/q11/c   | 256x8         | LUT            | 
+|rounds      | t1/q12/c   | 256x8         | LUT            | 
+|rounds      | t1/q12/c   | 256x8         | LUT            | 
+|rounds      | t1/q13/c   | 256x8         | LUT            | 
+|rounds      | t1/q13/c   | 256x8         | LUT            | 
+|rounds      | t1/q14/c   | 256x8         | LUT            | 
+|rounds      | t1/q14/c   | 256x8         | LUT            | 
+|rounds      | t1/q15/c   | 256x8         | LUT            | 
+|rounds      | t1/q15/c   | 256x8         | LUT            | 
+|rounndlast  | t1/q0/c    | 256x8         | LUT            | 
+|rounndlast  | t1/q0/c    | 256x8         | LUT            | 
+|rounndlast  | t1/q1/c    | 256x8         | LUT            | 
+|rounndlast  | t1/q1/c    | 256x8         | LUT            | 
+|rounndlast  | t1/q2/c    | 256x8         | LUT            | 
+|rounndlast  | t1/q2/c    | 256x8         | LUT            | 
+|rounndlast  | t1/q3/c    | 256x8         | LUT            | 
+|rounndlast  | t1/q3/c    | 256x8         | LUT            | 
+|rounndlast  | t1/q4/c    | 256x8         | LUT            | 
+|rounndlast  | t1/q4/c    | 256x8         | LUT            | 
+|rounndlast  | t1/q5/c    | 256x8         | LUT            | 
+|rounndlast  | t1/q5/c    | 256x8         | LUT            | 
+|rounndlast  | t1/q6/c    | 256x8         | LUT            | 
+|rounndlast  | t1/q6/c    | 256x8         | LUT            | 
+|rounndlast  | t1/q7/c    | 256x8         | LUT            | 
+|rounndlast  | t1/q7/c    | 256x8         | LUT            | 
+|rounndlast  | t1/q8/c    | 256x8         | LUT            | 
+|rounndlast  | t1/q8/c    | 256x8         | LUT            | 
+|rounndlast  | t1/q9/c    | 256x8         | LUT            | 
+|rounndlast  | t1/q9/c    | 256x8         | LUT            | 
+|rounndlast  | t1/q10/c   | 256x8         | LUT            | 
+|rounndlast  | t1/q10/c   | 256x8         | LUT            | 
+|rounndlast  | t1/q11/c   | 256x8         | LUT            | 
+|rounndlast  | t1/q11/c   | 256x8         | LUT            | 
+|rounndlast  | t1/q12/c   | 256x8         | LUT            | 
+|rounndlast  | t1/q12/c   | 256x8         | LUT            | 
+|rounndlast  | t1/q13/c   | 256x8         | LUT            | 
+|rounndlast  | t1/q13/c   | 256x8         | LUT            | 
+|rounndlast  | t1/q14/c   | 256x8         | LUT            | 
+|rounndlast  | t1/q14/c   | 256x8         | LUT            | 
+|rounndlast  | t1/q15/c   | 256x8         | LUT            | 
+|rounndlast  | t1/q15/c   | 256x8         | LUT            | 
++------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |rounds        |          13|      5856|
+|2     |aescore__GC0  |           1|      4295|
+|3     |top__GC0      |           1|      7296|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:35 ; elapsed = 00:01:43 . Memory (MB): peak = 818.859 ; gain = 565.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:35 ; elapsed = 00:01:43 . Memory (MB): peak = 819.480 ; gain = 565.656
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |rounds        |          13|      5856|
+|2     |aescore__GC0  |           1|      4295|
+|3     |top__GC0      |           1|      7296|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:46 ; elapsed = 00:01:55 . Memory (MB): peak = 916.637 ; gain = 662.813
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:53 ; elapsed = 00:02:02 . Memory (MB): peak = 916.637 ; gain = 662.813
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:54 ; elapsed = 00:02:02 . Memory (MB): peak = 916.637 ; gain = 662.813
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:56 ; elapsed = 00:02:05 . Memory (MB): peak = 916.637 ; gain = 662.813
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:58 ; elapsed = 00:02:06 . Memory (MB): peak = 916.637 ; gain = 662.813
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:59 ; elapsed = 00:02:07 . Memory (MB): peak = 916.637 ; gain = 662.813
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:59 ; elapsed = 00:02:07 . Memory (MB): peak = 916.637 ; gain = 662.813
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------+----------+
+|      |BlackBox name  |Instances |
++------+---------------+----------+
+|1     |key_mem_gen_0  |         1|
+|2     |data_mem_gen_0 |         1|
++------+---------------+----------+
+
+Report Cell Usage: 
++------+---------------+------+
+|      |Cell           |Count |
++------+---------------+------+
+|1     |data_mem_gen_0 |     1|
+|2     |key_mem_gen_0  |     1|
+|3     |BUFG           |     1|
+|4     |CARRY4         |     3|
+|5     |LUT1           |    49|
+|6     |LUT2           |   476|
+|7     |LUT3           |  1838|
+|8     |LUT4           |  1644|
+|9     |LUT5           |  4627|
+|10    |LUT6           | 18246|
+|11    |MUXF7          |  6790|
+|12    |MUXF8          |  1664|
+|13    |FDCE           |  4037|
+|14    |FDPE           |     7|
+|15    |FDRE           |  2460|
+|16    |LDC            |     1|
+|17    |IBUF           |     5|
+|18    |OBUF           |     1|
+|19    |OBUFT          |     1|
++------+---------------+------+
+
+Report Instance Areas: 
++------+------------+----------------+------+
+|      |Instance    |Module          |Cells |
++------+------------+----------------+------+
+|1     |top         |                | 41914|
+|2     |  AES0      |aescore         | 36207|
+|3     |    r14     |rounndlast      |   440|
+|4     |      t1    |subbytes        |   320|
+|5     |        q0  |sbox            |    24|
+|6     |        q1  |sbox_12         |    16|
+|7     |        q10 |sbox_13         |    24|
+|8     |        q11 |sbox_14         |    16|
+|9     |        q12 |sbox_15         |    24|
+|10    |        q13 |sbox_16         |    16|
+|11    |        q14 |sbox_17         |    24|
+|12    |        q15 |sbox_18         |    16|
+|13    |        q2  |sbox_19         |    24|
+|14    |        q3  |sbox_20         |    16|
+|15    |        q4  |sbox_21         |    24|
+|16    |        q5  |sbox_22         |    16|
+|17    |        q6  |sbox_23         |    24|
+|18    |        q7  |sbox_24         |    16|
+|19    |        q8  |sbox_25         |    24|
+|20    |        q9  |sbox_26         |    16|
+|21    |    r1      |rounds          |  1624|
+|22    |    r10     |rounds_0        |  1624|
+|23    |    r11     |rounds_1        |  1624|
+|24    |    r12     |rounds_2        |  1624|
+|25    |    r13     |rounds_3        |  1624|
+|26    |    r2      |rounds_4        |  1624|
+|27    |    r3      |rounds_5        |  1624|
+|28    |    r4      |rounds_6        |  1624|
+|29    |    r5      |rounds_7        |  1624|
+|30    |    r6      |rounds_8        |  1624|
+|31    |    r7      |rounds_9        |  1624|
+|32    |    r8      |rounds_10       |  1624|
+|33    |    r9      |rounds_11       |  1624|
+|34    |  DB0       |dataBuffer      |   896|
+|35    |  DC0       |dataAddrCounter |   174|
+|36    |  KB0       |keyBuffer       |  3862|
+|37    |  KC0       |keyAddrCounter  |   217|
+|38    |  U0        |uart_tx         |   486|
++------+------------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:59 ; elapsed = 00:02:07 . Memory (MB): peak = 916.637 ; gain = 662.813
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 137 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:36 ; elapsed = 00:01:54 . Memory (MB): peak = 916.637 ; gain = 310.188
+Synthesis Optimization Complete : Time (s): cpu = 00:01:59 ; elapsed = 00:02:08 . Memory (MB): peak = 916.637 ; gain = 662.813
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 9 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  LDC => LDCE: 1 instances
+
+197 Infos, 206 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:13 ; elapsed = 00:02:22 . Memory (MB): peak = 916.637 ; gain = 668.145
+INFO: [Common 17-1381] The checkpoint 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/top.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 916.637 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.259 . Memory (MB): peak = 916.637 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Sep 12 16:48:36 2018...
