@@ -9,3 +9,9 @@
 # Log file: C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/vivado.log
 # Journal file: C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline\vivado.jou
 #-----------------------------------------------------------
+start_gui
+open_project {C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.xpr}
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
