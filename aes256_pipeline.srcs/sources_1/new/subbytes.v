@@ -16,9 +16,9 @@ assign encrypt = ~decrypt;
 always @(*)begin
     if(decrypt == 0 )begin
         //sb[127:88] = Sbox[127:88];
-        s = {Sbox[127:88],sb[87:0]};
+        s = {Sbox[127:80],sb[79:0]};
     end else if(decrypt == 1)begin
-        s = {InvSbox[127:88],sb[87:0]};
+        s = {InvSbox[127:80],sb[79:0]};
         //sb[127:88] = InvSbox[127:88];
     end
 end
@@ -29,7 +29,7 @@ sbox_mem_gen_0 SB1 (.clka(clk),.ena(encrypt),.wea(0),.addra(data[119:112]),.dina
 sbox_mem_gen_0 SB2 (.clka(clk),.ena(encrypt),.wea(0),.addra(data[111:104]),.dina(0),.douta(Sbox[111:104]));
 sbox_mem_gen_0 SB3 (.clka(clk),.ena(encrypt),.wea(0),.addra(data[103:96]),.dina(0),.douta(Sbox[103:96]));
 sbox_mem_gen_0 SB4 (.clka(clk),.ena(encrypt),.wea(0),.addra(data[95:88]),.dina(0),.douta(Sbox[95:88]));
-//sbox_mem_gen_0 SB5 (.clka(clk),.wea(0),.addra(data[87:80]),.dina(0),.douta(Sbox[87:80]));
+sbox_mem_gen_0 SB5 (.clka(clk),.ena(encrypt),.wea(0),.addra(data[87:80]),.dina(0),.douta(Sbox[87:80]));
 //sbox_mem_gen_0 SB6 (.clka(clk),.wea(0),.addra(data[79:72]),.dina(0),.douta(Sbox[79:72]));
 //sbox_mem_gen_0 SB7 (.clka(clk),.wea(0),.addra(data[71:64]),.dina(0),.douta(Sbox[71:64]));
 
@@ -49,7 +49,7 @@ invSbox_mem_gen_0 ISB1 (.clka(clk),.ena(decrypt),.wea(0),.addra(data[119:112]),.
 invSbox_mem_gen_0 ISB2 (.clka(clk),.ena(decrypt),.wea(0),.addra(data[111:104]),.dina(0),.douta(InvSbox[111:104]));
 invSbox_mem_gen_0 ISB3 (.clka(clk),.ena(decrypt),.wea(0),.addra(data[103:96]),.dina(0),.douta(InvSbox[103:96]));
 invSbox_mem_gen_0 ISB4 (.clka(clk),.ena(decrypt),.wea(0),.addra(data[95:88]),.dina(0),.douta(InvSbox[95:88]));
-//invSbox_mem_gen_0 SB5 (.clka(clk),.wea(0),.addra(data[87:80]),.dina(0),.douta(InvSbox[87:80]));
+invSbox_mem_gen_0 ISB5 (.clka(clk),.ena(decrypt),.wea(0),.addra(data[87:80]),.dina(0),.douta(InvSbox[87:80]));
 //invSbox_mem_gen_0 SB6 (.clka(clk),.wea(0),.addra(data[79:72]),.dina(0),.douta(InvSbox[79:72]));
 //invSbox_mem_gen_0 SB7 (.clka(clk),.wea(0),.addra(data[71:64]),.dina(0),.douta(InvSbox[71:64]));
 
@@ -71,7 +71,7 @@ invSbox_mem_gen_0 ISB4 (.clka(clk),.ena(decrypt),.wea(0),.addra(data[95:88]),.di
 //sbox q3( .a(data[103:96]),.c(sb[103:96]),.decrypt(decrypt) );
 
 //sbox q4( .a(data[95:88]),.c(sb[95:88]),.decrypt(decrypt) );
-sbox q5( .a(data[87:80]),.c(sb[87:80]),.decrypt(decrypt) );
+//sbox q5( .a(data[87:80]),.c(sb[87:80]),.decrypt(decrypt) );
 sbox q6( .a(data[79:72]),.c(sb[79:72]),.decrypt(decrypt) );
 sbox q7( .a(data[71:64]),.c(sb[71:64]),.decrypt(decrypt) );
 
