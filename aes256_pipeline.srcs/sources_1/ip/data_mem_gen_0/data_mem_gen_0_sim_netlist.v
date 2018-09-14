@@ -3,8 +3,8 @@
 // Tool Version: Vivado v.2017.1 (win64) Build 1846317 Fri Apr 14 18:55:03 MDT 2017
 // Date        : Wed Sep 12 14:11:13 2018
 // Host        : DESKTOP-GJPCRJL running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim {C:/College/Thesis/AES_2018/AES_After
-//               9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/ip/data_mem_gen_0/data_mem_gen_0_sim_netlist.v}
+// Command     : write_verilog -force -mode funcsim -rename_top data_mem_gen_0 -prefix
+//               data_mem_gen_0_ data_mem_gen_0_sim_netlist.v
 // Design      : data_mem_gen_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -195,7 +195,6 @@ module data_mem_gen_0
         .web(1'b0));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_generic_cstr" *) 
 module data_mem_gen_0_blk_mem_gen_generic_cstr
    (douta,
     clka,
@@ -226,7 +225,6 @@ module data_mem_gen_0_blk_mem_gen_generic_cstr
         .wea(wea));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_prim_width" *) 
 module data_mem_gen_0_blk_mem_gen_prim_width
    (douta,
     clka,
@@ -257,7 +255,6 @@ module data_mem_gen_0_blk_mem_gen_prim_width
         .wea(wea));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_prim_wrapper_init" *) 
 module data_mem_gen_0_blk_mem_gen_prim_wrapper_init
    (douta,
     clka,
@@ -409,7 +406,6 @@ module data_mem_gen_0_blk_mem_gen_prim_wrapper_init
         .WEBWE({1'b0,1'b0,wea,wea}));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_top" *) 
 module data_mem_gen_0_blk_mem_gen_top
    (douta,
     clka,
@@ -464,7 +460,7 @@ endmodule
 (* C_USE_URAM = "0" *) (* C_WEA_WIDTH = "1" *) (* C_WEB_WIDTH = "1" *) 
 (* C_WRITE_DEPTH_A = "64" *) (* C_WRITE_DEPTH_B = "64" *) (* C_WRITE_MODE_A = "WRITE_FIRST" *) 
 (* C_WRITE_MODE_B = "WRITE_FIRST" *) (* C_WRITE_WIDTH_A = "32" *) (* C_WRITE_WIDTH_B = "32" *) 
-(* C_XDEVICEFAMILY = "artix7" *) (* ORIG_REF_NAME = "blk_mem_gen_v8_3_6" *) (* downgradeipidentifiedwarnings = "yes" *) 
+(* C_XDEVICEFAMILY = "artix7" *) (* downgradeipidentifiedwarnings = "yes" *) 
 module data_mem_gen_0_blk_mem_gen_v8_3_6
    (clka,
     rsta,
@@ -712,7 +708,6 @@ module data_mem_gen_0_blk_mem_gen_v8_3_6
         .wea(wea));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_v8_3_6_synth" *) 
 module data_mem_gen_0_blk_mem_gen_v8_3_6_synth
    (douta,
     clka,

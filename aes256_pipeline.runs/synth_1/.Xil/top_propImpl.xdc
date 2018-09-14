@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:{C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/constrs_1/new/const.xdc} rfile:../../../aes256_pipeline.srcs/constrs_1/new/const.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:{C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_uart/aes256_pipeline.srcs/constrs_1/new/const.xdc} rfile:../../../aes256_pipeline.srcs/constrs_1/new/const.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:3 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN E3 [get_ports clkIn]
 set_property src_info {type:XDC file:1 line:6 export:INPUT save:INPUT read:READ} [current_design]

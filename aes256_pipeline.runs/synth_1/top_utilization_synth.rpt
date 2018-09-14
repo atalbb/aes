@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.1 (win64) Build 1846317 Fri Apr 14 18:55:03 MDT 2017
-| Date         : Thu Sep 13 13:55:48 2018
+| Date         : Fri Sep 14 17:29:55 2018
 | Host         : DESKTOP-GJPCRJL running 64-bit major release  (build 9200)
 | Command      : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
 | Design       : top
@@ -27,18 +27,18 @@ Table of Contents
 1. Slice Logic
 --------------
 
-+-------------------------+-------+-------+-----------+-------+
-|        Site Type        |  Used | Fixed | Available | Util% |
-+-------------------------+-------+-------+-----------+-------+
-| Slice LUTs*             | 18095 |     0 |     63400 | 28.54 |
-|   LUT as Logic          | 18095 |     0 |     63400 | 28.54 |
-|   LUT as Memory         |     0 |     0 |     19000 |  0.00 |
-| Slice Registers         |  6477 |     0 |    126800 |  5.11 |
-|   Register as Flip Flop |  6476 |     0 |    126800 |  5.11 |
-|   Register as Latch     |     1 |     0 |    126800 | <0.01 |
-| F7 Muxes                |  4486 |     0 |     31700 | 14.15 |
-| F8 Muxes                |  1160 |     0 |     15850 |  7.32 |
-+-------------------------+-------+-------+-----------+-------+
++-------------------------+------+-------+-----------+-------+
+|        Site Type        | Used | Fixed | Available | Util% |
++-------------------------+------+-------+-----------+-------+
+| Slice LUTs*             | 8290 |     0 |     63400 | 13.08 |
+|   LUT as Logic          | 8290 |     0 |     63400 | 13.08 |
+|   LUT as Memory         |    0 |     0 |     19000 |  0.00 |
+| Slice Registers         | 9933 |     0 |    126800 |  7.83 |
+|   Register as Flip Flop | 9932 |     0 |    126800 |  7.83 |
+|   Register as Latch     |    1 |     0 |    126800 | <0.01 |
+| F7 Muxes                |    6 |     0 |     31700 |  0.02 |
+| F8 Muxes                |    0 |     0 |     15850 |  0.00 |
++-------------------------+------+-------+-----------+-------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
 
 
@@ -55,22 +55,23 @@ Table of Contents
 | 0     |            _ |       Reset |            - |
 | 0     |          Yes |           - |            - |
 | 7     |          Yes |           - |          Set |
-| 4010  |          Yes |           - |        Reset |
+| 2218  |          Yes |           - |        Reset |
 | 0     |          Yes |         Set |            - |
-| 2460  |          Yes |       Reset |            - |
+| 7708  |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
 2. Memory
 ---------
 
-+----------------+------+-------+-----------+-------+
-|    Site Type   | Used | Fixed | Available | Util% |
-+----------------+------+-------+-----------+-------+
-| Block RAM Tile |    0 |     0 |       135 |  0.00 |
-|   RAMB36/FIFO* |    0 |     0 |       135 |  0.00 |
-|   RAMB18       |    0 |     0 |       270 |  0.00 |
-+----------------+------+-------+-----------+-------+
++-------------------+------+-------+-----------+-------+
+|     Site Type     | Used | Fixed | Available | Util% |
++-------------------+------+-------+-----------+-------+
+| Block RAM Tile    |  112 |     0 |       135 | 82.96 |
+|   RAMB36/FIFO*    |    0 |     0 |       135 |  0.00 |
+|   RAMB18          |  224 |     0 |       270 | 82.96 |
+|     RAMB18E1 only |  224 |       |           |       |
++-------------------+------+-------+-----------+-------+
 * Note: Each Block RAM Tile only has one FIFO logic available and therefore can accommodate only one FIFO36E1 or one FIFO18E1. However, if a FIFO18E1 occupies a Block RAM Tile, that tile can still accommodate a RAMB18E1
 
 
@@ -143,40 +144,38 @@ Table of Contents
 7. Primitives
 -------------
 
-+----------+-------+---------------------+
-| Ref Name |  Used | Functional Category |
-+----------+-------+---------------------+
-| LUT6     | 14425 |                 LUT |
-| MUXF7    |  4486 |               MuxFx |
-| FDCE     |  4009 |        Flop & Latch |
-| FDRE     |  2460 |        Flop & Latch |
-| LUT5     |  1689 |                 LUT |
-| LUT4     |  1483 |                 LUT |
-| LUT3     |  1482 |                 LUT |
-| MUXF8    |  1160 |               MuxFx |
-| LUT2     |   593 |                 LUT |
-| LUT1     |    49 |                 LUT |
-| FDPE     |     7 |        Flop & Latch |
-| IBUF     |     5 |                  IO |
-| CARRY4   |     3 |          CarryLogic |
-| OBUFT    |     1 |                  IO |
-| OBUF     |     1 |                  IO |
-| LDCE     |     1 |        Flop & Latch |
-| BUFG     |     1 |               Clock |
-+----------+-------+---------------------+
++----------+------+---------------------+
+| Ref Name | Used | Functional Category |
++----------+------+---------------------+
+| FDRE     | 7708 |        Flop & Latch |
+| LUT6     | 4270 |                 LUT |
+| LUT3     | 2973 |                 LUT |
+| FDCE     | 2217 |        Flop & Latch |
+| LUT5     | 1481 |                 LUT |
+| LUT2     | 1346 |                 LUT |
+| LUT4     |  576 |                 LUT |
+| RAMB18E1 |  224 |        Block Memory |
+| LUT1     |   34 |                 LUT |
+| FDPE     |    7 |        Flop & Latch |
+| MUXF7    |    6 |               MuxFx |
+| IBUF     |    5 |                  IO |
+| CARRY4   |    3 |          CarryLogic |
+| OBUFT    |    1 |                  IO |
+| OBUF     |    1 |                  IO |
+| LDCE     |    1 |        Flop & Latch |
+| BUFG     |    1 |               Clock |
++----------+------+---------------------+
 
 
 8. Black Boxes
 --------------
 
-+-------------------+------+
-|      Ref Name     | Used |
-+-------------------+------+
-| sbox_mem_gen_0    |   84 |
-| invSbox_mem_gen_0 |   84 |
-| key_mem_gen_0     |    1 |
-| data_mem_gen_0    |    1 |
-+-------------------+------+
++----------------+------+
+|    Ref Name    | Used |
++----------------+------+
+| key_mem_gen_0  |    1 |
+| data_mem_gen_0 |    1 |
++----------------+------+
 
 
 9. Instantiated Netlists

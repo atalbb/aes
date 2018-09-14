@@ -1,10 +1,10 @@
 -- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2017.1 (win64) Build 1846317 Fri Apr 14 18:55:03 MDT 2017
--- Date        : Wed Sep 12 14:24:28 2018
+-- Date        : Wed Sep 12 14:24:27 2018
 -- Host        : DESKTOP-GJPCRJL running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim {C:/College/Thesis/AES_2018/AES_After
---               9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/ip/key_mem_gen_0/key_mem_gen_0_sim_netlist.vhdl}
+-- Command     : write_vhdl -force -mode funcsim -rename_top key_mem_gen_0 -prefix
+--               key_mem_gen_0_ key_mem_gen_0_sim_netlist.vhdl
 -- Design      : key_mem_gen_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -23,8 +23,6 @@ entity key_mem_gen_0_blk_mem_gen_prim_wrapper_init is
     dina : in STD_LOGIC_VECTOR ( 31 downto 0 );
     wea : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of key_mem_gen_0_blk_mem_gen_prim_wrapper_init : entity is "blk_mem_gen_prim_wrapper_init";
 end key_mem_gen_0_blk_mem_gen_prim_wrapper_init;
 
 architecture STRUCTURE of key_mem_gen_0_blk_mem_gen_prim_wrapper_init is
@@ -184,8 +182,6 @@ entity key_mem_gen_0_blk_mem_gen_prim_width is
     dina : in STD_LOGIC_VECTOR ( 31 downto 0 );
     wea : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of key_mem_gen_0_blk_mem_gen_prim_width : entity is "blk_mem_gen_prim_width";
 end key_mem_gen_0_blk_mem_gen_prim_width;
 
 architecture STRUCTURE of key_mem_gen_0_blk_mem_gen_prim_width is
@@ -213,8 +209,6 @@ entity key_mem_gen_0_blk_mem_gen_generic_cstr is
     dina : in STD_LOGIC_VECTOR ( 31 downto 0 );
     wea : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of key_mem_gen_0_blk_mem_gen_generic_cstr : entity is "blk_mem_gen_generic_cstr";
 end key_mem_gen_0_blk_mem_gen_generic_cstr;
 
 architecture STRUCTURE of key_mem_gen_0_blk_mem_gen_generic_cstr is
@@ -242,8 +236,6 @@ entity key_mem_gen_0_blk_mem_gen_top is
     dina : in STD_LOGIC_VECTOR ( 31 downto 0 );
     wea : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of key_mem_gen_0_blk_mem_gen_top : entity is "blk_mem_gen_top";
 end key_mem_gen_0_blk_mem_gen_top;
 
 architecture STRUCTURE of key_mem_gen_0_blk_mem_gen_top is
@@ -271,8 +263,6 @@ entity key_mem_gen_0_blk_mem_gen_v8_3_6_synth is
     dina : in STD_LOGIC_VECTOR ( 31 downto 0 );
     wea : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of key_mem_gen_0_blk_mem_gen_v8_3_6_synth : entity is "blk_mem_gen_v8_3_6_synth";
 end key_mem_gen_0_blk_mem_gen_v8_3_6_synth;
 
 architecture STRUCTURE of key_mem_gen_0_blk_mem_gen_v8_3_6_synth is
@@ -503,8 +493,6 @@ entity key_mem_gen_0_blk_mem_gen_v8_3_6 is
   attribute C_WRITE_WIDTH_B of key_mem_gen_0_blk_mem_gen_v8_3_6 : entity is 32;
   attribute C_XDEVICEFAMILY : string;
   attribute C_XDEVICEFAMILY of key_mem_gen_0_blk_mem_gen_v8_3_6 : entity is "artix7";
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of key_mem_gen_0_blk_mem_gen_v8_3_6 : entity is "blk_mem_gen_v8_3_6";
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of key_mem_gen_0_blk_mem_gen_v8_3_6 : entity is "yes";
 end key_mem_gen_0_blk_mem_gen_v8_3_6;

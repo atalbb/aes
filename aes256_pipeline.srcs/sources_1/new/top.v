@@ -38,9 +38,9 @@ wire [127:0]dataO;
 wire [1919:0]keyO;
 //wire [127:0]keyO,keyBufOut;
 //wire [127:0]dataO,dataBufOut;
-wire en,dataBufReady,keyBufReady;
+wire en;
+wire dataBufReady,keyBufReady;
 wire [127:0]finalData;
-//wire [127:0]finalData;
 //wire finalDone;
 assign en = (startIn > 0)?1:0;
 //assign _data = dataout;
@@ -90,15 +90,25 @@ keyBuffer KB0(.clk(clkIn),
            );
 aescore AES0(.clk(clkIn),
             .reset(resetIn),
+            .ready(dataBufReady),
             .start(startIn),
             .keyIn(keyO),
             .dataIn(dataO),
             .dataOut(finalData),
             .done(finalDone)
               );
-uart_tx U0(.clk(clkIn),
-        .reset(resetIn),
-        .dataIn(finalData),
-        .ready(txDReady),
-        .TxD(txD));
+uart_tx U0   (.clk(clkIn),
+              .reset(resetIn),
+              .dataIn(finalData),
+              .ready(txDReady),
+              .TxD(txD));
+//aescore AES0(.clk(clkIn),
+//             .reset(resetIn),
+//             .start(startIn),
+//             .keyIn(keyO),
+//             .dataIn(dataO),
+//             .dataOut(finalData),
+//             //.keyOut(finalKey),
+//             .done(finalDone)
+//               );
 endmodule

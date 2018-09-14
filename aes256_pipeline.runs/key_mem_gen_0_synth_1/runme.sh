@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/key_mem_gen_0_synth_1'
+HD_PWD='C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_uart/aes256_pipeline.runs/key_mem_gen_0_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

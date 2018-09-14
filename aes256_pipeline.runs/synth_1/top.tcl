@@ -8,48 +8,40 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir {C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.cache/wt} [current_project]
-set_property parent.project_path {C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.xpr} [current_project]
+set_property webtalk.parent_dir {C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_uart/aes256_pipeline.cache/wt} [current_project]
+set_property parent.project_path {C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_uart/aes256_pipeline.xpr} [current_project]
 set_property XPM_LIBRARIES XPM_MEMORY [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part digilentinc.com:nexys4:part0:1.1 [current_project]
-set_property ip_output_repo {c:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.cache/ip} [current_project]
+set_property ip_output_repo {c:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_uart/aes256_pipeline.cache/ip} [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-add_files {{C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/data.coe}}
-add_files {{C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/key.coe}}
-add_files {{C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/sbox.coe}}
-add_files {{C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/invSbox.coe}}
+add_files {{C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_uart/data.coe}}
+add_files {{C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_uart/key.coe}}
+add_files {{C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_uart/sbox.coe}}
+add_files {{C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_uart/invSbox.coe}}
 read_verilog -library xil_defaultlib {
-  {C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/aescore.v}
-  {C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/dataAddrCounter.v}
-  {C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/dataBuffer.v}
-  {C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/keyAddrCounter.v}
-  {C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/keyBuffer.v}
-  {C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/mixcolumn.v}
-  {C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/rounds.v}
-  {C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/rounndlast.v}
-  {C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/sbox.v}
-  {C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/shiftrow.v}
-  {C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/subbytes.v}
-  {C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/uart_tx.v}
-  {C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/top.v}
+  {C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_uart/aes256_pipeline.srcs/sources_1/new/aescore.v}
+  {C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_uart/aes256_pipeline.srcs/sources_1/new/dataAddrCounter.v}
+  {C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_uart/aes256_pipeline.srcs/sources_1/new/dataBuffer.v}
+  {C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_uart/aes256_pipeline.srcs/sources_1/new/keyAddrCounter.v}
+  {C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_uart/aes256_pipeline.srcs/sources_1/new/keyBuffer.v}
+  {C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_uart/aes256_pipeline.srcs/sources_1/new/mixcolumn.v}
+  {C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_uart/aes256_pipeline.srcs/sources_1/new/rounds.v}
+  {C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_uart/aes256_pipeline.srcs/sources_1/new/rounndlast.v}
+  {C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_uart/aes256_pipeline.srcs/sources_1/new/sbox.v}
+  {C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_uart/aes256_pipeline.srcs/sources_1/new/shiftrow.v}
+  {C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_uart/aes256_pipeline.srcs/sources_1/new/subbytes.v}
+  {C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_uart/aes256_pipeline.srcs/sources_1/new/uart_tx.v}
+  {C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_uart/aes256_pipeline.srcs/sources_1/new/top.v}
 }
-read_ip -quiet {{C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/ip/invSbox_mem_gen_0/invSbox_mem_gen_0.xci}}
-set_property used_in_implementation false [get_files -all {{c:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/ip/invSbox_mem_gen_0/invSbox_mem_gen_0_ooc.xdc}}]
-set_property is_locked true [get_files {{C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/ip/invSbox_mem_gen_0/invSbox_mem_gen_0.xci}}]
+read_ip -quiet {{C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_uart/aes256_pipeline.srcs/sources_1/ip/data_mem_gen_0/data_mem_gen_0.xci}}
+set_property used_in_implementation false [get_files -all {{c:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_uart/aes256_pipeline.srcs/sources_1/ip/data_mem_gen_0/data_mem_gen_0_ooc.xdc}}]
+set_property is_locked true [get_files {{C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_uart/aes256_pipeline.srcs/sources_1/ip/data_mem_gen_0/data_mem_gen_0.xci}}]
 
-read_ip -quiet {{C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/ip/sbox_mem_gen_0/sbox_mem_gen_0.xci}}
-set_property used_in_implementation false [get_files -all {{c:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/ip/sbox_mem_gen_0/sbox_mem_gen_0_ooc.xdc}}]
-set_property is_locked true [get_files {{C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/ip/sbox_mem_gen_0/sbox_mem_gen_0.xci}}]
-
-read_ip -quiet {{C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/ip/data_mem_gen_0/data_mem_gen_0.xci}}
-set_property used_in_implementation false [get_files -all {{c:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/ip/data_mem_gen_0/data_mem_gen_0_ooc.xdc}}]
-set_property is_locked true [get_files {{C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/ip/data_mem_gen_0/data_mem_gen_0.xci}}]
-
-read_ip -quiet {{C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/ip/key_mem_gen_0/key_mem_gen_0.xci}}
-set_property used_in_implementation false [get_files -all {{c:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/ip/key_mem_gen_0/key_mem_gen_0_ooc.xdc}}]
-set_property is_locked true [get_files {{C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/ip/key_mem_gen_0/key_mem_gen_0.xci}}]
+read_ip -quiet {{C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_uart/aes256_pipeline.srcs/sources_1/ip/key_mem_gen_0/key_mem_gen_0.xci}}
+set_property used_in_implementation false [get_files -all {{c:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_uart/aes256_pipeline.srcs/sources_1/ip/key_mem_gen_0/key_mem_gen_0_ooc.xdc}}]
+set_property is_locked true [get_files {{C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_uart/aes256_pipeline.srcs/sources_1/ip/key_mem_gen_0/key_mem_gen_0.xci}}]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -59,11 +51,9 @@ set_property is_locked true [get_files {{C:/College/Thesis/AES_2018/AES_After 9_
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc {{C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/constrs_1/new/const.xdc}}
-set_property used_in_implementation false [get_files {{C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/constrs_1/new/const.xdc}}]
+read_xdc {{C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_uart/aes256_pipeline.srcs/constrs_1/new/const.xdc}}
+set_property used_in_implementation false [get_files {{C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_uart/aes256_pipeline.srcs/constrs_1/new/const.xdc}}]
 
-read_xdc dont_touch.xdc
-set_property used_in_implementation false [get_files dont_touch.xdc]
 
 synth_design -top top -part xc7a100tcsg324-1
 

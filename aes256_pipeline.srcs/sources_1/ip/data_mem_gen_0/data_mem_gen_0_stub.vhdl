@@ -3,8 +3,8 @@
 -- Tool Version: Vivado v.2017.1 (win64) Build 1846317 Fri Apr 14 18:55:03 MDT 2017
 -- Date        : Wed Sep 12 14:11:13 2018
 -- Host        : DESKTOP-GJPCRJL running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode synth_stub {C:/College/Thesis/AES_2018/AES_After
---               9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/ip/data_mem_gen_0/data_mem_gen_0_stub.vhdl}
+-- Command     : write_vhdl -force -mode synth_stub -rename_top data_mem_gen_0 -prefix
+--               data_mem_gen_0_ data_mem_gen_0_stub.vhdl
 -- Design      : data_mem_gen_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7a100tcsg324-1
