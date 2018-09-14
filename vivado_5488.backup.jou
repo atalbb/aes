@@ -1,0 +1,81 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Tue Sep 11 14:00:40 2018
+# Process ID: 5488
+# Current directory: C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6268 C:\College\Thesis\AES_2018\AES_After 9_10_2018\aes256_pipeline\aes256_pipeline.xpr
+# Log file: C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/vivado.log
+# Journal file: C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config C:/College/Thesis/AES_2018/AES_After
+open_wave_config 9_10_2018/aes256_pipeline/tb_behav.wcfg
+source tb.tcl
+close_sim
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_simulation
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_simulation
+open_wave_config C:/College/Thesis/AES_2018/AES_After
+open_wave_config 9_10_2018/aes256_pipeline/tb_behav.wcfg
+source tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/College/Thesis/AES_2018/AES_After
+open_wave_config 9_10_2018/aes256_pipeline/tb_behav.wcfg
+source tb.tcl
+close_sim
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_simulation
+open_wave_config C:/College/Thesis/AES_2018/AES_After
+open_wave_config 9_10_2018/aes256_pipeline/tb_behav.wcfg
+source tb.tcl
+close_sim
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_simulation
+open_wave_config C:/College/Thesis/AES_2018/AES_After
+open_wave_config 9_10_2018/aes256_pipeline/tb_behav.wcfg
+source tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/College/Thesis/AES_2018/AES_After
+open_wave_config 9_10_2018/aes256_pipeline/tb_behav.wcfg
+source tb.tcl
+add_wave {{/tb/T/KB0/keyOut}} 
+save_wave_config {C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/tb_behav1.wcfg}
+add_files -fileset sim_1 -norecurse {{C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/tb_behav1.wcfg}}
+set_property xsim.view {{C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/tb_behav.wcfg} {C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/tb_behav1.wcfg}} [get_filesets sim_1]
+close_sim
+launch_simulation
+open_wave_config C:/College/Thesis/AES_2018/AES_After
+open_wave_config 9_10_2018/aes256_pipeline/tb_behav.wcfg
+open_wave_config C:/College/Thesis/AES_2018/AES_After
+open_wave_config 9_10_2018/aes256_pipeline/tb_behav1.wcfg
+source tb.tcl
+launch_simulation -mode post-synthesis -type timing
+open_wave_config C:/College/Thesis/AES_2018/AES_After
+open_wave_config 9_10_2018/aes256_pipeline/tb_behav.wcfg
+open_wave_config C:/College/Thesis/AES_2018/AES_After
+open_wave_config 9_10_2018/aes256_pipeline/tb_behav1.wcfg
+source tb.tcl

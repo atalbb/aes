@@ -1,0 +1,2473 @@
+
+*** Running vivado
+    with args -log top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+
+
+****** Vivado v2017.1 (64-bit)
+  **** SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+  **** IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source top.tcl -notrace
+Command: synth_design -top top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 12232 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 336.926 ; gain = 82.742
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-638] synthesizing module 'keyAddrCounter' [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/keyAddrCounter.v:23]
+	Parameter NDATA1 bound to: 63 - type: integer 
+	Parameter NDATA2 bound to: 121 - type: integer 
+WARNING: [Synth 8-5788] Register keyAddrCount_reg in module keyAddrCounter is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/keyAddrCounter.v:30]
+INFO: [Synth 8-256] done synthesizing module 'keyAddrCounter' (1#1) [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/keyAddrCounter.v:23]
+WARNING: [Synth 8-689] width (128) of port connection 'keyAddrCount' does not match port width (8) of module 'keyAddrCounter' [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/top.v:51]
+INFO: [Synth 8-638] synthesizing module 'dataAddrCounter' [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/dataAddrCounter.v:21]
+	Parameter NDATA bound to: 17 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'dataAddrCounter' (2#1) [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/dataAddrCounter.v:21]
+WARNING: [Synth 8-689] width (128) of port connection 'dataAddrCount' does not match port width (8) of module 'dataAddrCounter' [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/top.v:56]
+INFO: [Synth 8-638] synthesizing module 'key_mem_gen_0' [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.runs/synth_1/.Xil/Vivado-12052-DESKTOP-GJPCRJL/realtime/key_mem_gen_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'key_mem_gen_0' (3#1) [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.runs/synth_1/.Xil/Vivado-12052-DESKTOP-GJPCRJL/realtime/key_mem_gen_0_stub.v:6]
+WARNING: [Synth 8-689] width (128) of port connection 'addra' does not match port width (8) of module 'key_mem_gen_0' [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/top.v:62]
+INFO: [Synth 8-638] synthesizing module 'data_mem_gen_0' [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.runs/synth_1/.Xil/Vivado-12052-DESKTOP-GJPCRJL/realtime/data_mem_gen_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'data_mem_gen_0' (4#1) [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.runs/synth_1/.Xil/Vivado-12052-DESKTOP-GJPCRJL/realtime/data_mem_gen_0_stub.v:6]
+WARNING: [Synth 8-689] width (128) of port connection 'addra' does not match port width (8) of module 'data_mem_gen_0' [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/top.v:70]
+INFO: [Synth 8-638] synthesizing module 'dataBuffer' [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/dataBuffer.v:23]
+WARNING: [Synth 8-6014] Unused sequential element RAM_reg[16] was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/dataBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[15] in module dataBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/dataBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[14] in module dataBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/dataBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[13] in module dataBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/dataBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[12] in module dataBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/dataBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[11] in module dataBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/dataBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[10] in module dataBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/dataBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[9] in module dataBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/dataBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[8] in module dataBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/dataBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[7] in module dataBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/dataBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[6] in module dataBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/dataBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[5] in module dataBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/dataBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[4] in module dataBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/dataBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[3] in module dataBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/dataBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[2] in module dataBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/dataBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[1] in module dataBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/dataBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[0] in module dataBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/dataBuffer.v:39]
+INFO: [Synth 8-256] done synthesizing module 'dataBuffer' (5#1) [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/dataBuffer.v:23]
+WARNING: [Synth 8-689] width (128) of port connection 'addr' does not match port width (8) of module 'dataBuffer' [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/top.v:77]
+INFO: [Synth 8-638] synthesizing module 'keyBuffer' [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:23]
+WARNING: [Synth 8-6014] Unused sequential element RAM_reg[62] was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-6014] Unused sequential element RAM_reg[61] was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-6014] Unused sequential element RAM_reg[60] was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[59] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[58] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[57] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[56] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[55] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[54] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[53] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[52] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[51] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[50] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[49] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[48] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[47] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[46] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[45] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[44] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[43] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[42] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[41] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[40] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[39] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[38] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[37] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[36] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[35] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[34] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[33] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[32] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[31] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[30] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[29] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[28] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[27] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[26] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[25] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[24] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[23] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[22] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[21] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[20] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[19] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[18] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[17] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[16] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[15] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[14] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[13] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[12] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[11] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[10] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[9] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[8] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[7] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[6] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[5] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[4] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[3] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[2] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[1] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+WARNING: [Synth 8-5788] Register RAM_reg[0] in module keyBuffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:39]
+INFO: [Synth 8-256] done synthesizing module 'keyBuffer' (6#1) [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:23]
+WARNING: [Synth 8-689] width (128) of port connection 'addr' does not match port width (8) of module 'keyBuffer' [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/top.v:85]
+INFO: [Synth 8-638] synthesizing module 'aescore' [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/aescore.v:23]
+INFO: [Synth 8-638] synthesizing module 'rounds' [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounds.v:3]
+INFO: [Synth 8-638] synthesizing module 'subbytes' [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/subbytes.v:30]
+INFO: [Synth 8-638] synthesizing module 'sbox' [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/sbox.v:23]
+INFO: [Synth 8-256] done synthesizing module 'sbox' (7#1) [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/sbox.v:23]
+INFO: [Synth 8-256] done synthesizing module 'subbytes' (8#1) [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/subbytes.v:30]
+INFO: [Synth 8-638] synthesizing module 'shiftrow' [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/shiftrow.v:3]
+INFO: [Synth 8-256] done synthesizing module 'shiftrow' (9#1) [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/shiftrow.v:3]
+INFO: [Synth 8-638] synthesizing module 'mixcolumn' [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/mixcolumn.v:3]
+INFO: [Synth 8-256] done synthesizing module 'mixcolumn' (10#1) [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/mixcolumn.v:3]
+INFO: [Synth 8-256] done synthesizing module 'rounds' (11#1) [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounds.v:3]
+INFO: [Synth 8-638] synthesizing module 'rounndlast' [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounndlast.v:3]
+INFO: [Synth 8-256] done synthesizing module 'rounndlast' (12#1) [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounndlast.v:3]
+WARNING: [Synth 8-3848] Net done in module/entity aescore does not have driver. [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/aescore.v:31]
+INFO: [Synth 8-256] done synthesizing module 'aescore' (13#1) [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/aescore.v:23]
+INFO: [Synth 8-256] done synthesizing module 'top' (14#1) [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/top.v:23]
+WARNING: [Synth 8-3331] design subbytes has unconnected port clk
+WARNING: [Synth 8-3331] design aescore has unconnected port done
+WARNING: [Synth 8-3331] design aescore has unconnected port ready
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 405.281 ; gain = 151.098
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 405.281 ; gain = 151.098
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.runs/synth_1/.Xil/Vivado-12052-DESKTOP-GJPCRJL/dcp5/data_mem_gen_0_in_context.xdc] for cell 'D0'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.runs/synth_1/.Xil/Vivado-12052-DESKTOP-GJPCRJL/dcp5/data_mem_gen_0_in_context.xdc] for cell 'D0'
+Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.runs/synth_1/.Xil/Vivado-12052-DESKTOP-GJPCRJL/dcp7/key_mem_gen_0_in_context.xdc] for cell 'K0'
+Finished Parsing XDC File [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.runs/synth_1/.Xil/Vivado-12052-DESKTOP-GJPCRJL/dcp7/key_mem_gen_0_in_context.xdc] for cell 'K0'
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.048 . Memory (MB): peak = 783.141 ; gain = 0.156
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 794.309 ; gain = 540.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 794.309 ; gain = 540.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for D0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for K0. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 794.309 ; gain = 540.125
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "keyAddrCount" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element dataAddrCount_reg was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/dataAddrCounter.v:29]
+INFO: [Synth 8-5545] ROM "RAM_reg[15]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[14]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[13]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[12]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[11]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[10]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[9]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[8]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[7]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[6]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[5]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[4]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "dataOut" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "RAM_reg[59]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[59]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[58]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[58]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[57]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[57]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[56]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[56]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[55]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[55]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[54]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[54]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[53]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[53]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[52]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[52]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[51]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[51]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[50]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[50]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[49]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[49]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[48]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[48]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[47]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[47]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[46]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[46]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[45]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[45]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[44]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[44]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[43]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[43]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[42]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[42]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[41]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[41]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[40]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[40]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[39]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[39]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[38]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[38]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[37]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[37]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[36]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[36]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[35]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[35]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[34]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[34]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[33]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[33]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[32]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[32]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[31]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[31]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[30]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[30]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[29]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[29]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[28]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[28]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[27]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[27]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[26]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[26]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[25]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[25]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[24]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[24]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[23]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[23]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[22]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[22]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[21]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[21]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[20]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[20]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[19]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[19]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[18]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "RAM_reg[18]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Common 17-14] Message 'Synth 8-5545' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-5546] ROM "keyOut" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "keyOut" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "decrypt" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 794.309 ; gain = 540.125
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |aescore__GB0  |           1|     33688|
+|2     |aescore__GB1  |           1|     13496|
+|3     |aescore__GB2  |           1|     13373|
+|4     |top__GC0      |           1|     15077|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3538] Detected potentially large (wide) register keyOut_reg [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:34]
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
++---XORs : 
+	   2 Input    128 Bit         XORs := 15    
+	   2 Input      8 Bit         XORs := 910   
+	   3 Input      8 Bit         XORs := 26    
+	   8 Input      8 Bit         XORs := 117   
+	   9 Input      8 Bit         XORs := 78    
+	   7 Input      8 Bit         XORs := 13    
+	   5 Input      8 Bit         XORs := 91    
+	   4 Input      8 Bit         XORs := 104   
++---Registers : 
+	             1920 Bit    Registers := 1     
+	              128 Bit    Registers := 56    
+	               32 Bit    Registers := 76    
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input    128 Bit        Muxes := 14    
+	   4 Input    128 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 338   
+	   2 Input      6 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 64    
+	   2 Input      1 Bit        Muxes := 142   
+	   4 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3538] Detected potentially large (wide) register keyOut_reg [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/keyBuffer.v:34]
+Hierarchical RTL Component report 
+Module sbox__1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__3 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__4 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__5 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__6 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__7 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__8 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__9 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__10 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__11 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__12 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__13 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__14 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__15 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__128 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module shiftrow__8 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 8     
+Module rounndlast 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input    128 Bit         XORs := 1     
++---Registers : 
+	              128 Bit    Registers := 3     
+Module sbox__47 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__46 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__45 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__44 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__43 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__42 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__41 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__40 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__39 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__38 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__37 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__36 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__35 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__34 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__33 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__32 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module shiftrow__2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 8     
+Module mixcolumn__1 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 70    
+	   3 Input      8 Bit         XORs := 2     
+	   8 Input      8 Bit         XORs := 9     
+	   9 Input      8 Bit         XORs := 6     
+	   7 Input      8 Bit         XORs := 1     
+	   5 Input      8 Bit         XORs := 7     
+	   4 Input      8 Bit         XORs := 8     
++---Muxes : 
+	   2 Input    128 Bit        Muxes := 1     
+Module rounds__1 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input    128 Bit         XORs := 1     
++---Registers : 
+	              128 Bit    Registers := 4     
+Module sbox__63 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__62 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__61 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__60 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__59 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__58 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__57 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__56 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__55 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__54 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__53 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__52 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__51 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__50 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__49 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__48 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module shiftrow__3 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 8     
+Module mixcolumn__2 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 70    
+	   3 Input      8 Bit         XORs := 2     
+	   8 Input      8 Bit         XORs := 9     
+	   9 Input      8 Bit         XORs := 6     
+	   7 Input      8 Bit         XORs := 1     
+	   5 Input      8 Bit         XORs := 7     
+	   4 Input      8 Bit         XORs := 8     
++---Muxes : 
+	   2 Input    128 Bit        Muxes := 1     
+Module rounds__2 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input    128 Bit         XORs := 1     
++---Registers : 
+	              128 Bit    Registers := 4     
+Module sbox__79 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__78 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__77 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__76 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__75 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__74 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__73 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__72 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__71 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__70 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__69 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__68 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__67 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__66 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__65 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__64 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module shiftrow__4 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 8     
+Module mixcolumn__3 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 70    
+	   3 Input      8 Bit         XORs := 2     
+	   8 Input      8 Bit         XORs := 9     
+	   9 Input      8 Bit         XORs := 6     
+	   7 Input      8 Bit         XORs := 1     
+	   5 Input      8 Bit         XORs := 7     
+	   4 Input      8 Bit         XORs := 8     
++---Muxes : 
+	   2 Input    128 Bit        Muxes := 1     
+Module rounds__3 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input    128 Bit         XORs := 1     
++---Registers : 
+	              128 Bit    Registers := 4     
+Module sbox__95 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__94 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__93 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__92 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__91 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__90 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__89 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__88 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__87 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__86 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__85 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__84 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__83 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__82 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__81 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__80 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module shiftrow__5 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 8     
+Module mixcolumn__4 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 70    
+	   3 Input      8 Bit         XORs := 2     
+	   8 Input      8 Bit         XORs := 9     
+	   9 Input      8 Bit         XORs := 6     
+	   7 Input      8 Bit         XORs := 1     
+	   5 Input      8 Bit         XORs := 7     
+	   4 Input      8 Bit         XORs := 8     
++---Muxes : 
+	   2 Input    128 Bit        Muxes := 1     
+Module rounds__4 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input    128 Bit         XORs := 1     
++---Registers : 
+	              128 Bit    Registers := 4     
+Module sbox__111 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__110 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__109 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__108 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__107 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__106 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__105 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__104 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__103 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__102 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__101 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__100 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__99 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__98 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__97 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__96 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module shiftrow__6 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 8     
+Module mixcolumn__5 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 70    
+	   3 Input      8 Bit         XORs := 2     
+	   8 Input      8 Bit         XORs := 9     
+	   9 Input      8 Bit         XORs := 6     
+	   7 Input      8 Bit         XORs := 1     
+	   5 Input      8 Bit         XORs := 7     
+	   4 Input      8 Bit         XORs := 8     
++---Muxes : 
+	   2 Input    128 Bit        Muxes := 1     
+Module rounds__5 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input    128 Bit         XORs := 1     
++---Registers : 
+	              128 Bit    Registers := 4     
+Module sbox__127 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__126 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__125 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__124 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__123 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__122 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__121 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__120 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__119 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__118 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__117 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__116 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__115 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__114 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__113 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__112 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module shiftrow__7 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 8     
+Module mixcolumn__6 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 70    
+	   3 Input      8 Bit         XORs := 2     
+	   8 Input      8 Bit         XORs := 9     
+	   9 Input      8 Bit         XORs := 6     
+	   7 Input      8 Bit         XORs := 1     
+	   5 Input      8 Bit         XORs := 7     
+	   4 Input      8 Bit         XORs := 8     
++---Muxes : 
+	   2 Input    128 Bit        Muxes := 1     
+Module rounds__6 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input    128 Bit         XORs := 1     
++---Registers : 
+	              128 Bit    Registers := 4     
+Module sbox__31 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__30 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__29 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__28 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__27 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__26 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__25 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__24 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__23 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__22 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__21 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__20 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__19 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__18 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__17 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__16 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module shiftrow__1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 8     
+Module mixcolumn__7 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 70    
+	   3 Input      8 Bit         XORs := 2     
+	   8 Input      8 Bit         XORs := 9     
+	   9 Input      8 Bit         XORs := 6     
+	   7 Input      8 Bit         XORs := 1     
+	   5 Input      8 Bit         XORs := 7     
+	   4 Input      8 Bit         XORs := 8     
++---Muxes : 
+	   2 Input    128 Bit        Muxes := 1     
+Module rounds__7 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input    128 Bit         XORs := 1     
++---Registers : 
+	              128 Bit    Registers := 4     
+Module sbox__159 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__158 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__157 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__156 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__155 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__154 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__153 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__152 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__151 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__150 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__149 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__148 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__147 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__146 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__145 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__144 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module shiftrow__9 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 8     
+Module mixcolumn__8 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 70    
+	   3 Input      8 Bit         XORs := 2     
+	   8 Input      8 Bit         XORs := 9     
+	   9 Input      8 Bit         XORs := 6     
+	   7 Input      8 Bit         XORs := 1     
+	   5 Input      8 Bit         XORs := 7     
+	   4 Input      8 Bit         XORs := 8     
++---Muxes : 
+	   2 Input    128 Bit        Muxes := 1     
+Module rounds__8 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input    128 Bit         XORs := 1     
++---Registers : 
+	              128 Bit    Registers := 4     
+Module sbox__175 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__174 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__173 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__172 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__171 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__170 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__169 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__168 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__167 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__166 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__165 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__164 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__163 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__162 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__161 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__160 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module shiftrow__10 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 8     
+Module mixcolumn__9 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 70    
+	   3 Input      8 Bit         XORs := 2     
+	   8 Input      8 Bit         XORs := 9     
+	   9 Input      8 Bit         XORs := 6     
+	   7 Input      8 Bit         XORs := 1     
+	   5 Input      8 Bit         XORs := 7     
+	   4 Input      8 Bit         XORs := 8     
++---Muxes : 
+	   2 Input    128 Bit        Muxes := 1     
+Module rounds__9 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input    128 Bit         XORs := 1     
++---Registers : 
+	              128 Bit    Registers := 4     
+Module sbox__129 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__130 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__131 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__132 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__133 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__134 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__135 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__136 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__137 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__138 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__139 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__140 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__141 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__142 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__143 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__176 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module shiftrow__11 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 8     
+Module mixcolumn__10 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 70    
+	   3 Input      8 Bit         XORs := 2     
+	   8 Input      8 Bit         XORs := 9     
+	   9 Input      8 Bit         XORs := 6     
+	   7 Input      8 Bit         XORs := 1     
+	   5 Input      8 Bit         XORs := 7     
+	   4 Input      8 Bit         XORs := 8     
++---Muxes : 
+	   2 Input    128 Bit        Muxes := 1     
+Module rounds__10 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input    128 Bit         XORs := 1     
++---Registers : 
+	              128 Bit    Registers := 4     
+Module sbox__207 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__206 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__205 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__204 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__203 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__202 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__201 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__200 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__199 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__198 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__197 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__196 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__195 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__194 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__193 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__192 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module shiftrow__12 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 8     
+Module mixcolumn__11 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 70    
+	   3 Input      8 Bit         XORs := 2     
+	   8 Input      8 Bit         XORs := 9     
+	   9 Input      8 Bit         XORs := 6     
+	   7 Input      8 Bit         XORs := 1     
+	   5 Input      8 Bit         XORs := 7     
+	   4 Input      8 Bit         XORs := 8     
++---Muxes : 
+	   2 Input    128 Bit        Muxes := 1     
+Module rounds__11 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input    128 Bit         XORs := 1     
++---Registers : 
+	              128 Bit    Registers := 4     
+Module sbox__223 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__222 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__221 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__220 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__219 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__218 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__217 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__216 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__215 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__214 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__213 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__212 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__211 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__210 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__209 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__208 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module shiftrow__13 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 8     
+Module mixcolumn__12 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 70    
+	   3 Input      8 Bit         XORs := 2     
+	   8 Input      8 Bit         XORs := 9     
+	   9 Input      8 Bit         XORs := 6     
+	   7 Input      8 Bit         XORs := 1     
+	   5 Input      8 Bit         XORs := 7     
+	   4 Input      8 Bit         XORs := 8     
++---Muxes : 
+	   2 Input    128 Bit        Muxes := 1     
+Module rounds__12 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input    128 Bit         XORs := 1     
++---Registers : 
+	              128 Bit    Registers := 4     
+Module sbox__177 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__178 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__179 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__180 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__181 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__182 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__183 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__184 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__185 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__186 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__187 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__188 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__189 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__190 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox__191 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module sbox 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module shiftrow 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 8     
+Module mixcolumn 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 70    
+	   3 Input      8 Bit         XORs := 2     
+	   8 Input      8 Bit         XORs := 9     
+	   9 Input      8 Bit         XORs := 6     
+	   7 Input      8 Bit         XORs := 1     
+	   5 Input      8 Bit         XORs := 7     
+	   4 Input      8 Bit         XORs := 8     
++---Muxes : 
+	   2 Input    128 Bit        Muxes := 1     
+Module rounds 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input    128 Bit         XORs := 1     
++---Registers : 
+	              128 Bit    Registers := 4     
+Module aescore 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input    128 Bit         XORs := 1     
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module keyAddrCounter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module dataAddrCounter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+Module dataBuffer 
+Detailed RTL Component Info : 
++---Registers : 
+	              128 Bit    Registers := 1     
+	               32 Bit    Registers := 16    
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   4 Input    128 Bit        Muxes := 1     
+	   2 Input    128 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 19    
+	   4 Input      1 Bit        Muxes := 2     
+Module keyBuffer 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	             1920 Bit    Registers := 1     
+	               32 Bit    Registers := 60    
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 122   
+	   3 Input      1 Bit        Muxes := 62    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounndlast.v:18]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg_rep was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounndlast.v:18]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg_rep was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounndlast.v:18]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg_rep_bsel was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounndlast.v:18]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg_rep_bsel_rep was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounndlast.v:18]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg_rep_bsel was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounndlast.v:18]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg_rep_bsel_rep was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounndlast.v:18]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg_rep_bsel was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounndlast.v:18]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg_rep_bsel_rep was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounndlast.v:18]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg_rep_bsel was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounndlast.v:18]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg_rep_bsel_rep was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounndlast.v:18]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg_rep_bsel was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounndlast.v:18]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg_rep_bsel_rep was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounndlast.v:18]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg_rep_bsel was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounndlast.v:18]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg_rep_bsel_rep was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounndlast.v:18]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg_rep_bsel was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounndlast.v:18]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg_rep_bsel_rep was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounndlast.v:18]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg_rep_bsel was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounndlast.v:18]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg_rep_bsel_rep was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounndlast.v:18]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg_rep_bsel was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounndlast.v:18]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg_rep_bsel_rep was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounndlast.v:18]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg_rep_bsel was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounndlast.v:18]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg_rep_bsel_rep was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounndlast.v:18]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg_rep_bsel was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounndlast.v:18]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg_rep_bsel_rep was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounndlast.v:18]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg_rep_bsel was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounndlast.v:18]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg_rep_bsel_rep was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounndlast.v:18]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg_rep_bsel was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounndlast.v:18]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg_rep_bsel_rep was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounndlast.v:18]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg_rep_bsel was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounndlast.v:18]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg_rep_bsel_rep was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounndlast.v:18]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg_rep_bsel was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounndlast.v:18]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg_rep_bsel_rep was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounndlast.v:18]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounds.v:21]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg_rep was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounds.v:21]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg_rep was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounds.v:21]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg_rep_bsel was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounds.v:21]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg_rep_bsel_rep was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounds.v:21]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg_rep_bsel was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounds.v:21]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg_rep_bsel_rep was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounds.v:21]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg_rep_bsel was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounds.v:21]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg_rep_bsel_rep was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounds.v:21]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg_rep_bsel was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounds.v:21]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg_rep_bsel_rep was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounds.v:21]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg_rep_bsel was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounds.v:21]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg_rep_bsel_rep was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounds.v:21]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg_rep_bsel was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounds.v:21]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg_rep_bsel_rep was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounds.v:21]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg_rep_bsel was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounds.v:21]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg_rep_bsel_rep was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounds.v:21]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg_rep_bsel was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounds.v:21]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg_rep_bsel_rep was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounds.v:21]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg_rep_bsel was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounds.v:21]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg_rep_bsel_rep was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounds.v:21]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg_rep_bsel was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounds.v:21]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg_rep_bsel_rep was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounds.v:21]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg_rep_bsel was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounds.v:21]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg_rep_bsel_rep was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounds.v:21]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg_rep_bsel was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounds.v:21]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg_rep_bsel_rep was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounds.v:21]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg_rep_bsel was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounds.v:21]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg_rep_bsel_rep was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounds.v:21]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg_rep_bsel was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounds.v:21]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg_rep_bsel_rep was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounds.v:21]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg_rep_bsel was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounds.v:21]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg_rep_bsel_rep was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounds.v:21]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounds.v:21]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg_rep was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounds.v:21]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg_rep was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounds.v:21]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg_rep_bsel was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounds.v:21]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg_rep_bsel_rep was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounds.v:21]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg_rep_bsel was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounds.v:21]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg_rep_bsel_rep was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounds.v:21]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg_rep_bsel was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounds.v:21]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg_rep_bsel_rep was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounds.v:21]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg_rep_bsel was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounds.v:21]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg_rep_bsel_rep was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounds.v:21]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg_rep_bsel was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounds.v:21]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg_rep_bsel_rep was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounds.v:21]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg_rep_bsel was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounds.v:21]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg_rep_bsel_rep was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounds.v:21]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg_rep_bsel was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounds.v:21]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg_rep_bsel_rep was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounds.v:21]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg_rep_bsel was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounds.v:21]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg_rep_bsel_rep was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounds.v:21]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg_rep_bsel was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounds.v:21]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg_rep_bsel_rep was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounds.v:21]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg_rep_bsel was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounds.v:21]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg_rep_bsel_rep was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounds.v:21]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg_rep_bsel was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounds.v:21]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg_rep_bsel_rep was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounds.v:21]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg_rep_bsel was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounds.v:21]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg_rep_bsel_rep was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounds.v:21]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg_rep_bsel was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounds.v:21]
+WARNING: [Synth 8-6014] Unused sequential element subBytesIn_reg_rep_bsel_rep was removed.  [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.srcs/sources_1/new/rounds.v:21]
+INFO: [Common 17-14] Message 'Synth 8-6014' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-5546] ROM "keyOut" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "keyOut" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "DB0/dataOut" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3331] design top has unconnected port finalDone
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:31 ; elapsed = 00:01:34 . Memory (MB): peak = 797.996 ; gain = 543.813
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-5835] Resources of type BRAM have been overutilized. Used = 448, Available = 270. Will try to implement using LUT-RAM. 
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+-----------------------------+---------------+----------------+
+|Module Name | RTL Object                  | Depth x Width | Implemented As | 
++------------+-----------------------------+---------------+----------------+
+|sbox        | inv_sbox                    | 256x8         | LUT            | 
+|sbox        | sbox                        | 256x8         | LUT            | 
+|rounndlast  | subBytesIn_reg_rep          | 256x8         | Block RAM      | 
+|rounndlast  | subBytesIn_reg_rep          | 256x8         | Block RAM      | 
+|rounndlast  | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounndlast  | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounndlast  | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounndlast  | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounndlast  | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounndlast  | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounndlast  | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounndlast  | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounndlast  | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounndlast  | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounndlast  | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounndlast  | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounndlast  | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounndlast  | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounndlast  | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounndlast  | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounndlast  | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounndlast  | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounndlast  | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounndlast  | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounndlast  | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounndlast  | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounndlast  | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounndlast  | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounndlast  | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounndlast  | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounndlast  | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounndlast  | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounndlast  | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounndlast  | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep          | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep          | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep          | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep          | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep          | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep          | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep          | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep          | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep          | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep          | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep          | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep          | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep          | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep          | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep          | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep          | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep          | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep          | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep          | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep          | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep          | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep          | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep          | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep          | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep          | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep          | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel     | 256x8         | Block RAM      | 
+|rounds      | subBytesIn_reg_rep_bsel_rep | 256x8         | Block RAM      | 
++------------+-----------------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |aescore__GB0  |           1|     17436|
+|2     |aescore__GB1  |           1|      7340|
+|3     |aescore__GB2  |           1|      7218|
+|4     |top__GC0      |           1|      5856|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:43 ; elapsed = 00:01:47 . Memory (MB): peak = 952.570 ; gain = 698.387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:44 ; elapsed = 00:01:47 . Memory (MB): peak = 952.844 ; gain = 698.660
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |aescore__GB0  |           1|     17436|
+|2     |aescore__GB1  |           1|      7340|
+|3     |aescore__GB2  |           1|      7218|
+|4     |top__GC0      |           1|      5856|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance AES0/r14/subBytesIn_reg_rep (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r14/subBytesIn_reg_rep (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r14/subBytesIn_reg_rep__0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r14/subBytesIn_reg_rep__0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r14/subBytesIn_reg_rep_bsel (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r14/subBytesIn_reg_rep_bsel (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r14/subBytesIn_reg_rep_bsel_rep (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r14/subBytesIn_reg_rep_bsel_rep (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r14/subBytesIn_reg_rep_bsel__0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r14/subBytesIn_reg_rep_bsel__0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r14/subBytesIn_reg_rep_bsel_rep__0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r14/subBytesIn_reg_rep_bsel_rep__0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r14/subBytesIn_reg_rep_bsel__1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r14/subBytesIn_reg_rep_bsel__1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r14/subBytesIn_reg_rep_bsel_rep__1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r14/subBytesIn_reg_rep_bsel_rep__1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r14/subBytesIn_reg_rep_bsel__2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r14/subBytesIn_reg_rep_bsel__2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r14/subBytesIn_reg_rep_bsel_rep__2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r14/subBytesIn_reg_rep_bsel_rep__2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r14/subBytesIn_reg_rep_bsel__3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r14/subBytesIn_reg_rep_bsel__3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r14/subBytesIn_reg_rep_bsel_rep__3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r14/subBytesIn_reg_rep_bsel_rep__3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r14/subBytesIn_reg_rep_bsel__4 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r14/subBytesIn_reg_rep_bsel__4 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r14/subBytesIn_reg_rep_bsel_rep__4 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r14/subBytesIn_reg_rep_bsel_rep__4 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r14/subBytesIn_reg_rep_bsel__5 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r14/subBytesIn_reg_rep_bsel__5 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r14/subBytesIn_reg_rep_bsel_rep__5 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r14/subBytesIn_reg_rep_bsel_rep__5 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r10/subBytesIn_reg_rep (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r10/subBytesIn_reg_rep (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r10/subBytesIn_reg_rep__0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r10/subBytesIn_reg_rep__0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r10/subBytesIn_reg_rep_bsel (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r10/subBytesIn_reg_rep_bsel (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r10/subBytesIn_reg_rep_bsel_rep (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r10/subBytesIn_reg_rep_bsel_rep (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r10/subBytesIn_reg_rep_bsel__0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r10/subBytesIn_reg_rep_bsel__0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r10/subBytesIn_reg_rep_bsel_rep__0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r10/subBytesIn_reg_rep_bsel_rep__0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r10/subBytesIn_reg_rep_bsel__1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r10/subBytesIn_reg_rep_bsel__1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r10/subBytesIn_reg_rep_bsel_rep__1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r10/subBytesIn_reg_rep_bsel_rep__1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r10/subBytesIn_reg_rep_bsel__2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r10/subBytesIn_reg_rep_bsel__2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r10/subBytesIn_reg_rep_bsel_rep__2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r10/subBytesIn_reg_rep_bsel_rep__2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r10/subBytesIn_reg_rep_bsel__3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r10/subBytesIn_reg_rep_bsel__3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r10/subBytesIn_reg_rep_bsel_rep__3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r10/subBytesIn_reg_rep_bsel_rep__3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r10/subBytesIn_reg_rep_bsel__4 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r10/subBytesIn_reg_rep_bsel__4 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r10/subBytesIn_reg_rep_bsel_rep__4 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r10/subBytesIn_reg_rep_bsel_rep__4 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r10/subBytesIn_reg_rep_bsel__5 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r10/subBytesIn_reg_rep_bsel__5 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r10/subBytesIn_reg_rep_bsel_rep__5 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r10/subBytesIn_reg_rep_bsel_rep__5 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r9/subBytesIn_reg_rep (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r9/subBytesIn_reg_rep (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r9/subBytesIn_reg_rep__0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r9/subBytesIn_reg_rep__0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r9/subBytesIn_reg_rep_bsel (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r9/subBytesIn_reg_rep_bsel (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r9/subBytesIn_reg_rep_bsel_rep (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r9/subBytesIn_reg_rep_bsel_rep (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r9/subBytesIn_reg_rep_bsel__0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r9/subBytesIn_reg_rep_bsel__0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r9/subBytesIn_reg_rep_bsel_rep__0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r9/subBytesIn_reg_rep_bsel_rep__0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r9/subBytesIn_reg_rep_bsel__1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r9/subBytesIn_reg_rep_bsel__1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r9/subBytesIn_reg_rep_bsel_rep__1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r9/subBytesIn_reg_rep_bsel_rep__1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r9/subBytesIn_reg_rep_bsel__2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r9/subBytesIn_reg_rep_bsel__2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r9/subBytesIn_reg_rep_bsel_rep__2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r9/subBytesIn_reg_rep_bsel_rep__2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r9/subBytesIn_reg_rep_bsel__3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r9/subBytesIn_reg_rep_bsel__3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r9/subBytesIn_reg_rep_bsel_rep__3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r9/subBytesIn_reg_rep_bsel_rep__3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r9/subBytesIn_reg_rep_bsel__4 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r9/subBytesIn_reg_rep_bsel__4 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r9/subBytesIn_reg_rep_bsel_rep__4 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r9/subBytesIn_reg_rep_bsel_rep__4 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r9/subBytesIn_reg_rep_bsel__5 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r9/subBytesIn_reg_rep_bsel__5 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r9/subBytesIn_reg_rep_bsel_rep__5 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r9/subBytesIn_reg_rep_bsel_rep__5 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r4/subBytesIn_reg_rep (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r4/subBytesIn_reg_rep (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r4/subBytesIn_reg_rep__0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance AES0/r4/subBytesIn_reg_rep__0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Common 17-14] Message 'Synth 8-4480' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:50 ; elapsed = 00:01:54 . Memory (MB): peak = 1044.438 ; gain = 790.254
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:52 ; elapsed = 00:01:56 . Memory (MB): peak = 1044.438 ; gain = 790.254
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:52 ; elapsed = 00:01:56 . Memory (MB): peak = 1044.438 ; gain = 790.254
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:53 ; elapsed = 00:01:56 . Memory (MB): peak = 1044.438 ; gain = 790.254
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:53 ; elapsed = 00:01:57 . Memory (MB): peak = 1044.438 ; gain = 790.254
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:57 ; elapsed = 00:02:00 . Memory (MB): peak = 1044.438 ; gain = 790.254
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:57 ; elapsed = 00:02:00 . Memory (MB): peak = 1044.438 ; gain = 790.254
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------+----------+
+|      |BlackBox name  |Instances |
++------+---------------+----------+
+|1     |key_mem_gen_0  |         1|
+|2     |data_mem_gen_0 |         1|
++------+---------------+----------+
+
+Report Cell Usage: 
++------+---------------+------+
+|      |Cell           |Count |
++------+---------------+------+
+|1     |data_mem_gen_0 |     1|
+|2     |key_mem_gen_0  |     1|
+|3     |BUFG           |     1|
+|4     |LUT1           |    20|
+|5     |LUT2           |  1320|
+|6     |LUT3           |  2941|
+|7     |LUT4           |   557|
+|8     |LUT5           |  1469|
+|9     |LUT6           |  4016|
+|10    |RAMB18E1       |   112|
+|11    |RAMB18E1_1     |   112|
+|12    |FDCE           |  2067|
+|13    |FDPE           |     4|
+|14    |FDRE           |  7680|
+|15    |LDC            |     1|
+|16    |IBUF           |     4|
+|17    |OBUF           |   130|
+|18    |OBUFT          |     1|
++------+---------------+------+
+
+Report Instance Areas: 
++------+------------+----------------+------+
+|      |Instance    |Module          |Cells |
++------+------------+----------------+------+
+|1     |top         |                | 20499|
+|2     |  AES0      |aescore         | 15091|
+|3     |    r1      |rounds          |  1125|
+|4     |    r10     |rounds_0        |  1125|
+|5     |    r11     |rounds_1        |  1125|
+|6     |    r12     |rounds_2        |  1125|
+|7     |    r13     |rounds_3        |  1125|
+|8     |    r14     |rounndlast      |   464|
+|9     |      t1    |subbytes        |   128|
+|10    |        q0  |sbox            |     8|
+|11    |        q1  |sbox_12         |     8|
+|12    |        q10 |sbox_13         |     8|
+|13    |        q11 |sbox_14         |     8|
+|14    |        q12 |sbox_15         |     8|
+|15    |        q13 |sbox_16         |     8|
+|16    |        q14 |sbox_17         |     8|
+|17    |        q16 |sbox_18         |     8|
+|18    |        q2  |sbox_19         |     8|
+|19    |        q3  |sbox_20         |     8|
+|20    |        q4  |sbox_21         |     8|
+|21    |        q5  |sbox_22         |     8|
+|22    |        q6  |sbox_23         |     8|
+|23    |        q7  |sbox_24         |     8|
+|24    |        q8  |sbox_25         |     8|
+|25    |        q9  |sbox_26         |     8|
+|26    |    r2      |rounds_4        |  1125|
+|27    |    r3      |rounds_5        |  1125|
+|28    |    r4      |rounds_6        |  1125|
+|29    |    r5      |rounds_7        |  1125|
+|30    |    r6      |rounds_8        |  1125|
+|31    |    r7      |rounds_9        |  1125|
+|32    |    r8      |rounds_10       |  1125|
+|33    |    r9      |rounds_11       |  1125|
+|34    |  DB0       |dataBuffer      |   771|
+|35    |  DC0       |dataAddrCounter |   302|
+|36    |  KB0       |keyBuffer       |  3962|
+|37    |  KC0       |keyAddrCounter  |   173|
++------+------------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:57 ; elapsed = 00:02:01 . Memory (MB): peak = 1044.438 ; gain = 790.254
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 466 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:36 ; elapsed = 00:01:47 . Memory (MB): peak = 1044.438 ; gain = 401.227
+Synthesis Optimization Complete : Time (s): cpu = 00:01:57 ; elapsed = 00:02:01 . Memory (MB): peak = 1044.438 ; gain = 790.254
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 229 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  LDC => LDCE: 1 instances
+
+251 Infos, 189 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:03 ; elapsed = 00:02:08 . Memory (MB): peak = 1044.438 ; gain = 795.922
+INFO: [Common 17-1381] The checkpoint 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline_simulation/aes256_pipeline.runs/synth_1/top.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.137 . Memory (MB): peak = 1044.438 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Sep 14 16:25:57 2018...

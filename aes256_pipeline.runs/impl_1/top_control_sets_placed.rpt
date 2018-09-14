@@ -1,0 +1,172 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.1 (win64) Build 1846317 Fri Apr 14 18:55:03 MDT 2017
+| Date         : Fri Sep 14 17:43:13 2018
+| Host         : DESKTOP-GJPCRJL running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |   106 |
+| Unused register locations in slices containing registers |   156 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |            5252 |         1908 |
+| No           | No                    | Yes                    |               2 |            2 |
+| No           | Yes                   | No                     |               1 |            1 |
+| Yes          | No                    | No                     |            2432 |          924 |
+| Yes          | No                    | Yes                    |            2069 |          866 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++--------------------------------------+------------------------------+-------------------------------------+------------------+----------------+
+|             Clock Signal             |         Enable Signal        |           Set/Reset Signal          | Slice Load Count | Bel Load Count |
++--------------------------------------+------------------------------+-------------------------------------+------------------+----------------+
+|  clkIn_IBUF_BUFG                     |                              | KB0/keyOut_reg[1435]_0              |                1 |              1 |
+|  clkIn_IBUF_BUFG                     |                              | KB0/keyOut_reg[1621]_0              |                1 |              1 |
+|  KC0/keyAddrCount_reg[5]_LDC_i_1_n_0 |                              | KC0/keyAddrCount_reg[5]_LDC_i_2_n_0 |                1 |              1 |
+|  clkIn_IBUF_BUFG                     | DC0/E[0]                     | KB0/keyOut_reg[1621]_0              |                2 |              2 |
+|  clkIn_IBUF_BUFG                     | KC0/keyAddrCount[7]_i_1_n_0  | KB0/keyOut_reg[64]_0                |                2 |              4 |
+|  clkIn_IBUF_BUFG                     | KC0/keyAddrCount[7]_i_1_n_0  | KC0/keyAddrCount_reg[5]_LDC_i_1_n_0 |                1 |              4 |
+|  clkIn_IBUF_BUFG                     | KC0/keyAddrCount[7]_i_1_n_0  | KC0/keyAddrCount_reg[5]_LDC_i_2_n_0 |                2 |              4 |
+|  clkIn_IBUF_BUFG                     | KC0/keyOut_reg[0][0]         | KB0/keyOut_reg[1435]_0              |                2 |              5 |
+|  clkIn_IBUF_BUFG                     | DC0/E[0]                     | KB0/keyOut_reg[1916]_0              |                5 |              6 |
+|  clkIn_IBUF_BUFG                     | DC0/dataAddrCount[7]_i_1_n_0 | KB0/keyOut_reg[1621]_0              |                2 |              8 |
+|  clkIn_IBUF_BUFG                     | DC0/RAM_reg[1][31][0]        |                                     |               11 |             32 |
+|  clkIn_IBUF_BUFG                     | KC0/RAM_reg[37][31][0]       |                                     |               14 |             32 |
+|  clkIn_IBUF_BUFG                     | DC0/RAM_reg[0][31][0]        |                                     |               15 |             32 |
+|  clkIn_IBUF_BUFG                     | DC0/RAM_reg[12][31][0]       |                                     |               12 |             32 |
+|  clkIn_IBUF_BUFG                     | DC0/RAM_reg[10][31][0]       |                                     |               15 |             32 |
+|  clkIn_IBUF_BUFG                     | DC0/RAM_reg[11][31][0]       |                                     |               13 |             32 |
+|  clkIn_IBUF_BUFG                     | DC0/RAM_reg[15][31][0]       |                                     |               12 |             32 |
+|  clkIn_IBUF_BUFG                     | DC0/RAM_reg[14][31][0]       |                                     |               11 |             32 |
+|  clkIn_IBUF_BUFG                     | KC0/RAM_reg[13][31][0]       |                                     |               10 |             32 |
+|  clkIn_IBUF_BUFG                     | DC0/RAM_reg[13][31][0]       |                                     |               12 |             32 |
+|  clkIn_IBUF_BUFG                     | DC0/RAM_reg[3][31][0]        |                                     |               11 |             32 |
+|  clkIn_IBUF_BUFG                     | DC0/RAM_reg[4][31][0]        |                                     |               14 |             32 |
+|  clkIn_IBUF_BUFG                     | DC0/RAM_reg[2][31][0]        |                                     |               12 |             32 |
+|  clkIn_IBUF_BUFG                     | DC0/RAM_reg[5][31][0]        |                                     |               11 |             32 |
+|  clkIn_IBUF_BUFG                     | DC0/RAM_reg[6][31][0]        |                                     |               14 |             32 |
+|  clkIn_IBUF_BUFG                     | DC0/RAM_reg[8][31][0]        |                                     |               13 |             32 |
+|  clkIn_IBUF_BUFG                     | DC0/RAM_reg[7][31][0]        |                                     |               13 |             32 |
+|  clkIn_IBUF_BUFG                     | DC0/RAM_reg[9][31][0]        |                                     |               14 |             32 |
+|  clkIn_IBUF_BUFG                     | KC0/E[0]                     |                                     |               12 |             32 |
+|  clkIn_IBUF_BUFG                     | KC0/RAM_reg[12][31][0]       |                                     |               10 |             32 |
+|  clkIn_IBUF_BUFG                     | KC0/RAM_reg[0][31][0]        |                                     |               13 |             32 |
+|  clkIn_IBUF_BUFG                     | KC0/RAM_reg[10][31][0]       |                                     |               11 |             32 |
+|  clkIn_IBUF_BUFG                     | KC0/RAM_reg[11][31][0]       |                                     |               11 |             32 |
+|  clkIn_IBUF_BUFG                     | KC0/RAM_reg[15][31][0]       |                                     |               13 |             32 |
+|  clkIn_IBUF_BUFG                     | KC0/RAM_reg[34][31][0]       |                                     |               10 |             32 |
+|  clkIn_IBUF_BUFG                     | KC0/RAM_reg[41][31][0]       |                                     |               10 |             32 |
+|  clkIn_IBUF_BUFG                     | KC0/RAM_reg[29][31][0]       |                                     |               11 |             32 |
+|  clkIn_IBUF_BUFG                     | KC0/RAM_reg[24][31][0]       |                                     |               14 |             32 |
+|  clkIn_IBUF_BUFG                     | KC0/RAM_reg[42][31][0]       |                                     |               13 |             32 |
+|  clkIn_IBUF_BUFG                     | KC0/RAM_reg[1][31][0]        |                                     |               12 |             32 |
+|  clkIn_IBUF_BUFG                     | KC0/RAM_reg[21][31][0]       |                                     |               13 |             32 |
+|  clkIn_IBUF_BUFG                     | KC0/RAM_reg[23][31][0]       |                                     |               10 |             32 |
+|  clkIn_IBUF_BUFG                     | KC0/RAM_reg[22][31][0]       |                                     |               10 |             32 |
+|  clkIn_IBUF_BUFG                     | KC0/RAM_reg[31][31][0]       |                                     |               11 |             32 |
+|  clkIn_IBUF_BUFG                     | KC0/RAM_reg[45][31][0]       |                                     |                7 |             32 |
+|  clkIn_IBUF_BUFG                     | KC0/RAM_reg[14][31][0]       |                                     |               13 |             32 |
+|  clkIn_IBUF_BUFG                     | KC0/RAM_reg[17][31][0]       |                                     |               12 |             32 |
+|  clkIn_IBUF_BUFG                     | KC0/RAM_reg[26][31][0]       |                                     |               11 |             32 |
+|  clkIn_IBUF_BUFG                     | KC0/RAM_reg[44][31][0]       |                                     |               11 |             32 |
+|  clkIn_IBUF_BUFG                     | KC0/RAM_reg[47][31][0]       |                                     |                9 |             32 |
+|  clkIn_IBUF_BUFG                     | KC0/RAM_reg[49][31][0]       |                                     |                9 |             32 |
+|  clkIn_IBUF_BUFG                     | KC0/RAM_reg[38][31][0]       |                                     |               12 |             32 |
+|  clkIn_IBUF_BUFG                     | KC0/RAM_reg[4][31][0]        |                                     |               17 |             32 |
+|  clkIn_IBUF_BUFG                     | KC0/RAM_reg[52][31][0]       |                                     |               12 |             32 |
+|  clkIn_IBUF_BUFG                     | KC0/RAM_reg[20][31][0]       |                                     |               14 |             32 |
+|  clkIn_IBUF_BUFG                     | KC0/RAM_reg[2][31][0]        |                                     |               11 |             32 |
+|  clkIn_IBUF_BUFG                     | KC0/RAM_reg[33][31][0]       |                                     |               12 |             32 |
+|  clkIn_IBUF_BUFG                     | KC0/RAM_reg[51][31][0]       |                                     |               13 |             32 |
+|  clkIn_IBUF_BUFG                     | KC0/RAM_reg[53][31][0]       |                                     |               15 |             32 |
+|  clkIn_IBUF_BUFG                     | KC0/RAM_reg[55][31][0]       |                                     |               11 |             32 |
+|  clkIn_IBUF_BUFG                     | KC0/RAM_reg[56][31][0]       |                                     |               17 |             32 |
+|  clkIn_IBUF_BUFG                     | KC0/RAM_reg[57][31][0]       |                                     |               19 |             32 |
+|  clkIn_IBUF_BUFG                     | KC0/RAM_reg[5][31][0]        |                                     |               10 |             32 |
+|  clkIn_IBUF_BUFG                     | KC0/RAM_reg[7][31][0]        |                                     |                8 |             32 |
+|  clkIn_IBUF_BUFG                     | KC0/RAM_reg[8][31][0]        |                                     |               13 |             32 |
+|  clkIn_IBUF_BUFG                     | KC0/RAM_reg[27][31][0]       |                                     |               14 |             32 |
+|  clkIn_IBUF_BUFG                     | KC0/RAM_reg[32][31][0]       |                                     |               13 |             32 |
+|  clkIn_IBUF_BUFG                     | KC0/RAM_reg[50][31][0]       |                                     |               14 |             32 |
+|  clkIn_IBUF_BUFG                     | KC0/RAM_reg[6][31][0]        |                                     |                9 |             32 |
+|  clkIn_IBUF_BUFG                     | KC0/RAM_reg[54][31][0]       |                                     |               13 |             32 |
+|  clkIn_IBUF_BUFG                     | KC0/RAM_reg[36][31][0]       |                                     |               12 |             32 |
+|  clkIn_IBUF_BUFG                     | KC0/RAM_reg[25][31][0]       |                                     |               14 |             32 |
+|  clkIn_IBUF_BUFG                     | KC0/RAM_reg[35][31][0]       |                                     |               14 |             32 |
+|  clkIn_IBUF_BUFG                     | KC0/RAM_reg[43][31][0]       |                                     |               10 |             32 |
+|  clkIn_IBUF_BUFG                     | KC0/RAM_reg[3][31][0]        |                                     |               13 |             32 |
+|  clkIn_IBUF_BUFG                     | KC0/RAM_reg[16][31][0]       |                                     |               11 |             32 |
+|  clkIn_IBUF_BUFG                     | KC0/RAM_reg[18][31][0]       |                                     |                9 |             32 |
+|  clkIn_IBUF_BUFG                     | KC0/RAM_reg[58][31][0]       |                                     |               17 |             32 |
+|  clkIn_IBUF_BUFG                     | KC0/RAM_reg[9][31][0]        |                                     |               16 |             32 |
+|  clkIn_IBUF_BUFG                     | KC0/RAM_reg[40][31][0]       |                                     |               11 |             32 |
+|  clkIn_IBUF_BUFG                     | KC0/RAM_reg[39][31][0]       |                                     |               10 |             32 |
+|  clkIn_IBUF_BUFG                     | KC0/RAM_reg[48][31][0]       |                                     |               10 |             32 |
+|  clkIn_IBUF_BUFG                     | KC0/RAM_reg[19][31][0]       |                                     |               11 |             32 |
+|  clkIn_IBUF_BUFG                     | KC0/RAM_reg[28][31][0]       |                                     |               15 |             32 |
+|  clkIn_IBUF_BUFG                     | KC0/RAM_reg[30][31][0]       |                                     |                9 |             32 |
+|  clkIn_IBUF_BUFG                     | KC0/RAM_reg[46][31][0]       |                                     |               12 |             32 |
+|  clkIn_IBUF_BUFG                     | DC0/E[0]                     | KB0/keyOut_reg[1855]_0              |               31 |             60 |
+|  clkIn_IBUF_BUFG                     | KC0/keyOut_reg[0][0]         | DB0/dataOut_reg[2]_0                |               19 |             60 |
+|  clkIn_IBUF_BUFG                     | KC0/keyOut_reg[0][0]         | KB0/keyOut_reg[1855]_0              |               26 |             61 |
+|  clkIn_IBUF_BUFG                     | DC0/E[0]                     | DB0/dataOut_reg[2]_0                |               25 |             61 |
+|  clkIn_IBUF_BUFG                     | KC0/keyOut_reg[0][0]         | KB0/keyOut_reg[1621]_0              |               48 |            110 |
+|  clkIn_IBUF_BUFG                     | KC0/keyOut_reg[0][0]         | KB0/keyOut_reg[1916]_0              |               48 |            115 |
+|  clkIn_IBUF_BUFG                     | KC0/keyOut_reg[0][0]         | KB0/keyOut_reg[64]_0                |               57 |            117 |
+|  clkIn_IBUF_BUFG                     | KC0/keyOut_reg[0][0]         | KB0/keyOut[1508]_i_1_n_0            |               51 |            121 |
+|  clkIn_IBUF_BUFG                     | KC0/keyOut_reg[0][0]         | KB0/keyOut[1663]_i_1_n_0            |               54 |            121 |
+|  clkIn_IBUF_BUFG                     | KC0/keyOut_reg[0][0]         | KB0/keyOut[1343]_i_1_n_0            |               45 |            121 |
+|  clkIn_IBUF_BUFG                     | KC0/keyOut_reg[0][0]         | KB0/keyOut[1727]_i_1_n_0            |               48 |            121 |
+|  clkIn_IBUF_BUFG                     | KC0/keyOut_reg[0][0]         | KB0/keyOut[1759]_i_1_n_0            |               50 |            121 |
+|  clkIn_IBUF_BUFG                     | KC0/keyOut_reg[0][0]         | KB0/keyOut[1768]_i_1_n_0            |               53 |            121 |
+|  clkIn_IBUF_BUFG                     | KC0/keyOut_reg[0][0]         | KB0/keyOut[1535]_i_1_n_0            |               43 |            121 |
+|  clkIn_IBUF_BUFG                     | KC0/keyOut_reg[0][0]         | KB0/keyOut[1599]_i_1_n_0            |               53 |            121 |
+|  clkIn_IBUF_BUFG                     | KC0/keyOut_reg[0][0]         | KB0/keyOut[1567]_i_1_n_0            |               55 |            121 |
+|  clkIn_IBUF_BUFG                     | KC0/keyOut_reg[0][0]         | KB0/keyOut[1695]_i_1_n_0            |               40 |            121 |
+|  clkIn_IBUF_BUFG                     | KC0/keyOut_reg[0][0]         | KB0/keyOut[1471]_i_1_n_0            |               56 |            121 |
+|  clkIn_IBUF_BUFG                     | KC0/keyOut_reg[0][0]         | KB0/keyOut[1791]_i_1_n_0            |               48 |            121 |
+|  clkIn_IBUF_BUFG                     |                              |                                     |             1908 |           5252 |
++--------------------------------------+------------------------------+-------------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                     3 |
+| 2      |                     1 |
+| 4      |                     3 |
+| 5      |                     1 |
+| 6      |                     1 |
+| 8      |                     1 |
+| 16+    |                    96 |
++--------+-----------------------+
+
+

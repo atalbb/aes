@@ -1,0 +1,1092 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Tue Sep 11 14:00:40 2018
+# Process ID: 5488
+# Current directory: C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6268 C:\College\Thesis\AES_2018\AES_After 9_10_2018\aes256_pipeline\aes256_pipeline.xpr
+# Log file: C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/vivado.log
+# Journal file: C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.1/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:08 . Memory (MB): peak = 735.578 ; gain = 97.813
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.1/data/xsim/ip/xsim_ip.ini' copied to run dir:'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav/data_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav/data.coe'
+INFO: [SIM-utils-43] Exported 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav/invSbox_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav/invSbox.coe'
+INFO: [SIM-utils-43] Exported 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav/key_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav/key.coe'
+INFO: [SIM-utils-43] Exported 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav/sbox_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav/sbox.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/ip/data_mem_gen_0/sim/data_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/ip/key_mem_gen_0/sim/key_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module key_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/dataAddrCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataAddrCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/keyAddrCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module keyAddrCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav'
+Vivado Simulator 2017.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.1/bin/unwrapped/win64.o/xelab.exe -wto a5fb6f72c6b349b1b0a39b398d85ad4d --debug typical --relax --mt 2 -L blk_mem_gen_v8_3_6 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 128 differs from formal bit length 8 for port keyAddrCount [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/top.v:42]
+WARNING: [VRFC 10-278] actual bit length 128 differs from formal bit length 8 for port dataAddrCount [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/top.v:47]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port wea [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/top.v:52]
+WARNING: [VRFC 10-278] actual bit length 128 differs from formal bit length 8 for port addra [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/top.v:53]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port wea [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/top.v:60]
+WARNING: [VRFC 10-278] actual bit length 128 differs from formal bit length 8 for port addra [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/top.v:61]
+WARNING: [VRFC 10-1783] select index 62 into current_contents is out of bounds [/wrk/2017.1/nightly/2017_04_14_1846317/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_3/simulation/blk_mem_gen_v8_3.v:2420]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.keyAddrCounter
+Compiling module xil_defaultlib.dataAddrCounter
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_output_stage(...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_output_stage(...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_softecc_outpu...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_mem_module(C_...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6(C_FAMILY="art...
+Compiling module xil_defaultlib.key_mem_gen_0
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_mem_module(C_...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6(C_FAMILY="art...
+Compiling module xil_defaultlib.data_mem_gen_0
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+
+****** Webtalk v2017.1 (64-bit)
+  **** SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+  **** IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source C:/College/Thesis/AES_2018/AES_After -notrace
+invalid command name "%"
+    while executing
+"% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current"
+    (file "C:/College/Thesis/AES_2018/AES_After" line 1)
+INFO: [Common 17-206] Exiting Webtalk at Tue Sep 11 14:01:23 2018...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -view {C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.1
+Time resolution is 1 ps
+open_wave_config C:/College/Thesis/AES_2018/AES_After
+ERROR: [Wavedata 42-2] Error while reading WCFG file 'C:/College/Thesis/AES_2018/AES_After.wcfg'.
+open_wave_config 9_10_2018/aes256_pipeline/tb_behav.wcfg
+ERROR: [Wavedata 42-2] Error while reading WCFG file 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav/9_10_2018/aes256_pipeline/tb_behav.wcfg'.
+source tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb.T.K0.inst.native_mem_module.blk_mem_gen_v8_3_6_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb.T.D0.inst.native_mem_module.blk_mem_gen_v8_3_6_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 758.043 ; gain = 22.465
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Tue Sep 11 14:03:57 2018] Launched synth_1...
+Run output will be captured here: C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Tue Sep 11 14:17:20 2018] Launched synth_1...
+Run output will be captured here: C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/runme.log
+launch_simulation
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.1/data/xsim/ip/xsim_ip.ini' copied to run dir:'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav/data_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav/data.coe'
+INFO: [SIM-utils-43] Exported 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav/invSbox_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav/invSbox.coe'
+INFO: [SIM-utils-43] Exported 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav/key_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav/key.coe'
+INFO: [SIM-utils-43] Exported 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav/sbox_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav/sbox.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/ip/data_mem_gen_0/sim/data_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/ip/key_mem_gen_0/sim/key_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module key_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/dataAddrCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataAddrCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/dataBuffer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataBuffer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/keyAddrCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module keyAddrCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav'
+Vivado Simulator 2017.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.1/bin/unwrapped/win64.o/xelab.exe -wto a5fb6f72c6b349b1b0a39b398d85ad4d --debug typical --relax --mt 2 -L blk_mem_gen_v8_3_6 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2538] module instantiation should have an instance name [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/top.v:66]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Tue Sep 11 14:19:36 2018] Launched synth_1...
+Run output will be captured here: C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/runme.log
+launch_simulation
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.1/data/xsim/ip/xsim_ip.ini' copied to run dir:'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav/data_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav/data.coe'
+INFO: [SIM-utils-43] Exported 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav/invSbox_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav/invSbox.coe'
+INFO: [SIM-utils-43] Exported 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav/key_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav/key.coe'
+INFO: [SIM-utils-43] Exported 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav/sbox_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav/sbox.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/ip/data_mem_gen_0/sim/data_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/ip/key_mem_gen_0/sim/key_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module key_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/dataAddrCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataAddrCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/dataBuffer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataBuffer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/keyAddrCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module keyAddrCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav'
+Vivado Simulator 2017.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.1/bin/unwrapped/win64.o/xelab.exe -wto a5fb6f72c6b349b1b0a39b398d85ad4d --debug typical --relax --mt 2 -L blk_mem_gen_v8_3_6 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 128 for port dataO [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sim_1/new/tb.v:32]
+WARNING: [VRFC 10-278] actual bit length 128 differs from formal bit length 8 for port keyAddrCount [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/top.v:43]
+WARNING: [VRFC 10-278] actual bit length 128 differs from formal bit length 8 for port dataAddrCount [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/top.v:48]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port wea [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/top.v:53]
+WARNING: [VRFC 10-278] actual bit length 128 differs from formal bit length 8 for port addra [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/top.v:54]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port wea [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/top.v:61]
+WARNING: [VRFC 10-278] actual bit length 128 differs from formal bit length 8 for port addra [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/top.v:62]
+WARNING: [VRFC 10-278] actual bit length 128 differs from formal bit length 8 for port addr [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/top.v:69]
+WARNING: [VRFC 10-1783] select index 62 into current_contents is out of bounds [/wrk/2017.1/nightly/2017_04_14_1846317/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_3/simulation/blk_mem_gen_v8_3.v:2420]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.keyAddrCounter
+Compiling module xil_defaultlib.dataAddrCounter
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_output_stage(...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_output_stage(...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_softecc_outpu...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_mem_module(C_...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6(C_FAMILY="art...
+Compiling module xil_defaultlib.key_mem_gen_0
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_mem_module(C_...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6(C_FAMILY="art...
+Compiling module xil_defaultlib.data_mem_gen_0
+Compiling module xil_defaultlib.dataBuffer
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+
+****** Webtalk v2017.1 (64-bit)
+  **** SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+  **** IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source C:/College/Thesis/AES_2018/AES_After -notrace
+invalid command name "%"
+    while executing
+"% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current"
+    (file "C:/College/Thesis/AES_2018/AES_After" line 1)
+INFO: [Common 17-206] Exiting Webtalk at Tue Sep 11 14:20:33 2018...
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -view {C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.1
+Time resolution is 1 ps
+open_wave_config C:/College/Thesis/AES_2018/AES_After
+ERROR: [Wavedata 42-2] Error while reading WCFG file 'C:/College/Thesis/AES_2018/AES_After.wcfg'.
+open_wave_config 9_10_2018/aes256_pipeline/tb_behav.wcfg
+ERROR: [Wavedata 42-2] Error while reading WCFG file 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav/9_10_2018/aes256_pipeline/tb_behav.wcfg'.
+source tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb.T.K0.inst.native_mem_module.blk_mem_gen_v8_3_6_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb.T.D0.inst.native_mem_module.blk_mem_gen_v8_3_6_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 793.121 ; gain = 2.082
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.1/data/xsim/ip/xsim_ip.ini' copied to run dir:'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav/data_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav/data.coe'
+INFO: [SIM-utils-43] Exported 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav/invSbox_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav/invSbox.coe'
+INFO: [SIM-utils-43] Exported 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav/key_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav/key.coe'
+INFO: [SIM-utils-43] Exported 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav/sbox_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav/sbox.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/ip/data_mem_gen_0/sim/data_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/ip/key_mem_gen_0/sim/key_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module key_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/dataAddrCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataAddrCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/dataBuffer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataBuffer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/keyAddrCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module keyAddrCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav'
+Vivado Simulator 2017.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.1/bin/unwrapped/win64.o/xelab.exe -wto a5fb6f72c6b349b1b0a39b398d85ad4d --debug typical --relax --mt 2 -L blk_mem_gen_v8_3_6 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 128 for port dataO [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sim_1/new/tb.v:32]
+WARNING: [VRFC 10-278] actual bit length 128 differs from formal bit length 8 for port keyAddrCount [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/top.v:43]
+WARNING: [VRFC 10-278] actual bit length 128 differs from formal bit length 8 for port dataAddrCount [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/top.v:48]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port wea [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/top.v:53]
+WARNING: [VRFC 10-278] actual bit length 128 differs from formal bit length 8 for port addra [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/top.v:54]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port wea [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/top.v:61]
+WARNING: [VRFC 10-278] actual bit length 128 differs from formal bit length 8 for port addra [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/top.v:62]
+WARNING: [VRFC 10-278] actual bit length 128 differs from formal bit length 8 for port addr [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/top.v:69]
+WARNING: [VRFC 10-1783] select index 62 into current_contents is out of bounds [/wrk/2017.1/nightly/2017_04_14_1846317/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_3/simulation/blk_mem_gen_v8_3.v:2420]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.keyAddrCounter
+Compiling module xil_defaultlib.dataAddrCounter
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_output_stage(...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_output_stage(...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_softecc_outpu...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_mem_module(C_...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6(C_FAMILY="art...
+Compiling module xil_defaultlib.key_mem_gen_0
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_mem_module(C_...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6(C_FAMILY="art...
+Compiling module xil_defaultlib.data_mem_gen_0
+Compiling module xil_defaultlib.dataBuffer
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+
+****** Webtalk v2017.1 (64-bit)
+  **** SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+  **** IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source C:/College/Thesis/AES_2018/AES_After -notrace
+invalid command name "%"
+    while executing
+"% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current"
+    (file "C:/College/Thesis/AES_2018/AES_After" line 1)
+INFO: [Common 17-206] Exiting Webtalk at Tue Sep 11 14:22:23 2018...
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -view {C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.1
+Time resolution is 1 ps
+open_wave_config C:/College/Thesis/AES_2018/AES_After
+ERROR: [Wavedata 42-2] Error while reading WCFG file 'C:/College/Thesis/AES_2018/AES_After.wcfg'.
+open_wave_config 9_10_2018/aes256_pipeline/tb_behav.wcfg
+ERROR: [Wavedata 42-2] Error while reading WCFG file 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav/9_10_2018/aes256_pipeline/tb_behav.wcfg'.
+source tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb.T.K0.inst.native_mem_module.blk_mem_gen_v8_3_6_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb.T.D0.inst.native_mem_module.blk_mem_gen_v8_3_6_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 798.070 ; gain = 2.156
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Tue Sep 11 14:40:03 2018] Launched synth_1...
+Run output will be captured here: C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/runme.log
+launch_simulation
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.1/data/xsim/ip/xsim_ip.ini' copied to run dir:'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav/data_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav/data.coe'
+INFO: [SIM-utils-43] Exported 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav/invSbox_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav/invSbox.coe'
+INFO: [SIM-utils-43] Exported 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav/key_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav/key.coe'
+INFO: [SIM-utils-43] Exported 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav/sbox_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav/sbox.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/ip/data_mem_gen_0/sim/data_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/ip/key_mem_gen_0/sim/key_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module key_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/dataAddrCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataAddrCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/dataBuffer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataBuffer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/keyAddrCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module keyAddrCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/keyBuffer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module keyBuffer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav'
+Vivado Simulator 2017.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.1/bin/unwrapped/win64.o/xelab.exe -wto a5fb6f72c6b349b1b0a39b398d85ad4d --debug typical --relax --mt 2 -L blk_mem_gen_v8_3_6 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 128 differs from formal bit length 8 for port keyAddrCount [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/top.v:47]
+WARNING: [VRFC 10-278] actual bit length 128 differs from formal bit length 8 for port dataAddrCount [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/top.v:52]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port wea [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/top.v:57]
+WARNING: [VRFC 10-278] actual bit length 128 differs from formal bit length 8 for port addra [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/top.v:58]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port wea [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/top.v:65]
+WARNING: [VRFC 10-278] actual bit length 128 differs from formal bit length 8 for port addra [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/top.v:66]
+WARNING: [VRFC 10-278] actual bit length 128 differs from formal bit length 8 for port addr [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/top.v:73]
+WARNING: [VRFC 10-278] actual bit length 128 differs from formal bit length 8 for port addr [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/top.v:81]
+WARNING: [VRFC 10-1783] select index 62 into current_contents is out of bounds [/wrk/2017.1/nightly/2017_04_14_1846317/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_3/simulation/blk_mem_gen_v8_3.v:2420]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.keyAddrCounter
+Compiling module xil_defaultlib.dataAddrCounter
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_output_stage(...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_output_stage(...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_softecc_outpu...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_mem_module(C_...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6(C_FAMILY="art...
+Compiling module xil_defaultlib.key_mem_gen_0
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_mem_module(C_...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6(C_FAMILY="art...
+Compiling module xil_defaultlib.data_mem_gen_0
+Compiling module xil_defaultlib.dataBuffer
+Compiling module xil_defaultlib.keyBuffer
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+
+****** Webtalk v2017.1 (64-bit)
+  **** SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+  **** IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source C:/College/Thesis/AES_2018/AES_After -notrace
+invalid command name "%"
+    while executing
+"% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current"
+    (file "C:/College/Thesis/AES_2018/AES_After" line 1)
+INFO: [Common 17-206] Exiting Webtalk at Tue Sep 11 14:41:14 2018...
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -view {C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.1
+Time resolution is 1 ps
+open_wave_config C:/College/Thesis/AES_2018/AES_After
+ERROR: [Wavedata 42-2] Error while reading WCFG file 'C:/College/Thesis/AES_2018/AES_After.wcfg'.
+open_wave_config 9_10_2018/aes256_pipeline/tb_behav.wcfg
+ERROR: [Wavedata 42-2] Error while reading WCFG file 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav/9_10_2018/aes256_pipeline/tb_behav.wcfg'.
+source tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb.T.K0.inst.native_mem_module.blk_mem_gen_v8_3_6_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb.T.D0.inst.native_mem_module.blk_mem_gen_v8_3_6_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 823.840 ; gain = 5.320
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Tue Sep 11 14:43:09 2018] Launched synth_1...
+Run output will be captured here: C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.runs/synth_1/runme.log
+launch_simulation
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.1/data/xsim/ip/xsim_ip.ini' copied to run dir:'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav/data_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav/data.coe'
+INFO: [SIM-utils-43] Exported 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav/invSbox_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav/invSbox.coe'
+INFO: [SIM-utils-43] Exported 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav/key_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav/key.coe'
+INFO: [SIM-utils-43] Exported 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav/sbox_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav/sbox.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/ip/data_mem_gen_0/sim/data_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/ip/key_mem_gen_0/sim/key_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module key_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/dataAddrCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataAddrCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/dataBuffer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataBuffer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/keyAddrCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module keyAddrCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/keyBuffer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module keyBuffer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav'
+Vivado Simulator 2017.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.1/bin/unwrapped/win64.o/xelab.exe -wto a5fb6f72c6b349b1b0a39b398d85ad4d --debug typical --relax --mt 2 -L blk_mem_gen_v8_3_6 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 128 differs from formal bit length 8 for port keyAddrCount [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/top.v:47]
+WARNING: [VRFC 10-278] actual bit length 128 differs from formal bit length 8 for port dataAddrCount [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/top.v:52]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port wea [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/top.v:57]
+WARNING: [VRFC 10-278] actual bit length 128 differs from formal bit length 8 for port addra [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/top.v:58]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port wea [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/top.v:65]
+WARNING: [VRFC 10-278] actual bit length 128 differs from formal bit length 8 for port addra [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/top.v:66]
+WARNING: [VRFC 10-278] actual bit length 128 differs from formal bit length 8 for port addr [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/top.v:73]
+WARNING: [VRFC 10-278] actual bit length 128 differs from formal bit length 8 for port addr [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/top.v:81]
+WARNING: [VRFC 10-1783] select index 62 into current_contents is out of bounds [/wrk/2017.1/nightly/2017_04_14_1846317/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_3/simulation/blk_mem_gen_v8_3.v:2420]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.keyAddrCounter
+Compiling module xil_defaultlib.dataAddrCounter
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_output_stage(...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_output_stage(...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_softecc_outpu...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_mem_module(C_...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6(C_FAMILY="art...
+Compiling module xil_defaultlib.key_mem_gen_0
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_mem_module(C_...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6(C_FAMILY="art...
+Compiling module xil_defaultlib.data_mem_gen_0
+Compiling module xil_defaultlib.dataBuffer
+Compiling module xil_defaultlib.keyBuffer
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+
+****** Webtalk v2017.1 (64-bit)
+  **** SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+  **** IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source C:/College/Thesis/AES_2018/AES_After -notrace
+invalid command name "%"
+    while executing
+"% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current"
+    (file "C:/College/Thesis/AES_2018/AES_After" line 1)
+INFO: [Common 17-206] Exiting Webtalk at Tue Sep 11 14:44:54 2018...
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -view {C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.1
+Time resolution is 1 ps
+open_wave_config C:/College/Thesis/AES_2018/AES_After
+ERROR: [Wavedata 42-2] Error while reading WCFG file 'C:/College/Thesis/AES_2018/AES_After.wcfg'.
+open_wave_config 9_10_2018/aes256_pipeline/tb_behav.wcfg
+ERROR: [Wavedata 42-2] Error while reading WCFG file 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav/9_10_2018/aes256_pipeline/tb_behav.wcfg'.
+source tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb.T.K0.inst.native_mem_module.blk_mem_gen_v8_3_6_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb.T.D0.inst.native_mem_module.blk_mem_gen_v8_3_6_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 825.926 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.1/data/xsim/ip/xsim_ip.ini' copied to run dir:'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav/data_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav/data.coe'
+INFO: [SIM-utils-43] Exported 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav/invSbox_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav/invSbox.coe'
+INFO: [SIM-utils-43] Exported 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav/key_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav/key.coe'
+INFO: [SIM-utils-43] Exported 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav/sbox_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav/sbox.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/ip/data_mem_gen_0/sim/data_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/ip/key_mem_gen_0/sim/key_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module key_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/dataAddrCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataAddrCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/dataBuffer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataBuffer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/keyAddrCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module keyAddrCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/keyBuffer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module keyBuffer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav'
+Vivado Simulator 2017.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.1/bin/unwrapped/win64.o/xelab.exe -wto a5fb6f72c6b349b1b0a39b398d85ad4d --debug typical --relax --mt 2 -L blk_mem_gen_v8_3_6 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 128 differs from formal bit length 8 for port keyAddrCount [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/top.v:47]
+WARNING: [VRFC 10-278] actual bit length 128 differs from formal bit length 8 for port dataAddrCount [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/top.v:52]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port wea [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/top.v:57]
+WARNING: [VRFC 10-278] actual bit length 128 differs from formal bit length 8 for port addra [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/top.v:58]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port wea [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/top.v:65]
+WARNING: [VRFC 10-278] actual bit length 128 differs from formal bit length 8 for port addra [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/top.v:66]
+WARNING: [VRFC 10-278] actual bit length 128 differs from formal bit length 8 for port addr [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/top.v:73]
+WARNING: [VRFC 10-278] actual bit length 128 differs from formal bit length 8 for port addr [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/top.v:81]
+WARNING: [VRFC 10-1783] select index 62 into current_contents is out of bounds [/wrk/2017.1/nightly/2017_04_14_1846317/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_3/simulation/blk_mem_gen_v8_3.v:2420]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.keyAddrCounter
+Compiling module xil_defaultlib.dataAddrCounter
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_output_stage(...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_output_stage(...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_softecc_outpu...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_mem_module(C_...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6(C_FAMILY="art...
+Compiling module xil_defaultlib.key_mem_gen_0
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_mem_module(C_...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6(C_FAMILY="art...
+Compiling module xil_defaultlib.data_mem_gen_0
+Compiling module xil_defaultlib.dataBuffer
+Compiling module xil_defaultlib.keyBuffer
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+
+****** Webtalk v2017.1 (64-bit)
+  **** SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+  **** IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source C:/College/Thesis/AES_2018/AES_After -notrace
+invalid command name "%"
+    while executing
+"% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current"
+    (file "C:/College/Thesis/AES_2018/AES_After" line 1)
+INFO: [Common 17-206] Exiting Webtalk at Tue Sep 11 14:46:32 2018...
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -view {C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.1
+Time resolution is 1 ps
+open_wave_config C:/College/Thesis/AES_2018/AES_After
+ERROR: [Wavedata 42-2] Error while reading WCFG file 'C:/College/Thesis/AES_2018/AES_After.wcfg'.
+open_wave_config 9_10_2018/aes256_pipeline/tb_behav.wcfg
+ERROR: [Wavedata 42-2] Error while reading WCFG file 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav/9_10_2018/aes256_pipeline/tb_behav.wcfg'.
+source tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb.T.K0.inst.native_mem_module.blk_mem_gen_v8_3_6_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb.T.D0.inst.native_mem_module.blk_mem_gen_v8_3_6_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 827.555 ; gain = 1.453
+add_wave {{/tb/T/KB0/keyOut}} 
+save_wave_config {C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/tb_behav1.wcfg}
+add_files -fileset sim_1 -norecurse {{C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/tb_behav1.wcfg}}
+set_property xsim.view {{C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/tb_behav.wcfg} {C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/tb_behav1.wcfg}} [get_filesets sim_1]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.1/data/xsim/ip/xsim_ip.ini' copied to run dir:'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav/data_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav/data.coe'
+INFO: [SIM-utils-43] Exported 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav/invSbox_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav/invSbox.coe'
+INFO: [SIM-utils-43] Exported 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav/key_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav/key.coe'
+INFO: [SIM-utils-43] Exported 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav/sbox_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav/sbox.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/ip/data_mem_gen_0/sim/data_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/ip/key_mem_gen_0/sim/key_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module key_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/dataAddrCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataAddrCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/dataBuffer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataBuffer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/keyAddrCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module keyAddrCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/keyBuffer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module keyBuffer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav'
+Vivado Simulator 2017.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.1/bin/unwrapped/win64.o/xelab.exe -wto a5fb6f72c6b349b1b0a39b398d85ad4d --debug typical --relax --mt 2 -L blk_mem_gen_v8_3_6 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 128 differs from formal bit length 8 for port keyAddrCount [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/top.v:47]
+WARNING: [VRFC 10-278] actual bit length 128 differs from formal bit length 8 for port dataAddrCount [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/top.v:52]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port wea [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/top.v:57]
+WARNING: [VRFC 10-278] actual bit length 128 differs from formal bit length 8 for port addra [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/top.v:58]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port wea [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/top.v:65]
+WARNING: [VRFC 10-278] actual bit length 128 differs from formal bit length 8 for port addra [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/top.v:66]
+WARNING: [VRFC 10-278] actual bit length 128 differs from formal bit length 8 for port addr [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/top.v:73]
+WARNING: [VRFC 10-278] actual bit length 128 differs from formal bit length 8 for port addr [C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/new/top.v:81]
+WARNING: [VRFC 10-1783] select index 62 into current_contents is out of bounds [/wrk/2017.1/nightly/2017_04_14_1846317/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_3/simulation/blk_mem_gen_v8_3.v:2420]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.keyAddrCounter
+Compiling module xil_defaultlib.dataAddrCounter
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_output_stage(...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_output_stage(...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_softecc_outpu...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_mem_module(C_...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6(C_FAMILY="art...
+Compiling module xil_defaultlib.key_mem_gen_0
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_mem_module(C_...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6(C_FAMILY="art...
+Compiling module xil_defaultlib.data_mem_gen_0
+Compiling module xil_defaultlib.dataBuffer
+Compiling module xil_defaultlib.keyBuffer
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+
+****** Webtalk v2017.1 (64-bit)
+  **** SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+  **** IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source C:/College/Thesis/AES_2018/AES_After -notrace
+invalid command name "%"
+    while executing
+"% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current"
+    (file "C:/College/Thesis/AES_2018/AES_After" line 1)
+INFO: [Common 17-206] Exiting Webtalk at Tue Sep 11 14:47:31 2018...
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -view {C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/tb_behav.wcfg} -view {C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/tb_behav1.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.1
+Time resolution is 1 ps
+open_wave_config C:/College/Thesis/AES_2018/AES_After
+ERROR: [Wavedata 42-2] Error while reading WCFG file 'C:/College/Thesis/AES_2018/AES_After.wcfg'.
+open_wave_config 9_10_2018/aes256_pipeline/tb_behav.wcfg
+ERROR: [Wavedata 42-2] Error while reading WCFG file 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav/9_10_2018/aes256_pipeline/tb_behav.wcfg'.
+open_wave_config C:/College/Thesis/AES_2018/AES_After
+ERROR: [Wavedata 42-2] Error while reading WCFG file 'C:/College/Thesis/AES_2018/AES_After.wcfg'.
+open_wave_config 9_10_2018/aes256_pipeline/tb_behav1.wcfg
+ERROR: [Wavedata 42-2] Error while reading WCFG file 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/behav/9_10_2018/aes256_pipeline/tb_behav1.wcfg'.
+source tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb.T.K0.inst.native_mem_module.blk_mem_gen_v8_3_6_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb.T.D0.inst.native_mem_module.blk_mem_gen_v8_3_6_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 834.242 ; gain = 0.367
+launch_simulation -mode post-synthesis -type timing
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-1
+INFO: [Project 1-454] Reading design checkpoint 'c:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/ip/data_mem_gen_0/data_mem_gen_0.dcp' for cell 'D0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sources_1/ip/key_mem_gen_0/key_mem_gen_0.dcp' for cell 'K0'
+INFO: [Netlist 29-17] Analyzing 6 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.1
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:16 ; elapsed = 00:00:12 . Memory (MB): peak = 1222.105 ; gain = 387.863
+INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'...
+INFO: [SIM-utils-25] write_verilog -mode timesim -nolib -sdf_anno true -force -file "C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/synth/timing/tb_time_synth.v"
+write_verilog: Time (s): cpu = 00:00:29 ; elapsed = 00:00:14 . Memory (MB): peak = 1387.855 ; gain = 165.750
+INFO: [SIM-utils-27] Writing SDF file...
+INFO: [SIM-utils-28] write_sdf -mode timesim -process_corner slow -force -file "C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/synth/timing/tb_time_synth.sdf"
+INFO: [SIM-utils-36] Netlist generated:C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/synth/timing/tb_time_synth.v
+INFO: [SIM-utils-37] SDF generated:C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/synth/timing/tb_time_synth.sdf
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.1/data/xsim/ip/xsim_ip.ini' copied to run dir:'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/synth/timing'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/synth/timing/data_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/synth/timing/data.coe'
+INFO: [SIM-utils-43] Exported 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/synth/timing/invSbox_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/synth/timing/invSbox.coe'
+INFO: [SIM-utils-43] Exported 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/synth/timing/key_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/synth/timing/key.coe'
+INFO: [SIM-utils-43] Exported 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/synth/timing/sbox_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/synth/timing/sbox.coe'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/synth/timing'
+"xvlog -m64 --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/synth/timing/tb_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataAddrCounter
+INFO: [VRFC 10-311] analyzing module data_mem_gen_0
+INFO: [VRFC 10-311] analyzing module keyAddrCounter
+INFO: [VRFC 10-311] analyzing module key_mem_gen_0
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-311] analyzing module data_mem_gen_0_blk_mem_gen_generic_cstr
+INFO: [VRFC 10-311] analyzing module data_mem_gen_0_blk_mem_gen_prim_width
+INFO: [VRFC 10-311] analyzing module data_mem_gen_0_blk_mem_gen_prim_wrapper_init
+INFO: [VRFC 10-311] analyzing module data_mem_gen_0_blk_mem_gen_top
+INFO: [VRFC 10-311] analyzing module data_mem_gen_0_blk_mem_gen_v8_3_6
+INFO: [VRFC 10-311] analyzing module data_mem_gen_0_blk_mem_gen_v8_3_6_synth
+INFO: [VRFC 10-311] analyzing module key_mem_gen_0_blk_mem_gen_generic_cstr
+INFO: [VRFC 10-311] analyzing module key_mem_gen_0_blk_mem_gen_prim_width
+INFO: [VRFC 10-311] analyzing module key_mem_gen_0_blk_mem_gen_prim_wrapper_init
+INFO: [VRFC 10-311] analyzing module key_mem_gen_0_blk_mem_gen_top
+INFO: [VRFC 10-311] analyzing module key_mem_gen_0_blk_mem_gen_v8_3_6
+INFO: [VRFC 10-311] analyzing module key_mem_gen_0_blk_mem_gen_v8_3_6_synth
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/synth/timing'
+Vivado Simulator 2017.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.1/bin/unwrapped/win64.o/xelab.exe -wto a5fb6f72c6b349b1b0a39b398d85ad4d --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot tb_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "tb_time_synth.sdf", for root module "tb/T".
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "tb_time_synth.sdf", for root module "tb/T".
+Time Resolution for simulation is 1ps
+Compiling module simprims_ver.GND
+Compiling module simprims_ver.RB18_INTERNAL_VLOG(DOA_REG=0,DOB...
+Compiling module simprims_ver.RAMB18E1(INIT_00=256'b0110011001...
+Compiling module xil_defaultlib.data_mem_gen_0_blk_mem_gen_prim_...
+Compiling module xil_defaultlib.data_mem_gen_0_blk_mem_gen_prim_...
+Compiling module xil_defaultlib.data_mem_gen_0_blk_mem_gen_gener...
+Compiling module xil_defaultlib.data_mem_gen_0_blk_mem_gen_top
+Compiling module xil_defaultlib.data_mem_gen_0_blk_mem_gen_v8_3_...
+Compiling module xil_defaultlib.data_mem_gen_0_blk_mem_gen_v8_3_...
+Compiling module xil_defaultlib.data_mem_gen_0
+Compiling module simprims_ver.x_lut2_mux4
+Compiling module simprims_ver.LUT2
+Compiling module simprims_ver.x_lut1_mux2
+Compiling module simprims_ver.LUT1
+Compiling module simprims_ver.x_lut3_mux8
+Compiling module simprims_ver.LUT3
+Compiling module simprims_ver.LUT4
+Compiling module simprims_ver.LUT5
+Compiling module simprims_ver.LUT6
+Compiling module simprims_ver.FDCE_default
+Compiling module xil_defaultlib.dataAddrCounter
+Compiling module simprims_ver.RB18_INTERNAL_VLOG(DOA_REG=0,DOB...
+Compiling module simprims_ver.RAMB18E1(INIT_00=256'b0111000001...
+Compiling module xil_defaultlib.key_mem_gen_0_blk_mem_gen_prim_w...
+Compiling module xil_defaultlib.key_mem_gen_0_blk_mem_gen_prim_w...
+Compiling module xil_defaultlib.key_mem_gen_0_blk_mem_gen_generi...
+Compiling module xil_defaultlib.key_mem_gen_0_blk_mem_gen_top
+Compiling module xil_defaultlib.key_mem_gen_0_blk_mem_gen_v8_3_6...
+Compiling module xil_defaultlib.key_mem_gen_0_blk_mem_gen_v8_3_6
+Compiling module xil_defaultlib.key_mem_gen_0
+Compiling module simprims_ver.FDPE_default
+Compiling module simprims_ver.latchsre_ldce
+Compiling module simprims_ver.LDCE
+Compiling module xil_defaultlib.keyAddrCounter
+Compiling module simprims_ver.OBUF
+Compiling module simprims_ver.BUFG
+Compiling module simprims_ver.IBUF
+Compiling module simprims_ver.OBUFT
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_time_synth
+
+****** Webtalk v2017.1 (64-bit)
+  **** SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+  **** IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source C:/College/Thesis/AES_2018/AES_After -notrace
+invalid command name "%"
+    while executing
+"% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current"
+    (file "C:/College/Thesis/AES_2018/AES_After" line 1)
+INFO: [Common 17-206] Exiting Webtalk at Tue Sep 11 14:48:27 2018...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 1780.469 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '10' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/synth/timing'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_time_synth -key {Post-Synthesis:sim_1:Timing:tb} -tclbatch {tb.tcl} -view {C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/tb_behav.wcfg} -view {C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/tb_behav1.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.1
+Time resolution is 1 ps
+open_wave_config C:/College/Thesis/AES_2018/AES_After
+ERROR: [Wavedata 42-2] Error while reading WCFG file 'C:/College/Thesis/AES_2018/AES_After.wcfg'.
+open_wave_config 9_10_2018/aes256_pipeline/tb_behav.wcfg
+ERROR: [Wavedata 42-2] Error while reading WCFG file 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/synth/timing/9_10_2018/aes256_pipeline/tb_behav.wcfg'.
+open_wave_config C:/College/Thesis/AES_2018/AES_After
+ERROR: [Wavedata 42-2] Error while reading WCFG file 'C:/College/Thesis/AES_2018/AES_After.wcfg'.
+open_wave_config 9_10_2018/aes256_pipeline/tb_behav1.wcfg
+ERROR: [Wavedata 42-2] Error while reading WCFG file 'C:/College/Thesis/AES_2018/AES_After 9_10_2018/aes256_pipeline/aes256_pipeline.sim/sim_1/synth/timing/9_10_2018/aes256_pipeline/tb_behav1.wcfg'.
+source tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_time_synth' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:01:00 ; elapsed = 00:00:44 . Memory (MB): peak = 1789.598 ; gain = 955.355
